@@ -1,2 +1,2 @@
-# course-founder
-System to find Computer Science online courses
+# car-finder
+System to find cars
