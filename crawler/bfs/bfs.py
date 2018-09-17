@@ -15,7 +15,7 @@ class CrawlerBFS:
     def __init__(self, site):
         self.url = site['site']
         self.order.append('')
-        self.disallow.append(site['disallow'])
+        self.disallow = site['disallow']
 
     def check_allow(self, path):
         return (path in self.disallow)
