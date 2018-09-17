@@ -5,9 +5,10 @@ page  = requests.get("https://www.cars.com/vehicledetail/detail/738001937/overvi
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
+price_class = soup.find_all(class_="vehicle-info__price")
+print(price_class[-1])
+'''
 tabela = soup.find_all(class_="vdp-details-basics__item")
-
-
 for item in tabela:
     if(item.get_text().split()[0] == "Fuel"):
         fuel = item.get_text().split(":")[-1]
@@ -24,9 +25,4 @@ for item in tabela:
     elif(item.get_text().split()[0] == "VIN:"):
         vin = item.get_text().split(":")[-1]
         vin = vin.strip().replace('\n','')
-
-print(fuel)
-print(str(exterior_color))
-print(str(interior_color))
-print(str(engine))
-print(str(vin))
+'''
