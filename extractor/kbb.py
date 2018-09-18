@@ -6,6 +6,12 @@ print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
+title_class = soup.find(class_="primary-vehicle-title title-two ").get_text().strip().replace('\n','')
+print(title_class)
+
+price_class = soup.find(class_="price").get_text().strip().replace('\n','')
+print(price_class)
+
 tabela_class = soup.find_all(class_="details-list")[0].get_text()
 tabela = tabela_class.split("\n")
 
@@ -21,9 +27,16 @@ for item in tabela:
     if(item.split()[0] == "Engine:"):
         engine = item.split(":")[-1].strip().replace('\n','')
 
-print(fuel, interior_color)
-print(exterior_color)
-print(engine)
+vin = soup.find_all(class_= "paragraph-one vin")[0].get_text().split(":")[-1].strip().replace('\n','')
+
+
 '''
-vin_class = soup.find_all(class_= "paragraph-one vin")[0].get_text()
-vin = vin_class.'''
+price
+fuel
+exterior_color
+interior_color
+engine
+vin
+url
+title
+'''
