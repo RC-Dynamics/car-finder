@@ -1,6 +1,7 @@
 import requests
 import time
 from bs4 import BeautifulSoup
+from tqdm import tqdm
 import sys
 sys.path.append('../shared')
 
@@ -27,19 +28,19 @@ class CrawlerBFS:
         visit_quantity = 0
         if (self.debug):
             out = open('debug_links/' + self.url.split('www.')[1].split('/')[0] + '.txt', 'w')
-        while visit_quantity < self.MAX_VISITS:
-            print (self.url)
+        # print ("Getting data from (" + self.url + "):")
+        for visit_quantity in tqdm(range(self.MAX_VISITS), desc=("Getting data from (" + self.url + ")")):
             html = requests.get(self.url + self.order.pop(0), headers=self.headers)
             soup = BeautifulSoup(html.text, 'html.parser')
-            out.write(html.text)
-            out.write('\n\n')
+            # out.write(html.text)
+            # out.write('\n\n')
             links = soup.find_all('a', href=True)
             for l in links:
                 if (self.debug):
                     out.write(l['href'])
                     out.write('\n')
-            visit_quantity += 1
             # time.sleep(1)
+        print ("Done")
         
         if (self.debug):
             out.close()
@@ -48,5 +49,5 @@ if (__name__ == "__main__"):
     p = PreProcessing("../../site.txt")
     sites = p.get_sites_info()
     for s in sites:
-        c = CrawlerBFS(s, True)
+        c = CrawlerBFS(s, False)
         c.bfs_visit()
