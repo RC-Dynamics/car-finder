@@ -59,5 +59,5 @@ class PreProcessing:
         return self.sites
 
 if (__name__ == "__main__"):
-    p = PreProcessing("../site.txt")
+    p = PreProcessing("../../site.txt", True)
     p.print_info()
