@@ -1,4 +1,5 @@
 import requests
+from tqdm import tqdm
 
 class PreProcessing:
     robots = "robots.txt"
@@ -16,7 +17,7 @@ class PreProcessing:
     def get_robots(self):
         if(self.debug):
             out = open("test.txt", "w")
-        for s in self.sites:
+        for s in tqdm(self.sites, desc="Getting robots.txt from sites...", ncols=100):
             if(self.debug):
                 print (s['site'])
             r = requests.get(s['site'] + self.robots, headers=self.headers)
@@ -29,6 +30,7 @@ class PreProcessing:
             for s in self.sites:        
                 out.write(s['site'] + " - " + str(s['status_code']) + "\n\n")
                 out.write(s['robots'])
+        print("Done")
         if(self.debug):
             out.close()
         self.get_disallow()
@@ -59,5 +61,5 @@ class PreProcessing:
         return self.sites
 
 if (__name__ == "__main__"):
-    p = PreProcessing("../../site.txt", True)
-    p.print_info()
+    p = PreProcessing("../../site.txt", False)
+    # p.print_info()
