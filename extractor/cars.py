@@ -26,16 +26,18 @@ for item in tabela:
     elif(item.get_text().split()[0] == "Engine:"):
         engine = item.get_text().split(":")[-1]
         engine = engine.strip().replace('\n','')
-    elif(item.get_text().split()[0] == "VIN:"):
-        vin = item.get_text().split(":")[-1]
-        vin = vin.strip().replace('\n','')
+    elif(item.get_text().split()[0] == "Transmission:"):
+        transmission = item.get_text().split(":")[-1]
+        transmission = transmission.strip().replace('\n','')
+
+
 '''
 price
 fuel
 exterior_color
 interior_color
 engine
-vin
+transmission
 url
 title
 '''

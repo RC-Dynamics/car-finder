@@ -6,9 +6,9 @@ print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
-tabela_class = soup.find_all(class_="col-xs-8 col-sm-9 col-md-10 col-lg-9")
+tabela_class = soup.find_all(class_="text-sm text-gray text-uppercase")
 
-print(tabela_class)
+print(soup)
 
 '''tabela = tabela_class.split("\n")
 
