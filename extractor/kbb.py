@@ -6,11 +6,9 @@ print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
-title_class = soup.find(class_="primary-vehicle-title title-two ").get_text().strip().replace('\n','')
-print(title_class)
+title = soup.find(class_="primary-vehicle-title title-two ").get_text().strip().replace('\n','')
 
-price_class = soup.find(class_="price").get_text().strip().replace('\n','')
-print(price_class)
+price = soup.find(class_="price").get_text().strip().replace('\n','')
 
 tabela_class = soup.find_all(class_="details-list")[0].get_text()
 tabela = tabela_class.split("\n")
