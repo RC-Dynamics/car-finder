@@ -8,8 +8,8 @@ soup = BeautifulSoup(page.content, 'html.parser')
 
 title = soup.title.get_text()
 
-#description = soup.find_all(style="padding:10px;text-align:justify;")
-#print(description)
+description = soup.find_all(style="padding:10px;text-align:justify;")[0].get_text().strip().replace('\n','')
+print(description)
 
 tabela = soup.find_all(class_="ar_vehspec")
 
