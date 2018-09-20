@@ -18,14 +18,16 @@ tabela = filter(None, tabela)
 for item in tabela:
     if(item.split()[0] == "Fuel"):
         fuel = item.split(":")[-1].strip().replace('\n','')
-    if(item.split()[0] == "Exterior"):
+    elif(item.split()[0] == "Exterior"):
         exterior_color = item.split(":")[-1].strip().replace('\n','')
-    if(item.split()[0] == "Interior"):
+    elif(item.split()[0] == "Interior"):
         interior_color = item.split(":")[-1].strip().replace('\n','')
-    if(item.split()[0] == "Engine:"):
+    elif(item.split()[0] == "Engine:"):
         engine = item.split(":")[-1].strip().replace('\n','')
+    elif(item.split()[0] == "Transmission:"):
+        transmission = item.split(":")[-1].strip().replace('\n','')
 
-vin = soup.find_all(class_= "paragraph-one vin")[0].get_text().split(":")[-1].strip().replace('\n','')
+#vin = soup.find_all(class_= "paragraph-one vin")[0].get_text().split(":")[-1].strip().replace('\n','')
 
 '''
 price
@@ -33,7 +35,7 @@ fuel
 exterior_color
 interior_color
 engine
-vin
+transmission
 url
 title
 '''
