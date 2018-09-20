@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-page  = requests.get("https://www.kbb.com/cars-for-sale/493323709/?galleryview=photos")
+page  = requests.get("https://www.kbb.com/cars-for-sale/494970912/?galleryview=photos")
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -26,7 +26,6 @@ for item in tabela:
         engine = item.split(":")[-1].strip().replace('\n','')
 
 vin = soup.find_all(class_= "paragraph-one vin")[0].get_text().split(":")[-1].strip().replace('\n','')
-
 
 '''
 price
