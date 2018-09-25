@@ -18,22 +18,22 @@ class PreProcessing:
         if(self.debug):
             out = open("test.txt", "w")
         for s in tqdm(self.sites, desc="Getting robots.txt from sites...", ncols=100):
-            if(self.debug):
-                print (s['site'])
             r = requests.get(s['site'] + self.robots, headers=self.headers)
             s['robots'] = r.text
             s['status_code'] = r.status_code
         for s in self.sites:
             if (s['status_code'] != 200):
                 self.sites.remove(s)
+        print("Done")
+        self.get_disallow()
         if(self.debug):
             for s in self.sites:        
-                out.write(s['site'] + " - " + str(s['status_code']) + "\n\n")
-                out.write(s['robots'])
-        print("Done")
+                out.write(s['site'] + " - " + str(s['status_code']) + ' - ' + str(len(s['disallow'])) + "\n")
+                for l in s['disallow']:
+                    out.write(l + '\n')
+                out.write('\n\n')
         if(self.debug):
             out.close()
-        self.get_disallow()
 
     def get_disallow(self):
         for s in self.sites:
@@ -61,5 +61,5 @@ class PreProcessing:
         return self.sites
 
 if (__name__ == "__main__"):
-    p = PreProcessing("../../site.txt", False)
+    p = PreProcessing("../../site.txt", True)
     # p.print_info()
