@@ -1,5 +1,6 @@
 import requests
 import time
+import pandas as pd
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import sys
@@ -79,6 +80,10 @@ class Crawler:
         soup = BeautifulSoup(html.text, 'html.parser')
         return soup.find_all('a', href=True)
 
+    def save_visited_csv(self, method):
+        df = pd.DataFrame(list(map(lambda x: self.url[:-1] + x, self.visited)), columns=["visited_links"])
+        df.to_csv('results/' + method + '/' + self.url.split('www.')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
+
     def visit(self, method='bfs'):
         if (self.debug):
             out = open('debug_links/' + self.url.split('www.')[1].split('/')[0] + '.txt', 'w')
@@ -104,6 +109,7 @@ class Crawler:
                     out.write('\n')
 
             # time.sleep(1)
+        self.save_visited_csv(method)
         print ("Done")
         
         if (self.debug):
