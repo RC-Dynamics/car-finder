@@ -24,7 +24,22 @@ class CrawlerBFS:
         self.debug = dbg
 
     def is_not_allowed(self, path):
-        return (path in self.disallow)
+        if (path in self.disallow):
+            return True
+        for l in filter(lambda x: '*' in x, self.disallow):
+            link_parts = l.split('*')
+            if len(link_parts[0]) > 1 and len(link_parts[1]) > 1:
+                if path.startswith(link_parts[0]) and link_parts[1] in path:
+                    return True
+            else:
+                if len(link_parts[0]) > 1:
+                    if path.startswith(link_parts[0]):
+                        return True
+                if len(link_parts[1]) > 1:
+                    if link_parts[1] in path:
+                        return True
+        return False
+            
 
     def validate_links(self, links):
         clean_links = []
@@ -45,9 +60,9 @@ class CrawlerBFS:
 
     def evaluate_links(self, links):
         for l in links:
-            if (l in self.visited) or (self.is_not_allowed(l)):
+            if (l['href'] in self.visited) or (self.is_not_allowed(l['href'])):
                 continue
-            self.order.append(l)
+            self.order.append(l['href'])
 
     def bfs_visit(self):
         if (self.debug):
@@ -65,7 +80,6 @@ class CrawlerBFS:
                 continue
             soup = BeautifulSoup(html.text, 'html.parser')
             links = soup.find_all('a', href=True)
-
             links = self.validate_links(links)
 
             self.evaluate_links(links)
