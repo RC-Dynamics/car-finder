@@ -44,7 +44,9 @@ class PreProcessing:
                         result_data_set["Allowed"].append(line.split(': ')[1].split(' ')[0].strip('#').strip(' ').strip('\t').strip('\n').strip('\r'))    # to neglect the comments or other junk info
                 elif line.startswith('Disallow'):    # this is for disallowed url
                     if (len(line.split(': ')) > 1):
-                        result_data_set["Disallowed"].append(line.split(': ')[1].split(' ')[0].strip('#').strip(' ').strip('\t').strip('\n').strip('\r'))    # to neglect the comments or other junk info
+                        dis = line.split(': ')[1].split(' ')[0].strip('#').strip(' ').strip('\t').strip('\n').strip('\r')
+                        if len(dis) > 1:
+                            result_data_set["Disallowed"].append(dis)    # to neglect the comments or other junk info
             s['disallow'] = result_data_set["Disallowed"]
             del s['robots']
 
