@@ -3,11 +3,11 @@ import time
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import sys
-sys.path.append('../shared')
+sys.path.append('pre_processing')
 
 from pre_processing import PreProcessing
 
-class CrawlerBFS:
+class Crawler:
     url = ''
     order = []
     disallow = []
@@ -42,8 +42,7 @@ class CrawlerBFS:
                 if len(link_parts[1]) > 1:
                     if link_parts[1] in path:
                         return True
-        return False
-            
+        return False   
 
     def validate_links(self, links):
         clean_links = []
@@ -62,13 +61,25 @@ class CrawlerBFS:
                 clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url[:-1])[1]
         return clean_links  
 
-    def evaluate_links(self, links):
-        for l in links:
-            if (l['href'] in self.visited) or (l['href'] in self.order) or (self.is_not_allowed(l['href'])):
-                continue
-            self.order.append(l['href'])
+    def evaluate_links(self, links, method):
+        if (method == 'heuristic'):
+            pass
+        elif (method == 'ml'):
+            pass
+        else:
+            for l in links:
+                if (l['href'] in self.visited) or (l['href'] in self.order) or (self.is_not_allowed(l['href'])):
+                    continue
+                self.order.append(l['href'])
 
-    def bfs_visit(self):
+    def get_links(self, visiting_now):
+        html = requests.get(self.url[:-1] + visiting_now, headers=self.headers)
+        if (html.status_code != 200):
+            return -1
+        soup = BeautifulSoup(html.text, 'html.parser')
+        return soup.find_all('a', href=True)
+
+    def visit(self, method='bfs'):
         if (self.debug):
             out = open('debug_links/' + self.url.split('www.')[1].split('/')[0] + '.txt', 'w')
         for visit_quantity in tqdm(range(self.MAX_VISITS), desc=("Getting data from (" + self.url + ")")):
@@ -78,24 +89,18 @@ class CrawlerBFS:
                 continue
             self.visited.append(visiting_now)
 
-            html = requests.get(self.url[:-1] + visiting_now, headers=self.headers)
-            if (html.status_code != 200):
+            links = self.get_links(visiting_now)
+            
+            links = self.validate_links(links)
+
+            self.evaluate_links(links, method)
+            
+            if (links == -1):
                 visit_quantity -= 1
                 continue
-            soup = BeautifulSoup(html.text, 'html.parser')
-            links = soup.find_all('a', href=True)
             if (self.debug):
                 for l in links:
                     out.write(l['href'])
-                    out.write('\n')
-            links = self.validate_links(links)
-
-            self.evaluate_links(links)
-
-            if (self.debug):
-                out.write('\n\n\n')
-                for o in self.order:
-                    out.write(o)
                     out.write('\n')
 
             # time.sleep(1)
@@ -105,8 +110,8 @@ class CrawlerBFS:
             out.close()
 
 if (__name__ == "__main__"):
-    p = PreProcessing("../../site.txt")
+    p = PreProcessing("../site.txt")
     sites = p.get_sites_info()
     for s in sites:
-        c = CrawlerBFS(s, True)
-        c.bfs_visit()
+        c = Crawler(s, True)
+        c.visit()
