@@ -18,6 +18,7 @@ class CrawlerBFS:
 
     def __init__(self, site, dbg=False):
         self.url = site['site']
+        self.order = []
         self.order.append('/')
         self.disallow = site['disallow']
         self.visited = []
@@ -26,6 +27,9 @@ class CrawlerBFS:
     def is_not_allowed(self, path):
         if (path in self.disallow):
             return True
+        for l in filter(lambda x: x[-1] == '/', self.disallow):
+            if (path.startswith(l)):
+                return True
         for l in filter(lambda x: '*' in x, self.disallow):
             link_parts = l.split('*')
             if len(link_parts[0]) > 1 and len(link_parts[1]) > 1:
@@ -60,7 +64,7 @@ class CrawlerBFS:
 
     def evaluate_links(self, links):
         for l in links:
-            if (l['href'] in self.visited) or (self.is_not_allowed(l['href'])):
+            if (l['href'] in self.visited) or (l['href'] in self.order) or (self.is_not_allowed(l['href'])):
                 continue
             self.order.append(l['href'])
 
@@ -80,14 +84,20 @@ class CrawlerBFS:
                 continue
             soup = BeautifulSoup(html.text, 'html.parser')
             links = soup.find_all('a', href=True)
+            if (self.debug):
+                for l in links:
+                    out.write(l['href'])
+                    out.write('\n')
             links = self.validate_links(links)
 
             self.evaluate_links(links)
 
             if (self.debug):
-                for l in links:
-                    out.write(l['href'])
+                out.write('\n\n\n')
+                for o in self.order:
+                    out.write(o)
                     out.write('\n')
+
             # time.sleep(1)
         print ("Done")
         
