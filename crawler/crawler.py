@@ -1,5 +1,6 @@
 import requests
 import time
+import datetime
 import pandas as pd
 from bs4 import BeautifulSoup
 from tqdm import tqdm
@@ -14,8 +15,10 @@ class Crawler:
     disallow = []
     visited = []
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-    MAX_VISITS = 10
+    MAX_VISITS = 100
     debug = False
+    error = None
+    out = None
 
     def __init__(self, site, dbg=False):
         self.url = site['site']
@@ -24,6 +27,12 @@ class Crawler:
         self.disallow = site['disallow']
         self.visited = []
         self.debug = dbg
+        self.error = open('errors.txt', 'a')
+        if (self.debug):
+            if 'www.' in self.url:
+                self.out = open('debug_links/' + self.url.split('www.')[1].split('/')[0] + '.txt', 'w')
+            else:
+                self.out = open('debug_links/' + self.url.split('https://')[1].split('/')[0] + '.txt', 'w')
 
     def is_not_allowed(self, path):
         if (path in self.disallow):
@@ -61,7 +70,7 @@ class Crawler:
                 clean_links[len(clean_links) - 1]['href'] = l['href']
             elif (l['href'].startswith(self.url.split('://')[1])):
                 clean_links.append(l)
-                clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url.split('://')[1])[1]
+                clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url.split('://')[1][:-1])[1]
             elif (l['href'].startswith(self.url)):
                 clean_links.append(l)
                 clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url[:-1])[1]
@@ -78,8 +87,35 @@ class Crawler:
                     continue
                 self.order.append(l['href'])
 
+    def print_error(self, error_type, error_msg):
+        ts = time.time()
+        st = datetime.datetime.fromtimestamp(ts).strftime('%d-%m-%Y %H:%M:%S')
+        self.error.write(error_type + ' (' + st + '): ' + error_msg)
+        self.error.write('\n')
+
+    def print_debug(self, links):
+        if (self.debug):
+            self.out.write('ALL LINKS:')
+            self.out.write('\n')
+            for l in links:
+                self.out.write(l['href'])
+                self.out.write('\n')
+            self.out.write('\n\n')
+        
+        if (self.debug):
+            self.out.write('VISIT ORDER:')
+            self.out.write('\n')
+            for l in self.order:
+                self.out.write(l)
+                self.out.write('\n')
+            self.out.write('\n-----------------------------------------------------------------------------\n\n')
+
     def get_links(self, visiting_now):
-        html = requests.get(self.url[:-1] + visiting_now, headers=self.headers)
+        try:
+            html = requests.get(self.url[:-1] + visiting_now, headers=self.headers, timeout=5)
+        except requests.exceptions.Timeout:
+            self.print_error('TIMEOUT', self.url[:-1] + visiting_now)
+            return -1
         if (html.status_code != 200):
             return -1
         soup = BeautifulSoup(html.text, 'html.parser')
@@ -87,12 +123,16 @@ class Crawler:
 
     def save_visited_csv(self, method):
         df = pd.DataFrame(list(map(lambda x: self.url[:-1] + x, self.visited)), columns=["visited_links"])
-        df.to_csv('results/' + method + '/' + self.url.split('www.')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
+        if 'www.' in self.url:
+            df.to_csv('results/' + method + '/' + self.url.split('www.')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
+        else:
+            df.to_csv('results/' + method + '/' + self.url.split('https://')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
 
     def visit(self, method='bfs'):
-        if (self.debug):
-            out = open('debug_links/' + self.url.split('www.')[1].split('/')[0] + '.txt', 'w')
         for visit_quantity in tqdm(range(self.MAX_VISITS), desc=("Getting data from (" + self.url + ")")):
+            if not self.order:
+                self.print_error('NOT ENOUGH LINK: ', self.url)
+                break
             visiting_now = self.order.pop(0)
             if (visiting_now in self.visited) or (self.is_not_allowed(visiting_now)):
                 visit_quantity -= 1
@@ -100,44 +140,31 @@ class Crawler:
             self.visited.append(visiting_now)
 
             if (self.debug):
-                out.write('VISITING NOW: ' + visiting_now)
-                out.write('\n')
+                self.out.write('VISITING NOW: ' + visiting_now)
+                self.out.write('\n')
             
             links = self.get_links(visiting_now)
             if (links == -1):
                 visit_quantity -= 1
                 continue
                 
-            if (self.debug):
-                out.write('ALL LINKS:')
-                out.write('\n')
-                for l in links:
-                    out.write(l['href'])
-                    out.write('\n')
-                out.write('\n\n')
-            
             links = self.validate_links(links)
 
             self.evaluate_links(links, method)
-            
-            if (self.debug):
-                out.write('VISIT ORDER:')
-                out.write('\n')
-                for l in self.order:
-                    out.write(l)
-                    out.write('\n')
-                out.write('\n-----------------------------------------------------------------------------\n\n')
 
+            self.print_debug(links)            
+            
             time.sleep(0.5)
         self.save_visited_csv(method)
         print ("Done")
         
+        self.error.close()
         if (self.debug):
-            out.close()
+            self.out.close()
 
 if (__name__ == "__main__"):
     p = PreProcessing("../site.txt")
     sites = p.get_sites_info()
     for s in sites:
-        c = Crawler(s, True)
+        c = Crawler(s, False)
         c.visit()
