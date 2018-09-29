@@ -2,7 +2,38 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-page  = requests.get("https://www.marblesautomotive.com/inventory/2015/Chevrolet/Equinox/NY/Penn%20Yan/1GNFLFEK2FZ129044/")
+description=""
+price=""
+exterior_color=""
+interior_color=""
+transmission=""
+engine=""
+title=""
+
+def desc_options (description):
+    description_list =[]
+    for child in description_tree.descendants:
+        try:
+            description_list.append(child.get_text()) 
+        except:
+            pass
+
+    description_list.pop(0)
+
+    try:
+        description_list.remove("Description")
+    except:
+        pass
+
+    for i in range(len(description_list)):
+        if (i == 0):
+            description = description + description_list[i]
+        else: 
+            description = description + '\n' + description_list[i]
+    return description
+
+
+page  = requests.get("https://www.marblesautomotive.com/inventory/2015/Chrysler/Town%20%26%20Country/NY/Penn%20Yan/2C4RC1BG9FR637515/")
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -36,32 +67,32 @@ for child in price_tree.descendants:
             except:
                 pass
 
-description_list =[]
-description_tree = soup.find(id="vehicle-detail-options")
-#print(description_tree)
-for child in description_tree.descendants:
-    try:
-       description_list.append(child.get_text()) 
-    except:
-        pass
-
-
-description_list.pop(0)
 
 description = ""
-
-for i in range(len(description_list)):
-    if (i == 0):
-        description = description + description_list[i]
-    else: 
-        description = description + '\n' + description_list[i]
-
-'''
-description
-price
-exterior_color
-interior_color
-transmission
-engine
-title
-'''
+try: 
+    description_tree = soup.find(id="vehicle-detail-options")
+    description = desc_options(description)
+except:
+    pass
+try:
+    description_tree = soup.find(id="vehicle-detail-desc")
+    #print(description_tree)
+    for item in description_tree:
+        if(description == ""):
+            try:
+                description = description + item.get_text()
+            except:
+                description = description_tree.get_text()
+                break
+        else:
+            description = description + '\n' +item.get_text()
+except:
+    pass
+    
+print(description)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(transmission)
+print(engine)
+print(title)
