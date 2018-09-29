@@ -14,7 +14,7 @@ class Crawler:
     disallow = []
     visited = []
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-    MAX_VISITS = 1
+    MAX_VISITS = 10
     debug = False
 
     def __init__(self, site, dbg=False):
@@ -48,16 +48,21 @@ class Crawler:
     def validate_links(self, links):
         clean_links = []
         for l in links:
+            if (l['href'].startswith('//')):
+                l['href'] = l['href'].strip('/')
             if (len(l['href'].strip()) < 2):
                 continue
-            if (len(l['href']) < 2) or (l['href'].startswith('tel')) or (l['href'].startswith('mailto')) or (l['href'].startswith('#')) or (l['href'].startswith('javascript')) or (l['href'].startswith('//')) or (l['href'].startswith('\t')):
+            if (len(l['href']) < 2) or (l['href'].startswith('tel')) or (l['href'].startswith('mailto')) or (l['href'].startswith('#')) or (l['href'].startswith('javascript')) or (l['href'].startswith('\t')):
                 continue
             if (l['href'] == '/') or (l['href'] == self.url) or (l['href'] == self.url.split('://')[1]):
                 continue
             if (l['href'].startswith('/')):
                 clean_links.append(l)
                 clean_links[len(clean_links) - 1]['href'] = l['href']
-            elif (l['href'].startswith(self.url)) or (l['href'].startswith(self.url.split('://')[1])):
+            elif (l['href'].startswith(self.url.split('://')[1])):
+                clean_links.append(l)
+                clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url.split('://')[1])[1]
+            elif (l['href'].startswith(self.url)):
                 clean_links.append(l)
                 clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url[:-1])[1]
         return clean_links  
@@ -94,21 +99,36 @@ class Crawler:
                 continue
             self.visited.append(visiting_now)
 
+            if (self.debug):
+                out.write('VISITING NOW: ' + visiting_now)
+                out.write('\n')
+            
             links = self.get_links(visiting_now)
+            if (links == -1):
+                visit_quantity -= 1
+                continue
+                
+            if (self.debug):
+                out.write('ALL LINKS:')
+                out.write('\n')
+                for l in links:
+                    out.write(l['href'])
+                    out.write('\n')
+                out.write('\n\n')
             
             links = self.validate_links(links)
 
             self.evaluate_links(links, method)
             
-            if (links == -1):
-                visit_quantity -= 1
-                continue
             if (self.debug):
-                for l in links:
-                    out.write(l['href'])
+                out.write('VISIT ORDER:')
+                out.write('\n')
+                for l in self.order:
+                    out.write(l)
                     out.write('\n')
+                out.write('\n-----------------------------------------------------------------------------\n\n')
 
-            # time.sleep(1)
+            time.sleep(0.5)
         self.save_visited_csv(method)
         print ("Done")
         
