@@ -1,0 +1,391 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+var originalAddEventListener = EventTarget.prototype.addEventListener,
+oldWidth = window.innerWidth;
+EventTarget.prototype.addEventListener = function (eventName, eventHandler, useCapture) {
+if (eventName === "resize") {
+originalAddEventListener.call(this, eventName, function (event) {
+if (oldWidth === window.innerWidth) {
+return;
+}
+else if (oldWidth !== window.innerWidth) {
+oldWidth = window.innerWidth;
+}
+if (eventHandler.handleEvent) {
+eventHandler.handleEvent.call(this, event);
+}
+else {
+eventHandler.call(this, event);
+};
+}, useCapture);
+}
+else {
+originalAddEventListener.call(this, eventName, eventHandler, useCapture);
+};
+};
+};
+Marbles Automotive | Auto Sales | Glass Repair | Glass Service
+{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.marblesautomotive.com\/","sameAs":["https:\/\/www.facebook.com\/Marbles-Automotive-432723800414491","https:\/\/twitter.com\/marblesglass"],"@id":"https:\/\/www.marblesautomotive.com\/#organization","name":"Marbles Automotive","logo":"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg"}
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.marblesautomotive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+/* <![CDATA[ */
+var gadwpUAEventsData = {"options":{"event_tracking":"1","event_downloads":"zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*","event_bouncerate":"1","aff_tracking":1,"event_affiliates":"\/out\/","hash_tracking":"1","root_domain":"marblesautomotive.com","event_timeout":100,"event_precision":1,"event_formsubmit":1,"ga_pagescrolldepth_tracking":1,"ga_with_gtag":0}};
+/* ]]> */
+/* <![CDATA[ */
+var dtLocal = {"themeUrl":"https:\/\/www.marblesautomotive.com\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":null,"ajaxurl":"https:\/\/www.marblesautomotive.com\/wp-admin\/admin-ajax.php","contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy."},"ajaxNonce":"cc25364cfa","pageData":"","themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"gradient","color":"135deg|#1ebbf0 30%|#39dfaa 100%"},"desktopHeader":{"height":90},"floatingHeader":{"showAfter":94,"showMenu":false,"height":56,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg\" srcset=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w, https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w\" width=\"350\" height=\"150\"
+sizes=\"350px\" alt=\"Marbles Automotive | Auto Sales | Glass Repair | Glass Service\" \/>","url":"https:\/\/www.marblesautomotive.com\/"}},"mobileHeader":{"firstSwitchPoint":990,"secondSwitchPoint":500,"firstSwitchPointHeight":70,"secondSwitchPointHeight":56},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg\" srcset=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w, https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w\" width=\"350\" height=\"150\"
+sizes=\"350px\" alt=\"Marbles Automotive | Auto Sales | Glass Repair | Glass Service\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg\" srcset=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w, https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w\" width=\"350\" height=\"150\"
+sizes=\"350px\" alt=\"Marbles Automotive | Auto Sales | Glass Repair | Glass Service\" \/>"}},"content":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp","google":"Share on Google Plus","download":"Download image"},"overlayOpacity":"85"};
+/* ]]> */
+var _wsm = _wsm || [];
+_wsm.push(['trackPageView']);
+_wsm.push(['enableLinkTracking']);
+_wsm.push(['enableHeartBeatTimer']);
+(function() {
+var u="https://www.marblesautomotive.com/wp-content/plugins/wordpress-stats-manager-pro/";
+_wsm.push(['setUrlReferrer', ""]);
+_wsm.push(['setTrackerUrl',"https://www.marblesautomotive.com/?wmcAction=wmcTrack"]);
+_wsm.push(['setSiteId', "1"]);
+_wsm.push(['setPageId', "0"]);
+_wsm.push(['setWpUserId', "0"]);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js/wsm_new.js'; s.parentNode.insertBefore(g,s);
+})();
+document.documentElement.className += " js";
+document.addEventListener("DOMContentLoaded", function(event) {
+var load = document.getElementById("load");
+var removeLoading = setTimeout(function() {
+load.className += " loader-removed";
+}, 500);
+});
+var gadwpDnt = false;
+var gadwpProperty = 'UA-116904514-1';
+var gadwpDntFollow = true;
+var gadwpOptout = true;
+var disableStr = 'ga-disable-' + gadwpProperty;
+if(gadwpDntFollow && (window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+gadwpDnt = true;
+}
+if (gadwpDnt || (document.cookie.indexOf(disableStr + '=true') > -1 && gadwpOptout)) {
+window[disableStr] = true;
+}
+function gaOptout() {
+var expDate = new Date;
+expDate.setFullYear(expDate.getFullYear( ) + 10);
+document.cookie = disableStr + '=true; expires=' + expDate.toGMTString( ) + '; path=/';
+window[disableStr] = true;
+}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-116904514-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'linkid');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+Skip to content
+315-536-4488 1698 Route 14A, Penn Yan, NY 14527FacebookTwitterGoogle+
+Marbles Automotive | Auto Sales | Glass Repair | Glass Service
+Marbles Automotive Quality Used Cars
+Home SalesFinance Application View Our Inventory
+Glass Repair Mechanical RepairAutomotive Repair Automotive Glass Repair
+Collision Contact UsContact Marbles Auto Sales Contact Marbles Glass Contact Marbles Auto Repair Contact Marbles Collision About Marbles Automotive
+Search:
+Home SalesFinance Application View Our Inventory
+Glass Repair Mechanical RepairAutomotive Repair Automotive Glass Repair
+Collision Contact UsContact Marbles Auto Sales Contact Marbles Glass Contact Marbles Auto Repair Contact Marbles Collision About Marbles Automotive
+Marbles Automotive > Used
+Inventory Search:
+17 Cars Found
+Sort by:
+Year
+Price
+Mileage
+Refine Your Search
+Refine Your Search
+Sale Class
+UsedCertified
+Vehicle Class
+Car
+Truck
+SUV
+Van
+MakesChevroletChryslerDodgeFordGMCSubaruToyota
+Price Range
+$1 - $10,000
+$10,001 - $20,000
+$20,001 - $30,000
+$30,001 - $40,000
+$40,001 - $50,000
+$50,001 - & Above
+Used
+2016
+Chevrolet
+Cruze
+LT Auto
+FWD
+Sedan
+Transmission: 6 speed AT
+Stock #: 640
+Odometer: 0
+VIN: 1G1BE5SM8G7277173
+Price:
+$14,99501499514995$285 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2015
+Chevrolet
+Equinox
+1LT
+AWD
+SUV
+Interior: BlackExterior: Tri-Coat PearlTransmission: 6 speed AT
+Stock #: *129044*
+Odometer: 44719
+VIN: 1GNFLFEK2FZ129044
+Price:
+$18,99501899518995$366 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2016
+Chevrolet
+Equinox
+LT
+FWD
+SUV
+Interior: BlackExterior: WhiteTransmission: 6 speed AT
+Stock #: *117355*
+Odometer: 35806
+VIN: 2GNALCEKXG1117355
+Price:
+$18,99501899518995$366 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2016
+Chevrolet
+Equinox
+LT
+AWD
+SUV
+Interior: GreyExterior: Navy BlueTransmission: 6 speed AT
+Stock #: *100669*
+Odometer: 25475
+VIN: 2GNFLFEK0G6100669
+Price:
+$19,99501999519995$386 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2016
+Chevrolet
+Malibu
+1LT
+FWD
+Sedan
+Interior: BlackExterior: Crystal Red PearlTransmission: 6 speed AT
+Stock #: *187734*
+Odometer: 44025
+VIN: 1G1ZE5ST5GF187734
+Price:
+$15,99501599515995$305 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2015
+Chevrolet
+Trax
+LT
+FWD
+SUV
+Interior: BlackExterior: BlackTransmission: 6 speed AT
+Stock #: *169074*
+Odometer: 37289
+VIN: KL7CJLSBXFB169074
+Price:
+$14,99501499514995$285 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2015
+Chrysler
+Town & Country
+SXT
+FWD
+Regular
+Interior: TanExterior: WhiteTransmission: 6 speed AT
+Stock #: *621998*
+Odometer: 67860
+VIN: 2C4RC1BG9FR637515
+Price:
+$16,49501649516495$315 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2015
+Dodge
+Grand Caravan
+SXT
+FWD
+Regular
+Transmission: 6 speed AT
+Stock #: *621998*
+Odometer: 0
+VIN: 2C4RDGCGXFR621998
+Price:
+$15,99501599515995$305 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2013
+Ford
+Edge
+SEL
+AWD
+SUV
+Interior: BlackExterior: BlackTransmission: 6 speed AT
+Stock #: 650
+Odometer: 95078
+VIN: 2FMDK4JC0DBC32478
+Price:
+$14,49501449514495$274 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2012
+Ford
+F-150
+XLT
+4WD
+SuperCab
+Interior: BlackExterior: BlackTransmission: 6 speed AT
+Stock #: *C73077*
+Odometer: 78483
+VIN: 1FTFX1ET5CFC73077
+Price:
+$20,99502099520995$407 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2015
+Ford
+Focus
+SE
+FWD
+Sedan
+Interior: BlackExterior: White
+Stock #: *208574*
+Odometer: 30397
+VIN: 1FADP3F27FL208574
+Price:
+$12,49501249512495$234 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2016
+Ford
+Fusion
+SE
+FWD
+Sedan
+Interior: BlackExterior: Candy Apple RedTransmission: 6 speed AT
+Stock #: *379210*
+Odometer: 43640
+VIN: 3FA6P0H78GR379210
+Price:
+$14,99501499514995$285 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2011
+GMC
+Sierra 1500
+SLE
+RWD
+Extended Cab
+Interior: BlackExterior: SilverTransmission: 6 speed AT
+Stock #: *292852*
+Odometer: 106216
+VIN: 1GTR1VE05BZ292852
+Price:
+$14,99501499514995$285 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2015
+GMC
+Terrain
+SLE-1
+AWD
+SUV
+Interior: BlackExterior: Crystal Red PearlTransmission: 6 speed AT
+Stock #: *238517*
+Odometer: 36898
+VIN: 2GKFLVEK1F6238517
+Price:
+$18,99501899518995$366 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2010
+Subaru
+Forester
+X Limit
+AWD
+SUV
+Interior: SilverExterior: BlueTransmission: 4 speed AT
+Stock #: 642
+Odometer: 92407
+VIN: JF2SH6DC6AH724644
+Price:
+$11,99501199511995$224 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2010
+Subaru
+Outback
+2.5i Premium
+AWD
+SUV
+Interior: CamelExterior: PearlTransmission: Automatic
+Stock #: 653
+Odometer: 70854
+VIN: 4S4BRBCC8A3386176
+Price:
+$12,49501249512495$234 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+Used
+2015
+Toyota
+RAV4
+XLE
+AWD
+SUV
+Interior: BlackExterior: Blue CrushTransmission: 6 speed AT
+Stock #: *309994*
+Odometer: 33772
+VIN: 2T3RFREVXFW309994
+Price:
+$19,99501999519995$386 / Month for 60 months with only $1000 down at 4.9% interest.Rates shown are for example only, and may vary depending on your individual circumstances, loan amount and lender’s approval criteria
+More Information
+Marbles Automotive 315.536.44881862terryflynn@marblesauto.com
+All advertised prices exclude government fees and taxes, any finance charges, any dealer document preparation charge, and any emission testing charge. Vehicles are subject to prior sale. All advertised to be true but not guaranteed.
+Marbles Automotive > Used
+Return to Top
+©2017 Marbles Automotive by Hack Shack, Inc.
+All rights reserved.
+terms & conditions | privacy policy
+Go to Top
+jQuery(function(){
+var arrLiveStats=[];
+var P_PREFIX="wsm";
+jQuery(".if-js-closed").removeClass("if-js-closed").addClass("closed");
+});
+/* <![CDATA[ */
+var ajax_path = "https:\/\/www.marblesautomotive.com\/wp-admin\/admin-ajax.php";
+/* ]]> */

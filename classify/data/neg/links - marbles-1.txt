@@ -1,0 +1,148 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+var originalAddEventListener = EventTarget.prototype.addEventListener,
+oldWidth = window.innerWidth;
+EventTarget.prototype.addEventListener = function (eventName, eventHandler, useCapture) {
+if (eventName === "resize") {
+originalAddEventListener.call(this, eventName, function (event) {
+if (oldWidth === window.innerWidth) {
+return;
+}
+else if (oldWidth !== window.innerWidth) {
+oldWidth = window.innerWidth;
+}
+if (eventHandler.handleEvent) {
+eventHandler.handleEvent.call(this, event);
+}
+else {
+eventHandler.call(this, event);
+};
+}, useCapture);
+}
+else {
+originalAddEventListener.call(this, eventName, eventHandler, useCapture);
+};
+};
+};
+Automotive Repair - Marbles Automotive | Auto Sales | Glass Repair | Glass Service
+{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.marblesautomotive.com\/","sameAs":["https:\/\/www.facebook.com\/Marbles-Automotive-432723800414491","https:\/\/twitter.com\/marblesglass"],"@id":"https:\/\/www.marblesautomotive.com\/#organization","name":"Marbles Automotive","logo":"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg"}
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.marblesautomotive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+/* <![CDATA[ */
+var gadwpUAEventsData = {"options":{"event_tracking":"1","event_downloads":"zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*","event_bouncerate":"1","aff_tracking":1,"event_affiliates":"\/out\/","hash_tracking":"1","root_domain":"marblesautomotive.com","event_timeout":100,"event_precision":1,"event_formsubmit":1,"ga_pagescrolldepth_tracking":1,"ga_with_gtag":0}};
+/* ]]> */
+/* <![CDATA[ */
+var dtLocal = {"themeUrl":"http:\/\/www.marblesautomotive.com\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"116","ajaxurl":"https:\/\/www.marblesautomotive.com\/wp-admin\/admin-ajax.php","contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy."},"ajaxNonce":"cc25364cfa","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"gradient","color":"135deg|#1ebbf0 30%|#39dfaa 100%"},"desktopHeader":{"height":90},"floatingHeader":{"showAfter":94,"showMenu":false,"height":56,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg\" srcset=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w, https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w\" width=\"350\" height=\"150\"
+sizes=\"350px\" alt=\"Marbles Automotive | Auto Sales | Glass Repair | Glass Service\" \/>","url":"https:\/\/www.marblesautomotive.com\/"}},"mobileHeader":{"firstSwitchPoint":990,"secondSwitchPoint":500,"firstSwitchPointHeight":70,"secondSwitchPointHeight":56},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg\" srcset=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w, https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w\" width=\"350\" height=\"150\"
+sizes=\"350px\" alt=\"Marbles Automotive | Auto Sales | Glass Repair | Glass Service\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg\" srcset=\"https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w, https:\/\/www.marblesautomotive.com\/wp-content\/uploads\/2017\/03\/NewLogoCustom.jpg 350w\" width=\"350\" height=\"150\"
+sizes=\"350px\" alt=\"Marbles Automotive | Auto Sales | Glass Repair | Glass Service\" \/>"}},"content":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp","google":"Share on Google Plus","download":"Download image"},"overlayOpacity":"85"};
+/* ]]> */
+var _wsm = _wsm || [];
+_wsm.push(['trackPageView']);
+_wsm.push(['enableLinkTracking']);
+_wsm.push(['enableHeartBeatTimer']);
+(function() {
+var u="http://www.marblesautomotive.com/wp-content/plugins/wordpress-stats-manager-pro/";
+_wsm.push(['setUrlReferrer', ""]);
+_wsm.push(['setTrackerUrl',"http://www.marblesautomotive.com/?wmcAction=wmcTrack"]);
+_wsm.push(['setSiteId', "1"]);
+_wsm.push(['setPageId', "116"]);
+_wsm.push(['setWpUserId', "0"]);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'js/wsm_new.js'; s.parentNode.insertBefore(g,s);
+})();
+document.documentElement.className += " js";
+document.addEventListener("DOMContentLoaded", function(event) {
+var load = document.getElementById("load");
+var removeLoading = setTimeout(function() {
+load.className += " loader-removed";
+}, 500);
+});
+var gadwpDnt = false;
+var gadwpProperty = 'UA-116904514-1';
+var gadwpDntFollow = true;
+var gadwpOptout = true;
+var disableStr = 'ga-disable-' + gadwpProperty;
+if(gadwpDntFollow && (window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+gadwpDnt = true;
+}
+if (gadwpDnt || (document.cookie.indexOf(disableStr + '=true') > -1 && gadwpOptout)) {
+window[disableStr] = true;
+}
+function gaOptout() {
+var expDate = new Date;
+expDate.setFullYear(expDate.getFullYear( ) + 10);
+document.cookie = disableStr + '=true; expires=' + expDate.toGMTString( ) + '; path=/';
+window[disableStr] = true;
+}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-116904514-1', 'auto');
+ga('require', 'displayfeatures');
+ga('require', 'linkid');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+Skip to content
+315-536-4488 1698 Route 14A, Penn Yan, NY 14527FacebookTwitterGoogle+
+Marbles Automotive | Auto Sales | Glass Repair | Glass Service
+Marbles Automotive Quality Used Cars
+Home SalesFinance Application View Our Inventory
+Glass Repair Mechanical RepairAutomotive Repair Automotive Glass Repair
+Collision Contact UsContact Marbles Auto Sales Contact Marbles Glass Contact Marbles Auto Repair Contact Marbles Collision About Marbles Automotive
+Search:
+Home SalesFinance Application View Our Inventory
+Glass Repair Mechanical RepairAutomotive Repair Automotive Glass Repair
+Collision Contact UsContact Marbles Auto Sales Contact Marbles Glass Contact Marbles Auto Repair Contact Marbles Collision About Marbles Automotive
+MECHANICAL SHOP
+6 well trained Techs under the supervision of Mike Olney.
+Electronic equipment is always updated monthly
+We offer a towing service with a Flat-Bed and Wrecker in fleet, Also can make local service calls
+Labor Rate $65.00 an Hour
+Services- NYSI, Oil Change- Carry Full Line of Synthetic Oil’s, Brakes, A/C, Tune-Ups, Exhaust Work, Motor Repair/Replacements, Electronic Diagnosis/Repair, Jasper Transmissions, Suspension work, Electronic Alignment Machine, Air-Bag Replacements, much More
+Cooper Tire Dealer, We can get almost any kind of Tire You want
+GET BACK ON THE ROAD FAST
+You need your car to get you everywhere you have to go. Without it, you can’t get anything accomplished. Bring it in to our ASE-certified technicians for all your maintenance and repairs.
+Have you had your vehicle repaired at Marbles Automotive Repair?  If so, please click here to fill out a short survey on your experience.
+LET US HELP DIAGNOSE AND REPAIR ALL YOUR ISSUES
+If you are unsure as to what is going on with your car, bring it in to us. In no time at all our experts can have it figured out for you. Know that we can work on all makes and models of vehicle including foreign and domestic.
+WE DO IT ALL
+Tune-ups
+Vehicle inspections
+Oil changes / lube
+Brakes
+Transmissions
+Tires
+Mechanical issues
+Collision repair
+Unibody and frame repair
+Written estimates
+Marbles Collision
+Deer Hit?  Fender Bender?  No problem because Marbles Collision can help you with your repair service, towing and insurance paperwork.  Marbles Collision is open 6-days a week for your convenience.
+LEARN MOREAutomotive Glass Repair
+Is your windshield cracked or broken?  Check out our Automotive Glass Repair Service
+LEARN MORE
+Marbles Automotive
+1698 Route 14A
+Penn Yan, NY 14527
+315.536.4488
+View Current Inventory
+Finance Application
+About Marbles Automotive
+Glass Repair
+Automotive Repair
+Collision Repair
+Follow Us:
+Twitter
+Facebook
+Please don't forget to share a review on Facebook for us and be sure to like our page...
+©2017 Marbles Automotive by Hack Shack, Inc.
+All rights reserved.
+terms & conditions | privacy policy
+Go to Top
+jQuery(function(){
+var arrLiveStats=[];
+var P_PREFIX="wsm";
+jQuery(".if-js-closed").removeClass("if-js-closed").addClass("closed");
+});
