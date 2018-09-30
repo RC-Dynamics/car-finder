@@ -27,7 +27,6 @@ class Crawler:
         self.disallow = site['disallow']
         self.visited = []
         self.debug = dbg
-        self.error = open('errors.txt', 'a')
         if (self.debug):
             if 'www.' in self.url:
                 self.out = open('debug_links/' + self.url.split('www.')[1].split('/')[0] + '.txt', 'w')
@@ -88,10 +87,12 @@ class Crawler:
                 self.order.append(l['href'])
 
     def print_error(self, error_type, error_msg):
+        self.error = open('errors.txt', 'a')
         ts = time.time()
         st = datetime.datetime.fromtimestamp(ts).strftime('%d-%m-%Y %H:%M:%S')
         self.error.write(error_type + ' (' + st + '): ' + error_msg)
         self.error.write('\n')
+        self.error.close()
 
     def print_debug(self, links):
         if (self.debug):
@@ -158,7 +159,6 @@ class Crawler:
         self.save_visited_csv(method)
         print ("Done")
         
-        self.error.close()
         if (self.debug):
             self.out.close()
 
