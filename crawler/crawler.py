@@ -15,7 +15,7 @@ class Crawler:
     disallow = []
     visited = []
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-    MAX_VISITS = 100
+    MAX_VISITS = 1000
     debug = False
     error = None
     out = None
@@ -63,17 +63,17 @@ class Crawler:
                 continue
             if (len(l['href']) < 2) or (l['href'].startswith('tel')) or (l['href'].startswith('mailto')) or (l['href'].startswith('#')) or (l['href'].startswith('javascript')) or (l['href'].startswith('\t')):
                 continue
-            if (l['href'] == '/') or (l['href'] == self.url) or (l['href'] == self.url.split('://')[1]):
+            if (l['href'] == '/') or (l['href'] == self.url) or (l['href'] == self.url.split('://')[1]) or ('AuthRedirect' in l['href']):
                 continue
             if (l['href'].startswith('/')):
                 clean_links.append(l)
                 clean_links[len(clean_links) - 1]['href'] = l['href']
             elif (l['href'].startswith(self.url.split('://')[1])):
                 clean_links.append(l)
-                clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url.split('://')[1][:-1])[1]
+                clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url.split('://')[1][:-1])[1].strip('"')
             elif (l['href'].startswith(self.url)):
                 clean_links.append(l)
-                clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url[:-1])[1]
+                clean_links[len(clean_links) - 1]['href'] = l['href'].split(self.url[:-1])[1].strip('"')
         return clean_links  
 
     def evaluate_links(self, links, method):
@@ -147,12 +147,12 @@ class Crawler:
             if (links == -1):
                 visit_quantity -= 1
                 continue
+
+            self.print_debug(links)            
                 
             links = self.validate_links(links)
 
             self.evaluate_links(links, method)
-
-            self.print_debug(links)            
             
             time.sleep(0.5)
         self.save_visited_csv(method)
