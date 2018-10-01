@@ -23,7 +23,7 @@ class Crawler:
     def __init__(self, site, dbg=False):
         self.url = site['site']
         self.order = []
-        self.order.append('/')
+        self.order.append({'link': '/', 'score': 1})
         self.disallow = site['disallow']
         self.visited = []
         self.debug = dbg
@@ -82,9 +82,9 @@ class Crawler:
             pass
         else:
             for l in links:
-                if (l['href'] in self.visited) or (l['href'] in self.order) or (self.is_not_allowed(l['href'])):
+                if (l['href'] in self.visited) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
                     continue
-                self.order.append(l['href'])
+                self.order.append({'link': l['href'], 'score': 1})
 
     def print_error(self, error_type, error_msg):
         self.error = open('errors.txt', 'a')
@@ -107,7 +107,7 @@ class Crawler:
             self.out.write('VISIT ORDER:')
             self.out.write('\n')
             for l in self.order:
-                self.out.write(l)
+                self.out.write(l['link'])
                 self.out.write('\n')
             self.out.write('\n-----------------------------------------------------------------------------\n\n')
 
@@ -134,7 +134,7 @@ class Crawler:
             if not self.order:
                 self.print_error('NOT ENOUGH LINK: ', self.url)
                 break
-            visiting_now = self.order.pop(0)
+            visiting_now = self.order.pop(0)['link']
             if (visiting_now in self.visited) or (self.is_not_allowed(visiting_now)):
                 visit_quantity -= 1
                 continue
