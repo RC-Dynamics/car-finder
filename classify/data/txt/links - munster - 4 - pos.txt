@@ -1,0 +1,276 @@
+2000 Jeep Grand Cherokee 4WD Laredo for sale in Blue Springs MO from Munsterman Automotive Group
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle/used-2000-jeep-grand-cherokee-4wd-laredo-2995595",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/2995595_x640_01.jpg",
+"name": "2000 Jeep Grand Cherokee 4WD Laredo",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": "2000",
+"manufacturer": "Jeep",
+"model": "Grand Cherokee 4WD Laredo",
+"offers": {
+"@type": "Offer",
+"price": "3250",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"address": "609 SW State Route 7"
+}
+}
+}
+$(function() {
+$("img.ar_mainimage").lazyload({
+threshold : 500,
+effect : "fadeIn",
+});
+});
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+Map
+Contact
+Finance Application
+2000 Jeep Grand Cherokee 4WD Laredo for sale in Blue Springs MO from Munsterman Automotive Group
+Stock : 375441
+VIN : 1J4GW48N5YC375441
+Sale Price :
+$3,250
+Exterior : GOLD
+Mileage : 198,895
+MPG : 15 City / 19 HWY
+Transmission : Automatic
+Drive Type : 4WD
+Engine : V8, 4.7 Liter
+We Finance!
+Shop with Confidence
+Vehicle Description
+Heated leather seats! This is a solid Jeep that will run for years! Jeeps do not last long around here so call or come by today!Check out our website for additional information www.munstermanauto.com or give us a call to schedule a test drive today 816-598-1286#wesayyeskc We really do! 100% Guaranteed Credit Approval! Schedule a test drive today, 816-598-1286! You can find more information on this vehicle or check out the rest of what we have in stock on our web site www.munstermanauto.com. Please call us anytime Monday through Saturday 9am-6pm at 816-598-1286. You can also send any questions to dalton@munstermanauto.com anytime! We are closed for business on Sundays (Family Day). Although we try to remove SOLD units as quickly as possible, due to our high inventory turnover, it is possible that some may remain online so please call in advance to make sure that the vehicle you are looking for is still in stock. Come and see us! We are located right on Highway 7, next to the Highway 7/Highway 40 intersection. We are next to the brand new QuickTrip.Thank you for spending time with us, have a great day!Hablamos Español!
+Shop with Confidence
+Vehicle Description
+Heated leather seats! This is a solid Jeep that will run for years! Jeeps do not last long around here so call or come by today!Check out our website for additional information www.munstermanauto.com or give us a call to schedule a test drive today 816-598-1286#wesayyeskc We really do! 100% Guaranteed Credit Approval! Schedule a test drive today, 816-598-1286! You can find more information on this vehicle or check out the rest of what we have in stock on our web site www.munstermanauto.com. Please call us anytime Monday through Saturday 9am-6pm at 816-598-1286. You can also send any questions to dalton@munstermanauto.com anytime! We are closed for business on Sundays (Family Day). Although we try to remove SOLD units as quickly as possible, due to our high inventory turnover, it is possible that some may remain online so please call in advance to make sure that the vehicle you are looking for is still in stock. Come and see us! We are located right on Highway 7, next to the Highway 7/Highway 40 intersection. We are next to the brand new QuickTrip.Thank you for spending time with us, have a great day!Hablamos Español!
+Features Overview
+•
+136-amp alternator
+•
+16’ x 7’ Sport cast aluminum wheels w/silver accents
+•
+20.5 gallon fuel tank
+•
+3.73 axle ratio
+•
+4-speed electronically-controlled automatic transmission w/OD
+•
+4-wheel anti-lock brakes w/electronic brake distribution
+•
+4-wheel drive
+•
+4.0L
+SMFI I6 ’Power Tech’ engine
+•
+4WD
+•
+5350# GVWR
+•
+60/40 split folding rear seat
+•
+625-CCA maintenance-free battery
+•
+ABS
+•
+Air Conditioning
+•
+Air conditioning
+•
+Alloy Wheels
+•
+AM/FM Stereo
+•
+Automatic
+•
+Auxiliary 12-volt pwr outlet
+•
+Battery saver feature
+•
+Bright grille
+•
+Cargo area tie down loops
+•
+Cassette
+•
+CD/MP3
+•
+Child-protection rear door locks
+•
+Cigar lighter
+•
+City 15/hwy 19
+•
+City 16/hwy 21
+•
+Cloth low-back front bucket seats
+•
+Color-keyed lower body-side cladding
+•
+Color-keyed sunvisor extensions
+•
+Compact spare tire mounted inside under cargo floor
+•
+Cruise Control
+•
+Driver & front passenger next generation airbags
+•
+Driver footrest
+•
+Dual Air Bags
+•
+Dual Power Seats
+•
+Dual visor vanity mirrors
+•
+Electronic AM/FM stereo radio w/cassette-inc:
+speakers
+•
+Fixed intermittant rear window wiper/washer
+•
+Flip-up liftgate glass
+•
+Fold away pwr mirrors
+•
+Front/rear outboard height-adjustable shoulder belts
+•
+Front/rear stabilizer bars
+•
+Full floor carpeting-inc: cargo compartment
+•
+Full-length floor console
+•
+Halogen headlamps
+•
+Headlamps-on warning chime
+•
+Illuminated entry
+•
+Instrument cluster-inc: tachometer
+•
+Lamps-inc: ash tray; cargo compartment; glove box; underhood; front/rear courtesy/reading
+•
+Leather
+•
+Low pressure gas charged shock absorbers
+•
+Mini overhead console
+•
+P225/75R16 all-season SBR BSW tires
+•
+Passenger assist handles
+•
+Power Door Locks
+•
+Power Steering
+•
+Power Windows
+•
+Privacy Glass
+•
+Pwr anti-lock 4-wheel disc brakes
+•
+Pwr door locks
+•
+Pwr recirculating ball steering
+•
+Pwr windows w/driver 1-touch feature
+•
+Quadra-Coil suspension
+•
+Rear deep tinted sunscreen glass
+•
+Rear window defroster
+•
+Roof Rack
+•
+Roof rack
+•
+Selec-Trac full-time 4WD system
+•
+Sentry Key theft deterrent system
+•
+Speed control w/steering wheel controls
+•
+Stainless steel exhaust system
+•
+Sun Roof
+•
+Tilt steering column
+•
+Tilt Wheel
+•
+Traveler/mini trip computer
+•
+V8; 4.7 Liter
+•
+Variable intermittent windshield wipers
+•
+Vehicle information center
+Contact Information
+Please Contact Michael Munsterman
+Munsterman Automotive Group
+Web
+: munstermanauto.com Email : mjmunsterman@yahoo.com
+(816) 598-1286609 SW State Route 7Blue Springs, MO 64014
+RE : 2000 Jeep Grand Cherokee 4WD Laredo
+function isNumber(n) {
+return !isNaN(parseFloat(n)) && isFinite(n);
+}
+function formcheck() {
+var FormOK=true
+if (document.getElementById('firstname').value=="") { document.getElementById('firstname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('lastname').value=="") { document.getElementById('lastname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('email').value=="") { document.getElementById('email').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('phone1').value=="") { document.getElementById('phone1').className='arform_textfield_required';FormOK=false; }
+var tldregex=/^(com|net|org|edu|int|mil|gov|arpa|biz|cc|aero|name|coop|info|pro|museum)$/;
+var domainregex=/^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
+var theemail=document.uberform.email.value;
+var domainarray=theemail.split(".");
+var thetld=domainarray[domainarray.length-1];
+thetld=thetld.toLowerCase();
+if (theemail.length>=1) {
+if ( thetld.length!=2 && thetld.search(tldregex)==-1 || domainregex.test(theemail)==false ) {
+document.uberform.email.className='arform_textfield_required';
+// document.uberform.email.focus(); // conflicts with className change - removed
+alert('Email address does not seem to be valid.');
+FormOK=false;
+}
+}
+if (FormOK==false) {
+document.uberform.sendform.value='Submit';
+alert('Please check the highlighted fields...\n\nAdditional information is required.');
+}
+return FormOK;
+}
+Questions? - Contact Us!
+My Information
+*First Name, Middle Initial
+*Last Name
+*Email Address
+*Day Phone Number
+Evening Phone Number
+Have a TradeYES
+NO
+Financing RequestedYES
+NO
+Comments / Questions
+document.getElementById('lockbox').value='0.240818312643';
+document.getElementById('keycode').value='14071710022018F20803CF6F50F82795671442978730F1';
+Prices subject to change without notice and do not include Title, License, Registration Fees, State or Local Taxes or Processing Fees, if any. Please contact seller first for vehicle availability. Although every effort is made to present accurate and reliable information, use of this information is voluntary, and should only be deemed reliable after an independent review of its accuracy, completeness, and timeliness. It is the sole responsibility of the customer to verify the existence of options, accessories and the vehicle condition before time of sale. Any and all differences must be addressed prior to time of sale. No expressed or implied warranties, including the availability or condition of the equipment listed is made. EPA mileage estimates for comparison purposes only. Actual mileage may vary depending on driving conditions, driving habits, and vehicle maintenance.© 1999-2018 AutoRevolution.com
+136 page views
+[Close Window]
+window.CarStoryConfig = {
+referrer: "PLACE_REFERRER_HERE"
+};
+$(document).ready(function(){
+$("tr.include-carstory").insertAfter("tr.ar_vehinfo");
+});
+sitemap
+an auto dealer website

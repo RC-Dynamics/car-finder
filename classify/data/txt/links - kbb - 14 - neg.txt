@@ -1,0 +1,791 @@
+window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e150c23afa","applicationID":"124397746,97445382","transactionName":"ZFFVNUoAWUVXUUBRXF0bejd7TmNZRmZRVnBcWkMTVw1bU0QdYFdDZ1FZMlQR","queueTime":0,"applicationTime":1604,"agent":"","atts":""}window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);
+KBB.com Awards and 10 Best Lists | Kelley Blue Book
+window.moatYieldReady = function () {
+if (KBB.Moat) {
+KBB.Moat.setMoatReady(true);
+KBB.Moat.executeMoatQueue();
+}
+};
+var KBB = KBB || {};
+KBB.GigyaUrls = {
+finalizeRegistration: '',
+SavedVehicles: '/global/getmykbbsavedvehicledata/',
+RecentlyViewed: '/global/recentlyviewed/',
+YouMightAlsoLike: '/global/youmightalsolike/',
+MostResearched: '/global/mostresearched/',
+SavedComparison: '/global/getmykbbsavedcomparisondata/',
+SavedLeads: '/global/getsavedleads/',
+SetRecentlyViewed: '/global/_setrecentlyviewed/',
+GetRecentlyViewedVehicleData: '/global/_getrecentlyviewedvehicledata/',
+GetAccountInfo: 'global/getaccountinfo'
+};
+KBB.MyKbb = KBB.MyKbb || {};
+KBB.MyKbb.Urls = {
+verifyListingUrl: '/cosmic/_getsaveditemsdata/?category=all-the-latest&amp;storyname=awards-best-cars-and-top-10-lists&amp;contentid=2000006743'
+}
+var pageId = "";
+var s_account = "kbbmain";
+var globalOrd = (Math.random() * 10000000000000000).toFixed(0);
+var baseScriptPath = "//s1.kbb.com";
+var assemblyVersion = "3.9.202.0";
+var dataVersionId = "66758";
+var testid = ""; //test creative ids
+var isMyKBBUser = false;
+var ssId = ""; // populated by setupSessionData in KBB.Page.js
+var globalTile = 0;
+var adTiles = {};
+var validateZipUrl
+= "/zipcode/validate/";
+var validateGetZipInfoUrl
+= "/zipcode/getzipinfo/";
+var validateGetZipInfoByLLUrl
+= "/zipcode/getzipinfobylatlong/";
+var getKbbInternationalSitesMessageUrl = "/zipcode/getkbbinternationalsitesmessage/";
+var getAkamaiCountryCodeUrl = "/zipcode/getakamaicountrycode/";
+var errorJsLogging = true;
+var KBB = KBB || {};
+KBB.DataLayer = KBB.DataLayer || [];
+try {
+if (KBB.DataLayer.length >= 5) {
+KBB.DataLayer.splice (0, 1);
+}
+var data = "%7b%22server%22%3a%22WIN-PYAWBOILUMC%22%2c%22environment%22%3a%22prod%22%2c%22area%22%3a%22editorial%22%2c%22controller%22%3a%22topten%22%2c%22action%22%3a%22toptenslp%22%2c%22currentview%22%3a%22%22%2c%22viewtype%22%3a%22%22%2c%22pageinstance%22%3a%22%22%2c%22trackingid%22%3a%22%22%2c%22dynamictracking%22%3atrue%2c%22isprintablepage%22%3afalse%2c%22sessionid%22%3a%22%22%2c%22kbbvisitorid%22%3a%22%22%2c%22flippers%22%3a%7b%22feedbacktab%22%3afalse%2c%22disable_write_review%22%3afalse%2c%22gigyasharing%22%3atrue%2c%22jserrorlogging%22%3atrue%2c%22classifiedsdisablewidgetcounts%22%3afalse%2c%22logzipcodeerrors%22%3atrue%2c%22disableloanrateswebservice%22%3afalse%2c%22clicktalenewcarpath%22%3afalse%2c%22testandtarget%22%3atrue%2c%22newcarstrendingnow%22%3atrue%2c%22mobileonthelot%22%3afalse%2c%22customersatisfactionsurvey%22%3atrue%2c%22appdynamicseum%22%3afalse%2c%22values_strategy%22%3atrue%2c%22hpcombinedslptest%22%3afalse%2c%22testakamairesize%22%3afalse%2c%22gpt%22%3atrue%2c%22ownerslpabthree%22%3atrue%2c%22hprefresh%22%3atrue%2c%22mobilepriceadvisor%22%3afalse%2c%22psclientrecentlyviewed%22%3afalse%2c%22gptphase1test%22%3afalse%2c%22highlightadboostfdpq%22%3afalse%2c%22incentivesoempilot%22%3afalse%2c%22classifiedscpointernalad%22%3atrue%2c%22classifiedslimitedlistingsasync%22%3atrue%2c%22highlightunsolddisabled%22%3afalse%2c%22mobiledealerpages%22%3afalse%2c%22mobilenewcarpriceadvisor%22%3afalse%2c%22tntstandard%22%3atrue%2c%22partnerchallenge%22%3atrue%2c%22incentivesonglobalmobile%22%3afalse%2c%22feature%20name%22%3atrue%2c%22globalmobilenav%22%3atrue%2c%22autocheckucvdp%22%3atrue%2c%22showautocheckmoduletile%22%3atrue%2c%22gptnonsraoverride%22%3atrue%2c%22wallpaperfirst%22%3afalse%2c%22showautocheckmoduletilenoupgrades%22%3atrue%2c%22gptcombinedslp%22%3afalse%2c%22sponsoredmodelpage%22%3atrue%2c%22m1tabletclassifieds%22%3afalse%2c%22issearchenginetypesolr%22%3atrue%2c%22similarvehiclesbuynewymmt%22%3afalse%2c%22similarvehiclesymm%22%3atrue%2c%22oemincentivesusebypassdata%22%3afalse%2c%22m1targetedoffers%22%3atrue%2c%22isadblock%22%3atrue%2c%22m1charger%22%3afalse%2c%22rendervdponnewframework%22%3afalse%2c%22chargerdealadvisor%22%3afalse%2c%22disablemegaconstraintlogging%22%3atrue%2c%22homepagevideomodule%22%3afalse%2c%22geolookuplogging%22%3afalse%2c%22geolookupgoogleapi%22%3afalse%2c%22classifiedsgptinlineads%22%3atrue%2c%22m1chargeruc%22%3afalse%2c%22facebookpixel%22%3atrue%2c%22mpgtabadloadasdynamic%22%3atrue%2c%22adobedtm%22%3atrue%2c%22whitelistoverlay%22%3atrue%2c%22loggooglesearchapicalls%22%3afalse%2c%22enableusedcarhighlight%22%3atrue%2c%22enablesponsoredchip%22%3afalse%2c%22m1combineslp%22%3afalse%2c%22m1lockedads%22%3afalse%2c%22whitelistdev%22%3afalse%2c%22facebookfeeddisabled%22%3afalse%2c%22mobilerecommendations%22%3afalse%2c%22publisherstudypixel%22%3atrue%2c%22xtag%22%3afalse%2c%22includepixallscript%22%3atrue%2c%22kbbrum%22%3atrue%2c%22hyundaifloodlightoff%22%3afalse%2c%22vehicleadvisor%22%3afalse%2c%22targetedincentivesnewdesign%22%3afalse%2c%22newsepsrp%22%3afalse%2c%22applewallet%22%3afalse%2c%22enableoptimizedshowroom%22%3atrue%2c%22hpredesign%22%3atrue%2c%22demdex%22%3atrue%2c%22toyotacentralredesign%22%3atrue%2c%22bycwebapi%22%3atrue%2c%22m1desktoptopten%22%3afalse%2c%22m1tablettopten%22%3afalse%2c%22m1smartphonetopten%22%3afalse%2c%22vehicleadvisormm%22%3afalse%2c%22shellapptrafficredirect%22%3afalse%2c%22displaydealerspecials%22%3atrue%2c%22vdpratingsandreviews%22%3afalse%2c%22newmmymm%22%3atrue%2c%22maintenancemode%22%3afalse%2c%22drpaymentcalc3%22%3afalse%2c%22newsave%22%3afalse%2c%22displayownerhub%22%3atrue%2c%22aemnavfooter%22%3atrue%2c%22ucmcupdates%22%3afalse%2c%22kbbinternationalsitesmessage%22%3atrue%2c%22usedcarredesigndealadvisor%22%3afalse%2c%22awstestinprogress%22%3atrue%2c%22faqresponsive%22%3atrue%2c%22latestnewsamp%22%3atrue%2c%22classifiedsboost%22%3atrue%2c%22displayownerexitstitial%22%3atrue%2c%22icoreactthrottle%22%3atrue%2c%22icoreactredirect%22%3atrue%2c%22ownersico%22%3atrue%2c%22abtestpoc%22%3afalse%2c%22displayexitstitial%22%3atrue%2c%22enablenrum%22%3atrue%2c%22icoconditionredesign%22%3afalse%2c%22ymmredo%22%3atrue%2c%22aatest%22%3atrue%2c%22owners18%22%3atrue%2c%22responsivebuyerspath%22%3afalse%2c%22enabledr%22%3atrue%2c%22showtabprices%22%3afalse%2c%22resncymmt%22%3atrue%2c%22ucymmtupdates%22%3afalse%2c%22toyotacentraloff%22%3atrue%2c%22ownersicologvalidationerrors%22%3afalse%2c%22showtil%22%3atrue%2c%22logstylesoverride%22%3afalse%2c%22logdiffstylesoverride%22%3afalse%2c%22contactskiplink%22%3afalse%2c%22enablebidding%22%3atrue%2c%22needsandwants%22%3atrue%2c%22fnav%22%3atrue%2c%22newmykbb%22%3atrue%2c%22enablerecall%22%3afalse%2c%22carreviewsresp%22%3atrue%2c%22carresearchresp%22%3atrue%2c%22tilpmodals%22%3atrue%2c%22feature.tilpmodals%22%3afalse%2c%22enableamzbid%22%3atrue%2c%22enableprebid%22%3afalse%2c%22enablemoat%22%3atrue%2c%22consrevresp%22%3atrue%2c%22bzo%22%3atrue%2c%22enablepsp%22%3atrue%7d%2c%22leadtype%22%3a%22%22%2c%22comparevehicleids%22%3a%22%22%2c%22sponsorship%22%3a%7b%22sponsoredcategorymanufacturerid%22%3a%22%22%2c%22sponsoredmanufacturerids%22%3a%22%22%7d%2c%22location%22%3a%7b%22zip%22%3a%22%22%2c%22city%22%3a%22%22%2c%22state%22%3a%22%22%2c%22county%22%3a%22%22%2c%22statecounty%22%3a%22%22%2c%22statesubcounty%22%3a%22%22%2c%22dma%22%3a%22%22%2c%22akamaizip%22%3a%22%22%2c%22akamaizipcodeall%22%3a%22%22%2c%22akamaistatecounty%22%3a%22%22%2c%22akamaistatesubcounty%22%3a%22%22%2c%22akamaidma%22%3a%22%22%7d%2c%22targetexperience%22%3a%22%22%2c%22device%22%3a%7b%22ismobiledevice%22%3afalse%2c%22issmartphone%22%3afalse%2c%22istablet%22%3afalse%7d%2c%22nativeapps%22%3a%7b%22experience%22%3a%22browser%22%2c%22os%22%3a%22windows%207%22%2c%22device%22%3a%22unk%22%2c%22version%22%3a%22%22%7d%2c%22info%22%3a%7b%22intent%22%3a%22%22%2c%22subintent%22%3a%22%22%2c%22pricingreporttype%22%3a%22%22%2c%22vehicleclass%22%3a%22%22%2c%22vehicletype%22%3a%22%22%2c%22pricetype%22%3a%22%22%2c%22shortpricetype%22%3a%22%22%2c%22condition%22%3a%22%22%2c%22shortcondition%22%3a%22%22%2c%22shortcategory%22%3a%22%22%2c%22subcategory%22%3a%22unk%22%2c%22subcategoryname%22%3a%22%22%2c%22category%22%3a%22%22%2c%22categoryid%22%3a%22%22%2c%22btcategory%22%3a%22%22%2c%22yearid%22%3a%22%22%2c%22modelyearid%22%3a%22%22%2c%22manufacturer%22%3a%7b%22id%22%3a%22%22%2c%22name%22%3a%22%22%2c%22shortname%22%3a%22%22%2c%22shortnameabbr%22%3a%22%22%2c%22pickode%22%3a%22%22%2c%22atcname%22%3a%22%22%7d%2c%22model%22%3a%7b%22id%22%3a%22%22%2c%22name%22%3a%22%22%2c%22shortname%22%3a%22%22%2c%22marketname%22%3a%22%22%2c%22shortmarketname%22%3a%22%22%2c%22atcname%22%3a%22%22%7d%2c%22vehicle%22%3a%7b%22id%22%3a%22%22%2c%22name%22%3a%22%22%2c%22trimdisplayname%22%3a%22%22%2c%22primarycategory%22%3a%22%22%2c%22taggingprice%22%3a%22%22%2c%22price%22%3a%22%22%2c%22defaultprice%22%3a%22%22%2c%22mpgcity%22%3a%22%22%2c%22mpghwy%22%3a%22%22%2c%22mpgrangelow%22%3a%22%22%2c%22mpgrangehigh%22%3a%22%22%2c%22chromeid%22%3a%22%22%7d%2c%22mileage%22%3a%22%22%2c%22mileagerange%22%3a%22%22%2c%22mileagerangelow%22%3a%22%22%2c%22mileagerangehigh%22%3a%22%22%2c%22odometer%22%3a%22%22%2c%22fueleconomy%22%3a%22%22%2c%22exteriorcolor%22%3a%22%22%7d%2c%22aem%22%3a%7b%22name%22%3a%22awards-best-cars-and-top-10-lists%22%2c%22keyvalues%22%3a%7b%7d%7d%2c%22classifiedsinfo%22%3a%7b%22listing%22%3anull%2c%22search%22%3anull%2c%22atcmakecode%22%3a%22%22%2c%22atcmodelcode%22%3a%22%22%2c%22tab%22%3a%22%22%2c%22listingtype%22%3a%22%22%2c%22dealernotfound%22%3afalse%2c%22dealerid%22%3a0%2c%22chromeid%22%3a%22%22%2c%22dealerwebsite%22%3a%22%22%2c%22minyear%22%3a1981%2c%22maxyear%22%3a2020%7d%2c%22omniture%22%3a%7b%22account%22%3a%22kbbmain%22%2c%22supersectionname%22%3a%22%22%2c%22sectionname%22%3a%22%22%2c%22pagename%22%3a%22%22%2c%22detailpagename%22%3a%22%22%2c%22previouspagename%22%3a%22%22%2c%22pageversion%22%3a%22r%22%2c%22pagecontentversion%22%3a%22toptenlists%22%2c%22sitecatalystid%22%3a%22%22%2c%22intent%22%3a%22none%22%2c%22subintent%22%3a%22none%22%2c%22testid%22%3a%22%22%2c%22visitorid%22%3a%22%22%7d%2c%22ads%22%3a%7b%22dyn%22%3a%22%22%2c%22environment%22%3a%22prod%22%2c%22cid%22%3a%222000006743%22%2c%22unknown%22%3a%22%22%2c%22pl%22%3a%22%22%2c%22uuid%22%3a%22%22%2c%22azne%22%3a%22%22%2c%22dma%22%3a%22%22%2c%22mke%22%3a%22%22%2c%22classifiedsinlineadnetworkid%22%3a%2218353239%22%2c%22classifiedsinlineadlocation%22%3a%22kbb%22%2c%22ncmpgtab%22%3afalse%2c%22ncoemtab%22%3afalse%2c%22sponsoredrcm%22%3afalse%2c%22ignorewhitelistoverlay%22%3afalse%7d%2c%22filters%22%3a%7b%22maxprice%22%3a%22%22%2c%22minprice%22%3a%22%22%7d%2c%22paidsearch%22%3a%7b%22paidsearchid%22%3a%22%22%2c%22searchignitetrackingid%22%3a%22%22%7d%2c%22search%22%3a%7b%22criteria%22%3a%22%22%2c%22criteriavalues%22%3a%22%22%2c%22resultsetinfo%22%3a%22%22%2c%22resulttotal%22%3a%22%22%2c%22resultdetailsearchtype%22%3a%22%22%2c%22resultsearchtype%22%3a%22%22%7d%2c%22incentives%22%3a%7b%22useajaxbeforeomniture%22%3afalse%2c%22usenewadaptivedesign%22%3afalse%2c%22incentiveid%22%3a%22%22%2c%22offerid%22%3a0%2c%22referringmakeid%22%3a0%2c%22referringmodelid%22%3a0%2c%22incentivepitriggeredscenario%22%3a%22%22%2c%22incentivepitriggereditem%22%3a%22%22%2c%22incentivepiintendertype%22%3a%22%22%2c%22vehiclesegmentid%22%3a0%2c%22akamaigeolocation%22%3a%22georegion%3d33%2ccountry_code%3dbr%2cregion_code%3dpe%2ccity%3drecife%2clat%3d-8.05%2clong%3d-34.90%2ctimezone%3dgmt-2%2ccontinent%3dsa%2cthroughput%3dvhigh%2cbw%3d5000%2casnum%3d1916%2clocation_id%3d0%22%7d%2c%22timbuybook%22%3a%7b%22lp%22%3a%22%22%2c%22offercode%22%3a%22%22%2c%22icoofferid%22%3a%22%22%7d%2c%22routes%22%3a%7b%22shopperprofiles%22%3a%22%2fvehicles%2fservices%2fshopperprofiles%2f%22%7d%2c%22url%22%3a%7b%22canonicalurl%22%3a%22%2fcar-news%2fall-the-latest%2fawards-best-cars-and-top-10-lists%2f2000006743%2f%22%2c%22requestedurl%22%3a%22http%3a%2f%2fwww.kbb.com%2fcar-news%2fall-the-latest%2fawards-best-cars-and-top-10-lists%2f2000006743%2f%22%2c%22queryrequestedurl%22%3a%22%22%2c%22isssl%22%3atrue%2c%22protocol%22%3a%22https%22%2c%22referrer%22%3a%22%22%2c%22absolutehost%22%3a%22www.kbb.com%22%7d%2c%22user%22%3a%7b%22isauthenticated%22%3afalse%7d%2c%22diagnostics%22%3a%7b%22server%22%3a%22WIN-PYAWBOILUMC%22%2c%22dataversionid%22%3a66758%2c%22contentlastupdateddate%22%3a%229%2f25%2f2018%208%3a00%3a42%20AM%22%2c%22sourcecontrolversion%22%3a%223.9.202.0%22%2c%22assemblyversion%22%3a%223.9.202.0%22%2c%22newcarvehicletransactionsetlcreateddate%22%3a%229%2f25%2f2018%205%3a09%3a48%20PM%22%2c%22newcarvehicletransactionslatesttransactiondate%22%3a%229%2f22%2f2018%2012%3a00%3a00%20AM%22%2c%22usedcarvesion%22%3a%7b%22vehicletype%22%3a%22UsedCar%22%2c%22editionbeginmonth%22%3a10%2c%22editionendmonth%22%3a10%2c%22editionyear%22%3a2018%2c%22versionnumber%22%3a%2218100%22%2c%22startdate%22%3a%222018-09-28T00%3a00%3a00%22%2c%22enddate%22%3a%222018-10-04T00%3a00%3a00%22%7d%2c%22newcarvesion%22%3a%7b%22vehicletype%22%3a%22New%20Car%22%2c%22editionbeginmonth%22%3a0%2c%22editionendmonth%22%3a0%2c%22editionyear%22%3a0%2c%22versionnumber%22%3a%22181000%22%2c%22startdate%22%3a%222018-09-28T00%3a00%3a00%22%2c%22enddate%22%3a%222018-10-04T00%3a00%3a00%22%7d%2c%22motorcyclecarvesion%22%3a%7b%22vehicletype%22%3a%22Motorcycle%22%2c%22editionbeginmonth%22%3a9%2c%22editionendmonth%22%3a12%2c%22editionyear%22%3a2018%2c%22versionnumber%22%3a%223%22%2c%22startdate%22%3a%222018-09-01T00%3a00%3a00%22%2c%22enddate%22%3a%222018-12-31T00%3a00%3a00%22%7d%7d%2c%22pageid%22%3a%22813df4a8-327f-46b3-9b0a-893b76d4b69b%22%2c%22latestawardsyears%22%3a%7b%22brva%22%3a2018%2c%22cto%22%3a2018%2c%22bia%22%3a2018%7d%2c%22foresee%22%3a%7b%22desktop%22%3a10.0%2c%22tablet%22%3a10.0%2c%22smartphone%22%3a10.0%7d%2c%22ismobilefriendlypage%22%3afalse%2c%22ignorefreeviewrule%22%3afalse%2c%22displayzipcodeoverlay%22%3afalse%2c%22usezipcodebyip%22%3afalse%2c%22surveycookie%22%3a%7b%22cookiename%22%3a%22GLGJSY%22%2c%22cookieexpiration%22%3a14%7d%2c%22requiresauthentication%22%3afalse%2c%22ismobilefirstlayout%22%3atrue%2c%22ansid%22%3a%22mvzvmryccibquqszebz44yyy%22%2c%22pixall%22%3a%7b%7d%2c%22awardscategory%22%3a%22%22%2c%22awardsyear%22%3a0%7d"
+KBB.DataLayer.push (JSON.parse(decodeURIComponent(data)));
+} catch (err) {
+}
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+// initialize apstag
+apstag.init({
+pubID: '3726',
+adServer: 'googletag',
+bidTimeout: 2e3
+});
+{"@type":"Article","headline":"KBB.com Awards and 10 Best Lists","description":"Your Shortcut to the Right Vehicle It seems every new vehicle we drive is both more powerful and more fuel-efficient than its predecessor. More comfortable and more fun. More refined, but similarly priced. Choosing a good car is easier than ever,","datePublished":"July 20, 2018 11:19 AM","dateModified":"September 11, 2018 4:03 PM","author":{"@type":"Person","name":"KBB.com Editors"},"image":[{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/alfa-romeo/stelvio/2018/2017-alfa-romeo-stelvio-612.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/ford/mustang/2018/2018-ford-mustang-ecoboost-kbb/01-2018-Ford-Mustang-EcoBoost-Exterior-KBB.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/dodge/journey/2017/2017-dodge-journey-4x3.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/honda/fit/2018/oem/20-2018-honda-fit-oem.jpg.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/audi/q5/2018/2018-audi-q5-kbb/03-2018-Audi-Q5-Exterior-KBB.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/honda/pilot/2017/2017-honda-pilot-elite-kbb/04-2017-Honda-Pilot-Exterior-KBB.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/toyota/rav4/2017/compact-suv-comparo/03-2017-toyota-rav4-comparo.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/alfa-romeo/stelvio/2018/stelvio-q4---kbb/07-2018-alfa-romeo-stelvio-q4-exterior-kbb.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/chevrolet/equinox/2018/640x480-2018-chevrolet-equinox-mpg.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/mazda/mazda3/2017/21-2017-mazda-mazda3.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/audi/a5/2018/2018-audi-a5-sportback-kbb/01-2018-Audi-A5-Sportback-Exterior-KBB.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/subaru/outback/2018/outback-fc/01-2018-subaru-outback-FC.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/chevrolet/spark/2016/2016-chevrolet-spark.jpeg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/infiniti/q50/2018/10-best-lux-2018-infiniti-q50.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/honda/cr-v/2017/01-2017-honda-cr-v.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/honda/accord/2018/2018-accord-bb-category-win/01-2018-Honda-Accord-Exterior-BB-KBB.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/subaru/forester/2017/01-2017-subaru-forester.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/awards/2018/2018-honda-odyssey-bb/01-2018-Honda-Odyssey-Elite-Exterior-BB-KBB.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/jeep/wrangler/2017/01-2017-jeep-wrangler-unlimited-rubicon.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/jeep/renegade/2017/01-2017-jeep-renegade-orange.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/hyundai/ioniq/2017/ioniq-hybrid/01-2017-hyundai-ioniq-hybrid.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/chevrolet/bolt/2017/first-drive/06-2017-chevrolet-bolt-ev.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/toyota/prius-prime/2017/2017-bb-toyota-prius-prime/01-2017-toyota-prius-prime-best-buy.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/chevrolet/impala/2016/2016-chevrolet-impala-skyline.jpeg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/land-rover/range-rover/2017/svautobiography/02-2017-range-rover-svautobiography-dynamic.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/other-images/apple-car-play/apple-carplay-320.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/ford/focus/2017/2017-ford-focus-deals.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-suvs-under-$20,000-(2018)/640-480-2013-honda-pilot.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-trucks-under-$10,000/2009-toyota-tundra.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/2017/10-best-cpo-lux-under-$30,000/480x360-2015-bmw-3-series-cpo.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/make/honda/accord/2016/640x480-2016-honda-accord-mvm.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-trucks-under-$20,000/03_10_Tundra_Double_Cab-prv.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-sports-cars-under-$30,000/1200x900-2012-chevrolet-corvette.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-cars-under-$5,000/01-2003-toyota-avalon.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-suvs-under-10000-2016/480x360-2007-toyota-rav4.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-cars-under-$8,000-2016/480x360-2007-honda-accord.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-family-cars-under-$15,000-(2017)/2011-honda-pilot.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-cars-under-$15,000/2014-toyota-camry-frontside_tocam141.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"},{"@type":"ImageObject","url":"https://cmsimages-alt.kbb.com/content/dam/kbb-editorial/10-best-lists/best-used-suvs-under-10000-2016/2006-toyota-highlander-frontside_tthig061.jpg/_jcr_content/renditions/cq5dam.web.180.135.jpeg","height":"300","width":"400"}],"video":[],"publisher":{"@type":"Organization","name":"Kelley Blue Book","logo":{"@type":"ImageObject","url":"https://file.kbb.com/kbb/images/m1/kbblogo.v1.png"}},"@context":"http://schema.org","mainEntityOfPage":"https://www.kbb.com/car-news/all-the-latest/awards-best-cars-and-top-10-lists/2000006743/"};
+KBB.Page.setupPage();
+//FacebookPixel
+var dataLayer=KBB.Page.getDataLayer();if(dataLayer.dynamictracking||dataLayer.flippers.facebookpixel){!function(e,a,t,n,o,r,i){e.fbq||(o=e.fbq=function(){o.callMethod?o.callMethod.apply(o,arguments):o.queue.push(arguments)},e._fbq||(e._fbq=o),o.push=o,o.loaded=!0,o.version="2.0",o.queue=[],r=a.createElement(t),r.async=!0,r.src=n,i=a.getElementsByTagName(t)[0],i.parentNode.insertBefore(r,i))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js"),fbq("init","1511218289206949"),fbq("track","PageView");var pageName=dataLayer.omniture.pagename;"classdetailused"===pageName||"classdetailnew"===pageName?fbq("track","AddToCart",{content_type:"product",content_ids:dataLayer.info.vehicle.id,value:dataLayer.classifiedsinfo.listing.displayprice,content_name:dataLayer.info.yearid+"/"+dataLayer.info.manufacturer.shortname+"/"+dataLayer.info.model.shortname,currency:s.currencyCode,zip:dataLayer.location.zip,content_category:dataLayer.info.shortcategory}):("ymmtrimnewovr_buynew"===pageName||"ncmodelmain-touch"===pageName)&&fbq("track","ViewContent",{content_ids:dataLayer.info.vehicle.id,make:dataLayer.info.manufacturer.shortname,model:dataLayer.info.model.shortname,content_category:dataLayer.info.shortcategory,condition:"new",content_type:"product"})}
+!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js"); pintrk('load','2617178677535'); pintrk('page');
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://www.kbb.com/",
+"legalName": "Kelley Blue Book",
+"alternateName":
+"KBB",
+"logo": "https://file.kbb.com/kbb/images/m1/kbblogo.v1.png",
+"sameAs": [
+"https://www.facebook.com/kbb/","https://twitter.com/KelleyBlueBook", "https://plus.google.com/+kbb", "https://www.pinterest.com/kelleybluebook/", "https://www.linkedin.com/company/kelley-blue-book", "https://www.youtube.com/user/kbb", "https://www.instagram.com/kbb_com/"
+]
+}
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"name": "Kelley Blue Book",
+"alternateName":
+"KBB",
+"url": "https://www.kbb.com/"
+}
+var KBB=KBB||{};KBB.DetectBlockerExtensions=function(){"use strict";var e={onBlock:"on-block",onHide:"on-hide",off:"off"},t="New-spotlights",n=null,o={},i=e.off,l=null,u=0,d=0,r=3,c=10,a=function(e,t){return void 0!==e.currentStyle?e.currentStyle[t]:getComputedStyle(e,null)[t]},s=function(e){return 0!==e.clientHeight},m=function(e){var t=getComputedStyle(e,null);return null!==t&&(t=t.getPropertyValue("-moz-binding")),!!t&&-1!==t.indexOf("about:")},g=function(){document.body.contains(n)&&(o.visibility=n?a(n,"visibility"):null,o.display=n?a(n,"display"):null,o.height=n?s(n):null,o.moz=n?m(n):null)},f=function(){i="hidden"===o.visibility||"none"===o.display?e.onHide:n.getAttribute("abp")?e.onHide:o.height?e.off:e.onHide},B=function(){KBB.Page.trigger(KBB.Page.Events.AbbComplete),document.body.classList.add(i);var e=document.getElementById("ac");e.parentNode.removeChild(e);var t=document.getElementById("ab");t.parentNode.removeChild(t)},y=function(){n=document.getElementById(t),u+=1,g(),f(),u<c?setTimeout(y,100):(d+=1,i===e.onBlock||i===e.onHide?B():d<r?(u=0,setTimeout(y,100)):B())},b=function(){var e=document.createElement("div");e.innerHTML="?",e.setAttribute("id",t),e.className="ad-med-rec gpt-ad",document.getElementById("ac").appendChild(e)};return{elementStatus:o,startDetection:function(){b(),l=KBB.storage.getFromLocalStorage("eVar61"),y()},getCurrentStatus:function(){return i}}}();
+s.eVar76 = KBB.Page.getDataLayer().location.akamaizip; s.eVar84 = KBB.Page.getDataLayer().location.akamaizipcodeall;
+mboxCreate("kbb_global_top", "pagename=" + KBB.DataLayer[0].omniture.pagename);
+KBB.Ads.showAd('kbbAdsMainWallpaper');
+Home
+Car Values
+New & Used Car Prices
+Trade-in & Private Party Values
+Instant Cash Offer
+Cars for Sale
+Search Local Inventory
+Sell Your Car
+Free Dealer Price Quote
+Vehicle History Report
+Find Local Dealers
+Car Reviews
+KBB Expert Reviews
+New Car Buyer's Guide
+Consumer Reviews
+Safety & Quality Ratings
+Awards & Top 10s
+Top 10 Lists
+KBB Awards
+New Car Buyer's Guide
+Latest Car News
+Auto Show News
+Research Tools
+Compare Cars
+Payment Calculator
+Vehicle History Report
+5-Year Cost to Own
+Vehicle Search Tool
+Car Loans
+Insurance
+Check My Credit
+Extended Warranty
+MyKBB
+Welcome
+My Account
+Sign Out
+Vehicle I Own (0)
+Saved Vehicles (0)
+ZIP Code:
+| Change
+MyKBB
+Sign In
+Don't Have an Account?
+Use MyKBB to save vehicles, track listings, compare cars and access your content from any device.
+Create Account
+Saved Vehicles (0)
+ZIP Code:
+| Change
+Sign Up for MyKBB
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three"></h3>
+<div class="paragraph-two">
+Must be a minimum of six characters. Passwords are case sensitive.
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+I acknowledge that I have read and accept the Terms of Service.
+I'd like to receive useful tips, tools and resources via email from Kelley Blue Book and affiliates.
+Privacy Policy
+I already have an account
+You've created your personalized KBB Profile!
+Now you can start saving your car research and get customized car recommendations.
+Click on a link below to start.
+My Recently Viewed Cars
+My Profile
+Enter Your ZIP Code
+Please enter a valid 5-digit ZIP code.
+Location:
+Save
+Kelley Blue Book® Values and pricing are based in part on transactions in your area. Your ZIP code also helps us find local deals and highlight other available offers.
+Privacy Policy
+|
+Values outside the United States
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">Enter Your ZIP Code</h3>
+<div class="paragraph-two">
+<div>
+<div id="zipcodeError" class="hidden error-message-label vertical-spacing-margin-top">Please enter a valid 5-digit ZIP code.</div>
+<div id="zipcodeForm" class="zipcode-form vertical-spacing-margin-top paragraph-two">
+<label for="zipcode" class="zipcode-form-pad-right">ZIP Code:</label>
+<input id="zipcodeInput" class="textbox-one zipcode-form-pad-right" type="tel" maxlength="5" pattern="\d*" title="ZIP Code" />
+<button id="zipcodeSave" class="button-one zipcode-form-pad-right">Save</button>
+</div>
+<div class="vertical-spacing-margin-top paragraph-two">
+<p>Kelley Blue Book® Values and pricing are based in part on transactions in your area. Your ZIP code also helps us find local deals and highlight other available offers.</p>
+</div>
+<div id="zipcodePrivacyPolicy" class="vertical-spacing-margin-top paragraph-two">
+<a class="privacy-policy" href="/company/privacy-policy/" target="_blank" rel="nofollow">Privacy Policy</a>
+</div>
+<div id="valuesOutsideUSA" class="vertical-spacing-margin-top paragraph-two">
+<a href="/company/valuesoutsideus/" rel="nofollow" onclick="window.open(this.href,'','height=480,width=450,top=50,left=50,scrollbars=1,toolbar=no');return false;">
+Values outside the United States
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+﻿
+﻿
+Saved Vehicles
+Recently Viewed
+You've added your first car!As you save even more cars and classified listings, find them here for easy reference.
+Got It
+Vehicle Added
+Vehicle Removed
+Limit Reached
+(function() { 'use strict'; KBB.Page.addAnalyticsClickOnlyTags([{type: 'click', selector: '#navToHome', partner: 'nx', tag: function() {return 'home_global'}},{type: 'click', selector: '#navToCarValues', partner: 'nx', tag: function() {return 'carvalues_global-values'}},{type: 'click', selector: '#navToCarValuesnavToNewUsedCarPrices', partner: 'nx', tag: function() {return 'buy_global-values'}},{type: 'click', selector: '#navToCarValuesnavToTradeinPrivatePartyValues', partner: 'nx', tag: function() {return 'mycarworth_global-values'}},{type: 'click', selector: '#navToCarValuesnavToInstantCashOffer', partner: 'buybook', tag: function() {return 'ico_global-values'}},{type: 'click', selector: '#navToCarsForSale', partner: 'nx', tag: function() {return 'inv_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToSearchLocalInventory', partner: 'nx', tag: function() {return 'invsearch_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToSellYourCar', partner: 'nx', tag: function() {return 'selltool_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToFreeDealerPriceQuote', partner: 'nx', tag: function() {return 'fdpq_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToVehicleHistoryReport', partner: 'nx', tag: function() {return 'vehhist_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToFindLocalDealers', partner: 'nx', tag: function() {return 'finddlr_global-class'}},{type: 'click', selector: '#navToCarReviews', partner: 'nx', tag: function() {return 'revrat_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToKBBExpertReviews', partner: 'nx', tag: function() {return 'exprev_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToNewCarBuyersGuide', partner: 'nx', tag: function() {return 'buyguide_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToConsumerReviews', partner: 'nx', tag: function() {return 'consrev_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToSafetyQualityRatings', partner: 'nx', tag: function() {return 'rat_global-exprev'}},{type: 'click', selector: '#navToAwardsTops', partner: 'nx', tag: function() {return 'latestnews1_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToTopLists', partner: 'nx', tag: function() {return 'newsarticle2_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToKBBAwards', partner: 'nx', tag: function() {return 'award3_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToNewCarBuyersGuide', partner: 'nx', tag: function() {return 'buyguide4_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToLatestCarNews', partner: 'nx', tag: function() {return 'news5_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToAutoShowNews', partner: 'nx', tag: function() {return 'ashow6_global-edtr'}},{type: 'click', selector: '#navToResearchTools', partner: 'nx', tag: function() {return 'rschtools_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCompareCars', partner: 'nx', tag: function() {return 'comp_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToPaymentCalculator', partner: 'nx', tag: function() {return 'afford_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToVehicleHistoryReport', partner: 'nx', tag: function() {return 'vehhist_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToYearCosttoOwn', partner: 'nx', tag: function() {return 'costown_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToVehicleSearchTool', partner: 'nx', tag: function() {return 'vehsrch_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCarLoans', partner: 'nx', tag: function() {return 'loan_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToInsurance', partner: 'nx', tag: function() {return 'insure_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCheckMyCredit', partner: 'nx', tag: function() {return 'credit_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToExtendedWarranty', partner: 'warrantydirect', tag: function() {return 'warranty_global-rsch'}},{type: 'click', selector: '.logo-home-link', tag: function () {return 'kbblogo_global';}}])})();
+if (KBB.NewRelic) { KBB.NewRelic.mark('navigationBar'); }
+Home>Car News>KBB.com Awards and 10 Best Lists
+KBB.Ads.showAd('kbbAdsMainCenterAd');
+Advertisement
+KBB.com Awards and 10 Best Lists
+by KBB.com Editors | July 20, 2018 11:19 AM
+Your Shortcut to the Right Vehicle
+It seems every new vehicle we drive is both more powerful and more fuel-efficient than its predecessor. More comfortable and more fun. More refined, but similarly priced. Choosing a good car is easier than ever, but choosing the best car keeps getting trickier. That's why several times a year we round up category standouts and staff favorites and bring them together in lists that help make car shopping easier.
+Popular Now: The All-New Cars for 2018
+KBB.Ads.buildAndShowAd({
+elementId: 'kbbAdsMmaBanner2'
+});
+See the new and redesigned cars, trucks and SUVs of 2018. (Or look further ahead to see what's coming for 2019.)
+10 Coolest Cars Under $25,000
+10 Most Affordable 3-Row Vehicles
+10 Best Back-to-School Cars 2018
+Our 10 Most Awarded Cars of 2018
+Our 10 Most Awarded Brands of 2018
+10 Best-Selling Cars of 2018...so Far
+10 Most Fun SUVs
+10 Most Fuel-Efficient SUVs
+10 Coolest Cars Under $20,000
+Our 10 Favorite New-for-2018 Cars
+10 Best All-Wheel-Drive Vehicles Under $25,000
+10 Most Affordable New Cars
+10 Best Luxury Cars Under $35,000
+10 Best SUVs Under $25,000
+10 Best Sedans Under $25,000
+25 Best-Selling SUVs of 2017
+12 Best Family Cars of 2018
+25 Best-Selling Cars of 2017
+20 Vehicles With Surprising Birthplaces
+10 Best Hybrid Cars Under $40,000
+5 Best Electric Cars Under $40,000
+5 Best Plug-in Hybrid Cars Under $40,000
+10 Most Comfortable Cars Under $30,000
+10 Best Luxury SUVs
+11 Most Useful In-Car Technologies
+10 Best Car Deals of the Month
+KBB.Ads.buildAndShowAd({
+elementId: 'kbbAdsMmaBanner3'
+});
+Best Used Cars, Trucks and SUVs
+10 Best Used SUVs Under $20,000
+10 Best Used Trucks Under $10,000
+10 Best CPO Luxury Cars Under $30,000
+10 Best Used Cars Under $20,000
+10 Best Used Trucks Under $20,000
+10 Best Used Sports Cars Under $30,000
+10 Best Used Cars Under $5,000
+10 Best Used SUVs Under $10,000
+10 Best Used Cars Under $8,000
+10 Best Used Family Cars Under $15,000
+10 Best Late-Model Used Cars Under $15,000
+10 Best Used All-Wheel-Drive Vehicles Under $10,000
+...Or Build Your Own List
+Want to see this year's most powerful convertibles? Or the most fuel-efficient luxury cars of 2007? The power of our massive database is at your fingertips. Whether you're more interested in safety or performance, new cars or used, our customizable list generator makes it easy to discover the standouts that matter to you.
+KBB.Ads.buildAndShowAd({
+elementId: 'kbbAdsMmaBanner4'
+});
+<div class="gallery-container">
+<div class="gallery">
+<div class="carousel"></div>
+<div class="navigation">
+<a class="carousel-nav prev {{type}}" {{#type}}data-omniture="{{data}}"{{/type}}>Previous</a>
+<div class="tabs">
+<div data-mode="grid" class="tab icon active">
+<i class="icon-gallery-grid"></i>
+</div>
+<div data-mode="expanded" class="tab icon">
+<i class="icon-gallery-single"></i>
+</div>
+</div>
+<a class="carousel-nav next {{type}}" {{#type}}data-omniture="{{data}}"{{/type}}>Next</a>
+</div>
+</div>
+</div>
+<div class="slide-image-container {{mode.name}}" data-index="{{index}}">
+<div class="slide-image {{data.omniture.type}}" data-src="{{imageSrc}}" data-omniture="{{data.omniture.data}}"/>
+{{#hasFooter}}
+<div class="image-footer">
+<div class="title-three">{{data.title}}</div>
+<div class="paragraph-three">{{data.desc}}</div>
+</div>
+{{/hasFooter}}
+</div>
+KBB.Ads.showAd('kbbAdsMedRec');
+Advertisement
+New Car Spotlight
+KBB.Ads.showAd('kbbAdsSpotlight2');
+KBB.Ads.showAd('kbbAdsSpotlight1');
+KBB.Ads.showAd('kbbAdsSpotlight3');
+KBB.Ads.showAd('kbbAdsT2SuperSpotlight');
+Advertisement
+KBB.Ads.showAd('kbbAdsMedRec2');
+Advertisement
+Find a Top 10 List - New Car and Used Car
+Most Fuel Efficient
+Based on fuel-economy estimates from the EPA
+Vehicle Type
+Convertible
+Coupe
+Crossover
+Electric
+Hatchback
+Hybrid
+Luxury
+Truck
+Sedan
+SUV
+Van/Minivan
+Wagon
+Year
+See the list
+Top Consumer Rated
+From current owners and other reviewers
+Vehicle Type
+Convertible
+Coupe
+Crossover
+Electric
+Hatchback
+Hybrid
+Luxury
+Truck
+Sedan
+SUV
+Van/Minivan
+Wagon
+Year
+See the list
+Best Safety Rated
+Based on government crash test data
+Vehicle Type
+Coupe
+Crossover
+Electric
+Hatchback
+Hybrid
+Luxury
+Truck
+Sedan
+SUV
+Van/Minivan
+Wagon
+Year
+See the list
+Highest Horsepower
+Cars and trucks that pack a punch
+Vehicle Type
+Convertible
+Coupe
+Crossover
+Electric
+Hatchback
+Hybrid
+Luxury
+Truck
+Sedan
+SUV
+Van/Minivan
+Wagon
+Year
+See the list
+Most Popular
+These vehicles get the most reviews on KBB.com
+Vehicle Type
+Convertible
+Coupe
+Crossover
+Electric
+Hatchback
+Hybrid
+Luxury
+Truck
+Sedan
+SUV
+Van/Minivan
+Wagon
+Year
+See the list
+Top Expert Rated
+From the automotive experts at KBB.com
+Vehicle Type
+Convertible
+Coupe
+Crossover
+Electric
+Hatchback
+Hybrid
+Luxury
+Truck
+Sedan
+SUV
+Van/Minivan
+Wagon
+Year
+See the list
+Buyer's Guides
+2018-2019 New Car Buyer's Guide
+Compact SUV Buyer's Guide
+Self-Driving Tech
+Compact Luxury SUV Buyer's Guide
+Midsize Luxury Sedan Buyer's Guide
+Small Luxury Sedan Buyer's Guide
+Comparison Tests
+2019 Chevrolet Traverse vs. 2019 Honda Pilot Comparison
+2019 Subaru Ascent vs. 2019 GMC Acadia Comparison
+2019 Chevrolet Traverse vs. 2019 Subaru Ascent Comparison
+2019 Honda Pilot vs. 2019 Subaru Ascent Comparison
+2019 Buick Enclave vs. 2019 Infiniti QX60 Comparison
+Used Hyundai Sonata vs. Used Kia Optima Comparison
+<div class="gallery-filmstrip">
+<div class="stage-area">
+<span class="prev-image icon-button icon-chevron-left js-prev {{controls.omniture.type}}" data-omniture="{{controls.omniture.data}}"></span>
+<span class="next-image icon-button icon-chevron-right js-next {{controls.omniture.type}}" data-omniture="{{controls.omniture.data}}"></span>
+<img alt="" class="expanded-image js-main-image"/>
+<div class="image-info">
+<div class="image-title title-three js-main-title"></div>
+<div class="image-description paragraph-three js-main-summary"></div>
+</div>
+</div>
+<div class="thumbnails-carousel">
+<div class="previous-set">
+<div class="icon-button icon-chevron-circle-left js-carousel-prev"></div>
+</div>
+<div class="filmstrip">
+<div class="thumbnails js-thumbnail-container">
+{{#slides}}
+<div class="thumbnail-image js-thumbnail {{omniture.type}}" data-index="{{index}}" data-omniture="{{omniture.data}}" style="background-image: url('{{thumbnail}}');"></div>
+{{/slides}}
+</div>
+</div>
+<div class="next-set">
+<div class="icon-button icon-chevron-circle-right js-carousel-next"></div>
+</div>
+</div>
+</div>
+<div class="image-preloader"></div>
+<div class="modal slideup js-modal-fullscreen modal-fullscreen">
+<div class="modal-dialog modal-full">
+<header class="modal-navbar text-center">
+<div id="modalCloseBtn" class="modal-button js-modal-close ">Close</div>
+<span class="modal-navbar-text">Customize a List</span>
+</header>
+<div class="modal-scroller">
+<div id="customizeListModalContent" class="customize-list-modal" data-autogenerated-url="/autogeneratedtoplistredirect/" data-search-url="/Api/3.9.202.0/66758/vehicle/v1/TopTen?action=Get">
+<div class="title-four main-modal-title">Looking for a new sedan that gets great MPG? Or a used SUV with high crash test ratings? We’ve got a list for that.</div>
+<div id="buildYourOwnContainer" class="build-your-own-container"></div>
+</div>
+</div>
+</div>
+</div>
+{{#Data}}
+<div class="box-one-a build-your-own-content {{listName}}-box" id="{{listName}}">
+<div class="title-four list-title">{{title}}</div>
+<p class="paragraph-two description">{{description}}</p>
+<div class="dropdown-wrapper type-wrapper vertical-spacing-margin-top-2x">
+<select class="js-type-dropdown dropdown-two js-select type-year-dropdown" data-list-name="{{listName}}" data-default-option="Vehicle Type" data-preselected-value="">
+<option selected>Vehicle Type</option>
+{{#dropdowns}}
+<option class="js-category-type {{categoryName}}" data-list-category="{{categorySeoName}}" data-year-info="{{years}}" >{{categoryName}}</option>
+{{/dropdowns}}
+</select>
+</div>
+<div class="dropdown-wrapper year-wrapper vertical-spacing-margin-top-2x">
+<select class="js-year-dropdown dropdown-two js-select type-year-dropdown" data-list-name="{{listName}}" data-default-option="Year" data-preselected-value="" disabled="">
+<option class="disabled">Year</option>
+</select>
+</div>
+<div class="see-list-wrapper vertical-spacing-margin-top-2x">
+<a id="" class="button-five see-list-button disabled" href="">See the List</a>
+</div>
+</div>
+{{/Data}}
+FAQ
+|
+Contact Us
+|
+About Us
+|
+Careers
+|
+Corporate
+|
+Advertising
+|
+Media
+|
+Site Map
+|
+Mobile
+|
+KBB Portugal
+|
+KBB Brazil
+|
+Follow Us
+© 1995-2018 Kelley Blue Book Co.®, Inc. All rights reserved.
+Copyrights & Trademarks |
+Terms of Service |
+Privacy Policy |
+Linking Policy |
+Ad Choices
+(function(){'use strict';KBB.Page.addAnalyticsClickOnlyTags([{type:'click',selector:'#navFooterFaq',partner:'nx',tag:function(){return'faq_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterContactUs',partner:'nx',tag:function(){return'contactus_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterAboutUs',partner:'nx',tag:function(){return'aboutus_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterCareers',partner:'nx',tag:function(){return'careers_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterCorporate',partner:'atg',tag:function(){return'info_corporate_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterAdvertising',partner:'atg',tag:function(){return'info_advertising_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterMedia',partner:'nx',tag:function(){return'mediacenter_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterSiteMap',partner:'nx',tag:function(){return'sitemap_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterMobile',partner:'nx',tag:function(){return'mobile_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterKbbPortugal',partner:'intl',tag:function(){return'kbbportugal_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterKbbBrazil',partner:'intl',tag:function(){return'kbbbrazil_'+s.prop2+'_footer'}},{type:'click',selector:'#navToFacebook',partner:'facebook',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToGooglePlus',partner:'google1',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToTwitter',partner:'twitter',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToRSS',tag:function(){return 'rss_'+s.prop2+'_footer'}},{type:'click',selector:'#navToLinkedIn',partner:'linkedin',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToYouTube',partner:'youtube',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToRoku',partner:'roku',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToCopyrightsAndTrademarks',tag:function(){return 'copyright_'+s.prop2+'_footer'}},{type:'click',selector:'#navToTermsOfService',tag:function(){return 'tos_'+s.prop2+'_footer'}},{type:'click',selector:'#navToPrivacyPolicy',tag:function(){return 'privacy_'+s.prop2+'_footer'}},{type:'click',selector:'#navToLinkingPolicy',tag:function(){return 'linkingpolicy_'+s.prop2+'_footer'}},{type:'click',selector:'#navToAdChoices',tag:function(){return 'adchoices_'+s.prop2+'_footer'}}])})();
+KBB.Ads.showAd('kbbAdsToolbarAnchor');
+Popular
+at KBB.com
+First Pics: 2019 Models Unveiled
+10 Best SUVs Under $25,000
+New Car Buyer's Guide
+12 Best Buys of 2018
+25 Best-Selling Cars of 2017
+KBB.Ads.showAd('kbbAdsFct');
+Advertisement
+KBB.Ads.showAd('kbbAdsInterstitial');
+Thanks for Supporting
+Kelley Blue Book.
+We deliver up-to-date car values, expert reviews and unbiased reporting at nocost to you. To do this, we display ads from only trusted partners.To continue on our site, simply turn off your ad blocker and refresh the page.
+KBB.Abb.start();
+// DCM Floodlight tags
+var psid = KBB.DataLayer[0].paidsearch !== null ? KBB.DataLayer[0].paidsearch.paidsearchid : s.prop31;
+if(KBB.DataLayer[0].omniture.pagename === 'homepage') {
+// Start of DoubleClick Floodlight Tag: Please do not remove
+// Activity name of this tag: homepage
+// URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+// This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+// Creation Date: 03/22/2016
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=homep392;u4=' + KBB.DataLayer[0].omniture.supersectionname + ';u5=' + KBB.DataLayer[0].omniture.sectionname + ';u6=' + KBB.DataLayer[0].omniture.pagename + ';u7=' + psid +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+// End of DoubleClick Floodlight Tag: Please do not remove
+}
+if(KBB.DataLayer[0].omniture.supersectionname === 'new' || KBB.DataLayer[0].omniture.supersectionname === 'new-touch') {
+// Start of DoubleClick Floodlight Tag: Please do not remove
+// Activity name of this tag: New Car
+// URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+// This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+// Creation Date: 03/22/2016
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=kbbne024;cat=newca0;u4=' + KBB.DataLayer[0].omniture.supersectionname + ';u5=' + KBB.DataLayer[0].omniture.sectionname + ';u6=' + KBB.DataLayer[0].omniture.pagename + ';u7=' + psid + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+// End of DoubleClick Floodlight Tag: Please do not remove
+}
+// Marin Smart tag - global
+(function() {
+window._pa = window._pa || {};
+// _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+// _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+// _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+var pa = document.createElement('script');
+pa.type = 'text/javascript';
+pa.async = true;
+pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/571f92738e1678597b0000d3.js";
+var scriptTags = document.getElementsByTagName('script');
+var lastScriptTag = scriptTags[scriptTags.length-1];
+lastScriptTag.parentNode.insertBefore(pa, lastScriptTag);
+})();
+KBB.createAndInit('KBB.FloodlightTagScript.Hyundai', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.fireFloodlightTag = function() {
+var	pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+currentContentId = self.dataLayer.ads.cid,
+axel = Math.random() + '',
+a = axel * 10000000000000,
+tag = '';
+if (self.dataLayer.info.manufacturer.name.toLowerCase() === 'hyundai') {
+var yearId = self.dataLayer.info.yearid,
+shortModelName = self.dataLayer.info.model.shortname;
+if(pageName === 'lns') {
+switch(currentContentId) {
+case '2000010127':
+case '2000009275':
+case '2000010090':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeg;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case '2100001428':
+case '2100001380':
+case '2100000928':
+case '2100000867':
+case '2100000291':
+case '2100000248':
+case '2100000191':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmacn;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case '2000010081':
+case '2000009555':
+case '2000010120':
+case '2000010287':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeb;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+}
+} else if(pageName === 'fdpqdealer') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmale0;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>'
+} else if (pageName === 'ymmtrimnewovr_buynew' || pageName === 'ncmodelmain-touch') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmahv00;u1=' + shortModelName + ';u2=' + yearId + ';u3=;u4=;u6=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+} else if (pageName === 'fdpqthank' ) {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmahv0;u1=' + shortModelName + ';u2=' + yearId + ';u3=;u4=;u6=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+} else if (currentContentId === '2000010090') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeg;u1=;u2=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+if (tag !== '') {
+var flDiv = document.body.appendChild(document.createElement('div'));
+flDiv.setAttribute('id', 'hyundaiFloodlightTag');
+flDiv.innerHTML = tag;
+}
+};
+self.init = function() {
+self.fireFloodlightTag();
+};
+return {
+init: self.init
+};
+});
+KBB.createAndInit('KBB.FloodlightTagScript.Genesis', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.fireFloodlightTag = function() {
+if (self.dataLayer.info.manufacturer.name.toLowerCase() === 'genesis') {
+var	pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+yearId = self.dataLayer.info.yearid,
+shortModelName = self.dataLayer.info.model.shortname,
+axel = Math.random() + '',
+a = axel * 10000000000000,
+tag = '';
+switch (pageName) {
+case 'ymmtrimnewovr_buynew':
+case 'ncmodelmain-touch':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbbyo;u1=' + shortModelName +';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case 'fdpqthank':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbraq;u1=' + shortModelName +';u2=' + yearId +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case 'lns':
+if (self.dataLayer.ads.cid === '2100000991'){
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbcnmr;u1=' + shortModelName +';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+break;
+case 'fdpqdealer':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=gmaau0;u1=' + shortModelName +';u2=' + yearId +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+}
+if (tag !== ''){
+var flDiv = document.body.appendChild(document.createElement('div'));
+flDiv.setAttribute('id', 'genesisFloodlightTag');
+flDiv.innerHTML = tag;
+}
+}
+};
+self.init = function() {
+self.fireFloodlightTag();
+};
+return {
+init: self.init
+};
+});
+// SpeedShift Tracking Tag
+(function () {
+if (KBB.DataLayer[0].omniture.pagename === 'classdetailnew' ||
+// VDP NEW
+KBB.DataLayer[0].omniture.pagename === 'classdetailused' ||
+// VDP USED
+KBB.DataLayer[0].omniture.pagename === 'classlistnew_dtlovr' ||
+// MINI VDP NEW
+KBB.DataLayer[0].omniture.pagename === 'classlistused_dtlovr') { // MINI VDP USED
+var tag = document.createElement('script');
+tag.type = 'text/javascript';
+tag.async = true;
+tag.src = ('https:' === document.location.protocol ? 'https:' : 'http:') + "//services.cdn.speedshiftmedia.com/tags/analytics-Z20160915150040d3b34c985ad40.min.js";
+var scriptTags = document.getElementsByTagName('script');
+var lastScriptTag = scriptTags[scriptTags.length - 1];
+lastScriptTag.parentNode.insertBefore(tag, lastScriptTag);
+}
+})();
+if( (KBB.DataLayer[0].area === 'homepage' && KBB.DataLayer[0].controller === 'homepage' && KBB.DataLayer[0].action=== 'index') || KBB.DataLayer[0].dynamictracking)
+{
+//FloodLight
+if(!KBB.DataLayer[0].flippers.floodlightoff) {
+//Start of DoubleClick Floodlight Tag: Please do not remove
+//Activity name of this tag: global counter
+//URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+//Creation Date: 04/20/2015
+var dataLayerInfo = KBB.DataLayer[0].info,
+section = s.prop1,
+subSection = s.channel,
+pageName = KBB.DataLayer[0].omniture.pagename,
+PSID = KBB.DataLayer[0].paidsearch !== null ? KBB.DataLayer[0].paidsearch.paidsearchid : s.prop31,
+vehicleId = dataLayerInfo.vehicle.id,
+style = dataLayerInfo.category,
+trim = dataLayerInfo.vehicle.trimdisplayname,
+year = dataLayerInfo.yearid,
+make = dataLayerInfo.manufacturer.name,
+model = dataLayerInfo.model.name,
+price = dataLayerInfo.vehicle.taggingprice;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=globa915;u4=' + subSection + ';u5=' + section + ';u6=' + pageName + ';u7=' + PSID + ';u8=' + vehicleId + ';u9=' + style + ';u10=' + trim + ';u11=' + year + ';u12=' + make + ';u13=' + model + ';u14=' + price + ';ord=' + globalOrd + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+//End of DoubleClick Floodlight Tag: Please do not remove
+}
+}
+KBB.PDADS.self.setPDAD();
+//kbbr
+if (KBB.storage.getFromCookie('KBBSite') === null && KBB.storage.getFromCookie('ZipCode') !== null) {
+var expireTime = new Date();
+expireTime.setMinutes(expireTime.getMinutes() + 30); // set expiration time to 30 mins
+KBB.storage.saveToCookie('KBBSite', '1', expireTime);
+}
+KBB.createAndInit('KBB.OracleTagScript.Hyundai', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.setOracleTag = function (make, model) {
+var source = 'https://h.nexac.com/e/mp/g-5618.xgi?pkey=&chpcm=' + encodeURIComponent(document.referrer) + '&chpsg=' + make + '&chpcr=' + model + '&chpck=&rand=' + globalOrd + '&chpth=';
+var imgTag = document.body.appendChild(document.createElement('img'));
+imgTag.setAttribute('width', '1');
+imgTag.setAttribute('height', '1');
+imgTag.setAttribute('src', source);
+};
+self.checkAllowIntents = function () {
+var allowIntents = ['buy-new', 'trade-in-sell'];
+return allowIntents.indexOf(self.dataLayer.info.intent) >= 0;
+};
+self.shouldFireTag = function () {
+var manufacturer = self.dataLayer.info.manufacturer.name.toLowerCase(),
+area = self.dataLayer.area.toLowerCase(),
+controller = self.dataLayer.controller.toLowerCase(),
+pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+controllers = ['vehicle', 'ymm', 'ymmt', 'makelanding'],
+cid = self.dataLayer.ads.cid;
+//only fire the tag on Model Path , Hub and Article pages
+return ((manufacturer === 'hyundai' &&
+((self.checkAllowIntents() && (area === 'vehicle' || controllers.indexOf(controller) >= 0)) || pageName === 'lns'))
+|| (cid === '2000010090') );
+};
+self.fireOracleTag = function () {
+if (self.shouldFireTag()) {
+self.setOracleTag(self.dataLayer.info.manufacturer.shortname, self.dataLayer.info.model.shortname);
+}
+};
+self.init = function() {
+self.fireOracleTag();
+};
+return {
+init: self.init
+};
+});
+/* <![CDATA[ */
+var google_conversion_id = 1060016584;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+if (!KBB.DataLayer[0].flippers.remarketingoff) {
+document.write('<s' + 'cript type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></s' + 'cript>');
+document.write('<n' + 'oscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1060016584/?guid=ON&script=0"' + '/></div></n' + 'oscript>');
+}
+KBB.createAndInit("KBB.FloodlightTagScript.Kia",function(){"use strict";var e={dataLayer:KBB.Page.getDataLayer(),cats:{classlistnew:"deale000",ymmtrimnewcostown_buynew:"5year0",dlrinfoinvovrnew:"deale004",fdpqthank:"quick00",ymmtrimnewconsrev_buynew:"kbbco0",ymmtrimnewrank_buynew:"compa00",ymmtrimnewrat_buynew:"compa00",ymmtrimtisellovr_selltrade:"trade00",loadtisell_selltrade:"trade00",ymmtrimnewexprev_buynew:"kbbex0",ymmtrimnewovr_buynew:"build00","ncmodelmain-touch":"newca0",rtbdlrlist:"deale003",ymmtrimnewincent_buynew:"incen0"},pageNames:["classlistnew","ymmtrimnewcostown_buynew","dlrinfoinvovrnew","fdpqthank","ymmtrimnewconsrev_buynew","ymmtrimnewrank_buynew","ymmtrimnewrat_buynew","ymmtrimtisellovr_selltrade","loadtisell_selltrade","ymmtrimnewexprev_buynew","ymmtrimnewovr_buynew","rtbdlrlist","ymmtrimnewincent_buynew","ncmodelmain-touch"],currentPage:"",kiaStorageName:"KiaFloodlight",kiaStorageValue:null,searchRegex:null,expirationTime:30};return e.parseTimestamp=function(){if(e.kiaStorageValue&&e.kiaStorageValue.search(e.searchRegex)>=0){var a=e.kiaStorageValue.match(e.searchRegex)[0];return a?a.match(/\d+/)[0]:0}return 0},e.saveTimestamp=function(){var a=e.currentPage+"-"+(new Date).getTime();e.kiaStorageValue?e.kiaStorageValue.indexOf(e.currentPage)>=0?e.kiaStorageValue=e.kiaStorageValue.replace(e.searchRegex,a):e.kiaStorageValue=e.kiaStorageValue+"|"+a:e.kiaStorageValue=a,KBB.storage.saveToLocalStorage(e.kiaStorageName,e.kiaStorageValue)},e.isExpired=function(){var a=parseInt(e.parseTimestamp());return a?new Date>new Date(a+60*e.expirationTime*1e3):!0},e.shouldFireTag=function(){return"kia"===e.dataLayer.info.manufacturer.name.toLowerCase()&&e.pageNames.indexOf(e.currentPage)>=0&&e.isExpired()},e.fireFloodlightTag=function(){if(e.shouldFireTag()){var a=Math.random()+"",t=1e13*a,r='<iframe src="https://4235921.fls.doubleclick.net/activityi;src=4235921;type=2017c0;cat='+e.cats[e.currentPage]+";dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord="+t+'?" width="1" height="1" frameborder="0" style="display:none"></iframe>',i=document.body.appendChild(document.createElement("div"));"ncmodelmain-touch"===e.currentPage&&(r='<iframe src="https://4235921.fls.doubleclick.net/activityi;src=4235921;type=2017c0;cat='+e.cats[e.currentPage]+";u1=;u2=;u3=;u4=;u5=;u6=;u7=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord="+t+'?" width="1" height="1" frameborder="0" style="display:none"></iframe>'),i.setAttribute("id","kiaFloodlightTag"),i.innerHTML=r,e.saveTimestamp()}},e.init=function(){e.currentPage=e.dataLayer.omniture.pagename.toLowerCase(),e.kiaStorageValue=KBB.storage.getFromLocalStorage(e.kiaStorageName),e.searchRegex=new RegExp(e.currentPage+"-\\d+"),e.fireFloodlightTag()},{init:e.init}});
+(function () {
+if(document.cookie.indexOf('SurveyCookie') > -1) {
+var regexForseeCookie = /fsr\.(.*?)=/g;
+var fsrCs = document.cookie.match(regexForseeCookie);
+var exp = new Date(Date.now() - 86400000);
+fsrCs.forEach(function (cookie) {
+document.cookie = cookie+'; path=/; domain=.kbb.com;';
+});
+}
+})();
+// Null check because it seems like the DTM script sometimes is blocked
+// or doesn't come back on the staging server
+if (window._satellite && _satellite.pageBottom) {
+_satellite.pageBottom();
+}
+$(document).ready(KBB.init);

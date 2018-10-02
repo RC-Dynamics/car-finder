@@ -1,0 +1,761 @@
+if (window.performance && window.performance.clearMarks && window.performance.mark) {
+window.performance.clearMarks();
+window.performance.mark("pageLoadStart");
+}
+[{"@context":"http://schema.org","@type":"Car","driveWheelConfiguration":{"@type":"DriveWheelConfigurationValue","name":"AWD"},"fuelEfficiency":{"@type":"QuantitativeValue","unitCode":"MPG","value":""},"fuelType":"Gasoline","mileageFromOdometer":{"@type":"QuantitativeValue","unitCode":"SMI","value":27461},"numberOfDoors":4,"vehicleEngine":{"@type":"EngineSpecification","name":"3.5L V6 24V MPFI DOHC"},"vehicleIdentificationNumber":"5N1AZ2MH8FN203019","vehicleInteriorColor":"Beige","vehicleModelDate":2015,"vehicleSeatingCapacity":"5","vehicleTransmission":"Automatic CVT","aggregateRating":{"@type":"AggregateRating","ratingCount":77,"reviewCount":77,"bestRating":5,"ratingValue":"4.8"},"color":"Gun Metallic","itemCondition":{"@type":"OfferItemCondition","name":"Certified Pre-Owned"},"manufacturer":{"@type":"Organization","name":"Nissan"},"model":{"@type":"ProductModel","name":"2015 Nissan Murano SV","isVariantOf":"https://www.cars.com/research/nissan-murano-2015/"},"offers":{"@type":"Offer","price":21351,"priceCurrency":"USD","seller":{"@type":"Organization","name":"Berman Nissan of Chicago","telephone":"(773) 922-9424","address":{"addressLocality":"Chicago","addressRegion":"IL","streetAddress":"3456 N Kedzie Ave"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.8,"reviewCount":"203"}}},"image":{"@type":"ImageObject","contentUrl":"https://www.cstatic-images.com/phototab/in/9ab6b738db2c74d0b1b3ec247782552c.jpg"},"name":"2015 Nissan Murano SV"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.cars.com/","name":"Cars.com"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.cars.com/shopping/","name":"Shop"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.cars.com/shopping/nissan-murano-2015/","name":"2015 Nissan Murano"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.cars.com/vehicledetail/detail/744082934/overview/","name":"VIN: 5N1AZ2MH8FN203019"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Cars.com","url":"https://www.cars.com/"},{"@context":"http://schema.org","@type":"Organization","url":"https://www.cars.com/","logo":"https://graphics.cars.com/images/core/logo.png","sameAs":["https://www.facebook.com/CarsDotCom/","https://www.twitter.com/carsdotcom","https://www.pinterest.com/carsdotcom/","https://www.youtube.com/user/Carscom","https://instagram.com/carsdotcom/","https://www.linkedin.com/company/cars-com","https://plus.google.com/+CarsDotCom","https://en.wikipedia.org/wiki/Cars.com"]}]
+(function (GLOBAL) {
+var xhr = new XMLHttpRequest(),
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+USER_SUMMARY_URL = '/profile/global/user-summary/',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+xhr.open('GET', USER_SUMMARY_URL, true);
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(xhr.responseText);
+} else {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+}
+};
+xhr.send();
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+}(window));
+2015 Nissan Murano SV For Sale In Chicago | Cars.com
+window.CARS = window.CARS || {};
+window.CARS.experiments = window.CARS.experiments || {};
+window.CARS.digitalData = {"page":{"pageInfo":{"pageName":"Used Cars/Search/details-details-dealer","channel":"Used Cars/Search","version":"","effectiveDate":"","employeeDataShown":"no-employee-data"},"lead":[],"category":{"pageType":"vdp"},"attributes":{"monthlyPayment":"","abTesting":"","rolloutCookie":"","dealerText":[],"dealerChat":[]},"vehicle":[{"type":"inventory","detail":"listing","listingId":744082934,"vin":"5N1AZ2MH8FN203019","stockType":"CPO","make":"Nissan","makeId":"20077","model":"Murano","modelId":"21710","year":2015,"trim":"SV","bodyStyle":"SUV","customerId":379,"certified":true,"privateSeller":false,"price":21351,"mileage":"27,461","isPriceDrop":"","hasSpecialOffer":false,"exteriorColor":"Gun Metallic","drivetrain":"AWD","fuelType":"Gasoline","demandMetrics":[{"views":null,"emails":null,"saves":null}]}],"dealer":[{"name":"Berman Nissan of Chicago","zip":"60618","latitude":"","longitude":"","dealerType":"","serviceReviewCount":null,"hasSpecialOffer":null,"hasNewCarSpecial":null,"hasUsedCarSpecial":null,"hasQuickQuote":null,"hasChat":null,"hasText":null,"rpcCertified":null,"hasServiceRepair":null,"hasInventory":null,"newInventoryCount":null,"usedInventoryCount":null,"payingCustomer":"","sellAndTrade":"","reviewDetails":{"customerServiceRating":"","buyingProcessRating":"","qualityOfRepairRating":"","facilityRating":"","recommendedNumber":null,"totalReviewsOnPage":"","featuredReview":null},"customerId":379,"reviewRating":4.8,"reviewCount":"203","make":[{"makeId":"20077","makeName":"Nissan"}],"package":[{"packageName":"","pillar":"","level":""}],"franchiseIndependent":""}],"upsell":[{"productId":[],"customerId":"","franchiseMakes":[]}],"performanceMetrics":{"100ms":null,"500ms":null,"wholeSecond":null}},"dataProducts":{"affCode":null,"deviceType":"","lzone":"","section":"","zipCode":null},"user":{"profileInfo":{"login":"","loginType":"","publicConsumerId":"","publicDeviceId":""},"attributes":{"lat":"","long":""}}};
+{"listingDetailDto":{"listingId":744082934,"isActiveListing":true,"makeId":20077,"makeName":"Nissan","canonicMakeName":"nissan","legacyMakeId":null,"modelId":21710,"modelName":"Murano","modelNameForAd":"Murano","canonicModelName":"murano","legacyModelId":null,"modelYear":2015,"modelYearId":56007,"mmyProductId":"CarsMMY_20028247","legacyModelYearId":null,"trimName":"SV","trimId":25195,"price":21351,"priceFormatted":"$21,351","priceMsrp":null,"priceMsrpFormatted":null,"priceOld":21994,"priceChangeDate":"2018-09-29 17:40:49","miles":"27,461","milesInteger":27461,"exteriorColor":"Gun Metallic","phoneNumber":"(773) 922-9424","phoneNumberExt":"","phoneNumberLabel":"","phoneNumber2":"","phoneNumber2Ext":"","phoneNumber2Label":"","dayPhoneNumber":null,"dayPhoneNumberExt":null,"evePhoneNumber":null,"evePhoneNumberExt":null,"mobilePhoneNumber":null,"city":"Chicago","isCpoVehicle":true,"cpoProgramName":"NissanCertifiedProgramNissan","isQpoVehicle":null,"qpoProgramName":"","isNewCarStockType":false,"vehicleHistoryReportUrl":"/coreshoppingsupportapi/1.0/listing/vhr/744082934?linklocation=detail&aff=national","vehicleHistoryReportLinkText":"Free CARFAX 1-Owner Report","adCategoryInfo":"Nissan|Murano|crossover_midsize","similarVehiclesUsed":2,"similarVehiclesNew":1,"tier2AdEnabled":false,"parentOrgName":"","stockTypeCode":"CPO","customerId":379,"sellerId":413447,"sellerHasUsedDealerSpecialsEnabled":null,"bodystyleName":"SUV","dealerName":"Berman Nissan of Chicago","distanceFromBuyerZip":null,"doorCount":4,"engineDescription":"3.5L V6 24V MPFI DOHC","privatePartyContactName":"Berman Nissan of Chicago","sellerHasCpoShowroomEnabled":true,"privatePartyListing":false,"listingDateSeconds":1532674230,"truncatedDescription":"ORIGINAL MSRP OF $38,340.00 HUGE SAVINGS!!!! 1.9% APR AVAILABLE!! 100K...","listingTypeId":1,"sellerHasNewDealerSpecialsEnabled":null,"emailLeadEnabled":true,"state":"IL","stockNumber":"P11109","transmission":"Automatic CVT","sellerVideoLocation":"https://vid.dmotorworks.com/vid5/?client=CARSCOM&LTVAutoPlay=1&w=100%&h=100%&vid=6F80017950E9601EE05357824D64197B","vin":"5N1AZ2MH8FN203019","drivetrain":"AWD","affiliateAgentId":0,"primaryFeedSourceId":277,"siyId":null,"sellerName":"Berman Nissan of Chicago","sellerDisplayLabel":"Dealer","newlyListed":false,"vehicleHistoryCode":"ICR","vehicleHistoryReportIsFree":true,"certifiedPlus":false,"carfaxUrl":"icr","ncSpotLight":"false","dealerWebsiteUrl":"http://www.nissanchicago.com/?utm_source=cars.com&utm_medium=referral","additionalFeatures":["* Gps Navigation","*18'' Wheels","*Awd","*Back Up Camera","*Bluetooth","*Mp3 Aux Audio Input","*Power Driver Seat","*Power Lift Gate","*Premium Package: 11 Speaker Bose Audio System / Power Pano Roof","*Push Button Start","*Remaining Factory Warranty","*Remote Start","*Spoiler","11 Speaker Bose Premium Audio System","4-Wheel Disc Brakes","4.677 Axle Ratio","6 Speakers","ABS Brakes","Air Conditioning","AM/FM Radio","Anti-Whiplash Front Head Restraints","Automatic Temperature Control","Brake Assist","Bumpers: Body-Color","CD Player","Cloth Seat Trim","Delay-Off Headlights","Driver Door Bin","Driver Vanity Mirror","Dual Front Impact Airbags","Dual Front Side Impact Airbags","Electronic Stability Control","Exterior Parking Camera Rear","Four Wheel Independent Suspension","Front Anti-Roll Bar","Front Bucket Seats","Front Center Armrest W/Storage","Front Dual Zone A/C","Front Fog Lights","Front Reading Lights","Fully Automatic Headlights","Illuminated Entry","Knee Airbag","Leather Shift Knob","Low Tire Pressure Warning","Mp3 Decoder","Navigation System","Occupant Sensing Airbag","Outside Temperature Display","Overhead Airbag","Overhead Console","Panic Alarm","Passenger Door Bin","Passenger Vanity Mirror","Power Door Mirrors","Power Driver Seat","Power Panoramic Moonroof","Power Passenger Seat","Power Steering","Premium Package","Radio: Am/Fm/Cd Audio System W/Navigation","Rear Anti-Roll Bar","Rear Reading Lights","Rear Seat Center Armrest","Rear Window Defroster","Rear Window Wiper","Remote Keyless Entry","Roof Rack: Rails Only","Security System","Speed Control","Speed-Sensing Steering","Speed-Sensitive Wipers","Split Folding Rear Seat","Spoiler","Steering Wheel Mounted Audio Controls","Telescoping Steering Wheel","Tilt Steering Wheel","Traction Control","Turn Signal Indicator Mirrors","Variably Intermittent Wipers","Wheels: 18 Machined Aluminum-Alloy"],"localOfferTypeCode":null,"localOfferId":null,"localOfferCount":0,"localOfferExpireDate":"","powerdriveEnabled":false,"dlrRating":4.8,"dealerReviewCount":"203","streetAddress":"3456 N Kedzie Ave","additionalStreetAddress":"","conditionType":"","conditionDescription":"","dealerGroupId":null,"dlrPromoTagline":"Backed By Berman","dealerTagline":"Backed By Berman","dealerGroupName":"","sellerHasDealerGroupEnabled":false,"interiorColor":"Beige","dealerLogoImageLocation":"379.jpg","dealerLogoRedirectUrl":"","dealerSlug":"berman-nissan-of-chicago","modelPackageName":"SV","oneOwner":true,"sellerAcceptsBestOffer":false,"satelliteRadioProvider":"","normalizedFeaturesCodeDesc":{"ALLOYWHEELS":"Alloy Wheels","NAVIGATION":"Navigation System","KEYLESSSTART":"Keyless Start","STABILITY":"Stability Control","REMOTESTART":"Remote Start","CAMERA":"Backup Camera","PREMIUMSOUND":"Premium Sound System","BLUETOOTH":"Bluetooth","BRAKEASSIST":"Brake Assist","PANORAMIC":"Panoramic Roof"},"standardFeatures1":["1st and 2nd row curtain head airbags","4-wheel ABS Brakes","ABS and Driveline Traction Control","AM/FM/HD/Satellite Radio","Anti-theft alarm system","Audio controls on steering wheel","Audio system memory card slot","Automatic front air conditioning"],"standardFeatures2":["Auxilliary transmission cooler","Braking Assist","Bucket front seats","Cargo area light","Clock: In-dash","Cloth seat upholstery","Cruise control","Cruise controls on steering wheel","Daytime running lights","Digital Audio Input","Driver knee airbags","Dual front air conditioning zones","Dual illuminated vanity mirrors","Dusk sensing headli","External temperature display","Fold forward seatback rear seats","Front and rear reading lights","Front fog/driving lights","Front Ventilated disc brakes","Fuel Capacity: 19.0 gal.","Fuel Consumption: City: 21 mpg","Fuel Consumption: Highway: 28 mpg","Fuel Type: Regular unleaded","Headlights off auto delay","In-Dash single CD player","Instrumentation: Low fuel level","Interior air filtration","Leather shift knob trim","Leather/metal-look steering wheel trim","Machined aluminum rims","Manufacturer's 0-60mph acceleration time (seconds): 8.3 s","Max cargo capacity: 70 cu.ft.","Metal-look center console trim","Metal-look door trim","Metal-look/piano black dash trim","MP3 player","Navigation system with voice activation","Passenger Airbag","Power remote driver mirror adjustment","Power remote passenger mirror adjustment","Power windows","Privacy glass: Deep","Radio Data System","Rear seats center armrest","Rear spoiler: Lip","Remote engine start","Remote power door locks","Remote window operation","Roof rails","Side airbag","Speed Sensitive Audio Volume Control","Speed-proportional power steering","Split rear bench","Stability control","Suspension class: Regular","Tachometer","Tilt and telescopic steering wheel","Tire Pressure Monitoring System: Tire specific","Total Number of Speakers: 6","Trip computer","Turn signal in mirrors","Vehicle Emissions: ULEV II","Video Monitor Location: Front","Wheel Diameter: 18","Wheel Width: 7.5","Wireless phone connectivity"],"bodystyleId":20217,"wheelbase":"111","zipcode":"60618","location":"41.944349,-87.708715","sellerHasDealerChatEnabled":true,"hasOnStar":false,"sellerNotes":"ORIGINAL MSRP OF $38,340.00 HUGE SAVINGS!!!! 1.9% APR AVAILABLE!! 100K WARRANTY AVAILABLE!! CARFAX One-Owner. Clean CARFAX. *AWD, *PREMIUM PACKAGE: 11 SPEAKER BOSE AUDIO SYSTEM / POWER PANO ROOF, *BLUETOOTH, * GPS NAVIGATION, *MP3 AUX AUDIO INPUT, *REMAINING FACTORY WARRANTY, *POWER LIFT GATE, *BACK UP CAMERA, *REMOTE START, *PUSH BUTTON START, *18'' WHEELS, *SPOILER, *POWER DRIVER SEAT. NATIONWIDE SHIPPING AVAILABLE!! Nissan Certified Pre-Owned Details: * Powertrain Limited Warranty: 84 Month/100,000 Mile (whichever comes first) from original in-service date * Vehicle History * Includes Car Rental and Trip Interruption Reimbursement * 167 Point Inspection * Transferable Warranty (between private parties) * Roadside Assistance * Warranty Deductible: $50 Awards: * 2015 IIHS Top Safety Pick+ 400 plus indoor car showroom, state of the art facility built in 2017, number 1 Nissan volume dealer in Chicago, number 1 Nissan Certified Pre Owned Dealer in the USA, hassle free pricing, Only KBB Instant Cash Offer Nissan Dealer in Chicago, our sales volume gives us buying power to get your financing approved with great rates and terms for everyone, and we are THE highest rated dealer in Chicago by Google. Reviews: * Spacious and upscale interior; comfortable seats; nice balance of power and fuel economy; pleasant ride. Source: Edmunds * Inspired by the future of aerospace, the redesigned 2015 Murano's striking aerodynamic body looks as though it was shaped by the wind. Boomerang shaped headlights integrate with the aerodynamic profile. Available high-efficiency LED headlamps create a light pattern that replicates natural daylight. An available power panoramic moonroof reaches over both rows of seats for all to enjoy the ride. Inside you will appreciate the front and rear outboard Zero Gravity Seats, inspired by space-age technology they help take pressure off the lower back and reduce fatigue. Rear passengers can recline and activate their own availab We give Top Dollar for all trades. Please keep in mind our inventory changes daily. For more information on this vehicle or to schedule a test drive, please call 779-207-3216.","sellerNotesPart1":"ORIGINAL MSRP OF $38,340.00 HUGE SAVINGS!!!! 1.9% APR AVAILABLE!! 100K WARRANTY AVAILABLE!! CARFAX One-Owner. Clean CARFAX. *AWD, *PREMIUM PACKAGE: 11 SPEAKER BOSE AUDIO SYSTEM / POWER PANO ROOF, *BLUETOOTH, * GPS NAVIGATION, *MP3 AUX AUDIO INPUT, *REMAINING FACTORY WARRANTY, *POWER LIFT GATE, *BACK UP CAMERA, *REMOTE START, *PUSH BUTTON START, *18'' WHEELS, *SPOILER, *POWER DRIVER SEAT.","sellerNotesPart2":"NATIONWIDE SHIPPING AVAILABLE!! Nissan Certified Pre-Owned Details: * Powertrain Limited Warranty: 84 Month/100,000 Mile (whichever comes first) from original in-service date * Vehicle History * Includes Car Rental and Trip Interruption Reimbursement * 167 Point Inspection * Transferable Warranty (between private parties) * Roadside Assistance * Warranty Deductible: $50 Awards: * 2015 IIHS Top Safety Pick+ 400 plus indoor car showroom, state of the art facility built in 2017, number 1 Nissan volume dealer in Chicago, number 1 Nissan Certified Pre Owned Dealer in the USA, hassle free pricing, Only KBB Instant Cash Offer Nissan Dealer in Chicago, our sales volume gives us buying power to get your financing approved with great rates and terms for everyone, and we are THE highest rated dealer in Chicago by Google. Reviews: * Spacious and upscale interior; comfortable seats; nice balance of power and fuel economy; pleasant ride. Source: Edmunds * Inspired by the future of aerospace, the redesigned 2015 Murano's striking aerodynamic body looks as though it was shaped by the wind. Boomerang shaped headlights integrate with the aerodynamic profile. Available high-efficiency LED headlamps create a light pattern that replicates natural daylight. An available power panoramic moonroof reaches over both rows of seats for all to enjoy the ride. Inside you will appreciate the front and rear outboard Zero Gravity Seats, inspired by space-age technology they help take pressure off the lower back and reduce fatigue. Rear passengers can recline and activate their own availab We give Top Dollar for all trades. Please keep in mind our inventory changes daily. For more information on this vehicle or to schedule a test drive, please call (773) 922-9424.","listingSource":"Digital Motorworks (DMi)","vehicleHistoryReportId":"","vehicleHistoryDetails":"2 Owners, Non-Personal Use Reported, Buyback Protection Eligible","adHistoryId":3341040545,"fuelType":"Gasoline","mpgCity":"21","mpgHwy":"28","mpgCombined":null,"seatCapacity":"5","featuredDlrReviewText":null,"photoUrlsSmall":["https://www.cstatic-images.com/results/in/9ab6b738db2c74d0b1b3ec247782552c.jpg","https://www.cstatic-images.com/results/in/25d5e01a12ba0c73b22732788c60db58.jpg","https://www.cstatic-images.com/results/in/8b1f080b5d67ab8bfde45928b3a5196e.jpg","https://www.cstatic-images.com/results/in/044a0244b81a74c2c856aebe80bc9182.jpg","https://www.cstatic-images.com/results/in/bf44bdb59e7a4c30395ea16ca9f4e5e7.jpg","https://www.cstatic-images.com/results/in/d1eb89a70c58a5d623c515f6f134acaa.jpg","https://www.cstatic-images.com/results/in/025c0544c1bdf9bf42851d53ab149cec.jpg","https://www.cstatic-images.com/results/in/0785e864cf75f6a28cbe9ef8bc38f249.jpg","https://www.cstatic-images.com/results/in/98b06b5574818e4bca1c12252ef64eb2.jpg","https://www.cstatic-images.com/results/in/0f31c1a49da1cc532619c8f57d845182.jpg","https://www.cstatic-images.com/results/in/171df2bcb5bccfbfa9e591b161c89f5e.jpg","https://www.cstatic-images.com/results/in/32c742cabfc88748a72ebc3df50da745.jpg","https://www.cstatic-images.com/results/in/49a8b6149a04e717159604a1bcaa48c9.jpg","https://www.cstatic-images.com/results/in/8d866256e00e99861da50e758ddf20d0.jpg","https://www.cstatic-images.com/results/in/03034e76ffd88c25c7f796609e724dc1.jpg","https://www.cstatic-images.com/results/in/156e13e1720cba197fbb1ad4f15c6c53.jpg","https://www.cstatic-images.com/results/in/7776f019802137b2e521c280f7a3d6b3.jpg","https://www.cstatic-images.com/results/in/e69cbbb46785c966ca13a43f210bc2d3.jpg","https://www.cstatic-images.com/results/in/ea0dcc672c2bd7c5cf3a8ad25b0941f4.jpg","https://www.cstatic-images.com/results/in/f0e3a1b0a0832aedbdc8693ec6976528.jpg","https://www.cstatic-images.com/results/in/097701c3ae560ee69677cb7bfc1103ea.jpg","https://www.cstatic-images.com/results/in/e9eddbe61ce1141369938dcaa7e5853d.jpg","https://www.cstatic-images.com/results/in/af7f2cc97a8a2894978063b8ee0bdf4e.jpg","https://www.cstatic-images.com/results/in/773e30153035d3d39540aeb50216dcea.jpg","https://www.cstatic-images.com/results/in/250ad044464f94031e785d0d4a4afd7a.jpg","https://www.cstatic-images.com/results/in/c3516a0dd30d510d00c1ac857d5247e2.jpg","https://www.cstatic-images.com/results/in/c391279f109901a4757e42ad5f91f851.jpg","https://www.cstatic-images.com/results/in/523bb93f9069c3e03a33e31fcbf49c45.jpg","https://www.cstatic-images.com/results/in/5c31fae2893091b0010482cc2cebf04d.jpg","https://www.cstatic-images.com/results/in/b654e5e60672b91e7ed037d5cac7b220.jpg","https://www.cstatic-images.com/results/in/c715f468dad5fe51890490b540b51089.jpg","https://www.cstatic-images.com/results/in/f421fe854d35533c763565048b328aae.jpg","https://www.cstatic-images.com/results/in/96226cab30f8a42ce78e2307577f701b.jpg","https://www.cstatic-images.com/results/in/dc3560d94cff1ce74ce079d1376c197b.jpg","https://www.cstatic-images.com/results/in/23fe9a6d49d6c7ffdaba48f9ef160053.jpg","https://www.cstatic-images.com/results/in/0e13137fc48603350cac1dd07c88f3ed.jpg","https://www.cstatic-images.com/results/in/4065b985f9466a6e8e4edd40f35860d6.jpg","https://www.cstatic-images.com/results/in/f9afb6d0f7be94ab7f570894d4c95af6.jpg","https://www.cstatic-images.com/results/in/d0817686e563adf48e6b6b04b97acc69.jpg","https://www.cstatic-images.com/results/in/3e160b27f4f1a8a50aaccf67f1253d64.jpg"],"photoUrlsMedium":["https://www.cstatic-images.com/phototab/in/9ab6b738db2c74d0b1b3ec247782552c.jpg","https://www.cstatic-images.com/phototab/in/25d5e01a12ba0c73b22732788c60db58.jpg","https://www.cstatic-images.com/phototab/in/8b1f080b5d67ab8bfde45928b3a5196e.jpg","https://www.cstatic-images.com/phototab/in/044a0244b81a74c2c856aebe80bc9182.jpg","https://www.cstatic-images.com/phototab/in/bf44bdb59e7a4c30395ea16ca9f4e5e7.jpg","https://www.cstatic-images.com/phototab/in/d1eb89a70c58a5d623c515f6f134acaa.jpg","https://www.cstatic-images.com/phototab/in/025c0544c1bdf9bf42851d53ab149cec.jpg","https://www.cstatic-images.com/phototab/in/0785e864cf75f6a28cbe9ef8bc38f249.jpg","https://www.cstatic-images.com/phototab/in/98b06b5574818e4bca1c12252ef64eb2.jpg","https://www.cstatic-images.com/phototab/in/0f31c1a49da1cc532619c8f57d845182.jpg","https://www.cstatic-images.com/phototab/in/171df2bcb5bccfbfa9e591b161c89f5e.jpg","https://www.cstatic-images.com/phototab/in/32c742cabfc88748a72ebc3df50da745.jpg","https://www.cstatic-images.com/phototab/in/49a8b6149a04e717159604a1bcaa48c9.jpg","https://www.cstatic-images.com/phototab/in/8d866256e00e99861da50e758ddf20d0.jpg","https://www.cstatic-images.com/phototab/in/03034e76ffd88c25c7f796609e724dc1.jpg","https://www.cstatic-images.com/phototab/in/156e13e1720cba197fbb1ad4f15c6c53.jpg","https://www.cstatic-images.com/phototab/in/7776f019802137b2e521c280f7a3d6b3.jpg","https://www.cstatic-images.com/phototab/in/e69cbbb46785c966ca13a43f210bc2d3.jpg","https://www.cstatic-images.com/phototab/in/ea0dcc672c2bd7c5cf3a8ad25b0941f4.jpg","https://www.cstatic-images.com/phototab/in/f0e3a1b0a0832aedbdc8693ec6976528.jpg","https://www.cstatic-images.com/phototab/in/097701c3ae560ee69677cb7bfc1103ea.jpg","https://www.cstatic-images.com/phototab/in/e9eddbe61ce1141369938dcaa7e5853d.jpg","https://www.cstatic-images.com/phototab/in/af7f2cc97a8a2894978063b8ee0bdf4e.jpg","https://www.cstatic-images.com/phototab/in/773e30153035d3d39540aeb50216dcea.jpg","https://www.cstatic-images.com/phototab/in/250ad044464f94031e785d0d4a4afd7a.jpg","https://www.cstatic-images.com/phototab/in/c3516a0dd30d510d00c1ac857d5247e2.jpg","https://www.cstatic-images.com/phototab/in/c391279f109901a4757e42ad5f91f851.jpg","https://www.cstatic-images.com/phototab/in/523bb93f9069c3e03a33e31fcbf49c45.jpg","https://www.cstatic-images.com/phototab/in/5c31fae2893091b0010482cc2cebf04d.jpg","https://www.cstatic-images.com/phototab/in/b654e5e60672b91e7ed037d5cac7b220.jpg","https://www.cstatic-images.com/phototab/in/c715f468dad5fe51890490b540b51089.jpg","https://www.cstatic-images.com/phototab/in/f421fe854d35533c763565048b328aae.jpg","https://www.cstatic-images.com/phototab/in/96226cab30f8a42ce78e2307577f701b.jpg","https://www.cstatic-images.com/phototab/in/dc3560d94cff1ce74ce079d1376c197b.jpg","https://www.cstatic-images.com/phototab/in/23fe9a6d49d6c7ffdaba48f9ef160053.jpg","https://www.cstatic-images.com/phototab/in/0e13137fc48603350cac1dd07c88f3ed.jpg","https://www.cstatic-images.com/phototab/in/4065b985f9466a6e8e4edd40f35860d6.jpg","https://www.cstatic-images.com/phototab/in/f9afb6d0f7be94ab7f570894d4c95af6.jpg","https://www.cstatic-images.com/phototab/in/d0817686e563adf48e6b6b04b97acc69.jpg","https://www.cstatic-images.com/phototab/in/3e160b27f4f1a8a50aaccf67f1253d64.jpg"],"photoUrlsLarge":["https://www.cstatic-images.com/supersized/in/9ab6b738db2c74d0b1b3ec247782552c.jpg","https://www.cstatic-images.com/supersized/in/25d5e01a12ba0c73b22732788c60db58.jpg","https://www.cstatic-images.com/supersized/in/8b1f080b5d67ab8bfde45928b3a5196e.jpg","https://www.cstatic-images.com/supersized/in/044a0244b81a74c2c856aebe80bc9182.jpg","https://www.cstatic-images.com/supersized/in/bf44bdb59e7a4c30395ea16ca9f4e5e7.jpg","https://www.cstatic-images.com/supersized/in/d1eb89a70c58a5d623c515f6f134acaa.jpg","https://www.cstatic-images.com/supersized/in/025c0544c1bdf9bf42851d53ab149cec.jpg","https://www.cstatic-images.com/supersized/in/0785e864cf75f6a28cbe9ef8bc38f249.jpg","https://www.cstatic-images.com/supersized/in/98b06b5574818e4bca1c12252ef64eb2.jpg","https://www.cstatic-images.com/supersized/in/0f31c1a49da1cc532619c8f57d845182.jpg","https://www.cstatic-images.com/supersized/in/171df2bcb5bccfbfa9e591b161c89f5e.jpg","https://www.cstatic-images.com/supersized/in/32c742cabfc88748a72ebc3df50da745.jpg","https://www.cstatic-images.com/supersized/in/49a8b6149a04e717159604a1bcaa48c9.jpg","https://www.cstatic-images.com/supersized/in/8d866256e00e99861da50e758ddf20d0.jpg","https://www.cstatic-images.com/supersized/in/03034e76ffd88c25c7f796609e724dc1.jpg","https://www.cstatic-images.com/supersized/in/156e13e1720cba197fbb1ad4f15c6c53.jpg","https://www.cstatic-images.com/supersized/in/7776f019802137b2e521c280f7a3d6b3.jpg","https://www.cstatic-images.com/supersized/in/e69cbbb46785c966ca13a43f210bc2d3.jpg","https://www.cstatic-images.com/supersized/in/ea0dcc672c2bd7c5cf3a8ad25b0941f4.jpg","https://www.cstatic-images.com/supersized/in/f0e3a1b0a0832aedbdc8693ec6976528.jpg","https://www.cstatic-images.com/supersized/in/097701c3ae560ee69677cb7bfc1103ea.jpg","https://www.cstatic-images.com/supersized/in/e9eddbe61ce1141369938dcaa7e5853d.jpg","https://www.cstatic-images.com/supersized/in/af7f2cc97a8a2894978063b8ee0bdf4e.jpg","https://www.cstatic-images.com/supersized/in/773e30153035d3d39540aeb50216dcea.jpg","https://www.cstatic-images.com/supersized/in/250ad044464f94031e785d0d4a4afd7a.jpg","https://www.cstatic-images.com/supersized/in/c3516a0dd30d510d00c1ac857d5247e2.jpg","https://www.cstatic-images.com/supersized/in/c391279f109901a4757e42ad5f91f851.jpg","https://www.cstatic-images.com/supersized/in/523bb93f9069c3e03a33e31fcbf49c45.jpg","https://www.cstatic-images.com/supersized/in/5c31fae2893091b0010482cc2cebf04d.jpg","https://www.cstatic-images.com/supersized/in/b654e5e60672b91e7ed037d5cac7b220.jpg","https://www.cstatic-images.com/supersized/in/c715f468dad5fe51890490b540b51089.jpg","https://www.cstatic-images.com/supersized/in/f421fe854d35533c763565048b328aae.jpg","https://www.cstatic-images.com/supersized/in/96226cab30f8a42ce78e2307577f701b.jpg","https://www.cstatic-images.com/supersized/in/dc3560d94cff1ce74ce079d1376c197b.jpg","https://www.cstatic-images.com/supersized/in/23fe9a6d49d6c7ffdaba48f9ef160053.jpg","https://www.cstatic-images.com/supersized/in/0e13137fc48603350cac1dd07c88f3ed.jpg","https://www.cstatic-images.com/supersized/in/4065b985f9466a6e8e4edd40f35860d6.jpg","https://www.cstatic-images.com/supersized/in/f9afb6d0f7be94ab7f570894d4c95af6.jpg","https://www.cstatic-images.com/supersized/in/d0817686e563adf48e6b6b04b97acc69.jpg","https://www.cstatic-images.com/supersized/in/3e160b27f4f1a8a50aaccf67f1253d64.jpg"],"smallCertifiedLogoUrl":null,"largeCertifiedLogoUrl":null,"hasEnhancedSpecialOffers":false,"sellerPhotoCount":40,"isStockPhoto":false,"isGhostPhoto":false,"hasVideo":true,"videoUrl":"https://vid.dmotorworks.com/vid5/?client=CARSCOM&LTVAutoPlay=1&w=100%&h=100%&vid=6F80017950E9601EE05357824D64197B","videoThumbnail":"https://www.cstatic-images.com/phototab/in/9ab6b738db2c74d0b1b3ec247782552c.jpg","usedCarSpecialsUrl":null,"cylinderCountId":28108,"drivetrainId":27102,"transmissionTypeId":28115,"externalVDPLink":"https://www.nissanchicago.com/inventory/certified-used-2015-nissan-murano-sv-awd-4d-sport-utility-5n1az2mh8fn203019?utm_campaign=deeplink&utm_medium=referral&utm_source=cars.com","market":null,"autoPriceDealLabel":"Great Deal","autoPriceDealSubtitle":"Rare Find At This Price","autoPriceDealExplanation":"The price was recently reduced on this vehicle and is about $3,300 less than the average price for a 2015 Nissan Murano in the Chicago area.","autoPriceDealTotalSavings":3346.69,"wellEquippedBadgeTitle":"Well-Equipped","wellEquippedBadgeSubtitle":"Loaded With Valuable and Popular Features","wellEquippedBadgeValue":5732.86,"editorialBadges":"","predictedDaysTilSale":"","dealerChatProvider":"Contact at Once","has360":false,"hasWhyBuy":null,"stockPhoto":false,"ghostPhoto":false,"activeListing":true,"newCarStockType":false,"qpoVehicle":null,"cpoVehicle":true,"vdpLeadFormExp":false,"smsAnalyticsUrl":"","dealerInspireApiKey":"","locationId":"","offers":null,"showCpoVehicleAws":true,"dealerInspireSmsNumber":"+18154768599","visitor":{},"apigeeHost":"https://api.cars.com","shadowSettingsProxy":"/consumer-shadow-settings/","apiKey":"ZHzFD7hMbPZAd6c96FFp0nmUSH7kOF8f","hrefPhoneNumber":"tel:7739229424","oldPriceActiveDate":"2018-09-29T17:40:49.000Z","todaysDate":"2018-10-02T18:06:42.809Z","timeDiff":260753809,"diffDays":4},"consumerReviewsDto":{"ratingAverage":4.7,"ratingCount":77,"consumerRatingCategoryDetailList":[{"rating":"4.8","code":"Comfort","description":"Comfort","roundedRating":"5"},{"rating":"4.6","code":"Performance","description":"Performance","roundedRating":"5"},{"rating":"4.8","code":"ExteriorStyling","description":"Exterior Styling","roundedRating":"5"},{"rating":"4.8","code":"InteriorDesign","description":"Interior Design","roundedRating":"5"},{"rating":"4.6","code":"ValuefortheMoney","description":"Value for the Money","roundedRating":"5"},{"rating":"4.6","code":"Reliability","description":"Reliability","roundedRating":"5"}],"consumerReview":{"overallRate":5,"displayName":"Mura_Dim","submitDt":"October 06, 2015","title":"Great car!","text":{"displayText":"This is a new Nissan purchase for us and we love our 2015 Murano! It handles the road with FWD efficiency, great gas mileage so far, and the comfort and spaciousness is fantastic. The safety features are wonderful and, therefore visually, I do not feel that blind-spot issues are a problem for me. Th","hiddenText":"e seats and ride are the most comfortable of any SUV (Edge, SanteFe, Venza, etc.) that I test drove and I can't say enough about the beautiful interior! What a great job Nissan did with their re-design of this very nice truck! They thought of everything!"},"starRating":"<span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span>"}},"consumerReviewData":{"makeId":20077,"modelId":21710,"yearId":56007,"productId":"CarsMMY_20028247","overallTotalRateNbr":4.7,"overallComfortRatingNbr":4.8,"overallExteriorStylingRatingNbr":4.8,"overallInteriorDesignRatingNbr":4.8,"overallPerformanceRatingNbr":4.6,"overallReliabilityRatingNbr":4.6,"overallValueRatingNbr":4.6,"overallRateRangeNbr":5,"totalReviewsCnt":77,"reviews":[{"displayNm":"BJD","overallRatingNbr":5,"positiveFeedbackCnt":0,"reviewTxt":"This car is a perfect SUV for families looking to travel or just do life in. It has large trunk space, plenty of leg room in the back. The moon roof is fun for the whole family. It rides smoothly and it?s a car I feel very safe in. SUV but drives like a car, which is fabulous!","submittedDateUtc":1538095342697,"titleTxt":"Best Suv for a family!","totalFeedbackCnt":0,"locationCd":"Statesville, NC"},{"displayNm":"Sand","overallRatingNbr":1,"positiveFeedbackCnt":0,"reviewTxt":"I own the 2015 one day it went in a Pond of water and I couldn't get out the doors R the
+sunroof because it's all electric so did that hitch I couldn't open it from the inside so y'all need to make those vehicle for you can get out the back I could have died I couldn't open the
+doors
+because the water would come in and it was hard to open because I would have drowned it so I was afraid to open the door and I couldn't get out the window down because it
+wouldn't work so that's why I do not want another suvo Murano","submittedDateUtc":1537566327844,"titleTxt":"Murano SUV 2015","totalFeedbackCnt":1,"locationCd":"Beaumont"},{"displayNm":"Mark s","overallRatingNbr":5,"positiveFeedbackCnt":0,"reviewTxt":"The car is definitely what I was looking for with regards to space Power comfort and a style. The car House of the user friendly infotainment System","submittedDateUtc":1537206888632,"titleTxt":"Buick","totalFeedbackCnt":0,"locationCd":"Lyndhurst"}],"vehicleReviewTags":[{"displayNm":"steering wheel","code":"steering_wheel"},{"displayNm":"leg room","code":"leg_room"},{"displayNm":"great on gas","code":"great_on_gas"},{"displayNm":"good value","code":"good_value"},{"displayNm":"blind spot","code":"blind_spot"},{"displayNm":"good bumper","code":"good_bumper"},{"displayNm":"good quality","code":"good_quality"},{"displayNm":"engine","code":"engine"},{"displayNm":"super comfortable","code":"super_comfortable"},{"displayNm":"good on gas","code":"good_on_gas"},{"displayNm":"great ride","code":"great_ride"}]},"cpoWarranty":{"name":"NissanCertifiedProgramNissan","programName":"Nissan","smallLogo":"/core-editorial/cpo/logos/small/nissancertifiedprogramnissanSmall.gif","largeLogo":"/core-editorial/cpo/logos/large/nissancertifiedprogramnissanLarge.gif","videoUrl":"https://www.youtube.com/embed/t8iNYz8tboc?feature=player_detailpage","programTeaser":[{"title":"Program Benefits","detail":"24 Hour Emergency Roadside Assistance, Towing Assistance, Trip \r\nInterruption Benefits, 3-month free subscription to SiriusXM Satellite \r\nRadio \r\non properly equipped vehicles, Complimentary CARFAX® Vehicle History \r\nReport™ and 3-Year CARFAX® Buy Back Guarantee"},{"title":"Limited Warranty","detail":"7-year/100,000-mile powertrain warranty"}],"programDetails":[{"title":"Program Benefits","info":"","detail":"24 Hour Emergency Roadside Assistance, Towing Assistance, Trip \r\nInterruption Benefits, 3-month free subscription to SiriusXM Satellite \r\nRadio \r\non properly equipped vehicles, Complimentary CARFAX® Vehicle History \r\nReport™ and 3-Year CARFAX® Buy Back Guarantee","link":""},{"title":"Limited Warranty","info":"7 year/100,000 mile","detail":"7-year/100,000-mile powertrain warranty from original in-service date; \r\n$50 \r\ndeductible","link":""},{"title":"Inspection","info":"167 point inspection and reconditioning","detail":null,"link":""},{"title":"Eligibility","info":"6 years/80,000 miles","detail":"","link":null},{"title":"Manufacturer Backed","info":"Nissan Certified","detail":null,"link":"http://www.nissanusa.com/cpo.html"},{"title":"Disclaimers","info":null,"detail":"","link":null}],"trackingPixel1":"https://ad.doubleclick.net/ddm/trackimp/N3340.Cars/B20573927.21144548\r\n5;dc_trk_aid=411160943;dc_trk_cid=96481512;ord=\r\n1538503602809;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?","trackingPixel2":"https://ad.doubleclick.net/ddm/trackimp/N3340.Cars/B20573927.21146983\r\n5;dc_trk_aid=411160943;dc_trk_cid=96481512;ord=\r\n1538503602809;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?","programLogo":{"id":"","externalId":null,"url":"https://www.cars.com/core-editorial/cpo/logos/large/nissancertifiedprogramnissanLarge.gif","width":null,"height":null},"programInspectionPdf":{"id":null,"externalId":null,"url":null,"width":null,"height":null},"alsImpression":{"listingId":744082934,"modelYearId":56007,"makeId":20077,"modelId":21710,"trimId":25195,"stockTypeCode":"CPO","sellerId":413447,"primaryFeedSourceId":277,"localOfferId":null,"affiliateAgentId":0,"pageToName":"cpoInfoModal"}},"dealerInspireSmsNumber":"+18154768599","dealerInspireData":{"dealerId":379,"smsNumber":"+18154768599","locationId":344040}}
+null
+{"profiles":{"header":true,"dashboardLink":true,"savedMmy":true,"carsIOwn":true},"articleMakeRail":true,"leadsFeedback":true,"chatboxMmy":false,"chatboxVdp":false,"chatboxSrp":false,"articleSearch":true,"homepageRecentlySavedVehicle":true,"aweSpinCar":true,"articleEmailCapture":true,"newsEmailCapture":true,"conquestVdp":false,"turboBestValueSortOnTheFly":false,"srpDisableBury":false,"cpoSrpLinks":true,"TLDRSearchAssist":true,"upperSearchAlerts":true,"callbackSoldVehicleHeader":true,"cbTextToPhoneOverlayBanner":true,"favoriteCarsSort":true,"apBrightCoveVDP":true,"apMMYVideoBillboard":false,"apSponsoredBrightcoveMMY":true,"apSponsoredBrightCoveVDP":true,"apEditorialBrightCoveVDP":false,"globalPromoTest":false,"homepageTileAds":true,"connectionLqsLead":true,"adOrientationChange":true,"adExpSRP50LazyLoad":{"desktop":"-840","mobile":"-800","tablet":"-900"},"adExpVDP30LazyLoad":{"desktop":"-150","mobile":"-150","tablet":"-150"},"isDistinctAdRotisserie":true,"adStickyBanner":true,"adExpStickyBannerV3":true,"srpListingAdExp":true,"mediatorPopup":false,"mlpSlugCatTargeting":true,"mpgRedirect":true,"mmySponsoredVideosExp":false,"autoplayMmyVideoExp":false,"aweEnableUserComments":false,"aweEnableUserCommentsEditorial":false,"aweEnablePinterest":true,"aweEnableEmployeeInformationService":true,"aweEnable360":true,"aweDecommissionForSaleUrls":true,"awsListingDetailCache":true,"btwLqs":true,"bestMatch":true,"aweEnableHystrixOnVDP":true,"btwMilesSort":true,"btwPhoneRecovery":true,"cbCyoa":true,"duplicateCitiesIgnore":true,"sellVerticalStatic":true,"apHomepageGrandAwareness":true,"ipaVerticalStatic":false,"isSrpCardListing":true,"srpListingRows20":true,"qoCustomerOffers":true,"echoResearchMMYInventory":true,"essShopExplore":0,"etsEnableHystrixOnMVISCalls":true,"speedGetListings":true,"ncsReorgHeaderVDP":true,"heroMismatchFlip":true,"priceBadgeBonanza":true,"prcPriceCompare":true,"prcPriceCompareUsed":true,"priceDrop":true,"profilesAdditionalLogging":true,"nullVdpPhoto":true,"mediaMontage":true,"ncsCreateAlert":true,"logoutModal":true,"lotStatus":true,"lotStatusSrp":true,"ncsTypAppInfo":true,"qoSEO":true,"reactShop":{"ads":true,"dtm":true,"linklist":false,"omniture":false,"signal":true,"mpulse-rum":false,"nativeads":true,"owcs":true,"appdynamics-rum":true,"recently-saved":true,"optimizely":true,"fonts":true,"linkpack":true,"als":true,"meet-your-match-swap":true,"meet-your-match-dropdown":true,"recommended-car":true,"trending-searches":true,"profiles-header":true,"profiles-header-dashboard":true,"segmentation":true,"nativeads-render-test":true,"ads-single-request":true},"apPartnerMarketplace":true,"apPartnerMarketplaceShopIndex":true,"apShopByCTU":true,"drvConquest":false,"ncsUpp":false,"ncsUppDate":2236106097,"notFoundRedirect":{"articles":true,"expertReview":true,"shopping":true},"vpvUppEsoLink":true,"trailHead":100,"enhancedSpecialOffers":true,"testing":true,"photoModalViewerAd":true,"favoritesPageCta":true,"savSrchTopSRP":true,"profCioAvatar":true,"vdpWebp":false,"vdpVehicleReviewsModule":true,"vdpMobileStickySavedButton":false,"vdpDemandMetrics":true,"vdpAbandonCapture":true,"vdp":{"awe":{"stickyForm":false},"mpulseRum":false,"excludeOptimizelyTag":true},"aweEnableQuestionAndAnswer":false,"wtfPlacement":true,"wtfPlacementLeadform":true,"wtfPricingPriority":true,"srpEnableMarketplaceCall":true,"cfis":{"service":true},"externalVDPLink":true,"externalVDPUTM":true,"prof":{"newCompareCars":true},"dealerBranding":true,"dpp":{"linkToSeoSrp":true},"leadsVdpContextCta":true,"CouponsMVP":true,"CoupsSearchWidget":false,"CoupsLA":true,"CoupsATL":true,"CoupsMIL":true,"ncsSvBackfill":true,"ncsLightBox":true,"ncsSavSrchBttmSRP":true,"ncsSvNewTile":true,"otlHeaderTakeoverLink":true,"ucsLeadFormTesting":true,"ucsLeadFormPhoneOptional":true,"ucsSrpListView":true,"etsBuryListings":true,"srFontLoading":true,"srCoupsFilter":false,"srpNewViewportService":true,"dpPercentRecommended":true,"typModal":false,"srCouponsSMS":true,"srCoupsOff":true,"srEmailEstimate":false,"dealerRaterIntegration":true,"dealerReviewSingleReview":true,"dice":{"vdpSubscriptions":true,"onlineShopperBeta":true,"vdpStickyNavExp":true,"vdpLeadFormExp":false},"siyVerticalStatic":true,"siyPrivatePartyApp":false,"srpCityWhiteList":true,"research":{"newMmy":true,"trimsPage2":true,"mmySimilarCompare":true,"testDriveButton":true,"asyncShopIndex":false,"facebookPoll":true,"linkToMpgByCategory":true,"removeTrimSection":true,"showGoodForIcons":true,"researchCategoryBrowseBy":true,"researchCategoryBrowseCertified":true,"rmlVerticalProxy":true,"rmlBodyStyle":true,"rmlResearchSearch":true,"mmyVerticalProxy":true,"mmVerticalProxy":true,"topSectionRewrite":true,"mmyCtaVariationsTest":false,"facebookReviewer":false,"tdSingleForm":true,"testDriveCount":true,"mmyVariationsTest":true,"linkToSingleReview":true,"expertReviewMmyCanonical":true,"rtySurveyLink":false,"hideVCOOSortForYear":2019,"mmyReviewTags":true,"crReviewTags":true,"showCpoSection":false},"srCouponsPrint":true,"srp":{"nativeAppBanner":true,"cleanup":true,"gnHarder":true,"showMmLinkPack":true,"showMoreFilter":true,"removeOmniture":true,"optimizely":false,"rowRedesign":true,"fixedBottomAdTest":true,"vehicleDetailsTest":true,"srpElasticSearchService":true,"specialOffers":true,"criticaljs":true,"showShippable":true,"asyncDTM":true,"shoppingElasticSearchService":true,"seoLinksRefactor":true},"mdcUserAuthMUASVerify":false,"lastViewedVehicle":true,"mdc":{"cfcsEnabled":true},"siyByaCarfax":true,"vehicleHistoryFilter":true,"dealRatingsFilter":true,"taco":{"vdpDriveMotors":false,"srpDriveMotors":true,"dppEmployees":true,"vdpSSPLeadForm":true,"vdpConversations":true,"employeeProfilePage":true,"dppEmployeeReviews":true,"dppEmployeeWorkedWith":true,"dppConversations":true,"srpConversations":true,"spcAlternateFlag":true,"compareSpcAlternateFlag":true,"eppStockTypeOptions":true,"eppPhoneOptions":true,"dppUpdate":true,"showNewGuidelines":true,"dppReviewTagPagination":true,"dppUpdateTaggedReviews":true,"showPostLeadSurvey":true,"shippableDealers":true},"transparentStickyAdHeader":true,"vehicleReviews":{"dealerRaterModeration":true,"recallsWriteReviewComp":true,"serviceWriteReviewComp":true,"crExpertReviewUpdate":true,"reviewPromoMonthlyChanges":false,"favoriteCarsNotes":false,"cvrrsServiceChange":true,"newGuidelines":true},"showInsuranceLink":true,"signalAsync":true,"perfTest":false,"searchBodyStyle":true,"wtfPricingV2":true,"wtfUsedMarketTabs":true,"wtfArrowBadge":true,"urlTranslateService":{"historicalRedirect":false},"consumerActivityVDP":true,"usedcarBreadcrumbs":true,"consumerActivityEnhancedComments":true,"hpHeroCtaBypassTest":true,"globalFlatNav":true,"gsdNoResultsRadius":true,"premierAdFeaturedListings":true,"premierFeaturedListingBackfill":true,"awards2018Enable":{"showNewLanding":true,"showWinners":true,"showPeoplesChoice":false,"showSocialFeed":true},"otlAllDealersTest":false,"bestOf2018Badges":{"srp":true,"vdp":true},"xCarsVerticalHeader":true,"newsSponsoredArticles":true,"editorialReviewsReverseProxy":true,"mmySpecsPageReverseProxy":true,"mmSpecsPageReverseProxy":true,"serverSidePremier":true,"turbo":{"pricing":{"new":[0,50],"old":[50,100]},"nv":{"new":[0,100]},"vdp-competitive-vehicles":{"true":[0,100]}}}
+Hi, Guest!
+Save cars. Access them anywhere.
+Sign Up
+Already have an account?
+Log In
+My Dashboard
+My Saved Cars
+My Saved Searches
+My Listings
+Settings
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign Out
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign
+Up
+← Search Results
+40
+Play Video
+"use strict";function vmg(){var i=document.getElementById("vehicleMediaGallery"),e=document.getElementById("imageDisplayControls"),n=document.getElementById("videoPlayer"),u=document.getElementById("galleryImage"),t=document.getElementById("inject-spincar"),a="gallery-controls__thumbnail-image--selected",r="media-gallery__button--video-selected",o="media-gallery--video-player-active",s="media-gallery--spincar-active",v="media-gallery__button--thumbnail-next--disabled",m="media-gallery__button--thumbnail-previous--disabled",g=void 0,l=void 0,c=void 0,d=void 0,f=void 0,p=!1,h=!1,b=!1;if(e){p=!0,g=document.body.querySelector(".gallery-controls__thumbnail-container");var y=document.getElementById("nextImageBtn"),L=document.getElementById("prevImageBtn"),I=document.querySelectorAll(".gallery-controls__thumbnail-image"),E=document.getElementById("nextThumbnailSet"),S=document.getElementById("previousThumbnailSet");d=I[0],f=I[I.length-1];for(var T=0;T<I.length;T++)0===T&&(c=I[T]).classList.add(a),I[T].addEventListener("click",function(e){return D(e)});y.addEventListener("click",function(){return _("next")}),L.addEventListener("click",function(){return _("previous")}),E.addEventListener("click",function(){g.scrollLeft+=g.offsetWidth}),S.addEventListener("click",function(){g.scrollLeft-=g.offsetWidth}),document.addEventListener("DOMContentLoaded",function(){var n,i,a,r,o,s,e,l;!function(){var e=document.querySelectorAll(".gallery-controls__thumbnail-image");if("IntersectionObserver"in window){var n=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var t=e.target.dataset.thumb;e.target.style.backgroundImage="url("+t+")",n.unobserve(e.target)}})});e.forEach(function(e){n.observe(e)})}else for(var t=0;t<e.length-1;t++){var i=e[t].dataset.thumb;e[t].style.backgroundImage="url("+i+")"}}(),l=function(e){"none"!==e&&_(e)}||function(e){},(e=u).addEventListener("touchstart",function(e){var t=e.changedTouches[0];n="none",i=t.pageX,a=t.pageY,s=(new Date).getTime(),e.preventDefault()},{passive:!0}),e.addEventListener("touchmove",function(e){e.preventDefault()},{passive:!0}),e.addEventListener("touchend",function(e){var t=e.changedTouches[0];r=t.pageX-i,o=t.pageY-a,200<(new Date).getTime()-s||(Math.abs(r)<50||200<Math.abs(o)?Math.abs(o)<50||200<Math.abs(r)||e.preventDefault():n=r<0?"next":"previous"),l(n),e.preventDefault()},{passive:!0}),g.addEventListener("scroll",function(){var e;(e=event).currentTarget.offsetWidth+e.currentTarget.scrollLeft==e.currentTarget.scrollWidth?nextThumbnailSet.classList.add(v):0==e.currentTarget.scrollLeft?previousThumbnailSet.classList.add(m):(nextThumbnailSet.classList.remove(v),previousThumbnailSet.classList.remove(m))},{passive:!0});for(var t=document.querySelectorAll(".gallery-controls__thumbnail-image"),c=[],d=0;d<t.length;d++)c[d]=new Image,c[d].src=t[d].dataset.image})}if(t){var w=window.document.createElement("script");w.setAttribute("src","//cars-dot-com.swipetospin.com"),i.appendChild(w),t.addEventListener("click",function(e){return B(),b=!0,void i.classList.add(s)})}function _(e){var t=e;c.classList.remove(a),c="next"===t?c===f?d:c.nextElementSibling:c===d?f:c.previousElementSibling,function(e){if("IntersectionObserver"in window){var t=new IntersectionObserver(function(e){e[0].isIntersecting||g.scrollTo(e[0].target.offsetLeft-c.offsetWidth/2,0),t.unobserve(e[0].target)});t.observe(c)}else c===f?g.scrollTo(2e3,0):c===d?g.scrollTo(0,0):"next"==e?g.scrollLeft+=c.offsetWidth:"previous"==e&&(g.scrollLeft-=c.offsetWidth)}(e),x()}function D(e){c.classList.remove(a),c=e.currentTarget,B(),x()}function B(){h&&(l.classList.remove(r),i.classList.remove(o),C(h=!1)),b&&(b=!1,i.classList.remove(s)),p&&(c.classList.remove(a),p=!1)}function x(){u.src=c.dataset.image,c.classList.add(a)}function C(e,t){n.setAttribute("src",e?t:"")}n&&(l=document.getElementById("videoPlayerButton")).addEventListener("click",function(e){return function(e){var t=e.currentTarget.dataset.videourl,n=JSON.parse(e.currentTarget.dataset.alsImpressionData);n.publicConsumerId=CARS.digitalData.user.profileInfo.publicConsumerId,n.publicDeviceId=CARS.digitalData.user.profileInfo.publicDeviceId,window.CARS&&window.CARS.PageState&&window.CARS.digitalData&&window.CARS.PageState.push("event",{eventDetail:"vehicle-video-play",eventName:"video-play"},!0);c.classList.remove(a),B(),h=!0,l.classList.add(r),i.classList.add(o),C(!0,t),function(i,a){var r=2<arguments.length&&void 0!==arguments[2]?arguments[2]:"",o=3<arguments.length&&void 0!==arguments[3]?arguments[3]:"";return new Promise(function(e,t){var n=new XMLHttpRequest;n.open(i,a),n.setRequestHeader("Content-Type",o),n.onload=function(){200===n.status?e(n.response):t(Error(n.statusText))},n.onerror=t,n.send(r)})}("POST","/ajax/activityloggingapi/1.0/impression",JSON.stringify(n),"application/json").then(function(e){}).catch(function(e){return console.log("error",e)})}(e)})}
+vmg();
+if (window.performance && window.performance.mark) {
+window.performance.mark('vdpCarousel');
+}
+← Search Results
+Certified 2015 Nissan Murano SV
+$21,351
+Price Drop!
+Was
+$21994
+27,461 miles
+Great Deal
+Finance:
+Estimating Payment...
+(773) 922-9424
+Berman Nissan of Chicago
+Contact Seller
+All fields are required except when indicated.
+Please enter a valid first name
+Please enter a valid last name
+Please enter a valid email address
+Please enter a valid phone number
+Check availability
+Request more photos
+Schedule a test drive
+Discuss Financing
+Ask a
+question
+Please enter valid comments
+Email me new listings for my search.
+Do you have Trade-In?
+I'd like to explore financing this
+Send Message
+By clicking here, you authorize Cars.com and its sellers/partners
+to contact you by texts/calls which may include marketing and be
+by autodialer. Calls may be pre-recorded. You also agree to our
+Privacy Statement. Consent is not required to purchase goods/services.
+We value your privacy.
+Cars.com Privacy Statement.
+Vehicle History
+Free CARFAX 1-Owner Report
+Seller's Notes
+ORIGINAL MSRP OF $38,340.00 HUGE SAVINGS!!!! 1.9% APR AVAILABLE!! 100K WARRANTY AVAILABLE!! CARFAX One-Owner. Clean CARFAX. *AWD, *PREMIUM PACKAGE: 11 SPEAKER BOSE AUDIO SYSTEM / POWER PANO ROOF, *BLUETOOTH, * GPS NAVIGATION, *MP3 AUX AUDIO INPUT, *REMAINING FACTORY WARRANTY, *POWER LIFT GATE, *BACK... UP CAMERA, *REMOTE START, *PUSH BUTTON START, *18'' WHEELS, *SPOILER, *POWER DRIVER SEAT. NATIONWIDE SHIPPING AVAILABLE!! Nissan Certified Pre-Owned Details: * Powertrain Limited Warranty: 84 Month/100,000 Mile (whichever comes first) from original in-service date * Vehicle History * Includes Car Rental and Trip Interruption Reimbursement * 167 Point Inspection * Transferable Warranty (between private parties) * Roadside Assistance * Warranty Deductible: $50 Awards: * 2015 IIHS Top Safety Pick+ 400 plus indoor car showroom, state of the art facility built in 2017, number 1 Nissan volume dealer in Chicago, number 1 Nissan Certified Pre Owned Dealer in the USA, hassle free pricing, Only KBB Instant Cash Offer Nissan Dealer in Chicago, our sales volume gives us buying power to get your financing approved with great rates and terms for everyone, and we are THE highest rated dealer in Chicago by Google. Reviews: * Spacious and upscale interior; comfortable seats; nice balance of power and fuel economy; pleasant ride. Source: Edmunds * Inspired by the future of aerospace, the redesigned 2015 Murano's striking aerodynamic body looks as though it was shaped by the wind. Boomerang shaped headlights integrate with the aerodynamic profile. Available high-efficiency LED headlamps create a light pattern that replicates natural daylight. An available power panoramic moonroof reaches over both rows of seats for all to enjoy the ride. Inside you will appreciate the front and rear outboard Zero Gravity Seats, inspired by space-age technology they help take pressure off the lower back and reduce fatigue. Rear passengers can recline and activate their own availab We give Top Dollar for all trades. Please keep in mind our inventory changes daily. For more information on this vehicle or to schedule a test drive, please call 779-207-3216.
+View this vehicle on dealer's website
+Check for recalls
+Basics
+Fuel Type: Gasoline
+Exterior Color: Gun Metallic
+Interior Color: Beige
+Stock: P11109
+Drivetrain: AWD
+Transmission: Automatic CVT
+Engine: 3.5L V6 24V MPFI DOHC
+VIN: 5N1AZ2MH8FN203019
+Mileage: 27,461
+All Features
+These features are associated with this vehicle type. Contact the dealer to confirm this specific vehicle has them.
+1st and 2nd row curtain head airbags
+4-wheel ABS Brakes
+ABS and Driveline Traction Control
+AM/FM/HD/Satellite Radio
+Anti-theft alarm system
+Audio controls on steering wheel
+Audio system memory card slot
+Automatic front air conditioning
+Auxilliary transmission cooler
+Braking Assist
+Bucket front seats
+Cargo area light
+Clock: In-dash
+Cloth seat upholstery
+Cruise control
+Cruise controls on steering wheel
+Daytime running lights
+Digital Audio Input
+Driver knee airbags
+Dual front air conditioning zones
+Dual illuminated vanity mirrors
+Dusk sensing headli
+External temperature display
+Fold forward seatback rear seats
+Front and rear reading lights
+Front fog/driving lights
+Front Ventilated disc brakes
+Fuel Capacity: 19.0 gal.
+Fuel Consumption: City: 21 mpg
+Fuel Consumption: Highway: 28 mpg
+Fuel Type: Regular unleaded
+Headlights off auto delay
+In-Dash single CD player
+Instrumentation: Low fuel level
+Interior air filtration
+Leather shift knob trim
+Leather/metal-look steering wheel trim
+Machined aluminum rims
+Manufacturer's 0-60mph acceleration time (seconds): 8.3 s
+Max cargo capacity: 70 cu.ft.
+Metal-look center console trim
+Metal-look door trim
+Metal-look/piano black dash trim
+MP3 player
+Navigation system with voice activation
+Passenger Airbag
+Power remote driver mirror adjustment
+Power remote passenger mirror adjustment
+Power windows
+Privacy glass: Deep
+Radio Data System
+Rear seats center armrest
+Rear spoiler: Lip
+Remote engine start
+Remote power door locks
+Remote window operation
+Roof rails
+Side airbag
+Speed Sensitive Audio Volume Control
+Speed-proportional power steering
+Split rear bench
+Stability control
+Suspension class: Regular
+Tachometer
+Tilt and telescopic steering wheel
+Tire Pressure Monitoring System: Tire specific
+Total Number of Speakers: 6
+Trip computer
+Turn signal in mirrors
+Vehicle Emissions: ULEV II
+Video Monitor Location: Front
+Wheel Diameter: 18
+Wheel Width: 7.5
+Wireless phone connectivity
+* Gps Navigation
+*18'' Wheels
+*Awd
+*Back Up Camera
+*Bluetooth
+*Mp3 Aux Audio Input
+*Power Driver Seat
+*Power Lift Gate
+*Premium Package: 11 Speaker Bose Audio System / Power Pano Roof
+*Push Button Start
+*Remaining Factory Warranty
+*Remote Start
+*Spoiler
+11 Speaker Bose Premium Audio System
+4-Wheel Disc Brakes
+4.677 Axle Ratio
+6 Speakers
+ABS Brakes
+Air Conditioning
+AM/FM Radio
+Anti-Whiplash Front Head Restraints
+Automatic Temperature Control
+Brake Assist
+Bumpers: Body-Color
+CD Player
+Cloth Seat Trim
+Delay-Off Headlights
+Driver Door Bin
+Driver Vanity Mirror
+Dual Front Impact Airbags
+Dual Front Side Impact Airbags
+Electronic Stability Control
+Exterior Parking Camera Rear
+Four Wheel Independent Suspension
+Front Anti-Roll Bar
+Front Bucket Seats
+Front Center Armrest W/Storage
+Front Dual Zone A/C
+Front Fog Lights
+Front Reading Lights
+Fully Automatic Headlights
+Illuminated Entry
+Knee Airbag
+Leather Shift Knob
+Low Tire Pressure Warning
+Mp3 Decoder
+Navigation System
+Occupant Sensing Airbag
+Outside Temperature Display
+Overhead Airbag
+Overhead Console
+Panic Alarm
+Passenger Door Bin
+Passenger Vanity Mirror
+Power Door Mirrors
+Power Driver Seat
+Power Panoramic Moonroof
+Power Passenger Seat
+Power Steering
+Premium Package
+Radio: Am/Fm/Cd Audio System W/Navigation
+Rear Anti-Roll Bar
+Rear Reading Lights
+Rear Seat Center Armrest
+Rear Window Defroster
+Rear Window Wiper
+Remote Keyless Entry
+Roof Rack: Rails Only
+Security System
+Speed Control
+Speed-Sensing Steering
+Speed-Sensitive Wipers
+Split Folding Rear Seat
+Spoiler
+Steering Wheel Mounted Audio Controls
+Telescoping Steering Wheel
+Tilt Steering Wheel
+Traction Control
+Turn Signal Indicator Mirrors
+Variably Intermittent Wipers
+Wheels: 18 Machined Aluminum-Alloy
+Convenience
+Keyless Start
+Remote Start
+Navigation System
+Entertainment
+Bluetooth
+Premium Sound System
+Safety
+Backup Camera
+Brake Assist
+Stability Control
+Exterior
+Alloy Wheels
+Panoramic Roof
+Have a question?
+Contact Seller
+Get answers, see the car, or find a good time for a test drive. Take the next step and contact the seller.
+Nissan Certified Vehicle
+Program Benefits
+24 Hour Emergency Roadside Assistance, Towing Assistance, Trip
+Interruption Benefits, 3-month free subscription to SiriusXM Satellite
+Radio
+on properly equipped vehicles, Complimentary CARFAX® Vehicle History
+Report™ and 3-Year CARFAX® Buy Back Guarantee
+Limited Warranty
+7-year/100,000-mile powertrain warranty
+Learn More
+Nissan Certified Vehicle
+Program Benefits
+24 Hour Emergency Roadside Assistance, Towing Assistance, Trip
+Interruption Benefits, 3-month free subscription to SiriusXM Satellite
+Radio
+on properly equipped vehicles, Complimentary CARFAX® Vehicle History
+Report™ and 3-Year CARFAX® Buy Back Guarantee
+Limited Warranty
+7 year/100,000 mile
+7-year/100,000-mile powertrain warranty from original in-service date;
+$50
+deductible
+Inspection
+167 point inspection and reconditioning
+Eligibility
+6 years/80,000 miles
+Manufacturer Backed
+Nissan Certified
+Learn more
+Disclaimers
+Payment Calculator
+/month
+Estimated payment for
+Down Payment
+$
+Term
+36
+48
+60
+72
+Get a more accurate payment estimate by adding more details.
+Add more details
+Trade-in Value
+$
+Interest Rate (APR)
+%
+Sales Tax
+%
+Vehicle Price
+$
+Calculate Estimate
+Title, other fees, and incentives are not included in this calculation, which is an estimate only. Monthly payment estimates
+are for illustrative purposes only and do not represent a financing offer from
+the seller. Other taxes may apply.
+Get Pre-Approved
+Save time with the Berman Nissan of Chicago's credit applications. They will help you finance this Nissan Murano
+and get into your vehicle today! The application is online, secure and takes 30 seconds.
+Apply Online
+Seller
+Berman Nissan of Chicago
+(4.8) 203 Reviews
+3456 N Kedzie Ave, Chicago, IL 60618
+Get Directions
+Dealer details
+Dealer website
+Interested in this car? Reach out.
+(773) 922-9424
+Check Availability
+Consumer Reviews
+Great car!
+by Mura_Dim on October 06, 2015
+This is a new Nissan purchase for us and we love our 2015 Murano! It handles the road with FWD efficiency, great gas mileage so far, and the comfort and spaciousness is fantastic. The safety features are wonderful and, therefore visually, I do not feel that blind-spot issues are a problem for me. Th...e seats and ride are the most comfortable of any SUV (Edge, SanteFe, Venza, etc.) that I test drove and I can't say enough about the beautiful interior! What a great job Nissan did with their re-design of this very nice truck! They thought of everything!
+View all consumer reviews
+77 reviews
+Comfort
+5/5 stars
+Performance
+5/5 stars
+Exterior Styling
+5/5 stars
+Interior Design
+5/5 stars
+Value for the Money
+5/5 stars
+Reliability
+5/5 stars
+Read about 2015 Nissan Murano
+Cars.com Disclaimer: The information on vehicles provided in this service is supplied by the seller or other third parties; Cars.com is not responsible for the accuracy of such information. Cars.com provides this service and materials without representation or warranties of any kind, either expressed or implied. Click here for more details.
+Our Company
+About Cars.com
+Investor Relations
+Contact Cars.com
+Mobile Apps
+Site Map
+Careers
+Fraud Awareness
+Licensing & Reprints
+Buying & Selling
+Find a Car
+Certified Pre-Owned
+Sell Your Car
+Car Book Values
+Car Dealers
+Compare Car Prices
+Listings by City
+Our Partners
+Auto.com
+NewCars.com
+RepairPal.com
+Terms of Service
+Privacy Statement
+Ad Choices
+© 2018 Cars.com. All rights reserved.
+(function (){
+if (typeof sessionStorage !== 'undefined') {
+var setTime = sessionStorage.getItem('fontsLoaded');
+setTime = typeof setTime === 'string' ? Number(setTime) : 0;
+if (((new Date().getTime()) - setTime) <= (8 * 60 * 60 * 1000)) {
+window.document.documentElement.className += ' font-loaded-source-sans-pro';
+if (window.performance && window.performance.mark) {
+performance.mark('fontsLoaded');
+}
+return;
+}
+}
+/* Font Face Observer v2.0.13 - © Bram Stein. License: BSD-3-Clause */(function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+(function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function r(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function t(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;y(a)&&a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,C=null,E=null,F=null;function G(){if(null===C)if(J()&&/Apple/.test(window.navigator.vendor)){var a=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))(?:\.([0-9]+))/.exec(window.navigator.userAgent);C=!!a&&603>parseInt(a[1],10)}else C=!1;return C}function J(){null===F&&(F=!!document.fonts);return F}
+function K(){if(null===E){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}E=""!==a.style.font}return E}function L(a,b){return[a.style,a.weight,K()?a.stretch:"","100px",b].join(" ")}
+A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",q=0,D=b||3E3,H=(new Date).getTime();return new Promise(function(a,b){if(J()&&!G()){var M=new Promise(function(a,b){function e(){(new Date).getTime()-H>=D?b():document.fonts.load(L(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),N=new Promise(function(a,c){q=setTimeout(c,D)});Promise.race([N,M]).then(function(){clearTimeout(q);a(c)},function(){b(c)})}else m(function(){function u(){var b;if(b=-1!=
+f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==v&&g==v&&h==v||f==w&&g==w&&h==w||f==x&&g==x&&h==x)),b=!b;b&&(d.parentNode&&d.parentNode.removeChild(d),clearTimeout(q),a(c))}function I(){if((new Date).getTime()-H>=D)d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,
+g=n.a.offsetWidth,h=p.a.offsetWidth,u();q=setTimeout(I,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,v=-1,w=-1,x=-1,d=document.createElement("div");d.dir="ltr";t(e,L(c,"sans-serif"));t(n,L(c,"serif"));t(p,L(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);v=e.a.offsetWidth;w=n.a.offsetWidth;x=p.a.offsetWidth;I();z(e,function(a){f=a;u()});t(e,L(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;u()});t(n,L(c,'"'+c.family+'",serif'));
+z(p,function(a){h=a;u()});t(p,L(c,'"'+c.family+'",monospace'))})})};"object"===typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+var regular = new window.FontFaceObserver("Source Sans Pro", { weight: 400 });
+var semiBold = new window.FontFaceObserver("Source Sans Pro", { weight: 600 });
+var bold = new window.FontFaceObserver("Source Sans Pro", { weight: 700 });
+Promise.all([regular.load(), semiBold.load(), bold.load()]).then(function () {
+window.document.documentElement.className += " font-loaded-source-sans-pro";
+if (window.performance && window.performance.mark) {
+window.performance.mark('fontsLoaded');
+}
+if (typeof window.sessionStorage !== 'undefined') {
+sessionStorage.setItem('fontsLoaded', Date.now().toString());
+}
+});
+}());
+window.addEventListener('load', function () {
+s_clven.eVar2 = "413447";
+s_clven.eVar4 = "Tuesday";
+s_clven.eVar10 = "Used Cars/Search/details-details-dealer";
+s_clven.eVar17 = "27461";
+s_clven.eVar25 = "";
+s_clven.eVar73 = "413447";
+s_clven.prop3 = "744082934";
+s_clven.prop4 = "CPO";
+s_clven.prop39 = "";
+s_clven.prop57 = "";
+s_clven.prop63 = "Great Deal";
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.cmd.push(function () {
+googletag.pubads().enableAsyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs(true);
+});
+});
+{
+site: "4IGCP5L"
+}
+var ua = navigator.userAgent;
+if (ua.indexOf('Safari') !== -1) {
+var version = ua.match(/Version\/(\d+)/) || [];
+if (parseInt(version[1]) <= 8) {
+document.getElementsByClassName('page')[0].style.display = 'block';
+}
+}
+var userSummary;
+var userSummaryValue = localStorage.getItem("cars.userSummary");
+if (userSummaryValue) {
+try {
+userSummary = JSON.parse(userSummaryValue);
+} catch(e) {}
+}
+var carsUserDataValue, listingId;
+carsUserDataValue = localStorage.getItem("Cars.userData");
+if (carsUserDataValue) {
+try {
+carsUserData = JSON.parse(carsUserDataValue);
+listingId = carsUserData.listingId;
+} catch(e) {}
+}
+if (userSummary && userSummary.email) {
+_etmc.push(["setOrgId", "Carscomconsumer"]);
+_etmc.push(["setUserInfo", {"email": userSummary.email}]);
+let pageViewList = ["trackPageView"];
+if (listingId) {
+pageViewList.push({"item": ""+listingId});
+}
+_etmc.push(pageViewList);
+}
+(function (doc, GLOBAL) {
+var profiles = {},
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+// default events for listening and broadcast
+var events = {};
+// A event subscription identifier
+var subscriptionId = -1;
+profiles.publish = function (event, args) {
+if (!events[event]) {
+return false;
+}
+var subscribers = events[event],
+len = subscribers ? subscribers.length : 0;
+while (len--) {
+subscribers[len].func(event, args);
+}
+return this;
+};
+profiles.subscribe = function (event, func) {
+if (!events[event]) {
+events[event] = [];
+}
+var token = (++subscriptionId).toString();
+events[event].push({
+token: token,
+func: func
+});
+return token;
+};
+// Unsubscribe from event
+profiles.unsubscribe = function (token) {
+for (var m in events) {
+if (events[m]) {
+for (var i = 0, j = events[m].length; i < j; i++) {
+if (events[m][i].token === token) {
+events[m].splice(i, 1);
+return token;
+}
+}
+}
+}
+return this;
+};
+profiles.init = function () {
+var userData = getUserData();
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1) {
+profiles.publish("profile.login", userData);
+} else {
+profiles.publish('profile.logout');
+}
+profiles.publish("profile.updated", userData);
+GLOBAL.document.querySelector('.prof__menu__signout').querySelector('.prof__link').onclick = logout;
+updateContinueParams();
+};
+// setup header subscriptions:
+profiles.subscribe("profile.updated", updateDOMAll);
+profiles.subscribe("profile.add.car", updateDOMCarCount);
+profiles.subscribe("profile.remove.car", updateDOMCarCount);
+profiles.subscribe("profile.add.search", updateDOMSearchCount);
+profiles.subscribe("profile.remove.search", updateDOMSearchCount);
+profiles.subscribe("profile.add.listing", updateDOMListingCount);
+profiles.subscribe("profile.remove.listing", updateDOMListingCount);
+profiles.subscribe("profile.add.researches", updateDOMResearchCount);
+profiles.subscribe("profile.remove.researches", updateDOMResearchCount);
+profiles.subscribe("profile.login", updateDOMLogIn);
+profiles.subscribe("profile.logout", updateDOMLogOut);
+profiles.subscribe("profile.url.updated", updateContinueParams);
+function updateContinueParams() {
+// clean this up with babel
+if (GLOBAL.NodeList && NodeList.prototype.forEach) {
+GLOBAL.document.querySelectorAll('.js_continue').forEach(updateDOMUrl);
+} else {
+var continueNodes = GLOBAL.document.querySelectorAll('.js_continue');
+for (var i = 0; i < continueNodes.length; i++) {
+updateDOMUrl(continueNodes[i]);
+}
+}
+}
+function updateDOMLogIn(event, data) {
+toggleNavClass(true);
+updateDOMAvatar(true);
+updateDOMPersonName(event, data);
+}
+function updateDOMLogOut() {
+toggleNavClass(false);
+updateDOMAvatar(false);
+updateDOMAll();
+}
+function updateDOMCarCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.cars) ? eventData.favorites.cars : 0;
+return GLOBAL.document.getElementById("prof_menu-savedcars")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMSearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.searches) ? eventData.favorites.searches : 0;
+return GLOBAL.document.getElementById("prof_menu-savedsearches")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMListingCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.ads) ? eventData.favorites.ads : 0;
+if (eventDataCount) {
+return GLOBAL.document.getElementById("prof_menu-savedlistings")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMResearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.researches) ? eventData.favorites.researches : 0,
+savedResearchLink = GLOBAL.document.getElementById("prof_menu-savedresearch");
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1 && savedResearchLink) {
+return savedResearchLink.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMPersonName(event, data) {
+var eventData = stringToObj(data),
+eventDataEmail = (eventData && eventData.email) ? eventData.email : "",
+eventDataFirstName = (eventData && eventData.firstName) ? eventData.firstName : "",
+personName = (eventDataFirstName) ? eventDataFirstName : (eventDataEmail) ? eventDataEmail : "Guest";
+GLOBAL.document.querySelector(".prof__menu--name").innerHTML = personName;
+}
+function updateDOMAvatar(isLogin) {
+if (isLogin) {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-filled"></use></svg>';
+} else {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-line"></use></svg>';
+}
+}
+function toggleNavClass(isLogin) {
+var nav = GLOBAL.document.querySelector('.prof__nav');
+if (isLogin) {
+nav.classList.add('logged-in');
+nav.classList.remove('not-logged-in');
+} else {
+nav.classList.add('not-logged-in');
+nav.classList.remove('logged-in');
+}
+return true;
+}
+function updateDOMAll(event, data) {
+updateDOMCarCount("profile.add.car", data);
+updateDOMSearchCount("profile.add.search", data);
+updateDOMListingCount("profile.add.listing", data);
+updateDOMResearchCount("profile.add.researches", data);
+}
+function stringToObj(string) {
+if (typeof string === "object") {
+return string;
+}
+try {
+var data = JSON.parse(string);
+return data;
+} catch (e) {
+return {};
+}
+}
+function getUserData() {
+var userSummary;
+GLOBAL.CARS = GLOBAL.CARS || {};
+try {
+userSummary = JSON.parse(GLOBAL.localStorage.getItem(USER_SUMMARY_STORAGE_KEY));
+} catch (error) {
+userSummary = DEFAULT_SUMMARY_RESPONSE;
+}
+GLOBAL.CARS.userSummary = userSummary;
+return GLOBAL.CARS.userSummary;
+}
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+function logout(e) {
+e.preventDefault();
+var xhr = new XMLHttpRequest();
+xhr.open('GET', '/profile/global/logout/?noredirect=true', true);
+xhr.withCredentials = true;
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+profiles.publish('profile.logout');
+}
+};
+xhr.send();
+}
+function getPageUrl() {
+return '/' + GLOBAL.location.href.split(".cars.com/")[1];
+}
+function updateDOMUrl(element) {
+let urlBase = element.href;
+if (urlBase.indexOf('?') > -1) {
+urlBase = urlBase.split('?')[0];
+}
+return element.setAttribute('href', urlBase + '?continue=' + encodeURIComponent(getPageUrl()));
+}
+GLOBAL.profiles = profiles;
+GLOBAL.addEventListener('DOMContentLoaded', profiles.init());
+}( document, window ));
+About this Comparison
+Price comparisons are based on an average of Certified 2015 Nissan Murano SV SUVs for sale on Cars.com within a 200 mile radius.
+For display purposes, the points plotted on the Price Map may be a random sampling of the full comparison set.
+All cars are assumed to be in good or better condition. Here's how you can learn more about the condition of this car:
+Contact the dealer
+Cancel
+Call
+(773) 922-9424
+Text
+Chat
+Contact Seller
+Contact Seller
+Contact Seller
+All fields are required except when indicated.
+Please enter a valid first name
+Please enter a valid last name
+Please enter a valid email address
+Please enter a valid phone number
+Check availability
+Request more photos
+Schedule a test drive
+Discuss Financing
+Ask a
+question
+Please enter valid comments
+Email me new listings for my search.
+Do you have Trade-In?
+I'd like to explore financing this
+Send Message
+By clicking here, you authorize Cars.com and its sellers/partners
+to contact you by texts/calls which may include marketing and be
+by autodialer. Calls may be pre-recorded. You also agree to our
+Privacy Statement. Consent is not required to purchase goods/services.
+We value your privacy.
+Cars.com Privacy Statement.

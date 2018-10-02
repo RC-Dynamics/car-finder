@@ -1,0 +1,1270 @@
+window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e150c23afa","applicationID":"124397746,97445382","transactionName":"ZFFVNUoAWUVXUUBRXF0bejd7Tm5bW3FbVkdBW1sNXRMYf1hWUUA=","queueTime":0,"applicationTime":2318,"agent":"","atts":""}window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);
+2018 Audi A5 | Pricing, Ratings & Reviews | Kelley Blue Book
+window.moatYieldReady = function () {
+if (KBB.Moat) {
+KBB.Moat.setMoatReady(true);
+KBB.Moat.executeMoatQueue();
+}
+};
+var KBB = KBB || {};
+KBB.GigyaUrls = {
+finalizeRegistration: '',
+SavedVehicles: '/global/getmykbbsavedvehicledata/',
+RecentlyViewed: '/global/recentlyviewed/',
+YouMightAlsoLike: '/global/youmightalsolike/',
+MostResearched: '/global/mostresearched/',
+SavedComparison: '/global/getmykbbsavedcomparisondata/',
+SavedLeads: '/global/getsavedleads/',
+SetRecentlyViewed: '/global/_setrecentlyviewed/',
+GetRecentlyViewedVehicleData: '/global/_getrecentlyviewedvehicledata/',
+GetAccountInfo: 'global/getaccountinfo'
+};
+KBB.MyKbb = KBB.MyKbb || {};
+KBB.MyKbb.Urls = {
+verifyListingUrl: '/cosmic/_getsaveditemsdata/?manufacturername=audi&amp;modelname=a5&amp;yearid=2018&amp;bodystyle=sedan&amp;intent=buy-new&amp;rts=https%3a%2f%2fwww.kbb.com%2fvehicle-search-results%2f%3fpricerange%3d0-max%26intent%3dnew'
+}
+var pageId = "";
+var s_account = "kbbmain";
+var globalOrd = (Math.random() * 10000000000000000).toFixed(0);
+var baseScriptPath = "//s1.kbb.com";
+var assemblyVersion = "3.9.202.0";
+var dataVersionId = "66758";
+var testid = ""; //test creative ids
+var isMyKBBUser = false;
+var ssId = ""; // populated by setupSessionData in KBB.Page.js
+var globalTile = 0;
+var adTiles = {};
+var validateZipUrl
+= "/zipcode/validate/";
+var validateGetZipInfoUrl
+= "/zipcode/getzipinfo/";
+var validateGetZipInfoByLLUrl
+= "/zipcode/getzipinfobylatlong/";
+var getKbbInternationalSitesMessageUrl = "/zipcode/getkbbinternationalsitesmessage/";
+var getAkamaiCountryCodeUrl = "/zipcode/getakamaicountrycode/";
+var errorJsLogging = true;
+var KBB = KBB || {};
+KBB.DataLayer = KBB.DataLayer || [];
+try {
+if (KBB.DataLayer.length >= 5) {
+KBB.DataLayer.splice (0, 1);
+}
+var data = "%7b%22server%22%3a%22WIN-HNMNUWWSJTB%22%2c%22environment%22%3a%22prod%22%2c%22area%22%3a%22vehicle%22%2c%22controller%22%3a%22ymm%22%2c%22action%22%3a%22index%22%2c%22currentview%22%3a%22%22%2c%22viewtype%22%3a%22%22%2c%22pageinstance%22%3a%22%22%2c%22trackingid%22%3a%22%22%2c%22dynamictracking%22%3afalse%2c%22isprintablepage%22%3afalse%2c%22sessionid%22%3a%22%22%2c%22kbbvisitorid%22%3a%22%22%2c%22flippers%22%3a%7b%22feedbacktab%22%3afalse%2c%22disable_write_review%22%3afalse%2c%22gigyasharing%22%3atrue%2c%22jserrorlogging%22%3atrue%2c%22classifiedsdisablewidgetcounts%22%3afalse%2c%22logzipcodeerrors%22%3atrue%2c%22disableloanrateswebservice%22%3afalse%2c%22clicktalenewcarpath%22%3afalse%2c%22testandtarget%22%3atrue%2c%22newcarstrendingnow%22%3atrue%2c%22mobileonthelot%22%3afalse%2c%22customersatisfactionsurvey%22%3atrue%2c%22appdynamicseum%22%3afalse%2c%22values_strategy%22%3atrue%2c%22hpcombinedslptest%22%3afalse%2c%22testakamairesize%22%3afalse%2c%22gpt%22%3atrue%2c%22ownerslpabthree%22%3atrue%2c%22hprefresh%22%3atrue%2c%22mobilepriceadvisor%22%3afalse%2c%22psclientrecentlyviewed%22%3afalse%2c%22gptphase1test%22%3afalse%2c%22highlightadboostfdpq%22%3afalse%2c%22incentivesoempilot%22%3afalse%2c%22classifiedscpointernalad%22%3atrue%2c%22classifiedslimitedlistingsasync%22%3atrue%2c%22highlightunsolddisabled%22%3afalse%2c%22mobiledealerpages%22%3afalse%2c%22mobilenewcarpriceadvisor%22%3afalse%2c%22tntstandard%22%3atrue%2c%22partnerchallenge%22%3atrue%2c%22incentivesonglobalmobile%22%3afalse%2c%22feature%20name%22%3atrue%2c%22globalmobilenav%22%3atrue%2c%22autocheckucvdp%22%3atrue%2c%22showautocheckmoduletile%22%3atrue%2c%22gptnonsraoverride%22%3atrue%2c%22wallpaperfirst%22%3afalse%2c%22showautocheckmoduletilenoupgrades%22%3atrue%2c%22gptcombinedslp%22%3afalse%2c%22sponsoredmodelpage%22%3atrue%2c%22m1tabletclassifieds%22%3afalse%2c%22issearchenginetypesolr%22%3atrue%2c%22similarvehiclesbuynewymmt%22%3afalse%2c%22similarvehiclesymm%22%3atrue%2c%22oemincentivesusebypassdata%22%3afalse%2c%22m1targetedoffers%22%3atrue%2c%22isadblock%22%3atrue%2c%22m1charger%22%3afalse%2c%22rendervdponnewframework%22%3afalse%2c%22chargerdealadvisor%22%3afalse%2c%22disablemegaconstraintlogging%22%3atrue%2c%22homepagevideomodule%22%3afalse%2c%22geolookuplogging%22%3afalse%2c%22geolookupgoogleapi%22%3afalse%2c%22classifiedsgptinlineads%22%3atrue%2c%22m1chargeruc%22%3afalse%2c%22facebookpixel%22%3atrue%2c%22mpgtabadloadasdynamic%22%3atrue%2c%22adobedtm%22%3atrue%2c%22whitelistoverlay%22%3atrue%2c%22loggooglesearchapicalls%22%3afalse%2c%22enableusedcarhighlight%22%3atrue%2c%22enablesponsoredchip%22%3afalse%2c%22m1combineslp%22%3afalse%2c%22m1lockedads%22%3afalse%2c%22whitelistdev%22%3afalse%2c%22facebookfeeddisabled%22%3afalse%2c%22mobilerecommendations%22%3afalse%2c%22publisherstudypixel%22%3atrue%2c%22xtag%22%3afalse%2c%22includepixallscript%22%3atrue%2c%22kbbrum%22%3atrue%2c%22hyundaifloodlightoff%22%3afalse%2c%22vehicleadvisor%22%3afalse%2c%22targetedincentivesnewdesign%22%3afalse%2c%22newsepsrp%22%3afalse%2c%22applewallet%22%3afalse%2c%22enableoptimizedshowroom%22%3atrue%2c%22hpredesign%22%3atrue%2c%22demdex%22%3atrue%2c%22toyotacentralredesign%22%3atrue%2c%22bycwebapi%22%3atrue%2c%22m1desktoptopten%22%3afalse%2c%22m1tablettopten%22%3afalse%2c%22m1smartphonetopten%22%3afalse%2c%22vehicleadvisormm%22%3afalse%2c%22shellapptrafficredirect%22%3afalse%2c%22displaydealerspecials%22%3atrue%2c%22vdpratingsandreviews%22%3afalse%2c%22newmmymm%22%3atrue%2c%22maintenancemode%22%3afalse%2c%22drpaymentcalc3%22%3afalse%2c%22newsave%22%3afalse%2c%22displayownerhub%22%3atrue%2c%22aemnavfooter%22%3atrue%2c%22ucmcupdates%22%3afalse%2c%22kbbinternationalsitesmessage%22%3atrue%2c%22usedcarredesigndealadvisor%22%3afalse%2c%22awstestinprogress%22%3atrue%2c%22faqresponsive%22%3atrue%2c%22latestnewsamp%22%3atrue%2c%22classifiedsboost%22%3atrue%2c%22displayownerexitstitial%22%3atrue%2c%22icoreactthrottle%22%3atrue%2c%22icoreactredirect%22%3atrue%2c%22ownersico%22%3atrue%2c%22abtestpoc%22%3afalse%2c%22displayexitstitial%22%3atrue%2c%22enablenrum%22%3atrue%2c%22icoconditionredesign%22%3afalse%2c%22ymmredo%22%3atrue%2c%22aatest%22%3atrue%2c%22owners18%22%3atrue%2c%22responsivebuyerspath%22%3afalse%2c%22enabledr%22%3atrue%2c%22showtabprices%22%3afalse%2c%22resncymmt%22%3atrue%2c%22ucymmtupdates%22%3afalse%2c%22toyotacentraloff%22%3atrue%2c%22ownersicologvalidationerrors%22%3afalse%2c%22showtil%22%3atrue%2c%22logstylesoverride%22%3afalse%2c%22logdiffstylesoverride%22%3afalse%2c%22contactskiplink%22%3afalse%2c%22enablebidding%22%3atrue%2c%22needsandwants%22%3atrue%2c%22fnav%22%3atrue%2c%22newmykbb%22%3atrue%2c%22enablerecall%22%3afalse%2c%22carreviewsresp%22%3atrue%2c%22carresearchresp%22%3atrue%2c%22tilpmodals%22%3atrue%2c%22feature.tilpmodals%22%3afalse%2c%22enableamzbid%22%3atrue%2c%22enableprebid%22%3afalse%2c%22enablemoat%22%3atrue%2c%22consrevresp%22%3atrue%2c%22bzo%22%3atrue%2c%22enablepsp%22%3atrue%7d%2c%22leadtype%22%3a%22%22%2c%22comparevehicleids%22%3a%22%22%2c%22sponsorship%22%3a%7b%22sponsoredcategorymanufacturerid%22%3a%22%22%2c%22sponsoredmanufacturerids%22%3a%22%22%7d%2c%22location%22%3a%7b%22zip%22%3a%22%22%2c%22city%22%3a%22%22%2c%22state%22%3a%22%22%2c%22county%22%3a%22%22%2c%22statecounty%22%3a%22%22%2c%22statesubcounty%22%3a%22%22%2c%22dma%22%3a%22%22%2c%22akamaizip%22%3a%22%22%2c%22akamaizipcodeall%22%3a%22%22%2c%22akamaistatecounty%22%3a%22%22%2c%22akamaistatesubcounty%22%3a%22%22%2c%22akamaidma%22%3a%22%22%7d%2c%22targetexperience%22%3a%22%22%2c%22device%22%3a%7b%22ismobiledevice%22%3afalse%2c%22issmartphone%22%3afalse%2c%22istablet%22%3afalse%7d%2c%22nativeapps%22%3a%7b%22experience%22%3a%22browser%22%2c%22os%22%3a%22windows%207%22%2c%22device%22%3a%22unk%22%2c%22version%22%3a%22%22%7d%2c%22info%22%3a%7b%22odometer%22%3a%22%22%2c%22fueleconomy%22%3a%22%22%2c%22mileage%22%3a%22%22%2c%22intent%22%3a%22buy-new%22%2c%22subintent%22%3a%22%22%2c%22pricingreporttype%22%3a%22buynew%22%2c%22vehicleclass%22%3a%22newcar%22%2c%22vehicletype%22%3a%22%22%2c%22pricetype%22%3a%22%22%2c%22shortpricetype%22%3a%22%22%2c%22condition%22%3a%22%22%2c%22shortcondition%22%3a%22%22%2c%22shortcategory%22%3a%22lux%22%2c%22subcategory%22%3a%22luxc%22%2c%22subcategoryname%22%3a%22luxury%20car%22%2c%22category%22%3a%22luxury%22%2c%22categoryid%22%3a2524%2c%22btcategory%22%3a%22luxury%22%2c%22yearid%22%3a2018%2c%22modelyearid%22%3a%22%22%2c%22manufacturer%22%3a%7b%22id%22%3a4%2c%22name%22%3a%22Audi%22%2c%22shortname%22%3a%22audi%22%2c%22shortnameabbr%22%3a%22audi%22%2c%22pickode%22%3a%22au%22%2c%22atcname%22%3a%22%22%7d%2c%22model%22%3a%7b%22id%22%3a14891%2c%22name%22%3a%22A5%22%2c%22shortname%22%3a%22a5%22%2c%22marketname%22%3a%22%22%2c%22shortmarketname%22%3a%22%22%2c%22atcname%22%3a%22%22%7d%2c%22vehicle%22%3a%7b%22id%22%3a%22%22%2c%22name%22%3a%22%22%2c%22trimdisplayname%22%3a%22%22%2c%22primarycategory%22%3a%22%22%2c%22taggingprice%22%3a%22%22%2c%22price%22%3a%22%22%2c%22defaultprice%22%3a%22%22%2c%22mpgcity%22%3a%22%22%2c%22mpghwy%22%3a%22%22%2c%22mpgrangelow%22%3a%22%22%2c%22mpgrangehigh%22%3a%22%22%2c%22chromeid%22%3a%22%22%7d%2c%22mileagerange%22%3a%22%22%2c%22mileagerangelow%22%3a%22%22%2c%22mileagerangehigh%22%3a%22%22%2c%22exteriorcolor%22%3a%22%22%7d%2c%22aem%22%3a%7b%22name%22%3a%22%22%2c%22keyvalues%22%3a%7b%7d%7d%2c%22classifiedsinfo%22%3a%7b%22listing%22%3anull%2c%22search%22%3anull%2c%22atcmakecode%22%3a%22%22%2c%22atcmodelcode%22%3a%22%22%2c%22tab%22%3a%22%22%2c%22listingtype%22%3a%22%22%2c%22dealernotfound%22%3afalse%2c%22dealerid%22%3a0%2c%22chromeid%22%3a%22%22%2c%22dealerwebsite%22%3a%22%22%2c%22minyear%22%3a1981%2c%22maxyear%22%3a2020%7d%2c%22omniture%22%3a%7b%22account%22%3a%22kbbmain%22%2c%22supersectionname%22%3a%22%22%2c%22sectionname%22%3a%22%22%2c%22pagename%22%3a%22%22%2c%22detailpagename%22%3a%22%22%2c%22previouspagename%22%3a%22%22%2c%22pageversion%22%3a%22r%22%2c%22pagecontentversion%22%3a%22%22%2c%22sitecatalystid%22%3a%22%22%2c%22intent%22%3a%22buynew%22%2c%22subintent%22%3a%22none%22%2c%22testid%22%3a%22%22%2c%22visitorid%22%3a%22%22%7d%2c%22ads%22%3a%7b%22dyn%22%3a%22%22%2c%22environment%22%3a%22prod%22%2c%22cid%22%3a%22%22%2c%22unknown%22%3a%22%22%2c%22pl%22%3a%22md%22%2c%22uuid%22%3a%22%22%2c%22azne%22%3a%22%22%2c%22dma%22%3a%22%22%2c%22mke%22%3a%22%22%2c%22classifiedsinlineadnetworkid%22%3a%2218353239%22%2c%22classifiedsinlineadlocation%22%3a%22kbb%22%2c%22ncmpgtab%22%3afalse%2c%22ncoemtab%22%3afalse%2c%22sponsoredrcm%22%3afalse%2c%22ignorewhitelistoverlay%22%3afalse%7d%2c%22filters%22%3a%7b%22maxprice%22%3a%22%22%2c%22minprice%22%3a%22%22%7d%2c%22paidsearch%22%3a%7b%22paidsearchid%22%3a%22%22%2c%22searchignitetrackingid%22%3a%22%22%7d%2c%22search%22%3a%7b%22criteria%22%3a%22%22%2c%22criteriavalues%22%3a%22%22%2c%22resultsetinfo%22%3a%22%22%2c%22resulttotal%22%3a%22%22%2c%22resultdetailsearchtype%22%3a%22%22%2c%22resultsearchtype%22%3a%22%22%7d%2c%22incentives%22%3a%7b%22useajaxbeforeomniture%22%3afalse%2c%22usenewadaptivedesign%22%3afalse%2c%22incentiveid%22%3a%22%22%2c%22offerid%22%3a0%2c%22referringmakeid%22%3a0%2c%22referringmodelid%22%3a0%2c%22incentivepitriggeredscenario%22%3a%22%22%2c%22incentivepitriggereditem%22%3a%22%22%2c%22incentivepiintendertype%22%3a%22%22%2c%22vehiclesegmentid%22%3a0%2c%22akamaigeolocation%22%3a%22georegion%3d33%2ccountry_code%3dbr%2cregion_code%3dpe%2ccity%3drecife%2clat%3d-8.05%2clong%3d-34.90%2ctimezone%3dgmt-2%2ccontinent%3dsa%2cthroughput%3dvhigh%2cbw%3d5000%2casnum%3d1916%2clocation_id%3d0%22%7d%2c%22timbuybook%22%3a%7b%22lp%22%3a%22%22%2c%22offercode%22%3a%22%22%2c%22icoofferid%22%3a%22%22%7d%2c%22routes%22%3a%7b%22shopperprofiles%22%3a%22%2fvehicles%2fservices%2fshopperprofiles%2f%22%7d%2c%22url%22%3a%7b%22canonicalurl%22%3a%22%2faudi%2fa5%2f2018%2f%22%2c%22requestedurl%22%3a%22http%3a%2f%2fwww.kbb.com%2faudi%2fa5%2f2018%2f%3fbodystyle%3dsedan%26intent%3dbuy-new%26rts%3dhttps%3a%2f%2fwww.kbb.com%2fvehicle-search-results%2f%3fpricerange%3d0-max%26intent%3dnew%22%2c%22queryrequestedurl%22%3a%22%22%2c%22isssl%22%3atrue%2c%22protocol%22%3a%22https%22%2c%22referrer%22%3a%22%22%2c%22absolutehost%22%3a%22www.kbb.com%22%7d%2c%22user%22%3a%7b%22isauthenticated%22%3afalse%7d%2c%22diagnostics%22%3a%7b%22server%22%3a%22WIN-HNMNUWWSJTB%22%2c%22dataversionid%22%3a66758%2c%22contentlastupdateddate%22%3a%229%2f25%2f2018%208%3a00%3a42%20AM%22%2c%22sourcecontrolversion%22%3a%223.9.202.0%22%2c%22assemblyversion%22%3a%223.9.202.0%22%2c%22newcarvehicletransactionsetlcreateddate%22%3a%229%2f25%2f2018%205%3a09%3a48%20PM%22%2c%22newcarvehicletransactionslatesttransactiondate%22%3a%229%2f22%2f2018%2012%3a00%3a00%20AM%22%2c%22usedcarvesion%22%3a%7b%22vehicletype%22%3a%22UsedCar%22%2c%22editionbeginmonth%22%3a10%2c%22editionendmonth%22%3a10%2c%22editionyear%22%3a2018%2c%22versionnumber%22%3a%2218100%22%2c%22startdate%22%3a%222018-09-28T00%3a00%3a00%22%2c%22enddate%22%3a%222018-10-04T00%3a00%3a00%22%7d%2c%22newcarvesion%22%3a%7b%22vehicletype%22%3a%22New%20Car%22%2c%22editionbeginmonth%22%3a0%2c%22editionendmonth%22%3a0%2c%22editionyear%22%3a0%2c%22versionnumber%22%3a%22181000%22%2c%22startdate%22%3a%222018-09-28T00%3a00%3a00%22%2c%22enddate%22%3a%222018-10-04T00%3a00%3a00%22%7d%2c%22motorcyclecarvesion%22%3a%7b%22vehicletype%22%3a%22Motorcycle%22%2c%22editionbeginmonth%22%3a9%2c%22editionendmonth%22%3a12%2c%22editionyear%22%3a2018%2c%22versionnumber%22%3a%223%22%2c%22startdate%22%3a%222018-09-01T00%3a00%3a00%22%2c%22enddate%22%3a%222018-12-31T00%3a00%3a00%22%7d%7d%2c%22pageid%22%3a%2285733938-6e80-4a1d-9f76-95e5a4dfe28b%22%2c%22latestawardsyears%22%3a%7b%22brva%22%3a2018%2c%22cto%22%3a2018%2c%22bia%22%3a2018%7d%2c%22foresee%22%3a%7b%22desktop%22%3a10.0%2c%22tablet%22%3a10.0%2c%22smartphone%22%3a10.0%7d%2c%22ismobilefriendlypage%22%3afalse%2c%22ignorefreeviewrule%22%3afalse%2c%22displayzipcodeoverlay%22%3afalse%2c%22usezipcodebyip%22%3afalse%2c%22surveycookie%22%3a%7b%22cookiename%22%3a%22GLGJSY%22%2c%22cookieexpiration%22%3a14%7d%2c%22requiresauthentication%22%3afalse%2c%22ismobilefirstlayout%22%3atrue%2c%22ansid%22%3a%225az4dslfp2sqvqb35xo1fh5y%22%2c%22pixall%22%3a%7b%7d%2c%22awardscategory%22%3a%22%22%2c%22awardsyear%22%3a0%7d"
+KBB.DataLayer.push (JSON.parse(decodeURIComponent(data)));
+} catch (err) {
+}
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+// initialize apstag
+apstag.init({
+pubID: '3726',
+adServer: 'googletag',
+bidTimeout: 2e3
+});
+KBB.Page.setupPage();
+//FacebookPixel
+var dataLayer=KBB.Page.getDataLayer();if(dataLayer.dynamictracking||dataLayer.flippers.facebookpixel){!function(e,a,t,n,o,r,i){e.fbq||(o=e.fbq=function(){o.callMethod?o.callMethod.apply(o,arguments):o.queue.push(arguments)},e._fbq||(e._fbq=o),o.push=o,o.loaded=!0,o.version="2.0",o.queue=[],r=a.createElement(t),r.async=!0,r.src=n,i=a.getElementsByTagName(t)[0],i.parentNode.insertBefore(r,i))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js"),fbq("init","1511218289206949"),fbq("track","PageView");var pageName=dataLayer.omniture.pagename;"classdetailused"===pageName||"classdetailnew"===pageName?fbq("track","AddToCart",{content_type:"product",content_ids:dataLayer.info.vehicle.id,value:dataLayer.classifiedsinfo.listing.displayprice,content_name:dataLayer.info.yearid+"/"+dataLayer.info.manufacturer.shortname+"/"+dataLayer.info.model.shortname,currency:s.currencyCode,zip:dataLayer.location.zip,content_category:dataLayer.info.shortcategory}):("ymmtrimnewovr_buynew"===pageName||"ncmodelmain-touch"===pageName)&&fbq("track","ViewContent",{content_ids:dataLayer.info.vehicle.id,make:dataLayer.info.manufacturer.shortname,model:dataLayer.info.model.shortname,content_category:dataLayer.info.shortcategory,condition:"new",content_type:"product"})}
+!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js"); pintrk('load','2617178677535'); pintrk('page');
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://www.kbb.com/",
+"legalName": "Kelley Blue Book",
+"alternateName":
+"KBB",
+"logo": "https://file.kbb.com/kbb/images/m1/kbblogo.v1.png",
+"sameAs": [
+"https://www.facebook.com/kbb/","https://twitter.com/KelleyBlueBook", "https://plus.google.com/+kbb", "https://www.pinterest.com/kelleybluebook/", "https://www.linkedin.com/company/kelley-blue-book", "https://www.youtube.com/user/kbb", "https://www.instagram.com/kbb_com/"
+]
+}
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"name": "Kelley Blue Book",
+"alternateName":
+"KBB",
+"url": "https://www.kbb.com/"
+}
+var KBB=KBB||{};KBB.DetectBlockerExtensions=function(){"use strict";var e={onBlock:"on-block",onHide:"on-hide",off:"off"},t="New-spotlights",n=null,o={},i=e.off,l=null,u=0,d=0,r=3,c=10,a=function(e,t){return void 0!==e.currentStyle?e.currentStyle[t]:getComputedStyle(e,null)[t]},s=function(e){return 0!==e.clientHeight},m=function(e){var t=getComputedStyle(e,null);return null!==t&&(t=t.getPropertyValue("-moz-binding")),!!t&&-1!==t.indexOf("about:")},g=function(){document.body.contains(n)&&(o.visibility=n?a(n,"visibility"):null,o.display=n?a(n,"display"):null,o.height=n?s(n):null,o.moz=n?m(n):null)},f=function(){i="hidden"===o.visibility||"none"===o.display?e.onHide:n.getAttribute("abp")?e.onHide:o.height?e.off:e.onHide},B=function(){KBB.Page.trigger(KBB.Page.Events.AbbComplete),document.body.classList.add(i);var e=document.getElementById("ac");e.parentNode.removeChild(e);var t=document.getElementById("ab");t.parentNode.removeChild(t)},y=function(){n=document.getElementById(t),u+=1,g(),f(),u<c?setTimeout(y,100):(d+=1,i===e.onBlock||i===e.onHide?B():d<r?(u=0,setTimeout(y,100)):B())},b=function(){var e=document.createElement("div");e.innerHTML="?",e.setAttribute("id",t),e.className="ad-med-rec gpt-ad",document.getElementById("ac").appendChild(e)};return{elementStatus:o,startDetection:function(){b(),l=KBB.storage.getFromLocalStorage("eVar61"),y()},getCurrentStatus:function(){return i}}}();
+s.eVar76 = KBB.Page.getDataLayer().location.akamaizip; s.eVar84 = KBB.Page.getDataLayer().location.akamaizipcodeall;
+mboxCreate("kbb_global_top", "pagename=" + KBB.DataLayer[0].omniture.pagename);
+KBB.Ads.showAd('kbbAdsMainWallpaper');
+Home
+Car Values
+New & Used Car Prices
+Trade-in & Private Party Values
+Instant Cash Offer
+Cars for Sale
+Search Local Inventory
+Sell Your Car
+Free Dealer Price Quote
+Vehicle History Report
+Find Local Dealers
+Car Reviews
+KBB Expert Reviews
+New Car Buyer's Guide
+Consumer Reviews
+Safety & Quality Ratings
+Awards & Top 10s
+Top 10 Lists
+KBB Awards
+New Car Buyer's Guide
+Latest Car News
+Auto Show News
+Research Tools
+Compare Cars
+Payment Calculator
+Vehicle History Report
+5-Year Cost to Own
+Vehicle Search Tool
+Car Loans
+Insurance
+Check My Credit
+Extended Warranty
+MyKBB
+Welcome
+My Account
+Sign Out
+Vehicle I Own (0)
+Saved Vehicles (0)
+ZIP Code:
+| Change
+MyKBB
+Sign In
+Don't Have an Account?
+Use MyKBB to save vehicles, track listings, compare cars and access your content from any device.
+Create Account
+Saved Vehicles (0)
+ZIP Code:
+| Change
+Sign Up for MyKBB
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three"></h3>
+<div class="paragraph-two">
+Must be a minimum of six characters. Passwords are case sensitive.
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+I acknowledge that I have read and accept the Terms of Service.
+I'd like to receive useful tips, tools and resources via email from Kelley Blue Book and affiliates.
+Privacy Policy
+I already have an account
+You've created your personalized KBB Profile!
+Now you can start saving your car research and get customized car recommendations.
+Click on a link below to start.
+My Recently Viewed Cars
+My Profile
+Enter Your ZIP Code
+Please enter a valid 5-digit ZIP code.
+Location:
+Save
+Kelley Blue Book® Values and pricing are based in part on transactions in your area. Your ZIP code also helps us find local deals and highlight other available offers.
+Privacy Policy
+|
+Values outside the United States
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">Enter Your ZIP Code</h3>
+<div class="paragraph-two">
+<div>
+<div id="zipcodeError" class="hidden error-message-label vertical-spacing-margin-top">Please enter a valid 5-digit ZIP code.</div>
+<div id="zipcodeForm" class="zipcode-form vertical-spacing-margin-top paragraph-two">
+<label for="zipcode" class="zipcode-form-pad-right">ZIP Code:</label>
+<input id="zipcodeInput" class="textbox-one zipcode-form-pad-right" type="tel" maxlength="5" pattern="\d*" title="ZIP Code" />
+<button id="zipcodeSave" class="button-one zipcode-form-pad-right">Save</button>
+</div>
+<div class="vertical-spacing-margin-top paragraph-two">
+<p>Kelley Blue Book® Values and pricing are based in part on transactions in your area. Your ZIP code also helps us find local deals and highlight other available offers.</p>
+</div>
+<div id="zipcodePrivacyPolicy" class="vertical-spacing-margin-top paragraph-two">
+<a class="privacy-policy" href="/company/privacy-policy/" target="_blank" rel="nofollow">Privacy Policy</a>
+</div>
+<div id="valuesOutsideUSA" class="vertical-spacing-margin-top paragraph-two">
+<a href="/company/valuesoutsideus/" rel="nofollow" onclick="window.open(this.href,'','height=480,width=450,top=50,left=50,scrollbars=1,toolbar=no');return false;">
+Values outside the United States
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+﻿
+﻿
+Saved Vehicles
+Recently Viewed
+You've added your first car!As you save even more cars and classified listings, find them here for easy reference.
+Got It
+Vehicle Added
+Vehicle Removed
+Limit Reached
+(function() { 'use strict'; KBB.Page.addAnalyticsClickOnlyTags([{type: 'click', selector: '#navToHome', partner: 'nx', tag: function() {return 'home_global'}},{type: 'click', selector: '#navToCarValues', partner: 'nx', tag: function() {return 'carvalues_global-values'}},{type: 'click', selector: '#navToCarValuesnavToNewUsedCarPrices', partner: 'nx', tag: function() {return 'buy_global-values'}},{type: 'click', selector: '#navToCarValuesnavToTradeinPrivatePartyValues', partner: 'nx', tag: function() {return 'mycarworth_global-values'}},{type: 'click', selector: '#navToCarValuesnavToInstantCashOffer', partner: 'buybook', tag: function() {return 'ico_global-values'}},{type: 'click', selector: '#navToCarsForSale', partner: 'nx', tag: function() {return 'inv_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToSearchLocalInventory', partner: 'nx', tag: function() {return 'invsearch_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToSellYourCar', partner: 'nx', tag: function() {return 'selltool_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToFreeDealerPriceQuote', partner: 'nx', tag: function() {return 'fdpq_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToVehicleHistoryReport', partner: 'nx', tag: function() {return 'vehhist_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToFindLocalDealers', partner: 'nx', tag: function() {return 'finddlr_global-class'}},{type: 'click', selector: '#navToCarReviews', partner: 'nx', tag: function() {return 'revrat_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToKBBExpertReviews', partner: 'nx', tag: function() {return 'exprev_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToNewCarBuyersGuide', partner: 'nx', tag: function() {return 'buyguide_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToConsumerReviews', partner: 'nx', tag: function() {return 'consrev_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToSafetyQualityRatings', partner: 'nx', tag: function() {return 'rat_global-exprev'}},{type: 'click', selector: '#navToAwardsTops', partner: 'nx', tag: function() {return 'latestnews1_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToTopLists', partner: 'nx', tag: function() {return 'newsarticle2_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToKBBAwards', partner: 'nx', tag: function() {return 'award3_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToNewCarBuyersGuide', partner: 'nx', tag: function() {return 'buyguide4_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToLatestCarNews', partner: 'nx', tag: function() {return 'news5_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToAutoShowNews', partner: 'nx', tag: function() {return 'ashow6_global-edtr'}},{type: 'click', selector: '#navToResearchTools', partner: 'nx', tag: function() {return 'rschtools_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCompareCars', partner: 'nx', tag: function() {return 'comp_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToPaymentCalculator', partner: 'nx', tag: function() {return 'afford_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToVehicleHistoryReport', partner: 'nx', tag: function() {return 'vehhist_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToYearCosttoOwn', partner: 'nx', tag: function() {return 'costown_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToVehicleSearchTool', partner: 'nx', tag: function() {return 'vehsrch_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCarLoans', partner: 'nx', tag: function() {return 'loan_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToInsurance', partner: 'nx', tag: function() {return 'insure_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCheckMyCredit', partner: 'nx', tag: function() {return 'credit_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToExtendedWarranty', partner: 'warrantydirect', tag: function() {return 'warranty_global-rsch'}},{type: 'click', selector: '.logo-home-link', tag: function () {return 'kbblogo_global';}}])})();
+if (KBB.NewRelic) { KBB.NewRelic.mark('navigationBar'); }
+KBB.Ads.showAd('kbbAdsMainCenterAd');
+Back to Search Results
+New 2018 Audi A5 Sedan
+New 2018
+Audi A5 Sedan
+2018
+2018
+2016
+2015
+2014
+2018
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Sedan
+Coupe
+Convertible
+Change Vehicle
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">Change Vehicle</h3>
+<div class="paragraph-two">
+<form id="vehicleForm" class="change-vehicle-dropdowns" data-fetch-api="/vehicles/makemodelnext/">
+<select id="yearDropdown0" name="yearId" class="dropdown-two year-dropdown" data-kbb-child="makeDropdown0" data-method="GET" data-kbb-ajax="/Api/3.9.202.0/66758/vehicle/v1/Years?action=Get" data-default-name="Year" data-kbb-call-chosen="KBB.YmmDropdown.handleYearChosen" data-kbb-select></select>
+<select id="makeDropdown0" name="manufacturername" class="dropdown-two make-model-dropdown make-dropdown" data-kbb-child="modelDropdown0" data-kbb-parent="yearDropdown0" data-method="GET" data-kbb-ajax="/Api/3.9.202.0/66758/vehicle/v1/Makes?action=Get" data-default-name="Make" data-kbb-call-before="KBB.YmmDropdown.prepareMakeData" data-kbb-call-chosen="KBB.YmmDropdown.handleMakeChosen" data-kbb-select></select>
+<select id="modelDropdown0" name="modelname" class="dropdown-two make-model-dropdown model-dropdown" data-kbb-child="" data-kbb-parent="makeDropdown0" data-method="GET" data-kbb-ajax="/Api/3.9.202.0/66758/vehicle/v1/Models?action=Get" data-default-name="Model" data-kbb-call-before="KBB.YmmDropdown.prepareModelData" data-kbb-call-chosen="KBB.YmmDropdown.handleModelChosen" data-kbb-select></select>
+<a id="goYmmButton" class="button-three next-button disabled">Go</a>
+</form>
+<div>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+{{#Data}}
+<li class="sub-nav-title"><span data-omn-name="{{omniture}}" data-section="{{id}}" class="{{className}} js-sub-nav-text">{{title}}</span></li>
+{{/Data}}
+Combined Fuel Economy
+27 MPG
+KBB.com Expert Rating
+9.6/10
+KBB.com Consumer Rating
+9/10
+Write a review
+MSRP Range:
+$43,575 - $51,175
+See What You Should Pay
+Editor's Overview
+Whether as a coupe, convertible or 5-door liftback, the 2018 Audi A5 has an excellent blend of driving dynamics, technology and safety aids.
+See What You Should Pay
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">MSRP Range</h3>
+<div class="paragraph-two">
+<div>MSRP Range shown here is based on the MSRPs across all styles for this vehicle without additional options.<br><br>The MSRP, or Manufacturer's Suggested Retail Price, is the price set by the manufacturer. MSRP includes destination charges and minimum required equipment, but excludes service and handling fees and state and local tax, title and license fees. MSRP is a reference point for negotiations, however dealers can choose to sell a vehicle above or below its listed MSRP.</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<div class="paragraph-two">
+<div class="ev-tax-badge-popup">
+<h3 class="title-three">Federal Tax Credit Up To $7,500!</h3>
+<p class="paragraph-two">
+The 2018 audi a5 electric vehicle qualifies for a federal tax credit of up to $7,500, effectively reducing the net base price.<br />
+<ul>
+Depending on your city or state, other electric vehicle-related perks may include:
+<li><span class="bullet">•</span> additional purchase incentives</li>
+<li><span class="bullet">•</span> single-occupant access to carpool lanes</li>
+<li><span class="bullet">•</span> free or discounted parking</li>
+</ul>
+<br />
+Home charging stations, which cut charging times in half (or more) vs. standard wall outlets, may also be eligible for incentives. Find more incentive information at
+<a class="link js-fuelecon" href="http://www.fueleconomy.gov/feg/taxphevb.shtml" target="_blank">
+fueleconomy.gov
+</a> and <a class="link js-plugin" href="http://www.pluginamerica.org/why-plug-vehicles/state-federal-incentives" target="_blank">pluginamerica.com</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">Combined Fuel Economy Range</h3>
+<div class="paragraph-two">
+<div>
+<p>Please note that this Range does not reflect highway vs city mileage.</p>
+<p>Instead it reflects the range of fuel economy across all styles of this vehicle.</p>
+<p>Why might the same model have different fuel economy ratings?</p>
+<ul>
+<li>Different engines (e.g., a 4-cylinder and a 6-cylinder)</li>
+<li>Different transmissions</li>
+<li>A hybrid or electric version</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+Pricing
+MSRP Range:
+$43,575 - $51,175
+See how style, options and other factors can impact pricing in your area.
+See What You Should Pay
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">MSRP Range</h3>
+<div class="paragraph-two">
+<div>MSRP Range shown here is based on the MSRPs across all styles for this vehicle without additional options.<br><br>The MSRP, or Manufacturer's Suggested Retail Price, is the price set by the manufacturer. MSRP includes destination charges and minimum required equipment, but excludes service and handling fees and state and local tax, title and license fees. MSRP is a reference point for negotiations, however dealers can choose to sell a vehicle above or below its listed MSRP.</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+Cars For Sale
+var birfDataIsland = {"page":{"site":{"environment":"prod","site":"www.kbb.com","superSection":"","section":"","pageName":"","detailedPageName":"","atcCookie":"","myAtcId":"0","myAtc":"false","requestedPage":"http://www.kbb.com/audi/a5/2018/?bodystyle=sedan&amp;intent=buy-new&amp;rts=https%3a%2f%2fwww.kbb.com%2fvehicle-search-results%2f%3fpricerange%3d0-max%26intent%3dnew","referringPage":"","search_lan":"en_US"},"location":{"address":"","ipZipCode":"","dma":"","distance":""},"vehicle":{"body_code":[],"car_year":"","car_id":"","fuel":"","make":[],"model":[],"price":"","search_max_price":"","search_max_year":"","search_min_price":"","search_min_year":"","search_type":[],"Car_Type":"","search_distance":"","color":[]},"owner":{"dealer_id":"","seller_type":""},"demographic":{"hispanic":"false"},"BIRF":{"test_name":"","disableImpressions":"false","logDomain":"http://www.autotrader.com","pg_inst":"","rd_page":"","pg":"kbb_fyc_mr","my":"","ref_url":"","my_lt":"","my_id":"","z":"","make":["AUDI"],"model":["A5"],"log":0,"cid":""},"doubleclick":{},"comscore":{}}};
+birfDataIsland.page.BIRF.z = KBB && KBB.DataLayer && KBB.DataLayer[0] && KBB.DataLayer[0].location ? (KBB.DataLayer[0].location.zip || '') : '';
+KBB.com Expert Review
+9.6 out of 10
+You'll Like This Car If...
+Whether you're a young professional who is pre-family or an empty-nester ready to drive a fun and stylish luxury coupe or convertible, the 2018 Audi A5 will scratch that itch and make a statement while doing so. The practical A5 Sportback, meanwhile, can seat five and boasts a spacious rear hatch.
+You May Not Like This Car If...
+In the niche category of luxury-compact coupes and convertibles, all the players meet a high bar. That can leave your decision to personal preference and design appeal. You might like luxe swagger of the C-Class or the lines of the Lexus RC or Infiniti Q60, both of which also cost less.
+What's New for 2018
+The A5 is all-new for 2018. Like the revamped A4 that came before it, the new A5 is loaded with slick technology like Audi's Virtual Cockpit digital dash and active safety features. The A5 debuts concurrently with the latest S5 high-performance model (reviewed separately), while the track-ready, 444-horsepower RS 5 (also reviewed separately) has now arrived at last.
+Learn more about the all-new 2018 Audi A5 Sportback at audiusa.com
+Read Full Review
+<div class="modal fade">
+<div class="modal-backdrop js-modal-close"></div>
+<div id="modalKiosk" class="modal-kiosk">
+<div class="modal-navbar text-center">
+<a class="modal-button js-modal-close">Done</a>
+<div id="modalKioskTitle" class="modal-kiosk-title hidden"></div>
+<div id="modalKioskSponsoredText" class="modal-navbar-text modal-kiosk-sponsored-text">Sponsored Content</div>
+</div>
+<div id="modalKioskVideo" class="modal-kiosk-video">
+<div class="video-brightcove-aspect" id="videoHolder"></div>
+<div id="cinemaContainer" class="cinema-container hidden">
+<div class="cinema-tabs">
+<div class="tab-cue hidden" data-tab="cue">This Video
+<div id="videoShare" class="video-share">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 602.203" enable-background="new 0 0 512 602.203" xml:space="preserve" class="svg-share" data-tab="cue">
+<g>
+<path d="M425.966,215.063c-10.825,0-21.13,2.088-30.675,5.728L171.782,91.747c0.125-1.898,0.286-3.786,0.286-5.713
+C172.068,38.523,133.545,0,86.034,0C38.52,0,0,38.523,0,86.034c0,47.515,38.52,86.034,86.034,86.034
+c18.767,0,36.074-6.078,50.214-16.274l207.53,119.816c-2.502,8.055-3.847,16.621-3.847,25.495c0,9.017,1.401,17.704,3.976,25.877
+L136.599,446.666c-14.204-10.354-31.638-16.531-50.564-16.531C38.52,430.135,0,468.654,0,516.169
+c0,47.507,38.52,86.034,86.034,86.034c47.511,0,86.034-38.527,86.034-86.034c0-1.78-0.161-3.519-0.265-5.277l223.98-129.309
+c9.402,3.532,19.557,5.549,30.182,5.549c47.515,0,86.034-38.52,86.034-86.034S473.48,215.063,425.966,215.063z"/>
+</g>
+</svg>
+</div>
+</div>
+<div class="tab-related hidden" data-tab="related">Related Videos</div>
+</div>
+<div id="cueContainer" class="tab-container cue-container hidden"><div id="cueList" class="cue-list"></div></div>
+<div id="relatedContainer" class="tab-container related-container hidden"></div>
+</div>
+</div>
+<div id="imageHolder" class="modal-kiosk-image-container"></div>
+<div class="kiosk-mma-ad-container">
+</div>
+</div>
+</div>
+Consumer Reviews
+9
+Overall Consumer Rating 9/10
+1 Rating
+for 2018 models
+Write a review
+{{#Reviews}}
+<div class="review">
+<div class="consumer-reviews-info">
+<i class="icon icon-user"></i>
+<p class="label-two">
+{{NicknameDisplay}}
+<br>
+<span class="label-four">{{SubmissionDateShortDate}}</span>
+</p>
+</div>
+<div class="consumer-reviews-text">
+<h4 class="title-four">{{Title}}</h4>
+{{#ReviewText}}
+<blockquote>
+<p class="paragraph-three">{{ReviewText}}</p>
+</blockquote>
+{{/ReviewText}}
+</div>
+</div>
+{{/Reviews}}
+A5 sport back chad
+March 07, 2018
+The perfecgt German engineered vehicle
+I am a fan from the moment I sat in it I knew it was the car for me. It was different yet familiar. The interior with the wood trim and...
+1 of 1
+See Full Review
+Gallery
+See Full Gallery
+Specs
+(Based on lowest-priced style)
+Fuel Economy
+Gas
+Combined
+27 MPG
+City
+24 MPG
+Highway
+34 MPG
+Performance
+Engine
+4-Cyl, Turbo, 2.0 Liter
+Horsepower
+252 @ 5000 RPM
+Torque
+273 @ 1600 RPM
+Seating Capacity
+Max Seating
+5
+Cargo/Interior Space
+EPA Passenger
+-
+EPA Trunk or Cargo
+21.8 cu.ft.
+EPA Total Interior
+-
+Basic Warranty
+Basic
+4 yr/50000 miles
+Powertrain
+4 yr/50000 miles
+Corrosion
+12 yr with Unlimited miles
+View All Specs
+Safety Ratings
+5.0
+Out of 5
+Crash Test Rating
+Frontal Crash
+Side Barrier
+Rollover Rating
+Side Crash
+Provided by the National Highway Traffic Safety Administration
+Class Rankings
+How does it compare?
+252
+Horsepower
+27
+MPG (combined)
+9
+KBB.com Consumer Rating
+RANK
+VEHICLE
+HP
+#1
+2018 Ford Taurus
+365
+#2
+2018 Kia Stinger
+365
+#3
+2018 Jaguar XE
+340
+#4
+2018 Genesis G80
+311
+#16
+2018 Audi A5
+252
+RANK
+VEHICLE
+MPG
+#1
+2019 Toyota Avalon Hybrid
+43
+#2
+2019 Lexus ES
+40
+#3
+2018 Lexus ES
+40
+#4
+2018 Toyota Avalon Hybrid
+40
+#8
+2018 Audi A5
+27
+RANK
+VEHICLE
+RATING
+#1
+2018 Alfa Romeo Giulia
+9.7
+#2
+2018 BMW 4 Series
+9.3
+#3
+2018 Audi A4
+9.3
+#4
+2018 Audi A3
+9.2
+#7
+2018 Audi A5
+9
+Similar Vehicles
+KBB.Ads.showAd('kbbAdsSimilarVehicle');
+<div class="js-similar-brand similar-vehicle-row similar-vehicle-sponsorship-row col-base-6">
+<div class="car text-center">
+<a class="js-brand-link js-vehicle-sponsorship-brand-link js-brand-imp" data-make="{{make}}" data-model="{{model}}" data-year="{{year}}" href="{{brandLink}}">
+<img class="car-img" src="{{image}}">
+</a>
+<div class="vehicle-sponsorship-text-container vehicle-sponsorship-label-container">
+<div class="label-four vehicle-sponsorship-text">
+Sponsored
+</div>
+</div>
+</div>
+<div class="data">
+<a class="js-brand-link js-vehicle-sponsorship-brand-link" data-make="{{make}}" data-model="{{model}}" data-year="{{year}}" href="{{brandLink}}">
+<div class="label-two">
+<strong class="vehicle-sponsorship-title">{{{year}}} {{{make}}} {{{model}}}</strong>
+<div class="label-four">{{{bodyStyle}}}</div>
+</div>
+</a>
+<div class="row">
+<div class="col-base-6">
+<div class="label-four">Starting around</div>
+<div class="label-two">
+<strong>${{{startingPrice}}}</strong>
+</div>
+</div>
+<div class="col-base-6">
+<div class="label-four">MPG</div>
+<div class="label-two">
+<strong >{{{mpg}}}</strong>
+</div>
+</div>
+<div class="col-base-12 vehicle-sponsorship-text-container">
+<div class="label-four vehicle-sponsorship-text vehicle-sponsorship-text-toting">
+<span>{{{textToting}}}</span>
+<a href="{{ctaLink}}" {{#isExternalCTA}}target="_blank"{{/isExternalCTA}}>
+<span>{{{ctaText}}}</span>
+<span class="{{^isExternalCTA}}hidden{{/isExternalCTA}} vehicle-sponsorship-external-icon">
+<i class="icon-external-link"></i>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</div>
+2017 BMW 4 Series
+Sedan
+Starting around
+$42,945
+MPG
+23 / 34
+2017 Mercedes‑Benz C‑Class
+Sedan
+Starting around
+$40,495
+MPG
+24 / 34
+2017 Audi A5 Sport
+Coupe
+Starting around
+$42,150
+MPG
+23 / 32
+2018 Audi S5
+Sedan
+Starting around
+$55,375
+MPG
+21 / 30
+2018 Mercedes‑Benz E‑Class
+Sedan
+Starting around
+$53,945
+MPG
+22 / 30
+2018 Mercedes‑Benz Mercedes‑AMG C‑Class
+Sedan
+Starting around
+$54,395
+MPG
+20 / 27
+2013 BMW 3 Series
+Sedan
+Starting around
+$14,022
+MPG
+23 / 33
+2018 BMW 5 Series
+Sedan
+Starting around
+$53,645
+MPG
+N/A
+2018 Audi A7
+Sedan
+Starting around
+$70,675
+MPG
+20 / 29
+2018 BMW 2 Series
+Coupe
+Starting around
+$35,945
+MPG
+24 / 35
+2016 Audi A6
+Sedan
+Starting around
+$28,394
+MPG
+20 / 29
+2018 Jaguar XE
+Sedan
+Starting around
+$36,720
+MPG
+25 / 34
+2017 Audi TT
+Coupe
+Starting around
+$44,450
+MPG
+23 / 30
+2018 BMW X3
+SUV
+Starting around
+$43,645
+MPG
+22 / 29
+2016 Audi Q5
+SUV
+Starting around
+$29,623
+MPG
+20 / 28
+2017 Mercedes‑Benz Mercedes‑AMG E‑Class
+Sedan
+Starting around
+$73,325
+MPG
+18 / 25
+2014 Audi RS 5
+Coupe
+Starting around
+$38,012
+MPG
+16 / 23
+2013 INFINITI G
+Sedan
+Starting around
+$15,193
+MPG
+19 / 27
+2018 Cadillac ATS
+Sedan
+Starting around
+$36,490
+MPG
+22 / 31
+2017 Audi SQ5
+SUV
+Starting around
+$54,250
+MPG
+17 / 24
+See more
+<div class="ads-stm direct">
+<div class="header">
+<span class="content-title">
+{{{header}}}
+</span>
+<div class="logo">
+<span>presented by</span>
+<a data-href="{{logoLink}}" target="_blank"><img data-src="{{logo}}"></a>
+</div>
+</div>
+<p class="section-title">
+{{{subtitle}}}
+</p>
+<div class="section">
+<a data-href="{{vehicleImgLink}}" target="_blank"><img data-src="{{vehicleImg}}" class="stm-vehicle"></a>
+<ul>
+{{#checkList}}
+{{#items}}
+{{#type}}
+<li class="{{type}}">
+<p><span class="color-g">{{{itemLead}}}</span> {{{itemText}}}</p>
+<small>{{{vehicle}}}</small>
+</li>
+{{/type}}
+{{/items}}
+{{/checkList}}
+</ul>
+<a data-href="{{compareUrl}}" class="compare" target="_blank">{{{compareTxt}}}</a>
+{{#showLegal}}
+<a data-href="#" class="stm-tip">
+{{legalText}}
+<span class="x-small color-h">
+<i class="tip-arrow"></i>
+<div>
+{{#legal}}
+<p>{{{paragraph}}}</p>
+{{/legal}}
+</div>
+</span>
+</a>
+{{/showLegal}}
+</div>
+</div>
+<p class="ad-label">Advertisement</p>
+<div class="ads-stm general">
+<div class="header">
+<span class="content-title">
+{{{header}}}
+</span>
+<div class="logo">
+<span>presented by</span>
+<a data-href="{{logoLink}}" target="_blank"><img data-src="{{logo}}"></a>
+</div>
+</div>
+<p class="section-title">
+{{{subtitle}}}
+</p>
+<div class="section">
+<a data-href="{{vehicleImgLink}}" target="_blank"><img data-src="{{vehicleImg}}" class="stm-vehicle"></a>
+<ul>
+{{#checkList}}
+{{#items}}
+{{#itemText}}
+<li class="medium">{{{itemText}}}</li>
+{{/itemText}}
+{{/items}}
+{{/checkList}}
+</ul>
+<a data-href="{{compareUrl}}" class="compare" target="_blank">{{{compareTxt}}}</a>
+{{#showLegal}}
+<a data-href="#" class="stm-tip">
+{{legalText}}
+<span class="x-small color-h">
+<i class="tip-arrow"></i>
+<div>
+{{#legal}}
+<p>{{{paragraph}}}</p>
+{{/legal}}
+</div>
+</span>
+</a>
+{{/showLegal}}
+</div>
+</div>
+<p class="ad-label">Advertisement</p>
+<div class="ads-stm retention">
+<div class="header">
+<span class="content-title">
+{{{header}}}
+</span>
+<div class="logo">
+<span>presented by</span>
+<a data-href="{{logoLink}}" target="_blank"><img data-src="{{logo}}"></a>
+</div>
+</div>
+<p class="section-title">
+{{{subtitle}}}
+</p>
+<div class="section">
+<a data-href="{{vehicleImgLink}}" target="_blank"><img data-src="{{vehicleImg}}" class="stm-vehicle"></a>
+<ul>
+{{#checkList}}
+{{#items}}
+{{#itemLink}}
+<li class="medium"><a data-href="{{itemLink}}" target="_blank">{{{itemText}}}</a></li>
+{{/itemLink}}
+{{/items}}
+{{/checkList}}
+</ul>
+{{#showLegal}}
+<a data-href="#" class="stm-tip">
+{{legalText}}
+<span class="x-small color-h">
+<i class="tip-arrow"></i>
+<div>
+{{#legal}}
+<p>{{{paragraph}}}</p>
+{{/legal}}
+</div>
+</span>
+</a>
+{{/showLegal}}
+</div>
+</div>
+<p class="ad-label">Advertisement</p>
+KBB.Ads.showAd('kbbAdsStm');
+Advertisement
+KBB.Ads.showAd('kbbAdsMedRec');
+Advertisement
+KBB.Ads.showAd('kbbAdsMedRecShowcase');
+Advertisement
+Free Dealer Price Quote
+Get the best price and be more prepared with your free, no-obligation price quote
+Select Make
+Select Model
+Zip Code
+Get your quote
+KBB.Ads.showAd('kbbAdsMedRec2');
+Advertisement
+Advertisement
+KBB Editor's Overview
+By KBB.com Editorial Staff
+Revamped for 2018, the A5 Coupe and Cabriolet are the sportier, free-spirited siblings of the A4. Though based on that compact-luxury sedan, these 2-door models emphasize design and driver enjoyment, traits made evident by the snug rear seats that only accommodate two, similar to German rivals the Mercedes-Benz C-Class coupe and BMW 4 Series. The exception is the A5 Sportback, a 5-door liftback that's as practical as it is stylish. Like the 4 Series Gran Coupe, the A5 Sportback is actually more versatile than a sedan, and arguably the best-looking model in the lineup. Whichever A5 strikes your fancy, you'll get a luxury car filled with technology and safety features, and driving manners that hit the sweet spot between comfort and dynamism.
+Advertisement
+You'll Like This Car If...
+Whether you're a young professional who is pre-family or an empty-nester ready to drive a fun and stylish luxury coupe or convertible, the 2018 Audi A5 will scratch that itch and make a statement while doing so. The practical A5 Sportback, meanwhile, can seat five and boasts a spacious rear hatch.
+You May Not Like This Car If...
+In the niche category of luxury-compact coupes and convertibles, all the players meet a high bar. That can leave your decision to personal preference and design appeal. You might like luxe swagger of the C-Class or the lines of the Lexus RC or Infiniti Q60, both of which also cost less.
+What's New for 2018
+The A5 is all-new for 2018. Like the revamped A4 that came before it, the new A5 is loaded with slick technology like Audi's Virtual Cockpit digital dash and active safety features. The A5 debuts concurrently with the latest S5 high-performance model (reviewed separately), while the track-ready, 444-horsepower RS 5 (also reviewed separately) has now arrived at last.
+Learn more about the all-new 2018 Audi A5 Sportback at audiusa.com
+Driving It
+Driving Impressions
+Few coupes and convertibles blend sporty handling, refinement and panache like the Audi A5. If you factor in all-season drivability thanks to standard all-wheel drive, the 2018 A5 is in a class by itself. We really like the A5's blend of acceleration (0-60 mph in 5.6 seconds), grip and overall balance. Adjustable drive modes make a tangible difference in the way the car feels, with steering stiffening and the engine and shifts more responsive in Dynamic mode. We left it in Auto and let the A5 adjust to driving situations as needed. There can be instances of initial lag if you nail the accelerator, but the car soon gets over itself and up to speed. The 7-speed dual-clutch automatic is smooth in almost every instance. If you're in the "save-the-manuals" camp, Audi is among the few to still offer a manual transmission -- and all on three coupe trims, no less.
+Favorite Features
+VIRTUAL COCKPIT
+Audi's fully digital dash has been around a few years now, but it still wows us. This optional setup replaces the traditional instrument cluster with a configurable 12.3-inch digital display. When integrated with Google Earth satellite mapping, it dazzles and seems straight from the future.
+A5 SPORTBACK
+For those who like to have their cake and eat it, too, this all-new A5 variant combines a sleek coupe-like design with four doors and a large rear hatch area that's easily accessed via a power-operated rear door. The icing? It's the least expensive A5 model.
+Vehicle Details
+Interior
+The latest A5 continues the Audi anthem of sleek, angular lines with only enough buttons and knobs to justify their existence. We love the feel of quality. The A5's front seats are well supported and grant an excellent driving position. The pair of rear seats in coupe and convertible models are small and cumbersome to enter and exit for the less-than-agile. The rear seats do fold, and combined with the large trunk open up commendable cargo space. The A5 Sportback has rear doors and a 3-across bench like a sedan, and 35 cubic feet of cargo space with the seats folded.
+Exterior
+The A5 has more conservative lines compared to the more rounded and/or flowing shape of rivals like the Lexus RC, Infiniti Q60 and Mercedes-Benz C-Class. Restrained as it may be, the A5 is elegant, with one of its biggest splashes being up front with a large trapezoidal grille. Unlike a BMW 4 Series (and like the new Mercedes C-Class convertible), the A5 convertible has a fabric roof instead of a folding hardtop. The A5 Sportback is essentially a smaller version of the captivating A7, blending a 4-door coupe silhouette with an upward-rising power liftgate that hides a good-sized rear cargo bay.
+Notable Standard Equipment
+All A5 variants come in three trims: Premium, Premium Plus and Prestige. Base models of each have leather interior, power front seats, tri-zone automatic climate control, rearview camera, and 18-inch wheels. The basic infotainment system includes a 7-inch display, AM/FM/CD/HD Radio, two USB ports, Bluetooth connectivity, and Apple CarPlay and Android Auto compatibility. Coupe models come with a panoramic sunroof; the A5 cabriolet with a power-operated fabric roof. Included is Audi Presence Basic and City. The first instantaneously prepares the car if a collision appears imminent, while the second aims to prevent one by detecting other cars and pedestrians and automatically braking.
+Notable Optional Equipment
+We think the mid-trim Premium Plus A5 is worth the extra $3,000 as it adds safety features like blind-spot monitoring with rear cross-traffic, and will even alert you of a coming vehicle when exiting the vehicle. Also included are full LED headlights, heated front seats and hands-free trunk/tailgate release. Prestige trims add the Virtual Cockpit, 8.3-inch display with navigation, and a superb 19-speaker Bang & Olufsen system. Other options include a heated steering wheel, ventilated front seats, head-up display and Driver Assistance package with adaptive cruise control, lane-keeping assist and traffic-sign recognition. Audi Connect Prime grants 4G LTE connectivity.
+Under the Hood
+The 2018 A5 uses a 2.0-liter turbocharged 4-cylinder engine that makes 252 horsepower, enough to zip each model to 60 mph in six seconds or less. All A5 variants are all-wheel drive. The A5 Cabriolet and Sportback use a 7-speed dual-clutch automatic. The A5 Coupe offers that transmission or, in a nod to enthusiasts, a 6-speed manual transmission. At up to 34 mpg, the A5 is surprisingly efficient given its potency. Helping that is a start/stop system that cuts engine power at idle and which can be defeated with the press of a button. If you're more power-hungry, consider the 354-horsepower S5 with a supercharged V6. If you're power delirious, wait for the 2018 Audi RS 5, which packs a 450-horsepower biturbo V6.
+2.0-liter turbocharged inline-4 252 horsepower @ 5,000-6,000 rpm 273 lb-ft of torque @ 1,600-4,500 rpm EPA city/highway fuel economy: 24/33 mpg (manual, Coupe), 24/34 mpg (automatic, Coupe, Cabriolet, Sportback)
+Advertisement
+Pricing Notes
+The 2018 Audi A5 Coupe has a Manufacturer's Suggested Retail Price (MSRP) of $43,775, a number that is the same whether you choose the manual or automatic transmission. At $43,575, the A5 Sportback is actually the least expensive A5, though only by $200. Starting at $50,575, the Cabriolet sits atop the A5 social ladder. From here, prices only go up. A loaded A5 Coupe or Sportback can reach beyond $55,000, while the A5 convertible can reach into the $60,000 range. At these prices, the A5 is in line with the BMW 4 Series and Mercedes-Benz C-Class coupes, and above the starting marks of the Lexus RC, Infiniti Q60 and Cadillac ATS coupe. Before buying, be sure to check the KBB.com Fair Purchase Price to see what others in your area are paying for their new Audi. The A5's resale value is expected to hold up very well in the years ahead.
+Take a look at the Audi A5 deals and promotions in your area.
+Back to Top
+{
+"@context": "http://schema.org/",
+"@type": "Car",
+"modelDate": 2018,
+"brand": "audi",
+"model": "a5",
+"description": "",
+"image": "//file.kbb.com/kbb/vehicleimage/evoxseo/xl/12018/2018-audi-a5%20sportback-front-angle3_12018_089_480x360.jpg",
+"name": "2018 audi a5",
+"url": "https://www.kbb.com/audi/a5/2018/"
+,"review": {
+"@type": "Review",
+"author": "Matt Degen",
+"datePublished": "2018-06-06",
+"reviewBody": "Revamped for 2018, the A5 Coupe and Cabriolet are the sportier, free-spirited siblings of the A4. Though based on that compact-luxury sedan, these 2-door models emphasize design and driver enjoyment, traits made evident by the snug rear seats that only accommodate two, similar to German rivals the Mercedes-Benz C-Class coupe and BMW 4 Series. The exception is the A5 Sportback, a 5-door liftback that&#39;s as practical as it is stylish. Like the 4 Series Gran Coupe, the A5 Sportback is actually more versatile than a sedan, and arguably the best-looking model in the lineup. Whichever A5 strikes your fancy, you&#39;ll get a luxury car filled with technology and safety features, and driving manners that hit the sweet spot between comfort and dynamism.
+Whether you&#39;re a young professional who is pre-family or an empty-nester ready to drive a fun and stylish luxury coupe or convertible, the 2018 Audi A5 will scratch that itch and make a statement while doing so. The practical A5 Sportback, meanwhile, can seat five and boasts a spacious rear hatch.In the niche category of luxury-compact coupes and convertibles, all the players meet a high bar. That can leave your decision to personal preference and design appeal. You might like luxe swagger of the C-Class or the lines of the Lexus RC or Infiniti Q60, both of which also cost less.The A5 is all-new for 2018. Like the revamped A4 that came before it, the new A5 is loaded with slick technology like Audi&#39;s Virtual Cockpit digital dash and active safety features. The A5 debuts concurrently with the latest S5 high-performance model (reviewed separately), while the track-ready, 444-horsepower RS 5 (also reviewed separately) has now arrived at last.
+Learn more about the all-new 2018 Audi A5 Sportback at audiusa.com
+Few coupes and convertibles blend sporty handling, refinement and panache like the Audi A5. If you factor in all-season drivability thanks to standard all-wheel drive, the 2018 A5 is in a class by itself. We really like the A5&#39;s blend of acceleration (0-60 mph in 5.6 seconds), grip and overall balance. Adjustable drive modes make a tangible difference in the way the car feels, with steering stiffening and the engine and shifts more responsive in Dynamic mode. We left it in Auto and let the A5 adjust to driving situations as needed. There can be instances of initial lag if you nail the accelerator, but the car soon gets over itself and up to speed. The 7-speed dual-clutch automatic is smooth in almost every instance. If you&#39;re in the &amp;quot;save-the-manuals&amp;quot; camp, Audi is among the few to still offer a manual transmission -- and all on three coupe trims, no less.VIRTUAL COCKPIT
+Audi&#39;s fully digital dash has been around a few years now, but it still wows us. This optional setup replaces the traditional instrument cluster with a configurable 12.3-inch digital display. When integrated with Google Earth satellite mapping, it dazzles and seems straight from the future.
+A5 SPORTBACK
+For those who like to have their cake and eat it, too, this all-new A5 variant combines a sleek coupe-like design with four doors and a large rear hatch area that&#39;s easily accessed via a power-operated rear door. The icing? It&#39;s the least expensive A5 model.
+The latest A5 continues the Audi anthem of sleek, angular lines with only enough buttons and knobs to justify their existence. We love the feel of quality. The A5&#39;s front seats are well supported and grant an excellent driving position. The pair of rear seats in coupe and convertible models are small and cumbersome to enter and exit for the less-than-agile. The rear seats do fold, and combined with the large trunk open up commendable cargo space. The A5 Sportback has rear doors and a 3-across bench like a sedan, and 35 cubic feet of cargo space with the seats folded.
+The A5 has more conservative lines compared to the more rounded and/or flowing shape of rivals like the Lexus RC, Infiniti Q60 and Mercedes-Benz C-Class. Restrained as it may be, the A5 is elegant, with one of its biggest splashes being up front with a large trapezoidal grille. Unlike a BMW 4 Series (and like the new Mercedes C-Class convertible), the A5 convertible has a fabric roof instead of a folding hardtop. The A5 Sportback is essentially a smaller version of the captivating A7, blending a 4-door coupe silhouette with an upward-rising power liftgate that hides a good-sized rear cargo bay.
+All A5 variants come in three trims: Premium, Premium Plus and Prestige. Base models of each have leather interior, power front seats, tri-zone automatic climate control, rearview camera, and 18-inch wheels. The basic infotainment system includes a 7-inch display, AM/FM/CD/HD Radio, two USB ports, Bluetooth connectivity, and Apple CarPlay and Android Auto compatibility. Coupe models come with a panoramic sunroof; the A5 cabriolet with a power-operated fabric roof. Included is Audi Presence Basic and City. The first instantaneously prepares the car if a collision appears imminent, while the second aims to prevent one by detecting other cars and pedestrians and automatically braking.
+We think the mid-trim Premium Plus A5 is worth the extra $3,000 as it adds safety features like blind-spot monitoring with rear cross-traffic, and will even alert you of a coming vehicle when exiting the vehicle. Also included are full LED headlights, heated front seats and hands-free trunk/tailgate release. Prestige trims add the Virtual Cockpit, 8.3-inch display with navigation, and a superb 19-speaker Bang &amp;amp; Olufsen system. Other options include a heated steering wheel, ventilated front seats, head-up display and Driver Assistance package with adaptive cruise control, lane-keeping assist and traffic-sign recognition. Audi Connect Prime grants 4G LTE connectivity.
+The 2018 A5 uses a 2.0-liter turbocharged 4-cylinder engine that makes 252 horsepower, enough to zip each model to 60 mph in six seconds or less. All A5 variants are all-wheel drive. The A5 Cabriolet and Sportback use a 7-speed dual-clutch automatic. The A5 Coupe offers that transmission or, in a nod to enthusiasts, a 6-speed manual transmission. At up to 34 mpg, the A5 is surprisingly efficient given its potency. Helping that is a start/stop system that cuts engine power at idle and which can be defeated with the press of a button. If you&#39;re more power-hungry, consider the 354-horsepower S5 with a supercharged V6. If you&#39;re power delirious, wait for the 2018 Audi RS 5, which packs a 450-horsepower biturbo V6.
+2.0-liter turbocharged inline-4
+252 horsepower @ 5,000-6,000 rpm
+273 lb-ft of torque @ 1,600-4,500 rpm
+EPA city/highway fuel economy: 24/33 mpg (manual, Coupe), 24/34 mpg (automatic, Coupe, Cabriolet, Sportback)The 2018 Audi A5 Coupe has a Manufacturer&#39;s Suggested Retail Price (MSRP) of $43,775, a number that is the same whether you choose the manual or automatic transmission. At $43,575, the A5 Sportback is actually the least expensive A5, though only by $200. Starting at $50,575, the Cabriolet sits atop the A5 social ladder. From here, prices only go up. A loaded A5 Coupe or Sportback can reach beyond $55,000, while the A5 convertible can reach into the $60,000 range. At these prices, the A5 is in line with the BMW 4 Series and Mercedes-Benz C-Class coupes, and above the starting marks of the Lexus RC, Infiniti Q60 and Cadillac ATS coupe. Before buying, be sure to check the KBB.com Fair Purchase Price to see what others in your area are paying for their new Audi. The A5&#39;s resale value is expected to hold up very well in the years ahead.
+Take a look at the Audi A5 deals and promotions in your area.",
+"name": "2018 audi a5 Expert Review"
+,"reviewRating": {
+"@type": "Rating",
+"bestRating": "10",
+"ratingValue": "9.6",
+"worstRating": "0"
+}
+}
+,"aggregateRating": {
+"@type": "AggregateRating",
+"bestRating": "10",
+"ratingValue": "9",
+"reviewCount": "1"
+}
+}
+FAQ
+|
+Contact Us
+|
+About Us
+|
+Careers
+|
+Corporate
+|
+Advertising
+|
+Media
+|
+Site Map
+|
+Mobile
+|
+KBB Portugal
+|
+KBB Brazil
+|
+Follow Us
+© 1995-2018 Kelley Blue Book Co.®, Inc. All rights reserved.
+Copyrights & Trademarks |
+Terms of Service |
+Privacy Policy |
+Linking Policy |
+Ad Choices
+(function(){'use strict';KBB.Page.addAnalyticsClickOnlyTags([{type:'click',selector:'#navFooterFaq',partner:'nx',tag:function(){return'faq_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterContactUs',partner:'nx',tag:function(){return'contactus_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterAboutUs',partner:'nx',tag:function(){return'aboutus_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterCareers',partner:'nx',tag:function(){return'careers_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterCorporate',partner:'atg',tag:function(){return'info_corporate_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterAdvertising',partner:'atg',tag:function(){return'info_advertising_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterMedia',partner:'nx',tag:function(){return'mediacenter_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterSiteMap',partner:'nx',tag:function(){return'sitemap_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterMobile',partner:'nx',tag:function(){return'mobile_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterKbbPortugal',partner:'intl',tag:function(){return'kbbportugal_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterKbbBrazil',partner:'intl',tag:function(){return'kbbbrazil_'+s.prop2+'_footer'}},{type:'click',selector:'#navToFacebook',partner:'facebook',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToGooglePlus',partner:'google1',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToTwitter',partner:'twitter',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToRSS',tag:function(){return 'rss_'+s.prop2+'_footer'}},{type:'click',selector:'#navToLinkedIn',partner:'linkedin',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToYouTube',partner:'youtube',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToRoku',partner:'roku',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToCopyrightsAndTrademarks',tag:function(){return 'copyright_'+s.prop2+'_footer'}},{type:'click',selector:'#navToTermsOfService',tag:function(){return 'tos_'+s.prop2+'_footer'}},{type:'click',selector:'#navToPrivacyPolicy',tag:function(){return 'privacy_'+s.prop2+'_footer'}},{type:'click',selector:'#navToLinkingPolicy',tag:function(){return 'linkingpolicy_'+s.prop2+'_footer'}},{type:'click',selector:'#navToAdChoices',tag:function(){return 'adchoices_'+s.prop2+'_footer'}}])})();
+KBB.Ads.showAd('kbbAdsToolbarAnchor');
+Popular
+at KBB.com
+First Pics: 2019 Models Unveiled
+10 Best SUVs Under $25,000
+New Car Buyer's Guide
+12 Best Buys of 2018
+25 Best-Selling Cars of 2017
+$(document).ready(KBB.init);
+window.onload = function () {
+if (window.performance) {
+s.eVar13 = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+}
+}
+if (typeof gigya !== 'undefined') {
+KBB.social.openGraphUserAction = new gigya.services.socialize.UserAction();
+if (KBB.social.openGraphUserAction){
+KBB.social.openGraphUserAction.setLinkBack('https://www.kbb.com/audi/a5/2018/?bodystyle=sedan\u0026intent=buy-new\u0026rts=https://www.kbb.com/vehicle-search-results/?pricerange=0-max\u0026intent=new');
+KBB.social.openGraphUserAction.addActionLink('Visit kbb.com', 'https://www.kbb.com/audi/a5/2018/?bodystyle=sedan\u0026intent=buy-new\u0026rts=https://www.kbb.com/vehicle-search-results/?pricerange=0-max\u0026intent=new');
+KBB.social.openGraphUserAction.setTitle('2018 Audi A5 | Pricing, Ratings \u0026 Reviews | Kelley Blue Book');
+KBB.social.openGraphUserAction.setSubtitle(' ');
+KBB.social.openGraphUserAction.setDescription('2018 Audi A5 price range, listings near you, expert review, consumer reviews, and more.');
+KBB.social.openGraphUserAction.addMediaItem({ type: 'image', src: "https://file.kbb.com/kbb/images/kbb/kelley-blue-book.jpg", href: 'https://www.kbb.com/audi/a5/2018/?bodystyle=sedan\u0026intent=buy-new\u0026rts=https://www.kbb.com/vehicle-search-results/?pricerange=0-max\u0026intent=new' });
+}}
+KBB.Ads.showAd('kbbAdsFct');
+Advertisement
+KBB.Ads.showAd('kbbAdsInterstitial');
+var dataLayerInfo = KBB.DataLayer[0].info,
+section = s.prop1,
+subSection = s.channel,
+pageName = KBB.DataLayer[0].omniture.pagename,
+vehicleId = dataLayerInfo.vehicle.id,
+style = dataLayerInfo.category,
+trim = dataLayerInfo.vehicle.trimdisplayname,
+year = dataLayerInfo.yearid,
+make = dataLayerInfo.manufacturer.name,
+model = dataLayerInfo.model.name,
+price = dataLayerInfo.vehicle.taggingprice;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=globa915;u4=' + subSection + ';u5=' + section + ';u6=' + pageName + ';u7=' + KBB.Page.getDataLayer().paidsearch.paidsearchid + ';u8=' + vehicleId + ';u9=' + style + ';u10=' + trim + ';u11=' + year + ';u12=' + make + ';u13=' + model + ';u14=' + price + ';ord=' + globalOrd + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+Thanks for Supporting
+Kelley Blue Book.
+We deliver up-to-date car values, expert reviews and unbiased reporting at nocost to you. To do this, we display ads from only trusted partners.To continue on our site, simply turn off your ad blocker and refresh the page.
+KBB.Abb.start();
+// DCM Floodlight tags
+var psid = KBB.DataLayer[0].paidsearch !== null ? KBB.DataLayer[0].paidsearch.paidsearchid : s.prop31;
+if(KBB.DataLayer[0].omniture.pagename === 'homepage') {
+// Start of DoubleClick Floodlight Tag: Please do not remove
+// Activity name of this tag: homepage
+// URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+// This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+// Creation Date: 03/22/2016
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=homep392;u4=' + KBB.DataLayer[0].omniture.supersectionname + ';u5=' + KBB.DataLayer[0].omniture.sectionname + ';u6=' + KBB.DataLayer[0].omniture.pagename + ';u7=' + psid +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+// End of DoubleClick Floodlight Tag: Please do not remove
+}
+if(KBB.DataLayer[0].omniture.supersectionname === 'new' || KBB.DataLayer[0].omniture.supersectionname === 'new-touch') {
+// Start of DoubleClick Floodlight Tag: Please do not remove
+// Activity name of this tag: New Car
+// URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+// This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+// Creation Date: 03/22/2016
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=kbbne024;cat=newca0;u4=' + KBB.DataLayer[0].omniture.supersectionname + ';u5=' + KBB.DataLayer[0].omniture.sectionname + ';u6=' + KBB.DataLayer[0].omniture.pagename + ';u7=' + psid + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+// End of DoubleClick Floodlight Tag: Please do not remove
+}
+// Marin Smart tag - global
+(function() {
+window._pa = window._pa || {};
+// _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+// _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+// _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+var pa = document.createElement('script');
+pa.type = 'text/javascript';
+pa.async = true;
+pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/571f92738e1678597b0000d3.js";
+var scriptTags = document.getElementsByTagName('script');
+var lastScriptTag = scriptTags[scriptTags.length-1];
+lastScriptTag.parentNode.insertBefore(pa, lastScriptTag);
+})();
+KBB.createAndInit('KBB.FloodlightTagScript.Hyundai', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.fireFloodlightTag = function() {
+var	pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+currentContentId = self.dataLayer.ads.cid,
+axel = Math.random() + '',
+a = axel * 10000000000000,
+tag = '';
+if (self.dataLayer.info.manufacturer.name.toLowerCase() === 'hyundai') {
+var yearId = self.dataLayer.info.yearid,
+shortModelName = self.dataLayer.info.model.shortname;
+if(pageName === 'lns') {
+switch(currentContentId) {
+case '2000010127':
+case '2000009275':
+case '2000010090':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeg;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case '2100001428':
+case '2100001380':
+case '2100000928':
+case '2100000867':
+case '2100000291':
+case '2100000248':
+case '2100000191':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmacn;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case '2000010081':
+case '2000009555':
+case '2000010120':
+case '2000010287':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeb;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+}
+} else if(pageName === 'fdpqdealer') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmale0;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>'
+} else if (pageName === 'ymmtrimnewovr_buynew' || pageName === 'ncmodelmain-touch') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmahv00;u1=' + shortModelName + ';u2=' + yearId + ';u3=;u4=;u6=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+} else if (pageName === 'fdpqthank' ) {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmahv0;u1=' + shortModelName + ';u2=' + yearId + ';u3=;u4=;u6=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+} else if (currentContentId === '2000010090') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeg;u1=;u2=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+if (tag !== '') {
+var flDiv = document.body.appendChild(document.createElement('div'));
+flDiv.setAttribute('id', 'hyundaiFloodlightTag');
+flDiv.innerHTML = tag;
+}
+};
+self.init = function() {
+self.fireFloodlightTag();
+};
+return {
+init: self.init
+};
+});
+KBB.createAndInit('KBB.FloodlightTagScript.Genesis', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.fireFloodlightTag = function() {
+if (self.dataLayer.info.manufacturer.name.toLowerCase() === 'genesis') {
+var	pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+yearId = self.dataLayer.info.yearid,
+shortModelName = self.dataLayer.info.model.shortname,
+axel = Math.random() + '',
+a = axel * 10000000000000,
+tag = '';
+switch (pageName) {
+case 'ymmtrimnewovr_buynew':
+case 'ncmodelmain-touch':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbbyo;u1=' + shortModelName +';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case 'fdpqthank':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbraq;u1=' + shortModelName +';u2=' + yearId +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case 'lns':
+if (self.dataLayer.ads.cid === '2100000991'){
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbcnmr;u1=' + shortModelName +';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+break;
+case 'fdpqdealer':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=gmaau0;u1=' + shortModelName +';u2=' + yearId +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+}
+if (tag !== ''){
+var flDiv = document.body.appendChild(document.createElement('div'));
+flDiv.setAttribute('id', 'genesisFloodlightTag');
+flDiv.innerHTML = tag;
+}
+}
+};
+self.init = function() {
+self.fireFloodlightTag();
+};
+return {
+init: self.init
+};
+});
+// SpeedShift Tracking Tag
+(function () {
+if (KBB.DataLayer[0].omniture.pagename === 'classdetailnew' ||
+// VDP NEW
+KBB.DataLayer[0].omniture.pagename === 'classdetailused' ||
+// VDP USED
+KBB.DataLayer[0].omniture.pagename === 'classlistnew_dtlovr' ||
+// MINI VDP NEW
+KBB.DataLayer[0].omniture.pagename === 'classlistused_dtlovr') { // MINI VDP USED
+var tag = document.createElement('script');
+tag.type = 'text/javascript';
+tag.async = true;
+tag.src = ('https:' === document.location.protocol ? 'https:' : 'http:') + "//services.cdn.speedshiftmedia.com/tags/analytics-Z20160915150040d3b34c985ad40.min.js";
+var scriptTags = document.getElementsByTagName('script');
+var lastScriptTag = scriptTags[scriptTags.length - 1];
+lastScriptTag.parentNode.insertBefore(tag, lastScriptTag);
+}
+})();
+if( (KBB.DataLayer[0].area === 'homepage' && KBB.DataLayer[0].controller === 'homepage' && KBB.DataLayer[0].action=== 'index') || KBB.DataLayer[0].dynamictracking)
+{
+//FloodLight
+if(!KBB.DataLayer[0].flippers.floodlightoff) {
+//Start of DoubleClick Floodlight Tag: Please do not remove
+//Activity name of this tag: global counter
+//URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+//Creation Date: 04/20/2015
+var dataLayerInfo = KBB.DataLayer[0].info,
+section = s.prop1,
+subSection = s.channel,
+pageName = KBB.DataLayer[0].omniture.pagename,
+PSID = KBB.DataLayer[0].paidsearch !== null ? KBB.DataLayer[0].paidsearch.paidsearchid : s.prop31,
+vehicleId = dataLayerInfo.vehicle.id,
+style = dataLayerInfo.category,
+trim = dataLayerInfo.vehicle.trimdisplayname,
+year = dataLayerInfo.yearid,
+make = dataLayerInfo.manufacturer.name,
+model = dataLayerInfo.model.name,
+price = dataLayerInfo.vehicle.taggingprice;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=globa915;u4=' + subSection + ';u5=' + section + ';u6=' + pageName + ';u7=' + PSID + ';u8=' + vehicleId + ';u9=' + style + ';u10=' + trim + ';u11=' + year + ';u12=' + make + ';u13=' + model + ';u14=' + price + ';ord=' + globalOrd + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+//End of DoubleClick Floodlight Tag: Please do not remove
+}
+}
+KBB.PDADS.self.setPDAD();
+//kbbr
+if (KBB.storage.getFromCookie('KBBSite') === null && KBB.storage.getFromCookie('ZipCode') !== null) {
+var expireTime = new Date();
+expireTime.setMinutes(expireTime.getMinutes() + 30); // set expiration time to 30 mins
+KBB.storage.saveToCookie('KBBSite', '1', expireTime);
+}
+KBB.createAndInit('KBB.OracleTagScript.Hyundai', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.setOracleTag = function (make, model) {
+var source = 'https://h.nexac.com/e/mp/g-5618.xgi?pkey=&chpcm=' + encodeURIComponent(document.referrer) + '&chpsg=' + make + '&chpcr=' + model + '&chpck=&rand=' + globalOrd + '&chpth=';
+var imgTag = document.body.appendChild(document.createElement('img'));
+imgTag.setAttribute('width', '1');
+imgTag.setAttribute('height', '1');
+imgTag.setAttribute('src', source);
+};
+self.checkAllowIntents = function () {
+var allowIntents = ['buy-new', 'trade-in-sell'];
+return allowIntents.indexOf(self.dataLayer.info.intent) >= 0;
+};
+self.shouldFireTag = function () {
+var manufacturer = self.dataLayer.info.manufacturer.name.toLowerCase(),
+area = self.dataLayer.area.toLowerCase(),
+controller = self.dataLayer.controller.toLowerCase(),
+pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+controllers = ['vehicle', 'ymm', 'ymmt', 'makelanding'],
+cid = self.dataLayer.ads.cid;
+//only fire the tag on Model Path , Hub and Article pages
+return ((manufacturer === 'hyundai' &&
+((self.checkAllowIntents() && (area === 'vehicle' || controllers.indexOf(controller) >= 0)) || pageName === 'lns'))
+|| (cid === '2000010090') );
+};
+self.fireOracleTag = function () {
+if (self.shouldFireTag()) {
+self.setOracleTag(self.dataLayer.info.manufacturer.shortname, self.dataLayer.info.model.shortname);
+}
+};
+self.init = function() {
+self.fireOracleTag();
+};
+return {
+init: self.init
+};
+});
+/* <![CDATA[ */
+var google_conversion_id = 1060016584;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+if (!KBB.DataLayer[0].flippers.remarketingoff) {
+document.write('<s' + 'cript type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></s' + 'cript>');
+document.write('<n' + 'oscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1060016584/?guid=ON&script=0"' + '/></div></n' + 'oscript>');
+}
+KBB.createAndInit("KBB.FloodlightTagScript.Kia",function(){"use strict";var e={dataLayer:KBB.Page.getDataLayer(),cats:{classlistnew:"deale000",ymmtrimnewcostown_buynew:"5year0",dlrinfoinvovrnew:"deale004",fdpqthank:"quick00",ymmtrimnewconsrev_buynew:"kbbco0",ymmtrimnewrank_buynew:"compa00",ymmtrimnewrat_buynew:"compa00",ymmtrimtisellovr_selltrade:"trade00",loadtisell_selltrade:"trade00",ymmtrimnewexprev_buynew:"kbbex0",ymmtrimnewovr_buynew:"build00","ncmodelmain-touch":"newca0",rtbdlrlist:"deale003",ymmtrimnewincent_buynew:"incen0"},pageNames:["classlistnew","ymmtrimnewcostown_buynew","dlrinfoinvovrnew","fdpqthank","ymmtrimnewconsrev_buynew","ymmtrimnewrank_buynew","ymmtrimnewrat_buynew","ymmtrimtisellovr_selltrade","loadtisell_selltrade","ymmtrimnewexprev_buynew","ymmtrimnewovr_buynew","rtbdlrlist","ymmtrimnewincent_buynew","ncmodelmain-touch"],currentPage:"",kiaStorageName:"KiaFloodlight",kiaStorageValue:null,searchRegex:null,expirationTime:30};return e.parseTimestamp=function(){if(e.kiaStorageValue&&e.kiaStorageValue.search(e.searchRegex)>=0){var a=e.kiaStorageValue.match(e.searchRegex)[0];return a?a.match(/\d+/)[0]:0}return 0},e.saveTimestamp=function(){var a=e.currentPage+"-"+(new Date).getTime();e.kiaStorageValue?e.kiaStorageValue.indexOf(e.currentPage)>=0?e.kiaStorageValue=e.kiaStorageValue.replace(e.searchRegex,a):e.kiaStorageValue=e.kiaStorageValue+"|"+a:e.kiaStorageValue=a,KBB.storage.saveToLocalStorage(e.kiaStorageName,e.kiaStorageValue)},e.isExpired=function(){var a=parseInt(e.parseTimestamp());return a?new Date>new Date(a+60*e.expirationTime*1e3):!0},e.shouldFireTag=function(){return"kia"===e.dataLayer.info.manufacturer.name.toLowerCase()&&e.pageNames.indexOf(e.currentPage)>=0&&e.isExpired()},e.fireFloodlightTag=function(){if(e.shouldFireTag()){var a=Math.random()+"",t=1e13*a,r='<iframe src="https://4235921.fls.doubleclick.net/activityi;src=4235921;type=2017c0;cat='+e.cats[e.currentPage]+";dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord="+t+'?" width="1" height="1" frameborder="0" style="display:none"></iframe>',i=document.body.appendChild(document.createElement("div"));"ncmodelmain-touch"===e.currentPage&&(r='<iframe src="https://4235921.fls.doubleclick.net/activityi;src=4235921;type=2017c0;cat='+e.cats[e.currentPage]+";u1=;u2=;u3=;u4=;u5=;u6=;u7=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord="+t+'?" width="1" height="1" frameborder="0" style="display:none"></iframe>'),i.setAttribute("id","kiaFloodlightTag"),i.innerHTML=r,e.saveTimestamp()}},e.init=function(){e.currentPage=e.dataLayer.omniture.pagename.toLowerCase(),e.kiaStorageValue=KBB.storage.getFromLocalStorage(e.kiaStorageName),e.searchRegex=new RegExp(e.currentPage+"-\\d+"),e.fireFloodlightTag()},{init:e.init}});
+(function () {
+if(document.cookie.indexOf('SurveyCookie') > -1) {
+var regexForseeCookie = /fsr\.(.*?)=/g;
+var fsrCs = document.cookie.match(regexForseeCookie);
+var exp = new Date(Date.now() - 86400000);
+fsrCs.forEach(function (cookie) {
+document.cookie = cookie+'; path=/; domain=.kbb.com;';
+});
+}
+})();
+// Null check because it seems like the DTM script sometimes is blocked
+// or doesn't come back on the staging server
+if (window._satellite && _satellite.pageBottom) {
+_satellite.pageBottom();
+}

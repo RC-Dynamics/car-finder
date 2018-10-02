@@ -1,0 +1,879 @@
+Lowest Priced Cars In The Kansas City, MO Area, Guaranteed!!
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1824666117788798');
+fbq('track', 'PageView');
+{
+"@context": "http://schema.org",
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"url": "http://www.munstermanauto.com/blue-springs-mo-used-cars",
+"description": "We will match any verified car in the KC Market Area!! **See dealership for details",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "609 SW State Route 7",
+"addressLocality": "Blue Springs",
+"addressRegion": "MO",
+"postalCode": "64014"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "39.012088",
+"longitude": "-94.273041"
+},
+"sameAs" : [
+"https://www.facebook.com/MunstermanAuto/?fref=ts",
+null
+]
+}
+var $websiteSwitch = 890;
+function arNavfunction(){$("#menu li:has(ul)").addClass("has-dropdown"),$(".has-dropdown ul:has(li)").addClass("hidden"),$(".has-dropdown > a").on("click",function(a){$(this).is("[disabled]")&&a.preventDefault()}),window.innerWidth<=$websiteSwitch?($(".has-dropdown > a").attr("disabled","disabled"),$(".has-dropdown > a").not(".active-head")&&$("li.has-dropdown").unbind("click").bind("click",function(a){$(this).find("a").first().toggleClass("active-head"),$(this).find(".hidden").toggleClass("active")})):($(".has-dropdown > a").removeAttr("disabled"),$(".nav-wrap li.has-dropdown > a, .has-dropdown > .hidden").removeClass("active-head active"))}
+jQuery(document).ready(arNavfunction);
+$(window).on('resize',arNavfunction);
+// function myFunction() { document.getElementById("myDropdown").classList.toggle("show"); }
+// $(document).ready(function() {
+// var hoverOrClick = function () {
+//
+$(".header-dropdown-content").stop().toggle('fast');
+// }
+// $('.dropbtn').hover(hoverOrClick);
+// });
+$(document).ready(function() {
+$( '.dropbtn' ).on('mouseenter', function() {
+$( '.header-dropdown-content' ).show();
+}).on('mouseleave', function() {
+$( '.header-dropdown-content' ).hide();
+});
+})
+Treating People Like Family, It's What We Do.
+Map & Hours | Blue Springs, MO | (816) 598-1286
+YOUR STORE
+Blue Springs
+609 SW State Route 7
+Blue Springs, MO 64014
+(816) 598-1286
+OUR HOURS
+Mon-Fri 9-6 | Sat 9-5
+GET DIRECTIONS
+CONTACT US
+No Credit Check
+Buy With Confidence
+We're Focused on You
+Stress Free Financing
+☰Show Menu
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Lowest Priced Cars In The Kansas City, MO Area, Guaranteed!!
+We will match any verified car in the KC Market Area!! **See dealership for details
+Welcome Visitor!
+// <![CDATA[
+function vehopen(thisvid,thisselid,thispg,thisvehpage,thissourceback,thisvehback) {
+if (thispg=='credit') {
+turl='https://www.iimanager.com/ar04/'+thissourceback+'/vehicle.cfm';
+} else if (thispg=='vehicle') {
+turl='//'+thisvehpage;
+} else {
+turl='//'+thisvehback;
+}
+if (thispg=='credit') {
+tformid='&formid=1B586838EB07ECF2B8B6D852A6524E40';
+} else {
+tformid='';
+}
+if (thispg=='vehicle') {
+window.open(turl+'?refby=dealersite#ar_top', thisvid, 'width=880,height='+eval((document.body.clientHeight)-25)+',top=25,left=25,location=yes,toolbar=no,menubar=yes,scrollbars=yes,resizable=yes');
+} else {
+window.open(turl+'?vid='+thisvid+'&selid='+thisselid+'&vehpg='+thispg+tformid+'&refby=dealersite#ar_top', thisvid, 'width=880,height='+eval((document.body.clientHeight)-25)+',top=25,left=25,location=yes,toolbar=no,menubar=yes,scrollbars=yes,resizable=yes');
+}
+}
+// ]]>
+$(function() {
+var categoryjson=
+{ "Two-Door Coupe (3)": { "Acura (1)":{ "CL (1)":"CL" },"Hyundai (1)":{ "ELANTRA COUPE (1)":"ELANTRA COUPE" },"Mitsubishi (1)":{ "ECLIPSE (1)":"ECLIPSE" }},"Four-Door Sedan (16)": { "Acura (1)":{ "TL (1)":"TL" },"BMW (1)":{ "3-Series (1)":"3" },"Chevrolet (2)":{ "CRUZE (1)":"CRUZE", "IMPALA (1)":"IMPALA" },"Chrysler (1)":{ "SEBRING (1)":"SEBRING" },"Ford (3)":{ "FOCUS (2)":"FOCUS", "FUSION (1)":"FUSION" },"Mercury (1)":{ "MONTEGO (1)":"MONTEGO" },"Nissan (4)":{ "ALTIMA (3)":"ALTIMA", "VERSA (1)":"VERSA" },"Pontiac (1)":{ "G6 (1)":"G6" },"Saturn (1)":{ "AURA (1)":"AURA" },"Toyota (1)":{ "AVALON (1)":"AVALON" }},"Hatchback (3)": { "Nissan (1)":{ "VERSA (1)":"VERSA" },"Scion (1)":{ "TC (1)":"TC" },"Volkswagen (1)":{ "BEETLE (1)":"BEETLE" }},"Wagon (1)": { "Dodge (1)":{ "CALIBER (1)":"CALIBER" }},"Convertible (1)": { "Mercedes-Benz (1)":{ "CLK-Class (1)":"CLK" }},"Truck (7)": { "Chevrolet (1)":{ "SILVERADO (1)":"SILVERADO" },"Dodge (2)":{ "DAKOTA (1)":"DAKOTA", "RAM 1500 (1)":"RAM 1500" },"Ford (1)":{ "F-150 (1)":"F-150" },"GMC (1)":{ "SIERRA (1)":"SIERRA" },"Nissan (1)":{ "TITAN (1)":"TITAN" },"Ram (1)":{ "1500 (1)":"1500" }},"Minivan/Van (1)": { "Chrysler (1)":{ "TOWN (1)":"TOWN" }},"Sport/Utility (29)": { "Buick (1)":{ "ENCLAVE (1)":"ENCLAVE" },"Chevrolet (2)":{ "SUBURBAN (1)":"SUBURBAN", "TAHOE (1)":"TAHOE" },"Chrysler (1)":{ "ASPEN (1)":"ASPEN" },"Ford (9)":{ "EDGE (1)":"EDGE", "ESCAPE (2)":"ESCAPE", "EXPEDITION EL (1)":"EXPEDITION EL", "EXPLORER (5)":"EXPLORER" },"GMC (5)":{ "ACADIA (2)":"ACADIA", "TERRAIN (1)":"TERRAIN", "YUKON (2)":"YUKON" },"HUMMER (1)":{ "H3 (1)":"H3" },"Isuzu (1)":{ "RODEO (1)":"RODEO" },"Jeep (5)":{ "GRAND CHEROKEE (3)":"GRAND CHEROKEE", "PATRIOT (1)":"PATRIOT", "WRANGLER (1)":"WRANGLER" },"Land Rover (2)":{ "RANGE ROVER (2)":"RANGE ROVER" },"Mitsubishi (1)":{ "ENDEAVOR (1)":"ENDEAVOR" },"Subaru (1)":{ "OUTBACK (1)":"OUTBACK" }},"Undefined (3)": { "Chevrolet (1)":{ "SILVERADO (1)":"SILVERADO" },"Ford (2)":{ "FREESTAR (1)":"FREESTAR", "SUPER DUTY (1)":"SUPER DUTY" }}}
+var makejson={"Acura (2)":{ "CL (1)":"CL", "TL (1)":"TL" },"BMW (1)":{ "3-Series (1)":"3" },"Buick (1)":{ "ENCLAVE (1)":"ENCLAVE" },"Chevrolet (6)":{ "CRUZE (1)":"CRUZE", "IMPALA (1)":"IMPALA", "SILVERADO (2)":"SILVERADO", "SUBURBAN (1)":"SUBURBAN", "TAHOE (1)":"TAHOE" },"Chrysler (3)":{ "ASPEN (1)":"ASPEN", "SEBRING (1)":"SEBRING", "TOWN (1)":"TOWN" },"Dodge (3)":{ "CALIBER (1)":"CALIBER", "DAKOTA (1)":"DAKOTA", "RAM 1500 (1)":"RAM 1500" },"Ford (15)":{ "EDGE (1)":"EDGE", "ESCAPE (2)":"ESCAPE", "EXPEDITION EL (1)":"EXPEDITION EL", "EXPLORER (5)":"EXPLORER", "F-150 (1)":"F-150", "FOCUS (2)":"FOCUS", "FREESTAR (1)":"FREESTAR", "FUSION (1)":"FUSION", "SUPER DUTY (1)":"SUPER DUTY" },"GMC (6)":{ "ACADIA (2)":"ACADIA", "SIERRA (1)":"SIERRA", "TERRAIN (1)":"TERRAIN", "YUKON (2)":"YUKON" },"HUMMER (1)":{ "H3 (1)":"H3" },"Hyundai (1)":{ "ELANTRA COUPE (1)":"ELANTRA COUPE" },"Isuzu (1)":{ "RODEO (1)":"RODEO" },"Jeep (5)":{ "GRAND CHEROKEE (3)":"GRAND CHEROKEE", "PATRIOT (1)":"PATRIOT", "WRANGLER (1)":"WRANGLER" },"Land Rover (2)":{ "RANGE ROVER (2)":"RANGE ROVER" },"Mercedes-Benz (1)":{ "CLK-Class (1)":"CLK" },"Mercury (1)":{ "MONTEGO (1)":"MONTEGO" },"Mitsubishi (2)":{ "ECLIPSE (1)":"ECLIPSE", "ENDEAVOR (1)":"ENDEAVOR" },"Nissan (6)":{ "ALTIMA (3)":"ALTIMA", "TITAN (1)":"TITAN", "VERSA (2)":"VERSA" },"Pontiac (1)":{ "G6 (1)":"G6" },"Ram (1)":{ "1500 (1)":"1500" },"Saturn (1)":{ "AURA (1)":"AURA" },"Scion (1)":{ "TC (1)":"TC" },"Subaru (1)":{ "OUTBACK (1)":"OUTBACK" },"Toyota (1)":{ "AVALON (1)":"AVALON" },"Volkswagen (1)":{ "BEETLE (1)":"BEETLE" }};
+shouldreload = true;
+var options = { empty_value: 'null',
+choose: function(level) {
+if(level=="0")
+return 'Any Category';
+else if(level=="1")
+return 'Any Make';
+else if(level== "2")
+return 'Any Model';
+else
+return "Choose";
+}};
+$('input[name=selCategory]').optionTree(categoryjson, options)
+.change(function() {});
+$('input[name=selCategory_]').optionTree(makejson, options)
+.change(function() {});
+$(document).on('change', "[name='selCategory_']", function(e){
+if($(this).val() == ''){
+$('input[name=selCategory_]').optionTree(makejson, options)
+.change(function() {});
+}
+var $newVal = replacePara($(this).val());
+$('#rcate').val($.trim($newVal));
+$('#rmake').val('');
+$('#rmodel').val('');
+if (shouldreload == true) { $('#invkey').val(''); }
+autoloader();
+});
+$(document).on('change', "[name='selCategory__']", function(e){
+var $newVal = replacePara($(this).val());
+$('#rmake').val($.trim($newVal));
+$('#rmodel').val('');
+if (shouldreload == true) { $('#invkey').val(''); }
+autoloader();
+});
+$(document).on('change', "[name='selCategory___']", function(e){
+var $newVal = replacePara($(this).val());
+$('#rmodel').val($.trim($newVal));
+if (shouldreload == true) { $('#invkey').val(''); }
+autoloader();
+});
+$('#invkey').keyup(function () {
+shouldreload = false;
+$("select[name=selCategory_]").val('');
+$("select[name=selCategory_]").change();
+shouldreload = true;
+});
+function autoloader(){
+if (shouldreload==true) {
+$('#dvLoading').show(0)
+$('#inv-search').submit();
+}
+}
+$(document).on('change', "[name='highprice']", function(e){ autoloader(); });
+$(document).on('change', "[name='mileage']", function(e){ autoloader(); });
+$(document).on('change', "[name='rsort']", function(e){ autoloader(); });
+function replacePara(str){
+var intRegex = /\d+/gi;
+if(intRegex.test(str)){
+str =
+str.replace(/\(+\d+\)/, '');
+}else{
+// 	alert('not');
+}
+return str;
+}
+});
+No Max Mileage
+Under 100K miles (9) Under 75K miles (4) Under 60K miles (3) Under 15K miles (1)
+No Max Price
+Under
+$30,000 (48) Under
+$22,000 (47) Under
+$18,000 (46) Under
+$17,000 (45) Under
+$15,000 (44) Under
+$14,000 (42) Under
+$13,000 (41) Under
+$12,000 (40) Under
+$11,000 (36) Under
+$10,000 (34) Under
+$9,000 (31) Under
+$8,000 (27) Under
+$7,000 (24) Under
+$6,000 (19) Under
+$5,000 (12) Under
+$4,000 (7) Under
+$3,000 (3)
+Sort make/model
+miles (low to high)
+miles (high to low)
+price (low to high)
+price (high to low)
+year (low to high)
+year (high to low)
+or
+64 records matched your criteria.
+Records 1 - 20 shown below.
+2003 Acura CL Type S
+(816) 598-1286
+25 pictures
+Exterior : BLACKMileage : 147,477Transmission : AutomaticEngine : V6, HO VTEC, 3.2LDrive Type : FWD
+Stock : 016070VIN : 19UYA426X3A016070
+Sale Price :
+$5,797
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3065399",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3065399_x640_01.jpg",
+"name": "2003 Acura CL Type S",
+"bodyType": "Two-Door Coupe",
+"vehicleModelDate": 2003,
+"manufacturer": "Acura",
+"model": "CL Type S",
+"offers": {
+"@type": "Offer",
+"price": "5797",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2010 Acura TL Sedan 4D
+(816) 598-1286
+40 pictures
+Exterior : BLACKMileage : 100,697Transmission : AutomaticEngine : V6, VTEC, 3.5 LiterDrive Type : FWD
+Stock : 027079VIN : 19UUA8F50AA027079
+Sale Price :
+$11,797
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3016605",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3016605_x640_01.jpg",
+"name": "2010 Acura TL Sedan 4D",
+"bodyType": "Four-Door Sedan",
+"vehicleModelDate": 2010,
+"manufacturer": "Acura",
+"model": "TL Sedan 4D",
+"offers": {
+"@type": "Offer",
+"price": "11797",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2008 BMW 3 Series 328xi
+(816) 598-1286
+33 pictures
+Exterior : GreyMileage : 129,469Transmission : AutomaticEngine : 6-Cyl, 3.0 LiterDrive Type : AWD
+Stock : 043712VIN : WBAVC93598K043712
+Sale Price :
+$6,950
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3034408",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3034408_x640_01.jpg",
+"name": "2008 BMW 3 Series 328xi",
+"bodyType": "Four-Door Sedan",
+"vehicleModelDate": 2008,
+"manufacturer": "BMW",
+"model": "3 Series 328xi",
+"offers": {
+"@type": "Offer",
+"price": "6950",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2011 Buick Enclave CXL-1
+(816) 598-1286
+47 pictures
+Exterior : WHITEMileage : 123,243Transmission : AutomaticEngine : V6, 3.6 LiterDrive Type : AWDMPG : 16 City / 22 HWY
+Stock : 236765VIN : 5GAKVBED6BJ236765
+City : 16Hwy : 22
+Sale Price :
+$11,879
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3016625",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3016625_x640_01.jpg",
+"name": "2011 Buick Enclave CXL-1",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2011,
+"manufacturer": "Buick",
+"model": "Enclave CXL-1",
+"offers": {
+"@type": "Offer",
+"price": "11879",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2015 Chevrolet Cruze LS
+(816) 598-1286
+3 pictures
+Exterior : blackMileage :
+49,724Transmission : AutomaticEngine : 1.8LDrive Type : Front Wheel DriveCylinders : 4Fuel : Flexible FuelMPG : 22 City / 35 HWY
+Stock : 290505VIN : 1G1PA5SH2F7290505
+City : 22Hwy : 35
+CALL FOR PRICE
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3070814",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3070814_x640_01.jpg",
+"name": "2015 Chevrolet Cruze LS",
+"bodyType": "Four-Door Sedan",
+"vehicleModelDate": 2015,
+"manufacturer": "Chevrolet",
+"model": "Cruze LS"
+}
+2005 Chevrolet Impala Base
+(816) 598-1286
+27 pictures
+Exterior : GREYMileage : 237,412Transmission : AutomaticEngine : V6, 3.4 LiterDrive Type : FWD
+Stock : 219774VIN : 2G1WF52E459219774
+Sale Price :
+$3,500
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3008528",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3008528_x640_01.jpg",
+"name": "2005 Chevrolet Impala Base",
+"bodyType": "Four-Door Sedan",
+"vehicleModelDate": 2005,
+"manufacturer": "Chevrolet",
+"model": "Impala Base",
+"offers": {
+"@type": "Offer",
+"price": "3500",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2001 Chevrolet Silverado 2500HD Long Bed
+(816) 598-1286
+8 pictures
+Exterior : GREENMileage : 223,576Transmission : AutomaticEngine : V8, 6.0 LiterDrive Type : 4WD
+Stock : 236368VIN : 1GCHK29U31E236368
+Sale Price :
+$4,975
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3034396",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3034396_x640_01.jpg",
+"name": "2001 Chevrolet Silverado 2500HD Long Bed",
+"bodyType": "Undefined",
+"vehicleModelDate": 2001,
+"manufacturer": "Chevrolet",
+"model": "Silverado 2500HD Long Bed",
+"offers": {
+"@type": "Offer",
+"price": "4975",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2004 Chevrolet Silverado 2500HD LS Pickup 4D 6 1/2 ft
+(816) 598-1286
+43 pictures
+Exterior : Black - (Black)Mileage : 215,536Transmission : AutomaticEngine : V8, 6.6L Turbo DslDrive Type : 2WD
+Stock : 180076VIN : 1GCHC23214F180076
+Sale Price :
+$12,975
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3077972",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3077972_x640_01.jpg",
+"name": "2004 Chevrolet Silverado 2500HD LS Pickup 4D 6 1/2 ft",
+"bodyType": "Truck",
+"vehicleModelDate": 2004,
+"manufacturer": "Chevrolet",
+"model": "Silverado 2500HD LS Pickup 4D 6 1/2 ft",
+"offers": {
+"@type": "Offer",
+"price": "12975",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2006 Chevrolet Suburban Sport Utility 4D
+(816) 598-1286
+44 pictures
+Exterior : whiteMileage : 245,747Transmission : AutomaticEngine : V8, FFV, 5.3 LiterDrive Type : 2WD
+Stock : 106664VIN : 3GNEC16Z26G106664
+Sale Price :
+$4,997
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=2988335",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/2988335_x640_01.jpg",
+"name": "2006 Chevrolet Suburban Sport Utility 4D",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2006,
+"manufacturer": "Chevrolet",
+"model": "Suburban Sport Utility 4D",
+"offers": {
+"@type": "Offer",
+"price": "4997",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2007 Chevrolet Tahoe LT Sport Utility 4D
+(816) 598-1286
+34 pictures
+Exterior : TANMileage : 202,241Transmission : AutomaticEngine : V8, FFV, 5.3 LiterDrive Type : 4WDMPG : 15 City / 20 HWY
+Stock : 121777VIN : 1GNFK13047R121777
+City : 15Hwy : 20
+Sale Price :
+$9,975
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3008524",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3008524_x640_01.jpg",
+"name": "2007 Chevrolet Tahoe LT Sport Utility 4D",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2007,
+"manufacturer": "Chevrolet",
+"model": "Tahoe LT Sport Utility 4D",
+"offers": {
+"@type": "Offer",
+"price": "9975",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2007 Chrysler Aspen Limited
+(816) 598-1286
+31 pictures
+Exterior : SilverMileage : 111,112Transmission : AutomaticEngine : V8, Flex Fuel, 4.7 LiterDrive Type : 4WDMPG : 14 City / 18 HWY
+Stock : 505286VIN : 1A8HW58P37F505286
+City : 14Hwy : 18
+Sale Price :
+$7,475
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3069342",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3069342_x640_01.jpg",
+"name": "2007 Chrysler Aspen Limited",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2007,
+"manufacturer": "Chrysler",
+"model": "Aspen Limited",
+"offers": {
+"@type": "Offer",
+"price": "7475",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2007 Chrysler Sebring Sedan Limited
+(816) 598-1286
+30 pictures
+Exterior : SilverMileage : 146,013Transmission : AutomaticEngine : 4-Cyl, 2.4 LiterDrive Type : FWD
+Stock : 693819VIN : 1C3LC66K67N693819
+Sale Price :
+$5,449
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3034384",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3034384_x640_01.jpg",
+"name": "2007 Chrysler Sebring Sedan Limited",
+"bodyType": "Four-Door Sedan",
+"vehicleModelDate": 2007,
+"manufacturer": "Chrysler",
+"model": "Sebring Sedan Limited",
+"offers": {
+"@type": "Offer",
+"price": "5449",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2015 Chrysler Town & Country Touring
+(816) 598-1286
+3 pictures
+Exterior : RedMileage : 116,638Transmission : AutomaticEngine : 3.6L V6Drive Type : Front Wheel DriveHorsepower : 283 @ 6400 rpmCylinders : 6Fuel : Flexible FuelMPG : 17 City / 25 HWY
+Stock : 609030VIN : 2C4RC1BGXFR609030
+City : 17Hwy : 25
+CALL FOR PRICE
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3066940",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3066940_x640_01.jpg",
+"name": "2015 Chrysler Town & Country Touring",
+"bodyType": "Minivan/Van",
+"vehicleModelDate": 2015,
+"manufacturer": "Chrysler",
+"model": "Town & Country Touring"
+}
+2007 Dodge Caliber SXT
+(816) 598-1286
+3 pictures
+Exterior : BLUEMileage : 123,842Transmission : CVT AutomaticEngine : 4-Cyl, 2.0 LiterDrive Type : FWDMPG : 28 City / 32 HWY
+Stock : 249184VIN : 1B3HB48B97D249184
+City : 28Hwy : 32
+CALL FOR PRICE
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3072523",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3072523_x640_01.jpg",
+"name": "2007 Dodge Caliber SXT",
+"bodyType": "Wagon",
+"vehicleModelDate": 2007,
+"manufacturer": "Dodge",
+"model": "Caliber SXT"
+}
+2005 Dodge Dakota SLT
+(816) 598-1286
+28 pictures
+Exterior : BLUEMileage : 156,738Transmission : AutomaticEngine : V6, 3.7 LiterDrive Type : 4WD
+Stock : 266066VIN : 1D7HW48K95S266066
+Sale Price :
+$7,757
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3034387",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3034387_x640_01.jpg",
+"name": "2005 Dodge Dakota SLT",
+"bodyType": "Truck",
+"vehicleModelDate": 2005,
+"manufacturer": "Dodge",
+"model": "Dakota SLT",
+"offers": {
+"@type": "Offer",
+"price": "7757",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2005 Dodge Ram 1500 SLT Pickup 4D 6 1/4 ft
+(816) 598-1286
+32 pictures
+Exterior : Black - (Black)Mileage : 184,316Transmission : AutomaticEngine : V8, 4.7 LiterDrive Type : 4WD
+Stock : 105378VIN : 1D7HU18N45S105378
+Sale Price :
+$7,797
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3034386",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3034386_x640_01.jpg",
+"name": "2005 Dodge Ram 1500 SLT Pickup 4D 6 1/4 ft",
+"bodyType": "Truck",
+"vehicleModelDate": 2005,
+"manufacturer": "Dodge",
+"model": "Ram 1500 SLT Pickup 4D 6 1/4 ft",
+"offers": {
+"@type": "Offer",
+"price": "7797",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2012 Ford Edge Limited
+(816) 598-1286
+42 pictures
+Exterior : Black - (Black)Mileage : 139,831Transmission : AutomaticEngine : 3.5L V6Drive Type : All Wheel DriveHorsepower : 285 @ 6500Cylinders : 6Fuel : GasolineMPG : 18 City / 25 HWY
+Stock : A27073VIN : 2FMDK4KC5CBA27073
+City : 18Hwy : 25
+CALL FOR PRICE
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3070818",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3070818_x640_01.jpg",
+"name": "2012 Ford Edge Limited",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2012,
+"manufacturer": "Ford",
+"model": "Edge Limited"
+}
+2005 Ford Escape Limited
+(816) 598-1286
+3 pictures
+Exterior : GoldMileage : 177,169Transmission : AutomaticEngine : V6, 3.0 LiterDrive Type : 4WD
+Stock : A10940VIN : 1FMCU94185KA10940
+Sale Price :
+$4,977
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3034390",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3034390_x640_01.jpg",
+"name": "2005 Ford Escape Limited",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2005,
+"manufacturer": "Ford",
+"model": "Escape Limited",
+"offers": {
+"@type": "Offer",
+"price": "4977",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2010 Ford Escape Limited
+(816) 598-1286
+38 pictures
+Exterior : GreyMileage :
+98,059Transmission : AutomaticEngine : V6, Flex Fuel, 3.0 LiterDrive Type : 2WD
+Stock : B08901VIN : 1FMCU0EG5AKB08901
+Sale Price :
+$9,467
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3069345",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3069345_x640_01.jpg",
+"name": "2010 Ford Escape Limited",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2010,
+"manufacturer": "Ford",
+"model": "Escape Limited",
+"offers": {
+"@type": "Offer",
+"price": "9467",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2015 Ford Expedition EL XL Sport Utility 4D
+(816) 598-1286
+33 pictures
+Exterior : whiteMileage : 136,114Transmission : AutomaticEngine : V6, EcoBoost, Twin Turbo, 3.5 LiterDrive Type : 4WD
+Stock : F13210VIN : 1FMJK1GT5FEF13210
+Sale Price :
+$14,975
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3034392",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3034392_x640_01.jpg",
+"name": "2015 Ford Expedition EL XL Sport Utility 4D",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2015,
+"manufacturer": "Ford",
+"model": "Expedition EL XL Sport Utility 4D",
+"offers": {
+"@type": "Offer",
+"price": "14975",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+Page :
+1 2 3 4 Next »
+var referrer = ""; // Add referrer here
+var cswButt0n=setInterval(function(){window.CarStory&&(clearInterval(cswButt0n),CarStory.buildButtons({referrer:referrer||null,useNoConflict:!0}))},100),cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="//widget.carstory.com/v1.0/no-click-button.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);
+Navigation
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Contact Us
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+an auto dealer website | sitemap

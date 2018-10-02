@@ -1,0 +1,666 @@
+if (window.performance && window.performance.clearMarks) {window.performance.clearMarks();}
+if (window.performance && window.performance.mark) {window.performance.mark("pageLoadStart");}
+(function (GLOBAL) {
+var xhr = new XMLHttpRequest(),
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+USER_SUMMARY_URL = '/profile/global/user-summary/',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+xhr.open('GET', USER_SUMMARY_URL, true);
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(xhr.responseText);
+} else {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+}
+};
+xhr.send();
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+}(window));
+Sports Cars - Latest models: Pricing, MPG, and Ratings | Cars.com
+{}
+(function() {
+function preloadImage(img) {
+const src = img.dataset['imageSrc'];
+if (src && src.length > 0) img.src = src;
+const srcset = img.dataset['imageSrcset'];
+if (srcset && srcset.length > 0) img.srcset = srcset;
+const style = img.dataset['style'] || '';
+img.style = style;
+//img.dataset['imageSrc'] = image.dataset['imageSrcset'] = image.data['style'] = ''
+}
+function hookupPreloads() {
+const images = document.querySelectorAll(
+'img[data-image-src],img[data-image-srcset]'
+);
+// If we don't have support for intersection observer, load the images immediately
+if (!('IntersectionObserver' in window)) {
+Array.from(images).forEach(image => preloadImage(image));
+} else {
+const config = {
+// If the image gets within 50px in the Y axis, start the download.
+rootMargin: '50px 0px'
+};
+// The observer for the images on the page
+let observer = new IntersectionObserver(onIntersection, config);
+function onIntersection(entries) {
+// Loop through the entries
+entries.forEach(entry => {
+// Are we in viewport?
+if (entry.intersectionRatio > 0) {
+// Stop watching and load the image
+observer.unobserve(entry.target);
+preloadImage(entry.target);
+}
+});
+}
+images.forEach(image => {
+if (!image.waitingForPreload) {
+observer.observe(image);
+image.waitingForPreload = true;
+}
+});
+}
+}
+const i = setInterval(hookupPreloads, 200);
+document.addEventListener('DOMContentLoaded', function() {
+clearInterval(i);
+hookupPreloads();
+});
+})();
+Hi, Guest!
+Save cars. Access them anywhere.
+Sign Up
+Already have an account?
+Log In
+My Dashboard
+My Saved Cars
+My Saved Searches
+My Listings
+Settings
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign Out
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign
+Up
+174 Latest Sports Cars
+Clear All
+Sports Cars
+Cancel
+Compare Now
+Compare Cars
+You have selected the maximum of 4 cars.
+Compare Now
+Select cars to choose them for comparison.
+Body Style
+Body Style
+filters
+Apply
+Any
+Sedans
+Coupes
+SUVs
+Crossovers
+Wagons/Hatchbacks
+Green Cars/Hybrids
+Convertibles
+Pickup Trucks
+Minivan
+All Minivans/Vans
+Luxury Cars
+Size
+Size
+filters
+Apply
+Any
+Compact
+Midsize
+Full-Size
+Price
+Price
+filters
+Apply
+Any
+$15,001-$20,000
+$20,001-$30,000
+$30,001-$40,000
+$40,001-$50,000
+$50,001-$75,000
+$75,001-$100,000
+$100,001-$150,000
+More than $150,000
+Make
+Make
+filters
+Apply
+Any
+Acura
+Alfa Romeo
+Aston Martin
+Audi
+Bentley
+BMW
+Cadillac
+Chevrolet
+Dodge
+Ferrari
+FIAT
+Ford
+Honda
+Jaguar
+Kia
+Lamborghini
+Lexus
+Lotus
+Maserati
+Mazda
+McLaren
+Mercedes-Benz
+Nissan
+Porsche
+Subaru
+Toyota
+Volkswagen
+MPG
+MPG
+filters
+Apply
+Any
+Electric Powered
+Hybrid Engine (Gas & Electric)
+Year
+Year
+filters
+Apply
+Any
+2017
+2018
+2019
+filters
+Apply
+Any
+Commuters
+Luxury
+Small Families
+Sun Lovers
+Filter
+Sort
+Compare
+Cancel
+Compare
+Select a Filter Type
+Body Style
+Size
+Price
+Make
+MPG
+Year
+Sort By
+Year: Newest
+Cars.com Best Bets
+Price: Lowest
+Price: Highest
+Year: Oldest
+Make/Model: A to Z
+Make/Model: Z to A
+Consumer Reviews: Highest
+Most Searches (popularity)
+Combined MPG
+2019 Alfa Romeo 4C Spider
+4 out of 5 Stars with 1 Review(s)
+1 Review
+STARTING MSRP
+$66,900
+COMBINED MPG
+28
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 Alfa Romeo Giulia
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$38,195
+COMBINED MPG
+20
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW ALPINA B6 Gran Coupe
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$124,400
+COMBINED MPG
+20
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW i8
+5 out of 5 Stars with 1 Review(s)
+1 Review
+STARTING MSRP
+$147,500
+COMBINED MPG
+27
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW M2
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$58,900
+COMBINED MPG
+20
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW M240
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$45,800
+COMBINED MPG
+24
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW M4
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$69,150
+COMBINED MPG
+20
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW M5
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$102,700
+COMBINED MPG
+17
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW M6 Gran Coupe
+5 out of 5 Stars with 1 Review(s)
+1 Review
+STARTING MSRP
+$119,900
+COMBINED MPG
+16
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 BMW M850
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$111,900
+COMBINED MPG
+Coming Soon
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 Cadillac ATS-V
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$67,795
+COMBINED MPG
+19
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 Cadillac CTS-V
+0 out of 5 Stars with 0 Review(s)
+Not Yet Rated
+STARTING MSRP
+$86,995
+COMBINED MPG
+16
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+2019 Chevrolet Camaro
+4 out of 5 Stars with 1 Review(s)
+1 Review
+STARTING MSRP
+$25,000
+COMBINED MPG
+20
+Model Details
+Local Inventory
+{{cardCtrl.compareHeaderText}}
+Prev
+Next
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+...
+14
+Our Company
+About Cars.com
+Investor Relations
+Contact Cars.com
+Mobile Apps
+Site Map
+Careers
+Fraud Awareness
+Licensing & Reprints
+Buying & Selling
+Find a Car
+Certified Pre-Owned
+Sell Your Car
+Car Book Values
+Car Dealers
+Compare Car Prices
+Listings by City
+Our Partners
+Auto.com
+NewCars.com
+RepairPal.com
+Terms of Service
+Privacy Statement
+Ad Choices
+© 2018 Cars.com. All rights reserved.
+window.CARS = window.CARS || {};
+CARS.digitalData = {"page":{"pageInfo":{"pageName":"research/brand/category","channel":"Research","effectiveDate":"2018-10-02T18:01:56.295Z"},"search":{"filters":[],"totalNumPages":14,"pageNum":1,"numResultsOnPage":14,"numResultsReturned":174,"sortOrder":"vehicleYear:DESC","typeOfSearch":"research"}},"user":{"profileInfo":{"publicDeviceId":"","publicConsumerId":"","loginType":"","login":""},"attributes":{"long":"","lat":""}},"dataProducts":{"section":"","lzone":"","affCookie":"","zipCode":0}};
+window.addEventListener('load', function () {
+s_clven.prop20 = "1|14|vehicleYear:DESC";
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.cmd.push(function () {
+googletag.pubads().enableAsyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs(true);
+});
+});
+{
+site: "4IGCP5L"
+}
+var ua = navigator.userAgent;
+if (ua.indexOf('Safari') !== -1) {
+var version = ua.match(/Version\/(\d+)/) || [];
+if (parseInt(version[1]) <= 8) {
+document.getElementsByClassName('page')[0].style.display = 'block';
+}
+}
+var userSummary;
+var userSummaryValue = localStorage.getItem("cars.userSummary");
+if (userSummaryValue) {
+try {
+userSummary = JSON.parse(userSummaryValue);
+} catch(e) {}
+}
+var carsUserDataValue, listingId;
+carsUserDataValue = localStorage.getItem("Cars.userData");
+if (carsUserDataValue) {
+try {
+carsUserData = JSON.parse(carsUserDataValue);
+listingId = carsUserData.listingId;
+} catch(e) {}
+}
+if (userSummary && userSummary.email) {
+_etmc.push(["setOrgId", "Carscomconsumer"]);
+_etmc.push(["setUserInfo", {"email": userSummary.email}]);
+let pageViewList = ["trackPageView"];
+if (listingId) {
+pageViewList.push({"item": ""+listingId});
+}
+_etmc.push(pageViewList);
+}
+(function (doc, GLOBAL) {
+var profiles = {},
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+// default events for listening and broadcast
+var events = {};
+// A event subscription identifier
+var subscriptionId = -1;
+profiles.publish = function (event, args) {
+if (!events[event]) {
+return false;
+}
+var subscribers = events[event],
+len = subscribers ? subscribers.length : 0;
+while (len--) {
+subscribers[len].func(event, args);
+}
+return this;
+};
+profiles.subscribe = function (event, func) {
+if (!events[event]) {
+events[event] = [];
+}
+var token = (++subscriptionId).toString();
+events[event].push({
+token: token,
+func: func
+});
+return token;
+};
+// Unsubscribe from event
+profiles.unsubscribe = function (token) {
+for (var m in events) {
+if (events[m]) {
+for (var i = 0, j = events[m].length; i < j; i++) {
+if (events[m][i].token === token) {
+events[m].splice(i, 1);
+return token;
+}
+}
+}
+}
+return this;
+};
+profiles.init = function () {
+var userData = getUserData();
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1) {
+profiles.publish("profile.login", userData);
+} else {
+profiles.publish('profile.logout');
+}
+profiles.publish("profile.updated", userData);
+GLOBAL.document.querySelector('.prof__menu__signout').querySelector('.prof__link').onclick = logout;
+updateContinueParams();
+};
+// setup header subscriptions:
+profiles.subscribe("profile.updated", updateDOMAll);
+profiles.subscribe("profile.add.car", updateDOMCarCount);
+profiles.subscribe("profile.remove.car", updateDOMCarCount);
+profiles.subscribe("profile.add.search", updateDOMSearchCount);
+profiles.subscribe("profile.remove.search", updateDOMSearchCount);
+profiles.subscribe("profile.add.listing", updateDOMListingCount);
+profiles.subscribe("profile.remove.listing", updateDOMListingCount);
+profiles.subscribe("profile.add.researches", updateDOMResearchCount);
+profiles.subscribe("profile.remove.researches", updateDOMResearchCount);
+profiles.subscribe("profile.login", updateDOMLogIn);
+profiles.subscribe("profile.logout", updateDOMLogOut);
+profiles.subscribe("profile.url.updated", updateContinueParams);
+function updateContinueParams() {
+// clean this up with babel
+if (GLOBAL.NodeList && NodeList.prototype.forEach) {
+GLOBAL.document.querySelectorAll('.js_continue').forEach(updateDOMUrl);
+} else {
+var continueNodes = GLOBAL.document.querySelectorAll('.js_continue');
+for (var i = 0; i < continueNodes.length; i++) {
+updateDOMUrl(continueNodes[i]);
+}
+}
+}
+function updateDOMLogIn(event, data) {
+toggleNavClass(true);
+updateDOMAvatar(true);
+updateDOMPersonName(event, data);
+}
+function updateDOMLogOut() {
+toggleNavClass(false);
+updateDOMAvatar(false);
+updateDOMAll();
+}
+function updateDOMCarCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.cars) ? eventData.favorites.cars : 0;
+return GLOBAL.document.getElementById("prof_menu-savedcars")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMSearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.searches) ? eventData.favorites.searches : 0;
+return GLOBAL.document.getElementById("prof_menu-savedsearches")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMListingCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.ads) ? eventData.favorites.ads : 0;
+if (eventDataCount) {
+return GLOBAL.document.getElementById("prof_menu-savedlistings")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMResearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.researches) ? eventData.favorites.researches : 0,
+savedResearchLink = GLOBAL.document.getElementById("prof_menu-savedresearch");
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1 && savedResearchLink) {
+return savedResearchLink.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMPersonName(event, data) {
+var eventData = stringToObj(data),
+eventDataEmail = (eventData && eventData.email) ? eventData.email : "",
+eventDataFirstName = (eventData && eventData.firstName) ? eventData.firstName : "",
+personName = (eventDataFirstName) ? eventDataFirstName : (eventDataEmail) ? eventDataEmail : "Guest";
+GLOBAL.document.querySelector(".prof__menu--name").innerHTML = personName;
+}
+function updateDOMAvatar(isLogin) {
+if (isLogin) {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-filled"></use></svg>';
+} else {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-line"></use></svg>';
+}
+}
+function toggleNavClass(isLogin) {
+var nav = GLOBAL.document.querySelector('.prof__nav');
+if (isLogin) {
+nav.classList.add('logged-in');
+nav.classList.remove('not-logged-in');
+} else {
+nav.classList.add('not-logged-in');
+nav.classList.remove('logged-in');
+}
+return true;
+}
+function updateDOMAll(event, data) {
+updateDOMCarCount("profile.add.car", data);
+updateDOMSearchCount("profile.add.search", data);
+updateDOMListingCount("profile.add.listing", data);
+updateDOMResearchCount("profile.add.researches", data);
+}
+function stringToObj(string) {
+if (typeof string === "object") {
+return string;
+}
+try {
+var data = JSON.parse(string);
+return data;
+} catch (e) {
+return {};
+}
+}
+function getUserData() {
+var userSummary;
+GLOBAL.CARS = GLOBAL.CARS || {};
+try {
+userSummary = JSON.parse(GLOBAL.localStorage.getItem(USER_SUMMARY_STORAGE_KEY));
+} catch (error) {
+userSummary = DEFAULT_SUMMARY_RESPONSE;
+}
+GLOBAL.CARS.userSummary = userSummary;
+return GLOBAL.CARS.userSummary;
+}
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+function logout(e) {
+e.preventDefault();
+var xhr = new XMLHttpRequest();
+xhr.open('GET', '/profile/global/logout/?noredirect=true', true);
+xhr.withCredentials = true;
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+profiles.publish('profile.logout');
+}
+};
+xhr.send();
+}
+function getPageUrl() {
+return '/' + GLOBAL.location.href.split(".cars.com/")[1];
+}
+function updateDOMUrl(element) {
+let urlBase = element.href;
+if (urlBase.indexOf('?') > -1) {
+urlBase = urlBase.split('?')[0];
+}
+return element.setAttribute('href', urlBase + '?continue=' + encodeURIComponent(getPageUrl()));
+}
+GLOBAL.profiles = profiles;
+GLOBAL.addEventListener('DOMContentLoaded', profiles.init());
+}( document, window ));

@@ -1,0 +1,220 @@
+navigator.cookieEnabled ||
+(document.cookie = "testcookie", -1 == document.cookie.indexOf("testcookie") &&
+(window.location = "/missing-cookies-javascript/?prev=%2Fvehicle-details%2F245112241%2F%3Fid%3D33378%26prev%3Dsrp%26zipcode%3D90064"));
+(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({
+'gtm.start':
+new Date().getTime(),
+event: 'gtm.js'
+});
+var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s),
+dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-K9DCZD');
+(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({
+'gtm.start':
+new Date().getTime(),
+event: 'gtm.js'
+});
+var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s),
+dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-WG29NVB');
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'UA-123518381-1');
+2016 Ford Fiesta SE Hatchback - 3FADP4EJ7GM199888
+(function(h, o, t, j, a, r) {
+h.hj = h.hj || function() { (h.hj.q = h.hj.q || []).push(arguments) };
+h._hjSettings = { hjid: 503205, hjsv: 5 };
+a = o.getElementsByTagName('head')[0];
+r = o.createElement('script');
+r.async = 1;
+r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+a.appendChild(r);
+})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+!function(w) {
+w.UCC = w.UCC || {};
+w.UCC.ENV = {"staticEndpoint":"//static.usedcars.com","isDev":false,"isProd":true,"routeName":"search.vdp","staticAssets":[{"page_name":"search.vdp","hash":"f81c6c0e","file_type":"js"},{"page_name":"search.vdp","hash":"ae006661","file_type":"css"}]};
+}(window)
+!function(){function r(t,n,i){function e(u,a){if(!n[u]){if(!t[u]){var s="function"==typeof require&&require;if(!a&&s)return s(u,!0);if(o)return o(u,!0);var c=new Error("Cannot find module '"+u+"'");throw c.code="MODULE_NOT_FOUND",c}var f=n[u]={exports:{}};t[u][0].call(f.exports,function(r){var n=t[u][1][r];return e(n?n:r)},f,f.exports,r,t,n,i)}return n[u].exports}for(var o="function"==typeof require&&require,u=0;u<i.length;u++)e(i[u]);return e}return r}()({1:[function(r,t,n){"use strict";!function(r){r.UCC=r.UCC||{},r.UCCSearch=r.UCCSearch||{};var t=r.UCC;t.USER={},t.DEVICE={isKnown:!1},t.AFFILIATE={},t.ADS={},t.UTILS={},t.LOG={};var n=t.UTILS,i=t.ENV;t.DEVICE;i.cssPath=i.staticEndpoint+"/css",i.jsPath=i.staticEndpoint+"/js",i.libsPath=i.staticEndpoint+"/libs",i.imgsPath=i.staticEndpoint+"/img";var e=function(r,t){r=r||{},t=t||{};for(var n in t)r[n]=t[n];return r};n.mergeObjs=e}(window)},{}]},{},[1]);window.Modernizr=function(n,t,e){function o(n){y.cssText=n}function r(n,t){return typeof n===t}var i,c,u,a="2.8.3",s={},f=!0,l=t.documentElement,p="modernizr",d=t.createElement(p),y=d.style,m=({}.toString,{}),v=[],w=v.slice,h={}.hasOwnProperty;u=r(h,"undefined")||r(h.call,"undefined")?function(n,t){return t in n&&r(n.constructor.prototype[t],"undefined")}:function(n,t){return h.call(n,t)},Function.prototype.bind||(Function.prototype.bind=function(n){var t=this;if("function"!=typeof t)throw new TypeError;var e=w.call(arguments,1),o=function(){if(this instanceof o){var r=function(){};r.prototype=t.prototype;var i=new r,c=t.apply(i,e.concat(w.call(arguments)));return Object(c)===c?c:i}return t.apply(n,e.concat(w.call(arguments)))};return o});for(var j in m)u(m,j)&&(c=j.toLowerCase(),s[c]=m[j](),v.push((s[c]?"":"no-")+c));return s.addTest=function(n,t){if("object"==typeof n)for(var o in n)u(n,o)&&s.addTest(o,n[o]);else{if(n=n.toLowerCase(),s[n]!==e)return s;t="function"==typeof t?t():t,"undefined"!=typeof f&&f&&(l.className+=" "+(t?"":"no-")+n),s[n]=t}return s},o(""),d=i=null,s._version=a,l.className=l.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+v.join(" "):""),s}(this,this.document);
+var assetsPrefix = "search.vdp";
+var uccAdTrackingObject,
+uccInitAdTrackingObject;
+var utsUrl = 'https://uts.abtl.io/api/tracking/v1';
+[{"@context":"http://schema.org","@type":"Organization","url":"https://www.usedcars.com/","legalName":"UsedCars.com","alternateName":"UCC","logo":"https://static.usedcars.com/img/logo/logo.svg"},{"@context":"http://schema.org","@type":"WebSite","name":"UsedCars.com","alternateName":"UCC","url":"https://www.usedcars.com/"}]
+var startTimerForAdhesionAdClose = function () {
+console.log('in the startTimerForAdhesionAdClose function');
+setTimeout(function () {
+console.log('in the setTimeout function');
+$('#adhesion-close-js').on('click',
+function (e) {
+console.log('in the adhesion-close-js click function');
+$('#adhesion-js').css('display', 'none');
+});
+$('#adhesion-close-js').css('display', 'block');
+},
+5000);
+};
+Menu
+Makes
+Car Type
+Price
+Location
+Certified Pre-owned
+Deals
+All Results
+Prev
+Next
+2016 Ford Fiesta SE Hatchback - $12,995
+Los Angeles, CA - 6 miles away
+All Results
+Check Availability
+Airport Marina Ford
+5880 W CENTINELA AVE, Los Angeles, CA 90045
+Price
+$12,995
+Location
+Los Angeles, CA - 6 miles away
+Mileage
+19,406
+VIN
+3FADP4EJ7GM199888
+Stock Number
+32303-495910167
+Exterior Color
+BLUE
+Interior Color
+Doors
+4
+Engine
+4-Cylinder
+MPG
+28 City / 37 Hwy
+Drivetrain
+Front-Wheel Drive
+Transmission
+Manual transmission
+CARFAX® Details
+Purchase the CARFAX History Report
+Purchase the CARFAX History Report
+* See the full CARFAX Report for additional information and glossary of terms. The number of owners is estimated. Not all accidents or other issues are reported to CARFAX
+Car Features
+6 Speakers^ABS brakes^AM/FM radio^Air Conditioning^Alloy wheels^Bumpers: body-color^CD player^Compass^Delay-off headlights^Driver door bin^Driver vanity mirror^Dual front impact airbags^Dual front side impact airbags^Electronic Stability Control^Emergency communication system^Front Bucket Seats^Front Center Armrest^Front anti-roll bar^Front beverage holders^Front reading lights^Front wheel independent suspension^Fully automatic headlights^Illuminated entry^Knee airbag^Low tire pressure warning^Occupant sensing airbag^Outside temperature display^Overhead airbag^Overhead console^Passenger door bin^Passenger vanity mirror^Power door mirrors^Power steering^Power windows^Radio data system^Radio: AM/FM Stereo/CD Player/MP3 Capable^Rear reading lights^Rear window defroster^Rear window wiper^Remote keyless entry^SYNC Communications & Entertainment System^Security system^Speed control^Speed-sensing steering^Split folding rear seat^Spoiler^Steering wheel mounted audio controls^Tachometer^Telescoping steering wheel^Tilt steering wheel^Traction control^Trip computer^Turn signal indicator mirrors^Unique Cloth Front Bucket Seats^Variably intermittent wipers
+Airport Marina Ford
+5880 W CENTINELA AVE,
+Los Angeles,
+CA,
+90045
+Seller's Notes
+Clean CARFAX. 36/28 Highway/City MPG 2016 Ford Fiesta SE Blue 4D Hatchback 1.6L I4 Ti-VCT FWDAwards:* 2016 KBB.com Brand Image AwardsAirport Marina Ford! www.airportmarinaford.com, Excellent Selection of Used Vehicles, Financing Options, Serving Manhattan Beach, Westchester, Mar Vista, Pacific Palisades, Santa Monica, Playa del Rey, Beverly Hills, Inglewood, Malibu, Venice, Culver City, Brentwood, Westwood, West Hollywood, Bel Air, Ladera Heights, Orange County, and El Segundo but all over Southern California and LA. ALL ADVERTISED PRICES EXCLUDE GOVERNMENT FEES AND TAXES, ANY FINANCE CHARGES, ANY DEALER DOCUMENT PROCESSING CHARGE, ANY ELECTRONIC FILING CHARGE, AND ANY EMISSION TESTING CHARGE .
+Calculator
+Adjust the values to calculate your estimated monthly car payment *
+Purchase price
+Cash rebate
+Trade-in value
+Amount owned on your trade-in
+Down payment
+Annual interest rate
+Terms of loan
+Calculate
+Estimated monthly payment *
+$ 0.00
+* Monthly payment estimates are for informational purposes only and do not represent a financing offer from a seller of a vehicle. Aquisition fees, destination charges, tag, title, and other fees and incentives are not included in this calculation.
+Prev
+Next
+Contact Dealer
+Contact Dealer
+Est. Payment*:
+Payment Calculator
+First name is blank
+First Name
+Last name is blank
+Last Name
+Enter a valid email address
+Email Address
+Enter a valid phone number
+Phone Number
+Enter a valid ZIP code
+ZIP Code
+Check Availability
+Request Additional Photos
+Schedule A Test Drive
+Ask About the Warranty
+Discuss Financing Options
+Ask A Question
+Enter a valid ZIP code
+Submit
+Submit
+Yes, please send newsletters with expert car reviews, current rebates, and other important automotive information from Autobytel and our partners. (Un-check if you don't want to receive).
+By checking the 'Optional Marketing Consent' box, I am expressly consenting to be contacted by Autobytel Inc., the vehicle Dealer(s) I select and/or the manufacturer of the vehicle I selected (or by their respective agents or representatives) via the phone number(s) I provided for marketing purposes through use of automatic telephone dialing systems, SMS texts or artificial or prerecorded voice messages. This consent is not required as a condition to purchase services or products.
+Read Privacy Policy
+// All scripts moved to ucc-searchObjs.js
+var uccVDP = {
+'isPhoneNumberOptional':'False'
+}
+var carForSale = {"year":2016,"make":"Ford","model":"Fiesta","trim":"SE Hatchback","vin":"3FADP4EJ7GM199888","price":"$12,995"};
+Back to top
+About Us
+Contact Us
+Privacy Policy
+Terms of Use
+Fraud Awareness
+Advice
+Best Cars
+Calculators
+Sitemap
+© 2018 AutoWeb, Inc.
+CHECK AVAILABILITY
+Contact Airport Marina Ford now!
+!function(g, s) {
+uccAdTrackingObject = g.ADS, p = 'pageCtx';
+uccAdTrackingObject[p] = {"delayAdsLoading":false};
+uccAdTrackingObject[p].set = s;
+UCC.pageJson=UCC.pageJson||{};
+UCC.pageJson.vdpUts=[{"used_car_id":245112241}];
+;
+}(UCC,
+function(d) {
+UCC.UTILS.mergeObjs(this, d);
+return this;
+})
+!function(w, d, s, u, gt) {
+var o = w[gt] = w[gt] || {};
+o.cmd = o.cmd || [];
+var hs = 'https:',
+g = d.createElement(s),
+n = d.getElementsByTagName(s)[0];
+g.async = 1;
+g.src = (hs === d.location.protocol ? hs : 'http:') + u;
+n.parentNode.insertBefore(g, n);
+}(window, document, 'script', '//www.googletagservices.com/tag/js/gpt.js', 'googletag');
+// This goes at the end of the page, before the body tag
+!function(uccAdTrackingObject) {
+uccInitAdTrackingObject = uccAdTrackingObject;
+return uccInitAdTrackingObject;
+}(UCC);
+window.loadjs=function(){function n(n,e){if(n){var t=c[n];if(o[n]=e,t)for(;t.length;)t[0](n,e),t.splice(0,1)}}function e(n,t,i,o){var c,u,f=document,s=i.async,h=(i.numRetries||0)+1,a=i.before||r;o=o||0,/\.css$/.test(n)?(c=!0,(u=f.createElement("link")).rel="stylesheet",u.href=n):((u=f.createElement("script")).src=n,u.async=void 0===s||s),u.onload=u.onerror=u.onbeforeload=function(r){var f=r.type[0];if(c&&"hideFocus"in u)try{u.sheet.cssText.length||(f="e")}catch(n){f="e"}return"e"==f&&(o+=1)<h?e(n,t,i,o):void t(n,f,r.defaultPrevented)},a(n,u),f.head.appendChild(u)}function t(t,o,c){var u,f;if(o&&o.trim&&(u=o),f=(u?c:o)||{},u){if(u in i)throw"LoadJS";i[u]=!0}!function(n,t,r){var i,o,c=(n=n.push?n:[n]).length,u=c,f=[];for(i=function(n,e,r){if("e"==e&&f.push(n),"b"==e){if(!r)return;f.push(n)}--c||t(f)},o=0;o<u;o++)e(n[o],i,r)}(t,function(e){e.length?(f.error||r)(e):(f.success||r)(),n(u,e)},f)}var r=function(){},i={},o={},c={};return t.ready=function(n,e){return function(n,e){n=n.push?n:[n];var t,r,i,u=[],f=n.length,s=f;for(t=function(n,t){t.length&&u.push(n),--s||e(u)};f--;)r=n[f],(i=o[r])?t(r,i):(c[r]=c[r]||[]).push(t)}(n,function(n){n.length?(e.error||r)(n):(e.success||r)()}),t},t.done=function(e){n(e,[])},t.reset=function(){i={},o={},c={}},t.isDefined=function(n){return n in i},t}();
+var assets = ["//static.usedcars.com/libs/jquery.min.js","//static.usedcars.com/libs/jquery.browser.min.js","//static.usedcars.com/libs/jquery.ba-bbq.min.js","//static.usedcars.com/libs/react.min.js","//static.usedcars.com/libs/react-dom.min.js","//static.usedcars.com/libs/nouislider.min.js","//static.usedcars.com/libs/flowtype.min.js","//static.usedcars.com/js/global.site-48ab615f.min.js","//static.usedcars.com/js/search.vdp-f81c6c0e.min.js","//static.usedcars.com/libs/jquery.swiper-4.3.5.min.js","//static.usedcars.com/libs/searchhistory.js"];
+loadjs(assets,
+{
+success: function () {
+searchHistory.purgeViewed("2018-09-02T11:05:33.0560803-07:00");searchHistory.addVehicleId({"inventoryId":245112241,"dateAdded":"2018-10-02T11:05:33.0560803-07:00"})
+},
+async: false
+});
+function requireUI(selector) {
+return $(selector).length ? true : false;
+}
