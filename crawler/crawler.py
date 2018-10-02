@@ -6,8 +6,10 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 import sys
 sys.path.append('pre_processing')
+sys.path.append('heuristic')
 
 from pre_processing import PreProcessing
+from anchor import get_anchor_weights
 
 class Crawler:
     url = ''
@@ -19,6 +21,7 @@ class Crawler:
     debug = False
     error = None
     out = None
+    link_words = get_anchor_weights()
 
     def __init__(self, site, dbg=False):
         self.url = site['site']
@@ -77,6 +80,19 @@ class Crawler:
 
     def evaluate_links(self, links, method):
         if (method == 'heuristic'):
+            for l in links:
+                if (l['href'] in self.visited) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
+                    continue
+                new_item = {'link': l['href'], 'score': 1}
+                for anchor in self.link_words:
+                    qtd = len(list(filter(lambda x: x in new_item['link'], anchor['words'])))
+                    if qtd:
+                        new_item['score'] *= qtd * anchor['weight']
+
+                self.order.append(new_item)
+
+            self.order.sort(key=lambda x: x['score'], reverse=True)
+
             pass
         elif (method == 'ml'):
             pass
@@ -107,7 +123,7 @@ class Crawler:
             self.out.write('VISIT ORDER:')
             self.out.write('\n')
             for l in self.order:
-                self.out.write(l['link'])
+                self.out.write(str('%.2f'%(l['score'])) + '\t\t - ' + l['link'])
                 self.out.write('\n')
             self.out.write('\n-----------------------------------------------------------------------------\n\n')
 
@@ -129,7 +145,7 @@ class Crawler:
         else:
             df.to_csv('results/' + method + '/' + self.url.split('https://')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
 
-    def visit(self, method='bfs'):
+    def visit(self, method='bfs', save_results=False):
         for visit_quantity in tqdm(range(self.MAX_VISITS), desc=("Getting data from (" + self.url + ")")):
             if not self.order:
                 self.print_error('NOT ENOUGH LINK: ', self.url)
@@ -156,7 +172,8 @@ class Crawler:
             self.evaluate_links(links, method)
             
             time.sleep(0.5)
-        self.save_visited_csv(method)
+        if save_results:
+            self.save_visited_csv(method)
         print ("Done")
         
         if (self.debug):
@@ -166,5 +183,5 @@ if (__name__ == "__main__"):
     p = PreProcessing("../site.txt")
     sites = p.get_sites_info()
     for s in sites:
-        c = Crawler(s, False)
-        c.visit()
+        c = Crawler(s, dbg=True)
+        c.visit(method='heuristic', save_results=True)
