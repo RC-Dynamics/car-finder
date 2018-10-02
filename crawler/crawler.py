@@ -183,5 +183,5 @@ if (__name__ == "__main__"):
     p = PreProcessing("../site.txt")
     sites = p.get_sites_info()
     for s in sites:
-        c = Crawler(s, dbg=True)
+        c = Crawler(s, dbg=False)
         c.visit(method='heuristic', save_results=True)
