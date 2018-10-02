@@ -1,0 +1,44 @@
+2013 Ford Escape SE for sale in Blue Springs MO from Munsterman Automotive Group
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle/used-2013-ford-escape-se-3001000",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3001000_x640_01.jpg",
+"name": "2013 Ford Escape SE",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": "2013",
+"manufacturer": "Ford",
+"model": "Escape SE",
+"offers": {
+"@type": "Offer",
+"price": "10775",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"address": "609 SW State Route 7"
+}
+}
+}
+$(function() {
+$("img.ar_mainimage").lazyload({
+threshold : 500,
+effect : "fadeIn",
+});
+});
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+Map
+Contact
+Finance Application
+2013 Ford Escape SE for sale in Blue Springs MO from Munsterman Automotive Group
+The vehicle requested may have moved or is no longer available.Inventory Updates Daily»»» Please Search Again «««
+window.CarStoryConfig = {
+referrer: "PLACE_REFERRER_HERE"
+};
+$(document).ready(function(){
+$("tr.include-carstory").insertAfter("tr.ar_vehinfo");
+});
+sitemap
+an auto dealer website

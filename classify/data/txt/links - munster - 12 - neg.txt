@@ -1,0 +1,156 @@
+Munsterman Automotive Group Tradein-Value - Used Cars For Sale - Blue Springs MO - Tradein-Value
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1824666117788798');
+fbq('track', 'PageView');
+{
+"@context": "http://schema.org",
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"url": "http://www.munstermanauto.com/tradein-value",
+"description": "Munsterman Automotive Group Selling Used Cars in Blue Springs, MO.",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "609 SW State Route 7",
+"addressLocality": "Blue Springs",
+"addressRegion": "MO",
+"postalCode": "64014"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "39.012088",
+"longitude": "-94.273041"
+},
+"sameAs" : [
+"https://www.facebook.com/MunstermanAuto/?fref=ts",
+null
+]
+}
+var $websiteSwitch = 890;
+function arNavfunction(){$("#menu li:has(ul)").addClass("has-dropdown"),$(".has-dropdown ul:has(li)").addClass("hidden"),$(".has-dropdown > a").on("click",function(a){$(this).is("[disabled]")&&a.preventDefault()}),window.innerWidth<=$websiteSwitch?($(".has-dropdown > a").attr("disabled","disabled"),$(".has-dropdown > a").not(".active-head")&&$("li.has-dropdown").unbind("click").bind("click",function(a){$(this).find("a").first().toggleClass("active-head"),$(this).find(".hidden").toggleClass("active")})):($(".has-dropdown > a").removeAttr("disabled"),$(".nav-wrap li.has-dropdown > a, .has-dropdown > .hidden").removeClass("active-head active"))}
+jQuery(document).ready(arNavfunction);
+$(window).on('resize',arNavfunction);
+// function myFunction() { document.getElementById("myDropdown").classList.toggle("show"); }
+// $(document).ready(function() {
+// var hoverOrClick = function () {
+//
+$(".header-dropdown-content").stop().toggle('fast');
+// }
+// $('.dropbtn').hover(hoverOrClick);
+// });
+$(document).ready(function() {
+$( '.dropbtn' ).on('mouseenter', function() {
+$( '.header-dropdown-content' ).show();
+}).on('mouseleave', function() {
+$( '.header-dropdown-content' ).hide();
+});
+})
+Treating People Like Family, It's What We Do.
+Map & Hours | Blue Springs, MO | (816) 598-1286
+YOUR STORE
+Blue Springs
+609 SW State Route 7
+Blue Springs, MO 64014
+(816) 598-1286
+OUR HOURS
+Mon-Fri 9-6 | Sat 9-5
+GET DIRECTIONS
+CONTACT US
+No Credit Check
+Buy With Confidence
+We're Focused on You
+Stress Free Financing
+☰Show Menu
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Munsterman Automotive Group Tradein-Value - Used Cars For Sale - Blue Springs MO - Tradein-Value
+Munsterman Automotive Group Selling Used Cars in Blue Springs, MO.
+function isNumber(n) {
+return !isNaN(parseFloat(n)) && isFinite(n);
+}
+function formcheck() {
+var FormOK=true
+if (document.getElementById('firstname').value=="") { document.getElementById('firstname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('lastname').value=="") { document.getElementById('lastname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('email').value=="") { document.getElementById('email').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('phone1').value=="") { document.getElementById('phone1').className='arform_textfield_required';FormOK=false; }
+var tldregex=/^(com|net|org|edu|int|mil|gov|arpa|biz|cc|aero|name|coop|info|pro|museum)$/;
+var domainregex=/^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
+var theemail=document.uberform.email.value;
+var domainarray=theemail.split(".");
+var thetld=domainarray[domainarray.length-1];
+thetld=thetld.toLowerCase();
+if (theemail.length>=1) {
+if ( thetld.length!=2 && thetld.search(tldregex)==-1 || domainregex.test(theemail)==false ) {
+document.uberform.email.className='arform_textfield_required';
+// document.uberform.email.focus(); // conflicts with className change - removed
+alert('Email address does not seem to be valid.');
+FormOK=false;
+}
+}
+if (FormOK==false) {
+document.uberform.sendform.value='Submit';
+alert('Please check the highlighted fields...\n\nAdditional information is required.');
+}
+return FormOK;
+}
+Tell Us About Your Trade-In
+Contact Information
+*First Name, Middle Initial
+*Last Name
+*Email Address
+*Day Phone Number
+Evening Phone Number
+Describe Your Trade-In
+Year / Make
+Model and Trim
+Mileage
+Engine
+TransmissionSelect Transmission
+Automatic
+Manual
+Continuous Variable
+Other Details (i.e. leather, moonroof, navigation, 4x4)
+VIN
+Vehicle Conditionchoose one
+Excellent
+Good
+Fair
+Poor
+Originally PurchasedNEW
+USED
+Amount Requested$
+Amount Owed$
+document.getElementById('lockbox').value='0.357997848258';
+document.getElementById('keycode').value='140730100220180E0678A2B551285AE50D2FDF47E81EFB';
+Navigation
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Contact Us
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+an auto dealer website | sitemap

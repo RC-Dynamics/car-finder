@@ -1,0 +1,716 @@
+if (window.performance && window.performance.clearMarks && window.performance.mark) {
+window.performance.clearMarks();
+window.performance.mark("pageLoadStart");
+}
+[{"@context":"http://schema.org","@type":"Car","driveWheelConfiguration":{"@type":"DriveWheelConfigurationValue","name":"FWD"},"fuelEfficiency":{"@type":"QuantitativeValue","unitCode":"MPG","value":""},"fuelType":"Gasoline","mileageFromOdometer":{"@type":"QuantitativeValue","unitCode":"SMI","value":34861},"numberOfDoors":4,"vehicleEngine":{"@type":"EngineSpecification","name":"2.4L I4 16V GDI DOHC"},"vehicleIdentificationNumber":"2GKALMEK5F6179671","vehicleInteriorColor":"Jet Black","vehicleModelDate":2015,"vehicleSeatingCapacity":"5","vehicleTransmission":"6-Speed Automatic","aggregateRating":{"@type":"AggregateRating","ratingCount":100,"reviewCount":100,"bestRating":5,"ratingValue":"4.8"},"color":"Cypress Green Metallic","itemCondition":{"@type":"OfferItemCondition","name":"Used"},"manufacturer":{"@type":"Organization","name":"GMC"},"model":{"@type":"ProductModel","name":"2015 GMC Terrain SLE-1","isVariantOf":"https://www.cars.com/research/gmc-terrain-2015/"},"offers":{"@type":"Offer","price":14544,"priceCurrency":"USD","seller":{"@type":"Organization","name":"Zeigler Pre-Owned of Chicago","telephone":"(708) 512-7682","address":{"addressLocality":"Berwyn","addressRegion":"IL","streetAddress":"6539 Ogden Ave"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.8,"reviewCount":"16"}}},"image":{"@type":"ImageObject","contentUrl":"https://www.cstatic-images.com/phototab/in/e13d018524bf546259887fe5ba243249.jpg"},"name":"2015 GMC Terrain SLE-1"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.cars.com/","name":"Cars.com"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.cars.com/shopping/","name":"Shop"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.cars.com/shopping/gmc-terrain-2015/","name":"2015 GMC Terrain"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.cars.com/vehicledetail/detail/742868104/overview/","name":"VIN: 2GKALMEK5F6179671"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Cars.com","url":"https://www.cars.com/"},{"@context":"http://schema.org","@type":"Organization","url":"https://www.cars.com/","logo":"https://graphics.cars.com/images/core/logo.png","sameAs":["https://www.facebook.com/CarsDotCom/","https://www.twitter.com/carsdotcom","https://www.pinterest.com/carsdotcom/","https://www.youtube.com/user/Carscom","https://instagram.com/carsdotcom/","https://www.linkedin.com/company/cars-com","https://plus.google.com/+CarsDotCom","https://en.wikipedia.org/wiki/Cars.com"]}]
+(function (GLOBAL) {
+var xhr = new XMLHttpRequest(),
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+USER_SUMMARY_URL = '/profile/global/user-summary/',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+xhr.open('GET', USER_SUMMARY_URL, true);
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(xhr.responseText);
+} else {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+}
+};
+xhr.send();
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+}(window));
+2015 GMC Terrain SLE-1 For Sale In Berwyn | Cars.com
+window.CARS = window.CARS || {};
+window.CARS.experiments = window.CARS.experiments || {};
+window.CARS.digitalData = {"page":{"pageInfo":{"pageName":"Used Cars/Search/details-details-dealer","channel":"Used Cars/Search","version":"","effectiveDate":"","employeeDataShown":"no-employee-data"},"lead":[],"category":{"pageType":"vdp"},"attributes":{"monthlyPayment":"","abTesting":"","rolloutCookie":"","dealerText":[],"dealerChat":[]},"vehicle":[{"type":"inventory","detail":"listing","listingId":742868104,"vin":"2GKALMEK5F6179671","stockType":"Used","make":"GMC","makeId":"20061","model":"Terrain","modelId":"30003","year":2015,"trim":"SLE-1","bodyStyle":"SUV","customerId":5375264,"certified":false,"privateSeller":false,"price":14544,"mileage":"34,861","isPriceDrop":"","hasSpecialOffer":false,"exteriorColor":"Cypress Green Metallic","drivetrain":"FWD","fuelType":"Gasoline","demandMetrics":[{"views":null,"emails":null,"saves":null}]}],"dealer":[{"name":"Zeigler Pre-Owned of Chicago","zip":"60402","latitude":"","longitude":"","dealerType":"","serviceReviewCount":null,"hasSpecialOffer":null,"hasNewCarSpecial":null,"hasUsedCarSpecial":null,"hasQuickQuote":null,"hasChat":null,"hasText":null,"rpcCertified":null,"hasServiceRepair":null,"hasInventory":null,"newInventoryCount":null,"usedInventoryCount":null,"payingCustomer":"","sellAndTrade":"","reviewDetails":{"customerServiceRating":"","buyingProcessRating":"","qualityOfRepairRating":"","facilityRating":"","recommendedNumber":null,"totalReviewsOnPage":"","featuredReview":null},"customerId":5375264,"reviewRating":4.8,"reviewCount":"16","make":[{"makeId":"20061","makeName":"GMC"}],"package":[{"packageName":"","pillar":"","level":""}],"franchiseIndependent":""}],"upsell":[{"productId":[],"customerId":"","franchiseMakes":[]}],"performanceMetrics":{"100ms":null,"500ms":null,"wholeSecond":null}},"dataProducts":{"affCode":null,"deviceType":"","lzone":"","section":"","zipCode":null},"user":{"profileInfo":{"login":"","loginType":"","publicConsumerId":"","publicDeviceId":""},"attributes":{"lat":"","long":""}}};
+{"listingDetailDto":{"listingId":742868104,"isActiveListing":true,"makeId":20061,"makeName":"GMC","canonicMakeName":"gmc","legacyMakeId":null,"modelId":30003,"modelName":"Terrain","modelNameForAd":"Terrain","canonicModelName":"terrain","legacyModelId":null,"modelYear":2015,"modelYearId":56007,"mmyProductId":"CarsMMY_20021070","legacyModelYearId":null,"trimName":"SLE-1","trimId":25046,"price":14544,"priceFormatted":"$14,544","priceMsrp":null,"priceMsrpFormatted":null,"priceOld":14554,"priceChangeDate":"2018-09-28 18:03:20","miles":"34,861","milesInteger":34861,"exteriorColor":"Cypress Green Metallic","phoneNumber":"(708) 512-7682","phoneNumberExt":"","phoneNumberLabel":"","phoneNumber2":"","phoneNumber2Ext":"","phoneNumber2Label":"","dayPhoneNumber":null,"dayPhoneNumberExt":null,"evePhoneNumber":null,"evePhoneNumberExt":null,"mobilePhoneNumber":null,"city":"Berwyn","isCpoVehicle":false,"cpoProgramName":null,"isQpoVehicle":null,"qpoProgramName":"","isNewCarStockType":false,"vehicleHistoryReportUrl":"/coreshoppingsupportapi/1.0/listing/vhr/742868104?linklocation=detail&aff=national","vehicleHistoryReportLinkText":"View the Free AutoCheck Vehicle History Report","adCategoryInfo":"GMC|Terrain|crossover_midsize","similarVehiclesUsed":-1,"similarVehiclesNew":0,"tier2AdEnabled":false,"parentOrgName":"","stockTypeCode":"Used","customerId":5375264,"sellerId":30222893,"sellerHasUsedDealerSpecialsEnabled":null,"bodystyleName":"SUV","dealerName":"Zeigler Pre-Owned of Chicago","distanceFromBuyerZip":null,"doorCount":4,"engineDescription":"2.4L I4 16V GDI DOHC","privatePartyContactName":"Zeigler Pre-Owned of Chicago","sellerHasCpoShowroomEnabled":false,"privatePartyListing":false,"listingDateSeconds":1531569349,"truncatedDescription":"Recent Arrival! 2015 GMC Terrain SLE-1 Cypress Green Metallic **ONE OW...","listingTypeId":1,"sellerHasNewDealerSpecialsEnabled":null,"emailLeadEnabled":true,"state":"IL","stockNumber":"A1694","transmission":"6-Speed Automatic","sellerVideoLocation":"https://vid.dmotorworks.com/vid5/?client=CARSCOM&LTVAutoPlay=1&w=100%&h=100%&vid=718E6D4AE3DAC66BE05347824D64D470","vin":"2GKALMEK5F6179671","drivetrain":"FWD","affiliateAgentId":0,"primaryFeedSourceId":277,"siyId":null,"sellerName":"Zeigler Pre-Owned of Chicago","sellerDisplayLabel":"Dealer","newlyListed":false,"vehicleHistoryCode":"ATCHK","vehicleHistoryReportIsFree":false,"certifiedPlus":false,"carfaxUrl":"atchk","ncSpotLight":"false","dealerWebsiteUrl":"","additionalFeatures":["**Accident Free Auto Check**","**Back-Up Camera**","**Bluetooth**","**Keyless Entry**","**Non-Smoker**","**One Owner**","**Power Seats**","**Remote Start**","3.23 Axle Ratio","4-Wheel Disc Brakes","6 Speakers","6-Speaker Audio System Feature","ABS Brakes","Air Conditioning","Alloy Wheels","AM/FM Radio: Siriusxm","Auto-Dimming Rear-View Mirror","Bluetooth For Phone","Brake Assist","Bumpers: Body-Color","Cargo Area Close-Out Panel (Lpo)","CD Player","Cloth Seat Trim","Delay-Off Headlights","Driver Door Bin","Driver Vanity Mirror","Dual Front Impact Airbags","Dual Front Side Impact Airbags","E10 Fuel Capable","Electronic Stability Control","Emergency Communication System","Exterior Parking Camera Rear","Four Wheel Independent Suspension","Front Anti-Roll Bar","Front Bucket Seats","Front Center Armrest","Front Fog Lights","Front License Plate Bracket","Fully Automatic Headlights","Heated Door Mirrors","Illuminated Entry","Low Tire Pressure Warning","Mp3 Decoder","Occupant Sensing Airbag","Outside Temperature Display","Overhead Airbag","Panic Alarm","Passenger Door Bin","Passenger Vanity Mirror","Power Door Mirrors","Power Driver Seat","Power Steering","Preferred Equipment Group 3sa","Radio: Color Touch AM/FM Stereo W/Cd Player","Rear Anti-Roll Bar","Rear Seat Center Armrest","Rear Window Defroster","Rear Window Wiper","Remote Keyless Entry","Security System","Single-Zone Manual Front Climate Control","Speed Control","Speed-Sensing Steering","Split Folding Rear Seat","Spoiler","Steering Wheel Mounted Audio Controls","Telescoping Steering Wheel","Tilt Steering Wheel","Traction Control","Variably Intermittent Wipers"],"localOfferTypeCode":null,"localOfferId":null,"localOfferCount":0,"localOfferExpireDate":"","powerdriveEnabled":false,"dlrRating":4.8,"dealerReviewCount":"16","streetAddress":"6539 Ogden Ave","additionalStreetAddress":"","conditionType":"","conditionDescription":"","dealerGroupId":null,"dlrPromoTagline":"For A Great Experience","dealerTagline":"For A Great Experience","dealerGroupName":"","sellerHasDealerGroupEnabled":false,"interiorColor":"Jet Black","dealerLogoImageLocation":"","dealerLogoRedirectUrl":"","dealerSlug":"zeigler-pre-owned-of-chicago","modelPackageName":"SLE-1","oneOwner":false,"sellerAcceptsBestOffer":false,"satelliteRadioProvider":"","normalizedFeaturesCodeDesc":{"ALLOYWHEELS":"Alloy Wheels","STABILITY":"Stability Control","CAMERA":"Backup Camera","BLUETOOTH":"Bluetooth","BRAKEASSIST":"Brake Assist"},"standardFeatures1":["1st and 2nd row curtain head airbags","4-wheel ABS Brakes","ABS and Driveline Traction Control","Anti-theft alarm system","Audio controls on steering wheel","Audio system memory card slot","Audio system security","Bluetooth wireless phone connectivity"],"standardFeatures2":["Braking Assist","Bucket front seats","Cargo area light","Clock: In-radio display","Cloth seat upholstery","Coil","Compass","Cruise control","Cruise controls on steering wheel","Daytime running lights","Digital Audio Input","Dual illuminated vanity mirrors","Dusk sensing headlights","Electrochromatic rearview mirror","External temperature display","Fold forward seatback rear seats","Front fog/driving lights","Front reading lights","Front Ventilated disc brakes","Fuel Capacity: 18.0 gal.","Fuel Consumption: City: 22 mpg","Fuel Consumption: Highway: 32 mpg","Fuel Type: Regular unleaded","Headlights off auto delay","Heated driver mirror","Heated passenger mirror","In-Dash single CD player","Instrumentation: Low fuel level","Interior air filtration","Manual front air conditioning","Manufacturer's 0-60mph acceleration time (seconds): 8.8 s","Max cargo capacity: 64 cu.ft.","Metal-look dash trim","Metal-look door trim","Metal-look shift knob trim","MP3 player","OnStar Directions & Connections","Passenger Airbag","Power remote driver mirror adjustment","Power remote passenger mirror adjustment","Power windows","Privacy glass: Deep","Radio Data System","Rear bench","Rear seats center armrest","Rear spoiler: Lip","Remote activated exterior entry lights","Remote power door locks","Side airbag","Silver aluminum rims","SiriusXM AM/FM/Satellite Radio","SiriusXM Satellite Radio(TM)","Speed Sensitive Audio Volume Control","Speed-proportional electric power steering","Stability control with anti-roll control","Suspension class: Regular","Tachometer","Tilt and telescopic steering wheel","Tire Pressure Monitoring System: Tire specific","Total Number of Speakers: 6","Trip computer","Urethane steering wheel trim","Vehicle Emissions: ULEV II","Video Monitor Location: Front","Wheel Diameter: 17","Wheel Width: 7"],"bodystyleId":20217,"wheelbase":"113","zipcode":"60402","location":"41.829588,-87.786875","sellerHasDealerChatEnabled":false,"hasOnStar":false,"sellerNotes":"Recent Arrival! 2015 GMC Terrain SLE-1 Cypress Green Metallic **ONE OWNER**, **ACCIDENT FREE AUTO CHECK**, **BLUETOOTH**, **REMOTE START**, **KEYLESS ENTRY**, **POWER SEATS**, **NON-SMOKER**, **BACK-UP CAMERA**. 32/22 Highway/City MPG Zeigler Pre-Owned of Chicago in Berwyn, IL treats the needs of each individual customer with paramount concern. With over 40 years of operational excellence, tens of thousands of customers rely on Zeigler Automotive for all of their automotive needs. We know that you have high expectations, and as an automotive retailer we enjoy the challenge of meeting and exceeding those standards each and every time. Allow us to demonstrate our commitment to excellence! Our experienced sales staff is eager to share its knowledge and enthusiasm with you. We encourage you to browse our online inventory, schedule a test drive and investigate financing options. You can also request more information about a vehicle using our online form or by calling (708) 956-7700. Reviews: * The GMC Terrain's 'tweener size and unique styling definitely appeal to those who want something styled like a truck, but without truck-like handling. The available V6 engine also gives the Terrain surprisingly good towing capacity for its class - 3,500 pounds. Source: KBB.com Awards: * 2015 IIHS Top Safety Pick * 2015 KBB.com Brand Image Awards","sellerNotesPart1":"Recent Arrival! 2015 GMC Terrain SLE-1 Cypress Green Metallic **ONE OWNER**, **ACCIDENT FREE AUTO CHECK**, **BLUETOOTH**, **REMOTE START**, **KEYLESS ENTRY**, **POWER SEATS**, **NON-SMOKER**, **BACK-UP CAMERA**. 32/22 Highway/City MPG Zeigler Pre-Owned of Chicago in Berwyn, IL treats the needs of each individual customer with paramount concern. With over 40 years of operational excellence, tens of","sellerNotesPart2":"thousands of customers rely on Zeigler Automotive for all of their automotive needs. We know that you have high expectations, and as an automotive retailer we enjoy the challenge of meeting and exceeding those standards each and every time. Allow us to demonstrate our commitment to excellence! Our experienced sales staff is eager to share its knowledge and enthusiasm with you. We encourage you to browse our online inventory, schedule a test drive and investigate financing options. You can also request more information about a vehicle using our online form or by calling (708) 512-7682. Reviews: * The GMC Terrain's 'tweener size and unique styling definitely appeal to those who want something styled like a truck, but without truck-like handling. The available V6 engine also gives the Terrain surprisingly good towing capacity for its class - 3,500 pounds. Source: KBB.com Awards: * 2015 IIHS Top Safety Pick * 2015 KBB.com Brand Image Awards","listingSource":"Digital Motorworks (DMi)","vehicleHistoryReportId":"","vehicleHistoryDetails":"1 Owner, Buyback Protection Eligible","adHistoryId":3337197748,"fuelType":"Gasoline","mpgCity":"20","mpgHwy":"29","mpgCombined":null,"seatCapacity":"5","featuredDlrReviewText":null,"photoUrlsSmall":["https://www.cstatic-images.com/results/in/e13d018524bf546259887fe5ba243249.jpg","https://www.cstatic-images.com/results/in/b721645a22e77985592f2976548a5ba5.jpg","https://www.cstatic-images.com/results/in/c7094968a1196e82b9a1625753a2795d.jpg","https://www.cstatic-images.com/results/in/b099a655bd94435d1aa9cdf788ca31d6.jpg","https://www.cstatic-images.com/results/in/e879f443733fb957bd0f241441736664.jpg","https://www.cstatic-images.com/results/in/69ecf4f7edc1cb277103504d38a66018.jpg","https://www.cstatic-images.com/results/in/9dca5c0ffb8507b43aa26b006824d9e3.jpg","https://www.cstatic-images.com/results/in/618bedc0eec2d74e233285605f88fe72.jpg","https://www.cstatic-images.com/results/in/4707b5024ea257d34d34be533ada010f.jpg","https://www.cstatic-images.com/results/in/f3d51960c1845fe2251d63d59dacd544.jpg","https://www.cstatic-images.com/results/in/98226d497deed6efa972f4398b41c749.jpg","https://www.cstatic-images.com/results/in/d847e4e9af3297e0ab698ea52a7aead2.jpg","https://www.cstatic-images.com/results/in/7e90d3904231b7e0759bf4d6cac305bc.jpg","https://www.cstatic-images.com/results/in/a8da1de0c402e13ccacd49dbcf25ecfb.jpg","https://www.cstatic-images.com/results/in/74904cdf2674972836840013e8453107.jpg","https://www.cstatic-images.com/results/in/84e318999e849d338c7409d5676bfdce.jpg","https://www.cstatic-images.com/results/in/082cb7e0cff013b2f342d8bfe846d8bf.jpg","https://www.cstatic-images.com/results/in/17324c159e8d27f8f156e08e42118531.jpg","https://www.cstatic-images.com/results/in/e9f237022fe45f68dbd30fd3fcf87a20.jpg","https://www.cstatic-images.com/results/in/006454ffdc5191d283acacc64bd0f780.jpg","https://www.cstatic-images.com/results/in/e5f2d75af55c8d357b666d4cf9f89f85.jpg","https://www.cstatic-images.com/results/in/8d7d1347c84e7b0aa547766be7d943e1.jpg","https://www.cstatic-images.com/results/in/589604167d3038d8223b002496ff9492.jpg","https://www.cstatic-images.com/results/in/09fe6395d7229b9fc6aac4bddc96ab8d.jpg","https://www.cstatic-images.com/results/in/4195f4870a6dcfb9a16df3f0e314dacc.jpg","https://www.cstatic-images.com/results/in/9223a69265be6a453ad26bf292ea491d.jpg","https://www.cstatic-images.com/results/in/b38be4f5bfd6988e4f3118dd11347160.jpg","https://www.cstatic-images.com/results/in/b5e2873ea8fbb2d77e07402481fa22cd.jpg","https://www.cstatic-images.com/results/in/9c41ab6699b0d9def69dddbdda9ff86e.jpg","https://www.cstatic-images.com/results/in/7f8d101d1f6327d0e4aef63f5d1ea345.jpg","https://www.cstatic-images.com/results/in/b43f55a9a9190127f3fb23951944cbc6.jpg","https://www.cstatic-images.com/results/in/7c95a1d63b2c795789ab780e637e2c42.jpg"],"photoUrlsMedium":["https://www.cstatic-images.com/phototab/in/e13d018524bf546259887fe5ba243249.jpg","https://www.cstatic-images.com/phototab/in/b721645a22e77985592f2976548a5ba5.jpg","https://www.cstatic-images.com/phototab/in/c7094968a1196e82b9a1625753a2795d.jpg","https://www.cstatic-images.com/phototab/in/b099a655bd94435d1aa9cdf788ca31d6.jpg","https://www.cstatic-images.com/phototab/in/e879f443733fb957bd0f241441736664.jpg","https://www.cstatic-images.com/phototab/in/69ecf4f7edc1cb277103504d38a66018.jpg","https://www.cstatic-images.com/phototab/in/9dca5c0ffb8507b43aa26b006824d9e3.jpg","https://www.cstatic-images.com/phototab/in/618bedc0eec2d74e233285605f88fe72.jpg","https://www.cstatic-images.com/phototab/in/4707b5024ea257d34d34be533ada010f.jpg","https://www.cstatic-images.com/phototab/in/f3d51960c1845fe2251d63d59dacd544.jpg","https://www.cstatic-images.com/phototab/in/98226d497deed6efa972f4398b41c749.jpg","https://www.cstatic-images.com/phototab/in/d847e4e9af3297e0ab698ea52a7aead2.jpg","https://www.cstatic-images.com/phototab/in/7e90d3904231b7e0759bf4d6cac305bc.jpg","https://www.cstatic-images.com/phototab/in/a8da1de0c402e13ccacd49dbcf25ecfb.jpg","https://www.cstatic-images.com/phototab/in/74904cdf2674972836840013e8453107.jpg","https://www.cstatic-images.com/phototab/in/84e318999e849d338c7409d5676bfdce.jpg","https://www.cstatic-images.com/phototab/in/082cb7e0cff013b2f342d8bfe846d8bf.jpg","https://www.cstatic-images.com/phototab/in/17324c159e8d27f8f156e08e42118531.jpg","https://www.cstatic-images.com/phototab/in/e9f237022fe45f68dbd30fd3fcf87a20.jpg","https://www.cstatic-images.com/phototab/in/006454ffdc5191d283acacc64bd0f780.jpg","https://www.cstatic-images.com/phototab/in/e5f2d75af55c8d357b666d4cf9f89f85.jpg","https://www.cstatic-images.com/phototab/in/8d7d1347c84e7b0aa547766be7d943e1.jpg","https://www.cstatic-images.com/phototab/in/589604167d3038d8223b002496ff9492.jpg","https://www.cstatic-images.com/phototab/in/09fe6395d7229b9fc6aac4bddc96ab8d.jpg","https://www.cstatic-images.com/phototab/in/4195f4870a6dcfb9a16df3f0e314dacc.jpg","https://www.cstatic-images.com/phototab/in/9223a69265be6a453ad26bf292ea491d.jpg","https://www.cstatic-images.com/phototab/in/b38be4f5bfd6988e4f3118dd11347160.jpg","https://www.cstatic-images.com/phototab/in/b5e2873ea8fbb2d77e07402481fa22cd.jpg","https://www.cstatic-images.com/phototab/in/9c41ab6699b0d9def69dddbdda9ff86e.jpg","https://www.cstatic-images.com/phototab/in/7f8d101d1f6327d0e4aef63f5d1ea345.jpg","https://www.cstatic-images.com/phototab/in/b43f55a9a9190127f3fb23951944cbc6.jpg","https://www.cstatic-images.com/phototab/in/7c95a1d63b2c795789ab780e637e2c42.jpg"],"photoUrlsLarge":["https://www.cstatic-images.com/supersized/in/e13d018524bf546259887fe5ba243249.jpg","https://www.cstatic-images.com/supersized/in/b721645a22e77985592f2976548a5ba5.jpg","https://www.cstatic-images.com/supersized/in/c7094968a1196e82b9a1625753a2795d.jpg","https://www.cstatic-images.com/supersized/in/b099a655bd94435d1aa9cdf788ca31d6.jpg","https://www.cstatic-images.com/supersized/in/e879f443733fb957bd0f241441736664.jpg","https://www.cstatic-images.com/supersized/in/69ecf4f7edc1cb277103504d38a66018.jpg","https://www.cstatic-images.com/supersized/in/9dca5c0ffb8507b43aa26b006824d9e3.jpg","https://www.cstatic-images.com/supersized/in/618bedc0eec2d74e233285605f88fe72.jpg","https://www.cstatic-images.com/supersized/in/4707b5024ea257d34d34be533ada010f.jpg","https://www.cstatic-images.com/supersized/in/f3d51960c1845fe2251d63d59dacd544.jpg","https://www.cstatic-images.com/supersized/in/98226d497deed6efa972f4398b41c749.jpg","https://www.cstatic-images.com/supersized/in/d847e4e9af3297e0ab698ea52a7aead2.jpg","https://www.cstatic-images.com/supersized/in/7e90d3904231b7e0759bf4d6cac305bc.jpg","https://www.cstatic-images.com/supersized/in/a8da1de0c402e13ccacd49dbcf25ecfb.jpg","https://www.cstatic-images.com/supersized/in/74904cdf2674972836840013e8453107.jpg","https://www.cstatic-images.com/supersized/in/84e318999e849d338c7409d5676bfdce.jpg","https://www.cstatic-images.com/supersized/in/082cb7e0cff013b2f342d8bfe846d8bf.jpg","https://www.cstatic-images.com/supersized/in/17324c159e8d27f8f156e08e42118531.jpg","https://www.cstatic-images.com/supersized/in/e9f237022fe45f68dbd30fd3fcf87a20.jpg","https://www.cstatic-images.com/supersized/in/006454ffdc5191d283acacc64bd0f780.jpg","https://www.cstatic-images.com/supersized/in/e5f2d75af55c8d357b666d4cf9f89f85.jpg","https://www.cstatic-images.com/supersized/in/8d7d1347c84e7b0aa547766be7d943e1.jpg","https://www.cstatic-images.com/supersized/in/589604167d3038d8223b002496ff9492.jpg","https://www.cstatic-images.com/supersized/in/09fe6395d7229b9fc6aac4bddc96ab8d.jpg","https://www.cstatic-images.com/supersized/in/4195f4870a6dcfb9a16df3f0e314dacc.jpg","https://www.cstatic-images.com/supersized/in/9223a69265be6a453ad26bf292ea491d.jpg","https://www.cstatic-images.com/supersized/in/b38be4f5bfd6988e4f3118dd11347160.jpg","https://www.cstatic-images.com/supersized/in/b5e2873ea8fbb2d77e07402481fa22cd.jpg","https://www.cstatic-images.com/supersized/in/9c41ab6699b0d9def69dddbdda9ff86e.jpg","https://www.cstatic-images.com/supersized/in/7f8d101d1f6327d0e4aef63f5d1ea345.jpg","https://www.cstatic-images.com/supersized/in/b43f55a9a9190127f3fb23951944cbc6.jpg","https://www.cstatic-images.com/supersized/in/7c95a1d63b2c795789ab780e637e2c42.jpg"],"smallCertifiedLogoUrl":null,"largeCertifiedLogoUrl":null,"hasEnhancedSpecialOffers":false,"sellerPhotoCount":32,"isStockPhoto":false,"isGhostPhoto":false,"hasVideo":true,"videoUrl":"https://vid.dmotorworks.com/vid5/?client=CARSCOM&LTVAutoPlay=1&w=100%&h=100%&vid=718E6D4AE3DAC66BE05347824D64D470","videoThumbnail":"https://www.cstatic-images.com/phototab/in/e13d018524bf546259887fe5ba243249.jpg","usedCarSpecialsUrl":null,"cylinderCountId":28106,"drivetrainId":27101,"transmissionTypeId":28113,"externalVDPLink":"","market":null,"autoPriceDealLabel":"Great Deal","autoPriceDealSubtitle":"Rare Find At This Price","autoPriceDealExplanation":"This vehicle is about $2,000 less than the average price for a 2015 GMC Terrain for sale in the Berwyn area.","autoPriceDealTotalSavings":2044.39,"wellEquippedBadgeTitle":"Well-Equipped","wellEquippedBadgeSubtitle":"Loaded With Valuable Features","wellEquippedBadgeValue":1030.31,"editorialBadges":"","predictedDaysTilSale":"","dealerChatProvider":"","has360":false,"hasWhyBuy":null,"stockPhoto":false,"ghostPhoto":false,"newCarStockType":false,"cpoVehicle":false,"qpoVehicle":null,"activeListing":true,"vdpLeadFormExp":false,"smsAnalyticsUrl":"","dealerInspireApiKey":"","locationId":"","offers":null,"showCpoVehicleAws":false,"dealerInspireSmsNumber":null,"visitor":{},"apigeeHost":"https://api.cars.com","shadowSettingsProxy":"/consumer-shadow-settings/","apiKey":"ZHzFD7hMbPZAd6c96FFp0nmUSH7kOF8f","hrefPhoneNumber":"tel:7085127682","oldPriceActiveDate":"2018-09-28T18:03:20.000Z","todaysDate":"2018-10-02T18:06:47.532Z","timeDiff":345807532,"diffDays":5},"consumerReviewsDto":{"ratingAverage":4.7,"ratingCount":100,"consumerRatingCategoryDetailList":[{"rating":"4.8","code":"Comfort","description":"Comfort","roundedRating":"5"},{"rating":"4.6","code":"Performance","description":"Performance","roundedRating":"5"},{"rating":"4.8","code":"ExteriorStyling","description":"Exterior Styling","roundedRating":"5"},{"rating":"4.7","code":"InteriorDesign","description":"Interior Design","roundedRating":"5"},{"rating":"4.7","code":"ValuefortheMoney","description":"Value for the Money","roundedRating":"5"},{"rating":"4.8","code":"Reliability","description":"Reliability","roundedRating":"5"}],"consumerReview":{"overallRate":5,"displayName":"mdavis","submitDt":"April 10, 2015","title":"Similar to Buick Redavouz SUV","text":{"displayText":"BOUGHT A USED 2014 WITH 12,000 MILES ON IT.
+I LIKE THE NON LATHER SEATS AND THE OUIET IN THE CAR. REMINES ME OF THE LINCOLN I STILL OWN.
+BUT HEY I LIKE THIS CAR!","hiddenText":null},"starRating":"<span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span><span class=\"rating__item\"><svg width=\"18\" height=\"18\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"/static/vdp/d2dc641bf9fc/spritemap.svg#star-full\"></use></svg></span>"}},"consumerReviewData":{"makeId":20061,"modelId":30003,"yearId":56007,"productId":"CarsMMY_20021070","overallTotalRateNbr":4.7,"overallComfortRatingNbr":4.8,"overallExteriorStylingRatingNbr":4.8,"overallInteriorDesignRatingNbr":4.7,"overallPerformanceRatingNbr":4.6,"overallReliabilityRatingNbr":4.8,"overallValueRatingNbr":4.7,"overallRateRangeNbr":5,"totalReviewsCnt":100,"reviews":[{"displayNm":"mj","overallRatingNbr":4,"positiveFeedbackCnt":0,"reviewTxt":"I have had my Terrain for 3 1/2 years and have 37,856 miles on it. It has a very noisy ride.
+I have had to replace 1 tire sensor
+and now I am replacing the passenger
+prescence module assembly which will cost\n $906.25.
+I am not happy about this.","submittedDateUtc":1537756586167,"titleTxt":"I have loved my Terrain except:","totalFeedbackCnt":0,"locationCd":"Gainesville, Teas"},{"displayNm":"The Justice Family","overallRatingNbr":5,"positiveFeedbackCnt":0,"reviewTxt":"Beautiful design on this vehicle.
+It was very reasonably priced.
+It has lots of extras on this car.
+\nLove the leg room in the back seat and the back up camera!","submittedDateUtc":1534767986913,"titleTxt":"Love my new vehicle","totalFeedbackCnt":0,"locationCd":"Greenback, TN"},{"displayNm":"Jasmine Rena","overallRatingNbr":4,"positiveFeedbackCnt":1,"reviewTxt":"It has been my favorite vehicle, the Seats adjust and back seats fold down to fit larger items or my large dogs. The safety features and back up camera made me confident to maneuver this vehicle at all times.","submittedDateUtc":1534695466402,"titleTxt":"Most comfortable & well driven car I've owned","totalFeedbackCnt":1,"locationCd":"Eugene, OR"}],"vehicleReviewTags":[{"displayNm":"engine","code":"engine"},{"displayNm":"great on gas","code":"great_on_gas"},{"displayNm":"good on gas","code":"good_on_gas"},{"displayNm":"great performance","code":"great_performance"},{"displayNm":"very comfortable","code":"very_comfortable"},{"displayNm":"comfortable ride","code":"comfortable_ride"},{"displayNm":"leg room","code":"leg_room"},{"displayNm":"pretty good","code":"pretty_good"},{"displayNm":"blind spot","code":"blind_spot"},{"displayNm":"super cool","code":"super_cool"},{"displayNm":"good value","code":"good_value"}]},"cpoWarranty":null,"dealerInspireSmsNumber":null,"dealerInspireData":null}
+null
+{"profiles":{"header":true,"dashboardLink":true,"savedMmy":true,"carsIOwn":true},"articleMakeRail":true,"leadsFeedback":true,"chatboxMmy":false,"chatboxVdp":false,"chatboxSrp":false,"articleSearch":true,"homepageRecentlySavedVehicle":true,"aweSpinCar":true,"articleEmailCapture":true,"newsEmailCapture":true,"conquestVdp":false,"turboBestValueSortOnTheFly":false,"srpDisableBury":false,"cpoSrpLinks":true,"TLDRSearchAssist":true,"upperSearchAlerts":true,"callbackSoldVehicleHeader":true,"cbTextToPhoneOverlayBanner":true,"favoriteCarsSort":true,"apBrightCoveVDP":true,"apMMYVideoBillboard":false,"apSponsoredBrightcoveMMY":true,"apSponsoredBrightCoveVDP":true,"apEditorialBrightCoveVDP":false,"globalPromoTest":false,"homepageTileAds":true,"connectionLqsLead":true,"adOrientationChange":true,"adExpSRP50LazyLoad":{"desktop":"-840","mobile":"-800","tablet":"-900"},"adExpVDP30LazyLoad":{"desktop":"-150","mobile":"-150","tablet":"-150"},"isDistinctAdRotisserie":true,"adStickyBanner":true,"adExpStickyBannerV3":true,"srpListingAdExp":true,"mediatorPopup":false,"mlpSlugCatTargeting":true,"mpgRedirect":true,"mmySponsoredVideosExp":false,"autoplayMmyVideoExp":false,"aweEnableUserComments":false,"aweEnableUserCommentsEditorial":false,"aweEnablePinterest":true,"aweEnableEmployeeInformationService":true,"aweEnable360":true,"aweDecommissionForSaleUrls":true,"awsListingDetailCache":true,"btwLqs":true,"bestMatch":true,"aweEnableHystrixOnVDP":true,"btwMilesSort":true,"btwPhoneRecovery":true,"cbCyoa":true,"duplicateCitiesIgnore":true,"sellVerticalStatic":true,"apHomepageGrandAwareness":true,"ipaVerticalStatic":false,"isSrpCardListing":true,"srpListingRows20":true,"qoCustomerOffers":true,"echoResearchMMYInventory":true,"essShopExplore":0,"etsEnableHystrixOnMVISCalls":true,"speedGetListings":true,"ncsReorgHeaderVDP":true,"heroMismatchFlip":true,"priceBadgeBonanza":true,"prcPriceCompare":true,"prcPriceCompareUsed":true,"priceDrop":true,"profilesAdditionalLogging":true,"nullVdpPhoto":true,"mediaMontage":true,"ncsCreateAlert":true,"logoutModal":true,"lotStatus":true,"lotStatusSrp":true,"ncsTypAppInfo":true,"qoSEO":true,"reactShop":{"ads":true,"dtm":true,"linklist":false,"omniture":false,"signal":true,"mpulse-rum":false,"nativeads":true,"owcs":true,"appdynamics-rum":true,"recently-saved":true,"optimizely":true,"fonts":true,"linkpack":true,"als":true,"meet-your-match-swap":true,"meet-your-match-dropdown":true,"recommended-car":true,"trending-searches":true,"profiles-header":true,"profiles-header-dashboard":true,"segmentation":true,"nativeads-render-test":true,"ads-single-request":true},"apPartnerMarketplace":true,"apPartnerMarketplaceShopIndex":true,"apShopByCTU":true,"drvConquest":false,"ncsUpp":false,"ncsUppDate":2236106097,"notFoundRedirect":{"articles":true,"expertReview":true,"shopping":true},"vpvUppEsoLink":true,"trailHead":100,"enhancedSpecialOffers":true,"testing":true,"photoModalViewerAd":true,"favoritesPageCta":true,"savSrchTopSRP":true,"profCioAvatar":true,"vdpWebp":false,"vdpVehicleReviewsModule":true,"vdpMobileStickySavedButton":false,"vdpDemandMetrics":true,"vdpAbandonCapture":true,"vdp":{"awe":{"stickyForm":false},"mpulseRum":false,"excludeOptimizelyTag":true},"aweEnableQuestionAndAnswer":false,"wtfPlacement":true,"wtfPlacementLeadform":true,"wtfPricingPriority":true,"srpEnableMarketplaceCall":true,"cfis":{"service":true},"externalVDPLink":true,"externalVDPUTM":true,"prof":{"newCompareCars":true},"dealerBranding":true,"dpp":{"linkToSeoSrp":true},"leadsVdpContextCta":true,"CouponsMVP":true,"CoupsSearchWidget":false,"CoupsLA":true,"CoupsATL":true,"CoupsMIL":true,"ncsSvBackfill":true,"ncsLightBox":true,"ncsSavSrchBttmSRP":true,"ncsSvNewTile":true,"otlHeaderTakeoverLink":true,"ucsLeadFormTesting":true,"ucsLeadFormPhoneOptional":true,"ucsSrpListView":true,"etsBuryListings":true,"srFontLoading":true,"srCoupsFilter":false,"srpNewViewportService":true,"dpPercentRecommended":true,"typModal":false,"srCouponsSMS":true,"srCoupsOff":true,"srEmailEstimate":false,"dealerRaterIntegration":true,"dealerReviewSingleReview":true,"dice":{"vdpSubscriptions":true,"onlineShopperBeta":true,"vdpStickyNavExp":true,"vdpLeadFormExp":false},"siyVerticalStatic":true,"siyPrivatePartyApp":false,"srpCityWhiteList":true,"research":{"newMmy":true,"trimsPage2":true,"mmySimilarCompare":true,"testDriveButton":true,"asyncShopIndex":false,"facebookPoll":true,"linkToMpgByCategory":true,"removeTrimSection":true,"showGoodForIcons":true,"researchCategoryBrowseBy":true,"researchCategoryBrowseCertified":true,"rmlVerticalProxy":true,"rmlBodyStyle":true,"rmlResearchSearch":true,"mmyVerticalProxy":true,"mmVerticalProxy":true,"topSectionRewrite":true,"mmyCtaVariationsTest":false,"facebookReviewer":false,"tdSingleForm":true,"testDriveCount":true,"mmyVariationsTest":true,"linkToSingleReview":true,"expertReviewMmyCanonical":true,"rtySurveyLink":false,"hideVCOOSortForYear":2019,"mmyReviewTags":true,"crReviewTags":true,"showCpoSection":false},"srCouponsPrint":true,"srp":{"nativeAppBanner":true,"cleanup":true,"gnHarder":true,"showMmLinkPack":true,"showMoreFilter":true,"removeOmniture":true,"optimizely":false,"rowRedesign":true,"fixedBottomAdTest":true,"vehicleDetailsTest":true,"srpElasticSearchService":true,"specialOffers":true,"criticaljs":true,"showShippable":true,"asyncDTM":true,"shoppingElasticSearchService":true,"seoLinksRefactor":true},"mdcUserAuthMUASVerify":false,"lastViewedVehicle":true,"mdc":{"cfcsEnabled":true},"siyByaCarfax":true,"vehicleHistoryFilter":true,"dealRatingsFilter":true,"taco":{"vdpDriveMotors":false,"srpDriveMotors":true,"dppEmployees":true,"vdpSSPLeadForm":true,"vdpConversations":true,"employeeProfilePage":true,"dppEmployeeReviews":true,"dppEmployeeWorkedWith":true,"dppConversations":true,"srpConversations":true,"spcAlternateFlag":true,"compareSpcAlternateFlag":true,"eppStockTypeOptions":true,"eppPhoneOptions":true,"dppUpdate":true,"showNewGuidelines":true,"dppReviewTagPagination":true,"dppUpdateTaggedReviews":true,"showPostLeadSurvey":true,"shippableDealers":true},"transparentStickyAdHeader":true,"vehicleReviews":{"dealerRaterModeration":true,"recallsWriteReviewComp":true,"serviceWriteReviewComp":true,"crExpertReviewUpdate":true,"reviewPromoMonthlyChanges":false,"favoriteCarsNotes":false,"cvrrsServiceChange":true,"newGuidelines":true},"showInsuranceLink":true,"signalAsync":true,"perfTest":false,"searchBodyStyle":true,"wtfPricingV2":true,"wtfUsedMarketTabs":true,"wtfArrowBadge":true,"urlTranslateService":{"historicalRedirect":false},"consumerActivityVDP":true,"usedcarBreadcrumbs":true,"consumerActivityEnhancedComments":true,"hpHeroCtaBypassTest":true,"globalFlatNav":true,"gsdNoResultsRadius":true,"premierAdFeaturedListings":true,"premierFeaturedListingBackfill":true,"awards2018Enable":{"showNewLanding":true,"showWinners":true,"showPeoplesChoice":false,"showSocialFeed":true},"otlAllDealersTest":false,"bestOf2018Badges":{"srp":true,"vdp":true},"xCarsVerticalHeader":true,"newsSponsoredArticles":true,"editorialReviewsReverseProxy":true,"mmySpecsPageReverseProxy":true,"mmSpecsPageReverseProxy":true,"serverSidePremier":true,"turbo":{"pricing":{"new":[0,50],"old":[50,100]},"nv":{"new":[0,100]},"vdp-competitive-vehicles":{"true":[0,100]}}}
+Hi, Guest!
+Save cars. Access them anywhere.
+Sign Up
+Already have an account?
+Log In
+My Dashboard
+My Saved Cars
+My Saved Searches
+My Listings
+Settings
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign Out
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign
+Up
+← Search Results
+32
+Play Video
+"use strict";function vmg(){var i=document.getElementById("vehicleMediaGallery"),e=document.getElementById("imageDisplayControls"),n=document.getElementById("videoPlayer"),u=document.getElementById("galleryImage"),t=document.getElementById("inject-spincar"),a="gallery-controls__thumbnail-image--selected",r="media-gallery__button--video-selected",o="media-gallery--video-player-active",s="media-gallery--spincar-active",v="media-gallery__button--thumbnail-next--disabled",m="media-gallery__button--thumbnail-previous--disabled",g=void 0,l=void 0,c=void 0,d=void 0,f=void 0,p=!1,h=!1,b=!1;if(e){p=!0,g=document.body.querySelector(".gallery-controls__thumbnail-container");var y=document.getElementById("nextImageBtn"),L=document.getElementById("prevImageBtn"),I=document.querySelectorAll(".gallery-controls__thumbnail-image"),E=document.getElementById("nextThumbnailSet"),S=document.getElementById("previousThumbnailSet");d=I[0],f=I[I.length-1];for(var T=0;T<I.length;T++)0===T&&(c=I[T]).classList.add(a),I[T].addEventListener("click",function(e){return D(e)});y.addEventListener("click",function(){return _("next")}),L.addEventListener("click",function(){return _("previous")}),E.addEventListener("click",function(){g.scrollLeft+=g.offsetWidth}),S.addEventListener("click",function(){g.scrollLeft-=g.offsetWidth}),document.addEventListener("DOMContentLoaded",function(){var n,i,a,r,o,s,e,l;!function(){var e=document.querySelectorAll(".gallery-controls__thumbnail-image");if("IntersectionObserver"in window){var n=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){var t=e.target.dataset.thumb;e.target.style.backgroundImage="url("+t+")",n.unobserve(e.target)}})});e.forEach(function(e){n.observe(e)})}else for(var t=0;t<e.length-1;t++){var i=e[t].dataset.thumb;e[t].style.backgroundImage="url("+i+")"}}(),l=function(e){"none"!==e&&_(e)}||function(e){},(e=u).addEventListener("touchstart",function(e){var t=e.changedTouches[0];n="none",i=t.pageX,a=t.pageY,s=(new Date).getTime(),e.preventDefault()},{passive:!0}),e.addEventListener("touchmove",function(e){e.preventDefault()},{passive:!0}),e.addEventListener("touchend",function(e){var t=e.changedTouches[0];r=t.pageX-i,o=t.pageY-a,200<(new Date).getTime()-s||(Math.abs(r)<50||200<Math.abs(o)?Math.abs(o)<50||200<Math.abs(r)||e.preventDefault():n=r<0?"next":"previous"),l(n),e.preventDefault()},{passive:!0}),g.addEventListener("scroll",function(){var e;(e=event).currentTarget.offsetWidth+e.currentTarget.scrollLeft==e.currentTarget.scrollWidth?nextThumbnailSet.classList.add(v):0==e.currentTarget.scrollLeft?previousThumbnailSet.classList.add(m):(nextThumbnailSet.classList.remove(v),previousThumbnailSet.classList.remove(m))},{passive:!0});for(var t=document.querySelectorAll(".gallery-controls__thumbnail-image"),c=[],d=0;d<t.length;d++)c[d]=new Image,c[d].src=t[d].dataset.image})}if(t){var w=window.document.createElement("script");w.setAttribute("src","//cars-dot-com.swipetospin.com"),i.appendChild(w),t.addEventListener("click",function(e){return B(),b=!0,void i.classList.add(s)})}function _(e){var t=e;c.classList.remove(a),c="next"===t?c===f?d:c.nextElementSibling:c===d?f:c.previousElementSibling,function(e){if("IntersectionObserver"in window){var t=new IntersectionObserver(function(e){e[0].isIntersecting||g.scrollTo(e[0].target.offsetLeft-c.offsetWidth/2,0),t.unobserve(e[0].target)});t.observe(c)}else c===f?g.scrollTo(2e3,0):c===d?g.scrollTo(0,0):"next"==e?g.scrollLeft+=c.offsetWidth:"previous"==e&&(g.scrollLeft-=c.offsetWidth)}(e),x()}function D(e){c.classList.remove(a),c=e.currentTarget,B(),x()}function B(){h&&(l.classList.remove(r),i.classList.remove(o),C(h=!1)),b&&(b=!1,i.classList.remove(s)),p&&(c.classList.remove(a),p=!1)}function x(){u.src=c.dataset.image,c.classList.add(a)}function C(e,t){n.setAttribute("src",e?t:"")}n&&(l=document.getElementById("videoPlayerButton")).addEventListener("click",function(e){return function(e){var t=e.currentTarget.dataset.videourl,n=JSON.parse(e.currentTarget.dataset.alsImpressionData);n.publicConsumerId=CARS.digitalData.user.profileInfo.publicConsumerId,n.publicDeviceId=CARS.digitalData.user.profileInfo.publicDeviceId,window.CARS&&window.CARS.PageState&&window.CARS.digitalData&&window.CARS.PageState.push("event",{eventDetail:"vehicle-video-play",eventName:"video-play"},!0);c.classList.remove(a),B(),h=!0,l.classList.add(r),i.classList.add(o),C(!0,t),function(i,a){var r=2<arguments.length&&void 0!==arguments[2]?arguments[2]:"",o=3<arguments.length&&void 0!==arguments[3]?arguments[3]:"";return new Promise(function(e,t){var n=new XMLHttpRequest;n.open(i,a),n.setRequestHeader("Content-Type",o),n.onload=function(){200===n.status?e(n.response):t(Error(n.statusText))},n.onerror=t,n.send(r)})}("POST","/ajax/activityloggingapi/1.0/impression",JSON.stringify(n),"application/json").then(function(e){}).catch(function(e){return console.log("error",e)})}(e)})}
+vmg();
+if (window.performance && window.performance.mark) {
+window.performance.mark('vdpCarousel');
+}
+← Search Results
+Used 2015 GMC Terrain SLE-1
+$14,544
+34,861 miles
+Great Deal
+Finance:
+Estimating Payment...
+(708) 512-7682
+Zeigler Pre-Owned of Chicago
+Contact Seller
+All fields are required except when indicated.
+Please enter a valid first name
+Please enter a valid last name
+Please enter a valid email address
+Please enter a valid phone number
+Check availability
+Request more photos
+Schedule a test drive
+Discuss Financing
+Ask a
+question
+Please enter valid comments
+Email me new listings for my search.
+Do you have Trade-In?
+I'd like to explore financing this
+Send Message
+By clicking here, you authorize Cars.com and its sellers/partners
+to contact you by texts/calls which may include marketing and be
+by autodialer. Calls may be pre-recorded. You also agree to our
+Privacy Statement. Consent is not required to purchase goods/services.
+We value your privacy.
+Cars.com Privacy Statement.
+Vehicle History
+View the Free AutoCheck Vehicle History Report
+Seller's Notes
+Recent Arrival! 2015 GMC Terrain SLE-1 Cypress Green Metallic **ONE OWNER**, **ACCIDENT FREE AUTO CHECK**, **BLUETOOTH**, **REMOTE START**, **KEYLESS ENTRY**, **POWER SEATS**, **NON-SMOKER**, **BACK-UP CAMERA**. 32/22 Highway/City MPG Zeigler Pre-Owned of Chicago in Berwyn, IL treats the needs of ea...ch individual customer with paramount concern. With over 40 years of operational excellence, tens of thousands of customers rely on Zeigler Automotive for all of their automotive needs. We know that you have high expectations, and as an automotive retailer we enjoy the challenge of meeting and exceeding those standards each and every time. Allow us to demonstrate our commitment to excellence! Our experienced sales staff is eager to share its knowledge and enthusiasm with you. We encourage you to browse our online inventory, schedule a test drive and investigate financing options. You can also request more information about a vehicle using our online form or by calling (708) 956-7700. Reviews: * The GMC Terrain's 'tweener size and unique styling definitely appeal to those who want something styled like a truck, but without truck-like handling. The available V6 engine also gives the Terrain surprisingly good towing capacity for its class - 3,500 pounds. Source: KBB.com Awards: * 2015 IIHS Top Safety Pick * 2015 KBB.com Brand Image Awards
+Check for recalls
+Basics
+Fuel Type: Gasoline
+Exterior Color: Cypress Green Metallic
+Interior Color: Jet Black
+Stock: A1694
+Drivetrain: FWD
+Transmission: 6-Speed Automatic
+Engine: 2.4L I4 16V GDI DOHC
+VIN: 2GKALMEK5F6179671
+Mileage: 34,861
+All Features
+These features are associated with this vehicle type. Contact the dealer to confirm this specific vehicle has them.
+1st and 2nd row curtain head airbags
+4-wheel ABS Brakes
+ABS and Driveline Traction Control
+Anti-theft alarm system
+Audio controls on steering wheel
+Audio system memory card slot
+Audio system security
+Bluetooth wireless phone connectivity
+Braking Assist
+Bucket front seats
+Cargo area light
+Clock: In-radio display
+Cloth seat upholstery
+Coil
+Compass
+Cruise control
+Cruise controls on steering wheel
+Daytime running lights
+Digital Audio Input
+Dual illuminated vanity mirrors
+Dusk sensing headlights
+Electrochromatic rearview mirror
+External temperature display
+Fold forward seatback rear seats
+Front fog/driving lights
+Front reading lights
+Front Ventilated disc brakes
+Fuel Capacity: 18.0 gal.
+Fuel Consumption: City: 22 mpg
+Fuel Consumption: Highway: 32 mpg
+Fuel Type: Regular unleaded
+Headlights off auto delay
+Heated driver mirror
+Heated passenger mirror
+In-Dash single CD player
+Instrumentation: Low fuel level
+Interior air filtration
+Manual front air conditioning
+Manufacturer's 0-60mph acceleration time (seconds): 8.8 s
+Max cargo capacity: 64 cu.ft.
+Metal-look dash trim
+Metal-look door trim
+Metal-look shift knob trim
+MP3 player
+OnStar Directions & Connections
+Passenger Airbag
+Power remote driver mirror adjustment
+Power remote passenger mirror adjustment
+Power windows
+Privacy glass: Deep
+Radio Data System
+Rear bench
+Rear seats center armrest
+Rear spoiler: Lip
+Remote activated exterior entry lights
+Remote power door locks
+Side airbag
+Silver aluminum rims
+SiriusXM AM/FM/Satellite Radio
+SiriusXM Satellite Radio(TM)
+Speed Sensitive Audio Volume Control
+Speed-proportional electric power steering
+Stability control with anti-roll control
+Suspension class: Regular
+Tachometer
+Tilt and telescopic steering wheel
+Tire Pressure Monitoring System: Tire specific
+Total Number of Speakers: 6
+Trip computer
+Urethane steering wheel trim
+Vehicle Emissions: ULEV II
+Video Monitor Location: Front
+Wheel Diameter: 17
+Wheel Width: 7
+**Accident Free Auto Check**
+**Back-Up Camera**
+**Bluetooth**
+**Keyless Entry**
+**Non-Smoker**
+**One Owner**
+**Power Seats**
+**Remote Start**
+3.23 Axle Ratio
+4-Wheel Disc Brakes
+6 Speakers
+6-Speaker Audio System Feature
+ABS Brakes
+Air Conditioning
+Alloy Wheels
+AM/FM Radio: Siriusxm
+Auto-Dimming Rear-View Mirror
+Bluetooth For Phone
+Brake Assist
+Bumpers: Body-Color
+Cargo Area Close-Out Panel (Lpo)
+CD Player
+Cloth Seat Trim
+Delay-Off Headlights
+Driver Door Bin
+Driver Vanity Mirror
+Dual Front Impact Airbags
+Dual Front Side Impact Airbags
+E10 Fuel Capable
+Electronic Stability Control
+Emergency Communication System
+Exterior Parking Camera Rear
+Four Wheel Independent Suspension
+Front Anti-Roll Bar
+Front Bucket Seats
+Front Center Armrest
+Front Fog Lights
+Front License Plate Bracket
+Fully Automatic Headlights
+Heated Door Mirrors
+Illuminated Entry
+Low Tire Pressure Warning
+Mp3 Decoder
+Occupant Sensing Airbag
+Outside Temperature Display
+Overhead Airbag
+Panic Alarm
+Passenger Door Bin
+Passenger Vanity Mirror
+Power Door Mirrors
+Power Driver Seat
+Power Steering
+Preferred Equipment Group 3sa
+Radio: Color Touch AM/FM Stereo W/Cd Player
+Rear Anti-Roll Bar
+Rear Seat Center Armrest
+Rear Window Defroster
+Rear Window Wiper
+Remote Keyless Entry
+Security System
+Single-Zone Manual Front Climate Control
+Speed Control
+Speed-Sensing Steering
+Split Folding Rear Seat
+Spoiler
+Steering Wheel Mounted Audio Controls
+Telescoping Steering Wheel
+Tilt Steering Wheel
+Traction Control
+Variably Intermittent Wipers
+Entertainment
+Bluetooth
+Safety
+Backup Camera
+Brake Assist
+Stability Control
+Exterior
+Alloy Wheels
+Have a question?
+Contact Seller
+Get answers, see the car, or find a good time for a test drive. Take the next step and contact the seller.
+Payment Calculator
+/month
+Estimated payment for
+Down Payment
+$
+Term
+36
+48
+60
+72
+Get a more accurate payment estimate by adding more details.
+Add more details
+Trade-in Value
+$
+Interest Rate (APR)
+%
+Sales Tax
+%
+Vehicle Price
+$
+Calculate Estimate
+Title, other fees, and incentives are not included in this calculation, which is an estimate only. Monthly payment estimates
+are for illustrative purposes only and do not represent a financing offer from
+the seller. Other taxes may apply.
+Get Pre-Approved
+Save time with the Zeigler Pre-Owned of Chicago's credit applications. They will help you finance this GMC Terrain
+and get into your vehicle today! The application is online, secure and takes 30 seconds.
+Apply Online
+Seller
+Zeigler Pre-Owned of Chicago
+(4.8) 16 Reviews
+6539 Ogden Ave, Berwyn, IL 60402
+Get Directions
+Dealer details
+Interested in this car? Reach out.
+(708) 512-7682
+Check Availability
+Consumer Reviews
+Similar to Buick Redavouz SUV
+by mdavis on April 10, 2015
+BOUGHT A USED 2014 WITH 12,000 MILES ON IT.
+I LIKE THE NON LATHER SEATS AND THE OUIET IN THE CAR. REMINES ME OF THE LINCOLN I STILL OWN.
+BUT HEY I LIKE THIS CAR!
+View all consumer reviews
+100 reviews
+Comfort
+5/5 stars
+Performance
+5/5 stars
+Exterior Styling
+5/5 stars
+Interior Design
+5/5 stars
+Value for the Money
+5/5 stars
+Reliability
+5/5 stars
+Read about 2015 GMC Terrain
+Cars.com Disclaimer: The information on vehicles provided in this service is supplied by the seller or other third parties; Cars.com is not responsible for the accuracy of such information. Cars.com provides this service and materials without representation or warranties of any kind, either expressed or implied. Click here for more details.
+Our Company
+About Cars.com
+Investor Relations
+Contact Cars.com
+Mobile Apps
+Site Map
+Careers
+Fraud Awareness
+Licensing & Reprints
+Buying & Selling
+Find a Car
+Certified Pre-Owned
+Sell Your Car
+Car Book Values
+Car Dealers
+Compare Car Prices
+Listings by City
+Our Partners
+Auto.com
+NewCars.com
+RepairPal.com
+Terms of Service
+Privacy Statement
+Ad Choices
+© 2018 Cars.com. All rights reserved.
+(function (){
+if (typeof sessionStorage !== 'undefined') {
+var setTime = sessionStorage.getItem('fontsLoaded');
+setTime = typeof setTime === 'string' ? Number(setTime) : 0;
+if (((new Date().getTime()) - setTime) <= (8 * 60 * 60 * 1000)) {
+window.document.documentElement.className += ' font-loaded-source-sans-pro';
+if (window.performance && window.performance.mark) {
+performance.mark('fontsLoaded');
+}
+return;
+}
+}
+/* Font Face Observer v2.0.13 - © Bram Stein. License: BSD-3-Clause */(function(){'use strict';var f,g=[];function l(a){g.push(a);1==g.length&&f()}function m(){for(;g.length;)g[0](),g.shift()}f=function(){setTimeout(m)};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a)},function(a){r(b,a)})}catch(c){r(b,c)}}var p=2;function t(a){return new n(function(b,c){c(a)})}function u(a){return new n(function(b){b(a)})}function q(a,b){if(a.a==p){if(b==a)throw new TypeError;var c=!1;try{var d=b&&b.then;if(null!=b&&"object"==typeof b&&"function"==typeof d){d.call(b,function(b){c||q(a,b);c=!0},function(b){c||r(a,b);c=!0});return}}catch(e){c||r(a,e);return}a.a=0;a.b=b;v(a)}}
+function r(a,b){if(a.a==p){if(b==a)throw new TypeError;a.a=1;a.b=b;v(a)}}function v(a){l(function(){if(a.a!=p)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0==a.a?"function"==typeof c?e(c.call(void 0,a.b)):e(a.b):1==a.a&&("function"==typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}n.prototype.g=function(a){return this.c(void 0,a)};n.prototype.c=function(a,b){var c=this;return new n(function(d,e){c.f.push([a,b,d,e]);v(c)})};
+function w(a){return new n(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e==a.length&&b(h)}}var e=0,h=[];0==a.length&&b(h);for(var k=0;k<a.length;k+=1)u(a[k]).c(d(k),c)})}function x(a){return new n(function(b,c){for(var d=0;d<a.length;d+=1)u(a[d]).c(b,c)})};window.Promise||(window.Promise=n,window.Promise.resolve=u,window.Promise.reject=t,window.Promise.race=x,window.Promise.all=w,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g);}());
+(function(){function l(a,b){document.addEventListener?a.addEventListener("scroll",b,!1):a.attachEvent("scroll",b)}function m(a){document.body?a():document.addEventListener?document.addEventListener("DOMContentLoaded",function c(){document.removeEventListener("DOMContentLoaded",c);a()}):document.attachEvent("onreadystatechange",function k(){if("interactive"==document.readyState||"complete"==document.readyState)document.detachEvent("onreadystatechange",k),a()})};function r(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.f=document.createElement("span");this.g=-1;this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;";this.b.appendChild(this.h);this.c.appendChild(this.f);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function t(a,b){a.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;font:"+b+";"}function y(a){var b=a.a.offsetWidth,c=b+100;a.f.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.g!==b?(a.g=b,!0):!1}function z(a,b){function c(){var a=k;y(a)&&a.a.parentNode&&b(a.g)}var k=a;l(a.b,c);l(a.c,c);y(a)};function A(a,b){var c=b||{};this.family=a;this.style=c.style||"normal";this.weight=c.weight||"normal";this.stretch=c.stretch||"normal"}var B=null,C=null,E=null,F=null;function G(){if(null===C)if(J()&&/Apple/.test(window.navigator.vendor)){var a=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))(?:\.([0-9]+))/.exec(window.navigator.userAgent);C=!!a&&603>parseInt(a[1],10)}else C=!1;return C}function J(){null===F&&(F=!!document.fonts);return F}
+function K(){if(null===E){var a=document.createElement("div");try{a.style.font="condensed 100px sans-serif"}catch(b){}E=""!==a.style.font}return E}function L(a,b){return[a.style,a.weight,K()?a.stretch:"","100px",b].join(" ")}
+A.prototype.load=function(a,b){var c=this,k=a||"BESbswy",q=0,D=b||3E3,H=(new Date).getTime();return new Promise(function(a,b){if(J()&&!G()){var M=new Promise(function(a,b){function e(){(new Date).getTime()-H>=D?b():document.fonts.load(L(c,'"'+c.family+'"'),k).then(function(c){1<=c.length?a():setTimeout(e,25)},function(){b()})}e()}),N=new Promise(function(a,c){q=setTimeout(c,D)});Promise.race([N,M]).then(function(){clearTimeout(q);a(c)},function(){b(c)})}else m(function(){function u(){var b;if(b=-1!=
+f&&-1!=g||-1!=f&&-1!=h||-1!=g&&-1!=h)(b=f!=g&&f!=h&&g!=h)||(null===B&&(b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))),b=B&&(f==v&&g==v&&h==v||f==w&&g==w&&h==w||f==x&&g==x&&h==x)),b=!b;b&&(d.parentNode&&d.parentNode.removeChild(d),clearTimeout(q),a(c))}function I(){if((new Date).getTime()-H>=D)d.parentNode&&d.parentNode.removeChild(d),b(c);else{var a=document.hidden;if(!0===a||void 0===a)f=e.a.offsetWidth,
+g=n.a.offsetWidth,h=p.a.offsetWidth,u();q=setTimeout(I,50)}}var e=new r(k),n=new r(k),p=new r(k),f=-1,g=-1,h=-1,v=-1,w=-1,x=-1,d=document.createElement("div");d.dir="ltr";t(e,L(c,"sans-serif"));t(n,L(c,"serif"));t(p,L(c,"monospace"));d.appendChild(e.a);d.appendChild(n.a);d.appendChild(p.a);document.body.appendChild(d);v=e.a.offsetWidth;w=n.a.offsetWidth;x=p.a.offsetWidth;I();z(e,function(a){f=a;u()});t(e,L(c,'"'+c.family+'",sans-serif'));z(n,function(a){g=a;u()});t(n,L(c,'"'+c.family+'",serif'));
+z(p,function(a){h=a;u()});t(p,L(c,'"'+c.family+'",monospace'))})})};"object"===typeof module?module.exports=A:(window.FontFaceObserver=A,window.FontFaceObserver.prototype.load=A.prototype.load);}());
+var regular = new window.FontFaceObserver("Source Sans Pro", { weight: 400 });
+var semiBold = new window.FontFaceObserver("Source Sans Pro", { weight: 600 });
+var bold = new window.FontFaceObserver("Source Sans Pro", { weight: 700 });
+Promise.all([regular.load(), semiBold.load(), bold.load()]).then(function () {
+window.document.documentElement.className += " font-loaded-source-sans-pro";
+if (window.performance && window.performance.mark) {
+window.performance.mark('fontsLoaded');
+}
+if (typeof window.sessionStorage !== 'undefined') {
+sessionStorage.setItem('fontsLoaded', Date.now().toString());
+}
+});
+}());
+window.addEventListener('load', function () {
+s_clven.eVar2 = "30222893";
+s_clven.eVar4 = "Tuesday";
+s_clven.eVar10 = "Used Cars/Search/details-details-dealer";
+s_clven.eVar17 = "34861";
+s_clven.eVar25 = "";
+s_clven.eVar73 = "30222893";
+s_clven.prop3 = "742868104";
+s_clven.prop4 = "Used";
+s_clven.prop39 = "";
+s_clven.prop57 = "";
+s_clven.prop63 = "Great Deal";
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.cmd.push(function () {
+googletag.pubads().enableAsyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs(true);
+});
+});
+{
+site: "4IGCP5L"
+}
+var ua = navigator.userAgent;
+if (ua.indexOf('Safari') !== -1) {
+var version = ua.match(/Version\/(\d+)/) || [];
+if (parseInt(version[1]) <= 8) {
+document.getElementsByClassName('page')[0].style.display = 'block';
+}
+}
+var userSummary;
+var userSummaryValue = localStorage.getItem("cars.userSummary");
+if (userSummaryValue) {
+try {
+userSummary = JSON.parse(userSummaryValue);
+} catch(e) {}
+}
+var carsUserDataValue, listingId;
+carsUserDataValue = localStorage.getItem("Cars.userData");
+if (carsUserDataValue) {
+try {
+carsUserData = JSON.parse(carsUserDataValue);
+listingId = carsUserData.listingId;
+} catch(e) {}
+}
+if (userSummary && userSummary.email) {
+_etmc.push(["setOrgId", "Carscomconsumer"]);
+_etmc.push(["setUserInfo", {"email": userSummary.email}]);
+let pageViewList = ["trackPageView"];
+if (listingId) {
+pageViewList.push({"item": ""+listingId});
+}
+_etmc.push(pageViewList);
+}
+(function (doc, GLOBAL) {
+var profiles = {},
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+// default events for listening and broadcast
+var events = {};
+// A event subscription identifier
+var subscriptionId = -1;
+profiles.publish = function (event, args) {
+if (!events[event]) {
+return false;
+}
+var subscribers = events[event],
+len = subscribers ? subscribers.length : 0;
+while (len--) {
+subscribers[len].func(event, args);
+}
+return this;
+};
+profiles.subscribe = function (event, func) {
+if (!events[event]) {
+events[event] = [];
+}
+var token = (++subscriptionId).toString();
+events[event].push({
+token: token,
+func: func
+});
+return token;
+};
+// Unsubscribe from event
+profiles.unsubscribe = function (token) {
+for (var m in events) {
+if (events[m]) {
+for (var i = 0, j = events[m].length; i < j; i++) {
+if (events[m][i].token === token) {
+events[m].splice(i, 1);
+return token;
+}
+}
+}
+}
+return this;
+};
+profiles.init = function () {
+var userData = getUserData();
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1) {
+profiles.publish("profile.login", userData);
+} else {
+profiles.publish('profile.logout');
+}
+profiles.publish("profile.updated", userData);
+GLOBAL.document.querySelector('.prof__menu__signout').querySelector('.prof__link').onclick = logout;
+updateContinueParams();
+};
+// setup header subscriptions:
+profiles.subscribe("profile.updated", updateDOMAll);
+profiles.subscribe("profile.add.car", updateDOMCarCount);
+profiles.subscribe("profile.remove.car", updateDOMCarCount);
+profiles.subscribe("profile.add.search", updateDOMSearchCount);
+profiles.subscribe("profile.remove.search", updateDOMSearchCount);
+profiles.subscribe("profile.add.listing", updateDOMListingCount);
+profiles.subscribe("profile.remove.listing", updateDOMListingCount);
+profiles.subscribe("profile.add.researches", updateDOMResearchCount);
+profiles.subscribe("profile.remove.researches", updateDOMResearchCount);
+profiles.subscribe("profile.login", updateDOMLogIn);
+profiles.subscribe("profile.logout", updateDOMLogOut);
+profiles.subscribe("profile.url.updated", updateContinueParams);
+function updateContinueParams() {
+// clean this up with babel
+if (GLOBAL.NodeList && NodeList.prototype.forEach) {
+GLOBAL.document.querySelectorAll('.js_continue').forEach(updateDOMUrl);
+} else {
+var continueNodes = GLOBAL.document.querySelectorAll('.js_continue');
+for (var i = 0; i < continueNodes.length; i++) {
+updateDOMUrl(continueNodes[i]);
+}
+}
+}
+function updateDOMLogIn(event, data) {
+toggleNavClass(true);
+updateDOMAvatar(true);
+updateDOMPersonName(event, data);
+}
+function updateDOMLogOut() {
+toggleNavClass(false);
+updateDOMAvatar(false);
+updateDOMAll();
+}
+function updateDOMCarCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.cars) ? eventData.favorites.cars : 0;
+return GLOBAL.document.getElementById("prof_menu-savedcars")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMSearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.searches) ? eventData.favorites.searches : 0;
+return GLOBAL.document.getElementById("prof_menu-savedsearches")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMListingCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.ads) ? eventData.favorites.ads : 0;
+if (eventDataCount) {
+return GLOBAL.document.getElementById("prof_menu-savedlistings")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMResearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.researches) ? eventData.favorites.researches : 0,
+savedResearchLink = GLOBAL.document.getElementById("prof_menu-savedresearch");
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1 && savedResearchLink) {
+return savedResearchLink.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMPersonName(event, data) {
+var eventData = stringToObj(data),
+eventDataEmail = (eventData && eventData.email) ? eventData.email : "",
+eventDataFirstName = (eventData && eventData.firstName) ? eventData.firstName : "",
+personName = (eventDataFirstName) ? eventDataFirstName : (eventDataEmail) ? eventDataEmail : "Guest";
+GLOBAL.document.querySelector(".prof__menu--name").innerHTML = personName;
+}
+function updateDOMAvatar(isLogin) {
+if (isLogin) {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-filled"></use></svg>';
+} else {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-line"></use></svg>';
+}
+}
+function toggleNavClass(isLogin) {
+var nav = GLOBAL.document.querySelector('.prof__nav');
+if (isLogin) {
+nav.classList.add('logged-in');
+nav.classList.remove('not-logged-in');
+} else {
+nav.classList.add('not-logged-in');
+nav.classList.remove('logged-in');
+}
+return true;
+}
+function updateDOMAll(event, data) {
+updateDOMCarCount("profile.add.car", data);
+updateDOMSearchCount("profile.add.search", data);
+updateDOMListingCount("profile.add.listing", data);
+updateDOMResearchCount("profile.add.researches", data);
+}
+function stringToObj(string) {
+if (typeof string === "object") {
+return string;
+}
+try {
+var data = JSON.parse(string);
+return data;
+} catch (e) {
+return {};
+}
+}
+function getUserData() {
+var userSummary;
+GLOBAL.CARS = GLOBAL.CARS || {};
+try {
+userSummary = JSON.parse(GLOBAL.localStorage.getItem(USER_SUMMARY_STORAGE_KEY));
+} catch (error) {
+userSummary = DEFAULT_SUMMARY_RESPONSE;
+}
+GLOBAL.CARS.userSummary = userSummary;
+return GLOBAL.CARS.userSummary;
+}
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+function logout(e) {
+e.preventDefault();
+var xhr = new XMLHttpRequest();
+xhr.open('GET', '/profile/global/logout/?noredirect=true', true);
+xhr.withCredentials = true;
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+profiles.publish('profile.logout');
+}
+};
+xhr.send();
+}
+function getPageUrl() {
+return '/' + GLOBAL.location.href.split(".cars.com/")[1];
+}
+function updateDOMUrl(element) {
+let urlBase = element.href;
+if (urlBase.indexOf('?') > -1) {
+urlBase = urlBase.split('?')[0];
+}
+return element.setAttribute('href', urlBase + '?continue=' + encodeURIComponent(getPageUrl()));
+}
+GLOBAL.profiles = profiles;
+GLOBAL.addEventListener('DOMContentLoaded', profiles.init());
+}( document, window ));
+About this Comparison
+Price comparisons are based on an average of Used 2015 GMC Terrain SLE-1 SUVs for sale on Cars.com within a 200 mile radius.
+For display purposes, the points plotted on the Price Map may be a random sampling of the full comparison set.
+All cars are assumed to be in good or better condition. Here's how you can learn more about the condition of this car:
+Contact the dealer
+Cancel
+Call
+(708) 512-7682
+Text
+Chat
+Contact Seller
+Contact Seller
+Contact Seller
+All fields are required except when indicated.
+Please enter a valid first name
+Please enter a valid last name
+Please enter a valid email address
+Please enter a valid phone number
+Check availability
+Request more photos
+Schedule a test drive
+Discuss Financing
+Ask a
+question
+Please enter valid comments
+Email me new listings for my search.
+Do you have Trade-In?
+I'd like to explore financing this
+Send Message
+By clicking here, you authorize Cars.com and its sellers/partners
+to contact you by texts/calls which may include marketing and be
+by autodialer. Calls may be pre-recorded. You also agree to our
+Privacy Statement. Consent is not required to purchase goods/services.
+We value your privacy.
+Cars.com Privacy Statement.

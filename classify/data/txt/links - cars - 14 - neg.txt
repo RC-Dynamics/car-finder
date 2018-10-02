@@ -1,0 +1,640 @@
+if (window.performance && window.performance.clearMarks) {window.performance.clearMarks();}
+if (window.performance && window.performance.mark) {window.performance.mark("pageLoadStart");}
+Used Cars for Sale Online | Cars.com
+window.carsStatic = "/static/www/1308b1b852e9";
+window.legacyOmniturePath = 'cvencarslegacy';
+// TEMP flag used by static SRP apiBootstrapper
+if (!window.CARS) window.CARS = {};
+window.CARS.isServerSideRendered = true;
+(function (GLOBAL) {
+var xhr = new XMLHttpRequest(),
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+USER_SUMMARY_URL = '/profile/global/user-summary/',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+xhr.open('GET', USER_SUMMARY_URL, true);
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(xhr.responseText);
+} else {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+}
+};
+xhr.send();
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+}( window ));
+Hi, Guest!
+Save cars. Access them anywhere.
+Sign Up
+Already have an account?
+Log In
+My Dashboard
+My Saved Cars
+My Saved Searches
+My Listings
+Settings
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign Out
+Cars for Sale
+Sell Your Car
+Service & Repair
+Research
+Videos & Reviews
+Sign
+Up
+{
+"@context":"http://schema.org",
+"@type":"BreadcrumbList",
+"itemListElement":
+[
+{
+"position":1,
+"item":{"@id":"https://www.cars.com/",
+"name":"Cars.com"},
+"@type":"ListItem"},
+{
+"position":2,
+"item":{"@id":"https://www.cars.com/shopping/",
+"name":"Cars for Sale"},
+"@type":"ListItem"}
+]
+}
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"name": "Cars.com",
+"url": "https://www.cars.com/"
+}
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://www.cars.com/",
+"logo": "https://graphics.cars.com/images/core/logo.png",
+"sameAs": [
+"https://www.facebook.com/CarsDotCom/",
+"https://www.twitter.com/carsdotcom",
+"https://www.pinterest.com/carsdotcom/",
+"https://www.youtube.com/user/Carscom",
+"https://instagram.com/carsdotcom/",
+"https://www.linkedin.com/company/cars-com",
+"https://plus.google.com/+CarsDotCom",
+"https://en.wikipedia.org/wiki/Cars.com"
+]
+}
+window.adCategoryInfo = '';
+if (window.performance && window.performance.clearMarks) {window.performance.clearMarks();}
+if (window.performance && window.performance.mark) {window.performance.mark("shopIndexReady");}
+Shop Cars for Sale
+Find the right price, dealer and advice.
+if (window.performance && window.performance.clearMarks) {window.performance.clearMarks();}
+if (window.performance && window.performance.mark) {window.performance.mark("shopIndexReady");}
+Search By Make
+Search By Body Style
+All Makes
+All Models
+No Max Price
+All Miles
+No Max Price
+All Miles
+Advanced Search
+SPONSORED
+You Might Like
+{{adVehicle.year}} {{adVehicle.makeName}} {{adVehicle.modelName}}
+${{adVehicle.startingMsrp | currency:"":0}}
+STARTING MSRP
+{{adVehicle.description}}
+Learn more
+Find Cars for Sale
+Popular Searches Near You
+Used Ford F-150s
+See all near you
+Used Jeep Grand Cherokees
+See all near you
+Used Honda Accords
+See all near you
+Bodystyle Search
+Coupes & Sedans
+Sedan
+Convertible
+Coupe
+Pickup Trucks
+Regular Cab Pickup
+Crew Cab Pickup
+Extended Cab Pickup
+Vans & Minivans
+Minivan
+Cargo Van
+Passenger Van
+SUVs & Crossovers
+SUV
+Wagon
+Hatchback
+Brand Search
+Acura
+Alfa Romeo
+Aston Martin
+Audi
+Bentley
+BMW
+Buick
+Cadillac
+Chevrolet
+Chrysler
+Dodge
+Ferrari
+FIAT
+Ford
+Genesis
+GMC
+Honda
+Hummer
+Hyundai
+INFINITI
+Isuzu
+Jaguar
+Jeep
+Kia
+Lamborghini
+Land Rover
+Lexus
+Lincoln
+Maserati
+Mazda
+Mercedes-Benz
+Mercury
+MINI
+Mitsubishi
+Nissan
+Oldsmobile
+Pontiac
+Porsche
+RAM
+Rolls-Royce
+Saab
+Saturn
+Scion
+smart
+Subaru
+Suzuki
+Tesla
+Toyota
+Volkswagen
+Volvo
+Find the Best Car Dealers
+Search Near You
+Used-Car Loan Rates
+4.23%
+Current Average Loan Rate (APR)*
+Several factors can affect a car loan’s interest rate: the lender, the loan’s term length, your credit rating and the age of the used car you’re considering.
+Read more
+*Rates are averages and may change on an individual basis.
+Used car auto loan rates provided by Bankrate.com
+Used-Car Financing & Warranty FAQs
+Financing & Lease
+Can you lease a used car?
+Most dealers don't offer leasing on used cars, but used cars that were leased when new and are now for sale provide some benefits, such as good condition and low miles.
+Related:
+Off-Lease Car Glut Might Mean Used-Car Buyer’s Market
+How do I finance a used car?
+Using the dealership’s lender is convenient, but it's best to shop around at banks and credit unions ahead of time so you'll know whose rate is best when you're at a dealership. This research may take a few days but can be well worth the time.
+Related:
+Inside the Finance and Insurance Room
+Auto Loan Basics for First-Time Buyers
+What You Need to Get a Car Loan
+Are loan rates higher for used cars?
+Yes, loan rates are higher overall for used versus new cars, but they may be better if the car is factory-certified pre-owned because manufacturers may offer attractive interest rates to promote CPO sales. Before financing with a dealer, bank or credit union, check the national average interest rates for used cars at Bankrate.com.
+Related:
+Report: Average payments for New, Used Cars Rise
+How do I know if I can afford the payments?
+You can estimate your payments here using Cars.com’s finance calculators. You should have a down payment of at least 20 percent, financing lasting no longer than four years and a principal, interest and insurance total not exceeding 10 percent of your gross household income.
+Related:
+Can You Afford Your Car?
+Warranty
+Are extended warranties worth the money?
+Extended warranties offer peace of mind, but apart from the coverage included with factory-certified pre-owned cars, additional plans come with a price that studies have shown to be higher than the benefits you can claim in repairs.
+Related:
+CPO Pros and Cons Versus Extended Warranty
+What warranty comes with a used car?
+Initial warranties are limited by the miles and age of a car, so if the car has higher miles, original warranties may no longer apply. Also note that warranties don't always transfer to subsequent buyers. Check the vehicle manufacturer’s specifications for warranty limits.
+Related:
+Making Sense of Used-Car Warranties
+What is a bumper-to-bumper warranty and what does it cover?
+Often called a basic warranty or new-vehicle warranty, a bumper-to-bumper policy covers components such as air conditioning, audio systems, vehicle sensors, fuel systems and major electrical components. Most policies exclude regular maintenance such as fluid top-offs and oil changes, but a growing number of brands have separate free-maintenance provisions. Bumper-to-bumper warranties typically expire faster than powertrain warranties. Terms are typically three years or 36,000 miles, although some have terms as high as six years or 60,000 miles. Check the vehicle manufacturer’s specifications for bumper-to-bumper warranty limits.
+Certified Used Cars
+What does CPO mean?
+A certified pre-owned or CPO car has been inspected to meet minimum quality standards and typically includes some type of warranty. While dealers and third parties certify cars, the gold standard is an automaker-certified vehicle that provides a factory-backed warranty, often extending the original coverage. Vehicles must be in excellent condition and have low miles and wear to be certified, which is why off-lease vehicles feed many CPO programs.
+Related:
+Tips to Buying a CPO Car
+Shop and Learn CPO
+var accordionHeaders = document.querySelectorAll('.faq-section-content > .accordion-header');
+for (var i = 0; i < accordionHeaders.length; i++) {
+accordionHeaders[i].addEventListener('click', toggleItem, false);
+}
+function toggleItem() {
+this.parentNode.classList.toggle('open');
+}
+News & Tips When Buying a Car
+Breaking stories and useful tips from Cars.com experts help you shop smart.
+Car-Buying Advice
+First-timers and veterans shopping new or used cars: know what to remind yourself to do, ask and learn, from verifying the condition to closing the sale.
+Latest News, Updates & Trends
+Whether or not you are a car person, make sure you are aware of trends or news that may affect your search, financing or how you purchase.
+Help for First-Time Buyers
+Learn how to prepare; what to watch out for,
+ways get the most for your money, and how to complete the transaction at the dealer or with a seller.
+Used-Car Shopping Tips
+Yes, there are ways to protect yourself and get the best used car around. Know whether to buy certified pre-owned, how to finance and more.
+Pointers for Buying CPO
+Explore whether
+certified pre-owned is best for you, pros and cons, what to ask and compare, and how to find the best programs and incentives.
+Browse all articles
+Were you looking for more on these related topics?
+Knowing if Certified-Used Is for You
+CPO is a great option when buying used. Shop & learn CPO
+Researching Models and Reviews
+Read specs and reviews, and compare. Research & learn
+Popular New Cars for Sale
+2018 Toyota Camry For Sale
+2018 Honda Civic For Sale
+2018 Chevrolet Silverado 1500 For Sale
+2018 Jeep Wrangler Unlimited For Sale
+2018 Ford F-150 For Sale
+2018 Ford Explorer For Sale
+2019 RAM 1500 For Sale
+2018 GMC Sierra 1500 For Sale
+2018 Chevrolet Camaro For Sale
+2018 Honda Accord For Sale
+2018 Toyota Tacoma For Sale
+2018 Jeep Grand Cherokee For Sale
+Popular Used Cars for Sale
+2016 Honda CR-V For Sale
+2015 Toyota Avalon For Sale
+2016 Lexus ES 350 For Sale
+2015 Lexus ES 350 For Sale
+2016 Hyundai Tucson For Sale
+2015 Honda Civic For Sale
+2013 Toyota 4Runner For Sale
+2016 Ford Escape For Sale
+2015 Toyota 4Runner For Sale
+2015 Jeep Wrangler Unlimited For Sale
+2015 Honda CR-V For Sale
+2014 Honda CR-V For Sale
+Cars by Popular City
+Atlanta, GA
+Chicago, IL
+Columbus, OH
+Dallas, TX
+Denver, CO
+Houston, TX
+Los Angeles, CA
+New York, NY
+Philadelphia, PA
+Phoenix, AZ
+San Diego, CA
+Seattle, WA
+Used Cars by Price
+Used Cars Under $1,000
+Used Cars Under $2,000
+Used Cars Under $3,000
+Used Cars Under $4,000
+Used Cars Under $5,000
+Used Cars Under $6,000
+Used Cars Under $10,000
+Used Cars Under $15,000
+if (window.performance && window.performance.mark) {window.performance.mark("beforeFooter");}
+Our Company
+About Cars.com
+Investor Relations
+Contact Cars.com
+Mobile Apps
+Site Map
+Careers
+Fraud Awareness
+Licensing & Reprints
+Buying & Selling
+Find a Car
+Certified Pre-Owned
+Sell Your Car
+Car Book Values
+Car Dealers
+Compare Car Prices
+Listings by City
+Our Partners
+Auto.com
+NewCars.com
+RepairPal.com
+Terms of Service
+Privacy Statement
+Ad Choices
+© 2018 Cars.com
+All rights reserved.
+var fontDiv = document.getElementById('font-div');
+// Load Fonts Asyncronously
+var ua = window.navigator.userAgent;
+var link1 = document.createElement('link');
+link1.setAttribute('rel', 'stylesheet');
+link1.setAttribute('type', 'text/css');
+var link2 = document.createElement('link');
+link2.setAttribute('rel', 'stylesheet');
+link2.setAttribute('type', 'text/css');
+if (typeof window.FontFace === 'function') {
+link1.setAttribute('href', "/static/www/1308b1b852e9/app/fonts/css/data-sourcesanspro-woff2.css");
+link2.setAttribute('href', "/static/www/1308b1b852e9/app/fonts/css/data-effra-woff2.css");
+fontDiv.appendChild(link1);
+fontDiv.appendChild(link2);
+} else if (ua && ua.indexOf("Android 4.") > -1 && ua.indexOf("like Gecko") > -1 && ua.indexOf("Chrome") === -1) {
+link1.setAttribute('href', "/static/www/1308b1b852e9/app/fonts/css/data-sourcesanspro-ttf.css");
+link2.setAttribute('href', "/static/www/1308b1b852e9/app/fonts/css/data-effra-ttf.css");
+fontDiv.appendChild(link1);
+fontDiv.appendChild(link2);
+} else {
+link1.setAttribute('href', "/static/www/1308b1b852e9/app/fonts/css/data-sourcesanspro-woff.css");
+link2.setAttribute('href', "/static/www/1308b1b852e9/app/fonts/css/data-effra-woff.css");
+fontDiv.appendChild(link1);
+fontDiv.appendChild(link2);
+}
+window.CARS = window.CARS || {};
+CARS.digitalData = {"page":{"pageInfo":{"pageName":"go/buy/index","channel":"Cars/Shop","version":"","effectiveDate":""},"category":{"pageType":"index"}},"dataProducts":{"zipCode":null,"affCode":"","lzone":"","section":"","deviceType":""},"user":{"profileInfo":{"login":"","loginType":"","publicConsumerId":"","publicDeviceId":""},"attributes":{"lat":"","long":""}}};
+function createPerformanceMark(name) {
+if (window.performance && window.performance.mark) {
+window.performance.mark(name);
+}
+}
+createPerformanceMark('beforeAngularBootstrap');
+angular.bootstrap(document, window.modules);
+createPerformanceMark('afterAngularBootstrap');
+document.addEventListener('DOMContentLoaded', function () {
+googletag.cmd.push(function () {
+googletag.pubads().enableAsyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs(true);
+});
+});
+(function () {
+const tagjs = document.createElement("script");
+const s = document.getElementsByTagName("script")[0];
+tagjs.text = "{'site':'4IGCP5L'}";
+tagjs.async = true;
+tagjs.src = "//s.btstatic.com/tag.js";
+s.parentNode.insertBefore(tagjs, s);
+}());
+_satellite.pageBottom();
+var ua = navigator.userAgent;
+if (ua.indexOf('Safari') !== -1) {
+var version = ua.match(/Version\/(\d+)/) || [];
+if (parseInt(version[1]) <= 8) {
+document.getElementsByClassName('page')[0].style.display = 'block';
+}
+}
+var userSummary;
+var userSummaryValue = localStorage.getItem("cars.userSummary");
+if (userSummaryValue) {
+try {
+userSummary = JSON.parse(userSummaryValue);
+} catch(e) {}
+}
+if (userSummary && userSummary.email) {
+_etmc.push(["setOrgId", "carscomconsumer"]);
+_etmc.push(["setUserInfo", {"email": userSummary.email}]);
+_etmc.push(["trackPageView"]);
+}
+(
+function (doc, GLOBAL) {
+var profiles = {},
+USER_SUMMARY_STORAGE_KEY = 'cars.userSummary',
+DEFAULT_SUMMARY_RESPONSE = {
+"favorites": {
+"dealers": 0,
+"cars": 0,
+"researches": 0,
+"ads": 0,
+"searches": 0
+},
+"email": "",
+"firstName": "",
+"lastName": ""
+};
+// default events for listening and broadcast
+var events = {};
+// A event subscription identifier
+var subscriptionId = -1;
+profiles.publish = function (event, args) {
+if (!events[event]) {
+return false;
+}
+var subscribers = events[event],
+len = subscribers ? subscribers.length : 0;
+while (len--) {
+subscribers[len].func(event, args);
+}
+return this;
+};
+profiles.subscribe = function (event, func) {
+if (!events[event]) {
+events[event] = [];
+}
+var token = (++subscriptionId).toString();
+events[event].push({
+token: token,
+func: func
+});
+return token;
+};
+// Unsubscribe from event
+profiles.unsubscribe = function (token) {
+for (var m in events) {
+if (events[m]) {
+for (var i = 0, j = events[m].length; i < j; i++) {
+if (events[m][i].token === token) {
+events[m].splice(i, 1);
+return token;
+}
+}
+}
+}
+return this;
+};
+profiles.init = function () {
+var userData = getUserData();
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1) {
+profiles.publish("profile.login", userData);
+}
+profiles.publish("profile.updated", userData);
+GLOBAL.document.querySelector('.prof__menu__signout').querySelector('.prof__link').onclick = logout;
+updateContinueParams();
+};
+// setup header subscriptions:
+profiles.subscribe("profile.updated", updateDOMAll);
+profiles.subscribe("profile.add.car", updateDOMCarCount);
+profiles.subscribe("profile.remove.car", updateDOMCarCount);
+profiles.subscribe("profile.add.search", updateDOMSearchCount);
+profiles.subscribe("profile.remove.search", updateDOMSearchCount);
+profiles.subscribe("profile.add.listing", updateDOMListingCount);
+profiles.subscribe("profile.add.researches", updateDOMResearchCount);
+profiles.subscribe("profile.remove.researches", updateDOMResearchCount);
+profiles.subscribe("profile.remove.listing", updateDOMListingCount);
+profiles.subscribe("profile.login", updateDOMLogIn);
+profiles.subscribe("profile.logout", updateDOMLogOut);
+profiles.subscribe("profile.url.updated", updateContinueParams);
+function updateContinueParams() {
+// clean this up with babel
+if (GLOBAL.NodeList && NodeList.prototype.forEach) {
+GLOBAL.document.querySelectorAll('.js_continue').forEach(updateDOMUrl);
+} else {
+var continueNodes = GLOBAL.document.querySelectorAll('.js_continue');
+for (var i = 0; i < continueNodes.length; i++) {
+updateDOMUrl(continueNodes[i]);
+}
+}
+}
+function updateDOMLogIn(event, data) {
+toggleNavClass(true);
+updateDOMAvatar(true);
+updateDOMPersonName(event, data);
+}
+function updateDOMLogOut() {
+toggleNavClass(false);
+updateDOMAvatar(false);
+updateDOMAll();
+}
+function updateDOMCarCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.cars) ? eventData.favorites.cars : 0;
+return GLOBAL.document.getElementById("prof_menu-savedcars")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMSearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.searches) ? eventData.favorites.searches : 0;
+return GLOBAL.document.getElementById("prof_menu-savedsearches")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+function updateDOMListingCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.ads) ? eventData.favorites.ads : 0;
+if (eventDataCount) {
+return GLOBAL.document.getElementById("prof_menu-savedlistings")
+.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMResearchCount(event, data) {
+var eventData = stringToObj(data),
+eventDataCount = (eventData && eventData.favorites && eventData.favorites.researches) ? eventData.favorites.researches : 0,
+savedResearchLink = GLOBAL.document.getElementById("prof_menu-savedresearch");
+if (GLOBAL.document.cookie.indexOf('rememberMe') > -1 && savedResearchLink) {
+return savedResearchLink.querySelector(".prof__link--count").innerHTML = " (" + eventDataCount + ")";
+}
+}
+function updateDOMPersonName(event, data) {
+var eventData = stringToObj(data),
+eventDataEmail = (eventData && eventData.email) ? eventData.email : "",
+eventDataFirstName = (eventData && eventData.firstName) ? eventData.firstName : "",
+personName = (eventDataFirstName) ? eventDataFirstName : (eventDataEmail) ? eventDataEmail : "Guest";
+GLOBAL.document.querySelector(".prof__menu--name").innerHTML = personName;
+}
+function updateDOMAvatar(isLogin) {
+if (isLogin) {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-filled"></use></svg>';
+} else {
+return GLOBAL.document.getElementById("profile_menu-avatar").innerHTML = '<svg class="prof__avatar--icon" viewBox="0 0 16 16" width="24px" height="24px"><use xlink:href="#icon-avatar-line"></use></svg>';
+}
+}
+function toggleNavClass(isLogin) {
+var nav = GLOBAL.document.querySelector('.prof__nav');
+if (isLogin) {
+nav.classList.add('logged-in');
+nav.classList.remove('not-logged-in');
+} else {
+nav.classList.add('not-logged-in');
+nav.classList.remove('logged-in');
+}
+return true;
+}
+function updateDOMAll(event, data) {
+updateDOMCarCount("profile.add.car", data);
+updateDOMSearchCount("profile.add.search", data);
+updateDOMListingCount("profile.add.listing", data);
+updateDOMResearchCount("profile.add.researches", data);
+}
+function stringToObj(string) {
+if (typeof string === "object") {
+return string;
+}
+try {
+var data = JSON.parse(string);
+return data;
+} catch (e) {
+return {};
+}
+}
+function getUserData() {
+var userSummary;
+GLOBAL.CARS = GLOBAL.CARS || {};
+try {
+userSummary = JSON.parse(GLOBAL.localStorage.getItem(USER_SUMMARY_STORAGE_KEY));
+} catch (error) {
+userSummary = DEFAULT_SUMMARY_RESPONSE;
+}
+GLOBAL.CARS.userSummary = userSummary;
+return GLOBAL.CARS.userSummary;
+}
+function setUserData(data) {
+GLOBAL.CARS = GLOBAL.CARS || {};
+GLOBAL.CARS.userSummary = data;
+try {
+GLOBAL.localStorage.setItem(USER_SUMMARY_STORAGE_KEY, data);
+} catch (error) {
+// localStorage not available, nothing to do
+}
+}
+function logout(e) {
+e.preventDefault();
+var xhr = new XMLHttpRequest();
+xhr.open('GET', '/profile/global/logout/?noredirect=true', true);
+xhr.withCredentials = true;
+xhr.onload = function () {
+if (xhr.status === 200) {
+setUserData(JSON.stringify(DEFAULT_SUMMARY_RESPONSE));
+profiles.publish('profile.logout');
+}
+};
+xhr.send();
+}
+function getPageUrl() {
+return '/' + GLOBAL.location.href.split(".cars.com/")[1];
+}
+function updateDOMUrl(element) {
+let urlBase = element.href;
+if (urlBase.indexOf('?') > -1) {
+urlBase = urlBase.split('?')[0];
+}
+return element.setAttribute('href', urlBase + '?continue=' + encodeURIComponent(getPageUrl()));
+}
+GLOBAL.profiles = profiles;
+GLOBAL.addEventListener('DOMContentLoaded', profiles.init());
+}
+( document, window, 0 )
+);
+if (window.performance && window.performance.mark) {window.performance.mark("afterFooter");}

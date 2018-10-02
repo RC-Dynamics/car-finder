@@ -1,0 +1,235 @@
+100% Guaranteed Credit Approval
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1824666117788798');
+fbq('track', 'PageView');
+{
+"@context": "http://schema.org",
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"url": "https://www.munstermanauto.com/credit",
+"description": "If you have income and live in a house, apartment or even a hotel we can help! Don&rsquo;t hesitate to fill out the application and let us go to work for you!",
+"image": "https://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "609 SW State Route 7",
+"addressLocality": "Blue Springs",
+"addressRegion": "MO",
+"postalCode": "64014"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "39.012088",
+"longitude": "-94.273041"
+},
+"sameAs" : [
+"https://www.facebook.com/MunstermanAuto/?fref=ts",
+null
+]
+}
+var $websiteSwitch = 890;
+function arNavfunction(){$("#menu li:has(ul)").addClass("has-dropdown"),$(".has-dropdown ul:has(li)").addClass("hidden"),$(".has-dropdown > a").on("click",function(a){$(this).is("[disabled]")&&a.preventDefault()}),window.innerWidth<=$websiteSwitch?($(".has-dropdown > a").attr("disabled","disabled"),$(".has-dropdown > a").not(".active-head")&&$("li.has-dropdown").unbind("click").bind("click",function(a){$(this).find("a").first().toggleClass("active-head"),$(this).find(".hidden").toggleClass("active")})):($(".has-dropdown > a").removeAttr("disabled"),$(".nav-wrap li.has-dropdown > a, .has-dropdown > .hidden").removeClass("active-head active"))}
+jQuery(document).ready(arNavfunction);
+$(window).on('resize',arNavfunction);
+// function myFunction() { document.getElementById("myDropdown").classList.toggle("show"); }
+// $(document).ready(function() {
+// var hoverOrClick = function () {
+//
+$(".header-dropdown-content").stop().toggle('fast');
+// }
+// $('.dropbtn').hover(hoverOrClick);
+// });
+$(document).ready(function() {
+$( '.dropbtn' ).on('mouseenter', function() {
+$( '.header-dropdown-content' ).show();
+}).on('mouseleave', function() {
+$( '.header-dropdown-content' ).hide();
+});
+})
+Treating People Like Family, It's What We Do.
+Map & Hours | Blue Springs, MO | (816) 598-1286
+YOUR STORE
+Blue Springs
+609 SW State Route 7
+Blue Springs, MO 64014
+(816) 598-1286
+OUR HOURS
+Mon-Fri 9-6 | Sat 9-5
+GET DIRECTIONS
+CONTACT US
+No Credit Check
+Buy With Confidence
+We're Focused on You
+Stress Free Financing
+☰Show Menu
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+100% Guaranteed Credit Approval
+If you have income and live in a house, apartment or even a hotel we can help! Don’t hesitate to fill out the application and let us go to work for you!
+Welcome Visitor!Welcome Visitor!
+function isNumber(n) {
+return !isNaN(parseFloat(n)) && isFinite(n);
+}
+function formcheck() {
+var FormOK=true
+if (document.uberform.ReadPrivacyPolicy.checked == false) {
+document.uberform.ReadPrivacyPolicy.focus();
+document.uberform.sendform.value='Submit';
+alert("After you have read and accepted our privacy policy, please check the appropriate box before submitting.");
+FormOK=false;
+return FormOK;
+}
+if (document.getElementById('firstname').value=="") { document.getElementById('firstname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('lastname').value=="") { document.getElementById('lastname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('email').value=="") { document.getElementById('email').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('phone1').value=="") { document.getElementById('phone1').className='arform_textfield_required';FormOK=false; }
+if (document.uberform.inqzip.value!="" && isNumber(document.uberform.inqzip.value)==false) {
+document.uberform.inqzip.className='arform_textfield_required';
+alert('Zip Code must be a number.');
+FormOK=false;
+}
+var tldregex=/^(com|net|org|edu|int|mil|gov|arpa|biz|cc|aero|name|coop|info|pro|museum)$/;
+var domainregex=/^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
+var theemail=document.uberform.email.value;
+var domainarray=theemail.split(".");
+var thetld=domainarray[domainarray.length-1];
+thetld=thetld.toLowerCase();
+if (theemail.length>=1) {
+if ( thetld.length!=2 && thetld.search(tldregex)==-1 || domainregex.test(theemail)==false ) {
+document.uberform.email.className='arform_textfield_required';
+// document.uberform.email.focus(); // conflicts with className change - removed
+alert('Email address does not seem to be valid.');
+FormOK=false;
+}
+}
+if (FormOK==false) {
+document.uberform.sendform.value='Submit';
+alert('Please check the highlighted fields...\n\nAdditional information is required.');
+}
+return FormOK;
+}
+Get Started Today!Fill out our secure online application.
+Applicant / Cosigner Information
+*First Name, Middle Initial
+*Last Name
+*Email Address
+*Day Phone Number
+Evening Phone Number
+Date of Birth
+JanFebMarAprMayJunJulAugSepOctNovDec
+12345678910111213141516171819202122232425262728293031 20032002200120001999199819971996199519941993199219911990198919881987198619851984198319821981198019791978197719761975197419731972197119701969196819671966196519641963196219611960195919581957195619551954195319521951195019491948194719461945194419431942194119401939193819371936193519341933193219311930192919281927192619251924192319221921192019191918191719161915191419131912191119101909190819071906190519041903
+Social Security Number--
+Driver's License
+Employment Information
+Employer
+Occupation
+Supervisor
+Business Phone
+Employment Status
+Employed Full TimeEmployed Part TimeSelf EmployedTemp ServiceUnemployedStudentRetiredFixed IncomeHomemakerOther
+Employment Start Date
+JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember
+20182017201620152014201320122011201020092008200720062005200420032002200120001999199819971996199519941993199219911990198919881987198619851984198319821981198019791978197719761975197419731972197119701969196819671966196519641963196219611960195919581957195619551954195319521951195019491948194719461945194419431942194119401939193819371936193519341933193219311930192919281927192619251924192319221921192019191918
+Gross Salary before taxes$per YearMonthWeek
+Housing Information
+Address
+City, State  ZipstateAlabamaAlaskaArizonaArkansasCaliforniaColoradoConnecticutDelawareDistrict of ColumbiaFloridaGeorgiaHawaiiIdahoIllinoisIndianaIowaKansasKentuckyLouisianaMaineMarylandMassachusettsMichiganMinnesotaMississippiMissouriMontanaNebraskaNevadaNew HampshireNew JerseyNew MexicoNew YorkNorth CarolinaNorth DakotaOhioOklahomaOregonPennsylvaniaRhode IslandSouth CarolinaSouth DakotaTennesseeTexasUtahVermontVirginiaWashingtonWest VirginiaWisconsinWyoming
+Residence Move-in Date
+JanuaryFebruaryMarchAprilMayJuneJulyAugustSeptemberOctoberNovemberDecember 20182017201620152014201320122011201020092008200720062005200420032002200120001999199819971996199519941993199219911990198919881987198619851984198319821981198019791978197719761975197419731972197119701969196819671966196519641963196219611960195919581957195619551954195319521951195019491948194719461945194419431942194119401939193819371936193519341933193219311930192919281927192619251924192319221921192019191918
+Residence Status
+RentOwnMilitary HousingLive with ParentsOther
+Housing Payment$ per month
+Banking Information
+Do You Have a Checking Account?
+Yes No
+Do You Have a Savings Account?
+Yes No
+Do You Have a Pre-paid Card?
+Yes No
+What Bank(s) Do You Use?
+Other
+Available Down Payment$
+Select Vehicle(s) of Interest
+03 Acura CL Type S
+$5,797  10 Acura TL Sedan 4D
+$11,797  08 BMW 3 Series 328xi
+$6,950  11 Buick Enclave CXL-1
+$11,879  15 Chevrolet Cruze LS  05 Chevrolet Impala Base
+$3,500  01 Chevrolet Silverado 2500HD Long Bed
+$4,975  04 Chevrolet Silverado 2500HD LS Pickup 4D 6 1/2 ft
+$12,975  06 Chevrolet Suburban Sport Utility 4D
+$4,997  07 Chevrolet Tahoe LT Sport Utility 4D
+$9,975  07 Chrysler Aspen Limited
+$7,475  07 Chrysler Sebring Sedan Limited
+$5,449  15 Chrysler Town & Country Touring  07 Dodge Caliber SXT  05 Dodge Dakota SLT
+$7,757  05 Dodge Ram 1500 SLT Pickup 4D 6 1/4 ft
+$7,797  12 Ford Edge Limited  05 Ford Escape Limited
+$4,977  10 Ford Escape Limited
+$9,467  15 Ford Expedition EL XL Sport Utility 4D
+$14,975  10 Ford Explorer Eddie Bauer  03 Ford Explorer Limited  12 Ford Explorer Limited
+$13,479  02 Ford Explorer Sport Utility 4D
+$2,900  03 Ford Explorer XLT Sport Utility 4D
+$4,225  16 Ford F-150 XLT Pickup 4D 5 1/2 ft
+$25,495  16 Ford Focus SE  07 Ford Focus SES Sedan 4D
+$2,995  06 Ford Freestar Wagon SE  06 Ford Fusion SEL
+$5,477  99 Ford Super Duty F-350 SRW Long Bed
+$9,750  08 GMC Acadia SLT1
+$5,977  08 GMC Acadia SLT1
+$8,877  03 GMC Sierra 1500HD SLT Pickup 4D 6 1/2 ft
+$8,977  13 GMC Terrain SLE  07 GMC Yukon Denali
+$11,892  08 GMC Yukon XL SLT Sport Utility 4D
+$11,479  06 HUMMER H3
+$10,255  13 Hyundai Elantra Coupe SE Coupe 2D
+$6,877  03 Isuzu Rodeo
+$3,477  00 Jeep Grand Cherokee 4WD Laredo
+$3,250  01 Jeep Grand Cherokee 4WD Limited  06 Jeep Grand Cherokee 4WD Limited
+$6,797  12 Jeep Patriot 4WD Latitude
+$6,977  08 Jeep Wrangler Unlimited Rubicon
+$16,977  11 Land Rover Range Rover HSE
+$21,975  06 Land Rover Range Rover Sport HSE  06 Mercedes-Benz CLK-Class CLK 350 Cabriolet 2D  05 Mercury Montego Luxury
+$2,977  01 Mitsubishi Eclipse GS
+$3,877  06 Mitsubishi Endeavor LS  03 Nissan Altima 2.5 S Sedan 4D  18 Nissan Altima 2.5 SL Sedan 4D
+$17,475  09 Nissan Altima Sedan 2.5 S Sedan 4D
+$6,797  07 Nissan Titan XE Pickup 4D 5 1/2 ft  09 Nissan Versa S Hatchback 4D
+$5,097  14 Nissan Versa Note Note S Plus Hatchback 4D  08 Pontiac G6 GT
+$5,900  13 Ram 1500 Crew Cab SLT Pickup 4D 5 1/2 ft
+$14,797  07 Saturn Aura XE
+$4,450  06 Scion tC
+$5,977  14 Subaru Outback 2.5i Premium
+$8,977  11 Toyota Avalon Sedan 4D
+$10,477  13 Volkswagen Beetle Coupe 2.5L Entry Hatchback 2D
+$8,475
+Comments / Questions
+Terms : I certify that the above information on this application for credit and any attachments I may send regarding this application are accurate and complete. I authorize and instruct any person or consumer reporting agency to compile and furnish any information it may have that may be required for the purpose of a credit transaction and agree same information shall remain your property whether or not credit is extended. I authorize you to obtain information from others concerning my credit standing and other relevant information impacting on this application and to provide others with information about your experience with me. I understand that I must update this credit information at your request and if this credit information changes.
+document.getElementById('lockbox').value='0.397951124946';
+document.getElementById('keycode').value='140730100220187FB154C72D008BCFE2518C674FB38191';
+Navigation
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Contact Us
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+an auto dealer website | sitemap

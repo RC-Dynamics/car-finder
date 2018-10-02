@@ -1,0 +1,199 @@
+navigator.cookieEnabled ||
+(document.cookie = "testcookie", -1 == document.cookie.indexOf("testcookie") &&
+(window.location = "/missing-cookies-javascript/?prev=%2Fadvice%2Fcar-tips%2Fhow-to-negotiate-a-private-party-used-car-sale-3318%2F"));
+(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({
+'gtm.start':
+new Date().getTime(),
+event: 'gtm.js'
+});
+var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s),
+dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-K9DCZD');
+(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({
+'gtm.start':
+new Date().getTime(),
+event: 'gtm.js'
+});
+var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s),
+dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-WG29NVB');
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'UA-123518381-1');
+How to Negotiate a Private Party Used Car Sale
+(function(h, o, t, j, a, r) {
+h.hj = h.hj || function() { (h.hj.q = h.hj.q || []).push(arguments) };
+h._hjSettings = { hjid: 503205, hjsv: 5 };
+a = o.getElementsByTagName('head')[0];
+r = o.createElement('script');
+r.async = 1;
+r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+a.appendChild(r);
+})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+!function(w) {
+w.UCC = w.UCC || {};
+w.UCC.ENV = {"staticEndpoint":"//static.usedcars.com","isDev":false,"isProd":true,"routeName":"advice.article","staticAssets":[{"page_name":"advice.article","hash":"6dc607f7","file_type":"js"},{"page_name":"advice.article","hash":"e07ea651","file_type":"css"}]};
+}(window)
+!function(){function r(t,n,i){function e(u,a){if(!n[u]){if(!t[u]){var s="function"==typeof require&&require;if(!a&&s)return s(u,!0);if(o)return o(u,!0);var c=new Error("Cannot find module '"+u+"'");throw c.code="MODULE_NOT_FOUND",c}var f=n[u]={exports:{}};t[u][0].call(f.exports,function(r){var n=t[u][1][r];return e(n?n:r)},f,f.exports,r,t,n,i)}return n[u].exports}for(var o="function"==typeof require&&require,u=0;u<i.length;u++)e(i[u]);return e}return r}()({1:[function(r,t,n){"use strict";!function(r){r.UCC=r.UCC||{},r.UCCSearch=r.UCCSearch||{};var t=r.UCC;t.USER={},t.DEVICE={isKnown:!1},t.AFFILIATE={},t.ADS={},t.UTILS={},t.LOG={};var n=t.UTILS,i=t.ENV;t.DEVICE;i.cssPath=i.staticEndpoint+"/css",i.jsPath=i.staticEndpoint+"/js",i.libsPath=i.staticEndpoint+"/libs",i.imgsPath=i.staticEndpoint+"/img";var e=function(r,t){r=r||{},t=t||{};for(var n in t)r[n]=t[n];return r};n.mergeObjs=e}(window)},{}]},{},[1]);window.Modernizr=function(n,t,e){function o(n){y.cssText=n}function r(n,t){return typeof n===t}var i,c,u,a="2.8.3",s={},f=!0,l=t.documentElement,p="modernizr",d=t.createElement(p),y=d.style,m=({}.toString,{}),v=[],w=v.slice,h={}.hasOwnProperty;u=r(h,"undefined")||r(h.call,"undefined")?function(n,t){return t in n&&r(n.constructor.prototype[t],"undefined")}:function(n,t){return h.call(n,t)},Function.prototype.bind||(Function.prototype.bind=function(n){var t=this;if("function"!=typeof t)throw new TypeError;var e=w.call(arguments,1),o=function(){if(this instanceof o){var r=function(){};r.prototype=t.prototype;var i=new r,c=t.apply(i,e.concat(w.call(arguments)));return Object(c)===c?c:i}return t.apply(n,e.concat(w.call(arguments)))};return o});for(var j in m)u(m,j)&&(c=j.toLowerCase(),s[c]=m[j](),v.push((s[c]?"":"no-")+c));return s.addTest=function(n,t){if("object"==typeof n)for(var o in n)u(n,o)&&s.addTest(o,n[o]);else{if(n=n.toLowerCase(),s[n]!==e)return s;t="function"==typeof t?t():t,"undefined"!=typeof f&&f&&(l.className+=" "+(t?"":"no-")+n),s[n]=t}return s},o(""),d=i=null,s._version=a,l.className=l.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+v.join(" "):""),s}(this,this.document);
+var assetsPrefix = "advice.article";
+var uccAdTrackingObject,
+uccInitAdTrackingObject;
+var utsUrl = 'https://uts.abtl.io/api/tracking/v1';
+[{"@context":"http://schema.org","@type":"Organization","url":"https://www.usedcars.com/","legalName":"UsedCars.com","alternateName":"UCC","logo":"https://static.usedcars.com/img/logo/logo.svg"},{"@context":"http://schema.org","@type":"WebSite","name":"UsedCars.com","alternateName":"UCC","url":"https://www.usedcars.com/"}]
+var startTimerForAdhesionAdClose = function () {
+console.log('in the startTimerForAdhesionAdClose function');
+setTimeout(function () {
+console.log('in the setTimeout function');
+$('#adhesion-close-js').on('click',
+function (e) {
+console.log('in the adhesion-close-js click function');
+$('#adhesion-js').css('display', 'none');
+});
+$('#adhesion-close-js').css('display', 'block');
+},
+5000);
+};
+Menu
+Makes
+Car Type
+Price
+Location
+Certified Pre-owned
+Deals
+Home
+Advice
+Tips
+How to Negotiate a Private Party Used Car Sale
+{
+"@context": "http://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"type": "ListItem",
+"position": 1,
+"item": {
+"@id": "https://www.usedcars.com/",
+"name": "Home"
+}
+},
+{
+"type": "ListItem",
+"position": 2,
+"item": {
+"@id": "https://www.usedcars.com/advice/",
+"name": "Advice"
+}
+},
+{
+"type": "ListItem",
+"position": 3,
+"item": {
+"@id": "https://www.usedcars.com/advice/car-tips/",
+"name": "Tips"
+}
+},
+{
+"type": "ListItem",
+"position": 4,
+"item": {
+"@id": "https://www.usedcars.com/advice/car-tips/how-to-negotiate-a-private-party-used-car-sale-3318/",
+"name": "How to Negotiate a Private Party Used Car Sale"
+}
+}
+]
+}
+How to Negotiate a Private Party Used Car Sale
+We get it, when you're talking about giving someone else a few thousand dollars, you can get nervous. Don't panic, though. Negotiating the price on a used car does not have to be as overwhelming as it seems. In fact, if you are prepared, have a fair price in mind, and are willing to walk away if the deal goes awry, the overall experience can be quite rewarding. The great thing about negotiating a deal on a used car is the vehicle should offer some points to help you drive the price down. While new vehicles are basically all the same, used vehicles all have unique personalities and showing that personality can help you get the deal you’re looking for on your next car. Here are 5 tips to help you negotiate a private party used car sale:
+Private Party Used Car Sale Tip #1: Research the Car
+Even if you’re positive this is the car for you, search forums and review sites online to hear how other owners feel about their vehicle. Certain car models end up experiencing similar maintenance issues as they age, so research will help you know what to look out for. A vehicle history report on the car you’re considering is a powerful negotiation tool. Leading vehicle history report providers, such as Carfax and AutoCheck, may alert you to prior accidents, title problems, or other potentially adverse events in the car’s history.
+Private Party Used Car Sale Tip #2: Determine the Value
+Use Kelley Blue Book to calculate the Private Party Value of the used car. This is the amount you can expect to pay for a used car from a private party, and it is calculated using the vehicle’s make, model, features, mileage, and condition. The first step in any successful negotiation is to establish a starting point. But keep in mind that the starting point should never be the sticker price. To get the lowest price on a used car, you cannot negotiate down from a certain point. Instead, you should start at a price that is slightly lower than the current market value and work your way up, if necessary.
+Private Party Used Car Sale Tip #3: Inspect the Car
+Cosmetic issues are perfect for negotiations because they don’t affect the drivability of a car but are readily apparent. While some people feel bad about pointing out small cosmetic issues, it is important to realize that these matters could be your most valuable bargaining chip. Mechanical damage is more severe than cosmetic issues, so you should be aware of anything that you’ll have to fix down the road. Once your mechanic inspects the vehicle, get a list of everything that may need to be fixed and get estimates on all of these repairs. If a feature doesn’t work the way it’s supposed to, feel free to use this as a negotiation tool, even if you weren’t planning on using the feature in the first place. Features are among the biggest selling points that sellers use, so why shouldn’t you also be able to use them for negotiation?
+Private Party Used Car Sale Tip #4: Ask Questions
+Don’t just ask about the car. Ask why they’re selling it. The pressure is not on you, but on the seller, to convince you that you should buy this car. Depending on the urgency to sell the vehicle, a seller may be more receptive to lower offers. Also, ask about any common problems that you’ve heard about the model, and point out any cosmetic defect you see. Keep thoughts of what you like about the car to yourself. Showing that you’ve done your homework and are aware of the car’s actual condition will put you in a better position to offer less than what the seller is asking.
+Private Party Used Car Sale Tip #5: Make the Offer
+Make a reasonable offer that reflects both the Private Party Value you found and how closely the car matches the condition the seller claimed it was. First explain how you determined your offer (unreported damage or defects, repairs you will have to pay for, missing features) and then announce your offer. State your willingness to purchase the used car, not any eagerness to do so. This keeps all pressure on the seller to either accept your offer or attempt to justify why it is too low. If the seller counters, reiterate your offer and why the condition of the car explains it. The seller may doubt his chances of getting his asking price in future negotiations and be more inclined to accept your offer. Keep in mind that with any real negotiation, there is give and take on both sides. So while you never should take a deal you are not comfortable with, you need to keep an open mind and be willing to accept a price that is fair to both sides.
+How to Inspect a Used Car
+3 Types of Car GPS Systems
+Related lists
+Auto Insurance Shopping Tips
+5 Important Car Seat Buying Tips
+A Look at Car Wraps
+Environmentally Friendly Car Care Products
+What is a Used Car Vehicle History Report?
+3 Types of Car GPS Systems
+Find a car
+All used
+Certified
+Best Used Vehicles
+Best Gas Mileage Used Cars
+Best AWD Used Cars
+Best Used Cars Under $15,000
+Best Used Cars Under $20,000
+Best Used Cars Under $25,000
+Back to top
+About Us
+Contact Us
+Privacy Policy
+Terms of Use
+Fraud Awareness
+Advice
+Best Cars
+Calculators
+Sitemap
+© 2018 AutoWeb, Inc.
+!function(g, s) {
+uccAdTrackingObject = g.ADS, p = 'pageCtx';
+uccAdTrackingObject[p] = {"PageCtx":{"ads":[{"AdUnitId":1,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":2,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":3,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":4,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""}]},"delayAdsLoading":false,"ads":[{"AdUnitId":1,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":2,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":3,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":4,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""}]};
+uccAdTrackingObject[p].set = s;
+UCC.pageJson=UCC.pageJson||{};
+UCC.pageJson.articleVehicles=[{"Make":"","Model":"","SuperModel":"","Year":0}];
+UCC.pageJson.articleAds=[[{"AdUnitId":1,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":2,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":3,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""},{"AdUnitId":4,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":"","AdCategory":""}],[{"AdUnitId":1,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":null,"AdCategory":""},{"AdUnitId":2,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":null,"AdCategory":""},{"AdUnitId":3,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":null,"AdCategory":""},{"AdUnitId":4,"AdMake":"","AdModel":"","AdVehicleYear":0,"AdSeries":null,"AdCategory":""}]];
+;
+}(UCC,
+function(d) {
+UCC.UTILS.mergeObjs(this, d);
+return this;
+})
+!function(w, d, s, u, gt) {
+var o = w[gt] = w[gt] || {};
+o.cmd = o.cmd || [];
+var hs = 'https:',
+g = d.createElement(s),
+n = d.getElementsByTagName(s)[0];
+g.async = 1;
+g.src = (hs === d.location.protocol ? hs : 'http:') + u;
+n.parentNode.insertBefore(g, n);
+}(window, document, 'script', '//www.googletagservices.com/tag/js/gpt.js', 'googletag');
+// This goes at the end of the page, before the body tag
+!function(uccAdTrackingObject) {
+uccInitAdTrackingObject = uccAdTrackingObject;
+return uccInitAdTrackingObject;
+}(UCC);
+window.loadjs=function(){function n(n,e){if(n){var t=c[n];if(o[n]=e,t)for(;t.length;)t[0](n,e),t.splice(0,1)}}function e(n,t,i,o){var c,u,f=document,s=i.async,h=(i.numRetries||0)+1,a=i.before||r;o=o||0,/\.css$/.test(n)?(c=!0,(u=f.createElement("link")).rel="stylesheet",u.href=n):((u=f.createElement("script")).src=n,u.async=void 0===s||s),u.onload=u.onerror=u.onbeforeload=function(r){var f=r.type[0];if(c&&"hideFocus"in u)try{u.sheet.cssText.length||(f="e")}catch(n){f="e"}return"e"==f&&(o+=1)<h?e(n,t,i,o):void t(n,f,r.defaultPrevented)},a(n,u),f.head.appendChild(u)}function t(t,o,c){var u,f;if(o&&o.trim&&(u=o),f=(u?c:o)||{},u){if(u in i)throw"LoadJS";i[u]=!0}!function(n,t,r){var i,o,c=(n=n.push?n:[n]).length,u=c,f=[];for(i=function(n,e,r){if("e"==e&&f.push(n),"b"==e){if(!r)return;f.push(n)}--c||t(f)},o=0;o<u;o++)e(n[o],i,r)}(t,function(e){e.length?(f.error||r)(e):(f.success||r)(),n(u,e)},f)}var r=function(){},i={},o={},c={};return t.ready=function(n,e){return function(n,e){n=n.push?n:[n];var t,r,i,u=[],f=n.length,s=f;for(t=function(n,t){t.length&&u.push(n),--s||e(u)};f--;)r=n[f],(i=o[r])?t(r,i):(c[r]=c[r]||[]).push(t)}(n,function(n){n.length?(e.error||r)(n):(e.success||r)()}),t},t.done=function(e){n(e,[])},t.reset=function(){i={},o={},c={}},t.isDefined=function(n){return n in i},t}();
+var assets = ["//static.usedcars.com/libs/jquery.min.js","//static.usedcars.com/libs/jquery.browser.min.js","//static.usedcars.com/libs/jquery.ba-bbq.min.js","//static.usedcars.com/libs/react.min.js","//static.usedcars.com/libs/react-dom.min.js","//static.usedcars.com/libs/nouislider.min.js","//static.usedcars.com/libs/flowtype.min.js","//static.usedcars.com/js/global.site-48ab615f.min.js","//static.usedcars.com/js/advice.article-6dc607f7.min.js","//static.usedcars.com/js/advice.inventorylistings-d379e28a.min.js","//static.usedcars.com/js/jsx/searchcontrol/search-all-4f4af1ad.min.js","//static.usedcars.com/js/jsx/searchcontrol/search-cpo-d940e3d5.min.js"];
+loadjs(assets,
+{
+success: function () {
+},
+async: false
+});
+function requireUI(selector) {
+return $(selector).length ? true : false;
+}

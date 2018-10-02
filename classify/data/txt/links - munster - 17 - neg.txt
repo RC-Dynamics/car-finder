@@ -1,0 +1,99 @@
+Featured Car of the Week!
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1824666117788798');
+fbq('track', 'PageView');
+{
+"@context": "http://schema.org",
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"url": "http://www.munstermanauto.com/car-of-the-week",
+"description": "Munsterman Automotive Group Selling Used Cars in Blue Springs, MO.",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "609 SW State Route 7",
+"addressLocality": "Blue Springs",
+"addressRegion": "MO",
+"postalCode": "64014"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "39.012088",
+"longitude": "-94.273041"
+},
+"sameAs" : [
+"https://www.facebook.com/MunstermanAuto/?fref=ts",
+null
+]
+}
+var $websiteSwitch = 890;
+function arNavfunction(){$("#menu li:has(ul)").addClass("has-dropdown"),$(".has-dropdown ul:has(li)").addClass("hidden"),$(".has-dropdown > a").on("click",function(a){$(this).is("[disabled]")&&a.preventDefault()}),window.innerWidth<=$websiteSwitch?($(".has-dropdown > a").attr("disabled","disabled"),$(".has-dropdown > a").not(".active-head")&&$("li.has-dropdown").unbind("click").bind("click",function(a){$(this).find("a").first().toggleClass("active-head"),$(this).find(".hidden").toggleClass("active")})):($(".has-dropdown > a").removeAttr("disabled"),$(".nav-wrap li.has-dropdown > a, .has-dropdown > .hidden").removeClass("active-head active"))}
+jQuery(document).ready(arNavfunction);
+$(window).on('resize',arNavfunction);
+// function myFunction() { document.getElementById("myDropdown").classList.toggle("show"); }
+// $(document).ready(function() {
+// var hoverOrClick = function () {
+//
+$(".header-dropdown-content").stop().toggle('fast');
+// }
+// $('.dropbtn').hover(hoverOrClick);
+// });
+$(document).ready(function() {
+$( '.dropbtn' ).on('mouseenter', function() {
+$( '.header-dropdown-content' ).show();
+}).on('mouseleave', function() {
+$( '.header-dropdown-content' ).hide();
+});
+})
+Treating People Like Family, It's What We Do.
+Map & Hours | Blue Springs, MO | (816) 598-1286
+YOUR STORE
+Blue Springs
+609 SW State Route 7
+Blue Springs, MO 64014
+(816) 598-1286
+OUR HOURS
+Mon-Fri 9-6 | Sat 9-5
+GET DIRECTIONS
+CONTACT US
+No Credit Check
+Buy With Confidence
+We're Focused on You
+Stress Free Financing
+☰Show Menu
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Featured Car of the Week!
+Munsterman Automotive Group Selling Used Cars in Blue Springs, MO.
+Welcome Visitor!
+Navigation
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Contact Us
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+an auto dealer website | sitemap

@@ -1,0 +1,383 @@
+Lowest Priced Cars In The Kansas City, MO Area, Guaranteed!!
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1824666117788798');
+fbq('track', 'PageView');
+{
+"@context": "http://schema.org",
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"url": "http://www.munstermanauto.com/blue-springs-mo-used-cars",
+"description": "We will match any verified car in the KC Market Area!! **See dealership for details",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "609 SW State Route 7",
+"addressLocality": "Blue Springs",
+"addressRegion": "MO",
+"postalCode": "64014"
+},
+"geo": {
+"@type": "GeoCoordinates",
+"latitude": "39.012088",
+"longitude": "-94.273041"
+},
+"sameAs" : [
+"https://www.facebook.com/MunstermanAuto/?fref=ts",
+null
+]
+}
+var $websiteSwitch = 890;
+function arNavfunction(){$("#menu li:has(ul)").addClass("has-dropdown"),$(".has-dropdown ul:has(li)").addClass("hidden"),$(".has-dropdown > a").on("click",function(a){$(this).is("[disabled]")&&a.preventDefault()}),window.innerWidth<=$websiteSwitch?($(".has-dropdown > a").attr("disabled","disabled"),$(".has-dropdown > a").not(".active-head")&&$("li.has-dropdown").unbind("click").bind("click",function(a){$(this).find("a").first().toggleClass("active-head"),$(this).find(".hidden").toggleClass("active")})):($(".has-dropdown > a").removeAttr("disabled"),$(".nav-wrap li.has-dropdown > a, .has-dropdown > .hidden").removeClass("active-head active"))}
+jQuery(document).ready(arNavfunction);
+$(window).on('resize',arNavfunction);
+// function myFunction() { document.getElementById("myDropdown").classList.toggle("show"); }
+// $(document).ready(function() {
+// var hoverOrClick = function () {
+//
+$(".header-dropdown-content").stop().toggle('fast');
+// }
+// $('.dropbtn').hover(hoverOrClick);
+// });
+$(document).ready(function() {
+$( '.dropbtn' ).on('mouseenter', function() {
+$( '.header-dropdown-content' ).show();
+}).on('mouseleave', function() {
+$( '.header-dropdown-content' ).hide();
+});
+})
+Treating People Like Family, It's What We Do.
+Map & Hours | Blue Springs, MO | (816) 598-1286
+YOUR STORE
+Blue Springs
+609 SW State Route 7
+Blue Springs, MO 64014
+(816) 598-1286
+OUR HOURS
+Mon-Fri 9-6 | Sat 9-5
+GET DIRECTIONS
+CONTACT US
+No Credit Check
+Buy With Confidence
+We're Focused on You
+Stress Free Financing
+☰Show Menu
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Lowest Priced Cars In The Kansas City, MO Area, Guaranteed!!
+We will match any verified car in the KC Market Area!! **See dealership for details
+Welcome Visitor!
+// <![CDATA[
+function vehopen(thisvid,thisselid,thispg,thisvehpage,thissourceback,thisvehback) {
+if (thispg=='credit') {
+turl='https://www.iimanager.com/ar04/'+thissourceback+'/vehicle.cfm';
+} else if (thispg=='vehicle') {
+turl='//'+thisvehpage;
+} else {
+turl='//'+thisvehback;
+}
+if (thispg=='credit') {
+tformid='&formid=1B59ECC9995E8124C419A0E3B7887B75';
+} else {
+tformid='';
+}
+if (thispg=='vehicle') {
+window.open(turl+'?refby=dealersite#ar_top', thisvid, 'width=880,height='+eval((document.body.clientHeight)-25)+',top=25,left=25,location=yes,toolbar=no,menubar=yes,scrollbars=yes,resizable=yes');
+} else {
+window.open(turl+'?vid='+thisvid+'&selid='+thisselid+'&vehpg='+thispg+tformid+'&refby=dealersite#ar_top', thisvid, 'width=880,height='+eval((document.body.clientHeight)-25)+',top=25,left=25,location=yes,toolbar=no,menubar=yes,scrollbars=yes,resizable=yes');
+}
+}
+// ]]>
+$(function() {
+var categoryjson=
+{ "Two-Door Coupe (3)": { "Acura (1)":{ "CL (1)":"CL" },"Hyundai (1)":{ "ELANTRA COUPE (1)":"ELANTRA COUPE" },"Mitsubishi (1)":{ "ECLIPSE (1)":"ECLIPSE" }},"Four-Door Sedan (16)": { "Acura (1)":{ "TL (1)":"TL" },"BMW (1)":{ "3-Series (1)":"3" },"Chevrolet (2)":{ "CRUZE (1)":"CRUZE", "IMPALA (1)":"IMPALA" },"Chrysler (1)":{ "SEBRING (1)":"SEBRING" },"Ford (3)":{ "FOCUS (2)":"FOCUS", "FUSION (1)":"FUSION" },"Mercury (1)":{ "MONTEGO (1)":"MONTEGO" },"Nissan (4)":{ "ALTIMA (3)":"ALTIMA", "VERSA (1)":"VERSA" },"Pontiac (1)":{ "G6 (1)":"G6" },"Saturn (1)":{ "AURA (1)":"AURA" },"Toyota (1)":{ "AVALON (1)":"AVALON" }},"Hatchback (3)": { "Nissan (1)":{ "VERSA (1)":"VERSA" },"Scion (1)":{ "TC (1)":"TC" },"Volkswagen (1)":{ "BEETLE (1)":"BEETLE" }},"Wagon (1)": { "Dodge (1)":{ "CALIBER (1)":"CALIBER" }},"Convertible (1)": { "Mercedes-Benz (1)":{ "CLK-Class (1)":"CLK" }},"Truck (7)": { "Chevrolet (1)":{ "SILVERADO (1)":"SILVERADO" },"Dodge (2)":{ "DAKOTA (1)":"DAKOTA", "RAM 1500 (1)":"RAM 1500" },"Ford (1)":{ "F-150 (1)":"F-150" },"GMC (1)":{ "SIERRA (1)":"SIERRA" },"Nissan (1)":{ "TITAN (1)":"TITAN" },"Ram (1)":{ "1500 (1)":"1500" }},"Minivan/Van (1)": { "Chrysler (1)":{ "TOWN (1)":"TOWN" }},"Sport/Utility (29)": { "Buick (1)":{ "ENCLAVE (1)":"ENCLAVE" },"Chevrolet (2)":{ "SUBURBAN (1)":"SUBURBAN", "TAHOE (1)":"TAHOE" },"Chrysler (1)":{ "ASPEN (1)":"ASPEN" },"Ford (9)":{ "EDGE (1)":"EDGE", "ESCAPE (2)":"ESCAPE", "EXPEDITION EL (1)":"EXPEDITION EL", "EXPLORER (5)":"EXPLORER" },"GMC (5)":{ "ACADIA (2)":"ACADIA", "TERRAIN (1)":"TERRAIN", "YUKON (2)":"YUKON" },"HUMMER (1)":{ "H3 (1)":"H3" },"Isuzu (1)":{ "RODEO (1)":"RODEO" },"Jeep (5)":{ "GRAND CHEROKEE (3)":"GRAND CHEROKEE", "PATRIOT (1)":"PATRIOT", "WRANGLER (1)":"WRANGLER" },"Land Rover (2)":{ "RANGE ROVER (2)":"RANGE ROVER" },"Mitsubishi (1)":{ "ENDEAVOR (1)":"ENDEAVOR" },"Subaru (1)":{ "OUTBACK (1)":"OUTBACK" }},"Undefined (3)": { "Chevrolet (1)":{ "SILVERADO (1)":"SILVERADO" },"Ford (2)":{ "FREESTAR (1)":"FREESTAR", "SUPER DUTY (1)":"SUPER DUTY" }}}
+var makejson={"Acura (2)":{ "CL (1)":"CL", "TL (1)":"TL" },"BMW (1)":{ "3-Series (1)":"3" },"Buick (1)":{ "ENCLAVE (1)":"ENCLAVE" },"Chevrolet (6)":{ "CRUZE (1)":"CRUZE", "IMPALA (1)":"IMPALA", "SILVERADO (2)":"SILVERADO", "SUBURBAN (1)":"SUBURBAN", "TAHOE (1)":"TAHOE" },"Chrysler (3)":{ "ASPEN (1)":"ASPEN", "SEBRING (1)":"SEBRING", "TOWN (1)":"TOWN" },"Dodge (3)":{ "CALIBER (1)":"CALIBER", "DAKOTA (1)":"DAKOTA", "RAM 1500 (1)":"RAM 1500" },"Ford (15)":{ "EDGE (1)":"EDGE", "ESCAPE (2)":"ESCAPE", "EXPEDITION EL (1)":"EXPEDITION EL", "EXPLORER (5)":"EXPLORER", "F-150 (1)":"F-150", "FOCUS (2)":"FOCUS", "FREESTAR (1)":"FREESTAR", "FUSION (1)":"FUSION", "SUPER DUTY (1)":"SUPER DUTY" },"GMC (6)":{ "ACADIA (2)":"ACADIA", "SIERRA (1)":"SIERRA", "TERRAIN (1)":"TERRAIN", "YUKON (2)":"YUKON" },"HUMMER (1)":{ "H3 (1)":"H3" },"Hyundai (1)":{ "ELANTRA COUPE (1)":"ELANTRA COUPE" },"Isuzu (1)":{ "RODEO (1)":"RODEO" },"Jeep (5)":{ "GRAND CHEROKEE (3)":"GRAND CHEROKEE", "PATRIOT (1)":"PATRIOT", "WRANGLER (1)":"WRANGLER" },"Land Rover (2)":{ "RANGE ROVER (2)":"RANGE ROVER" },"Mercedes-Benz (1)":{ "CLK-Class (1)":"CLK" },"Mercury (1)":{ "MONTEGO (1)":"MONTEGO" },"Mitsubishi (2)":{ "ECLIPSE (1)":"ECLIPSE", "ENDEAVOR (1)":"ENDEAVOR" },"Nissan (6)":{ "ALTIMA (3)":"ALTIMA", "TITAN (1)":"TITAN", "VERSA (2)":"VERSA" },"Pontiac (1)":{ "G6 (1)":"G6" },"Ram (1)":{ "1500 (1)":"1500" },"Saturn (1)":{ "AURA (1)":"AURA" },"Scion (1)":{ "TC (1)":"TC" },"Subaru (1)":{ "OUTBACK (1)":"OUTBACK" },"Toyota (1)":{ "AVALON (1)":"AVALON" },"Volkswagen (1)":{ "BEETLE (1)":"BEETLE" }};
+shouldreload = true;
+var options = { empty_value: 'null',
+choose: function(level) {
+if(level=="0")
+return 'Any Category';
+else if(level=="1")
+return 'Any Make';
+else if(level== "2")
+return 'Any Model';
+else
+return "Choose";
+}};
+$('input[name=selCategory]').optionTree(categoryjson, options)
+.change(function() {});
+$('input[name=selCategory_]').optionTree(makejson, options)
+.change(function() {});
+$("[name=selCategory__] option").each(function(){
+var myvar = "Jeep";
+var myoption = $(this).val();
+search = /myvar/gi;
+if(myoption.search(myvar) != -1){
+$('[name=selCategory__]').val(myoption);
+return false;
+}
+});//each option
+$("select[name=selCategory__]").change();
+$(document).on('change', "[name='selCategory_']", function(e){
+if($(this).val() == ''){
+$('input[name=selCategory_]').optionTree(makejson, options)
+.change(function() {});
+}
+var $newVal = replacePara($(this).val());
+$('#rcate').val($.trim($newVal));
+$('#rmake').val('');
+$('#rmodel').val('');
+if (shouldreload == true) { $('#invkey').val(''); }
+autoloader();
+});
+$(document).on('change', "[name='selCategory__']", function(e){
+var $newVal = replacePara($(this).val());
+$('#rmake').val($.trim($newVal));
+$('#rmodel').val('');
+if (shouldreload == true) { $('#invkey').val(''); }
+autoloader();
+});
+$(document).on('change', "[name='selCategory___']", function(e){
+var $newVal = replacePara($(this).val());
+$('#rmodel').val($.trim($newVal));
+if (shouldreload == true) { $('#invkey').val(''); }
+autoloader();
+});
+$('#invkey').keyup(function () {
+shouldreload = false;
+$("select[name=selCategory_]").val('');
+$("select[name=selCategory_]").change();
+shouldreload = true;
+});
+function autoloader(){
+if (shouldreload==true) {
+$('#dvLoading').show(0)
+$('#inv-search').submit();
+}
+}
+$(document).on('change', "[name='highprice']", function(e){ autoloader(); });
+$(document).on('change', "[name='mileage']", function(e){ autoloader(); });
+$(document).on('change', "[name='rsort']", function(e){ autoloader(); });
+function replacePara(str){
+var intRegex = /\d+/gi;
+if(intRegex.test(str)){
+str =
+str.replace(/\(+\d+\)/, '');
+}else{
+// 	alert('not');
+}
+return str;
+}
+});
+No Max Mileage
+No Max Price
+Under
+$17,000 (4) Under
+$7,000 (3) Under
+$4,000 (1)
+Sort make/model
+miles (low to high)
+miles (high to low)
+price (low to high)
+price (high to low)
+year (low to high)
+year (high to low)
+or
+5 records matched your criteria.
+2000 Jeep Grand Cherokee 4WD Laredo
+(816) 598-1286
+35 pictures
+Exterior : GOLDMileage : 198,895Transmission : AutomaticEngine : V8, 4.7 LiterDrive Type : 4WDMPG : 15 City / 19 HWY
+Stock : 375441VIN : 1J4GW48N5YC375441
+City : 15Hwy : 19
+Sale Price :
+$3,250
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=2995595",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/2995595_x640_01.jpg",
+"name": "2000 Jeep Grand Cherokee 4WD Laredo",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2000,
+"manufacturer": "Jeep",
+"model": "Grand Cherokee 4WD Laredo",
+"offers": {
+"@type": "Offer",
+"price": "3250",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2001 Jeep Grand Cherokee 4WD Limited
+(816) 598-1286
+35 pictures
+Exterior : SilverMileage : 216,000Transmission : AutomaticEngine : V8, 4.7 LiterDrive Type : 4WDMPG : 15 City / 19 HWY
+Stock : 637969VIN : 1J4GW58N51C637969
+City : 15Hwy : 19
+CALL FOR PRICE
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3008525",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3008525_x640_01.jpg",
+"name": "2001 Jeep Grand Cherokee 4WD Limited",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2001,
+"manufacturer": "Jeep",
+"model": "Grand Cherokee 4WD Limited"
+}
+2006 Jeep Grand Cherokee 4WD Limited
+(816) 598-1286
+39 pictures
+Exterior : blueMileage : 185,231Transmission : AutomaticEngine : V8, HEMI, 5.7 LiterDrive Type : 4WD
+Stock : 181786VIN : 1J8HR58276C181786
+Sale Price :
+$6,797
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=2988334",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/2988334_x640_01.jpg",
+"name": "2006 Jeep Grand Cherokee 4WD Limited",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2006,
+"manufacturer": "Jeep",
+"model": "Grand Cherokee 4WD Limited",
+"offers": {
+"@type": "Offer",
+"price": "6797",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2012 Jeep Patriot 4WD Latitude
+(816) 598-1286
+45 pictures
+Exterior : RedMileage : 111,204Transmission : CVT AutomaticEngine : 4-Cyl, 2.4 LiterDrive Type : 4WDMPG : 22 City / 28 HWY
+Stock : 556527VIN : 1C4NJRFB5CD556527
+City : 22Hwy : 28
+Sale Price :
+$6,977
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=2895258",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/2895258_x640_01.jpg",
+"name": "2012 Jeep Patriot 4WD Latitude",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2012,
+"manufacturer": "Jeep",
+"model": "Patriot 4WD Latitude",
+"offers": {
+"@type": "Offer",
+"price": "6977",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+2008 Jeep Wrangler Unlimited Rubicon
+(816) 598-1286
+39 pictures
+Exterior : REDMileage : 138,625Transmission : AutomaticEngine : V6, 3.8 LiterDrive Type : 4WDMPG : 15 City / 19 HWY
+Stock : 589005VIN : 1J4GA69168L589005
+City : 15Hwy : 19
+Sale Price :
+$16,977
+View Details
+Check Availability
+Finance Application
+We Finance!
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle?vid=3016615",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3016615_x640_01.jpg",
+"name": "2008 Jeep Wrangler Unlimited Rubicon",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": 2008,
+"manufacturer": "Jeep",
+"model": "Wrangler Unlimited Rubicon",
+"offers": {
+"@type": "Offer",
+"price": "16977",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"email": "mailto:mjmunsterman@yahoo.com",
+"address": "609 SW State Route 7"
+}
+}
+}
+var referrer = ""; // Add referrer here
+var cswButt0n=setInterval(function(){window.CarStory&&(clearInterval(cswButt0n),CarStory.buildButtons({referrer:referrer||null,useNoConflict:!0}))},100),cb=function(){var e=document.createElement("link");e.rel="stylesheet",e.href="//widget.carstory.com/v1.0/no-click-button.css";var t=document.getElementsByTagName("head")[0];t.parentNode.insertBefore(e,t)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);
+Navigation
+Home
+Inventory
+Find Your Car
+Sell Your Car
+Financing
+Testimonials
+Loyalty Program
+Car of the Week
+Contact Us
+Meet the Team
+Contact Us
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+an auto dealer website | sitemap

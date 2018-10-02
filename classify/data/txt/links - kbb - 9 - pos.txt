@@ -1,0 +1,1133 @@
+window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"e150c23afa","applicationID":"124397746,97445382","transactionName":"ZFFVNUoAWUVXUUBRXF0bejd7TnNTQlNdVEBwW1kVSg5bWlNAG1FdV1FP","queueTime":0,"applicationTime":302,"agent":"","atts":""}window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);
+Used 2012 FIAT 500 Pop Hatchback for sale in CORPUS CHRISTI, TX 78416 | Kelley Blue Book
+window.moatYieldReady = function () {
+if (KBB.Moat) {
+KBB.Moat.setMoatReady(true);
+KBB.Moat.executeMoatQueue();
+}
+};
+var KBB = KBB || {};
+KBB.GigyaUrls = {
+finalizeRegistration: '',
+SavedVehicles: '/global/getmykbbsavedvehicledata/',
+RecentlyViewed: '/global/recentlyviewed/',
+YouMightAlsoLike: '/global/youmightalsolike/',
+MostResearched: '/global/mostresearched/',
+SavedComparison: '/global/getmykbbsavedcomparisondata/',
+SavedLeads: '/global/getsavedleads/',
+SetRecentlyViewed: '/global/_setrecentlyviewed/',
+GetRecentlyViewedVehicleData: '/global/_getrecentlyviewedvehicledata/',
+GetAccountInfo: 'global/getaccountinfo'
+};
+KBB.MyKbb = KBB.MyKbb || {};
+KBB.MyKbb.Urls = {
+verifyListingUrl: '/cosmic/_getsaveditemsdata/?listingid=494748668&amp;totalresults=239&amp;index=2&amp;vehicleid=360966&amp;year=2012&amp;distance=none&amp;atcmake=fiat&amp;atcmodel=500&amp;searchtype=used&amp;persistdata=true&amp;includelistings=true&amp;maxlistings=5&amp;_=1538502783658'
+}
+var pageId = "";
+var s_account = "kbbmain";
+var globalOrd = (Math.random() * 10000000000000000).toFixed(0);
+var baseScriptPath = "//s1.kbb.com";
+var assemblyVersion = "3.9.202.0";
+var dataVersionId = "66758";
+var testid = ""; //test creative ids
+var isMyKBBUser = false;
+var ssId = ""; // populated by setupSessionData in KBB.Page.js
+var globalTile = 0;
+var adTiles = {};
+var validateZipUrl
+= "/zipcode/validate/";
+var validateGetZipInfoUrl
+= "/zipcode/getzipinfo/";
+var validateGetZipInfoByLLUrl
+= "/zipcode/getzipinfobylatlong/";
+var getKbbInternationalSitesMessageUrl = "/zipcode/getkbbinternationalsitesmessage/";
+var getAkamaiCountryCodeUrl = "/zipcode/getakamaicountrycode/";
+var errorJsLogging = true;
+var KBB = KBB || {};
+KBB.DataLayer = KBB.DataLayer || [];
+try {
+if (KBB.DataLayer.length >= 5) {
+KBB.DataLayer.splice (0, 1);
+}
+var data = "%7b%22server%22%3a%22WIN-TSKXRXUFEHV%22%2c%22environment%22%3a%22prod%22%2c%22area%22%3a%22classifieds%22%2c%22controller%22%3a%22details%22%2c%22action%22%3a%22index%22%2c%22currentview%22%3a%22classifiedsdetails%22%2c%22viewtype%22%3a%22%22%2c%22pageinstance%22%3a%22%22%2c%22trackingid%22%3a%22%22%2c%22dynamictracking%22%3afalse%2c%22isprintablepage%22%3afalse%2c%22sessionid%22%3a%22%22%2c%22kbbvisitorid%22%3a%22%22%2c%22flippers%22%3a%7b%22feedbacktab%22%3afalse%2c%22disable_write_review%22%3afalse%2c%22gigyasharing%22%3atrue%2c%22jserrorlogging%22%3atrue%2c%22classifiedsdisablewidgetcounts%22%3afalse%2c%22logzipcodeerrors%22%3atrue%2c%22disableloanrateswebservice%22%3afalse%2c%22clicktalenewcarpath%22%3afalse%2c%22testandtarget%22%3atrue%2c%22newcarstrendingnow%22%3atrue%2c%22mobileonthelot%22%3afalse%2c%22customersatisfactionsurvey%22%3atrue%2c%22appdynamicseum%22%3afalse%2c%22values_strategy%22%3atrue%2c%22hpcombinedslptest%22%3afalse%2c%22testakamairesize%22%3afalse%2c%22gpt%22%3atrue%2c%22ownerslpabthree%22%3atrue%2c%22hprefresh%22%3atrue%2c%22mobilepriceadvisor%22%3afalse%2c%22psclientrecentlyviewed%22%3afalse%2c%22gptphase1test%22%3afalse%2c%22highlightadboostfdpq%22%3afalse%2c%22incentivesoempilot%22%3afalse%2c%22classifiedscpointernalad%22%3atrue%2c%22classifiedslimitedlistingsasync%22%3atrue%2c%22highlightunsolddisabled%22%3afalse%2c%22mobiledealerpages%22%3afalse%2c%22mobilenewcarpriceadvisor%22%3afalse%2c%22tntstandard%22%3atrue%2c%22partnerchallenge%22%3atrue%2c%22incentivesonglobalmobile%22%3afalse%2c%22feature%20name%22%3atrue%2c%22globalmobilenav%22%3atrue%2c%22autocheckucvdp%22%3atrue%2c%22showautocheckmoduletile%22%3atrue%2c%22gptnonsraoverride%22%3atrue%2c%22wallpaperfirst%22%3afalse%2c%22showautocheckmoduletilenoupgrades%22%3atrue%2c%22gptcombinedslp%22%3afalse%2c%22sponsoredmodelpage%22%3atrue%2c%22m1tabletclassifieds%22%3afalse%2c%22issearchenginetypesolr%22%3atrue%2c%22similarvehiclesbuynewymmt%22%3afalse%2c%22similarvehiclesymm%22%3atrue%2c%22oemincentivesusebypassdata%22%3afalse%2c%22m1targetedoffers%22%3atrue%2c%22isadblock%22%3atrue%2c%22m1charger%22%3afalse%2c%22rendervdponnewframework%22%3afalse%2c%22chargerdealadvisor%22%3afalse%2c%22disablemegaconstraintlogging%22%3atrue%2c%22homepagevideomodule%22%3afalse%2c%22geolookuplogging%22%3afalse%2c%22geolookupgoogleapi%22%3afalse%2c%22classifiedsgptinlineads%22%3atrue%2c%22m1chargeruc%22%3afalse%2c%22facebookpixel%22%3atrue%2c%22mpgtabadloadasdynamic%22%3atrue%2c%22adobedtm%22%3atrue%2c%22whitelistoverlay%22%3atrue%2c%22loggooglesearchapicalls%22%3afalse%2c%22enableusedcarhighlight%22%3atrue%2c%22enablesponsoredchip%22%3afalse%2c%22m1combineslp%22%3afalse%2c%22m1lockedads%22%3afalse%2c%22whitelistdev%22%3afalse%2c%22facebookfeeddisabled%22%3afalse%2c%22mobilerecommendations%22%3afalse%2c%22publisherstudypixel%22%3atrue%2c%22xtag%22%3afalse%2c%22includepixallscript%22%3atrue%2c%22kbbrum%22%3atrue%2c%22hyundaifloodlightoff%22%3afalse%2c%22vehicleadvisor%22%3afalse%2c%22targetedincentivesnewdesign%22%3afalse%2c%22newsepsrp%22%3afalse%2c%22applewallet%22%3afalse%2c%22enableoptimizedshowroom%22%3atrue%2c%22hpredesign%22%3atrue%2c%22demdex%22%3atrue%2c%22toyotacentralredesign%22%3atrue%2c%22bycwebapi%22%3atrue%2c%22m1desktoptopten%22%3afalse%2c%22m1tablettopten%22%3afalse%2c%22m1smartphonetopten%22%3afalse%2c%22vehicleadvisormm%22%3afalse%2c%22shellapptrafficredirect%22%3afalse%2c%22displaydealerspecials%22%3atrue%2c%22vdpratingsandreviews%22%3afalse%2c%22newmmymm%22%3atrue%2c%22maintenancemode%22%3afalse%2c%22drpaymentcalc3%22%3afalse%2c%22newsave%22%3afalse%2c%22displayownerhub%22%3atrue%2c%22aemnavfooter%22%3atrue%2c%22ucmcupdates%22%3afalse%2c%22kbbinternationalsitesmessage%22%3atrue%2c%22usedcarredesigndealadvisor%22%3afalse%2c%22awstestinprogress%22%3atrue%2c%22faqresponsive%22%3atrue%2c%22latestnewsamp%22%3atrue%2c%22classifiedsboost%22%3atrue%2c%22displayownerexitstitial%22%3atrue%2c%22icoreactthrottle%22%3atrue%2c%22icoreactredirect%22%3atrue%2c%22ownersico%22%3atrue%2c%22abtestpoc%22%3afalse%2c%22displayexitstitial%22%3atrue%2c%22enablenrum%22%3atrue%2c%22icoconditionredesign%22%3afalse%2c%22ymmredo%22%3atrue%2c%22aatest%22%3atrue%2c%22owners18%22%3atrue%2c%22responsivebuyerspath%22%3afalse%2c%22enabledr%22%3atrue%2c%22showtabprices%22%3afalse%2c%22resncymmt%22%3atrue%2c%22ucymmtupdates%22%3afalse%2c%22toyotacentraloff%22%3atrue%2c%22ownersicologvalidationerrors%22%3afalse%2c%22showtil%22%3atrue%2c%22logstylesoverride%22%3afalse%2c%22logdiffstylesoverride%22%3afalse%2c%22contactskiplink%22%3afalse%2c%22enablebidding%22%3atrue%2c%22needsandwants%22%3atrue%2c%22fnav%22%3atrue%2c%22newmykbb%22%3atrue%2c%22enablerecall%22%3afalse%2c%22carreviewsresp%22%3atrue%2c%22carresearchresp%22%3atrue%2c%22tilpmodals%22%3atrue%2c%22feature.tilpmodals%22%3afalse%2c%22enableamzbid%22%3atrue%2c%22enableprebid%22%3afalse%2c%22enablemoat%22%3atrue%2c%22consrevresp%22%3atrue%2c%22bzo%22%3atrue%2c%22enablepsp%22%3atrue%7d%2c%22leadtype%22%3a%22%22%2c%22comparevehicleids%22%3a%22%22%2c%22sponsorship%22%3a%7b%22sponsoredcategorymanufacturerid%22%3a%22%22%2c%22sponsoredmanufacturerids%22%3a%22%22%7d%2c%22location%22%3a%7b%22zip%22%3a%22%22%2c%22city%22%3a%22%22%2c%22state%22%3a%22%22%2c%22county%22%3a%22%22%2c%22statecounty%22%3a%22%22%2c%22statesubcounty%22%3a%22%22%2c%22dma%22%3a%22%22%2c%22akamaizip%22%3a%22%22%2c%22akamaizipcodeall%22%3a%22%22%2c%22akamaistatecounty%22%3a%22%22%2c%22akamaistatesubcounty%22%3a%22%22%2c%22akamaidma%22%3a%22%22%7d%2c%22targetexperience%22%3a%22%22%2c%22device%22%3a%7b%22ismobiledevice%22%3afalse%2c%22issmartphone%22%3afalse%2c%22istablet%22%3afalse%7d%2c%22nativeapps%22%3a%7b%22experience%22%3a%22browser%22%2c%22os%22%3a%22windows%207%22%2c%22device%22%3a%22unk%22%2c%22version%22%3a%22%22%7d%2c%22info%22%3a%7b%22odometer%22%3a%22%22%2c%22fueleconomy%22%3a%22%22%2c%22mileage%22%3a%22%22%2c%22intent%22%3a%22buy-used%22%2c%22subintent%22%3a%22%22%2c%22pricingreporttype%22%3a%22buyused%22%2c%22vehicleclass%22%3a%22usedcar%22%2c%22vehicletype%22%3a%22%22%2c%22pricetype%22%3a%22%22%2c%22shortpricetype%22%3a%22%22%2c%22condition%22%3a%22%22%2c%22shortcondition%22%3a%22%22%2c%22shortcategory%22%3a%22cpe%22%2c%22subcategory%22%3a%22sml%22%2c%22subcategoryname%22%3a%22subcompact%20car%22%2c%22category%22%3a%22coupe%22%2c%22categoryid%22%3a2505%2c%22btcategory%22%3a%22coupe%22%2c%22yearid%22%3a2012%2c%22modelyearid%22%3a%22%22%2c%22manufacturer%22%3a%7b%22id%22%3a430%2c%22name%22%3a%22FIAT%22%2c%22shortname%22%3a%22fiat%22%2c%22shortnameabbr%22%3a%22fiat%22%2c%22pickode%22%3a%22%22%2c%22atcname%22%3a%22%22%7d%2c%22model%22%3a%7b%22id%22%3a10861%2c%22name%22%3a%22500%22%2c%22shortname%22%3a%22500%22%2c%22marketname%22%3a%22%22%2c%22shortmarketname%22%3a%22%22%2c%22atcname%22%3a%22%22%7d%2c%22vehicle%22%3a%7b%22id%22%3a360966%2c%22name%22%3a%22%22%2c%22trimdisplayname%22%3a%22500%20Pop%20Hatchback%202D%22%2c%22primarycategory%22%3a%22Hatchback%22%2c%22taggingprice%22%3a%226342%5e%5e7326%22%2c%22price%22%3a%22%22%2c%22defaultprice%22%3a%22%22%2c%22mpgcity%22%3a%22%22%2c%22mpghwy%22%3a%22%22%2c%22mpgrangelow%22%3a%22%22%2c%22mpgrangehigh%22%3a%22%22%2c%22chromeid%22%3a331527%7d%2c%22mileagerange%22%3a%22%22%2c%22mileagerangelow%22%3a%22%22%2c%22mileagerangehigh%22%3a%22%22%2c%22exteriorcolor%22%3a%22%22%7d%2c%22aem%22%3a%7b%22name%22%3a%22%22%2c%22keyvalues%22%3a%7b%7d%7d%2c%22classifiedsinfo%22%3a%7b%22listing%22%3a%7b%22expired%22%3afalse%2c%22vin%22%3a%223C3CFFAR2CT120633%22%2c%22manufacturername%22%3a%22FIAT%22%2c%22mileage%22%3a49494%2c%22engine%22%3a%224-Cylinder%22%2c%22price%22%3a7326.0%2c%22displaypriceadvisor%22%3atrue%2c%22odometer%22%3a%2249494%20mi%22%2c%22fueleconomy%22%3a%2227%20mpg%20city%2c%2034%20mpg%20hwy%22%2c%22id%22%3a494748668%2c%22displayprice%22%3a7326.0%2c%22digitalretail%22%3a%22nondigitalretail%22%2c%22exteriorcolor%22%3a%22Argento%20(Silver)%22%7d%2c%22search%22%3anull%2c%22atcmakecode%22%3a%22FIAT%22%2c%22atcmodelcode%22%3a%22FIAT500%22%2c%22tab%22%3a%22details%22%2c%22listingtype%22%3a%22Used%22%2c%22dealernotfound%22%3afalse%2c%22dealerid%22%3a70348697%2c%22chromeid%22%3a331527%2c%22dealerwebsite%22%3a%22http%3a%2f%2fwww.allensamuelsccchevy.com%2f%3futm_source%3dKBB%26utm_medium%3dwebsite%22%2c%22minyear%22%3a1981%2c%22maxyear%22%3a2020%7d%2c%22omniture%22%3a%7b%22account%22%3a%22kbbmain%22%2c%22supersectionname%22%3a%22%22%2c%22sectionname%22%3a%22%22%2c%22pagename%22%3a%22%22%2c%22detailpagename%22%3a%22%22%2c%22previouspagename%22%3a%22%22%2c%22pageversion%22%3a%22r%22%2c%22pagecontentversion%22%3a%22%22%2c%22sitecatalystid%22%3a%22%22%2c%22intent%22%3a%22buyused%22%2c%22subintent%22%3a%22none%22%2c%22testid%22%3a%22%22%2c%22visitorid%22%3a%22%22%7d%2c%22ads%22%3a%7b%22dyn%22%3a%22%22%2c%22environment%22%3a%22prod%22%2c%22cid%22%3a%22%22%2c%22unknown%22%3a%22%22%2c%22pl%22%3a%22md%22%2c%22uuid%22%3a%22%22%2c%22azne%22%3a%22%22%2c%22dma%22%3a%22corpus_christi%22%2c%22mke%22%3a%22fiat%22%2c%22classifiedsinlineadnetworkid%22%3a%2218353239%22%2c%22classifiedsinlineadlocation%22%3a%22kbb%22%2c%22ncmpgtab%22%3afalse%2c%22ncoemtab%22%3afalse%2c%22sponsoredrcm%22%3afalse%2c%22ignorewhitelistoverlay%22%3afalse%7d%2c%22filters%22%3a%7b%22maxprice%22%3a%22%22%2c%22minprice%22%3a%22%22%7d%2c%22paidsearch%22%3a%7b%22paidsearchid%22%3a%22%22%2c%22searchignitetrackingid%22%3a%22%22%7d%2c%22search%22%3a%7b%22criteria%22%3a%22year%7csearchtype%7cmakemodel%22%2c%22criteriavalues%22%3a%222012%7cused%7cfiat%20500%22%2c%22resultsetinfo%22%3a%22%22%2c%22resulttotal%22%3a%22%22%2c%22resultdetailsearchtype%22%3a%22used%22%2c%22resultsearchtype%22%3a%22used%22%7d%2c%22incentives%22%3a%7b%22useajaxbeforeomniture%22%3afalse%2c%22usenewadaptivedesign%22%3afalse%2c%22incentiveid%22%3a%22%22%2c%22offerid%22%3a0%2c%22referringmakeid%22%3a0%2c%22referringmodelid%22%3a0%2c%22incentivepitriggeredscenario%22%3a%22%22%2c%22incentivepitriggereditem%22%3a%22%22%2c%22incentivepiintendertype%22%3a%22%22%2c%22vehiclesegmentid%22%3a0%2c%22akamaigeolocation%22%3a%22georegion%3d33%2ccountry_code%3dbr%2cregion_code%3dpe%2ccity%3drecife%2clat%3d-8.05%2clong%3d-34.90%2ctimezone%3dgmt-2%2ccontinent%3dsa%2cthroughput%3dvhigh%2cbw%3d5000%2casnum%3d1916%2clocation_id%3d0%22%7d%2c%22timbuybook%22%3a%7b%22lp%22%3a%22%22%2c%22offercode%22%3a%22%22%2c%22icoofferid%22%3a%22%22%7d%2c%22routes%22%3a%7b%22shopperprofiles%22%3a%22%2fvehicles%2fservices%2fshopperprofiles%2f%22%7d%2c%22url%22%3a%7b%22canonicalurl%22%3a%22%2fcars-for-sale%2f494748668%2f%22%2c%22requestedurl%22%3a%22http%3a%2f%2fwww.kbb.com%2fcars-for-sale%2f494748668%2f%3ftotalresults%3d239%26index%3d2%26vehicleid%3d360966%26year%3d2012%26distance%3dnone%26atcmake%3dfiat%26atcmodel%3d500%26searchtype%3dused%26persistdata%3dtrue%26includelistings%3dtrue%26maxlistings%3d5%26_%3d1538502783658%22%2c%22queryrequestedurl%22%3a%22%22%2c%22isssl%22%3atrue%2c%22protocol%22%3a%22https%22%2c%22referrer%22%3a%22%22%2c%22absolutehost%22%3a%22www.kbb.com%22%7d%2c%22user%22%3a%7b%22isauthenticated%22%3afalse%7d%2c%22diagnostics%22%3a%7b%22server%22%3a%22WIN-TSKXRXUFEHV%22%2c%22dataversionid%22%3a66758%2c%22contentlastupdateddate%22%3a%229%2f25%2f2018%208%3a00%3a42%20AM%22%2c%22sourcecontrolversion%22%3a%223.9.202.0%22%2c%22assemblyversion%22%3a%223.9.202.0%22%2c%22newcarvehicletransactionsetlcreateddate%22%3a%229%2f25%2f2018%205%3a09%3a48%20PM%22%2c%22newcarvehicletransactionslatesttransactiondate%22%3a%229%2f22%2f2018%2012%3a00%3a00%20AM%22%2c%22usedcarvesion%22%3a%7b%22vehicletype%22%3a%22UsedCar%22%2c%22editionbeginmonth%22%3a10%2c%22editionendmonth%22%3a10%2c%22editionyear%22%3a2018%2c%22versionnumber%22%3a%2218100%22%2c%22startdate%22%3a%222018-09-28T00%3a00%3a00%22%2c%22enddate%22%3a%222018-10-04T00%3a00%3a00%22%7d%2c%22newcarvesion%22%3a%7b%22vehicletype%22%3a%22New%20Car%22%2c%22editionbeginmonth%22%3a0%2c%22editionendmonth%22%3a0%2c%22editionyear%22%3a0%2c%22versionnumber%22%3a%22181000%22%2c%22startdate%22%3a%222018-09-28T00%3a00%3a00%22%2c%22enddate%22%3a%222018-10-04T00%3a00%3a00%22%7d%2c%22motorcyclecarvesion%22%3a%7b%22vehicletype%22%3a%22Motorcycle%22%2c%22editionbeginmonth%22%3a9%2c%22editionendmonth%22%3a12%2c%22editionyear%22%3a2018%2c%22versionnumber%22%3a%223%22%2c%22startdate%22%3a%222018-09-01T00%3a00%3a00%22%2c%22enddate%22%3a%222018-12-31T00%3a00%3a00%22%7d%7d%2c%22pageid%22%3a%22ef38675e-6125-48ca-b647-fb343bd66e67%22%2c%22latestawardsyears%22%3a%7b%22brva%22%3a2018%2c%22cto%22%3a2018%2c%22bia%22%3a2018%7d%2c%22foresee%22%3a%7b%22desktop%22%3a10.0%2c%22tablet%22%3a10.0%2c%22smartphone%22%3a10.0%7d%2c%22ismobilefriendlypage%22%3afalse%2c%22ignorefreeviewrule%22%3afalse%2c%22displayzipcodeoverlay%22%3afalse%2c%22usezipcodebyip%22%3afalse%2c%22surveycookie%22%3a%7b%22cookiename%22%3a%22GLGJSY%22%2c%22cookieexpiration%22%3a14%7d%2c%22requiresauthentication%22%3afalse%2c%22ismobilefirstlayout%22%3atrue%2c%22ansid%22%3a%22n2zswbo1xdomtgc22mvwa4iz%22%2c%22pixall%22%3a%7b%7d%2c%22awardscategory%22%3a%22%22%2c%22awardsyear%22%3a0%7d"
+KBB.DataLayer.push (JSON.parse(decodeURIComponent(data)));
+} catch (err) {
+}
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+// initialize apstag
+apstag.init({
+pubID: '3726',
+adServer: 'googletag',
+bidTimeout: 2e3
+});
+KBB.Page.setupPage();
+//FacebookPixel
+var dataLayer=KBB.Page.getDataLayer();if(dataLayer.dynamictracking||dataLayer.flippers.facebookpixel){!function(e,a,t,n,o,r,i){e.fbq||(o=e.fbq=function(){o.callMethod?o.callMethod.apply(o,arguments):o.queue.push(arguments)},e._fbq||(e._fbq=o),o.push=o,o.loaded=!0,o.version="2.0",o.queue=[],r=a.createElement(t),r.async=!0,r.src=n,i=a.getElementsByTagName(t)[0],i.parentNode.insertBefore(r,i))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js"),fbq("init","1511218289206949"),fbq("track","PageView");var pageName=dataLayer.omniture.pagename;"classdetailused"===pageName||"classdetailnew"===pageName?fbq("track","AddToCart",{content_type:"product",content_ids:dataLayer.info.vehicle.id,value:dataLayer.classifiedsinfo.listing.displayprice,content_name:dataLayer.info.yearid+"/"+dataLayer.info.manufacturer.shortname+"/"+dataLayer.info.model.shortname,currency:s.currencyCode,zip:dataLayer.location.zip,content_category:dataLayer.info.shortcategory}):("ymmtrimnewovr_buynew"===pageName||"ncmodelmain-touch"===pageName)&&fbq("track","ViewContent",{content_ids:dataLayer.info.vehicle.id,make:dataLayer.info.manufacturer.shortname,model:dataLayer.info.model.shortname,content_category:dataLayer.info.shortcategory,condition:"new",content_type:"product"})}
+!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js"); pintrk('load','2617178677535'); pintrk('page');
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"url": "https://www.kbb.com/",
+"legalName": "Kelley Blue Book",
+"alternateName":
+"KBB",
+"logo": "https://file.kbb.com/kbb/images/m1/kbblogo.v1.png",
+"sameAs": [
+"https://www.facebook.com/kbb/","https://twitter.com/KelleyBlueBook", "https://plus.google.com/+kbb", "https://www.pinterest.com/kelleybluebook/", "https://www.linkedin.com/company/kelley-blue-book", "https://www.youtube.com/user/kbb", "https://www.instagram.com/kbb_com/"
+]
+}
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"name": "Kelley Blue Book",
+"alternateName":
+"KBB",
+"url": "https://www.kbb.com/"
+}
+var KBB=KBB||{};KBB.DetectBlockerExtensions=function(){"use strict";var e={onBlock:"on-block",onHide:"on-hide",off:"off"},t="New-spotlights",n=null,o={},i=e.off,l=null,u=0,d=0,r=3,c=10,a=function(e,t){return void 0!==e.currentStyle?e.currentStyle[t]:getComputedStyle(e,null)[t]},s=function(e){return 0!==e.clientHeight},m=function(e){var t=getComputedStyle(e,null);return null!==t&&(t=t.getPropertyValue("-moz-binding")),!!t&&-1!==t.indexOf("about:")},g=function(){document.body.contains(n)&&(o.visibility=n?a(n,"visibility"):null,o.display=n?a(n,"display"):null,o.height=n?s(n):null,o.moz=n?m(n):null)},f=function(){i="hidden"===o.visibility||"none"===o.display?e.onHide:n.getAttribute("abp")?e.onHide:o.height?e.off:e.onHide},B=function(){KBB.Page.trigger(KBB.Page.Events.AbbComplete),document.body.classList.add(i);var e=document.getElementById("ac");e.parentNode.removeChild(e);var t=document.getElementById("ab");t.parentNode.removeChild(t)},y=function(){n=document.getElementById(t),u+=1,g(),f(),u<c?setTimeout(y,100):(d+=1,i===e.onBlock||i===e.onHide?B():d<r?(u=0,setTimeout(y,100)):B())},b=function(){var e=document.createElement("div");e.innerHTML="?",e.setAttribute("id",t),e.className="ad-med-rec gpt-ad",document.getElementById("ac").appendChild(e)};return{elementStatus:o,startDetection:function(){b(),l=KBB.storage.getFromLocalStorage("eVar61"),y()},getCurrentStatus:function(){return i}}}();
+s.eVar76 = KBB.Page.getDataLayer().location.akamaizip; s.eVar84 = KBB.Page.getDataLayer().location.akamaizipcodeall;
+mboxCreate("kbb_global_top", "pagename=" + KBB.DataLayer[0].omniture.pagename);
+KBB.Ads.showAd('kbbAdsMainWallpaper');
+Home
+Car Values
+New & Used Car Prices
+Trade-in & Private Party Values
+Instant Cash Offer
+Cars for Sale
+Search Local Inventory
+Sell Your Car
+Free Dealer Price Quote
+Vehicle History Report
+Find Local Dealers
+Car Reviews
+KBB Expert Reviews
+New Car Buyer's Guide
+Consumer Reviews
+Safety & Quality Ratings
+Awards & Top 10s
+Top 10 Lists
+KBB Awards
+New Car Buyer's Guide
+Latest Car News
+Auto Show News
+Research Tools
+Compare Cars
+Payment Calculator
+Vehicle History Report
+5-Year Cost to Own
+Vehicle Search Tool
+Car Loans
+Insurance
+Check My Credit
+Extended Warranty
+MyKBB
+Welcome
+My Account
+Sign Out
+Vehicle I Own (0)
+Saved Vehicles (0)
+ZIP Code:
+| Change
+MyKBB
+Sign In
+Don't Have an Account?
+Use MyKBB to save vehicles, track listings, compare cars and access your content from any device.
+Create Account
+Saved Vehicles (0)
+ZIP Code:
+| Change
+Sign Up for MyKBB
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three"></h3>
+<div class="paragraph-two">
+Must be a minimum of six characters. Passwords are case sensitive.
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+I acknowledge that I have read and accept the Terms of Service.
+I'd like to receive useful tips, tools and resources via email from Kelley Blue Book and affiliates.
+Privacy Policy
+I already have an account
+You've created your personalized KBB Profile!
+Now you can start saving your car research and get customized car recommendations.
+Click on a link below to start.
+My Recently Viewed Cars
+My Profile
+Enter Your ZIP Code
+Please enter a valid 5-digit ZIP code.
+Location:
+Save
+Kelley Blue Book® Values and pricing are based in part on transactions in your area. Your ZIP code also helps us find local deals and highlight other available offers.
+Privacy Policy
+|
+Values outside the United States
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">Enter Your ZIP Code</h3>
+<div class="paragraph-two">
+<div>
+<div id="zipcodeError" class="hidden error-message-label vertical-spacing-margin-top">Please enter a valid 5-digit ZIP code.</div>
+<div id="zipcodeForm" class="zipcode-form vertical-spacing-margin-top paragraph-two">
+<label for="zipcode" class="zipcode-form-pad-right">ZIP Code:</label>
+<input id="zipcodeInput" class="textbox-one zipcode-form-pad-right" type="tel" maxlength="5" pattern="\d*" title="ZIP Code" />
+<button id="zipcodeSave" class="button-one zipcode-form-pad-right">Save</button>
+</div>
+<div class="vertical-spacing-margin-top paragraph-two">
+<p>Kelley Blue Book® Values and pricing are based in part on transactions in your area. Your ZIP code also helps us find local deals and highlight other available offers.</p>
+</div>
+<div id="zipcodePrivacyPolicy" class="vertical-spacing-margin-top paragraph-two">
+<a class="privacy-policy" href="/company/privacy-policy/" target="_blank" rel="nofollow">Privacy Policy</a>
+</div>
+<div id="valuesOutsideUSA" class="vertical-spacing-margin-top paragraph-two">
+<a href="/company/valuesoutsideus/" rel="nofollow" onclick="window.open(this.href,'','height=480,width=450,top=50,left=50,scrollbars=1,toolbar=no');return false;">
+Values outside the United States
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+﻿
+﻿
+Saved Vehicles
+Recently Viewed
+You've added your first car!As you save even more cars and classified listings, find them here for easy reference.
+Got It
+Vehicle Added
+Vehicle Removed
+Limit Reached
+(function() { 'use strict'; KBB.Page.addAnalyticsClickOnlyTags([{type: 'click', selector: '#navToHome', partner: 'nx', tag: function() {return 'home_global'}},{type: 'click', selector: '#navToCarValues', partner: 'nx', tag: function() {return 'carvalues_global-values'}},{type: 'click', selector: '#navToCarValuesnavToNewUsedCarPrices', partner: 'nx', tag: function() {return 'buy_global-values'}},{type: 'click', selector: '#navToCarValuesnavToTradeinPrivatePartyValues', partner: 'nx', tag: function() {return 'mycarworth_global-values'}},{type: 'click', selector: '#navToCarValuesnavToInstantCashOffer', partner: 'buybook', tag: function() {return 'ico_global-values'}},{type: 'click', selector: '#navToCarsForSale', partner: 'nx', tag: function() {return 'inv_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToSearchLocalInventory', partner: 'nx', tag: function() {return 'invsearch_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToSellYourCar', partner: 'nx', tag: function() {return 'selltool_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToFreeDealerPriceQuote', partner: 'nx', tag: function() {return 'fdpq_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToVehicleHistoryReport', partner: 'nx', tag: function() {return 'vehhist_global-class'}},{type: 'click', selector: '#navToCarsforSalenavToFindLocalDealers', partner: 'nx', tag: function() {return 'finddlr_global-class'}},{type: 'click', selector: '#navToCarReviews', partner: 'nx', tag: function() {return 'revrat_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToKBBExpertReviews', partner: 'nx', tag: function() {return 'exprev_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToNewCarBuyersGuide', partner: 'nx', tag: function() {return 'buyguide_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToConsumerReviews', partner: 'nx', tag: function() {return 'consrev_global-exprev'}},{type: 'click', selector: '#navToCarReviewsnavToSafetyQualityRatings', partner: 'nx', tag: function() {return 'rat_global-exprev'}},{type: 'click', selector: '#navToAwardsTops', partner: 'nx', tag: function() {return 'latestnews1_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToTopLists', partner: 'nx', tag: function() {return 'newsarticle2_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToKBBAwards', partner: 'nx', tag: function() {return 'award3_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToNewCarBuyersGuide', partner: 'nx', tag: function() {return 'buyguide4_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToLatestCarNews', partner: 'nx', tag: function() {return 'news5_global-edtr'}},{type: 'click', selector: '#navToAwardsTopsnavToAutoShowNews', partner: 'nx', tag: function() {return 'ashow6_global-edtr'}},{type: 'click', selector: '#navToResearchTools', partner: 'nx', tag: function() {return 'rschtools_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCompareCars', partner: 'nx', tag: function() {return 'comp_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToPaymentCalculator', partner: 'nx', tag: function() {return 'afford_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToVehicleHistoryReport', partner: 'nx', tag: function() {return 'vehhist_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToYearCosttoOwn', partner: 'nx', tag: function() {return 'costown_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToVehicleSearchTool', partner: 'nx', tag: function() {return 'vehsrch_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCarLoans', partner: 'nx', tag: function() {return 'loan_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToInsurance', partner: 'nx', tag: function() {return 'insure_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToCheckMyCredit', partner: 'nx', tag: function() {return 'credit_global-rsch'}},{type: 'click', selector: '#navToResearchToolsnavToExtendedWarranty', partner: 'warrantydirect', tag: function() {return 'warranty_global-rsch'}},{type: 'click', selector: '.logo-home-link', tag: function () {return 'kbblogo_global';}}])})();
+if (KBB.NewRelic) { KBB.NewRelic.mark('navigationBar'); }
+{{#listings}}
+{{#IsRecord}}
+<div class="cell car-cell link js-car">
+<a href="{{Url}}" class="js-carousel-listing listing text-center {{IsCurrent}}" data-url="{{Url}}" data-new-nav-url="{{ApiUrl}}">
+<img src="{{Image}}" alt="{{Year}} {{AtcMakeName}} {{AtcModelName}}" />
+<div class="paragraph-two price text-left"><strong>{{FormattedPrice}}</strong></div>
+<div class="paragraph-three text-left">Mileage: {{formatMileage}}</div>
+{{#IsCurrent}}
+<div class="paragraph-three current-tag text-center">current listing</div>
+{{/IsCurrent}}
+</a>
+</div>
+{{/IsRecord}}
+{{^IsRecord}}
+<div class="cell car-cell">
+<div class="js-carousel-listing">
+</div>
+</div>
+{{/IsRecord}}
+{{/listings}}
+Home>Cars for Sale>Used Cars>Hatchback>FIAT>500>Details
+Used 2012 FIAT 500 Pop Hatchback
+See Blue Book® Value
+$7,326
+Back to Search Results
+Save
+Saved
+Print
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-sm js-dialog">
+<div class="modal-content modal-sm">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">You have reached your limit.</h3>
+<div class="paragraph-two">
+<p>You already have the maximum of 45 cars saved. To add this vehicle, please remove a car from your <a id="savedVehiclesLink" class="js-modal-close save-vehicles-link">saved cars list</a>.</p>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+Stock Photo
+1
+of
+25
+1
+of
+25
+Email Seller
+We need all the required information in this form in order to ensure your message reaches the dealer.
+Your message has been sent! This dealer may be contacting you soon.
+Subject:
+Select subject
+Availability of Vehicle
+Test Drive
+Price of Vehicle
+Financing
+Trade-in Info
+General Vehicle Info
+Email:
+Name:
+Characters left: 250
+Message:
+Phone:
+I’d like to receive tips, tools and resources via email from Kelley Blue Book and affiliates.
+Send
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-lead-form js-dialog">
+<div class="modal-content modal-lead-form">
+<div class="modal-body modal-scroller">
+<div class="paragraph-two">
+<div id="leadFormModalTarget"></div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+Contact Seller
+AutoNation Chevrolet North Corpus Christi
+CORPUS CHRISTI, TX
+844-406-0059
+View website
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-sm js-dialog">
+<div class="modal-content modal-sm">
+<div class="modal-body modal-scroller">
+<h3 class="title-three">Share This Listing</h3>
+<div class="paragraph-two">
+<div class="contact-seller-options">
+<a id="emailFriend" class="button-two email-friend" href='mailto:?subject=Vehicle I found on KBB.com&amp;body=Hi. I was shopping for a 2012 FIAT 500 on KBB.com and noticed this one. What do you think?%0Ahttp://www.kbb.com/cars-for-sale/494748668/?totalresults=239%26index=2%26vehicleid=360966%26year=2012%26distance=none%26atcmake=fiat%26atcmodel=500%26searchtype=used%26persistdata=true%26includelistings=true%26maxlistings=5%26_=1538502783658'>Email to a friend</a>
+<button id="copyLink" class="button-two copy-link" data-url="https://www.kbb.com/cars-for-sale/494748668/?year=2012&amp;distance=none&amp;atcmake=fiat&amp;atcmodel=500&amp;searchtype=used&amp;persistdata=true&amp;includelistings=true&amp;maxlistings=5&amp;_=1538502783658" data-dismiss="modal">Copy link</button>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+Key Details
+Seller’s Comments
+Vehicle History
+Estimate Payment
+VIN: 3C3CFFAR2CT120633
+Stock No: CT120633
+Mileage: 49,494
+Body Style: Hatchback
+Exterior Color: Argento (Silver)
+Interior Color: Ivory
+Fuel Economy: City 27/Hwy 34/Comb 30 MPG
+Engine: 4-Cylinder
+Fuel Type: Gasoline
+Transmission: Automatic
+Drive Type: 2 wheel drive - front
+Doors: Two Door
+7.2 out of 10
+KBB.com Expert Rating
+8.4 out of 10
+KBB.com Consumer Rating
+Overall NHTSA Safety Rating
+<div class="modal slideup js-modal-fullscreen modal-fullscreen">
+<div class="modal-dialog modal-full">
+<header class="modal-navbar text-center">
+<div id="modalCloseBtn" class="modal-button js-modal-close js-rating-close">Close</div>
+<span class="modal-navbar-text">Safety Ratings</span>
+</header>
+<div class="modal-scroller">
+<div class="container-fluid">
+<section class="ymm-safety">
+<div class="container">
+<div class="rating
+">
+<div class="image">
+<img src="https://file.kbb.com/kbb/images/m1/buyer-hub-rating.png" />
+</div>
+<ul class="featured">
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><p class="title-four">Crash Test Rating</p></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Frontal Crash</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Side Barrier</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Rollover Rating</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Side Crash</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<div class="resource">
+<p class="paragraph-two">
+Provided by the <a href="http://www.safercar.gov" target="_blank" id="traffic-safety-admin">National Highway Traffic Safety Administration</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+Installed Options
+1.4L 16-VALVE I4 MULTI-AIR ENGINE (STD)
+15" X 6" STEEL WHEELS -inc: -15" wheel covers (STD)
+22A CUSTOMER PREFERRED ORDER SELECTION PKG -inc: -1.4L I4 engine
+6-SPEED AISIN AUTOMATIC TRANSMISSION
+6-speed auto trans *Upon selection of this pkg
+ARGENTO (SILVER)
+BLUE&ME HANDS-FREE COMMUNICATION PKG -inc: -Blue&Me hands-free communication
+BROWN SEATS (REQ: AJWD Ivory Interior) (N/A w/PBP
+Bluetooth Connection
+CLOTH BUCKET SEATS
+DELETE SPARE TIRE -inc: -tire service kit (STD)
+IVORY INTERIOR
+PAJ or PXR Paint)
+PWR SUNROOF
+PYF
+See Dealer for Current Availability*
+Sun/Moonroof
+leather-wrapped steering wheel
+steering wheel audio controls *No Longer Factory Orderable
+the cost of powertrain components will be added*
+7.2 out of 10
+KBB.com Expert Rating
+8.4 out of 10
+KBB.com Consumer Rating
+Overall NHTSA Safety Rating
+<div class="modal slideup js-modal-fullscreen modal-fullscreen">
+<div class="modal-dialog modal-full">
+<header class="modal-navbar text-center">
+<div id="modalCloseBtn" class="modal-button js-modal-close js-rating-close">Close</div>
+<span class="modal-navbar-text">Safety Ratings</span>
+</header>
+<div class="modal-scroller">
+<div class="container-fluid">
+<section class="ymm-safety">
+<div class="container">
+<div class="rating
+">
+<div class="image">
+<img src="https://file.kbb.com/kbb/images/m1/buyer-hub-rating.png" />
+</div>
+<ul class="featured">
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><p class="title-four">Crash Test Rating</p></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Frontal Crash</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Side Barrier</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Rollover Rating</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<ul class="additional">
+<li>
+<p class="paragraph-three">Side Crash</p>
+</li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star"></i></li>
+<li><i class="icon-star-o"></i></li>
+<li><i class="icon-star-o"></i></li>
+</ul>
+<div class="resource">
+<p class="paragraph-two">
+Provided by the <a href="http://www.safercar.gov" target="_blank" id="traffic-safety-admin">National Highway Traffic Safety Administration</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+6-SPEED AISIN AUTOMATIC TRANSMISSION,PWR SUNROOF,Sun/Moonroof,Bluetooth Connection,1.4L 16-VALVE I4 MULTI-AIR ENGINE,15" X 6" STEEL WHEELS,22A CUSTOMER PREFERRED ORDER SELECTION PKG,ARGENTO (SILVER),BLUE&ME HANDS-FREE COMMUNICATION PKG,BROWN SEATS,DELETE SPARE TIRE,IVORY INTERIOR; CLOTH BUCKET SEATSThis vehicle includes a Money-Back Guarantee* and passed our precise inspection process. Best of all the price you see is the price you pay. No haggling. No back and forth. No pressure. And this price is so good it is guaranteed. This 2012 FIAT 500 Pop is offered to you for sale by AutoNation Chevrolet North Corpus Christi. This FIAT includes: 1.4L 16-VALVE I4 MULTI-AIR ENGINE (STD) 4 Cylinder Engine Gasoline Fuel *Note - For third party subscriptions or services, please contact the dealer for more information.* This vehicle is loaded with great features, plus it comes with the CARFAX BuyBack Guarantee. Start enjoying more time in your new ride and less time at the gas station with this 2012 FIAT 500. The incredibly low mileage and painstaking upkeep on this FIAT 500 makes it a once-in-a-lifetime deal that won't last long! Call us today to reserve your test drive! You will never have to worry about keeping up with traffic in this FIAT 500 as it packs a beast under the hood. Class defining, one-of-a-kind options are the standard with this FIAT 500 plus much, much more. This incredibly rare FIAT 500 Pop is a work of art and is the type of vehicle a true automotive aficionado will appreciate for a lifetime. More information about the 2012 FIAT 500: The 2012 FIAT 500 combines European styling and an impressively low price point. It's intended to compete directly with another miniature European import, the MINI Cooper. However, the FIAT features better fuel economy, a lower price and more compact dimensions all around. It's one of the smallest cars available in the US, but seats 4, features as standard, heated power-adjustable mirrors, remote keyless entry, seven >
+Disclaimer
+Accessories & color may vary. Dealer not responsible for errors or omissions. New vehicle pricing may already include applicable manufacturer incentives which may expire at any time & are subject to incentive qualification criteria & requirements. Manufacturer incentive data & vehicle features is provided by third parties & believed to be accurate as of the time of publication. Please contact the store by email or phone for details & availability of incentives. Sales tax or other taxes, tag, title, registration fees, government fees, not included. Dealer Documentary Fee not included in quoted price. Pre-owned vehicle Money-Back Guarantee is valid for 5 days or 250 miles, whichever comes first. Subject to certain terms and conditions. See store for details. Some restrictions apply. Vehicles may have unrepaired safety recalls. You can check recall status by VIN, at safercar.gov.
+<div class="modal slideup" id="tradeInModal">
+<div class="modal-dialog modal-full tradein-configurator">
+<header class="modal-navbar text-center">
+<a class="modal-button js-modal-close">Cancel</a>
+<span class="modal-navbar-text">Blue Book Value</span>
+</header>
+<div class="modal-scroller tradein-configurator-container container-fluid" id="tradeInConfigContainer">
+<div id="tradeInStep1" class="js-modal-step tradein-step-wrapper hidden" data-url="/vehicles/tradeinvaluemodal/"></div>
+<div id="tradeInStep2" class="js-modal-step tradein-step-wrapper hidden" data-url="/vehicles/tradeinvaluemodal/options/"></div>
+<div id="tradeInStep3" class="js-modal-step tradein-step-wrapper hidden" data-url="/vehicles/tradeinvaluemodal/condition/"></div>
+</div>
+</div>
+</div>
+Current Car's Trade-in Value:
+Get Blue Book® Value
+Down Payment:
+Tax:
+Term:
+36 months
+48 months
+60 months
+72 months
+Interest Rate:
+Sample rates provided by
+$476 per month
+(based on your input)
+Calculate monthly payment
+Get a Loan
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-lg js-dialog">
+<div class="modal-content modal-lg">
+<div class="modal-body modal-scroller">
+<h3 class="title-three"></h3>
+<div class="paragraph-two">
+<section class="credit-options-modal">
+<h3 class="title">Choose a Financing Option</h3>
+<ul class="list">
+<li class="branding">
+<a class="js-dealer-financing" href="https://www.autonation.com/credit-application?utm_source=Autotrader&amp;utm_medium=ThirdParty&amp;utm_campaign=*000001766*Main?utm_source=Autotrader&amp;utm_medium=ThirdParty&amp;utm_campaign=*000001766*Finance" data-birf-cmp="kbb_fyc_apply_dlr" data-birf-log="component" data-birf-extra="&c=70348697&v=494748668&z=&s=-1"
+target="_blank" rel="nofollow">
+<img src="//atcimages.kbb.com/images/direct/logo/2017/03/08/70348697/70348697_1489009195485_DEALER_LOGO_adtile.jpg" alt="AutoNation Chevrolet North Corpus Christi"/>
+</a>
+</li>
+<li class="info">
+<h4>AutoNation Chevrolet North Corpus Christi</h4>
+All types of financing are available, and you can apply through our secure credit application.
+</li>
+<li class="actions">
+<a class="js-dealer-financing" href="https://www.autonation.com/credit-application?utm_source=Autotrader&amp;utm_medium=ThirdParty&amp;utm_campaign=*000001766*Main?utm_source=Autotrader&amp;utm_medium=ThirdParty&amp;utm_campaign=*000001766*Finance" data-birf-cmp="kbb_fyc_apply_dlr" data-birf-log="component" data-birf-extra="&c=70348697&v=494748668&z=&s=-1"
+target="_blank" rel="nofollow">Apply Now</a>
+</li>
+</ul>
+<ul class="list">
+<li class="branding">
+<a class="js-third-party-financing" href="https://ck.lendingtree.com/?a=418&amp;c=1982&amp;p=r&amp;s1=classifieds_apply&amp;ccontent=logo-kbb" data-birf-cmp="kbb_fyc_apply_lght" data-birf-log="component" data-birf-extra="&c=70348697&v=494748668&z=&s=-1"
+target="_blank" rel="nofollow">
+<img alt="Lending Tree image" src="//file.kbb.com/kbb/images/partners/lending_tree_logo.png?interpolation=high-quality&amp;downsize=160:*"></img>
+</a>
+</li>
+<li class="info">
+<h4>LendingTree</h4>
+Your monthly car payment could be lowered in minutes. With LendingTree, you can compare multiple offers from up to 5 lenders so you can decide with confidence.
+</li>
+<li class="actions">
+<a class="js-third-party-financing" href="https://ck.lendingtree.com/?a=418&amp;c=1982&amp;p=r&amp;s1=classifieds_apply&amp;ccontent=logo-kbb" data-birf-cmp="kbb_fyc_apply_lght" data-birf-log="component" data-birf-extra="&c=70348697&v=494748668&z=&s=-1"
+target="_blank" rel="nofollow">Get a loan</a>
+</li>
+</ul>
+</section>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+This calculator is made available to you as a self-help tool for your independent use and is not intended to provide any tax, legal, or investment advice. This is not an offer of credit and does not assure the availability of your eligibility for any specific product. All examples are hypothetical and are for illustrative purposes.
+Kelley Blue Book Price Advisor
+Important info & definitions
+Have any questions about this vehicle?
+Contact Seller
+Updated weekly, the Kelley Blue Book® Fair Market Range shows you what others have been paying for this car recently.
+<div class="modal slideup js-modal-fullscreen modal-fullscreen">
+<div class="modal-dialog modal-full">
+<header class="modal-navbar text-center">
+<button id="pricingDefinitionCloseButton" class="modal-button js-modal-close">Done</button>
+<span class="modal-navbar-text">
+Info & Definitions
+</span>
+</header>
+<div class="modal-scroller">
+<section class="slide-out-content container-fluid pricing-definition">
+<p class="paragraph-two">Values and pricing are the opinions of Kelley Blue Book, and the actual price of a vehicle may vary. Kelley Blue Book assumes no responsibility for errors or omissions.</p>
+<div class="row">
+<div class="col-md-6">
+<div class="pd-item pd-item-long-one paragraph-two ">
+<span class="pd-fmr icon"></span>
+<div class="pd-title">Fair Market Range (Buy from a Dealer)</div>
+<div class="pd-deatil-dec">This Kelley Blue Book® Fair Market Range is based in part on the MSRP supplied by the dealer offering this vehicle for sale. Updated weekly the Kelley Blue Book® Fair Market Range for new cars is Kelley Blue Book's estimate of what a consumer can reasonably expect to pay this week in this vehicle’s area for a vehicle of the same year, make, model and MSRP, excluding taxes, title, fees and any available rebates or incentives. Each dealer sets and controls its own pricing.</div>
+</div>
+<div class="pd-item pd-item-long-two paragraph-two">
+<span class="pd-msrp icon"></span>
+<div class="pd-title">MSRP</div>
+<div class="pd-deatil-dec">The MSRP, or Manufacturer’s Suggested Retail Price, shown here was supplied by the dealer offering this vehicle for sale. MSRP is the price set by the manufacturer and does not necessarily reflect the price actually paid by consumers. This MSRP excludes service and handling fees and state and local tax, title and license fees. Destination and freight charges may also be excluded.</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="pd-item pd-item-long-one paragraph-two">
+<span class="pd-rz icon"></span>
+<div class="pd-title">Red Zone (Buy from a Dealer)</div>
+<div class="pd-deatil-dec">The red zone falls above the Fair Market Range. Special circumstances such as exceptionally low supply with high demand, options installed by the dealership, and seasonality may all be contributing factors to sales that occur in this range</div>
+</div>
+<div class="pd-item pd-item-long-one paragraph-two">
+<span class="pd-wz icon"></span>
+<div class="pd-title">White Zone (Buy from a Dealer)</div>
+<div class="pd-deatil-dec">The white zone falls below the Fair Market Range. Special circumstances such as retiring model years, unpopular color, excess inventory and seasonality may all be contributing factors to sales that occur in this range.</div>
+</div>
+</div>
+</div>
+<div class="pd-trans paragraph-two">
+<div class="pd-title">TRANSACTION DATA</div>
+<div class="pd-deatil-dec">This meter represents a sample range of recent transaction prices for vehicles of the same year, make and model as the vehicle specified, but sometimes with a different style and/or equipment. Analyzed transaction prices exclude taxes, DMV fees, documentation fees, other dealership charges and any available rebates or incentives.</div>
+</div>
+<div class="legal-text">
+&#169; 2018 Kelley Blue Book Co., Inc. All rights reserved.
+9/28/2018-10/4/2018 Edition, National Average.
+The value and pricing information displayed for a particular vehicle is based upon the specifications, mileage and/or condition information provided by the person generating this report.
+(v.18100).
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="modal slideup js-modal-fullscreen modal-fullscreen price-advisor-modal">
+<div class="modal-dialog modal-full" id="priceAdvisorModalWrapper">
+<header class="modal-navbar text-center">
+<button id="priceAdvisorModalCloseButton" class="modal-button js-modal-close">Done</button>
+<span class="modal-navbar-text js-modal-title"></span>
+</header>
+<section id="priceAdvisorModalContent" class="slide-out-content modal-scroller content-container container-fluid"></section>
+</div>
+</div>
+<div class="content vertical-spacing-margin-top">
+{{#header}}
+<p class="paragraph-two">{{header}}</p>
+{{/header}}
+<div class="definition-list vertical-spacing-margin-bottom{{^data}}hidden{{/data}}">
+{{#data}}
+<div class="content-item paragraph-two"{{#icon}} style="background-image: url('//{{icon}}')"{{/icon}}>
+<div class="definition">
+<p class="title-four no-margin">{{title}}</p>
+{{#definition}}
+<p>{{.}}</p>
+{{/definition}}
+</div>
+</div>
+{{/data}}
+</div>
+{{#data}}
+{{#condition}}
+<div class="condition-definition paragraph-two">
+<p class="title-four">Based on the following condition: {{title}}</p>
+<p>{{header}}</p>
+<ul>
+{{#body}}
+<li>{{.}}</li>
+{{/body}}
+</ul>
+</div>
+{{/condition}}
+{{/data}}
+{{#body}}
+<p class="paragraph-two">{{body}}</p>
+{{/body}}
+{{#footerLegal}}
+<p class="legal-text">{{footerLegal}}</p>
+{{/footerLegal}}
+</div>
+<div class="modal fade price-advisor-modal">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog js-dialog" id="priceAdvisorModalWrapper">
+<div class="modal-content content-container" id="priceAdvisorModalContent"></div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+<div class="content">
+{{#header}}
+<p class="title-three">{{header}}</p>
+{{/header}}
+{{#body}}
+<p class="paragraph-two">{{{body}}}</p>
+{{/body}}
+{{#footer}}
+<p class="legal-text">{{footer}}</p>
+{{/footer}}
+</div>
+Advertisement
+About AutoNation Chevrolet North Corpus Christi
+Contact Us
+844-406-0059
+2118 S PADRE ISLAND DR
+CORPUS CHRISTI, TX 78416
+View website
+Email
+Chat
+Map
+Buyer’s Resources
+Get cash or trade in your current car fast
+Get your credit score now
+Save on car insurance. Get a free quote
+Request your ONLINE quote today!
+Advertisement
+{
+"@context": "http://schema.org/",
+"@type": "Car",
+"name": "Used 2012 FIAT 500 Pop Hatchback",
+"image": "//atcimages.kbb.com/scaler/544/408/hn/c/bada570fce6a47be8ef6321854e5304a.jpg",
+"offers": {
+"@type": "Offer",
+"priceCurrency": "USD",
+"price": "7326",
+"itemCondition": "http://schema.org/UsedCondition",
+"availability": "http://schema.org/InStock"
+},
+"description": "6-SPEED AISIN AUTOMATIC TRANSMISSION,PWR SUNROOF,Sun/Moonroof,Bluetooth Connection,1.4L 16-VALVE I4 MULTI-AIR ENGINE,15&quot; X 6&quot; STEEL WHEELS,22A CUSTOMER PREFERRED ORDER SELECTION PKG,ARGENTO (SILVER),BLUE&amp;ME HANDS-FREE COMMUNICATION PKG,BROWN SEATS,DELETE SPARE TIRE,IVORY INTERIOR; CLOTH BUCKET SEATS&lt;br&gt;&lt;br&gt;This vehicle includes a Money-Back Guarantee* and passed our precise inspection process. Best of all the price you see is the price you pay. No haggling. No back and forth. No pressure. And this price is so good it is guaranteed. This 2012 FIAT 500 Pop is offered to you for sale by AutoNation Chevrolet North Corpus Christi. This FIAT includes: 1.4L 16-VALVE I4 MULTI-AIR ENGINE (STD) 4 Cylinder Engine Gasoline Fuel *Note - For third party subscriptions or services, please contact the dealer for more information.* This vehicle is loaded with great features, plus it comes with the CARFAX BuyBack Guarantee. Start enjoying more time in your new ride and less time at the gas station with this 2012 FIAT 500. The incredibly low mileage and painstaking upkeep on this FIAT 500 makes it a once-in-a-lifetime deal that won&#39;t last long! Call us today to reserve your test drive! You will never have to worry about keeping up with traffic in this FIAT 500 as it packs a beast under the hood. Class defining, one-of-a-kind options are the standard with this FIAT 500 plus much, much more. This incredibly rare FIAT 500 Pop is a work of art and is the type of vehicle a true automotive aficionado will appreciate for a lifetime. More information about the 2012 FIAT 500: The 2012 FIAT 500 combines European styling and an impressively low price point. It&#39;s intended to compete directly with another miniature European import, the MINI Cooper. However, the FIAT features better fuel economy, a lower price and more compact dimensions all around. It&#39;s one of the smallest cars available in the US, but seats 4, features as standard, heated power-adjustable mirrors, remote keyless entry, seven &gt;",
+"vehicleIdentificationNumber": "3C3CFFAR2CT120633",
+"brand": "FIAT",
+"mileageFromOdometer": {
+"@type": "QuantitativeValue",
+"value": "49494"
+},
+"color": "Argento (Silver)",
+"vehicleInteriorColor": "Ivory",
+"vehicleTransmission": "Automatic",
+"vehicleEngine": "4-Cylinder",
+"bodyType": "Hatchback"
+}
+<div class="modal fade ">
+<div class="modal-backdrop js-modal-close"></div>
+<div class="modal-dialog modal-md js-dialog">
+<div class="modal-content modal-md">
+<div class="modal-body modal-scroller">
+<div class="paragraph-two">
+<div id="drPaymentDisclaimerContainer"></div>
+</div>
+</div>
+</div>
+<button type="button" class="close js-modal-close"><i class="icon-times"></i></button>
+</div>
+</div>
+FAQ
+|
+Contact Us
+|
+About Us
+|
+Careers
+|
+Corporate
+|
+Advertising
+|
+Media
+|
+Site Map
+|
+Mobile
+|
+KBB Portugal
+|
+KBB Brazil
+|
+Follow Us
+© 1995-2018 Kelley Blue Book Co.®, Inc. All rights reserved.
+Copyrights & Trademarks |
+Terms of Service |
+Privacy Policy |
+Linking Policy |
+Ad Choices
+(function(){'use strict';KBB.Page.addAnalyticsClickOnlyTags([{type:'click',selector:'#navFooterFaq',partner:'nx',tag:function(){return'faq_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterContactUs',partner:'nx',tag:function(){return'contactus_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterAboutUs',partner:'nx',tag:function(){return'aboutus_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterCareers',partner:'nx',tag:function(){return'careers_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterCorporate',partner:'atg',tag:function(){return'info_corporate_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterAdvertising',partner:'atg',tag:function(){return'info_advertising_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterMedia',partner:'nx',tag:function(){return'mediacenter_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterSiteMap',partner:'nx',tag:function(){return'sitemap_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterMobile',partner:'nx',tag:function(){return'mobile_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterKbbPortugal',partner:'intl',tag:function(){return'kbbportugal_'+s.prop2+'_footer'}},{type:'click',selector:'#navFooterKbbBrazil',partner:'intl',tag:function(){return'kbbbrazil_'+s.prop2+'_footer'}},{type:'click',selector:'#navToFacebook',partner:'facebook',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToGooglePlus',partner:'google1',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToTwitter',partner:'twitter',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToRSS',tag:function(){return 'rss_'+s.prop2+'_footer'}},{type:'click',selector:'#navToLinkedIn',partner:'linkedin',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToYouTube',partner:'youtube',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToRoku',partner:'roku',tag:function(){return 'share_'+s.prop2+'_footer'}},{type:'click',selector:'#navToCopyrightsAndTrademarks',tag:function(){return 'copyright_'+s.prop2+'_footer'}},{type:'click',selector:'#navToTermsOfService',tag:function(){return 'tos_'+s.prop2+'_footer'}},{type:'click',selector:'#navToPrivacyPolicy',tag:function(){return 'privacy_'+s.prop2+'_footer'}},{type:'click',selector:'#navToLinkingPolicy',tag:function(){return 'linkingpolicy_'+s.prop2+'_footer'}},{type:'click',selector:'#navToAdChoices',tag:function(){return 'adchoices_'+s.prop2+'_footer'}}])})();
+KBB.Ads.showAd('kbbAdsToolbarAnchor');
+Popular
+at KBB.com
+First Pics: 2019 Models Unveiled
+10 Best SUVs Under $25,000
+New Car Buyer's Guide
+12 Best Buys of 2018
+25 Best-Selling Cars of 2017
+$(document).ready(KBB.init);
+window.onload = function () {
+if (window.performance) {
+s.eVar13 = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+}
+}
+if (typeof gigya !== 'undefined') {
+KBB.social.openGraphUserAction = new gigya.services.socialize.UserAction();
+if (KBB.social.openGraphUserAction){
+KBB.social.openGraphUserAction.setLinkBack('https://www.kbb.com/cars-for-sale/494748668/?totalresults=239\u0026index=2\u0026vehicleid=360966\u0026year=2012\u0026distance=none\u0026atcmake=fiat\u0026atcmodel=500\u0026searchtype=used\u0026persistdata=true\u0026includelistings=true\u0026maxlistings=5\u0026_=1538502783658');
+KBB.social.openGraphUserAction.addActionLink('Visit kbb.com', 'https://www.kbb.com/cars-for-sale/494748668/?totalresults=239\u0026index=2\u0026vehicleid=360966\u0026year=2012\u0026distance=none\u0026atcmake=fiat\u0026atcmodel=500\u0026searchtype=used\u0026persistdata=true\u0026includelistings=true\u0026maxlistings=5\u0026_=1538502783658');
+KBB.social.openGraphUserAction.setTitle('Used 2012 FIAT 500 Pop Hatchback for sale in CORPUS CHRISTI, TX 78416 | Kelley Blue Book');
+KBB.social.openGraphUserAction.setSubtitle(' ');
+KBB.social.openGraphUserAction.setDescription('Used 2012 FIAT 500 Pop Hatchback for sale in CORPUS CHRISTI, TX 78416. Learn more about this vehicle.');
+KBB.social.openGraphUserAction.addMediaItem({ type: 'image', src: "https://file.kbb.com/kbb/images/kbb/kelley-blue-book.jpg", href: 'https://www.kbb.com/cars-for-sale/494748668/?totalresults=239\u0026index=2\u0026vehicleid=360966\u0026year=2012\u0026distance=none\u0026atcmake=fiat\u0026atcmodel=500\u0026searchtype=used\u0026persistdata=true\u0026includelistings=true\u0026maxlistings=5\u0026_=1538502783658' });
+}}
+KBB.RecentlyViewedWidget.Controller.addRecentlyViewedListing({"Id":"494748668","Title":"Used 2012 FIAT 500 Pop Hatchback","Price":"$7,326","IncentiveLabel":"With Incentive","Mileage":49494,"ExteriorColor":"Argento (Silver)","HasPriceMarkdown":false,"NewlyListed":false,"IsCpoListing":false,"ReducedPrice":false,"Year":2012,"AtcMakeCode":"FIAT","AtcModelCode":"FIAT500","OwnerId":70348697,"OwnerName":"AutoNation Chevrolet North Corpus Christi","OwnerDistance":0,"StockImg":"//file.kbb.com/kbb/vehicleimage/housenew/152x114/2012/2012-fiat-500-frontside_fi500121.jpg","ListingImg":"//atcimages.kbb.com/scaler/104/78/hn/c/bada570fce6a47be8ef6321854e5304a.jpg","ListingImgIsStock":false,"IsStockPhoto":false,"ImageUrl":"//atcimages.kbb.com/scaler/104/78/hn/c/bada570fce6a47be8ef6321854e5304a.jpg","Vin":"3C3CFFAR2CT120633","ZipCode":null,"Status":"Active","VehicleClass":"Used","Manufacturer":"FIAT","Model":"500","StyleName":"Pop Hatchback","CtaUrl":"/cars-for-sale/494748668/?fromsavedlistings=true","VehicleId":360966});
+<div class="modal fade">
+<div class="modal-backdrop js-modal-close"></div>
+<div id="modalKiosk" class="modal-kiosk">
+<div class="modal-navbar text-center">
+<a class="modal-button js-modal-close">Done</a>
+<div id="modalKioskTitle" class="modal-kiosk-title hidden"></div>
+<div id="modalKioskSponsoredText" class="modal-navbar-text modal-kiosk-sponsored-text">Sponsored Content</div>
+</div>
+<div id="modalKioskVideo" class="modal-kiosk-video">
+<div class="video-brightcove-aspect" id="videoHolder"></div>
+<div id="cinemaContainer" class="cinema-container hidden">
+<div class="cinema-tabs">
+<div class="tab-cue hidden" data-tab="cue">This Video
+<div id="videoShare" class="video-share">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 602.203" enable-background="new 0 0 512 602.203" xml:space="preserve" class="svg-share" data-tab="cue">
+<g>
+<path d="M425.966,215.063c-10.825,0-21.13,2.088-30.675,5.728L171.782,91.747c0.125-1.898,0.286-3.786,0.286-5.713
+C172.068,38.523,133.545,0,86.034,0C38.52,0,0,38.523,0,86.034c0,47.515,38.52,86.034,86.034,86.034
+c18.767,0,36.074-6.078,50.214-16.274l207.53,119.816c-2.502,8.055-3.847,16.621-3.847,25.495c0,9.017,1.401,17.704,3.976,25.877
+L136.599,446.666c-14.204-10.354-31.638-16.531-50.564-16.531C38.52,430.135,0,468.654,0,516.169
+c0,47.507,38.52,86.034,86.034,86.034c47.511,0,86.034-38.527,86.034-86.034c0-1.78-0.161-3.519-0.265-5.277l223.98-129.309
+c9.402,3.532,19.557,5.549,30.182,5.549c47.515,0,86.034-38.52,86.034-86.034S473.48,215.063,425.966,215.063z"/>
+</g>
+</svg>
+</div>
+</div>
+<div class="tab-related hidden" data-tab="related">Related Videos</div>
+</div>
+<div id="cueContainer" class="tab-container cue-container hidden"><div id="cueList" class="cue-list"></div></div>
+<div id="relatedContainer" class="tab-container related-container hidden"></div>
+</div>
+</div>
+<div id="imageHolder" class="modal-kiosk-image-container"></div>
+<div class="kiosk-mma-ad-container">
+</div>
+</div>
+</div>
+KBB.Ads.showAd('kbbAdsFct');
+Advertisement
+KBB.Ads.showAd('kbbAdsInterstitial');
+var dataLayerInfo = KBB.DataLayer[0].info,
+section = s.prop1,
+subSection = s.channel,
+pageName = KBB.DataLayer[0].omniture.pagename,
+vehicleId = dataLayerInfo.vehicle.id,
+style = dataLayerInfo.category,
+trim = dataLayerInfo.vehicle.trimdisplayname,
+year = dataLayerInfo.yearid,
+make = dataLayerInfo.manufacturer.name,
+model = dataLayerInfo.model.name,
+price = dataLayerInfo.vehicle.taggingprice;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=globa915;u4=' + subSection + ';u5=' + section + ';u6=' + pageName + ';u7=' + KBB.Page.getDataLayer().paidsearch.paidsearchid + ';u8=' + vehicleId + ';u9=' + style + ';u10=' + trim + ';u11=' + year + ';u12=' + make + ';u13=' + model + ';u14=' + price + ';ord=' + globalOrd + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+Thanks for Supporting
+Kelley Blue Book.
+We deliver up-to-date car values, expert reviews and unbiased reporting at nocost to you. To do this, we display ads from only trusted partners.To continue on our site, simply turn off your ad blocker and refresh the page.
+KBB.Abb.start();
+// DCM Floodlight tags
+var psid = KBB.DataLayer[0].paidsearch !== null ? KBB.DataLayer[0].paidsearch.paidsearchid : s.prop31;
+if(KBB.DataLayer[0].omniture.pagename === 'homepage') {
+// Start of DoubleClick Floodlight Tag: Please do not remove
+// Activity name of this tag: homepage
+// URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+// This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+// Creation Date: 03/22/2016
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=homep392;u4=' + KBB.DataLayer[0].omniture.supersectionname + ';u5=' + KBB.DataLayer[0].omniture.sectionname + ';u6=' + KBB.DataLayer[0].omniture.pagename + ';u7=' + psid +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+// End of DoubleClick Floodlight Tag: Please do not remove
+}
+if(KBB.DataLayer[0].omniture.supersectionname === 'new' || KBB.DataLayer[0].omniture.supersectionname === 'new-touch') {
+// Start of DoubleClick Floodlight Tag: Please do not remove
+// Activity name of this tag: New Car
+// URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+// This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+// Creation Date: 03/22/2016
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=kbbne024;cat=newca0;u4=' + KBB.DataLayer[0].omniture.supersectionname + ';u5=' + KBB.DataLayer[0].omniture.sectionname + ';u6=' + KBB.DataLayer[0].omniture.pagename + ';u7=' + psid + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+// End of DoubleClick Floodlight Tag: Please do not remove
+}
+// Marin Smart tag - global
+(function() {
+window._pa = window._pa || {};
+// _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+// _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+// _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+var pa = document.createElement('script');
+pa.type = 'text/javascript';
+pa.async = true;
+pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/571f92738e1678597b0000d3.js";
+var scriptTags = document.getElementsByTagName('script');
+var lastScriptTag = scriptTags[scriptTags.length-1];
+lastScriptTag.parentNode.insertBefore(pa, lastScriptTag);
+})();
+KBB.createAndInit('KBB.FloodlightTagScript.Hyundai', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.fireFloodlightTag = function() {
+var	pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+currentContentId = self.dataLayer.ads.cid,
+axel = Math.random() + '',
+a = axel * 10000000000000,
+tag = '';
+if (self.dataLayer.info.manufacturer.name.toLowerCase() === 'hyundai') {
+var yearId = self.dataLayer.info.yearid,
+shortModelName = self.dataLayer.info.model.shortname;
+if(pageName === 'lns') {
+switch(currentContentId) {
+case '2000010127':
+case '2000009275':
+case '2000010090':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeg;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case '2100001428':
+case '2100001380':
+case '2100000928':
+case '2100000867':
+case '2100000291':
+case '2100000248':
+case '2100000191':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmacn;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case '2000010081':
+case '2000009555':
+case '2000010120':
+case '2000010287':
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeb;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+}
+} else if(pageName === 'fdpqdealer') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmale0;u1=' + shortModelName + ';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>'
+} else if (pageName === 'ymmtrimnewovr_buynew' || pageName === 'ncmodelmain-touch') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmahv00;u1=' + shortModelName + ';u2=' + yearId + ';u3=;u4=;u6=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+} else if (pageName === 'fdpqthank' ) {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmahv0;u1=' + shortModelName + ';u2=' + yearId + ';u3=;u4=;u6=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+} else if (currentContentId === '2000010090') {
+tag = '<iframe src="https://4236604.fls.doubleclick.net/activityi;src=4236604;type=endemics;cat=hmaeg;u1=;u2=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+if (tag !== '') {
+var flDiv = document.body.appendChild(document.createElement('div'));
+flDiv.setAttribute('id', 'hyundaiFloodlightTag');
+flDiv.innerHTML = tag;
+}
+};
+self.init = function() {
+self.fireFloodlightTag();
+};
+return {
+init: self.init
+};
+});
+KBB.createAndInit('KBB.FloodlightTagScript.Genesis', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.fireFloodlightTag = function() {
+if (self.dataLayer.info.manufacturer.name.toLowerCase() === 'genesis') {
+var	pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+yearId = self.dataLayer.info.yearid,
+shortModelName = self.dataLayer.info.model.shortname,
+axel = Math.random() + '',
+a = axel * 10000000000000,
+tag = '';
+switch (pageName) {
+case 'ymmtrimnewovr_buynew':
+case 'ncmodelmain-touch':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbbyo;u1=' + shortModelName +';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case 'fdpqthank':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbraq;u1=' + shortModelName +';u2=' + yearId +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+case 'lns':
+if (self.dataLayer.ads.cid === '2100000991'){
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=kbbcnmr;u1=' + shortModelName +';u2=' + yearId + ';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+}
+break;
+case 'fdpqdealer':
+tag = '<iframe src="https://5756351.fls.doubleclick.net/activityi;src=5756351;type=autoe0;cat=gmaau0;u1=' + shortModelName +';u2=' + yearId +';dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>';
+break;
+}
+if (tag !== ''){
+var flDiv = document.body.appendChild(document.createElement('div'));
+flDiv.setAttribute('id', 'genesisFloodlightTag');
+flDiv.innerHTML = tag;
+}
+}
+};
+self.init = function() {
+self.fireFloodlightTag();
+};
+return {
+init: self.init
+};
+});
+// SpeedShift Tracking Tag
+(function () {
+if (KBB.DataLayer[0].omniture.pagename === 'classdetailnew' ||
+// VDP NEW
+KBB.DataLayer[0].omniture.pagename === 'classdetailused' ||
+// VDP USED
+KBB.DataLayer[0].omniture.pagename === 'classlistnew_dtlovr' ||
+// MINI VDP NEW
+KBB.DataLayer[0].omniture.pagename === 'classlistused_dtlovr') { // MINI VDP USED
+var tag = document.createElement('script');
+tag.type = 'text/javascript';
+tag.async = true;
+tag.src = ('https:' === document.location.protocol ? 'https:' : 'http:') + "//services.cdn.speedshiftmedia.com/tags/analytics-Z20160915150040d3b34c985ad40.min.js";
+var scriptTags = document.getElementsByTagName('script');
+var lastScriptTag = scriptTags[scriptTags.length - 1];
+lastScriptTag.parentNode.insertBefore(tag, lastScriptTag);
+}
+})();
+if( (KBB.DataLayer[0].area === 'homepage' && KBB.DataLayer[0].controller === 'homepage' && KBB.DataLayer[0].action=== 'index') || KBB.DataLayer[0].dynamictracking)
+{
+//FloodLight
+if(!KBB.DataLayer[0].flippers.floodlightoff) {
+//Start of DoubleClick Floodlight Tag: Please do not remove
+//Activity name of this tag: global counter
+//URL of the webpage where the tag is expected to be placed: https://www.kbb.com
+//Creation Date: 04/20/2015
+var dataLayerInfo = KBB.DataLayer[0].info,
+section = s.prop1,
+subSection = s.channel,
+pageName = KBB.DataLayer[0].omniture.pagename,
+PSID = KBB.DataLayer[0].paidsearch !== null ? KBB.DataLayer[0].paidsearch.paidsearchid : s.prop31,
+vehicleId = dataLayerInfo.vehicle.id,
+style = dataLayerInfo.category,
+trim = dataLayerInfo.vehicle.trimdisplayname,
+year = dataLayerInfo.yearid,
+make = dataLayerInfo.manufacturer.name,
+model = dataLayerInfo.model.name,
+price = dataLayerInfo.vehicle.taggingprice;
+document.write('<iframe src="https://4218562.fls.doubleclick.net/activityi;src=4218562;type=globa797;cat=globa915;u4=' + subSection + ';u5=' + section + ';u6=' + pageName + ';u7=' + PSID + ';u8=' + vehicleId + ';u9=' + style + ';u10=' + trim + ';u11=' + year + ';u12=' + make + ';u13=' + model + ';u14=' + price + ';ord=' + globalOrd + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+//End of DoubleClick Floodlight Tag: Please do not remove
+}
+}
+KBB.PDADS.self.setPDAD();
+//kbbr
+if (KBB.storage.getFromCookie('KBBSite') === null && KBB.storage.getFromCookie('ZipCode') !== null) {
+var expireTime = new Date();
+expireTime.setMinutes(expireTime.getMinutes() + 30); // set expiration time to 30 mins
+KBB.storage.saveToCookie('KBBSite', '1', expireTime);
+}
+KBB.createAndInit('KBB.OracleTagScript.Hyundai', function () {
+'use strict';
+var self = {
+dataLayer: KBB.Page.getDataLayer()
+};
+self.setOracleTag = function (make, model) {
+var source = 'https://h.nexac.com/e/mp/g-5618.xgi?pkey=&chpcm=' + encodeURIComponent(document.referrer) + '&chpsg=' + make + '&chpcr=' + model + '&chpck=&rand=' + globalOrd + '&chpth=';
+var imgTag = document.body.appendChild(document.createElement('img'));
+imgTag.setAttribute('width', '1');
+imgTag.setAttribute('height', '1');
+imgTag.setAttribute('src', source);
+};
+self.checkAllowIntents = function () {
+var allowIntents = ['buy-new', 'trade-in-sell'];
+return allowIntents.indexOf(self.dataLayer.info.intent) >= 0;
+};
+self.shouldFireTag = function () {
+var manufacturer = self.dataLayer.info.manufacturer.name.toLowerCase(),
+area = self.dataLayer.area.toLowerCase(),
+controller = self.dataLayer.controller.toLowerCase(),
+pageName = self.dataLayer.omniture.pagename.toLowerCase(),
+controllers = ['vehicle', 'ymm', 'ymmt', 'makelanding'],
+cid = self.dataLayer.ads.cid;
+//only fire the tag on Model Path , Hub and Article pages
+return ((manufacturer === 'hyundai' &&
+((self.checkAllowIntents() && (area === 'vehicle' || controllers.indexOf(controller) >= 0)) || pageName === 'lns'))
+|| (cid === '2000010090') );
+};
+self.fireOracleTag = function () {
+if (self.shouldFireTag()) {
+self.setOracleTag(self.dataLayer.info.manufacturer.shortname, self.dataLayer.info.model.shortname);
+}
+};
+self.init = function() {
+self.fireOracleTag();
+};
+return {
+init: self.init
+};
+});
+/* <![CDATA[ */
+var google_conversion_id = 1060016584;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+if (!KBB.DataLayer[0].flippers.remarketingoff) {
+document.write('<s' + 'cript type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></s' + 'cript>');
+document.write('<n' + 'oscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1060016584/?guid=ON&script=0"' + '/></div></n' + 'oscript>');
+}
+KBB.createAndInit("KBB.FloodlightTagScript.Kia",function(){"use strict";var e={dataLayer:KBB.Page.getDataLayer(),cats:{classlistnew:"deale000",ymmtrimnewcostown_buynew:"5year0",dlrinfoinvovrnew:"deale004",fdpqthank:"quick00",ymmtrimnewconsrev_buynew:"kbbco0",ymmtrimnewrank_buynew:"compa00",ymmtrimnewrat_buynew:"compa00",ymmtrimtisellovr_selltrade:"trade00",loadtisell_selltrade:"trade00",ymmtrimnewexprev_buynew:"kbbex0",ymmtrimnewovr_buynew:"build00","ncmodelmain-touch":"newca0",rtbdlrlist:"deale003",ymmtrimnewincent_buynew:"incen0"},pageNames:["classlistnew","ymmtrimnewcostown_buynew","dlrinfoinvovrnew","fdpqthank","ymmtrimnewconsrev_buynew","ymmtrimnewrank_buynew","ymmtrimnewrat_buynew","ymmtrimtisellovr_selltrade","loadtisell_selltrade","ymmtrimnewexprev_buynew","ymmtrimnewovr_buynew","rtbdlrlist","ymmtrimnewincent_buynew","ncmodelmain-touch"],currentPage:"",kiaStorageName:"KiaFloodlight",kiaStorageValue:null,searchRegex:null,expirationTime:30};return e.parseTimestamp=function(){if(e.kiaStorageValue&&e.kiaStorageValue.search(e.searchRegex)>=0){var a=e.kiaStorageValue.match(e.searchRegex)[0];return a?a.match(/\d+/)[0]:0}return 0},e.saveTimestamp=function(){var a=e.currentPage+"-"+(new Date).getTime();e.kiaStorageValue?e.kiaStorageValue.indexOf(e.currentPage)>=0?e.kiaStorageValue=e.kiaStorageValue.replace(e.searchRegex,a):e.kiaStorageValue=e.kiaStorageValue+"|"+a:e.kiaStorageValue=a,KBB.storage.saveToLocalStorage(e.kiaStorageName,e.kiaStorageValue)},e.isExpired=function(){var a=parseInt(e.parseTimestamp());return a?new Date>new Date(a+60*e.expirationTime*1e3):!0},e.shouldFireTag=function(){return"kia"===e.dataLayer.info.manufacturer.name.toLowerCase()&&e.pageNames.indexOf(e.currentPage)>=0&&e.isExpired()},e.fireFloodlightTag=function(){if(e.shouldFireTag()){var a=Math.random()+"",t=1e13*a,r='<iframe src="https://4235921.fls.doubleclick.net/activityi;src=4235921;type=2017c0;cat='+e.cats[e.currentPage]+";dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord="+t+'?" width="1" height="1" frameborder="0" style="display:none"></iframe>',i=document.body.appendChild(document.createElement("div"));"ncmodelmain-touch"===e.currentPage&&(r='<iframe src="https://4235921.fls.doubleclick.net/activityi;src=4235921;type=2017c0;cat='+e.cats[e.currentPage]+";u1=;u2=;u3=;u4=;u5=;u6=;u7=;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord="+t+'?" width="1" height="1" frameborder="0" style="display:none"></iframe>'),i.setAttribute("id","kiaFloodlightTag"),i.innerHTML=r,e.saveTimestamp()}},e.init=function(){e.currentPage=e.dataLayer.omniture.pagename.toLowerCase(),e.kiaStorageValue=KBB.storage.getFromLocalStorage(e.kiaStorageName),e.searchRegex=new RegExp(e.currentPage+"-\\d+"),e.fireFloodlightTag()},{init:e.init}});
+(function () {
+if(document.cookie.indexOf('SurveyCookie') > -1) {
+var regexForseeCookie = /fsr\.(.*?)=/g;
+var fsrCs = document.cookie.match(regexForseeCookie);
+var exp = new Date(Date.now() - 86400000);
+fsrCs.forEach(function (cookie) {
+document.cookie = cookie+'; path=/; domain=.kbb.com;';
+});
+}
+})();
+// Null check because it seems like the DTM script sometimes is blocked
+// or doesn't come back on the staging server
+if (window._satellite && _satellite.pageBottom) {
+_satellite.pageBottom();
+}

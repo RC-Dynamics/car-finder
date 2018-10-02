@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import os as sys
 from bs4 import BeautifulSoup
+import time
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 
@@ -23,55 +24,47 @@ def rawText(html):
 
 
 def download():
-    link_p = 0
-    link_n= 0
     for file in sys.listdir("."):
         if(file.endswith(".csv")):
+            link = 0
             data = pd.read_csv(file)
             for idx, row in data.iterrows():
-                html = requests.get(row["link"], headers=headers)
-                if (html.status_code != 200):
-                    print("ERROR -----------")
-                else :
-                    if row["status"] == 1:
-                        pos = open("data/pos/"+file[:-4]+"-"+str(link_p)+".html", "w+")
-                        pos.write(html.text)
-                        page = pos.read()
-                        pos.close
-                        link_p += 1
-                    elif row["status"] == 0:
-                        neg = open("data/neg/"+file[:-4]+"-"+str(link_n)+".html", "w+")
-                        neg.write(html.text)
-                        neg.close
-                        link_n += 1
+                try:
+                    print(row["link"])
+                    html = requests.get(row["link"], headers=headers, timeout = 5)
+                    if (html.status_code != 200):
+                        print("ERROR -----------")
+                    else :
+                        if row["status"] == 1:
+                            pos = open("data/html/"+ file[:-4]+ " - " + str(link) + " - pos.html", "w+")
+                            pos.write(html.text)
+                            page = pos.read()
+                            pos.close
+                            link += 1
+                        elif row["status"] == 0:
+                            neg = open("data/html/"+ file[:-4]+ " - " + str(link) + " - neg.html", "w+")
+                            neg.write(html.text)
+                            neg.close
+                            link += 1
+                        time.sleep(0.5)
+                except (requests.exceptions.Timeout): 
+                    print("TIMEOUT link: %s"%(row["link"]))
+                
     return
 
 
 def extractText():
-    link_p = 0
-    link_n= 0
-    for file in sys.listdir("./data/pos"):
+    for file in sys.listdir("./data/html"):
         if(file.endswith(".html")):
-            f = open("./data/pos/"+file, "r+")
+            f = open("./data/html/"+file, "r+")
             page = f.read()
             f.close()
-            pos = open("data/pos/"+file[:-5]+".txt", "w+")
+            pos = open("data/txt/"+file[:-5]+".txt", "w+")
             pos.write(rawText(page))
-            pos.close
-            link_p += 1
-    for file in sys.listdir("./data/neg"):
-        if(file.endswith(".html")):
-            f = open("./data/neg/"+file, "r+")
-            page = f.read()
-            f.close()
-            neg = open("data/neg/"+file[:-5]+".txt", "w+")
-            neg.write(rawText(page))
-            neg.close
-            link_n += 1
-                    
+            pos.close         
     return
 
 
 if __name__ == "__main__":
-    # download()
+    # download()  
     extractText()

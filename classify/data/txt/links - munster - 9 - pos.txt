@@ -1,0 +1,276 @@
+2006 HUMMER H3 for sale in Blue Springs MO from Munsterman Automotive Group
+{
+"@context": "http://schema.org",
+"@type": "Vehicle",
+"url": "http://www.munstermanauto.com/vehicle/used-2006-hummer-h3-3064653",
+"image": "https://assets.iimanager.com/vdata/munstermanauto_com/3064653_x640_01.jpg",
+"name": "2006 HUMMER H3",
+"bodyType": "Sport/Utility",
+"vehicleModelDate": "2006",
+"manufacturer": "HUMMER",
+"model": "H3 ",
+"offers": {
+"@type": "Offer",
+"price": "10255",
+"priceCurrency": "USD",
+"seller": {
+"@type": "AutoDealer",
+"name": "Munsterman Automotive Group",
+"image": "http://www.munstermanauto.com/assets/images/sitescreen.jpg",
+"telephone": "(816) 598-1286",
+"address": "609 SW State Route 7"
+}
+}
+}
+$(function() {
+$("img.ar_mainimage").lazyload({
+threshold : 500,
+effect : "fadeIn",
+});
+});
+(816) 598-1286609 SW State Route 7 Blue Springs, MO 64014
+Map
+Contact
+Finance Application
+2006 HUMMER H3 for sale in Blue Springs MO from Munsterman Automotive Group
+Stock : 286759
+VIN : 5GTDN136368286759
+Sale Price :
+$10,255
+Exterior : Red
+Mileage : 133,522
+Transmission : Automatic
+Drive Type : 4WD
+Engine : 5-Cyl, 3.5 Liter
+We Finance!
+Shop with Confidence
+Vehicle Description
+**Leather** If you’re looking for tough SUV that is still comfortable this is the vehicle for you! Clean H3 featuring heated leather seats, touch screen display, running boards, tons of trunk space and more! Check out our website for additional information www.munstermanauto.com or give us a call to schedule a test drive today 816-598-1286#wesayyeskc We really do! 100% Guaranteed Credit Approval! Schedule a test drive today, 816-598-1286! You can find more information on this vehicle or check out the rest of what we have in stock on our web site www.munstermanauto.com. Please call us anytime Monday through Saturday 9am-6pm at 816-598-1286. You can also send any questions to dalton@munstermanauto.com anytime! We are closed for business on Sundays (Family Day). Although we try to remove SOLD units as quickly as possible, due to our high inventory turnover, it is possible that some may remain online so please call in advance to make sure that the vehicle you are looking for is still in stock. Come and see us! We are located right on Highway 7, next to the Highway 7/Highway 40 intersection. We are next to the brand new QuickTrip.Thank you for spending time with us, have a great day!Hablamos Español!
+Shop with Confidence
+Vehicle Description
+**Leather** If you’re looking for tough SUV that is still comfortable this is the vehicle for you! Clean H3 featuring heated leather seats, touch screen display, running boards, tons of trunk space and more! Check out our website for additional information www.munstermanauto.com or give us a call to schedule a test drive today 816-598-1286#wesayyeskc We really do! 100% Guaranteed Credit Approval! Schedule a test drive today, 816-598-1286! You can find more information on this vehicle or check out the rest of what we have in stock on our web site www.munstermanauto.com. Please call us anytime Monday through Saturday 9am-6pm at 816-598-1286. You can also send any questions to dalton@munstermanauto.com anytime! We are closed for business on Sundays (Family Day). Although we try to remove SOLD units as quickly as possible, due to our high inventory turnover, it is possible that some may remain online so please call in advance to make sure that the vehicle you are looking for is still in stock. Come and see us! We are located right on Highway 7, next to the Highway 7/Highway 40 intersection. We are next to the brand new QuickTrip.Thank you for spending time with us, have a great day!Hablamos Español!
+Features Overview
+•
+4WD
+•
+5-Cyl; 3.5 Liter
+•
+ABS
+•
+Air bags; frontal; driver and right front passenger; includes passenger sensing system
+•
+Air Conditioning
+•
+Air conditioning; front driver and right front passenger
+•
+Alloy Wheels
+•
+Alternator; 125 amps
+•
+AM/FM Stereo
+•
+Assist handles; 5 total; 1 A-pillar mounted for front passenger; 2 B-pillar and 2 overhead mounted for outboard rear seats
+•
+Automatic
+•
+Battery; heavy-duty; 690 cold-cranking amps; includes rundown protection
+•
+Body; swing gate; driver side-hinged; fixed glass
+•
+Brakes; 4-wheel disc; 4-wheel ABS with unique calibration for 4Lo
+•
+Bumpers; front and rear; painted; single color
+•
+CD/MP3
+•
+City 16/hwy 19
+•
+City 16/hwy 20
+•
+Console; floor; front; multi-use
+•
+Cruise Control
+•
+Cruise control; electronic with set and resume speed; includes telltale in instrument panel cluster
+•
+Cupholders; 2 front and 1 rear
+•
+Daytime running lamps
+•
+Defogger; rear-window; electric
+•
+Door locks; power
+•
+Dual Air Bags
+•
+DVD System
+•
+Engine; 3.5L DOHC; 5-cylinder; MFI
+•
+Floor covering; color-keyed carpeting; includes Tufloor in rear cargo area
+•
+Fog lamps; front; halogen
+•
+Glass; Solar-Ray deep tinted
+•
+Glovebox; passenger side
+•
+Grille; chrome; 7-slot
+•
+GVWR; 5850 lbs.
+•
+Headlamps; dual composite halogen; includes automatic lamp control
+•
+Horn; single note
+•
+Keyless entry; remote; includes 2 transmitters and remote panic button
+•
+Leather
+•
+License plate provision; front
+•
+Lighting; front and interior dome; reading; cargo; IP courtesy; door switches and illuminated entry
+•
+Luggage rack provisions; side rails
+•
+Mirror; inside rearview; electrochromic ; 8-point compass and outside temperature indicator
+•
+Mirrors; outside rearview; power adjustable; manual folding
+•
+Off-Road Suspension
+•
+OnStar
+•
+OnStar; one-year of Safe and Sound Service. Includes Automatic Notification of Air Bag Deployment; Emergency Services; Stolen Vehicle Location Assistance; Remote Door Unlock; OnStar Vehicle Diagnostics; Roadside Assistance; Accident Assist and Remote Horn and Lights. Also featuring Hands-Free Calling
+•
+Paint; solid
+•
+Power Door Locks
+•
+Power outlets; auxiliary; covered; 2 front and 1 in rear cargo area; 12-volt
+•
+Power Steering
+•
+Power Windows
+•
+Privacy Glass
+•
+Rear axle; 4.56 ratio
+•
+Recovery hooks; 2 front and 1 rear
+•
+Retained accessory power
+•
+Running Boards
+•
+Seat and interior trim; cloth
+•
+Seats; front reclining buckets; includes adjustable head restraints; driver manual lumbar controls; and map pockets on seat backs
+•
+Skid Plate Package; includes skid plates for front and steering/suspension
+•
+Sound system feature; 6-speaker system
+•
+Sound system; ETR AM/FM stereo with CD player; includes seek-and-scan; digital clock; auto-tone control; speed-compensated volume; and TheftLock
+•
+Steering column; Tilt-Wheel; adjustable; includes brake/transmission shift interlock
+•
+Steering wheel; vinyl
+•
+Steering; power; rack-and-pinion
+•
+Suspension Package; Handling/Trailering; heavy-duty
+•
+Suspension; front; independent torsion bar; heavy-duty
+•
+Suspension; rear; semi-floating axle with 2-stage multi-leaf springs
+•
+Theft-deterrent system; PASSlock II
+•
+Tilt Wheel
+•
+Tire pressure monitor
+•
+Tire; spare; full-size; rear; swing-gate mounted
+•
+Tires; P265/75R16; all-terrain; blackwall
+•
+Traction Control
+•
+Traction control system; electronic
+•
+Transfer case; 2.64:1 button actuated full time 4WD; 2-speed
+•
+Transmission; 5-speed manual with overdrive
+•
+Visors; driver and front passenger; includes vanity mirror on passenger side
+•
+Wheels; 5 - 16’ x 7.5’
+aluminum
+•
+Windows; power
+•
+Wiper; rear; wiper/washer
+•
+Wipers; intermittent; front; variable; wiper/washer
+Contact Information
+Please Contact Michael Munsterman
+Munsterman Automotive Group
+Web
+: munstermanauto.com Email : mjmunsterman@yahoo.com
+(816) 598-1286609 SW State Route 7Blue Springs, MO 64014
+RE : 2006 HUMMER H3
+function isNumber(n) {
+return !isNaN(parseFloat(n)) && isFinite(n);
+}
+function formcheck() {
+var FormOK=true
+if (document.getElementById('firstname').value=="") { document.getElementById('firstname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('lastname').value=="") { document.getElementById('lastname').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('email').value=="") { document.getElementById('email').className='arform_textfield_required';FormOK=false; }
+if (document.getElementById('phone1').value=="") { document.getElementById('phone1').className='arform_textfield_required';FormOK=false; }
+var tldregex=/^(com|net|org|edu|int|mil|gov|arpa|biz|cc|aero|name|coop|info|pro|museum)$/;
+var domainregex=/^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+\.)+[a-zA-Z0-9.-]{2,4}$/;
+var theemail=document.uberform.email.value;
+var domainarray=theemail.split(".");
+var thetld=domainarray[domainarray.length-1];
+thetld=thetld.toLowerCase();
+if (theemail.length>=1) {
+if ( thetld.length!=2 && thetld.search(tldregex)==-1 || domainregex.test(theemail)==false ) {
+document.uberform.email.className='arform_textfield_required';
+// document.uberform.email.focus(); // conflicts with className change - removed
+alert('Email address does not seem to be valid.');
+FormOK=false;
+}
+}
+if (FormOK==false) {
+document.uberform.sendform.value='Submit';
+alert('Please check the highlighted fields...\n\nAdditional information is required.');
+}
+return FormOK;
+}
+Questions? - Contact Us!
+My Information
+*First Name, Middle Initial
+*Last Name
+*Email Address
+*Day Phone Number
+Evening Phone Number
+Have a TradeYES
+NO
+Financing RequestedYES
+NO
+Comments / Questions
+document.getElementById('lockbox').value='0.494068310327';
+document.getElementById('keycode').value='140726100220184CD229A8EFE53350DDEF92923B9A1F12';
+Prices subject to change without notice and do not include Title, License, Registration Fees, State or Local Taxes or Processing Fees, if any. Please contact seller first for vehicle availability. Although every effort is made to present accurate and reliable information, use of this information is voluntary, and should only be deemed reliable after an independent review of its accuracy, completeness, and timeliness. It is the sole responsibility of the customer to verify the existence of options, accessories and the vehicle condition before time of sale. Any and all differences must be addressed prior to time of sale. No expressed or implied warranties, including the availability or condition of the equipment listed is made. EPA mileage estimates for comparison purposes only. Actual mileage may vary depending on driving conditions, driving habits, and vehicle maintenance.© 1999-2018 AutoRevolution.com
+96 page views
+[Close Window]
+window.CarStoryConfig = {
+referrer: "PLACE_REFERRER_HERE"
+};
+$(document).ready(function(){
+$("tr.include-carstory").insertAfter("tr.ar_vehinfo");
+});
+sitemap
+an auto dealer website
