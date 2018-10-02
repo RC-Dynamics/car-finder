@@ -174,3 +174,12 @@ NOT ENOUGH LINK:  (02-10-2018 17:42:52): https://www.autotrader.com/
 NOT ENOUGH LINK:  (02-10-2018 17:46:16): https://www.carsforsale.com/
 NOT ENOUGH LINK:  (02-10-2018 17:46:25): https://www.carsforsale.com/
 NOT ENOUGH LINK:  (02-10-2018 17:46:48): https://www.carsforsale.com/
+NOT ENOUGH LINK:  (02-10-2018 17:51:30): https://www.carsforsale.com/
+TIMEOUT (02-10-2018 17:51:35): https://www.autotrader.com/
+NOT ENOUGH LINK:  (02-10-2018 17:51:35): https://www.autotrader.com/
+TIMEOUT (02-10-2018 18:06:28): https://www.kbb.com/audi/a3/2018/?bodystyle=sedan&intent=buy-new&rts=https%3a%2f%2fwww.kbb.com%2fvehicle-search-results%2fluxury-vehicles-under-35000%2f
+TIMEOUT (02-10-2018 18:06:39): https://www.kbb.com/bmw/x1/2018/?bodystyle=suv&intent=buy-new&rts=https%3a%2f%2fwww.kbb.com%2fvehicle-search-results%2fluxury-vehicles-under-35000%2f
+TIMEOUT (02-10-2018 18:07:10): https://www.kbb.com/kia/rio/2018/?bodystyle=sedan&intent=buy-new&rts=https%3a%2f%2fwww.kbb.com%2fvehicle-search-results%2ftop-rated-sedans-under-25000%2f2%2f
+NOT ENOUGH LINK:  (02-10-2018 18:14:16): https://www.carsforsale.com/
+TIMEOUT (02-10-2018 18:14:21): https://www.autotrader.com/
+NOT ENOUGH LINK:  (02-10-2018 18:14:21): https://www.autotrader.com/
