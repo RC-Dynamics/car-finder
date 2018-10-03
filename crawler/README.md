@@ -1,7 +1,7 @@
 # Car Finder - Crawler
 System to find cars
 
-## Hoe to run
+## How to run
 
 To install dependencies run:
 
