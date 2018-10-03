@@ -1,0 +1,585 @@
+New 351 W performance parts plus 429 Cobra Jet parts | Classic Cars | Strathcona County | Kijiji
+{ "@context" : "https://schema.org",
+"@type" : "Organization",
+"name" : "Kijiji Canada",
+"alternateName" : "Kijiji",
+"url" : "https://www.kijiji.ca/",
+"sameAs" : [
+"https://www.facebook.com/Kijiji.ca/",
+"https://twitter.com/Kijiji",
+"https://plus.google.com/+KijijiCanada",
+"https://www.youtube.com/user/kijijicanadacorp",
+"https://www.linkedin.com/company/kijiji-an-ebay-company",
+"https://www.wikidata.org/wiki/Q1741191"
+],
+"logo": "https://www.kijiji.ca/kijijicentral/app/uploads/2017/03/Kijiji-Canada-Logo-1.jpg"
+}
+var _kiq = _kiq || [];
+_kiq.push(['set', {'category_suggestion_web': true }]);
+_kiq.push(['set', {'locale': 'en_CA' }]);
+(function(){
+setTimeout(function(){
+var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//s3.amazonaws.com/ki.js/60169/dyi.js'; f.parentNode.insertBefore(s, f);
+}, 1);
+})();
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var gptMasterAdData = gptMasterAdData || {};
+var gptCTMAdData = gptCTMAdData || {};
+var gptSizeMaps = gptSizeMaps || {};
+var gptAdSlots = gptAdSlots || {};
+var gptAdTargeting = gptAdTargeting || [];
+var gptBannerSizeMapping = gptBannerSizeMapping || [];
+gptSizeMaps.baseBanner = {
+breakPoint: [751, 991],
+responsive: [
+{ minWidth: 991, sizes: [[728, 90], [970, 250]] },
+{ minWidth: 751, sizes: [728, 90] },
+{ minWidth: 0, sizes: [] }
+]
+};
+gptSizeMaps.sticky = {
+breakPoint: 751,
+responsive: [
+{ minWidth: 751, sizes: [] },
+{ minWidth: 0, sizes: [320, 50] }
+]
+};
+gptMasterAdData['gpt-leaderboard-base'] = {
+id: 'gpt-leaderboard-base',
+slot: '/5138/kij.ca.carsvehicles/classic_cars/evip',
+sizes: [[728, 90],[970, 250]],sizeMapping: gptSizeMaps.baseBanner,tile: '4',pos: 'base',
+collapse: true,
+isBiddable: true
+};
+gptBannerSizeMapping.push({
+name: 'gpt-leaderboard-base',
+breakPoint: gptSizeMaps.baseBanner.breakPoint
+});
+gptMasterAdData['gpt-sticky'] = {
+id: 'gpt-sticky',
+slot: '/5138/kij.ca.carsvehicles/classic_cars/evip',
+sizes: [[320, 50]],sizeMapping: gptSizeMaps.sticky,
+collapse: false,
+isBiddable: false
+};
+gptBannerSizeMapping.push({
+name: 'gpt-sticky',
+breakPoint: gptSizeMaps.sticky.breakPoint
+});
+gptAdTargeting.push({ key: 'pagetype', value: 'evip' });
+gptAdTargeting.push({ key: 'sub', value: 'strathconacounty' });
+gptAdTargeting.push({ key: 'ptg', value: ["KCA24859_1", "KCA25084_1", "KCA26273_1", "KCA26465_0", "KCA26723_1", "KCA27572_0", "KCA27609_0", "KCA27636_1"] });
+gptAdTargeting.push({ key: 'pt', value: 'eVIP' });
+gptAdTargeting.push({ key: 'city', value: 'edmontonarea' });
+gptAdTargeting.push({ key: 'l1', value: 'carsvehicles' });
+gptAdTargeting.push({ key: 'ot', value: '1' });
+gptAdTargeting.push({ key: 'g_pn', value: '1' });
+gptAdTargeting.push({ key: 'reg_user', value: 'no' });
+gptAdTargeting.push({ key: 'l2', value: 'classic_cars' });
+gptAdTargeting.push({ key: 'hn', value: 'kijiji.ca' });
+gptAdTargeting.push({ key: 'ct', value: '122' });
+gptAdTargeting.push({ key: 'catid', value: '122' });
+gptAdTargeting.push({ key: 'dv', value: 'd' });
+gptAdTargeting.push({ key: 'HBL', value: 'yes' });
+gptAdTargeting.push({ key: 'province', value: 'alberta' });
+gptAdTargeting.push({ key: 'forsaleby', value: 'owner' });
+gptAdTargeting.push({ key: 'g_prebid_version', value: '0.34.15' });
+gptAdTargeting.push({ key: 'lc', value: '1700204' });
+gptAdTargeting.push({ key: 'um', value: '0' });
+gptAdTargeting.push({ key: 'li', value: 'no' });
+gptAdTargeting.push({ key: 'locid', value: '1700204' });
+gptAdTargeting.push({ key: 'pagetest', value: 'largerimagessrp' });
+var pbPartnerConfig = pbPartnerConfig || [];
+pbPartnerConfig.push({
+id: 'aol',
+cpmAdjustment: 0.88,
+params: {
+'gpt-rightrail-top':
+{ network: '9970.1', placement: '4428492' },'gpt-rightrail-bottom': { network: '9970.1', placement: '4428494' },'gpt-vip-leader':
+{ network: '9970.1', placement: '4428491' },'GPTBigbox':
+{ network: '9970.1', placement: '4428490' },'gpt-leaderboard-top':
+{ network: '9970.1', placement: '4428546' },'gpt-top-srp':
+{ network: '9970.1', placement: '4428515' },'gpt-inline-srp':
+{ network: '9970.1', placement: '4428522' },'gpt-leaderboard-base': { network: '9970.1', placement: '4428520' },'gpt-skyscraper':
+{ network: '9970.1', placement: '4428518' },'gpt-leader-bottom':
+{ network: '9970.1', placement: '4428494' }
+}
+});
+pbPartnerConfig.push({
+id: 'appnexus',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ placementId: '10477092' },'gpt-r2s-vip':
+{ placementId: '10477092' },'gpt-posted-vip':
+{ placementId: '10477092' },'gpt-rightrail-top':
+{ placementId: '10477237' },'gpt-rightrail-bottom': { placementId: '10477240' },'gpt-vip-leader':
+{ placementId: '10477242' },'GPTBigbox':
+{ placementId: '10477243' },'gpt-leaderboard-top':
+{ placementId: '10477244' },'gpt-top-srp':
+{ placementId: '10477245' },'gpt-inline-srp':
+{ placementId: '10477246' },'gpt-leaderboard-base': { placementId: '10477247' },'gpt-skyscraper':
+{ placementId: '10477248' },'gpt-leader-bottom':
+{ placementId: '10477240' }
+}
+});
+pbPartnerConfig.push({
+id: 'districtmDMX',
+cpmAdjustment: 0.9,
+params: {
+'ImageLeaderBoard':
+{ id: 130920 },'gpt-r2s-vip':
+{ id: 130920 },'gpt-posted-vip':
+{ id: 130920 },'gpt-rightrail-top':
+{ id: 130921 },'gpt-rightrail-bottom': { id: 130922 },'gpt-vip-leader':
+{ id: 116615 },'GPTBigbox':
+{ id: 127055 },'gpt-leaderboard-top':
+{ id: 129907 },'gpt-top-srp':
+{ id: 127050 },'gpt-inline-srp':
+{ id: 116617 },'gpt-leaderboard-base': { id: 127056 },'gpt-skyscraper':
+{ id: 127058 },'gpt-leader-bottom':
+{ id: 130922 }
+}
+});
+pbPartnerConfig.push({
+id: 'indexExchange',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ siteID: 190665, id: 1 },'gpt-r2s-vip':
+{ siteID: 190665, id: 1 },'gpt-posted-vip':
+{ siteID: 190665, id: 1 },'gpt-rightrail-top':
+{ siteID: 190666, id: 2 },'gpt-rightrail-bottom': { siteID: 190667, id: 3 },'gpt-vip-leader':
+{ siteID: 190668, id: 4 },'GPTBigbox':
+{ siteID: 190669, id: 5 },'gpt-leaderboard-top':
+{ siteID: 190663, id: 6 },'gpt-top-srp':
+{ siteID: 190670, id: 7 },'gpt-inline-srp':
+{ siteID: 190671, id: 8 },'gpt-leaderboard-base': { siteID: 190672, id: 9 },'gpt-skyscraper':
+{ siteID: 190673, id: 10 },'gpt-leader-bottom':
+{ siteID: 190667, id: 3 }
+}
+});
+pbPartnerConfig.push({
+id: 'openx',
+cpmAdjustment: 0.85,
+params: {
+'ImageLeaderBoard':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714686' },'gpt-r2s-vip':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714686' },'gpt-posted-vip':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714686' },'gpt-rightrail-top':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714687' },'gpt-rightrail-bottom': { delDomain: 'kijiji-d.openx.net', unit: '538714688' },'gpt-vip-leader':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714689' },'GPTBigbox':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714690' },'gpt-leaderboard-top':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714691' },'gpt-top-srp':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714692' },'gpt-inline-srp':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714693' },'gpt-leaderboard-base': { delDomain: 'kijiji-d.openx.net', unit: '538714694' },'gpt-skyscraper':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714696' },'gpt-leader-bottom':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714688' }
+}
+});
+pbPartnerConfig.push({
+id: 'pubmatic',
+cpmAdjustment: 0.92,
+params: {
+'ImageLeaderBoard':
+{ publisherId: '155984', adSlot: 'PUBMATIC_ADFLOW_TOP_ENGLISH_728x90@728x90' },'gpt-r2s-vip':
+{ publisherId: '155984', adSlot: 'PUBMATIC_ADFLOW_TOP_ENGLISH_728x90@728x90' },'gpt-posted-vip':
+{ publisherId: '155984', adSlot: 'PUBMATIC_ADFLOW_TOP_ENGLISH_728x90@728x90' },'gpt-rightrail-top':
+{ publisherId: '155984', adSlot: 'PUBMATIC_HOMEPAGE_TOP_ENGLISH_300x250@300x250' },'gpt-rightrail-bottom': { publisherId: '155984', adSlot: 'PUBMATIC_HOMEPAGE_BOTTOM_ENGLISH_300x250@300x250' },'gpt-vip-leader':
+{ publisherId: '155984', adSlot: 'PUBMATIC_VIEW_ITEM_PAGE_TOP_ENGLISH_728x90@728x90' },'GPTBigbox':
+{ publisherId: '155984', adSlot: 'PUBMATIC_VIEW_ITEM_PAGE_BOTTOM_ENGLISH_300x250@300x250' },'gpt-leaderboard-top':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_TOP_ENGLISH_728x90@728x90' },'gpt-top-srp':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_INLINE1_ENGLISH_728x90@728x90' },'gpt-inline-srp':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_INLINE2_ENGLISH_728x90@728x90' },'gpt-leaderboard-base': { publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_BASEBOARD_ENGLISH_728x90@728x90' },'gpt-skyscraper':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_LEFT_RAIL_ENGLISH_160x600@160x600' },'gpt-leader-bottom':
+{ publisherId: '155984', adSlot: 'PUBMATIC_HOMEPAGE_BOTTOM_ENGLISH_300x250@300x250' }
+}
+});
+pbPartnerConfig.push({
+id: 'rubicon',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ siteId: '45324', accountId: '12230', zoneId: '582460' },'gpt-r2s-vip':
+{ siteId: '45324', accountId: '12230', zoneId: '582460' },'gpt-posted-vip':
+{ siteId: '45324', accountId: '12230', zoneId: '582460' },'gpt-rightrail-top':
+{ siteId: '45324', accountId: '12230', zoneId: '582464' },'gpt-rightrail-bottom': { siteId: '45324', accountId: '12230', zoneId: '582466' },'gpt-vip-leader':
+{ siteId: '45324', accountId: '12230', zoneId: '582470' },'GPTBigbox':
+{ siteId: '45324', accountId: '12230', zoneId: '582472' },'gpt-leaderboard-top':
+{ siteId: '45324', accountId: '12230', zoneId: '582474' },'gpt-top-srp':
+{ siteId: '45324', accountId: '12230', zoneId: '582476' },'gpt-inline-srp':
+{ siteId: '45324', accountId: '12230', zoneId: '582478' },'gpt-leaderboard-base': { siteId: '45324', accountId: '12230', zoneId: '582480' },'gpt-skyscraper':
+{ siteId: '45324', accountId: '12230', zoneId: '582482' },'gpt-leader-bottom':
+{ siteId: '45324', accountId: '12230', zoneId: '582466' }
+}
+});
+pbPartnerConfig.push({
+id: 'criteo',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ zoneId: '1257525' },'gpt-r2s-vip':
+{ zoneId: '1257525' },'gpt-posted-vip':
+{ zoneId: '1257525' },'gpt-rightrail-top':
+{ zoneId: '1257543' },'gpt-rightrail-bottom': { zoneId: '1257537' },'gpt-vip-leader':
+{ zoneId: '1257526' },'GPTBigbox':
+{ zoneId: '1257538' },'gpt-leaderboard-top':
+{ zoneId: '1257527' },'gpt-top-srp':
+{ zoneId: '1257533' },'gpt-inline-srp':
+{ zoneId: '1257534' },'gpt-leaderboard-base': { zoneId: '1257531' },'gpt-skyscraper':
+{ zoneId: '1257539' }
+}
+});
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+var PREBID_TIMEOUT = 2000;
+var PREBID_CPM_MAX = 3.50;
+if (pbPartnerConfig.length > 0) {
+var prebidAdUnits = prebidAdUnits || [];
+var prebidCpmSums = prebidCpmSums || {};
+Kj.Banners.Bidding.constructPrebidAdUnits();
+Kj.Banners.Bidding.enableBidderSettings();
+if (prebidAdUnits.length > 0) {
+pbjs.que.push(function() {
+pbjs.enableSendAllBids();
+pbjs.setBidderSequence('random');
+pbjs.onEvent('bidResponse', Kj.Banners.Bidding.monitorCpmTotals);
+});
+(function() {
+var pbjsEl = document.createElement('script');
+pbjsEl.type = 'text/javascript';
+pbjsEl.async = true;
+pbjsEl.src = 'https://ca.classistatic.com/static/V/7130/js/lib/prebid-0.34.15.min.js';
+var pbjsTargetEl = document.getElementsByTagName('head')[0];
+pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+})();
+Kj.Banners.Bidding.requestBidsBeforeGPT(prebidAdUnits, PREBID_TIMEOUT);
+}
+}
+(function () {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+Kj.Banners.Init.pushAdSizeMaps();
+Kj.Banners.Init.pushAdSlots();
+Kj.Banners.Init.pushAdTargeting();
+googletag.cmd.push(function() {
+googletag.pubads().set('adsense_background_color', 'FFFFFF');
+googletag.enableServices();
+});
+var dataLayer = [{"p":{"t":"eVIP","pl":"Wildebeest","v":"7130","lng":"en_CA","ua":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"},"c":{"c":{"id":122,"n":"Classic Cars"},"l0":{"id":0,"n":"Classifieds"},"l1":{"id":27,"n":"Cars \u0026 Vehicles"},"l2":{"id":122,"n":"Classic Cars"}},"l":{"c":{"id":1700204,"n":"Strathcona County"},"l0":{"id":0,"n":"Canada"},"l1":{"id":9003,"n":"Alberta"},"l2":{"id":1700202,"n":"Edmonton Area"},"l3":{"id":1700204,"n":"Strathcona County"},"d":""},"u":{"li":false,"tg":{"stg":"KCA26846=0;KCA27572=0;KCA27609=0;KCA25084=1;KCA24859=1;KCA26273=1;KCA26465=0;KCA26723=1;KCA27572=0;KCA27636=1","pagetest":"largerimagessrp"}},"d":{"ua":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"},"s":{"dcr":false,"tr":176,"pn":1,"tp":9,"ps":20,"prc":{},"attr":{},"attrMin":{},"attrMax":{},"srt":{"f":"date","dr":"DESC"},"u":{"li":false,"tg":{"stg":"","pagetest":"largerimagessrp"}},"sr":[{"id":"1388149153","pos":1,"rt":"organic","cr":""},{"id":"1387661461","pos":2,"rt":"organic","cr":""},{"id":"1387709264","pos":3,"rt":"organic","cr":""},{"id":"1387558027","pos":4,"rt":"organic","cr":""},{"id":"1387457920","pos":5,"rt":"organic","cr":""},{"id":"1387105397","pos":6,"rt":"organic","cr":""},{"id":"1386066571","pos":7,"rt":"organic","cr":""},{"id":"1384855704","pos":8,"rt":"organic","cr":""},{"id":"1383651682","pos":9,"rt":"organic","cr":""},{"id":"1383086743","pos":10,"rt":"organic","cr":""},{"id":"1383084933","pos":11,"rt":"organic","cr":""},{"id":"1382545656","pos":12,"rt":"organic","cr":""},{"id":"1382071082","pos":13,"rt":"organic","cr":""},{"id":"1382055061","pos":14,"rt":"organic","cr":""},{"id":"1381643831","pos":15,"rt":"organic","cr":""},{"id":"1368156060","pos":16,"rt":"organic","cr":""},{"id":"1380313868","pos":17,"rt":"organic","cr":""},{"id":"1379883643","pos":18,"rt":"organic","cr":""},{"id":"1351929160","pos":19,"rt":"organic","cr":""},{"id":"1378235818","pos":20,"rt":"organic","cr":""}]},"ts":"2018-10-03 15:16:01.205+0000"}];
+(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-W4V6');
+(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(
+arguments)},G[g]['t']=1*new Date})(window,document,'script','_googCsa');
+var dataAAM = dataAAM || {};
+var kijijiDil = DIL.create({
+partner: 'kijiji',
+uuidCookie: { name: 'aam_uuid', days: 30 }
+});
+gptAdTargeting.forEach(function(targeting) {
+dataAAM[targeting.key] = targeting.value;
+});
+kijijiDil.api.signals(dataAAM, 'c_').submit();
+$(document).ready(function() {
+if(document.all) {
+$('#MainContainer').prepend("<div id=\"IeSunset\">" +
+"<h3>Your browser is out of date. Change to a modern browser for a more secure web experience.</h3><ul>" +
+"<li class=\"moz\"><a href=\"https://www.mozilla.org/en-US/firefox/new/\" target=\"_blank\" rel=\"noopener noreferrer\"><h4>Mozilla Firefox <span>Download Here</span></h4></a></li>" +
+"<li class=\"chrome\"><a href=\"https://www.google.com/chrome/browser/desktop/\" target=\"_blank\" rel=\"noopener noreferrer\"><h4>Google Chrome<span>Download Here</span></h4></a></li>" +
+"<li class=\"ie\"><a href=\"https://support.microsoft.com/en-ca/help/17621/internet-explorer-downloads\" target=\"_blank\" rel=\"noopener noreferrer\"><h4>Internet Explorer<span>Download Here</span></h4></a></li>" +
+"</ul></div>");
+}
+});
+window.baseUrl="//ca.classistatic.com/service-static/frontend-service";
+window.boxUrl="//www.kijiji.ca/";
+Kj.Sponsors.init({
+maxAds: 3,
+keepTopBar: false
+});
+var clientIdShop = '';
+var adsenseConfig = {
+test: 'off',
+language: 'en',
+pageType: 'srp',
+csa: {
+top: {
+number: 0
+},
+bottom: {
+number: 3
+},
+page: 1,
+repeats: 0,
+clientId: 'kijiji-ca-search2',
+clientIdShop: clientIdShop,
+query: 'New 351 W performance parts plus 429 Cobra Jet parts',
+channel: 'Total+r_Edmonton+l_l2+c_cars+r_AB_c_autos_p_1+1_w_x_x_x_x_x_x_kca27609_a+kijiji_ca_afs_031+kijiji_ca_afs_042+kijiji_ca_afs_028+1_w_x_x_x_x_x_x_kca26465_c+1_w_x_x_x_x_x_x_kca26723_b+1_w_x_x_x_x_x_x_kca27572_a+1_w_x_x_x_x_x_x_kca27636_b',
+width: '100%',
+isLargeImage: true
+}
+};
+Kj.Adsense.init(adsenseConfig);
+Kj.Sponsors.chain(Kj.Adsense.api);
+Kj.Sponsors.doFilter();
+var pageTrackingIdentifier = 'Browse Ads';
+var gaEventLabel = 'L1Cat=Cars & Vehicles;L2Cat=Classic Cars;L1Location=Canada;L2Location=Edmonton Area;L3Location=Strathcona County';
+Skip to main contentKijijiKijijiKijijiKijijifrRegister or Sign InPost adSearchCategoriesAll AdsBuy & SellServicesCars & VehiclesPetsVacation RentalsCommunityReal EstateJobsClassic CarsLocationFind what you are looking forFind what you are looking for
+if(rehydrate===undefined){var rehydrate={};}rehydrate["header"]={componentPath:"Shared/Header/Header",props:{}};
+Back to Search
+Alberta
+>
+Edmonton Area
+>
+Strathcona County
+>
+Cars & Vehicles
+> Classic Cars in Strathcona County
+No Longer Available - New 351 W performance parts plus $950.00
+Sold as a package only! New in box Edelbrock performer (non EGR) aluminum intake, New Comp Cam performance camshaft, New hipo ignition module, New lifter set, New push rod set, new timing gear set, Lifter springs,remanufactured distributor (New in ...
+See More Ads
+Some ads you might like instead...
+$699.00
+Brand New 351 performance parts
+Strathcona County< 21 hours ago
+Package includes a New in box Edelbrock 351 W intake, New Distributor , new sealed in box camshaft, new lifters, springs, new pushrods, New timing change, new gaskets, New performance Ignition box .…
+Automatic | 123,456km
+$48,500.00
+1965 Mustang Fastback
+Edmonton01/10/2018
+1965 Mustang Fastback Cherry Red, White GT Stripes and Vents. 351 Windsor Borg-@arner T5 Transmission Power steering Power breaks (front disc, rear drum) Rear Sway Bar GT Wheels, fold down back seat,…
+Manual | 20,000km
+$37,500.00
+09 Shelby GT500
+factory supercharged
+Edmonton30/09/2018
+09 Shelby GT500 34000kms factory supercharged 6 speed manual with short throw shifter Great shape with upgrades pushing 650HP JLT Cold air intake Steeda supercharger pulley One piece drive shaft…
+Manual | 34,000km
+$4,000.00
+1967 Thunderbird 429 Coupe
+Strathcona County29/09/2018
+Selling my '67 Thunderbird to fund other projects. It is a running driver quality car active alberta status. I drove it a bunch this summer. Interior is in excellent shape, has a 429 Thunderjet,…
+123,456km
+$4,000.00
+1973 Ford Gran Torino Sport Fastback
+Strathcona County29/09/2018
+1973 Ford Gran Torino Sportback, 351M, auto, black interior (buckets and console). Everything is there, I took the front off to install motor and transmission, rear quarters need replacement, I have…
+Automatic | 50,000km
+$25,000.00
+1970 Torino GT
+Edmonton27/09/2018
+Full restoration needs to be assembled. Over 40K invested. Original 351 Cleveland 4 speed car. Deluxe Marti report available, new top new interior. A one of one car. Please phone and leave message I…
+Manual | 10km
+$21,500.00
+1970 Torino Cobra 429 SCJ drag pack
+Strathcona County23/09/2018
+1970 Torino Cobra 429 SCJ drag pack ,C6 a/t, J code shaker scoop, 3.91 Ncase trac lock diff. , Original #,s matching engine, C6 Automatic, Engine is a std. bore ,never any damage that needs to be…
+Automatic | 86,000km
+Swap / Trade
+Custom Ranchero
+Edmonton18/09/2018
+Custom exhaust colors newer wheels and tires Sounds Awesome Modified 351 Windsor refreshed will look at all cash and trade offera would like $12500 but give me your best shot worst i can say is no…
+Automatic | 80,000km
+Please Contact
+1970 Ford 1/2 ton.
+Edmonton13/09/2018
+429 auto. Decent body. Good winter project. $3500
+100km
+$16,500.00
+1929 Ford Model A
+Strathcona County10/09/2018
+29’ Ford Model A Older Hot rod resto ( not done by me ) 351 W with light mods Auto trans with shift kit Mustang II front end Four Link rear Ford 9” Disk brakes in front Newer bucket seats Fires right…
+Automatic | 234km
+$10,500.00
+1972 Mercury Cougar XR7
+Strathcona County10/09/2018
+For sale is my 1972 Mercury Cougar XR7 in fantastic shape. A real head turner! Only 82000 original miles. Original paint in great shape. No rust. Has the famous 351 Cleveland V8 engine with Edelbrock…
+Automatic | 82,000km
+$9,500.00
+1950 Ford F-68 Truck
+Edmonton09/09/2018
+1950 Ford Project Truck powered by 351 W engine with lots of new parts, rebuilt automatic C-6 transmission and full floating heavy duty rear end. All new parts in suspension, brake system and truck…
+Automatic | 9,999,999km
+$10,995.00
+1978 Ford King Cobra
+Edmonton06/09/2018
+Revolution Ford Good, bad or No credit? We help EVERYONE here at Slave Lake Revolution Ford! Tons of alterations made to the engine and exhaust for increased performance! Call CJ @780-937-1446 for…
+Automatic | 115,534km
+$31,500.00
+1969 Mustang Convertible
+St. Albert06/09/2018
+351 Windsor 4 bbl automatic original motor and transmission both rebuilt Original interior Marti Report in pics No pay pal cash only. Don't need help to sell Leave your number and I will reply
+Automatic | 86,000km
+$12,345.00
+67-72 Chevy Pickup Parts
+Edmonton04/09/2018
+67-72 Chevy Pickup Parts doors, boxes, grill, many, many parts
+12,345km
+$45,000.00
+Classic Car
+Edmonton02/09/2018
+Shelby GT 500 Cobra. Never winter driven good weather driving only. Many horses to spare a joy to drive. While GT 500’s are out there not many convertibles. Have 2 Shelby’s would like to sell one.…
+Manual | 43,000km
+$5,500.00
+Ex government vacuum truck for sale
+Edmonton30/08/2018
+Must sell 1980 ford vacuum truck ,429 v8 13 spd Eaton Fuller trans ,rebuilt fruit lander pump , this is a very good reliable truck selling due to heath reasons needs very little tlc ,truck is located…
+Manual | 70,000km
+$8,200.00
+1957 Mercury Truck Shortbox Fleetside
+Edmonton28/08/2018
+Rare Mercury half ton M-100 truck. Shortbox fleet side. Engine updated with 351W and auto transmission. Power brakes. Original steering, suspension, tailgate, good glass. $8200 OBO
+Automatic | 120,000km
+$18,000.00
+1973 MUSTANG CONVERTIBLE 351 C BARN FIND
+Strathcona County22/08/2018
+Mechanical condition is dam near perfect ,, needs nothing ,, bought on the west coast and drove home to edm ,, all new rear susp,, 9 inch diff C6 automatic ,, completely original car H code engine,,…
+999,999km
+$10,000.00
+F-100 fully restored
+Edmonton21/08/2018
+SERIOUS INQUIRES ONLY, Appraised at over $14,000.00, Restored 1967 F-100, 52,000.00 original miles,Hydraulic tilt front end,(opens original way too), Rebuilt 351M, C-6 transmission (w/shift kit), SVO…
+Automatic | 52,000km
+See More Ads
+Sponsored Advertisements:
+googletag.cmd.push(function () {
+googletag.display('gpt-leaderboard-base');
+});
+googletag.cmd.push(function () {
+googletag.display('gpt-sticky');
+});
+KijijiAboutCareersMember BenefitsAdvertise on KijijiExploreKijiji CentralKijiji mobile paymentTools to promote adseBay Classifieds SitesInfoTerms of UsePrivacy PolicyPosting PolicyAdChoiceSupportHelp DeskKijiji en français©2005-2018 Marktplaats BVAll rights reserved. Google, Google Play, YouTube and other marks are trademarks of Google Inc.
+if(rehydrate===undefined){var rehydrate={};}rehydrate["footer"]={componentPath:"Shared/Footer",props:{}};
+window.__data={"autosLandingPage":{"loading":{"makes":{"failure":false,"pending":false,"success":false},"models":{"failure":false,"pending":false,"success":false},"inventory":{"failure":false,"pending":false,"success":false}},"makes":[],"models":[],"inventoryCount":null},"config":{"toggleHomepageFeed":false,"requestUrl":"\u002Fv-classic-cars\u002Fstrathcona-county\u002Fnew-351-w-performance-parts-plus-429-cobra-jet-parts\u002F1384073157","toggleProfileName":true,"toggleHeader":false,"showAdmarktLink":false,"toggleCentralRecentlyViewedAds":true,"clientType":{"isTablet":false,"isMobile":false,"isDesktop":true,"device":"FIREFOX (mobile=false, isApple=false)"},"boxInternalUrl":"\u002Fb-search.html","toggleMoveCrossPromotion":false,"requestQueryString":"enableSearchNavigationFlag=true","changeLocationURL":"\u002Fb-change-location.html?newLocationId=","searchForm":{"attributeMap":{},"ll":null,"highlightOnly":false,"sortByName":"dateDesc","adPriceType":null,"adIdRemoved":1384073157,"maxPrice":null,"attributeFiltersMax":{},"userId":null,"origin":null,"categoryName":"Classic Cars","keywords":null,"searchView":"LIST","urgentOnly":false,"cpoOnly":false,"gpTopAd":false,"locationId":1700204,"radius":"","attributeFiltersMin":{},"parentCategoryName":"Cars & Vehicles","address":"Strathcona County, Alberta","noLocation":false,"minPrice":null,"pageNumber":1,"categoryId":122,"locationPath":"0,9003,1700202,1700204","parentCategorySeoUrl":"\u002Fb-cars-vehicles\u002Fstrathcona-county\u002Fc27l1700204","carproofOnly":false,"dc":false},"toggleMessageboxResponsive":true,"boxInternalQueryString":"adRemoved=1384073157","userLoggedIn":false,"toggleRecaptcha":true,"toggleReducedHeader":true,"language":"en","toggleForcedLogin":true,"targetUrl":"L3YtY2xhc3NpYy1jYXJzL3N0cmF0aGNvbmEtY291bnR5L25ldy0zNTEtdy1wZXJmb3JtYW5jZS1wYXJ0cy1wbHVzLTQyOS1jb2JyYS1qZXQtcGFydHMvMTM4NDA3MzE1Nz9lbmFibGVTZWFyY2hOYXZpZ2F0aW9uRmxhZz10cnVlXjBEMnpEbGRCZ3ZaMTAwNWVNVTN6dFE9PQ--"},"locationPicker":{},"postAd":{"categories":{"all":{"level1":{"items":[],"parentId":null},"level2":{"items":[],"parentId":null},"level3":{"items":[],"parentId":null}},"suggested":[],"submittedTitle":""},"packages":{"error":false,"frozen":true,"items":{},"loaded":false,"selected":null},"postAdData":{"editing":false,"insertionFee":{"disclaimer":null,"exists":null,"postingLimit":null,"price":null},"l1CategoryId":null,"isShoppingCart":false,"isRepost":false},"postingLimit":{"adLimit":null,"categoryId":null,"categoryName":"","isAdmarktCategory":null,"isAdmarktUser":null,"isNewAd":null},"categoryConfig":[],"location":{"savedLocation":null,"postingLocation":null,"showExactLocation":true,"editingLocation":false,"locationApiLoadFailed":false},"loading":{"categories":{"all":{"failure":false,"pending":false,"success":false},"suggested":{"failure":false,"pending":false,"success":false}},"postAdData":{"failure":false,"pending":false,"success":false},"categoryConfig":{"failure":false,"pending":false,"success":false},"location":{"failure":false,"pending":false,"success":false}}},"messageBox":{"unreadCount":{"total":0,"asPoster":0,"asReplier":0},"loaded":false,"banners":{},"deleting":false,"activeConversation":{"loading":false,"loaded":false,"blockLoading":false,"failed":false,"data":{}},"totalCount":0,"prefetching":false,"roleFilter":"All","conversations":[],"unseenNotificationCount":0,"pageNum":0,"selected":[],"loading":false,"allSelected":false,"failed":false,"conversationCache":[]},"homepageGallery":{"ads":[],"firstLoad":true,"loading":false,"loaded":false},"recentlyViewedAds":{"loading":{"failure":false,"pending":false,"success":false},"ads":[]},"ebaySponsor":{"ads":[],"loading":false,"loaded":false},"viewItemPage":{"loading":false,"loaded":false,"viewItemData":{},"isModalMapOpen":false},"banners":{"rendered":{}},"myKijiji":{"myAds":{"ads":{"adsDirectory":{},"sortedAdIds":[],"requestedAds":{},"filtering":{"activeFilter":"active","currentSort":{"active":{"field":"sortableEndDate","ascending":true},"inactive":{"field":"sortableEndDate","ascending":true}},"search":""},"currentPage":1,"overheadMessageError":null},"promotions":{"totalPrice":0,"selectedfeatureIds":[],"sellingPoint":"MY_KIJIJI"},"loading":{"fullAds":{"failure":false,"pending":false,"success":false},"requestedAds":{"failure":false,"pending":false,"success":false},"sparseAds":{"failure":false,"pending":false,"success":false}}},"priceDrop":{"oldPrice":0,"userId":0,"error":false,"newPrice":0,"featureDuration":0,"successPage":"","featurePrice":0,"spawnId":0,"attemptingPurchase":false,"failurePage":"","featureIdentifier":""},"surveys":{"loading":{"failure":false,"pending":false,"success":false}}},"profile":{"loading":false,"loaded":false},"router":{"route":"UNKNOWN","pathParams":{},"queryParams":{"enableSearchNavigationFlag":"true"},"isVirtualPageView":false},"messages":{},"componentPositions":{"componentOffsets":{}},"searchResults":{"hasDealerRatings":false,"hasSponsors":false,"loadStates":{"ratings":{"loaded":false,"loading":false},"sponsors":{"loaded":false,"loading":false}},"loaded":false,"loading":false},"mediaGallery":{},"homepage":{"loading":false,"loaded":false,"data":{},"searchFieldFocused":false},"cookies":{},"showMore":{},"r2s":{"submitted":false,"submitting":false,"expanded":false,"expandedByUser":false,"error":null},"itemLocationMap":{},"recommendedAds":{"ads":[],"loaded":false,"loading":false},"reportAd":{"submitting":false,"submitted":false},"financing":{"submitting":false,"submitted":false},"phoneNumber":{"value":null},"googleMapApi":{"locationApiLoadFailed":false},"shareLink":{"adInfo":{},"loaded":false,"loading":false},"dealerRatings":{"loading":false,"loaded":false,"mobialsData":{}},"categoryMenu":{"categories":[],"loaded":false,"loading":false},"pubnub":{"connected":false,"suspended":false,"reconnectAllowed":true},"userProfile":{"hasErrors":false},"carproofRequest":{"requestAttempt":false,"requestSuccess":false,"requestFail":false,"requestMessage":null}};
+window.__apolloData={"$ROOT_QUERY.suggestKeyword":{"query":"","categoryId":0,"selected":false,"__typename":"SuggestKeyword"},"ROOT_QUERY":{"suggestKeyword":{"type":"id","generated":true,"id":"$ROOT_QUERY.suggestKeyword","typename":"SuggestKeyword"},"__typename":"SuggestKeywordQuery"}};
+My Favourites ()
+Recently Added:
+View all
+$(document).ready(function () {
+var data = window.dataLayer ? dataLayer[0] : [];
+Zoop.init({
+data: {dl: data},
+config: {
+url: "/j-page-view.json",
+token: "1538579760923.c579d89ea3a842d46a4672137339c215f6126ac32b3f1ca60a100c8b928d1c25"
+}
+});
+Zoop.callEvent({
+data: {}
+});
+});
+Kj.extVars = {
+validationMessages : {
+group : "Please correct the errors below:",
+req : "Please enter information above.",
+email : "Please enter a valid email address.",
+number : "Please enter a valid number.",
+phone: "Please provide a valid phone number.",
+maxlength : "Sorry, our limit is {{max}} characters. Please shorten your message.",
+minlength: "Input needs to be at least {{min}} characters.",
+numberRange: "Please enter a value between {{min}} and {{max}}.",
+numberMax: "Please enter a value no greater than {{max}}.",
+numberMin: "Please enter a value of at least {{min}}.",
+fileType: "One or more image(s) failed to upload. File format not supported.",
+fileSize: "One or more image(s) failed to upload. File size limit exceeded.",
+matching: "Input does not match above",
+headline: "Please correct the following before continuing:",
+creditcard: "Please correct your credit card number.",
+radioButton: "Please select option above.",
+postalCode: "Please provide a valid Postal Code.",
+websiteUrl: "Website URL is invalid, please check your input."
+},
+tracking : {
+page: "Browse Ads",
+locId: "1700204",
+catId: "122",
+adOrUserNotFound: false
+},
+domainUrl : ".kijiji.ca",
+locale: "en_CA",
+facebook: {
+requiredPermissions: "We require permission to access your email address, please try again with the correct permissions.",
+error: "An error has occurred with Facebook login. Please try again."
+},
+isTestEnvironment: false,
+staticUrl: "https://ca.classistatic.com/static/V/7130/"
+};
+$(document).ready(function() {
+Kj.Tracking.initTrackCategorySelection();
+Kj.Tracking.initTrackLocationSelection();
+Kj.Tracking.initTrackAttributeSelection();
+Kj.Tracking.initTrackPostAdBeginButtons();
+Kj.Tracking.initTrackUserAccountActions({
+isDealer: false
+});
+Kj.Tracking.initTrackAdActivation();
+Kj.Tracking.TrackHelpDesk.init();
+Kj.initHoverButtons();
+Kj.initToggleButtons();
+Kj.initCollapseCategories();
+Kj.initHistoryBackLink();
+Kj.Banners.BannerRendered.init();
+Kj.initPrintLinks();
+Kj.initAdChoice();
+Kj.Banners.AdBlock.init();
+Belen.Controller.Search.extVars = {
+staticContentBaseUrl: 'https://ca.classistatic.com/static/V/7130',
+editWatchlistAjaxUrl: '/j-edit-watchlist.json',
+getWatchlistEntryAjaxUrl: '/j-get-watchlist-item.json',
+watchlistTitleAdd: 'Click to add to My Favourites',
+watchlistTitleRemove: 'Saved to My Favourites'
+};
+Belen.Controller.Search.Watchlist.init();
+//Check for undefined override.
+if (typeof undefined !== 'undefined') {
+console.warn('HEY! Something is overwriting `undefined`. Don\'t ship!');
+}
+});
+$(document).ready(function() {
+Kj.extVars.srpMarketingAlertIsActive = false;
+Kj.extVars.search = {
+page: 1,
+hasKeywords: false,
+suid: Math.round(Math.random() * 10000000000000).toString(36) // TODO: Fake search CID, backend to inject real one.
+};
+Kj.Search.initDistanceSlider({
+distanceLabel : 'Drag Me',
+distanceMax : 500,
+radius : '100',
+address : 'Strathcona County'
+});
+Kj.initToolTips();
+Kj.Search.initSearchFilters();
+Kj.Listings.initAlertSubscribe({
+emailAlertSubscribeUrl: '/j-subscribe-alerts.json',
+keywordSearch: '',
+language: 'en'
+});
+Kj.Listings.initSearchResults({
+featureCounterUrl: '/j-feature-link-inc.json',
+hasDealerRatings: false,
+hasSponsors: false
+});
+Kj.initMessages({setMessage: false});
+Kj.Listings.initEmbeddedTopAd();
+Kj.RecentlyViewed.initRecentlyViewed("https://ca.classistatic.com/static/V/7130/img/placeholder.gif");
+Kj.Search.initSearchNavigationFlag();
+Kj.Search.SearchNav.init();
+Kj.Banners.Responsive.init({
+banners: window.gptBannerSizeMapping
+});
+});

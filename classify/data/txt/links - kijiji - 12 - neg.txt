@@ -1,0 +1,1167 @@
+Mini Van Sedan Suv Crossover Wagon | Buy or Sell New, Used and Salvaged Cars & Trucks in Strathcona County | Kijiji Classifieds
+{ "@context" : "https://schema.org",
+"@type" : "Organization",
+"name" : "Kijiji Canada",
+"alternateName" : "Kijiji",
+"url" : "https://www.kijiji.ca/",
+"sameAs" : [
+"https://www.facebook.com/Kijiji.ca/",
+"https://twitter.com/Kijiji",
+"https://plus.google.com/+KijijiCanada",
+"https://www.youtube.com/user/kijijicanadacorp",
+"https://www.linkedin.com/company/kijiji-an-ebay-company",
+"https://www.wikidata.org/wiki/Q1741191"
+],
+"logo": "https://www.kijiji.ca/kijijicentral/app/uploads/2017/03/Kijiji-Canada-Logo-1.jpg"
+}
+var _kiq = _kiq || [];
+_kiq.push(['set', {'category_suggestion_web': true }]);
+_kiq.push(['set', {'locale': 'en_CA' }]);
+(function(){
+setTimeout(function(){
+var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//s3.amazonaws.com/ki.js/60169/dyi.js'; f.parentNode.insertBefore(s, f);
+}, 1);
+})();
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var gptMasterAdData = gptMasterAdData || {};
+var gptCTMAdData = gptCTMAdData || {};
+var gptSizeMaps = gptSizeMaps || {};
+var gptAdSlots = gptAdSlots || {};
+var gptAdTargeting = gptAdTargeting || [];
+var gptBannerSizeMapping = gptBannerSizeMapping || [];
+gptSizeMaps.leaderBoard = {
+breakPoint: [760, 990],
+responsive: [
+{ minWidth: 990, sizes: [[728, 90], [970, 90], [970, 250]] },
+{ minWidth: 760, sizes: [728, 90] },
+{ minWidth: 0, sizes: [] }
+]
+};
+gptSizeMaps.inlineBanner = {
+breakPoint: 961,
+responsive: [
+{ minWidth: 961, sizes: [728, 90] },
+{ minWidth: 0, sizes: [[300, 250], [320, 50], [300, 150]] }
+]
+};
+gptSizeMaps.baseBanner = {
+breakPoint: [751, 991],
+responsive: [
+{ minWidth: 991, sizes: [[728, 90], [970, 250], [970, 90]] },
+{ minWidth: 751, sizes: [728, 90] },
+{ minWidth: 0, sizes: [[300, 250], [320, 50], [300, 150]] }
+]
+};
+gptSizeMaps.skyscraperBanner = {
+breakPoint: [751, 1059],
+responsive: [
+{ minWidth: 1059, sizes: [[300, 600], [300, 250], [160, 600]] },
+{ minWidth: 751, sizes: [160, 600] },
+{ minWidth: 0, sizes: [] }
+]
+};
+gptSizeMaps.stlBanner = {
+breakPoint: 840,
+responsive: [
+{ minWidth: 840, sizes: [[575, 90],[575, 210]] },
+{ minWidth: 0, sizes: [350, 90] }
+]
+};
+gptSizeMaps.topCallToDFPBanner = {
+breakPoint: 840,
+responsive: [
+{ minWidth: 840, sizes: [[575, 200]] },
+{ minWidth: 0, sizes: [350, 95] }
+]
+};
+gptSizeMaps.sticky = {
+breakPoint: 760,
+responsive: [
+{ minWidth: 760, sizes: [] },
+{ minWidth: 0, sizes: [320, 50] }
+]
+};
+gptSizeMaps.sponsoredContent = {
+breakPoint: [580, 890],
+responsive: [
+{ minWidth: 840, sizes: [890, 190] },
+{ minWidth: 580, sizes: [580, 190]},
+{ minWidth: 0, sizes: [300, 250] }
+]
+};
+gptMasterAdData['gpt-leaderboard-top'] = {
+id: 'gpt-leaderboard-top',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[728, 90],[970, 90],[970, 250]],sizeMapping: gptSizeMaps.leaderBoard,tile: '1',pos: 'top',
+collapse: false,
+isBiddable: true
+};
+gptBannerSizeMapping.push({
+name: 'gpt-leaderboard-top',
+breakPoint: gptSizeMaps.leaderBoard.breakPoint
+});
+gptMasterAdData['gpt-skyscraper'] = {
+id: 'gpt-skyscraper',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[300, 600],[300, 250],[160, 600]],sizeMapping: gptSizeMaps.skyscraperBanner,tile: '2',pos: 'top',
+collapse: false,
+isBiddable: true
+};
+gptBannerSizeMapping.push({
+name: 'gpt-skyscraper',
+breakPoint: gptSizeMaps.skyscraperBanner.breakPoint
+});
+gptMasterAdData['gpt-minileaderboard-base'] = {
+id: 'gpt-minileaderboard-base',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[575, 90],[575, 210]],sizeMapping: gptSizeMaps.stlBanner,tile: '5',
+collapse: false,
+isBiddable: false
+};
+gptBannerSizeMapping.push({
+name: 'gpt-minileaderboard-base',
+breakPoint: gptSizeMaps.stlBanner.breakPoint
+});
+gptMasterAdData['gpt-minileaderboard-top'] = {
+id: 'gpt-minileaderboard-top',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[575, 200]],sizeMapping: gptSizeMaps.topCallToDFPBanner,tile: '5',
+collapse: true,
+isBiddable: false
+};
+gptBannerSizeMapping.push({
+name: 'gpt-minileaderboard-top',
+breakPoint: gptSizeMaps.topCallToDFPBanner.breakPoint
+});
+gptMasterAdData['gpt-leaderboard-base'] = {
+id: 'gpt-leaderboard-base',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[728, 90],[970, 250]],sizeMapping: gptSizeMaps.baseBanner,tile: '4',pos: 'base',
+collapse: false,
+isBiddable: true
+};
+gptBannerSizeMapping.push({
+name: 'gpt-leaderboard-base',
+breakPoint: gptSizeMaps.baseBanner.breakPoint
+});
+gptMasterAdData['gpt-top-srp'] = {
+id: 'gpt-top-srp',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[728, 90], [728, 300]],sizeMapping: gptSizeMaps.inlineBanner,tile: '3',pos: 'bottom',
+collapse: true,
+isBiddable: true
+};
+gptBannerSizeMapping.push({
+name: 'gpt-top-srp',
+breakPoint: gptSizeMaps.inlineBanner.breakPoint
+});
+gptMasterAdData['gpt-inline-srp'] = {
+id: 'gpt-inline-srp',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[728, 90], [728, 300]],sizeMapping: gptSizeMaps.inlineBanner,tile: '6',pos: 'bottom2',
+collapse: true,
+isBiddable: true
+};
+gptBannerSizeMapping.push({
+name: 'gpt-inline-srp',
+breakPoint: gptSizeMaps.inlineBanner.breakPoint
+});
+gptMasterAdData['gpt-sticky'] = {
+id: 'gpt-sticky',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[320, 50]],sizeMapping: gptSizeMaps.sticky,tile: '7',pos: 'top',
+collapse: false,
+isBiddable: false
+};
+gptBannerSizeMapping.push({
+name: 'gpt-sticky',
+breakPoint: gptSizeMaps.sticky.breakPoint
+});
+gptMasterAdData['gpt-CTM-sponsored-content'] = {
+id: 'gpt-CTM-sponsored-content',
+slot: '/5138/kij.ca.carsvehicles/cars___trucks/srp',
+sizes: [[890, 190], [580, 190], [300, 250]],sizeMapping: gptSizeMaps.sponsoredContent,pos: 'stp',
+collapse: false,
+isBiddable: false
+};
+gptBannerSizeMapping.push({
+name: 'gpt-CTM-sponsored-content',
+breakPoint: gptSizeMaps.sponsoredContent.breakPoint
+});
+gptAdTargeting.push({ key: 'pagetype', value: 'srp' });
+gptAdTargeting.push({ key: 'sub', value: 'strathconacounty' });
+gptAdTargeting.push({ key: 'ptg', value: ["KCA24859_1", "KCA25084_1", "KCA26273_1", "KCA26465_0", "KCA26723_1", "KCA27572_2", "KCA27609_0", "KCA27636_1"] });
+gptAdTargeting.push({ key: 'pt', value: 'ResultsBrowse' });
+gptAdTargeting.push({ key: 'city', value: 'edmontonarea' });
+gptAdTargeting.push({ key: 'l1', value: 'carsvehicles' });
+gptAdTargeting.push({ key: 'ot', value: '1' });
+gptAdTargeting.push({ key: 'g_pn', value: '1' });
+gptAdTargeting.push({ key: 'reg_user', value: 'no' });
+gptAdTargeting.push({ key: 'l2', value: 'cars___trucks' });
+gptAdTargeting.push({ key: 'hn', value: 'kijiji.ca' });
+gptAdTargeting.push({ key: 'carproof', value: 'true' });
+gptAdTargeting.push({ key: 'body', value: ["minivan_van","sedan","suv_crossover","wagon"] });
+gptAdTargeting.push({ key: 'ct', value: '174' });
+gptAdTargeting.push({ key: 'catid', value: '174' });
+gptAdTargeting.push({ key: 'dv', value: 'd' });
+gptAdTargeting.push({ key: 'HBL', value: 'yes' });
+gptAdTargeting.push({ key: 'province', value: 'alberta' });
+gptAdTargeting.push({ key: 'forsaleby', value: 'owner' });
+gptAdTargeting.push({ key: 'g_prebid_version', value: '0.34.15' });
+gptAdTargeting.push({ key: 'lc', value: '1700204' });
+gptAdTargeting.push({ key: 'um', value: '0' });
+gptAdTargeting.push({ key: 'li', value: 'no' });
+gptAdTargeting.push({ key: 'locid', value: '1700204' });
+gptAdTargeting.push({ key: 'pagetest', value: 'largerimagessrp' });
+var pbPartnerConfig = pbPartnerConfig || [];
+pbPartnerConfig.push({
+id: 'aol',
+cpmAdjustment: 0.88,
+params: {
+'gpt-rightrail-top':
+{ network: '9970.1', placement: '4428492' },'gpt-rightrail-bottom': { network: '9970.1', placement: '4428494' },'gpt-vip-leader':
+{ network: '9970.1', placement: '4428491' },'GPTBigbox':
+{ network: '9970.1', placement: '4428490' },'gpt-leaderboard-top':
+{ network: '9970.1', placement: '4428546' },'gpt-top-srp':
+{ network: '9970.1', placement: '4428515' },'gpt-inline-srp':
+{ network: '9970.1', placement: '4428522' },'gpt-leaderboard-base': { network: '9970.1', placement: '4428520' },'gpt-skyscraper':
+{ network: '9970.1', placement: '4428518' },'gpt-leader-bottom':
+{ network: '9970.1', placement: '4428494' }
+}
+});
+pbPartnerConfig.push({
+id: 'appnexus',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ placementId: '10477092' },'gpt-r2s-vip':
+{ placementId: '10477092' },'gpt-posted-vip':
+{ placementId: '10477092' },'gpt-rightrail-top':
+{ placementId: '10477237' },'gpt-rightrail-bottom': { placementId: '10477240' },'gpt-vip-leader':
+{ placementId: '10477242' },'GPTBigbox':
+{ placementId: '10477243' },'gpt-leaderboard-top':
+{ placementId: '10477244' },'gpt-top-srp':
+{ placementId: '10477245' },'gpt-inline-srp':
+{ placementId: '10477246' },'gpt-leaderboard-base': { placementId: '10477247' },'gpt-skyscraper':
+{ placementId: '10477248' },'gpt-leader-bottom':
+{ placementId: '10477240' }
+}
+});
+pbPartnerConfig.push({
+id: 'districtmDMX',
+cpmAdjustment: 0.9,
+params: {
+'ImageLeaderBoard':
+{ id: 130920 },'gpt-r2s-vip':
+{ id: 130920 },'gpt-posted-vip':
+{ id: 130920 },'gpt-rightrail-top':
+{ id: 130921 },'gpt-rightrail-bottom': { id: 130922 },'gpt-vip-leader':
+{ id: 116615 },'GPTBigbox':
+{ id: 127055 },'gpt-leaderboard-top':
+{ id: 129907 },'gpt-top-srp':
+{ id: 127050 },'gpt-inline-srp':
+{ id: 116617 },'gpt-leaderboard-base': { id: 127056 },'gpt-skyscraper':
+{ id: 127058 },'gpt-leader-bottom':
+{ id: 130922 }
+}
+});
+pbPartnerConfig.push({
+id: 'indexExchange',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ siteID: 190665, id: 1 },'gpt-r2s-vip':
+{ siteID: 190665, id: 1 },'gpt-posted-vip':
+{ siteID: 190665, id: 1 },'gpt-rightrail-top':
+{ siteID: 190666, id: 2 },'gpt-rightrail-bottom': { siteID: 190667, id: 3 },'gpt-vip-leader':
+{ siteID: 190668, id: 4 },'GPTBigbox':
+{ siteID: 190669, id: 5 },'gpt-leaderboard-top':
+{ siteID: 190663, id: 6 },'gpt-top-srp':
+{ siteID: 190670, id: 7 },'gpt-inline-srp':
+{ siteID: 190671, id: 8 },'gpt-leaderboard-base': { siteID: 190672, id: 9 },'gpt-skyscraper':
+{ siteID: 190673, id: 10 },'gpt-leader-bottom':
+{ siteID: 190667, id: 3 }
+}
+});
+pbPartnerConfig.push({
+id: 'openx',
+cpmAdjustment: 0.85,
+params: {
+'ImageLeaderBoard':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714686' },'gpt-r2s-vip':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714686' },'gpt-posted-vip':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714686' },'gpt-rightrail-top':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714687' },'gpt-rightrail-bottom': { delDomain: 'kijiji-d.openx.net', unit: '538714688' },'gpt-vip-leader':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714689' },'GPTBigbox':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714690' },'gpt-leaderboard-top':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714691' },'gpt-top-srp':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714692' },'gpt-inline-srp':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714693' },'gpt-leaderboard-base': { delDomain: 'kijiji-d.openx.net', unit: '538714694' },'gpt-skyscraper':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714696' },'gpt-leader-bottom':
+{ delDomain: 'kijiji-d.openx.net', unit: '538714688' }
+}
+});
+pbPartnerConfig.push({
+id: 'pubmatic',
+cpmAdjustment: 0.92,
+params: {
+'ImageLeaderBoard':
+{ publisherId: '155984', adSlot: 'PUBMATIC_ADFLOW_TOP_ENGLISH_728x90@728x90' },'gpt-r2s-vip':
+{ publisherId: '155984', adSlot: 'PUBMATIC_ADFLOW_TOP_ENGLISH_728x90@728x90' },'gpt-posted-vip':
+{ publisherId: '155984', adSlot: 'PUBMATIC_ADFLOW_TOP_ENGLISH_728x90@728x90' },'gpt-rightrail-top':
+{ publisherId: '155984', adSlot: 'PUBMATIC_HOMEPAGE_TOP_ENGLISH_300x250@300x250' },'gpt-rightrail-bottom': { publisherId: '155984', adSlot: 'PUBMATIC_HOMEPAGE_BOTTOM_ENGLISH_300x250@300x250' },'gpt-vip-leader':
+{ publisherId: '155984', adSlot: 'PUBMATIC_VIEW_ITEM_PAGE_TOP_ENGLISH_728x90@728x90' },'GPTBigbox':
+{ publisherId: '155984', adSlot: 'PUBMATIC_VIEW_ITEM_PAGE_BOTTOM_ENGLISH_300x250@300x250' },'gpt-leaderboard-top':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_TOP_ENGLISH_728x90@728x90' },'gpt-top-srp':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_INLINE1_ENGLISH_728x90@728x90' },'gpt-inline-srp':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_INLINE2_ENGLISH_728x90@728x90' },'gpt-leaderboard-base': { publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_BASEBOARD_ENGLISH_728x90@728x90' },'gpt-skyscraper':
+{ publisherId: '155984', adSlot: 'PUBMATIC_SEARCH_RESULTS_PAGE_LEFT_RAIL_ENGLISH_160x600@160x600' },'gpt-leader-bottom':
+{ publisherId: '155984', adSlot: 'PUBMATIC_HOMEPAGE_BOTTOM_ENGLISH_300x250@300x250' }
+}
+});
+pbPartnerConfig.push({
+id: 'rubicon',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ siteId: '45324', accountId: '12230', zoneId: '582460' },'gpt-r2s-vip':
+{ siteId: '45324', accountId: '12230', zoneId: '582460' },'gpt-posted-vip':
+{ siteId: '45324', accountId: '12230', zoneId: '582460' },'gpt-rightrail-top':
+{ siteId: '45324', accountId: '12230', zoneId: '582464' },'gpt-rightrail-bottom': { siteId: '45324', accountId: '12230', zoneId: '582466' },'gpt-vip-leader':
+{ siteId: '45324', accountId: '12230', zoneId: '582470' },'GPTBigbox':
+{ siteId: '45324', accountId: '12230', zoneId: '582472' },'gpt-leaderboard-top':
+{ siteId: '45324', accountId: '12230', zoneId: '582474' },'gpt-top-srp':
+{ siteId: '45324', accountId: '12230', zoneId: '582476' },'gpt-inline-srp':
+{ siteId: '45324', accountId: '12230', zoneId: '582478' },'gpt-leaderboard-base': { siteId: '45324', accountId: '12230', zoneId: '582480' },'gpt-skyscraper':
+{ siteId: '45324', accountId: '12230', zoneId: '582482' },'gpt-leader-bottom':
+{ siteId: '45324', accountId: '12230', zoneId: '582466' }
+}
+});
+pbPartnerConfig.push({
+id: 'criteo',
+cpmAdjustment: 1,
+params: {
+'ImageLeaderBoard':
+{ zoneId: '1257525' },'gpt-r2s-vip':
+{ zoneId: '1257525' },'gpt-posted-vip':
+{ zoneId: '1257525' },'gpt-rightrail-top':
+{ zoneId: '1257543' },'gpt-rightrail-bottom': { zoneId: '1257537' },'gpt-vip-leader':
+{ zoneId: '1257526' },'GPTBigbox':
+{ zoneId: '1257538' },'gpt-leaderboard-top':
+{ zoneId: '1257527' },'gpt-top-srp':
+{ zoneId: '1257533' },'gpt-inline-srp':
+{ zoneId: '1257534' },'gpt-leaderboard-base': { zoneId: '1257531' },'gpt-skyscraper':
+{ zoneId: '1257539' }
+}
+});
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+var PREBID_TIMEOUT = 2000;
+var PREBID_CPM_MAX = 3.50;
+if (pbPartnerConfig.length > 0) {
+var prebidAdUnits = prebidAdUnits || [];
+var prebidCpmSums = prebidCpmSums || {};
+Kj.Banners.Bidding.constructPrebidAdUnits();
+Kj.Banners.Bidding.enableBidderSettings();
+if (prebidAdUnits.length > 0) {
+pbjs.que.push(function() {
+pbjs.enableSendAllBids();
+pbjs.setBidderSequence('random');
+pbjs.onEvent('bidResponse', Kj.Banners.Bidding.monitorCpmTotals);
+});
+(function() {
+var pbjsEl = document.createElement('script');
+pbjsEl.type = 'text/javascript';
+pbjsEl.async = true;
+pbjsEl.src = 'https://ca.classistatic.com/static/V/7130/js/lib/prebid-0.34.15.min.js';
+var pbjsTargetEl = document.getElementsByTagName('head')[0];
+pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+})();
+Kj.Banners.Bidding.requestBidsBeforeGPT(prebidAdUnits, PREBID_TIMEOUT);
+}
+}
+(function () {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+Kj.Banners.Init.pushAdSizeMaps();
+Kj.Banners.Init.pushAdSlots();
+Kj.Banners.Init.pushAdTargeting();
+googletag.cmd.push(function() {
+googletag.pubads().set('adsense_background_color', 'FFFFFF');
+googletag.enableServices();
+});
+var dataLayer = [{"p":{"t":"ResultsBrowse","pl":"Wildebeest","v":"7130","lng":"en_CA","vt":"LST","ua":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"},"c":{"c":{"id":174,"n":"cars \u0026 trucks"},"l0":{"id":0,"n":"Classifieds"},"l1":{"id":27,"n":"Cars \u0026 Vehicles"},"l2":{"id":174,"n":"cars \u0026 trucks"}},"l":{"c":{"id":1700204,"n":"Strathcona County"},"l0":{"id":0,"n":"Canada"},"l1":{"id":9003,"n":"Alberta"},"l2":{"id":1700202,"n":"Edmonton Area"},"l3":{"id":1700204,"n":"Strathcona County"},"d":""},"u":{"li":false,"tg":{"stg":"KCA26846=0;KCA27572=2;KCA27609=0;KCA25084=1;KCA24859=1;KCA26273=1;KCA26465=0;KCA26723=1;KCA27572=0;KCA27636=1","pagetest":"largerimagessrp"}},"d":{"ua":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0"},"s":{"dcr":false,"tr":491,"pn":1,"tp":25,"ps":20,"prc":{},"attr":{"carbodytype_s":["vanminicomma","sedan","suvcrossover","wagon"],"imageAds":["true"]},"attrMin":{},"attrMax":{},"srt":{"f":"date","dr":"DESC"},"u":{"li":false,"tg":{"stg":"","pagetest":"largerimagessrp"}},"sr":[{"id":"1387549170","pos":1,"rt":"topad","cr":""},{"id":"1386431134","pos":2,"rt":"topad","cr":""},{"id":"1386321551","pos":3,"rt":"topad","cr":""},{"id":"1374624601","pos":4,"rt":"topad","cr":""},{"id":"1387325011","pos":5,"rt":"topad","cr":""},{"id":"1388260961","pos":6,"rt":"organic","cr":""},{"id":"1388254364","pos":7,"rt":"organic","cr":""},{"id":"1388260574","pos":8,"rt":"organic","cr":""},{"id":"1388260373","pos":9,"rt":"organic","cr":""},{"id":"1388260362","pos":10,"rt":"organic","cr":""},{"id":"1388253794","pos":11,"rt":"organic","cr":""},{"id":"1388252022","pos":12,"rt":"organic","cr":""},{"id":"1388251314","pos":13,"rt":"organic","cr":""},{"id":"1388247408","pos":14,"rt":"organic","cr":""},{"id":"1388243939","pos":15,"rt":"organic","cr":""},{"id":"1388241901","pos":16,"rt":"organic","cr":""},{"id":"1388239376","pos":17,"rt":"organic","cr":""},{"id":"1388236900","pos":18,"rt":"organic","cr":""},{"id":"1388233696","pos":19,"rt":"organic","cr":""},{"id":"1388232537","pos":20,"rt":"organic","cr":""},{"id":"1388227703","pos":21,"rt":"organic","cr":""},{"id":"1387708917","pos":22,"rt":"organic","cr":""},{"id":"1388224052","pos":23,"rt":"organic","cr":""},{"id":"1388218821","pos":24,"rt":"organic","cr":""},{"id":"1388209755","pos":25,"rt":"organic","cr":""}]},"ts":"2018-10-03 15:15:54.589+0000"}];
+(function (w, d, s, l, i) {
+w[l] = w[l] || [];
+w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+j.async = true;
+j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-W4V6');
+(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(
+arguments)},G[g]['t']=1*new Date})(window,document,'script','_googCsa');
+var dataAAM = dataAAM || {};
+var kijijiDil = DIL.create({
+partner: 'kijiji',
+uuidCookie: { name: 'aam_uuid', days: 30 }
+});
+gptAdTargeting.forEach(function(targeting) {
+dataAAM[targeting.key] = targeting.value;
+});
+kijijiDil.api.signals(dataAAM, 'c_').submit();
+$(document).ready(function() {
+if(document.all) {
+$('#MainContainer').prepend("<div id=\"IeSunset\">" +
+"<h3>Your browser is out of date. Change to a modern browser for a more secure web experience.</h3><ul>" +
+"<li class=\"moz\"><a href=\"https://www.mozilla.org/en-US/firefox/new/\" target=\"_blank\" rel=\"noopener noreferrer\"><h4>Mozilla Firefox <span>Download Here</span></h4></a></li>" +
+"<li class=\"chrome\"><a href=\"https://www.google.com/chrome/browser/desktop/\" target=\"_blank\" rel=\"noopener noreferrer\"><h4>Google Chrome<span>Download Here</span></h4></a></li>" +
+"<li class=\"ie\"><a href=\"https://support.microsoft.com/en-ca/help/17621/internet-explorer-downloads\" target=\"_blank\" rel=\"noopener noreferrer\"><h4>Internet Explorer<span>Download Here</span></h4></a></li>" +
+"</ul></div>");
+}
+});
+window.baseUrl="//ca.classistatic.com/service-static/frontend-service";
+window.boxUrl="//www.kijiji.ca/";
+Kj.Sponsors.init({
+maxAds: 6,
+keepTopBar: false
+});
+var clientIdShop = '';
+var adsenseConfig = {
+test: 'off',
+language: 'en',
+pageType: 'srp',
+csa: {
+top: {
+number: 0
+},
+bottom: {
+number: 3
+},
+page: 1,
+repeats: 0,
+clientId: 'kijiji-ca-browse2',
+clientIdShop: clientIdShop,
+query: 'Minivan, Van Sedan SUV, Crossover Wagon Strathcona County Edmonton Area cars &amp; vehicles cars &amp; trucks',
+channel: 'Total+r_Edmonton+l_l2+c_cars+r_AB_c_autos_p_1+1_w_x_x_x_x_x_x_kca27609_a+kijiji_ca_afs_031+kijiji_ca_afs_042+kijiji_ca_afs_028+1_w_x_x_x_x_x_x_kca26465_c+1_w_x_x_x_x_x_x_kca26723_b+1_w_x_x_x_x_x_x_kca27572_c+1_w_x_x_x_x_x_x_kca27636_b',
+width: '100%',
+isLargeImage: true
+}
+};
+Kj.Adsense.init(adsenseConfig);
+Kj.Sponsors.chain(Kj.Adsense.api);
+Kj.Sponsors.doFilter();
+var pageTrackingIdentifier = 'Browse Ads';
+var gaEventLabel = 'L1Cat=Cars & Vehicles;L2Cat=cars & trucks;L1Location=Canada;L2Location=Edmonton Area;L3Location=Strathcona County';
+Skip to main contentKijijiKijijiKijijiKijijifrRegister or Sign InPost adSearchCategoriesAll AdsBuy & SellServicesCars & VehiclesPetsVacation RentalsCommunityReal EstateJobsCars & TrucksLocationFind what you are looking forFind what you are looking for
+if(rehydrate===undefined){var rehydrate={};}rehydrate["header"]={componentPath:"Shared/Header/Header",props:{}};
+Popular:
+duramax
+truck
+bmw
+trucks
+cars
+diesel
+4x4
+cummins
+car
+awd
+Post an Ad in this category
+Alberta
+>
+Edmonton Area
+>
+Strathcona County
+>
+Cars & Vehicles
+> minivan, van, suv, crossover, sedan and wagon Cars & Trucks in Strathcona County
+googletag.cmd.push(function () {
+googletag.display('gpt-leaderboard-top');
+});
+Current Matches
+Filter Results
+(491)
+Category:
+All Categories
+Cars & Vehicles
+×
+Cars & Trucks (491)
+Location:
+Alberta
+Edmonton Area
+×
+Strathcona County (491)
+Distance
+[?]
+Use Distance Search to find Ads based on where you are and how far you want to travel.
+Strathcona County
+[Change]
+Drag Me
+Condition:
+Used
+(482)
+Lease Takeover
+(1)
+Damaged
+(4)
+Salvage
+(4)
+Make:
+Ford
+(61)
+Chevrolet
+(45)
+Jeep
+(38)
+Dodge
+(35)
+BMW
+(30)
+GMC
+(22)
+Chrysler
+(20)
+Nissan
+(20)
+Toyota
+(20)
+Hyundai
+(18)
+Mazda
+(16)
+Pontiac
+(16)
+Volkswagen
+(16)
+Honda
+(15)
+Cadillac
+(14)
+Kia
+(12)
+Mercedes-Benz
+(12)
+Audi
+(11)
+Subaru
+(11)
+Acura
+(9)
+Land Rover
+(8)
+Mitsubishi
+(7)
+Lincoln
+(5)
+Volvo
+(5)
+Buick
+(4)
+HUMMER
+(3)
+Infiniti
+(3)
+Lexus
+(3)
+Mercury
+(3)
+Jaguar
+(2)
+Saturn
+(2)
+AMC
+(1)
+Geo
+(1)
+Oldsmobile
+(1)
+Saab
+(1)
+Suzuki
+(1)
+View more options...
+Body Type:
+Any
+×
+Minivan, Van
+×
+Sedan
+×
+SUV, Crossover
+×
+Wagon
+Kilometers:
+-
+Update
+Price (Excludes Taxes):
+Cash
+Finance (new cars only)
+-
+Update
+-
+/mo
+Update
+Year:
+-
+Update
+Colour:
+Black
+(85)
+White
+(69)
+Blue
+(54)
+Grey
+(54)
+Silver
+(51)
+Red
+(31)
+Green
+(18)
+Gold
+(13)
+Tan
+(12)
+Burgundy
+(10)
+Other
+(9)
+Beige
+(8)
+Brown
+(4)
+Yellow
+(4)
+Teal
+(2)
+Orange
+(1)
+Purple
+(1)
+Off-White
+(1)
+View more options...
+Transmission:
+Automatic
+(374)
+Manual
+(63)
+Other
+(12)
+Fuel Type:
+Diesel
+(13)
+Gasoline
+(407)
+Hybrid-Electric
+(2)
+Other
+(10)
+For Sale By:
+Owner
+(489)
+Dealer
+(2)
+Featured Ads:
+All Ads
+Reduced Price
+CarProof Included
+Certified Pre-owned
+Dealer Reviews
+Financing Available
+Offer Type:
+All Types
+Offering
+(483)
+Wanted
+(8)
+Additional Info:
+All Ads
+×
+Ads with Images
+More Filtering Options
+Price
+-
+Condition:
+New
+Used
+Lease Takeover
+Damaged
+Salvage
+Year:
+-
+Make:
+Acura
+Alfa Romeo
+AM General
+AMC
+Aston Martin
+Audi
+Austin-Healey
+Bentley
+BMW
+Bricklin
+Bugatti
+Buick
+Cadillac
+Chevrolet
+Chrysler
+Daewoo
+Daihatsu
+Datsun
+Dodge
+Eagle
+Ferrari
+Fiat
+Ford
+Genesis
+Geo
+GMC
+Honda
+HUMMER
+Hyundai
+Infiniti
+International Harvester
+Isuzu
+Jaguar
+Jeep
+Kia
+Lamborghini
+Land Rover
+Lexus
+Lincoln
+Lotus
+Maserati
+Maybach
+Mazda
+Mercedes-Benz
+Mercury
+MG
+MINI
+Mitsubishi
+Nissan
+Oldsmobile
+Opel
+Peugeot
+Plymouth
+Pontiac
+Porsche
+Ram
+Renault
+Rolls-Royce
+Saab
+Saturn
+Scion
+Shelby
+Smart
+Subaru
+Suzuki
+Tesla
+Toyota
+Triumph
+Volkswagen
+Volvo
+Other
+Colour:
+Beige
+Black
+Blue
+Brown
+Burgundy
+Gold
+Green
+Grey
+Off-White
+Orange
+Pink
+Purple
+Red
+Silver
+Tan
+Teal
+White
+Yellow
+Other
+Body Type:
+Convertible
+Coupe (2 door)
+Hatchback
+Minivan, Van
+Pickup Truck
+Sedan
+SUV, Crossover
+Wagon
+Other
+No. of Doors:
+2
+3
+4
+5
+Other
+No. of Seats:
+2
+3
+4
+5
+6
+7
+Other
+Transmission:
+Automatic
+Manual
+Other
+Fuel Type:
+Diesel
+Electric
+Gasoline
+Hybrid-Electric
+Other
+Kilometers:
+-
+For Sale By:
+Owner
+Dealer
+Price
+Condition
+Year
+Make
+Colour
+Body Type
+No. of Doors
+No. of Seats
+Transmission
+Fuel Type
+Kilometers
+For Sale By
+Update
+|
+Cancel
+Distance
+Use Distance Search to find Ads based on where you are and how far you want to travel.
+Location (postal code or address):
+Search radius
+km
+Increase the search radius for more results. Based on the radius, a new location list is generated for you to choose from.
+Update
+|
+Cancel
+Kijiji Alerts [?]
+Kijiji Alerts are an email notification service where Kijiji users can have the newest Ads sent to your email address.
+More Help
+Get an alert with the newest ads for Cars & Trucks in Strathcona County.
+Sign Up
+Kijiji Alerts
+Get an alert with the newest ads for Cars & Trucks in Strathcona County.
+Email Address
+Re-enter Email Address
+Sign Up
+|
+Cancel
+googletag.cmd.push(function () {
+googletag.display('gpt-skyscraper');
+});
+if(rehydrate===undefined){var rehydrate={};}rehydrate["searchResults"]={componentPath:"SearchResults/SearchResults",props:{}};
+Sort by
+Posted: oldest first
+Posted: newest first
+Price: lowest first
+Price: highest first
+Kilometres: lowest first
+Kilometres: highest first
+Showing 1 - 20 of 491 Ads
+Register for Kijiji Alerts
+[?]
+Sign Up
+For Sale By:
+AnyOwnerDealer
+Sponsored Advertisement:?
+This message is from an independent, third party provider. Kijiji is not responsible for its products or services. The information you enter in this ad is only provided to the advertiser.
+googletag.cmd.push(function () {
+googletag.display('gpt-CTM-sponsored-content');
+});
+Your ad deserves to be on top. Learn more about our Top Ad feature.
+Top Ads See All
+$5,500.00
+2007 Chevrolet Trailblazer LS
+Strathcona County30/09/2018
+Single owner purchased January 2008. No accidents. New Battery and Alternator, Front and Rear Brake Rotors, Both Lower Ball Joints and Tye Rods, Front Diff Service and Transmission Service June 2018, ...
+Automatic | 274,000km
+$31,777.00
+2013 BMW X5 M pkg low km,Local, One family owned *Remote Starter
+Provincial Top Ad: Edmonton24/09/2018
+Silverzinc Motors M package, only 39,529kms original, COMFORT & TECHNOLOGY Package and 3M! Remote starter (over $2,000), One family owned, next to flawless conditions both interior and exterior, ...
+Professional,Friendly,Fast Service. Trucks,SUVs & Premium Cars For Everyone!No Credit,Poor Credit,Perfect Credit ..BEST RATES avail! call 780-988-8966
+Automatic | 39,529km
+$33,500.00
+Acura MDX 2014
+Strathcona County24/09/2018
+2014 Acura MDX fully loaded 84000 kms. Pearl White, Tons of options, tow package, rear fold down dvd, nav, built in rear window shades, folding 3rd row seating, aftermarket tires and rims, all power ...
+84,000km
+$22,499.00
+2013 Ford Explorer XLT
+Strathcona County05/08/2018
+2013 Ford Explorer XLT Parked in heated garage White exterior Black leather Fuel economy Averages 10 -12 L/100 km New all season tires 2018 from Costco New windshield - NO cracks Extra set of 4 used ...
+Automatic | 96,500km | CarProof
+$12,500.00
+2012 Mitsubishi Lancer SE
+Strathcona County28/09/2018
+I am selling my 2012 Mitsubishi Lancer SE. The car runs clean and has been awesome for me since the day I purchased it from the dealership. I am selling the car because I bought a bigger vehicle. ...
+Automatic | 129,178km
+$700.00
+1995 Oldsmobile Cutlass Ciera S
+Strathcona County< 3 hours ago
+1995 Oldsmobile Cutlass Ciera S 3100 6 cyl. Needs tires and a battery. Great winter beater. Starts up every year like it was last run yesterday.
+Automatic | 213,914km
+$15,999.00
+Chrysler 200, 2014
+Strathcona County< 3 hours ago
+Selling my chrysler 200 with ONLY 30400km, One owner, power adjustable heated clods seats, remote start and much more. This car is in great condition and drives amazingly. Accident free, Car proof ...
+Automatic | 30,400km
+$18,500.00
+Wanted:2014 Nissan Pathfinder
+Strathcona County< 10 hours ago
+85000 km fw drive 15000 km left on full bumper to bumper warranty. Reason for selling downsizing.
+Automatic | 85,000km
+$1,000.00
+2001 Mercedes Benz m430
+Strathcona County< 10 hours ago
+MECHANIC SPECIAL Has leather interior Power windows Power locks (remote doesn’t work) Remote start (remote doesn’t work) Heated seats AC- needs recharge Heater blows but doesn’t put out much heat ...
+Automatic | 295,000km
+$3,000.00
+2003 Chevy trailblazer
+Strathcona County< 10 hours ago
+2003 Chevy trailblazer for sale. Asking 3000 obo. NEW battery, alternator, Serpentine belt, high pressure power steering line, power steering pump. Wild country xtx tires. 85% tread. Rack and pinion ...
+Automatic | 231,000km
+$2,990.00
+2006 Pontiac G6 Sedan
+Strathcona County< 12 hours ago
+2006 Pontiac G6 Sedan. Vehicle has power windows, locks, mirrors, air, tilt, cruise, power driver seat, A/C, AM/FM/CD. Car runs and drives good, makes great heat and cold air conditioning. Recently ...
+Automatic | 196,510km
+googletag.cmd.push(function () {
+googletag.display('gpt-top-srp');
+});
+$2,500.00
+1999 Jeep Grand Cherokee
+Strathcona County< 12 hours ago
+Inline 6 engine with 281,000 highway km runs and drives great currently is a daily driver. Has an engine misfire but I have the part to fix that. Recently had front end work done to it. New shocks, ...
+Automatic | 281,000km
+$38,990.00
+2014 Jeep Grand Cherokee Summit
+Strathcona County< 12 hours ago
+2014 Jeep Grand Cherokee Summit. 54,000 kms. 5.7 V8 16 V MPFI OHV FULLY LOADED Front and side airbags. Sunroof.Four wheel drive 4 Wheel Disks, Antilock breaking system. Heated front seats. Too many ...
+Automatic | 54,000km
+$29,000.00
+2015 GMC Acadia Denali
+Strathcona County< 13 hours ago
+Bought new from Adam's Chev in wetaskiwin in 2015. Absolutely every option the Denali had is on this SUV. from DVD to moon roof to Heads up display........heated and cooled seats. It has it all. 3m ...
+Automatic | 98,000km
+$13,500.00
+2013 JEEP Patriot AWD Automatic North Edition
+No GST
+Strathcona County< 13 hours ago
+2013 Jeep Patriot AWD North Edition Excellent Condition 2.4L - 4 Cylinder Red with Black Cloth Interior AWD 4X4 Lock Mode Auto CVT Transmission Alloy Wheels Fog Lights Low kms - Only 69438 km No ...
+Automatic | 69,570km
+$2,345.00
+1.9l tdi engine
+Strathcona County< 13 hours ago
+I will be pulling my running 1.9l tdi engine out of my daily driver and putting in a custom bored out ported and polished 2.0l tdi. That being said i have no use for the 1.9l, it has 240k km. Will ...
+Manual | 240,000km
+$900.00
+For Sale - 1999 Honda Civic EX
+Strathcona County< 14 hours ago
+For Sale - 1999 Honda Civic EX - 5 Speed Manual transmission, PW windows/locks, runs good, body has some rust and a dent on the drivers' side front panel
+Manual | 230,721km
+$2,900.00
+2004 Jeep Grand Cherokee
+Strathcona County< 14 hours ago
+2004 Grand Cherokee Limited Full leather, climate control, 4*4, 4.7L Roof rack. Set up for towing behind motorhome. Tires good. Good overall condition.
+Automatic | 298,000km
+googletag.cmd.push(function () {
+googletag.display('gpt-inline-srp');
+});
+$6,500.00
+2005 Lincoln LS
+Strathcona County< 14 hours ago
+fully loaded, power heated seats, memory, dual climate control, sunroof,programmable entry Phone calls only if interested please.......780-498-0352....NO SOLICITORS PLEASE
+Automatic | 134,000km
+$8,500.00
+2004 YUKON DENALI
+Strathcona County< 14 hours ago
+* 6L V8 * AWD *. Heated front and second row seats * Third row seating. ( seating for 8 ) *. DVD player *. Sun roof *. 20” Rims, , with brand new General Grabber tires put on Oct 1/2018 *. VERY CLEAN ...
+Automatic | 201,000km
+$2,500.00
+2003 Chev Trail Blazer LTZ
+Strathcona County< 15 hours ago
+Dark blue 267,000 kms, a/c, power windows, power door locks, power driver seat, heated leather seats, dual climate control, CD player, 4x4, hitch receiver, little rust, reasonable tread left on the ...
+Automatic | 267,000km
+$5,200.00
+Car
+Strathcona County< 15 hours ago
+Nissan Micra 2015
+Manual | 98,000km
+$14,900.00
+2010 Toyota 4 Runner Limited
+Strathcona County< 15 hours ago
+7 passenger, Sunroof, back up cam and new windshield. Remote starter, new breaks and rotors on the front and back. Pearl white on tan leather interior. This truck is in great shape for its age, ...
+Automatic | 305,200km
+$2,500.00
+1999 bmw 323i
+Strathcona County< 16 hours ago
+I have a 1999 bmw 323i for sale car runs and drives very well just has a few small issues would make for a great first manual car or first car in general I am open to offers
+Manual | 250,000km
+$2,900.00
+2008 Crown Victoria P 71 Interceptor
+Strathcona County< 16 hours ago
+Runs great! Ready for winter...Fully loaded 2008 P 71 ex-police vehicle, with AC /Cruise power windows /locks, trunk. New Firestone Firehawk tires with spare. 172500km $2900.00 Call 780-953-6400 if ...
+Automatic | 172,500km
+Sponsored Advertisements:
+googletag.cmd.push(function () {
+googletag.display('gpt-minileaderboard-base');
+});
+Page:
+12345678910...Next >
+Post your classified or want ad in Strathcona County Cars & Trucks.
+It's fast and easy.
+googletag.cmd.push(function () {
+googletag.display('gpt-leaderboard-base');
+});
+Clear History
+Recently Viewed
+googletag.cmd.push(function () {
+googletag.display('gpt-sticky');
+});
+$(".display-toggle").show();
+KijijiAboutCareersMember BenefitsAdvertise on KijijiExploreKijiji CentralKijiji mobile paymentTools to promote adseBay Classifieds SitesInfoTerms of UsePrivacy PolicyPosting PolicyAdChoiceSupportHelp DeskKijiji en français©2005-2018 Marktplaats BVAll rights reserved. Google, Google Play, YouTube and other marks are trademarks of Google Inc.
+if(rehydrate===undefined){var rehydrate={};}rehydrate["footer"]={componentPath:"Shared/Footer",props:{}};
+window.__data={"autosLandingPage":{"loading":{"makes":{"failure":false,"pending":false,"success":false},"models":{"failure":false,"pending":false,"success":false},"inventory":{"failure":false,"pending":false,"success":false}},"makes":[],"models":[],"inventoryCount":null},"config":{"toggleHomepageFeed":false,"requestUrl":"\u002Fb-cars-trucks\u002Fstrathcona-county\u002Fmini+van__sedan__suv+crossover__wagon\u002Fc174l1700204a138","toggleProfileName":true,"toggleHeader":false,"showAdmarktLink":false,"toggleCentralRecentlyViewedAds":true,"clientType":{"isTablet":false,"isMobile":false,"isDesktop":true,"device":"FIREFOX (mobile=false, isApple=false)"},"boxInternalUrl":"\u002Fb-search.html","toggleMoveCrossPromotion":false,"requestQueryString":"minNumberOfImages=1","changeLocationURL":"\u002Fb-change-location.html?newLocationId=","searchForm":{"attributeMap":{"carbodytype_s":["vanminicomma","sedan","suvcrossover","wagon"],"imageAds":["true"]},"ll":null,"highlightOnly":false,"sortByName":"dateDesc","adPriceType":null,"adIdRemoved":null,"maxPrice":null,"attributeFiltersMax":{},"userId":null,"origin":null,"categoryName":"Cars & Trucks","keywords":null,"searchView":"LIST","urgentOnly":false,"cpoOnly":false,"gpTopAd":false,"locationId":1700204,"radius":"","attributeFiltersMin":{},"parentCategoryName":"Cars & Vehicles","address":"Strathcona County, Alberta","noLocation":false,"minPrice":null,"pageNumber":1,"categoryId":174,"locationPath":"0,9003,1700202,1700204","parentCategorySeoUrl":"\u002Fb-cars-vehicles\u002Fstrathcona-county\u002Fc27l1700204","carproofOnly":false,"dc":false},"toggleMessageboxResponsive":true,"boxInternalQueryString":"attributeMap[carbodytype_s]=vanminicomma,sedan,suvcrossover,wagon&categoryId=174&hasImages=true&locationId=1700204&siteLocale=en_CA","userLoggedIn":false,"toggleRecaptcha":true,"toggleReducedHeader":true,"language":"en","toggleForcedLogin":true,"targetUrl":"L2ItY2Fycy10cnVja3Mvc3RyYXRoY29uYS1jb3VudHkvbWluaSt2YW5fX3NlZGFuX19zdXYrY3Jvc3NvdmVyX193YWdvbi9jMTc0bDE3MDAyMDRhMTM4P21pbk51bWJlck9mSW1hZ2VzPTFeV0dtcEJKRVlKZ2RUYTNKUm9oZ0Rrdz09"},"locationPicker":{},"postAd":{"categories":{"all":{"level1":{"items":[],"parentId":null},"level2":{"items":[],"parentId":null},"level3":{"items":[],"parentId":null}},"suggested":[],"submittedTitle":""},"packages":{"error":false,"frozen":true,"items":{},"loaded":false,"selected":null},"postAdData":{"editing":false,"insertionFee":{"disclaimer":null,"exists":null,"postingLimit":null,"price":null},"l1CategoryId":null,"isShoppingCart":false,"isRepost":false},"postingLimit":{"adLimit":null,"categoryId":null,"categoryName":"","isAdmarktCategory":null,"isAdmarktUser":null,"isNewAd":null},"categoryConfig":[],"location":{"savedLocation":null,"postingLocation":null,"showExactLocation":true,"editingLocation":false,"locationApiLoadFailed":false},"loading":{"categories":{"all":{"failure":false,"pending":false,"success":false},"suggested":{"failure":false,"pending":false,"success":false}},"postAdData":{"failure":false,"pending":false,"success":false},"categoryConfig":{"failure":false,"pending":false,"success":false},"location":{"failure":false,"pending":false,"success":false}}},"messageBox":{"unreadCount":{"total":0,"asPoster":0,"asReplier":0},"loaded":false,"banners":{},"deleting":false,"activeConversation":{"loading":false,"loaded":false,"blockLoading":false,"failed":false,"data":{}},"totalCount":0,"prefetching":false,"roleFilter":"All","conversations":[],"unseenNotificationCount":0,"pageNum":0,"selected":[],"loading":false,"allSelected":false,"failed":false,"conversationCache":[]},"homepageGallery":{"ads":[],"firstLoad":true,"loading":false,"loaded":false},"recentlyViewedAds":{"loading":{"failure":false,"pending":false,"success":false},"ads":[]},"ebaySponsor":{"ads":[],"loading":false,"loaded":false},"viewItemPage":{"loading":false,"loaded":false,"viewItemData":{},"isModalMapOpen":false},"banners":{"rendered":{}},"myKijiji":{"myAds":{"ads":{"adsDirectory":{},"sortedAdIds":[],"requestedAds":{},"filtering":{"activeFilter":"active","currentSort":{"active":{"field":"sortableEndDate","ascending":true},"inactive":{"field":"sortableEndDate","ascending":true}},"search":""},"currentPage":1,"overheadMessageError":null},"promotions":{"totalPrice":0,"selectedfeatureIds":[],"sellingPoint":"MY_KIJIJI"},"loading":{"fullAds":{"failure":false,"pending":false,"success":false},"requestedAds":{"failure":false,"pending":false,"success":false},"sparseAds":{"failure":false,"pending":false,"success":false}}},"priceDrop":{"oldPrice":0,"userId":0,"error":false,"newPrice":0,"featureDuration":0,"successPage":"","featurePrice":0,"spawnId":0,"attemptingPurchase":false,"failurePage":"","featureIdentifier":""},"surveys":{"loading":{"failure":false,"pending":false,"success":false}}},"profile":{"loading":false,"loaded":false},"router":{"route":"UNKNOWN","pathParams":{},"queryParams":{"minNumberOfImages":"1"},"isVirtualPageView":false},"messages":{},"componentPositions":{"componentOffsets":{}},"searchResults":{"hasDealerRatings":false,"hasSponsors":false,"loadStates":{"ratings":{"loaded":false,"loading":false},"sponsors":{"loaded":false,"loading":false}},"loaded":false,"loading":false},"mediaGallery":{},"homepage":{"loading":false,"loaded":false,"data":{},"searchFieldFocused":false},"cookies":{},"showMore":{},"admarktTopSpot":{},"r2s":{"submitted":false,"submitting":false,"expanded":false,"expandedByUser":false,"error":null},"itemLocationMap":{},"recommendedAds":{"ads":[],"loaded":false,"loading":false},"alertsModal":{"submitting":false},"reportAd":{"submitting":false,"submitted":false},"financing":{"submitting":false,"submitted":false},"phoneNumber":{"value":null},"googleMapApi":{"locationApiLoadFailed":false},"shareLink":{"adInfo":{},"loaded":false,"loading":false},"recommendations":{"categories":[],"fetching":false},"dealerRatings":{"loading":false,"loaded":false,"mobialsData":{}},"categoryMenu":{"categories":[],"loaded":false,"loading":false},"pubnub":{"connected":false,"suspended":false,"reconnectAllowed":true},"userProfile":{"hasErrors":false},"carproofRequest":{"requestAttempt":false,"requestSuccess":false,"requestFail":false,"requestMessage":null}};
+window.__apolloData={"$ROOT_QUERY.suggestKeyword":{"query":"","categoryId":0,"selected":false,"__typename":"SuggestKeyword"},"ROOT_QUERY":{"suggestKeyword":{"type":"id","generated":true,"id":"$ROOT_QUERY.suggestKeyword","typename":"SuggestKeyword"},"__typename":"SuggestKeywordQuery"}};
+My Favourites ()
+Recently Added:
+View all
+$(document).ready(function () {
+var data = window.dataLayer ? dataLayer[0] : [];
+Zoop.init({
+data: {dl: data},
+config: {
+url: "/j-page-view.json",
+token: "1538579754381.210ae68f92b0562c83e2e48876a719b46841f5fe7c67a8198756ffe89f177e9e"
+}
+});
+Zoop.callEvent({
+data: {}
+});
+});
+Kj.extVars = {
+validationMessages : {
+group : "Please correct the errors below:",
+req : "Please enter information above.",
+email : "Please enter a valid email address.",
+number : "Please enter a valid number.",
+phone: "Please provide a valid phone number.",
+maxlength : "Sorry, our limit is {{max}} characters. Please shorten your message.",
+minlength: "Input needs to be at least {{min}} characters.",
+numberRange: "Please enter a value between {{min}} and {{max}}.",
+numberMax: "Please enter a value no greater than {{max}}.",
+numberMin: "Please enter a value of at least {{min}}.",
+fileType: "One or more image(s) failed to upload. File format not supported.",
+fileSize: "One or more image(s) failed to upload. File size limit exceeded.",
+matching: "Input does not match above",
+headline: "Please correct the following before continuing:",
+creditcard: "Please correct your credit card number.",
+radioButton: "Please select option above.",
+postalCode: "Please provide a valid Postal Code.",
+websiteUrl: "Website URL is invalid, please check your input."
+},
+tracking : {
+page: "Browse Ads",
+locId: "1700204",
+catId: "174",
+adOrUserNotFound: false
+},
+domainUrl : ".kijiji.ca",
+locale: "en_CA",
+facebook: {
+requiredPermissions: "We require permission to access your email address, please try again with the correct permissions.",
+error: "An error has occurred with Facebook login. Please try again."
+},
+isTestEnvironment: false,
+staticUrl: "https://ca.classistatic.com/static/V/7130/"
+};
+$(document).ready(function() {
+Kj.Tracking.initTrackCategorySelection();
+Kj.Tracking.initTrackLocationSelection();
+Kj.Tracking.initTrackAttributeSelection();
+Kj.Tracking.initTrackPostAdBeginButtons();
+Kj.Tracking.initTrackUserAccountActions({
+isDealer: false
+});
+Kj.Tracking.initTrackAdActivation();
+Kj.Tracking.TrackHelpDesk.init();
+Kj.initHoverButtons();
+Kj.initToggleButtons();
+Kj.initCollapseCategories();
+Kj.initHistoryBackLink();
+Kj.Banners.BannerRendered.init();
+Kj.initPrintLinks();
+Kj.initAdChoice();
+Kj.Banners.AdBlock.init();
+Belen.Controller.Search.extVars = {
+staticContentBaseUrl: 'https://ca.classistatic.com/static/V/7130',
+editWatchlistAjaxUrl: '/j-edit-watchlist.json',
+getWatchlistEntryAjaxUrl: '/j-get-watchlist-item.json',
+watchlistTitleAdd: 'Click to add to My Favourites',
+watchlistTitleRemove: 'Saved to My Favourites'
+};
+Belen.Controller.Search.Watchlist.init();
+//Check for undefined override.
+if (typeof undefined !== 'undefined') {
+console.warn('HEY! Something is overwriting `undefined`. Don\'t ship!');
+}
+});
+$(document).ready(function() {
+Kj.extVars.srpMarketingAlertIsActive = false;
+Kj.extVars.search = {
+page: 1,
+hasKeywords: false,
+suid: Math.round(Math.random() * 10000000000000).toString(36) // TODO: Fake search CID, backend to inject real one.
+};
+Kj.Search.initDistanceSlider({
+distanceLabel : 'Drag Me',
+distanceMax : 500,
+radius : '100',
+address : 'Strathcona County'
+});
+if ($('.zero-results').length == 0) {
+Kj.Search.initStickyScyscraper();
+Kj.Search.initStickyLeaderboard();
+}
+Kj.initToolTips();
+Kj.Search.initSearchFilters();
+Kj.Listings.initAlertSubscribe({
+emailAlertSubscribeUrl: '/j-subscribe-alerts.json',
+keywordSearch: '',
+language: 'en'
+});
+Kj.Listings.initSearchResults({
+featureCounterUrl: '/j-feature-link-inc.json',
+hasDealerRatings: false,
+hasSponsors: false
+});
+Kj.Listings.initEmbeddedTopAd();
+Kj.RecentlyViewed.initRecentlyViewed("https://ca.classistatic.com/static/V/7130/img/placeholder.gif");
+Kj.Search.initSearchNavigationFlag();
+Kj.Search.SearchNav.init();
+Kj.Banners.Responsive.init({
+banners: window.gptBannerSizeMapping
+});
+});

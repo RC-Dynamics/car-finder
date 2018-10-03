@@ -1,0 +1,256 @@
+Brand New Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate Dealership
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-543129-1', 'auto');
+ga('require', 'GTM-P82D8TZ');
+ga('require', 'ec');
+ga('set', 'transport', 'beacon');
+var _vwo_code=(function(){
+var account_id=28981,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+if(window.location.host=="www.buyacar.co.uk"){
+/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","buyacar.zendesk.com");/*]]>*/
+}
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'async-hide','dataLayer',1500,{'GTM-P82D8TZ':true});
+Cars
+Vans
+How It Works
+0800 050 2333
+My Account
+My Cars
+My Details
+My Orders
+My Part-exchange
+Sign Out
+Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate
+From
+37980.00 or 542.08 per month, saving 18%
+off list price
+Choose from one of the deals below, or scroll down to view details about this Volvo XC60
+New cars
+New Car - built to order
+Save up to 5375.00
+Build My Car
+Used cars and Nearly New
+These dealer supplied used cars are nealy new and in stock for immediate delivery
+Nearly New Car
+In 725 Fusion Red, 2018(18), 6000miles
+Supplied by a UK main dealer.
+car price
+38000.00
+542.08 per month*
+View deal
+Nearly New Car
+In White, 2017(67), 8090miles
+Supplied by a UK main dealer.
+car price
+38900.00
+577.85 per month*
+View deal
+Nearly New Car
+In Blue, 2018(18), 6000miles
+Supplied by a UK main dealer.
+car price
+41000.00
+607.53 per month*
+View deal
+Nearly New Car
+In 477 Electric Silver, 2018(18), 10648miles
+Supplied by a UK main dealer.
+car price
+41990.00
+635.47 per month*
+View deal
+Nearly New Car
+In Onyx Black with Charcoal, 2018(68), 1000miles
+Supplied by a UK main dealer.
+car price
+48420.00
+754.26 per month*
+View deal
+Used Car
+In SILVER, 2017(67), 2465miles
+car price
+37980.00
+550.49 per month*
+View deal
+Buyacar and Barclays have partnered to offer market leading finance
+from 7.9% APR for Hire Purchase and PCP representative
+To apply simply choose a vehicle and follow the steps to pay with finance
+Monthly finance representative example 6.90% APR on a PCP
+Deposit of 3818.00, 1st payment is 542.08 followed by 46 monthly payments of 542.08 and optional final payment of 15667.07.
+Payments include documentation fee of 0.00, and final fee of 1.00. Total cost credit is 6784.03. Rate of interest is 3.56% fixed. Based on OTR price 38178.80 and 8000 miles pa.
+We are only able to offer finance products from the providers we use, who may be able to offer you finance for your purchase.
+Click one of the deals above for more details and to get a personal quote.
+About
+Back to deals
+About the Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate
+This new car is available to buy new from buyacar. Like all Volvo's it comes with the full standard Volvo warranty - details of which can be found in the technical specification section below. This Estate is available in a wide range of colours - which can be chosen when you continue on to configure your quote. If you have any questions about this car, continue on and save your quote - from there you can ask us any question you like!
+Performance is important - so we've used a little online magic to provide you with the key bits of information you need to know about this car. Our performance summary tells you all the highlights of the Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate, technical specification is for the petrol heads amongst us and the standard equipment allows you to check what you'll get for free with the car. Last but not least on the agenda is the green statistics - will this car be a green star or a green destroyer?
+brochure information
+Back to deals
+Volvo XC60 brochure information
+Performance is important - so we've used a little online magic to provide you with the key bits of information you need to know about this car. Our performance summary tells you all the highlights of the Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate, technical specification is for the petrol heads amongst us and the standard equipment allows you to check what you'll get for free with the car. Last but not least on the agenda is the green statistics - will this car be a green star or a green destroyer?
+performance summary
+back to deals
+Performance summary (Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate)
+What a great performer! See how this car stacks up...
+GEARBOX
+8 SPEED SEMI-AUTO
+ACCELERATION (0 - 62 MPH)
+8.4 SECONDS
+GROSS VEHICLE WEIGHT
+2450 Kg
+WARRANTY
+3 YEAR / 60000 MILES
+FUEL ECONOMY
+0 MPG
+EMISSIONS
+0 g/km BAND A
+Car dimensions
+1658mm
+4688mm
+1999mm
+Advert
+fuel economy & emissions
+Back to deals
+Fuel Economy & Emissions (Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate)
+Choosing a car with a high fuel economy can save you money and time - we've worked out how much this new car is going to cost to run in the first year along with the fuel emissions and fuel economy information so that you can compare it with other new cars.
+Fuel Economy
+Environmental Information
+A guide on fuel economy and CO2 emissions which contains data for all new passenger car models is
+available at any point of sale free of charge*. In addition to the fuel efficiency of a car, driving behaviour
+as well as other non-technical factors play a role in determining a car's fuel consumption and CO2
+emissions. CO2 is the main greenhouse gas responsible for global warming.
+* This guide is provided courtesy of Department for Transport; please see their link at the bottom of this page for applications.
+CO2 emission figure (g/km)
+CO2 BANDA0g/km
+Fuel cost (estimated) for 12,000 miles
+A fuel cost figure indicates to the consumer a guide fuel price for comparison purposes. This figure is
+calculated by using the combined drive cycle (town centre and motorway) and average fuel price.
+Re-calculated annually, the current cost per litre is as follows - petrol 139p, diesel 147p and LPG 74p
+(VCA March 2012)
+Sorry we only have this information for cars using Petrol, Diesel or LPG
+VED for 12 months
+Vehicle excise duty (VED) or road tax varies according to the CO2 emissions and fuel type of the vehicle.
+140.00
+Make/Model:
+Volvo XC60 2.0 D4 R DESIGN Pro 5dr AWD Geartronic
+diesel estate
+Engine Capacity (cc):
+1969
+Fuel Type:
+Diesel
+Transmission:
+8 SPEED SEMI-AUTO
+Fuel Consumption:
+Drive cycle
+Litres/100km
+Mpg
+Carbon dioxide emissions (g/km): 0
+Important note: Some specifications of this make/model may have lower CO2 emissions than this.
+Check with your dealer.
+Urban
+0
+0
+Extra-urban
+0
+0
+Combined
+0
+0
+//<![CDATA[
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('set', {
+'dimension9': 'Volvo',
+'dimension10': 'XC60',
+'dimension11': 'Estate',
+'dimension15': 'Car page'
+});
+//]]>
+FIND A NEW XC60
+Compare all new XC60's
+XC60 Diesel estate
+All new XC60 Inscription
+All new XC60 Inscription Pro
+All new XC60 Momentum
+All new XC60 Momentum Pro
+All new XC60 R DESIGN
+All new XC60 R DESIGN Pro
+Choose a different XC60:
+I OWN A XC60
+Value your used XC60
+Get a XC60 insurance quote
+XC60 REVIEWS
+All Volvo XC60 Reviews
+Help & Advice
+New car buying guides
+Who are buyacar?
+Frequently asked questions
+Contact buyacar
+Call us now
+0800 050 2333
+CLICK HERE FOR CONTACT DETAILS AND OPENING HOURS
+0800 050 2333
+hello@buyacar.co.uk
+Lines open: Monday to Thursday 9am to 8pm, Friday 9am to 5pm Saturday 9am to 5pm
+Facebook
+Twitter
+LinkedIn
+Email
+Cars
+Used Cars
+New Cars in Stock
+New Cars to Order
+New Car Leasing
+Vans
+How It Works
+Finance Options
+Warranty & Insurance
+Part Exchange
+Cancellations & Returns
+FAQ
+About Us
+Buyers' Guides
+News
+Advice
+Work For Us
+Dealer Sales
+Sitemap
+© 2002-2018 Dennis Buyacar Ltd - No Part Of This Website May Be Reproduced Without Prior Consent. Taking Or Use Of
+Images Or Text Is Breach Of Copyright |
+Terms And Conditions |
+Privacy Policy
+Dennis Buyacar Ltd, 31-32 Alfred Place, London, WC1E 7DP (GB09151058) (FRN:667368) Is Authorised And Regulated By
+The Financial Conduct Authority. Buyacar Is A Credit Broker And Not A Lender
+//<![CDATA[
+var sessionParams = '';
+//]]>
+//<![CDATA[
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8751.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+//]]>
+var impliedConsent = impliedConsent || {}; impliedConsent.q = impliedConsent.q || [];
+impliedConsent.q.push(['init']);
+window._mfq = window._mfq || [];
+(function() {
+var mf = document.createElement("script");
+mf.type = "text/javascript"; mf.async = true;
+mf.src = "//cdn.mouseflow.com/projects/85fb7a5c-f571-472e-8b44-7487ea9943c2.js";
+document.getElementsByTagName("head")[0].appendChild(mf);
+})();
