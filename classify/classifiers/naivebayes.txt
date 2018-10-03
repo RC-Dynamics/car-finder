@@ -1,9 +1,49 @@
 NaiveBayes
 ../data/db1.csv
 Train Accuracy: 1.00 (+/- 0.00)
-Teste Accuracy: 0.97 (+/- 0.11)
-Precision: 0.95 (+/- 0.14)
-Recall: 0.98 (+/- 0.10)
-Fit Time: 0.08 (+/- 0.02)
+Teste Accuracy: 0.95 (+/- 0.13)
+Precision: 0.93 (+/- 0.17)
+Recall: 0.98 (+/- 0.12)
+Fit Time: 0.07 (+/- 0.04)
+
+
+../data/db2.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.97 (+/- 0.09)
+Precision: 0.97 (+/- 0.13)
+Recall: 0.98 (+/- 0.12)
+Fit Time: 0.06 (+/- 0.01)
+
+
+../data/db3.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.96 (+/- 0.13)
+Precision: 0.95 (+/- 0.16)
+Recall: 0.98 (+/- 0.12)
+Fit Time: 0.06 (+/- 0.01)
+
+
+../data/db4.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.97 (+/- 0.09)
+Precision: 0.95 (+/- 0.15)
+Recall: 1.00 (+/- 0.00)
+Fit Time: 0.05 (+/- 0.01)
+
+
+../data/db5.csv
+Train Accuracy: 0.94 (+/- 0.02)
+Teste Accuracy: 0.92 (+/- 0.20)
+Precision: 0.90 (+/- 0.25)
+Recall: 0.96 (+/- 0.16)
+Fit Time: 0.00 (+/- 0.00)
+
+
+../data/db6.csv
+Train Accuracy: 0.96 (+/- 0.03)
+Teste Accuracy: 0.91 (+/- 0.19)
+Precision: 0.94 (+/- 0.25)
+Recall: 0.90 (+/- 0.20)
+Fit Time: 0.00 (+/- 0.00)
 
 

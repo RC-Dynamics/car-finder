@@ -126,8 +126,8 @@ def main():
         f.write("Fit Time: %0.2f (+/- %0.2f)\n" % (scores["fit_time"].mean(), scores["fit_time"].std() * 2))
         f.write('\n\n')
 
-        title = "Learning Curves (Naive Bayes)"
-        plot_learning_curve(clf, title, X, y, cv=folders, n_jobs=4)
+        # title = "Learning Curves (Naive Bayes)"
+        # plot_learning_curve(clf, title, X, y, cv=folders, n_jobs=4)
 
 
 
