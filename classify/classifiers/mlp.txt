@@ -1,0 +1,49 @@
+MLP
+../data/db1.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.97 (+/- 0.11)
+Precision: 0.98 (+/- 0.10)
+Recall: 0.97 (+/- 0.13)
+Fit Time: 1.22 (+/- 0.16)
+
+
+../data/db2.csv
+Train Accuracy: 1.00 (+/- 0.01)
+Teste Accuracy: 0.94 (+/- 0.15)
+Precision: 0.92 (+/- 0.21)
+Recall: 0.98 (+/- 0.10)
+Fit Time: -0.85 (+/- 12.54)
+
+
+../data/db3.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.98 (+/- 0.07)
+Precision: 0.99 (+/- 0.09)
+Recall: 0.98 (+/- 0.10)
+Fit Time: 0.99 (+/- 0.42)
+
+
+../data/db4.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.97 (+/- 0.11)
+Precision: 0.95 (+/- 0.14)
+Recall: 0.98 (+/- 0.10)
+Fit Time: 1.30 (+/- 0.52)
+
+
+../data/db5.csv
+Train Accuracy: 1.00 (+/- 0.01)
+Teste Accuracy: 0.97 (+/- 0.08)
+Precision: 0.97 (+/- 0.11)
+Recall: 0.97 (+/- 0.13)
+Fit Time: 0.09 (+/- 0.06)
+
+
+../data/db6.csv
+Train Accuracy: 0.98 (+/- 0.10)
+Teste Accuracy: 0.94 (+/- 0.17)
+Precision: 0.94 (+/- 0.24)
+Recall: 0.97 (+/- 0.13)
+Fit Time: 0.08 (+/- 0.02)
+
+
