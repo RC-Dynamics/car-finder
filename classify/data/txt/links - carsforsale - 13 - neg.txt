@@ -1,0 +1,7 @@
+(function(window){
+try {
+if (typeof sessionStorage !== 'undefined'){
+sessionStorage.setItem('distil_referrer', document.referrer);
+}
+} catch (e){}
+})(window);
