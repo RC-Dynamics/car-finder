@@ -127,11 +127,7 @@ def main():
         f.write('\n\n')
 
         title = "Learning Curves (Naive Bayes)"
-        # Cross validation with 100 iterations to get smoother mean test and train
-        # score curves, each time with 20% data randomly selected as a validation set.
-        # cv = ShuffleSplit(n_splits=10, test_size=0.2, random_state=0)
         plot_learning_curve(clf, title, X, y, cv=folders, n_jobs=4)
-        return
 
 
 
