@@ -81,7 +81,7 @@ class Crawler:
     def evaluate_links(self, links, method):
         if (method == 'heuristic'):
             for l in links:
-                if (l['href'] in self.visited) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
+                if (l['href'] in [v['url'] for v in self.visited]) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
                     continue
                 new_item = {'link': l['href'], 'score': 1}
                 for anchor in self.link_words:
@@ -98,7 +98,7 @@ class Crawler:
             pass
         else:
             for l in links:
-                if (l['href'] in self.visited) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
+                if (l['href'] in [v['url'] for v in self.visited]) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
                     continue
                 self.order.append({'link': l['href'], 'score': 1})
 
@@ -129,21 +129,22 @@ class Crawler:
 
     def get_links(self, visiting_now):
         try:
-            html = requests.get(self.url[:-1] + visiting_now, headers=self.headers, timeout=5)
+            html = requests.get(self.url[:-1] + visiting_now, headers=self.headers, timeout=10)
         except requests.exceptions.Timeout:
             self.print_error('TIMEOUT', self.url[:-1] + visiting_now)
             return -1
         if (html.status_code != 200):
             return -1
+        self.visited.append({'url': visiting_now, 'html': html.text})        
         soup = BeautifulSoup(html.text, 'html.parser')
         return soup.find_all('a', href=True)
 
     def save_visited_csv(self, method):
-        df = pd.DataFrame(list(map(lambda x: self.url[:-1] + x, self.visited)), columns=["visited_links"])
+        df = pd.DataFrame({'visited_links': list(map(lambda x: self.url[:-1] + x['url'], self.visited)), 'html': [v['html'] for v in self.visited]})
         if 'www.' in self.url:
-            df.to_csv('results/' + method + '/' + self.url.split('www.')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
+            df.to_csv('/media/roberto/roberto/results/' + method + '/' + self.url.split('www.')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
         else:
-            df.to_csv('results/' + method + '/' + self.url.split('https://')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
+            df.to_csv('/media/roberto/roberto/results/' + method + '/' + self.url.split('https://')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
 
     def visit(self, method='bfs', save_results=False):
         for visit_quantity in tqdm(range(self.MAX_VISITS), desc=("Getting data from (" + self.url + ")")):
@@ -151,10 +152,9 @@ class Crawler:
                 self.print_error('NOT ENOUGH LINK: ', self.url)
                 break
             visiting_now = self.order.pop(0)['link']
-            if (visiting_now in self.visited) or (self.is_not_allowed(visiting_now)):
+            if (visiting_now in [v['url'] for v in self.visited]) or (self.is_not_allowed(visiting_now)):
                 visit_quantity -= 1
                 continue
-            self.visited.append(visiting_now)
 
             if (self.debug):
                 self.out.write('VISITING NOW: ' + visiting_now)
@@ -182,6 +182,11 @@ class Crawler:
 if (__name__ == "__main__"):
     p = PreProcessing("../site.txt")
     sites = p.get_sites_info()
-    for s in sites:
-        c = Crawler(s, dbg=False)
-        c.visit(method='heuristic', save_results=True)
+    for m in ['bfs', 'heuristic']:
+        print ('Initializing (' + m + '):')
+        for s in sites:
+            c = Crawler(s, dbg=False)
+            c.visit(method=m, save_results=True)
+        print ('Finishing (' + m + ')\n')
+        
+        
