@@ -8,7 +8,8 @@ To install dependencies run:
 `pip3 install beautifulsoup4 requests tqdm pandas selenium`
 
 and
-`sudo apt-get install phantomjs`
+
+`sudo apt-get install phantomjs -y`
 
 To run the crawler run:
 
