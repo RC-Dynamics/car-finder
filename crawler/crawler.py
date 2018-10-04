@@ -5,6 +5,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import sys
+import signal
+from selenium import webdriver
 sys.path.append('pre_processing')
 sys.path.append('heuristic')
 
@@ -128,23 +130,33 @@ class Crawler:
             self.out.write('\n-----------------------------------------------------------------------------\n\n')
 
     def get_links(self, visiting_now):
-        try:
-            html = requests.get(self.url[:-1] + visiting_now, headers=self.headers, timeout=10)
-        except requests.exceptions.Timeout:
-            self.print_error('TIMEOUT', self.url[:-1] + visiting_now)
-            return -1
-        if (html.status_code != 200):
-            return -1
-        self.visited.append({'url': visiting_now, 'html': html.text})        
-        soup = BeautifulSoup(html.text, 'html.parser')
+        if 'shift.com' in self.url:
+            driver = webdriver.PhantomJS()
+            driver.get(self.url[:-1] + visiting_now)
+            print (self.url[:-1] + visiting_now)
+            html_text = driver.page_source
+            # driver.close()
+            print (html_text)
+            driver.service.process.send_signal(signal.SIGTERM)
+        else:
+            try:
+                html = requests.get(self.url[:-1] + visiting_now, headers=self.headers, timeout=10)
+                html_text = html.text
+            except requests.exceptions.Timeout:
+                self.print_error('TIMEOUT', self.url[:-1] + visiting_now)
+                return -1
+            if (html.status_code != 200):
+                return -1
+        self.visited.append({'url': visiting_now, 'html': html_text})        
+        soup = BeautifulSoup(html_text, 'html.parser')
         return soup.find_all('a', href=True)
 
     def save_visited_csv(self, method):
         df = pd.DataFrame({'visited_links': list(map(lambda x: self.url[:-1] + x['url'], self.visited)), 'html': [v['html'] for v in self.visited]})
         if 'www.' in self.url:
-            df.to_csv('/media/roberto/roberto/results/' + method + '/' + self.url.split('www.')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
+            df.to_csv('results/' + method + '/' + self.url.split('www.')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
         else:
-            df.to_csv('/media/roberto/roberto/results/' + method + '/' + self.url.split('https://')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
+            df.to_csv('results/' + method + '/' + self.url.split('https://')[1][:-1] + '.csv', header=True, index=False, encoding='utf-8')
 
     def visit(self, method='bfs', save_results=False):
         for visit_quantity in tqdm(range(self.MAX_VISITS), desc=("Getting data from (" + self.url + ")")):
