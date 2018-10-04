@@ -1,0 +1,61 @@
+LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var h="LUX_start";var j=window.performance;var k=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(j&&j.timing&&j.timing.navigationStart){k=j.timing.navigationStart}function e(){if(j){if(j.now){return j.now()}else{if(j.webkitNow){return j.now()}else{if(j.msNow){return j.now()}else{if(j.mozNow){return j.now()}}}}}var m=Date.now?Date.now():+(new Date());return m-k}function b(m){if(j){if(j.mark){return j.mark(m)}else{if(j.webkitMark){return j.webkitMark(m)}}}a.push({name:m,entryType:"mark",startTime:e(),duration:0});return}function l(o,s,m){if("undefined"===typeof(s)&&g(h)){s=h}if(j){if(j.measure){if(s){if(m){return j.measure(o,s,m)}else{return j.measure(o,s)}}else{return j.measure(o)}}else{if(j.webkitMeasure){return j.webkitMeasure(o,s,m)}}}var q=0,n=e();if(s){var r=g(s);if(r){q=r.startTime}else{if(j&&j.timing&&j.timing[s]){q=j.timing[s]-j.timing.navigationStart}else{return}}}if(m){var p=g(m);if(p){n=p.startTime}else{if(j&&j.timing&&j.timing[m]){n=j.timing[m]-j.timing.navigationStart}else{return}}}d.push({name:o,entryType:"measure",startTime:q,duration:(n-q)});return}function g(m){return c(m,f())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function f(){if(j){if(j.getEntriesByType){return j.getEntriesByType("mark")}else{if(j.webkitGetEntriesByType){return j.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:l,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX.samplerate = 100;
+(function() {
+// Preload assets
+(new Image()).src = '/images/interface/shiftlogo_white.3qLQCUzH.svg';
+(new Image()).src = '/images/interface/shiftlogo.dVeX2BTv.svg';
+(new Image()).src = '/images/interface/spinner.3NddOnzd.svg';
+})();
+window.__performance = {
+mark: performance && performance.mark ? performance.mark.bind(performance) : function() {},
+};
+!function() {
+if (!window.PerformanceObserver) return;
+if (window.PerformanceLongTaskTiming) {
+var g = window.__tti = { e:[] };
+g.o = new PerformanceObserver(function(l) { g.e = g.e.concat(l.getEntries()); });
+g.o.observe({entryTypes:['longtask']});
+}
+var g2 = window.__performance;
+g2.entries = [];
+g2.observer = new PerformanceObserver(function(l) {
+if (g2.callback) return g2.callback(l);
+g2.entries = g2.entries.concat(l.getEntries());
+});
+g2.observer.observe({entryTypes:['paint', 'mark']});
+__performance.mark('registered-observer');
+}();
+(function() {
+var list = [
+['Android', 'B6F0E0F6FE204A58E'],
+['Chrome', 'D17A76BCF10B81C58'],
+['iPhone', '7F33EF5A5B5652517'],
+['iPad', '592D87E31482EB4D9'],
+['Firefox', '592D87E31482EB4D9'],
+['Safari', 'D17A76BCF10B81C58']
+];
+var path;
+for (var i = 0, item; item = list[i]; i++) {
+var ua = item[0];
+if (window.navigator.userAgent.indexOf(ua) !== -1) {
+path = item[1];
+break;
+}
+}
+var ct = '//cloud.typography.com/6825112/671726/css/fonts.css';
+if (path) {
+document.write('<link rel="stylesheet" href="/static/fonts/294000/' + path + '.css">');
+window.setTimeout(function() { (new Image()).src = ct; }, 6000);
+} else {
+document.write('<link rel="stylesheet" href="' + ct + '">');
+}
+}());
+__performance.mark('css-loaded');
+Used cars for sale in San Diego | Shift
+San DiegoInland EmpireLos AngelesOrange CountySan FranciscoSan Gabriel ValleySan JoseSan Diego0Simplified car buyingGreat cars. Better prices. Test drives delivered to you.Blue ××GoBuy a carSell a carGuaranteed quality150+ point inspections. 30-day warranty on certified cars. 5-day money back guarantee.Lower prices, easier financingWe avoid the overhead of fancy showrooms and pass the savings onto you, removing financing friction in the process.Test drives at home or workOur friendly Concierges work within your schedule to bring the car to you anywhere in the San Diego Area.List prices do not include taxes, registration, or
+Shift Service fee.Blue ××56 matchesclear filtersSee CarsMax PriceMonthly Price$60K+Max Mileage80K+Test Drive AvailabilityThu, Oct 4Fri, Oct 5Sat, Oct 6Sun, Oct 7Mon, Oct 8Tue, Oct 9Wed, Oct 10Body StyleSedanHatchbackWagonSUVVanCoupeConvertibleTruckMakeAcuraAlfa RomeoAM GeneralAston MartinAudiBentleyBMWBuickCadillacChevroletChryslerDaewooDodgeFerrariFIATFiskerFordGenesisGMCHondaHUMMERHyundaiINFINITIIsuzuJaguarJeepKiaLamborghiniLand RoverLexusLincolnLotusMaseratiMaybachMazdaMcLarenMercedes-BenzMercuryMINIMitsubishiNissanOldsmobilePanozPlymouthPontiacPorscheRamRolls-RoyceSaabSaturnScionsmartSubaruSuzukiTeslaToyotaVolkswagenVolvoTransmissionAutomaticManualDrivetrainFront Wheel DriveRear Wheel DriveAll Wheel DriveFour Wheel DriveColorBlackBlueBrownCopperGoldGrayGreenMaroonOrangePurpleRedSilverTanTealWhiteYellowOptionsAux InputBackup CameraBluetoothHeated SeatsLeather SeatsNavigationParking SensorsSunroofThird Row SeatsUSB InputFuel TypeHybridElectricDieselFilter56 carsRecently addedMileageLeast expensiveMost expensiveBest valueMost expensiveFilter56 carsRecently addedMileageLeast expensiveMost expensiveBest valueMost expensiveNissan GT-R Black Edition2014$70,300Porsche 718 Boxster S2017$63,500Porsche Macan Turbo2016$56,350BMW M22017$50,100Toyota Highlander XLE2016$34,950Mercedes-Benz GLC 3002016$31,950
+!(function(e){function t(t){for(var a,c,p=t[0],f=t[1],u=t[2],l=0,s=[];l<p.length;l++)c=p[l],n[c]&&s.push(n[c][0]),n[c]=0;for(a in f)Object.prototype.hasOwnProperty.call(f,a)&&(e[a]=f[a]);for(i&&i(t);s.length;)s.shift()();return o.push.apply(o,u||[]),r()}function r(){for(var e,t=0;t<o.length;t++){for(var r=o[t],a=!0,p=1;p<r.length;p++){var f=r[p];0!==n[f]&&(a=!1)}a&&(o.splice(t--,1),e=c(c.s=r[0]))}return e}var a={},n={30:0},o=[];function c(t){if(a[t])return a[t].exports;var r=a[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,c),r.l=!0,r.exports}c.e=function(e){var t=[],r=n[e];if(0!==r)if(r)t.push(r[2]);else{var a=new Promise(function(t,a){r=n[e]=[t,a]});t.push(r[2]=a);var o,p=document.getElementsByTagName("head")[0],f=document.createElement("script");f.charset="utf-8",f.timeout=120,c.nc&&f.setAttribute("nonce",c.nc),f.src=(function(e){return c.p+"scripts/chunks/"+({1:"default~app-account~app-buyer~app-cars~app-seller",2:"vendors~app-account~app-buyer~app-seller",3:"default~app-buyer~app-cars",8:"SellerActivityMockData",9:"CarProfileMockData",10:"BuyerActivityMockData",11:"CreditDecisionsMockData",12:"FinancingApplicationMockData",13:"AccountMockData",14:"app-static-content",15:"app-seller",16:"app-buyer",17:"app-account",18:"app-finance",19:"app-cars",20:"AppraisalMockData",26:"vendors~app-cars",27:"vendors~app-account",28:"vendors~app-finance",29:"vendors~app-seller"}[e]||e)+"_"+{1:"a6ec3f0a1460def779c9",2:"5b5e546616b13033f939",3:"3fd58f436b3b6060bc97",8:"9cb58b6e3f09196e2ff3",9:"354cef863f7a4bc03815",10:"4abafc10081e232ac27e",11:"f03612e4168237e6a1fe",12:"f373761389864e2ba288",13:"7eb2af13d478be999566",14:"7c6293782139100edc06",15:"26c61799054136239af7",16:"57bb4340782000137da3",17:"83720187aeced514789e",18:"e095ed72f0589e32d26a",19:"65610e6e16bf410c9931",20:"4b633a2f2a352464daf8",26:"5fb486939aa98ce9f275",27:"b59602179673741f8457",28:"7c9ef7b7c38c65884f4d",29:"5d49072ad585ae03d9eb"}[e]+".js"})(e),o=function(t){f.onerror=f.onload=null,clearTimeout(u);var r=n[e];if(0!==r){if(r){var a=t&&("load"===t.type?"missing":t.type),o=t&&t.target&&t.target.src,c=new Error("Loading chunk "+e+" failed.\n("+a+": "+o+")");c.type=a,c.request=o,r[1](c)}n[e]=void 0}};var u=setTimeout(function(){o({type:"timeout",target:f})},12e4);f.onerror=f.onload=o,p.appendChild(f)}return Promise.all(t)},c.m=e,c.c=a,c.d=function(e,t,r){c.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},c.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},c.t=function(e,t){if(1&t&&(e=c(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(c.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var a in e)c.d(r,a,(function(t){return e[t]}).bind(null,a));return r},c.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return c.d(t,"a",t),t},c.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},c.p="/",c.oe=function(e){throw console.error(e),e};var p=window.webpackJsonp=window.webpackJsonp||[],f=p.push.bind(p);p.push=t,p=p.slice();for(var u=0;u<p.length;u++)t(p[u]);var i=f;r()})([]);
+//# sourceMappingURL=/sourcemaps/app-manifest_5ff9fe408fd84dd218ca.js.map
+__performance.mark('scripts-loaded');
+window._pureCars={};window._pureCars.guid="undefined";window._pureCars.googleId="undefined";window._pureCars.mvh=!0;window._pureCars.pcTrack=!0;window._pureCars.vdpWords=["/car/"];
+(function(){var a=window.onload,c=window,b=document.createElement("script");b.setAttribute("async","true");b.type="text/javascript";b.src="//cdn.purecars.com/mvh/production/dealers/undefined/pcdi.js";((document.getElementsByTagName("body")||[null])[0]||document.getElementsByTagName("script")[0].parentNode).appendChild(b);a&&a();a=void 0;c.onload=a})();Question Mark in Chat Bubble Icona question mark inside a chat bubble to indicate chat support0Ask a question!Contact usArrow Downa small down arrow to minimize chat boxWe're not around, but we'd love to hear from you. Send us a message and we'll get back to you as soon as possible!
+vs_account_id="undefined";
