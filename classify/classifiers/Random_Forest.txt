@@ -1,0 +1,49 @@
+Random_Forest
+../data/db1.csv
+Train Accuracy: 0.96 (+/- 0.01)
+Teste Accuracy: 0.93 (+/- 0.11)
+Precision: 0.97 (+/- 0.11)
+Recall: 0.89 (+/- 0.24)
+Fit Time: 5.15 (+/- 1.12)
+
+
+../data/db2.csv
+Train Accuracy: 0.96 (+/- 0.01)
+Teste Accuracy: 0.91 (+/- 0.14)
+Precision: 0.95 (+/- 0.12)
+Recall: 0.88 (+/- 0.30)
+Fit Time: 5.18 (+/- 2.03)
+
+
+../data/db3.csv
+Train Accuracy: 0.96 (+/- 0.01)
+Teste Accuracy: 0.92 (+/- 0.14)
+Precision: 0.97 (+/- 0.11)
+Recall: 0.88 (+/- 0.30)
+Fit Time: 4.92 (+/- 1.47)
+
+
+../data/db4.csv
+Train Accuracy: 0.96 (+/- 0.01)
+Teste Accuracy: 0.91 (+/- 0.13)
+Precision: 0.94 (+/- 0.15)
+Recall: 0.89 (+/- 0.24)
+Fit Time: 4.29 (+/- 2.07)
+
+
+../data/db5.csv
+Train Accuracy: 0.96 (+/- 0.01)
+Teste Accuracy: 0.91 (+/- 0.15)
+Precision: 0.94 (+/- 0.15)
+Recall: 0.88 (+/- 0.30)
+Fit Time: 1.03 (+/- 0.27)
+
+
+../data/db6.csv
+Train Accuracy: 0.96 (+/- 0.01)
+Teste Accuracy: 0.91 (+/- 0.15)
+Precision: 0.94 (+/- 0.12)
+Recall: 0.88 (+/- 0.30)
+Fit Time: 1.14 (+/- 0.41)
+
+
