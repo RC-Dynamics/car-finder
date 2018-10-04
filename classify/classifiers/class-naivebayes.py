@@ -7,7 +7,7 @@ from output import *
 
 
 def main():
-    dfs = ['../data/db1.csv', '../data/db2.csv', '../data/db3.csv', '../data/db4.csv', '../data/db5.csv', '../data/db6.csv']
+    dfs = ['../data/db1.csv', '../data/db2.csv', '../data/db3.csv', '../data/db4.csv', '../data/db5.csv', '../data/db6.csv', '../data/db7.csv']
     
     f = createFile("Naive_Bayes")
 

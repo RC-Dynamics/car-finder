@@ -6,7 +6,7 @@ from sklearn.model_selection import cross_validate
 from output import *
 
 def main():
-    dfs = ['../data/db1.csv', '../data/db2.csv', '../data/db3.csv', '../data/db4.csv', '../data/db5.csv', '../data/db6.csv']
+    dfs = ['../data/db1.csv', '../data/db2.csv', '../data/db3.csv', '../data/db4.csv', '../data/db5.csv', '../data/db6.csv', '../data/db7.csv']
 
     grid_param = {'C': [ 0.01, 0.1, 1, 10, 100, 1000], 'kernel': [ 'rbf', 'linear', 'poly', 'sigmoid']}
     clft = GridSearchCV(svm.SVC(), grid_param)

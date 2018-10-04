@@ -12,7 +12,7 @@ def download():
             data = pd.read_csv("data/links/"+file)
             for idx, row in data.iterrows():
                 try:
-                    print(row["link"])
+                    print("Getting: " + row["link"])
                     html = requests.get(row["link"], headers=headers, timeout = 5)
                     if (html.status_code != 200):
                         print("ERROR -----------")
@@ -28,7 +28,7 @@ def download():
                             neg.write(html.text)
                             neg.close
                             link += 1
-                        time.sleep(0.5)
+                        time.sleep(1.5)
                 except (requests.exceptions.Timeout): 
                     print("TIMEOUT link: %s"%(row["link"]))
                 
