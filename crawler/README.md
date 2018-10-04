@@ -5,7 +5,10 @@ System to find cars
 
 To install dependencies run:
 
-`pip3 install beautifulsoup4 requests tqdm pandas`
+`pip3 install beautifulsoup4 requests tqdm pandas selenium`
+
+and
+`sudo apt-get install phantomjs`
 
 To run the crawler run:
 
