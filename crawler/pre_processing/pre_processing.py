@@ -21,9 +21,9 @@ class PreProcessing:
             r = requests.get(s['site'] + self.robots, headers=self.headers)
             s['robots'] = r.text
             s['status_code'] = r.status_code
-        for s in self.sites:
-            if (s['status_code'] != 200):
-                self.sites.remove(s)
+        # for s in self.sites:
+        #     if (s['status_code'] != 200):
+        #         self.sites.remove(s)
         print("Done")
         self.get_disallow()
         if(self.debug):
@@ -37,18 +37,21 @@ class PreProcessing:
 
     def get_disallow(self):
         for s in self.sites:
-            result_data_set = {"Disallowed":[], "Allowed":[]}
-            for line in s['robots'].split("\n"):
-                if line.startswith('Allow'):    # this is for allowed url
-                    if (len(line.split(': ')) > 1):
-                        result_data_set["Allowed"].append(line.split(': ')[1].split(' ')[0].strip('#').strip(' ').strip('\t').strip('\n').strip('\r'))    # to neglect the comments or other junk info
-                elif line.startswith('Disallow'):    # this is for disallowed url
-                    if (len(line.split(': ')) > 1):
-                        dis = line.split(': ')[1].split(' ')[0].strip('#').strip(' ').strip('\t').strip('\n').strip('\r')
-                        if len(dis) > 1:
-                            result_data_set["Disallowed"].append(dis)    # to neglect the comments or other junk info
-            s['disallow'] = result_data_set["Disallowed"]
-            del s['robots']
+            if 'shift.com' in s:
+                s['disallow'] = []
+            else:
+                result_data_set = {"Disallowed":[], "Allowed":[]}
+                for line in s['robots'].split("\n"):
+                    if line.startswith('Allow'):    # this is for allowed url
+                        if (len(line.split(': ')) > 1):
+                            result_data_set["Allowed"].append(line.split(': ')[1].split(' ')[0].strip('#').strip(' ').strip('\t').strip('\n').strip('\r'))    # to neglect the comments or other junk info
+                    elif line.startswith('Disallow'):    # this is for disallowed url
+                        if (len(line.split(': ')) > 1):
+                            dis = line.split(': ')[1].split(' ')[0].strip('#').strip(' ').strip('\t').strip('\n').strip('\r')
+                            if len(dis) > 1:
+                                result_data_set["Disallowed"].append(dis)    # to neglect the comments or other junk info
+                s['disallow'] = result_data_set["Disallowed"]
+                del s['robots']
 
 
     def print_info(self):
