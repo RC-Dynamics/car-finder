@@ -38,7 +38,7 @@ def makeBoW(name, texts, words):
                         row.append(0)
                 if file.endswith("pos.txt"):
                     row.append(1)
-                else:
+                elif file.endswith("neg.txt"):
                     row.append(0)
                 # print(len(row))
                 writer.writerow(row)
