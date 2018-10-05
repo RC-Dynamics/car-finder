@@ -5,7 +5,7 @@ System to find cars
 
 To install dependencies run:
 
-`pip3 install beautifulsoup4 requests tqdm pandas selenium nltk`
+`pip3 install beautifulsoup4 requests tqdm pandas selenium nltk scikit-learn`
 
 and
 
