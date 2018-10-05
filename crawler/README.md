@@ -5,14 +5,23 @@ System to find cars
 
 To install dependencies run:
 
-`pip3 install beautifulsoup4 requests tqdm pandas selenium nltk scikit-learn`
+```
+pip3 install beautifulsoup4 requests tqdm pandas selenium nltk pprint scikit-learn -U
 
-and
+sudo apt-get install phantomjs -y
+```
 
-`sudo apt-get install phantomjs -y`
+and using python3 run
+
+```
+import nltk
+nltk.download('punkt')
+```
 
 To run the crawler run:
 
-`python3 crawler.py`
+```
+python3 crawler.py
+```
 
 This script read the `../site.txt` file as input with the links.
