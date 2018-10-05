@@ -131,12 +131,10 @@ class Crawler:
 
     def get_links(self, visiting_now):
         if 'shift.com' in self.url:
-            driver = webdriver.PhantomJS()
+            driver = webdriver.PhantomJS('/usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs')
             driver.get(self.url[:-1] + visiting_now)
-            print (self.url[:-1] + visiting_now)
             html_text = driver.page_source
             # driver.close()
-            print (html_text)
             driver.service.process.send_signal(signal.SIGTERM)
         else:
             try:
