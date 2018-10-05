@@ -47,7 +47,7 @@ def makeBoW(name, texts, words):
 
 
 
-def raw_corpus():
+def makeRawCorpus():
     corpus = set()
     files = {}
     corpus_txt = []
@@ -69,39 +69,55 @@ def raw_corpus():
             else:
                 Y.append(0)
 
-    with open ("./data/dataset/corpus.cp", 'wb') as fp:
+    with open ("./data/dataset/corpus/corpus.cp", 'wb') as fp:
         pickle.dump(list(corpus), fp)
     
-    with open ("./data/dataset/files.cp", 'wb') as fp:
+    with open ("./data/dataset/corpus/files.cp", 'wb') as fp:
         pickle.dump(files, fp)
     
-    with open ("./data/dataset/corpus_txt.cp", 'wb') as fp:
+    with open ("./data/dataset/corpus/corpus_txt.cp", 'wb') as fp:
         pickle.dump(corpus_txt, fp)
 
-    with open ("./data/dataset/Y.cp", 'wb') as fp:
+    with open ("./data/dataset/corpus/Y.cp", 'wb') as fp:
         pickle.dump(Y, fp)
     
     return corpus, files, corpus_txt, Y
 
+def loadCorpus(name):
+    corpus = []
+    with open ("./data/dataset/corpus/"+ name +".cp", 'rb') as fp:
+        corpus = pickle.load(fp)
+    return corpus
+
+def saveCorpus(name, corpus):
+    with open ("./data/dataset/corpus/"+ name +".cp", 'wb') as fp:
+        pickle.dump(corpus, fp)
+    
 def getRawCorpus():
-    with open ("./data/dataset/corpus.cp", 'wb') as fp:
-        pickle.dump(list(corpus), fp)
+    corpus = []
+    files = {}
+    corpus_txt = []
+    Y = []
+    with open ("./data/dataset/corpus/corpus.cp", 'rb') as fp:
+        corpus = pickle.load(fp)
     
-    with open ("./data/dataset/files.cp", 'wb') as fp:
-        pickle.dump(files, fp)
+    with open ("./data/dataset/corpus/files.cp", 'rb') as fp:
+        files = pickle.load(fp)
     
-    with open ("./data/dataset/corpus_txt.cp", 'wb') as fp:
-        pickle.dump(corpus_txt, fp)
+    with open ("./data/dataset/corpus/corpus_txt.cp", 'rb') as fp:
+        corpus_txt = pickle.load(fp)
 
-    with open ("./data/dataset/Y.cp", 'wb') as fp:
-        pickle.dump(Y, fp)
+    with open ("./data/dataset/corpus/Y.cp", 'rb') as fp:
+        Y = pickle.load(fp)
+    
+    return corpus, files, corpus_txt, Y
 
-def bow_raw(files, corpus):
+def bowRaw(files, corpus):
     # Creating and saving the dataset raw as csv
     print("Raw: ")
     makeBoW("db1", files, list(corpus))
                 
-def bow_lower(files):
+def bowLower(files):
 ################### FILTERS - LOWER #######################
     corpus_lower = set ()
     for key in files: #LOWER
@@ -115,7 +131,7 @@ def bow_lower(files):
     makeBoW("db2", files, corpus_lower)
     return files, corpus_lower
 
-def bow_stopwords(files):
+def bowStopwords(files):
 #################### FILTERS - STOPWORDS ####################
     stopWords = set(stopwords.words('english'))
     corpus_stop = set()
@@ -128,7 +144,7 @@ def bow_stopwords(files):
     makeBoW("db3", files, corpus_stop)
     return files, corpus_stop
 
-def bow_stemming(files):
+def bowStemming(files):
 ################### FILTERS - STEMMING #####################
     ps = PorterStemmer()
     corpus_stem = set()
@@ -144,7 +160,7 @@ def bow_stemming(files):
     makeBoW("db4", files, corpus_stem)
     return files, corpus_stem
 
-def bow_vectorizer1(files, corpus_txt):
+def bowVectorizer1(files, corpus_txt):
 ################### FILTERS  - sklearn - max df = 0.9 ####################
 
     vectorizer = TfidfVectorizer(max_df = 0.9, max_features = 1000)
@@ -154,7 +170,7 @@ def bow_vectorizer1(files, corpus_txt):
     makeBoW("db5", files, vectorizer.get_feature_names())
     return vectorizer.get_feature_names()
 
-def bow_vectorizer2(files, corpus_txt):
+def bowVectorizer2(files, corpus_txt):
 ################### FILTERS - max df = 0.8 # min df = 0.2 #############
 
     vectorizer = TfidfVectorizer(max_df = 0.8, min_df = 0.2, max_features = 1000)
@@ -164,7 +180,7 @@ def bow_vectorizer2(files, corpus_txt):
     makeBoW("db6", files, vectorizer.get_feature_names())
     return vectorizer.get_feature_names()
 
-def bow_infogain(files, corpus_txt, Y):
+def bowInfogain(files, corpus_txt, Y):
 ################## FILTERS - Info Gain ################################
     cv = CountVectorizer(max_df=0.9, min_df=0.05, max_features=1000, stop_words='english')
     vector = cv.fit_transform(corpus_txt)
@@ -185,27 +201,28 @@ def bow_infogain(files, corpus_txt, Y):
             
 def main():
 
-    # corpus, files, corpus_txt, Y = raw_corpus()
-
-
+    # corpus, files, corpus_txt, Y = makeRawCorpus()
     
-    bow_raw(files, corpus)
+    corpus, files, corpus_txt, Y  = getRawCorpus()
 
-    files_low, corpus_low = bow_lower(files)
+    bowRaw(files, corpus)
 
-    files_stop, corpus_stop = bow_stopwords(files_low)
+    files_low, corpus_low = bowLower(files)
 
-    files_stemming, corpus_stemming = bow_stemming(files_stop)
+    files_stop, corpus_stop = bowStopwords(files_low)
 
+    files_stemming, corpus_stemming = bowStemming(files_stop)
+
+    saveCorpus("lowStopStem", corpus_stemming)
 ######
 
-    corpus_vec1 = bow_vectorizer1(files, corpus_txt)
+    corpus_vec1 = bowVectorizer1(files, corpus_txt)
 
-    corpus_vec2 = bow_vectorizer2(files, corpus_txt)
+    corpus_vec2 = bowVectorizer2(files, corpus_txt)
 
-    corpus_infogain = bow_infogain(files, corpus_txt, Y)
-
+    corpus_infogain = bowInfogain(files, corpus_txt, Y)
     
+    saveCorpus("infoGain", corpus_stemming)
 
 
 if __name__ == "__main__":
