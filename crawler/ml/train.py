@@ -36,14 +36,15 @@ class URL_Classify:
 
                     Y.append(int(row['status']))
                     link += 1
-        if self.debug:   
-            self.pp.pprint (files)
-            self.pp.pprint (Y)
-            self.pp.pprint (corpus)
+        # if self.debug:
+        #     self.pp.pprint (files)
+        #     self.pp.pprint (Y)
+        #     self.pp.pprint (corpus)
         return corpus, files, Y
 
     def make_bow(self, texts, words, Y):
-        words_list = ["name"] + words + ['status']
+        bow = []
+        bow.append(['name'] + words + ['Y'])
         for idx, obj in texts.items():
             row = [idx]
             for w in words:
@@ -52,13 +53,14 @@ class URL_Classify:
                 else:
                     row.append(0)
             row.append(Y[idx])
+            bow.append(row)
         if self.debug:
-            self.pp.pprint(words_list)
-        return words_list
+            print(bow)
+        return bow
 
     def train (self):
         corpus, files, Y = self.make_raw_corpus()
-        words_list = self.make_bow(files, list(corpus), Y)
+        bow = self.make_bow(files, list(corpus), Y)
 
 if (__name__ == "__main__"):
     classify = URL_Classify('data/links', debug=True)
