@@ -13,8 +13,8 @@ def remove_special(txt):
     return txt
 
 def svr_link_ranking(url):
-    svr_mode = pickle.load(open('svr_model.sav', 'rb'))
-    corpus = pickle.load(open('corpus.sav', 'rb'))
+    svr_mode = pickle.load(open('ml/svr_model.sav', 'rb'))
+    corpus = pickle.load(open('ml/corpus.sav', 'rb'))
     url = remove_special(url)
     url = list(set(word_tokenize(url)))
     row = []
