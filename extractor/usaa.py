@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-page  = requests.get("https://usaa2.secure.zag.com/used-cars-for-sale/listing/5NPE24AF0HH549206/2017-hyundai-sonata/")
+page  = requests.get("https://usaa2.secure.zag.com/used-cars-for-sale/listing/KMHE24L18GA008696/2016-hyundai-sonata/")
 print(page.status_code)
 soup = BeautifulSoup(page.content, 'html.parser')
 
