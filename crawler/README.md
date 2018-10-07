@@ -11,13 +11,6 @@ pip3 install beautifulsoup4 requests tqdm pandas selenium nltk pprint scikit-lea
 sudo apt-get install phantomjs -y
 ```
 
-and using python3 run
-
-```
-import nltk
-nltk.download('punkt')
-```
-
 To run the crawler run:
 
 ```
