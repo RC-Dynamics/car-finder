@@ -9,9 +9,11 @@ import signal
 from selenium import webdriver
 sys.path.append('pre_processing')
 sys.path.append('heuristic')
+sys.path.append('ml')
 
 from pre_processing import PreProcessing
 from anchor import get_anchor_weights
+from model import svr_link_ranking
 
 class Crawler:
     url = ''
@@ -85,6 +87,7 @@ class Crawler:
             for l in links:
                 if (l['href'] in [v['url'] for v in self.visited]) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
                     continue
+
                 new_item = {'link': l['href'], 'score': 1}
                 for anchor in self.link_words:
                     qtd = len(list(filter(lambda x: x in new_item['link'], anchor['words'])))
@@ -94,10 +97,16 @@ class Crawler:
                 self.order.append(new_item)
 
             self.order.sort(key=lambda x: x['score'], reverse=True)
-
-            pass
         elif (method == 'ml'):
-            pass
+            for l in links:
+                if (l['href'] in [v['url'] for v in self.visited]) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
+                    continue
+                
+                new_item = {'link': l['href'], 'score': svr_link_ranking(l['href'])}
+
+                self.order.append(new_item)
+
+            self.order.sort(key=lambda x: x['score'], reverse=True)
         else:
             for l in links:
                 if (l['href'] in [v['url'] for v in self.visited]) or (l['href'] in [o['link'] for o in self.order]) or (self.is_not_allowed(l['href'])):
@@ -192,7 +201,7 @@ class Crawler:
 if (__name__ == "__main__"):
     p = PreProcessing("../site.txt")
     sites = p.get_sites_info()
-    for m in ['bfs', 'heuristic']:
+    for m in ['ml']:
         print ('Initializing (' + m + '):')
         for s in sites:
             c = Crawler(s, dbg=False)
