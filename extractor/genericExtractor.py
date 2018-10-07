@@ -1,11 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
-page  = requests.get("https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1444890")
+page  = requests.get("https://www.usedcars.com/vehicle-details/234566104/?id=33378&prev=srp&zipcode=90006")
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
-
+#print(soup)
 mapList = {}
 
 def check(mapList, real_key):
@@ -15,15 +15,32 @@ def check(mapList, real_key):
     return False
 
 
-def walk(soup):
-    if soup.name is not None:    
+def walker(soup):
+    if soup.name is not None:
         for child in soup.children:
-            if soup.name in ["p","h2","h3","h4","pre","br","div"]:
-                if check(mapList, str(child.parent)):
-                    mapList[str(child.parent)] = 1 + mapList[(str(child.parent))]
-                else:
-                    mapList[str(child.parent)] = 1
-            walk(child)
+            count = 0
+            if "Fuel" in child.encode('utf-8'):
+                count += 1
+            if "Transmission" in child.encode('utf-8'):
+                count += 1
+            if "Exterior" in child.encode('utf-8'):
+                count += 1
+            if "Interior" in child.encode('utf-8'):
+                count += 1
+            if "Description" in child.encode('utf-8'):
+                count += 1
+            if "Price" in child.encode('utf-8'):
+                count += 1
+            if "$" in child.encode('utf-8'):
+                count += 1
+            if "Engine" in child.encode('utf-8'):
+                count += 1
+
+            if check(mapList, str(child.parent)):
+                mapList[str(child.parent)] = count + mapList[str(child.parent)]
+            else:
+                mapList[str(child.parent)] = count
+            walker(child)
 
 def maxKey(mapList):
     maxK = ""
@@ -34,7 +51,20 @@ def maxKey(mapList):
             maxK = key
     return maxK
 
-walk(soup)
+def refine(tree):
+    carData = None
+    try:
+        for item in tree.descendants:
+            if(item.get_text().split()[0] == "Fuel"):
+                carData = item.get_text().split(":")[-1].strip().replace('\n','')
+                print(carData)    
+    except:
+        pass
+
+    return carData
+
+walker(soup)
+#walk(soup)
 #print(mapList)
 
 #print(maxKey(mapList))
@@ -42,11 +72,30 @@ body = BeautifulSoup(maxKey(mapList),"html.parser")
 
 #print(body)
 print(len(body))
+
 for item in body.descendants:
     try:
+       
+        if item.get_text().split(":")[0].strip().replace('\n','') in ["Fuel","Fuel Type"] and ": " in item.text and len(item.text) < 30:
+            print(item.text.strip())
+    
+        if item.get_text().split(":")[0].strip().replace('\n','') in ["Exterior","Exterior Color","Color","Colour"] and ": " in item.text and len(item.text) < 40 and item.get_text().split(":")[-1] != " ":
+            print(item.get_text().strip())
         
-        if "Fuel:" in item:
-            print(item)
-            #print("\n\n\n")
     except:
         pass
+
+#print(carData)
+#NEED TO REPLACE SEARCH WORDS FROM THE DATA RESULT
+
+
+'''
+if item.get_text().split(":")[-1].strip().replace('/n','') in ["Gasoline","Diesel"] and "Fuel" not in item.text:
+            print(item.text.strip())
+'''
+
+'''elif(item.get_text().split()[0] == "Exterior"):
+            print(item.get_text()) '''#usaa
+
+'''        elif(item.get_text().split(" Color")[0].strip().replace('\n','') == "Exterior"):
+            print(item.get_text().strip().replace('\n',''))'''#usedcars            
