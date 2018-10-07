@@ -51,18 +51,15 @@ class URL_Classify:
             print(len(Y))
         return corpus, files, Y
 
-    def make_bow(self, texts, words, Y):
+    def make_bow(self, texts, words):
         bow = []
-        # bow.append(['name'] + words + ['Y'])
         for idx, obj in texts.items():
             row = []
-            # row = [idx]
             for w in words:
                 if w in obj:
                     row.append(1)
                 else:
                     row.append(0)
-            # row.append(Y[idx])
             bow.append(row)
         if self.debug:
             print(len(bow))
@@ -70,11 +67,10 @@ class URL_Classify:
 
     def train (self):
         corpus, files, Y = self.make_raw_corpus()
-        X = self.make_bow(files, list(corpus), Y)
+        X = self.make_bow(files, list(corpus))
 
         svr_model = svm.SVR(gamma='auto')
         svr_model.fit(X, Y)
-        # print (svr_model.predict([X[0]]))
 
         pickle.dump(svr_model, open('svr_model.sav', 'wb'))
         pickle.dump(list(corpus), open('corpus.sav', 'wb'))
