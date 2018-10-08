@@ -31,14 +31,10 @@ for item in tabela:
 
 
 print(title)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(engine)
 print(mileage)
-'''
-price
-fuel
-exterior_color
-interior_color
-engine
-transmission
-url
-title
-'''
+print(fuel)
+print(transmission)

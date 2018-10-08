@@ -8,8 +8,6 @@ soup = BeautifulSoup(page.content, 'html.parser')
 
 title = soup.title.get_text()
 
-description = soup.find_all(style="padding:10px;text-align:justify;")[0].get_text().strip().replace('\n','')
-
 tabela = soup.find_all(class_="ar_vehspec")
 
 for item in tabela:
@@ -24,14 +22,9 @@ for item in tabela:
     elif(item.get_text().split(" :")[0].strip() == "Mileage"):
         mileage = item.get_text().split(" :")[-1].strip().replace('\n','')
 
+print(title)
+print(price)
+print(exterior_color)
+print(engine)
 print(mileage)
-
-'''
-title
-description
-exterior_color
-price
-transmission
-engine
-url
-'''
+print(transmission)

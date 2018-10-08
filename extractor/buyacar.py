@@ -24,21 +24,8 @@ for item in tabela.descendants:
     except:
         pass
 
-description_list =soup.find(class_="detail")
-description = ""
-_pass = False
-for item in description_list:
-    try:
-        if(_pass):
-            description = description + '\n' +item.get_text()
-        else:
-            description = description  +item.get_text()
-            _pass = True
-    except:
-        pass
 
 print(price)
-print(description)
 print(title)
 print(transmission)
 print(exterior_color)

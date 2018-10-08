@@ -6,8 +6,7 @@ print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
-title = soup.title.get_text().split("For Sale")[0]
-print(title)
+title = soup.title.get_text().split("|")[0]
 
 price_class = soup.find_all(class_="vehicle-info__price-display vehicle-info__price-display--dealer cui-heading-2")
 price = price_class[0].get_text()
@@ -33,14 +32,11 @@ for item in tabela:
         mileage = item.get_text().split(":")[-1]
         mileage = mileage.strip().replace('\n','')
 
+print(title)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(engine)
+print(fuel)
 print(mileage)
-'''
-price
-fuel
-exterior_color
-interior_color
-engine
-transmission
-url
-title
-'''
+print(transmission)

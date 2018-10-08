@@ -36,9 +36,9 @@ for item in specs.descendants:
         pass
 
 print(title)
-print(engine)
-print(transmission)
+print(price)
 print(exterior_color)
 print(interior_color)
 print(fuel)
-print(price)
+print(engine)
+print(transmission)
