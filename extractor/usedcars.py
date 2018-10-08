@@ -10,20 +10,6 @@ tabela = soup.find(class_="ucc-table ucc-table--summary")
 
 title = soup.title.get_text()
 
-description_list = soup.find( id="car-features")
-description = ""
-_pass = False
-for item in description_list:
-    try:
-        if(item.get_text().strip() != "Car Features" and _pass):
-            description = description + '\n' + item.get_text().strip().replace('\n\n',"")
-        else:
-            description = description + item.get_text().strip().replace('\n\n',"")
-            _pass = True
-    except:
-        pass
-
-
 for child in tabela:
     try:
         if(child.get_text().split("$")[0].strip().replace('\n','') == "Price"):
@@ -42,7 +28,6 @@ for child in tabela:
         pass
 
 print(mileage)
-#print(description)
 #print(price)
 #print(exterior_color)
 #print(interior_color)

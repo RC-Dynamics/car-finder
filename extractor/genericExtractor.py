@@ -184,17 +184,3 @@ print(engine)
 print(fuel)
 print(mileage)
 print(transmission)
-#print(carData)
-#NEED TO REPLACE SEARCH WORDS FROM THE DATA RESULT
-#Title from marbles
-
-'''
-if item.get_text().split(":")[-1].strip().replace('/n','') in ["Gasoline","Diesel"] and "Fuel" not in item.text:
-            print(item.text.strip())
-'''
-
-'''elif(item.get_text().split()[0] == "Exterior"):
-            print(item.get_text()) '''#usaa
-
-'''        elif(item.get_text().split(" Color")[0].strip().replace('\n','') == "Exterior"):
-            print(item.get_text().strip().replace('\n',''))'''#usedcars            
