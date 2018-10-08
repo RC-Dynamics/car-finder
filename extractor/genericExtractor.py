@@ -51,27 +51,23 @@ def maxKey(mapList):
             maxK = key
     return maxK
 
-def refine(tree):
-    carData = None
-    try:
-        for item in tree.descendants:
-            if(item.get_text().split()[0] == "Fuel"):
-                carData = item.get_text().split(":")[-1].strip().replace('\n','')
-                print(carData)    
-    except:
-        pass
+def refine(carData, badWords):
+
+    for word in badWords:
+        if word in carData:
+            carData = carData.replace(word,'')
 
     return carData
 
 walker(soup)
 
-price = ''
-exterior = ''
-interior = ''
-engine = ''
-transmission = ''
-mileage = ''
-fuel = ''
+price = 'Null'
+exterior_color = 'Null'
+interior_color = 'Null'
+engine = 'Null'
+transmission = 'Null'
+mileage = 'Null'
+fuel = 'Null'
 
 #walk(soup)
 #print(mapList)
@@ -83,7 +79,6 @@ body = BeautifulSoup(maxKey(mapList),"html.parser")
 print(len(body))
 
 title = soup.title.get_text().split('|')[0]
-print(title)
 
 catch_price = True
 catch_exterior = True
@@ -108,7 +103,7 @@ for item in body.descendants:
         
         elif '$' in item.text and ',' in item.get_text() and len(item.get_text().strip()) < 10:
             if catch_price:
-                item.text.strip()
+                price = item.text.strip()
                 catch_price = False
         
         if item.get_text().split(":")[0].strip().replace('\n','') in ["Fuel","Fuel Type"] and ": " in item.text and len(item.text) < 30:
@@ -133,13 +128,15 @@ for item in body.descendants:
 
         elif "Colour" in item.get_text().strip().replace('\n','')  and len(item.text) < 40 and item.get_text().split(":")[-1] != " ":
             if catch_exterior:
-                exterio_color = item.get_text().strip().replace('\n','')    
+                exterior_color = item.get_text().strip().replace('\n','')    
                 catch_exterior = False
         
         if item.get_text().split(":")[0].strip().replace('\n','') in ["Gearbox","Transmission"] and ": " in item.text and len(item.text) < 40 and item.get_text().split(":")[-1] != " ":
-            print(item.get_text().strip())
+            if catch_transmission:
+                transmission = item.get_text().strip().replace('\n','')
+                catch_transmission = False
 
-        elif "Transmission" in item.get_text().strip().replace('\n','')  and len(item.text) < 40 and item.get_text().split(":")[-1] != " ":
+        elif "Transmission" in item.get_text().strip().replace('\n','')  and len(item.text) < 50 and item.get_text().split(":")[-1] != " ":
             if catch_transmission:
                 transmission = item.get_text().strip().replace('\n','')
                 catch_transmission = False
@@ -173,11 +170,22 @@ for item in body.descendants:
             if catch_mileage:
                 mileage = item.get_text().strip().replace('\n','')
                 catch_mileage = False
-        
-    
+        elif "Kilometers" in item.get_text().strip().replace('\n','')  and len(item.text) < 40 and item.get_text().split(":")[-1] != " ":
+            if catch_mileage:
+                mileage = item.get_text().strip().replace('\n','')
+                catch_mileage = False
     except:
         pass
 
+exterior_color = refine(exterior_color,["Colour","Exterior","Color",':','\n']).strip()
+interior_color = refine(interior_color,["Interior","Color",':','\n']).strip()
+engine = refine(engine,["Engine",':','\n']).strip()
+fuel = refine(fuel,["Fuel","Type",':','\n']).strip()
+mileage = refine(mileage,["Mileage","Odometer","Kilometers",':','\n']).strip()
+transmission = refine(transmission,["Transmission","Gearbox",':','\n']).strip()
+
+print(title)
+print(price)
 print(exterior_color)
 print(interior_color)
 print(engine)

@@ -27,10 +27,10 @@ for child in tabela:
     except:
         pass
 
+print(title)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(engine)
 print(mileage)
-#print(price)
-#print(exterior_color)
-#print(interior_color)
-#print(engine)
-#print(transmission)
-#print(title)
+print(transmission)
