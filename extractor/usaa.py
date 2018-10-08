@@ -17,8 +17,10 @@ for item in tabela:
         fuel = item.get_text().split("Type")[-1].strip()
     if(item.get_text().split()[0] == "Engine"):
         engine = item.get_text().split("Engine")[-1].strip()
+    if(item.get_text().split()[0] == "Mileage"):
+        mileage = item.get_text().split("Mileage")[-1].strip()
 
-title = soup.find(class_="text-truncate").get_text()
+title = soup.title.get_text().split('|')[0]
 
 
 price_list = soup.find(class_="spacing-2 col-12 col-md-5 col-lg-4")
@@ -37,3 +39,4 @@ print(interior_color)
 print(transmission)
 print(engine)
 print(fuel)
+print(mileage)

@@ -21,6 +21,10 @@ for item in tabela:
         transmission = item.get_text().split(" :")[-1].strip().replace('\n','')
     elif(item.get_text().split(" :")[0].strip() == "Engine"):
         engine = item.get_text().split(" :")[-1].strip().replace('\n','')
+    elif(item.get_text().split(" :")[0].strip() == "Mileage"):
+        mileage = item.get_text().split(" :")[-1].strip().replace('\n','')
+
+print(mileage)
 
 '''
 title

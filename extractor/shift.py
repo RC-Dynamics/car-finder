@@ -31,33 +31,14 @@ for item in specs.descendants:
             transmission = item.get_text().strip().replace('\n','')
         if(item.get_text().find("AWD",0,4) == 0 or item.get_text().find("FWD",0,4) == 0 or item.get_text().find("RWD",0,4) == 0):
             engine = item.get_text().strip().replace('\n','')
+        
     except:
         pass
 
-description_tree = page.find(class_="CarProfileDetails__section CarProfileDetails__features")
-description_list = []
-description = ""
-_pass = False
-for item in description_tree.descendants:
-    try:
-        description_list.append(item.get_text())
-    except:
-        pass
-description_list.pop(0)
-description_list.pop(0)
-description_list.pop(-1)
-for item in description_list:
-    if (_pass):
-        description = description + '\n' + item
-    else:
-        description = description + item
-        _pass = True
-
-print(description)
-#print(title)
-#print(engine)
-#print(transmission)
-#print(exterior_color)
-#print(interior_color)
-#print(fuel)
-#print(price)
+print(title)
+print(engine)
+print(transmission)
+print(exterior_color)
+print(interior_color)
+print(fuel)
+print(price)

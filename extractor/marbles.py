@@ -52,6 +52,9 @@ for child in tabela.descendants:
                     engine = child.get_text().split(":")[-1].strip()
                 if(child.get_text().split()[0] == "Transmission:" and child.get_text().split(":")[-1] != " "):
                     transmission = child.get_text().split(":")[-1].strip()
+                if(child.get_text().split()[0] == "Odometer:" and child.get_text().split(":")[-1] != " "):
+                    mileage = child.get_text().split(":")[-1].strip()    
+                    
             
             except AttributeError:
                 pass
@@ -95,3 +98,4 @@ print(interior_color)
 print(transmission)
 print(engine)
 print(title)
+print(mileage)

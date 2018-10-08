@@ -19,6 +19,8 @@ for item in tabela.descendants:
             exterior_color = item.get_text().split(":")[-1].strip()
         if(item.get_text().split(":")[0] == "Fuel"):
             fuel = item.get_text().split(":")[-1].strip()
+        if(item.get_text().split(":")[0] == "Mileage"):
+            mileage = item.get_text().split(":")[-1].strip()
     except:
         pass
 
@@ -41,3 +43,4 @@ print(title)
 print(transmission)
 print(exterior_color)
 print(fuel)
+print(mileage)
