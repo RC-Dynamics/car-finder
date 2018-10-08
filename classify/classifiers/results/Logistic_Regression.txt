@@ -4,6 +4,54 @@ Train Accuracy: 1.00 (+/- 0.00)
 Teste Accuracy: 0.95 (+/- 0.11)
 Precision: 0.94 (+/- 0.17)
 Recall: 0.97 (+/- 0.10)
-Fit Time: 0.45 (+/- 0.12)
+Fit Time: 0.34 (+/- 0.08)
+
+
+../data/dataset/db2.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.96 (+/- 0.11)
+Precision: 0.95 (+/- 0.17)
+Recall: 0.97 (+/- 0.10)
+Fit Time: 0.29 (+/- 0.05)
+
+
+../data/dataset/db3.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.94 (+/- 0.12)
+Precision: 0.94 (+/- 0.17)
+Recall: 0.96 (+/- 0.11)
+Fit Time: 0.29 (+/- 0.05)
+
+
+../data/dataset/db4.csv
+Train Accuracy: 1.00 (+/- 0.00)
+Teste Accuracy: 0.95 (+/- 0.11)
+Precision: 0.94 (+/- 0.17)
+Recall: 0.97 (+/- 0.10)
+Fit Time: 0.27 (+/- 0.04)
+
+
+../data/dataset/db5.csv
+Train Accuracy: 0.98 (+/- 0.01)
+Teste Accuracy: 0.93 (+/- 0.12)
+Precision: 0.95 (+/- 0.17)
+Recall: 0.93 (+/- 0.17)
+Fit Time: 0.01 (+/- 0.00)
+
+
+../data/dataset/db6.csv
+Train Accuracy: 0.99 (+/- 0.01)
+Teste Accuracy: 0.94 (+/- 0.12)
+Precision: 0.95 (+/- 0.15)
+Recall: 0.93 (+/- 0.17)
+Fit Time: 0.01 (+/- 0.00)
+
+
+../data/dataset/db7.csv
+Train Accuracy: 0.99 (+/- 0.01)
+Teste Accuracy: 0.93 (+/- 0.12)
+Precision: 0.91 (+/- 0.16)
+Recall: 0.96 (+/- 0.11)
+Fit Time: 0.00 (+/- 0.00)
 
 
