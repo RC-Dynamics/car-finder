@@ -24,11 +24,12 @@ for item in tabela:
         transmission = item.get_text().split("Transmission")[-1].strip().replace('\n','')
     elif(item.get_text().count("Colour") > 0 ):
         exterior_color = item.get_text().split("Colour")[-1].strip().replace('\n','')
-
+    elif(item.get_text().count("Kilometers") > 0 ):
+        mileage = item.get_text().split("Kilometers")[-1].strip().replace('\n','')
 print(fuel)
 print(transmission)
 print(exterior_color)
-
+print(mileage)
 '''
 price
 fuel

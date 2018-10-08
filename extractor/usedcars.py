@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-page  = requests.get("https://www.usedcars.com/vehicle-details/231537535/?id=33378&prev=srp&zipcode=90006")
+page  = requests.get("https://www.usedcars.com/vehicle-details/246240533/?id=33378&prev=srp&zipcode=90006")
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -36,9 +36,12 @@ for child in tabela:
             engine = child.get_text().split("Engine")[-1].strip().replace('\n','')
         if(child.get_text().split("mission")[0].strip().replace('\n','') == "Trans"):
             transmission = child.get_text().split("Transmission")[-1].strip().replace('\n','')
+        if(child.get_text().split("age")[0].strip().replace('\n','') == "Mile"):
+            mileage = child.get_text().split("Mileage")[-1].strip().replace('\n','')
     except:
         pass
 
+print(mileage)
 #print(description)
 #print(price)
 #print(exterior_color)

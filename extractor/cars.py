@@ -29,8 +29,11 @@ for item in tabela:
     elif(item.get_text().split()[0] == "Transmission:"):
         transmission = item.get_text().split(":")[-1]
         transmission = transmission.strip().replace('\n','')
+    elif(item.get_text().split()[0] == "Mileage:"):
+        mileage = item.get_text().split(":")[-1]
+        mileage = mileage.strip().replace('\n','')
 
-
+print(mileage)
 '''
 price
 fuel

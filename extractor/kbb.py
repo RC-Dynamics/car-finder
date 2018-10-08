@@ -6,7 +6,7 @@ print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
-title = soup.find(class_="primary-vehicle-title title-two ").get_text().strip().replace('\n','')
+title = soup.title.get_text().split('|')[0]
 
 price = soup.find(class_="price").get_text().strip().replace('\n','')
 
@@ -26,9 +26,12 @@ for item in tabela:
         engine = item.split(":")[-1].strip().replace('\n','')
     elif(item.split()[0] == "Transmission:"):
         transmission = item.split(":")[-1].strip().replace('\n','')
+    elif(item.split()[0] == "Mileage:"):
+        mileage = item.split(":")[-1].strip().replace('\n','')
 
-#vin = soup.find_all(class_= "paragraph-one vin")[0].get_text().split(":")[-1].strip().replace('\n','')
 
+print(title)
+print(mileage)
 '''
 price
 fuel
