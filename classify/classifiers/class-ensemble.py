@@ -10,8 +10,9 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import cross_validate
 from output import *
 
+
 def main():
-    dfs = ['../data/db1.csv', '../data/db2.csv', '../data/db3.csv', '../data/db4.csv', '../data/db5.csv', '../data/db6.csv', '../data/db7.csv']
+    dfs = ['../data/dataset/db1.csv', '../data/dataset/db2.csv', '../data/dataset/db3.csv', '../data/dataset/db4.csv', '../data/dataset/db5.csv', '../data/dataset/db6.csv', '../data/dataset/db7.csv']
  
     f = createFile("Ensemble")
     
@@ -32,7 +33,7 @@ def main():
         clf4 = GaussianNB()
         clf5 = MLPClassifier(solver='lbfgs', alpha=1e-5,hidden_layer_sizes=(10, 5), random_state=1)
         
-        eclf = VotingClassifier(estimators=[('rf', clf1), ('lr', clf2), ('svm', clf3), ('nb', clf4), ('mlp', clf5)], voting='hard', n_jobs=3)
+        eclf = VotingClassifier(estimators=[('rf', clf1), ('lr', clf2), ('svm', clf3), ('nb', clf4), ('mlp', clf5)], voting='hard', n_jobs=1)
         folders = 10
 
         scores = cross_validate(eclf, X, y, cv=folders, scoring=('accuracy', 'precision', 'recall'), return_train_score=True)
@@ -41,7 +42,8 @@ def main():
         saveResults(f, scores, path)
 
         title = "Ensemble_" + path[-7:-4]
-        plot_learning_curve(clf, title, X, y, cv=folders, n_jobs=4)
+        plot_learning_curve(eclf, title, X, y, cv=folders, n_jobs=1)
+
 
         
 if __name__ == "__main__":
