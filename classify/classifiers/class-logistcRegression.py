@@ -5,15 +5,17 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import cross_validate
 from output import *
 
+# {'C': 0.1}
+
 def main():
-    dfs = ['../data/db1.csv', '../data/db2.csv', '../data/db3.csv', '../data/db4.csv', '../data/db5.csv', '../data/db6.csv', '../data/db7.csv']
+    dfs = ['../data/dataset/db1.csv', '../data/dataset/db2.csv', '../data/dataset/db3.csv', '../data/dataset/db4.csv', '../data/dataset/db5.csv', '../data/dataset/db6.csv', '../data/dataset/db7.csv']
 
     param_grid = {'C': [0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000, 100000] }
     clft = GridSearchCV(linear_model.LogisticRegression(penalty='l2'), param_grid)
     
     f = createFile("Logistic_Regression")
-    
-    first = True
+    findingParam = True
+
     for path in dfs:
         print('\n'+path)
         df = pd.read_csv(path)
@@ -25,12 +27,12 @@ def main():
         
         y = ravel(y)
 
-        if first:
+        if findingParam:
             print("Find parameters...")
             clft.fit(X,y)
             paramns = clft.best_params_
             print(paramns)
-            first = False
+            findingParam = False
 
         clf = linear_model.LogisticRegression(C=(clft.best_params_)['C'])
         folders = 10

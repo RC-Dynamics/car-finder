@@ -1,6 +1,11 @@
 from sklearn.model_selection import learning_curve
 import matplotlib.pyplot as plt
 import numpy as np
+import pickle 
+
+def saveObj(name, model):
+    with open ("./model/"+name, 'wb') as fp:
+        pickle.dump(model, fp)
 
 
 def printResults(scores):
@@ -12,9 +17,10 @@ def printResults(scores):
     print('\n')
 
 def createFile(name):
-    f = open(name+".txt", "w+") # a
-    f.write(name+"\n") # tira name
+    f = open("./results/"+name+".txt", "w+")
+    f.write(name+"\n")
     return f
+
 def saveResults(f, scores, path):
     f.write(path)
     f.write("\nTrain Accuracy: %0.2f (+/- %0.2f)\n" % (scores["train_accuracy"].mean(), scores["train_accuracy"].std() * 2))

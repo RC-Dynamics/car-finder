@@ -218,11 +218,15 @@ def main():
 
     corpus_vec1 = bowVectorizer1(files, corpus_txt)
 
+    saveCorpus("vector1", corpus_vec1)
+
     corpus_vec2 = bowVectorizer2(files, corpus_txt)
+
+    saveCorpus("vector2", corpus_vec2)
 
     corpus_infogain = bowInfogain(files, corpus_txt, Y)
     
-    saveCorpus("infoGain", corpus_stemming)
+    saveCorpus("infoGain", corpus_infogain)
 
 
 if __name__ == "__main__":
