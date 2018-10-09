@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
 description=""
 price=""
@@ -45,6 +46,21 @@ for child in price_tree.descendants:
                     price = child.get_text().split(":")[-1].strip()
             except:
                 pass
+
+
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Interior Color' : interior_color,
+    'Engine' : engine,
+    'Mileage' : mileage,
+    'Transmission': transmission
+    }
+
+with open('marbles.txt', 'w') as outfile:  
+    json.dump(data, outfile)
+
 
 print(title)
 print(price)

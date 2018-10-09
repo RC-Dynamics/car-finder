@@ -1,8 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
 page  = requests.get("https://www.cars.com/vehicledetail/detail/747061720/overview/")
 print(page.status_code)
+
+
+price=""
+exterior_color=""
+interior_color=""
+transmission=""
+engine=""
+title=""
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -32,11 +41,27 @@ for item in tabela:
         mileage = item.get_text().split(":")[-1]
         mileage = mileage.strip().replace('\n','')
 
-print(title)
-print(price)
-print(exterior_color)
-print(interior_color)
-print(engine)
-print(fuel)
-print(mileage)
-print(transmission)
+
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Interior Color' : interior_color,
+    'Engine' : engine,
+    'Fuel' : fuel,
+    'Mileage' : mileage,
+    'Transmission': transmission
+    }
+
+with open('cars.txt', 'w') as outfile:  
+    json.dump(data, outfile)
+
+
+#print(title)
+#print(price)
+#print(exterior_color)
+#print(interior_color)
+#print(engine)
+#print(fuel)
+#print(mileage)
+#print(transmission)

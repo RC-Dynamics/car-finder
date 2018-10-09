@@ -1,11 +1,20 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import signal
+import json
 
 driver = webdriver.PhantomJS()
 driver.get("https://shift.com/car/c152495")
 page = BeautifulSoup(driver.page_source, "html.parser")
 driver.service.process.send_signal(signal.SIGTERM)
+
+fuel=""
+price=""
+exterior_color=""
+interior_color=""
+transmission=""
+engine=""
+title=""
 
 
 price = page.find(class_="CarProfileDetails__pricing-item-value").get_text()
@@ -35,10 +44,25 @@ for item in specs.descendants:
     except:
         pass
 
-print(title)
-print(price)
-print(exterior_color)
-print(interior_color)
-print(fuel)
-print(engine)
-print(transmission)
+
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Interior Color' : interior_color,
+    'Engine' : engine,
+    'Fuel' : fuel,
+    'Transmission': transmission
+    }
+
+with open('shift.txt', 'w') as outfile:  
+    json.dump(data, outfile)
+
+
+#print(title)
+#print(price)
+#print(exterior_color)
+#print(interior_color)
+#print(fuel)
+#print(engine)
+#print(transmission)
