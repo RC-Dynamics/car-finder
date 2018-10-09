@@ -9,7 +9,7 @@ transmission=""
 title=""
 fuel=""
 
-page  = requests.get("https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1444890")
+page  = requests.get("https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1962277")
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -42,13 +42,13 @@ data = {
     'Transmission': transmission
     }
 
-with open('buyacar.txt', 'w') as outfile:  
+with open('buyacar4.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 
-#print(price)
-#print(title)
-#print(transmission)
-#print(exterior_color)
-#print(fuel)
-#print(mileage)
+print(price)
+print(title)
+print(transmission)
+print(exterior_color)
+print(fuel)
+print(mileage)

@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-page  = requests.get("https://www.usedcars.com/vehicle-details/246240533/?id=33378&prev=srp&zipcode=90006")
+page  = requests.get("https://www.usedcars.com/vehicle-details/244194647/?id=33378&prev=srp&zipcode=90006")
 print(page.status_code)
 
 mileage = ""
@@ -46,7 +46,7 @@ data = {
     'Transmission': transmission
     }
 
-with open('usedcars.txt', 'w') as outfile:  
+with open('usedcars5.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 

@@ -1,0 +1,1 @@
+{"Engine": "V6, 3.0 Liter", "Mileage": "177,169", "Exterior Color": "Gold", "Title": "2005 Ford Escape Limited for sale in Blue Springs MO from Munsterman Automotive Group", "Transmission": "Automatic", "Price": "$4,977"}

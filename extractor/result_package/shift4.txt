@@ -1,0 +1,1 @@
+{"Engine": "AWD \u00b7 4 cylinders", "Exterior Color": "Sepang Blue Pearl", "Title": "Buy a used 2015 Audi S3 2.0T Prestige ", "Transmission": "Automatic", "Price": "$27,100", "Interior Color": "Black/Gray", "Fuel": "Gasoline"}

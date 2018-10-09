@@ -1,0 +1,1 @@
+{"Mileage": "140,000", "Exterior Color": "Silver", "Title": "2007 Corvette in Excellent Condition ", "Transmission": "Automatic", "Price": "$30,000.00", "Fuel": "Gasoline"}

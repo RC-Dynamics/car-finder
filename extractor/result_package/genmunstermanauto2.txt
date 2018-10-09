@@ -1,0 +1,1 @@
+{"Engine": "5-Cyl, 3.5 Liter", "Transmission": "Mileage  133,522 \u00a0  Automatic", "Interior Color": "Null", "Exterior Color": "Red", "Mileage": "133,522", "Title": "2006 HUMMER H3 for sale in Blue Springs MO from Munsterman Automotive Group", "Fuel": "Null", "Price": "$10,255"}

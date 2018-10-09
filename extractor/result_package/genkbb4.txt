@@ -1,0 +1,1 @@
+{"Engine": "4-Cylinder Turbo", "Transmission": "6-Speed Manual", "Interior Color": "Gray", "Exterior Color": "Silver", "Mileage": "7,288", "Title": "Used 2016 Chevrolet Cruze L Sedan for sale in Los Angeles, CA 90015 ", "Fuel": "Gasoline", "Price": "$13,600"}

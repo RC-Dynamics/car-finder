@@ -1,0 +1,1 @@
+{"Engine": "4-Cylinder", "Transmission": "Automatic transmission", "Interior Color": "Black", "Exterior Color": "Snow White Pearl", "Mileage": "9,400", "Title": "2018 Kia Optima LX - 5XXGT4L3XJG192787", "Fuel": "Null", "Price": "$16,950"}

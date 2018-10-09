@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-page  = requests.get("https://www.kijiji.ca/v-classic-cars/edmonton/1966-chevrolet-corvair-fully-restored/1351160283?enableSearchNavigationFlag=true")
+page  = requests.get("https://www.kijiji.ca/v-classic-cars/strathcona-county/camaro-iroc-z/1100186238?enableSearchNavigationFlag=true")
 print(page.status_code)
 
 fuel=""
@@ -41,7 +41,7 @@ data = {
     'Transmission': transmission
     }
 
-with open('kijiji.txt', 'w') as outfile:  
+with open('kijiji5.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 print(title)
