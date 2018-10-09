@@ -1,4 +1,3 @@
-from nltk import ngrams, FreqDist
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk import PorterStemmer
