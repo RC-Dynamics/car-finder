@@ -17,7 +17,7 @@ def makeRawCorpus(name):
 ################# Creating all corpus ###################
     for file in tqdm(sys.listdir("./"+name)):
         if(file.endswith(".csv")):
-            df = pd.read_csv("./bfs/"+file)        
+            df = pd.read_csv("./"+name+"/"+file)        
             X = df.values
             for link in tqdm(X):
                 page = removeSpecial(link[1])
@@ -33,7 +33,7 @@ def makeBoW(name, texts, words):
         x , y = 0, 0
         for file in tqdm(texts.keys()):
             y += 1
-            row = [str(file[:-8])]
+            row = [str(file[:])]
             for w in words:
                 if w in texts[file]:
                     row.append(1)
@@ -45,24 +45,24 @@ def makeBoW(name, texts, words):
 
 
 def main():
-    name = "ml" # or heuristic or bfs
-    files = makeRawCorpus("ml")
+    name = "bfs" # or heuristic or bfs or ml
+    files = makeRawCorpus(name)
     # Saving files dict filtered
     with open ("./"+name+"/"+name+"_raw.cp", 'wb') as fp:
         pickle.dump(files, fp)
     
     # Loading files dict
     files = {}
-    with open ("./bfs/bfs_raw.cp", 'rb') as fp:
+    with open ("./"+name+"/"+name+"_raw.cp", 'rb') as fp:
         files = pickle.load(fp)
 
     # Loading Corpus
     corpus = []
-    with open ("../data/dataset/corpus/corpus.cp", 'rb') as fp:
+    with open ("./corpus.cp", 'rb') as fp:
         corpus = pickle.load(fp)
 
     # Building Bag of Words
-    makeBoW("bfs", files, corpus)
+    makeBoW(name, files, corpus)
     # Size: (27410, 7279)
 
     # Loading Bag of Words
@@ -72,7 +72,7 @@ def main():
     X = df.ix[:,1:df.shape[1]]
     
     # Loading Model
-    clf = pickle.load(open("../classifiers/ensemble.ml", 'rb'))
+    clf = pickle.load(open("./ensemble.ml", 'rb'))
     result = clf.predict(X)
 
     # Saving Results
