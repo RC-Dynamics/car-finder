@@ -58,7 +58,7 @@ def main():
 
     # Loading Corpus
     corpus = []
-    with open ("corpus.cp", 'rb') as fp:
+    with open ("../data/dataset/corpus/corpus.cp", 'rb') as fp:
         corpus = pickle.load(fp)
 
     # Building Bag of Words
@@ -72,7 +72,7 @@ def main():
     X = df.ix[:,1:df.shape[1]]
     
     # Loading Model
-    clf = pickle.load(open("./ensemble.ml", 'rb'))
+    clf = pickle.load(open("../classifiers/ensemble.ml", 'rb'))
     result = clf.predict(X)
 
     # Saving Results
