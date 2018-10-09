@@ -7,7 +7,7 @@ from sklearn.model_selection import cross_validate
 from output import *
 
 
-# {'max_depth': 7, 'max_features': 'log2', 'n_estimators': 200}
+# {'max_depth': 5, 'max_features': None, 'n_estimators': 200}
 
 def main():
     dfs = ['../data/dataset/db1.csv', '../data/dataset/db2.csv', '../data/dataset/db3.csv', '../data/dataset/db4.csv', '../data/dataset/db5.csv', '../data/dataset/db6.csv', '../data/dataset/db7.csv']
@@ -17,7 +17,7 @@ def main():
 
     param_grid = { 
         'n_estimators': [200, 500],
-        'max_features': ['auto', 'sqrt', 'log2'],
+        'max_features': [None, 'sqrt', 'log2'],
         'max_depth' : [5,6,7,8],
     }
     rfc = RandomForestClassifier(random_state=0)
