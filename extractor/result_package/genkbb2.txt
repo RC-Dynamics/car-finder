@@ -1,0 +1,1 @@
+{"Engine": "Electric", "Transmission": "Single-Speed", "Interior Color": "Black", "Exterior Color": "Orange", "Mileage": "18,787", "Title": "Used 2015 FIAT 500 e Hatchback for sale in Los Angeles, CA 90015 ", "Fuel": "Economy 116 MPGe Combined", "Price": "$10,800"}

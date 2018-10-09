@@ -4,7 +4,7 @@ import signal
 import json
 
 driver = webdriver.PhantomJS()
-driver.get("https://shift.com/car/c152495")
+driver.get("https://shift.com/car/c179628")
 page = BeautifulSoup(driver.page_source, "html.parser")
 driver.service.process.send_signal(signal.SIGTERM)
 
@@ -55,14 +55,14 @@ data = {
     'Transmission': transmission
     }
 
-with open('shift.txt', 'w') as outfile:  
+with open('shift2.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 
-#print(title)
-#print(price)
-#print(exterior_color)
-#print(interior_color)
-#print(fuel)
-#print(engine)
-#print(transmission)
+print(title)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(fuel)
+print(engine)
+print(transmission)

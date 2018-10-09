@@ -1,13 +1,15 @@
-import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+import signal
 import json
 
-page  = requests.get("https://www.cars.com/vehicledetail/detail/747061720/overview/")
-print(page.status_code)
+driver = webdriver.PhantomJS()
+driver.get("https://shift.com/car/c179628")
+soup = BeautifulSoup(driver.page_source, "html.parser")
+driver.service.process.send_signal(signal.SIGTERM)
 
-soup = BeautifulSoup(page.content, 'html.parser')
-#print(soup)
 mapList = {}
+
 
 def check(mapList, real_key):
     for key in mapList:
@@ -196,17 +198,17 @@ data = {
     'Transmission': transmission
     }
 
-with open('genericExtractor.txt', 'w') as outfile:  
+with open('lala.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 
-print(data)
+#print(data)
 
-#print(title)
-#print(price)
-#print(exterior_color)
-#print(interior_color)
-#print(engine)
-#print(fuel)
-#print(mileage)
-#print(transmission)
+print(title)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(engine)
+print(fuel)
+print(mileage)
+print(transmission)

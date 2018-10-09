@@ -2,8 +2,18 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-page  = requests.get("https://www.kbb.com/cars-for-sale/494970912/?galleryview=photos")
+page  = requests.get("https://www.kbb.com/cars-for-sale/497081951/?totalresults=1000&index=24&atcmodel=all&searchtype=all&zipcode=&distance=75")
 print(page.status_code)
+
+fuel=""
+mileage = ""
+price=""
+exterior_color=""
+interior_color=""
+transmission=""
+engine=""
+title=""
+
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -42,14 +52,14 @@ data = {
     'Transmission': transmission
     }
 
-with open('kbb.txt', 'w') as outfile:  
+with open('kbb5.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
-#print(title)
-#print(price)
-#print(exterior_color)
-#print(interior_color)
-#print(engine)
-#print(mileage)
-#print(fuel)
-#print(transmission)
+print(title)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(engine)
+print(mileage)
+print(fuel)
+print(transmission)

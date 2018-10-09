@@ -1,0 +1,1 @@
+{"Engine": "4-Cylinder Turbo", "Transmission": "5-Speed Manual", "Interior Color": "Black", "Exterior Color": "Silver", "Mileage": "22,894", "Title": "Used 2014 Volkswagen Passat 1.8T S for sale in Los Angeles, CA 90015 ", "Fuel": "Gasoline", "Price": "$13,300"}

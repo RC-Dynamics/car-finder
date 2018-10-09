@@ -1,0 +1,1 @@
+{"Mileage": "250,000", "Exterior Color": "Blue", "Title": "2002 Mustang GT Convertable ", "Transmission": "Manual", "Price": "$7,300.00", "Fuel": "Gasoline"}

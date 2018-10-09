@@ -2,10 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-page  = requests.get("https://www.cars.com/vehicledetail/detail/747061720/overview/")
+page  = requests.get("https://www.cars.com/vehicledetail/detail/742086027/overview/")
 print(page.status_code)
 
-
+fuel=""
+mileage = ""
 price=""
 exterior_color=""
 interior_color=""
@@ -53,15 +54,15 @@ data = {
     'Transmission': transmission
     }
 
-with open('cars.txt', 'w') as outfile:  
+with open('cars5.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 
-#print(title)
-#print(price)
-#print(exterior_color)
-#print(interior_color)
-#print(engine)
-#print(fuel)
-#print(mileage)
-#print(transmission)
+print(title)
+print(price)
+print(exterior_color)
+print(interior_color)
+print(engine)
+print(fuel)
+print(mileage)
+print(transmission)

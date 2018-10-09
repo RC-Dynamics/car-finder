@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-description=""
 price=""
 exterior_color=""
 interior_color=""
@@ -10,7 +9,7 @@ transmission=""
 engine=""
 title=""
 
-page  = requests.get("https://www.marblesautomotive.com/inventory/2015/Chrysler/Town%20%26%20Country/NY/Penn%20Yan/2C4RC1BG9FR637515/")
+page  = requests.get("https://www.marblesautomotive.com/inventory/2016/Chevrolet/Malibu/NY/Penn%20Yan/1G1ZE5ST5GF187734/")
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -58,7 +57,7 @@ data = {
     'Transmission': transmission
     }
 
-with open('marbles.txt', 'w') as outfile:  
+with open('marbles5.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 

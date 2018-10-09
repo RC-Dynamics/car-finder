@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-page  = requests.get("http://www.munstermanauto.com/vehicle/used-2013-volkswagen-beetle-coupe-25l-entry-hatchback-2d-3033001?refby=dealersite#ar_top")
+page  = requests.get("http://www.munstermanauto.com/vehicle/used-2005-ford-escape-limited-3034390?refby=dealersite#ar_top")
 print(page.status_code)
 
 mileage = ""
@@ -40,13 +40,13 @@ data = {
     'Transmission': transmission
     }
 
-with open('munstermanauto.txt', 'w') as outfile:  
+with open('munstermanauto5.txt', 'w') as outfile:  
     json.dump(data, outfile)
 
 
-#print(title)
-#print(price)
-#print(exterior_color)
-#print(engine)
-#print(mileage)
-#print(transmission)
+print(title)
+print(price)
+print(exterior_color)
+print(engine)
+print(mileage)
+print(transmission)

@@ -1,0 +1,1 @@
+{"Engine": "2.4L I-4", "Mileage": "44719", "Exterior Color": "Tri-Coat Pearl", "Title": "2015 Chevrolet Equinox 1LT AWD", "Transmission": "6 speed AT", "Price": "$18,995", "Interior Color": "Black"}

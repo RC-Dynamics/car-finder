@@ -1,0 +1,1 @@
+{"Engine": "5-Cyl, PZEV, 2.5 Liter", "Mileage": "90,028", "Exterior Color": "GRAY", "Title": "2013 Volkswagen Beetle Coupe 2.5L Entry Hatchback 2D for sale in Blue Springs MO from Munsterman Automotive Group", "Transmission": "Automatic", "Price": "$8,475"}

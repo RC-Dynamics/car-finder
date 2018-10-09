@@ -1,0 +1,1 @@
+{"Engine": "4-Cylinder", "Mileage": "15,266", "Exterior Color": "Silky Silver", "Title": "2018 Kia Forte LX - 3KPFL4A72JE166064", "Transmission": "Automatic transmission", "Price": "$16,950", "Interior Color": "Gray"}
