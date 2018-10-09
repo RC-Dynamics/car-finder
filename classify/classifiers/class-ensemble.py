@@ -41,6 +41,11 @@ def main():
         printResults(scores)
         saveResults(f, scores, path)
 
+        # Saving Model
+        # eclf.fit(X,y)
+        # with open ("./ensemble.ml", 'wb') as fp:
+        #     pickle.dump(eclf, fp)
+
         title = "Ensemble_" + path[-7:-4]
         plot_learning_curve(eclf, title, X, y, cv=folders, n_jobs=1)
 
