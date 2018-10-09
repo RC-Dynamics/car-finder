@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
-page  = requests.get("https://www.usedcars.com/vehicle-details/246240533/?id=33378&prev=srp&zipcode=90006")
+page  = requests.get("https://www.cars.com/vehicledetail/detail/747061720/overview/")
 print(page.status_code)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -184,11 +185,28 @@ fuel = refine(fuel,["Fuel","Type",':','\n']).strip()
 mileage = refine(mileage,["Mileage","Odometer","Kilometers",':','\n']).strip()
 transmission = refine(transmission,["Transmission","Gearbox",':','\n']).strip()
 
-print(title)
-print(price)
-print(exterior_color)
-print(interior_color)
-print(engine)
-print(fuel)
-print(mileage)
-print(transmission)
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Interior Color' : interior_color,
+    'Engine' : engine,
+    'Fuel' : fuel,
+    'Mileage' : mileage,
+    'Transmission': transmission
+    }
+
+with open('genericExtractor.txt', 'w') as outfile:  
+    json.dump(data, outfile)
+
+
+print(data)
+
+#print(title)
+#print(price)
+#print(exterior_color)
+#print(interior_color)
+#print(engine)
+#print(fuel)
+#print(mileage)
+#print(transmission)

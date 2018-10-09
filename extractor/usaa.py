@@ -1,9 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
 page  = requests.get("https://usaa2.secure.zag.com/used-cars-for-sale/listing/KMHE24L18GA008696/2016-hyundai-sonata/")
 print(page.status_code)
 soup = BeautifulSoup(page.content, 'html.parser')
+
+fuel=""
+mileage = ""
+price=""
+exterior_color=""
+interior_color=""
+transmission=""
+engine=""
+title=""
 
 tabela = soup.find_all(class_="heading-5 text-truncate")
 for item in tabela:
@@ -32,11 +42,26 @@ for item in price_list.descendants:
     except:
         pass
 
-print(title)
-print(price)
-print(exterior_color)
-print(interior_color)
-print(engine)
-print(fuel)
-print(mileage)
-print(transmission)
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Interior Color' : interior_color,
+    'Engine' : engine,
+    'Fuel' : fuel,
+    'Mileage' : mileage,
+    'Transmission': transmission
+    }
+
+with open('usaa.txt', 'w') as outfile:  
+    json.dump(data, outfile)
+
+
+#print(title)
+#print(price)
+#print(exterior_color)
+#print(interior_color)
+#print(engine)
+#print(fuel)
+#print(mileage)
+#print(transmission)

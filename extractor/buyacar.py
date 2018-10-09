@@ -1,5 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
+import json
+
+mileage =""
+price=""
+exterior_color=""
+transmission=""
+title=""
+fuel=""
 
 page  = requests.get("https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1444890")
 print(page.status_code)
@@ -25,9 +33,22 @@ for item in tabela.descendants:
         pass
 
 
-print(price)
-print(title)
-print(transmission)
-print(exterior_color)
-print(fuel)
-print(mileage)
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Fuel' : fuel,
+    'Mileage' : mileage,
+    'Transmission': transmission
+    }
+
+with open('buyacar.txt', 'w') as outfile:  
+    json.dump(data, outfile)
+
+
+#print(price)
+#print(title)
+#print(transmission)
+#print(exterior_color)
+#print(fuel)
+#print(mileage)

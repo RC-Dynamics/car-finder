@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
 page  = requests.get("https://www.kbb.com/cars-for-sale/494970912/?galleryview=photos")
 print(page.status_code)
@@ -30,11 +31,25 @@ for item in tabela:
         mileage = item.split(":")[-1].strip().replace('\n','')
 
 
-print(title)
-print(price)
-print(exterior_color)
-print(interior_color)
-print(engine)
-print(mileage)
-print(fuel)
-print(transmission)
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Interior Color' : interior_color,
+    'Engine' : engine,
+    'Fuel' : fuel,
+    'Mileage' : mileage,
+    'Transmission': transmission
+    }
+
+with open('kbb.txt', 'w') as outfile:  
+    json.dump(data, outfile)
+
+#print(title)
+#print(price)
+#print(exterior_color)
+#print(interior_color)
+#print(engine)
+#print(mileage)
+#print(fuel)
+#print(transmission)

@@ -1,8 +1,17 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
 page  = requests.get("https://www.kijiji.ca/v-classic-cars/edmonton/1966-chevrolet-corvair-fully-restored/1351160283?enableSearchNavigationFlag=true")
 print(page.status_code)
+
+fuel=""
+mileage = ""
+price=""
+exterior_color=""
+transmission=""
+title=""
+
 
 soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -21,6 +30,19 @@ for item in tabela:
         exterior_color = item.get_text().split("Colour")[-1].strip().replace('\n','')
     elif(item.get_text().count("Kilometers") > 0 ):
         mileage = item.get_text().split("Kilometers")[-1].strip().replace('\n','')
+
+
+data = {
+    'Title': title,
+    'Price': price,
+    'Exterior Color' : exterior_color,
+    'Fuel' : fuel,
+    'Mileage' : mileage,
+    'Transmission': transmission
+    }
+
+with open('kijiji.txt', 'w') as outfile:  
+    json.dump(data, outfile)
 
 print(title)
 print(price)
