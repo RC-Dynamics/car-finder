@@ -1,70 +1,81 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import tools
 
-price=""
-exterior_color=""
-interior_color=""
-transmission=""
-engine=""
-title=""
+def extrator(url,id):
+    page  = requests.get(url)
+    print(page.status_code)
 
-page  = requests.get("https://www.marblesautomotive.com/inventory/2016/Chevrolet/Malibu/NY/Penn%20Yan/1G1ZE5ST5GF187734/")
-print(page.status_code)
-
-soup = BeautifulSoup(page.content, 'html.parser')
-
-title = soup.find_all(class_="inventory-main-line")[0].get_text().strip().replace('\n','')
-
-tabela = soup.find(id="vehicle-info-wrapper")
-
-for child in tabela.descendants:
+    if(page.status_code == 200):
+        price=""
+        exterior_color=""
+        interior_color=""
+        transmission=""
+        engine=""
+        title=""
+        
+        try:
+            soup = BeautifulSoup(page.content, 'html.parser')
             
             try:
-                if(child.get_text().split()[0] == "Exterior:" and child.get_text().split(":")[-1] != " "):
-                    exterior_color = child.get_text().split(":")[-1].strip()
-                if(child.get_text().split()[0] == "Interior:" and child.get_text().split(":")[-1] != " "):
-                    interior_color = child.get_text().split(":")[-1].strip()
-                if(child.get_text().split()[0] == "Engine:" and child.get_text().split(":")[-1] != " "):
-                    engine = child.get_text().split(":")[-1].strip()
-                if(child.get_text().split()[0] == "Transmission:" and child.get_text().split(":")[-1] != " "):
-                    transmission = child.get_text().split(":")[-1].strip()
-                if(child.get_text().split()[0] == "Odometer:" and child.get_text().split(":")[-1] != " "):
-                    mileage = child.get_text().split(":")[-1].strip()    
-                    
-            
-            except AttributeError:
-                pass
-
-price_tree = soup.find(class_="inventory-price")
-
-for child in price_tree.descendants:
-            
-            try:
-                if(child.get_text().split()[0] == "Price:" and child.get_text().split(":")[-1] != " "):
-                    price = child.get_text().split(":")[-1].strip()
+                title = soup.find_all(class_="inventory-main-line")[0].get_text().strip().replace('\n','')
             except:
-                pass
+                print("Title not extracted")
+            
+            try:
+                tabela = soup.find(id="vehicle-info-wrapper")
 
+                for child in tabela.descendants:
+                            try:
+                                if(child.get_text().split()[0] == "Exterior:" and child.get_text().split(":")[-1] != " "):
+                                    exterior_color = child.get_text().split(":")[-1].strip()
+                                if(child.get_text().split()[0] == "Interior:" and child.get_text().split(":")[-1] != " "):
+                                    interior_color = child.get_text().split(":")[-1].strip()
+                                if(child.get_text().split()[0] == "Engine:" and child.get_text().split(":")[-1] != " "):
+                                    engine = child.get_text().split(":")[-1].strip()
+                                if(child.get_text().split()[0] == "Transmission:" and child.get_text().split(":")[-1] != " "):
+                                    transmission = child.get_text().split(":")[-1].strip()
+                                if(child.get_text().split()[0] == "Odometer:" and child.get_text().split(":")[-1] != " "):
+                                    mileage = child.get_text().split(":")[-1].strip()    
+                                                                
+                            except AttributeError:
+                                pass
+            except:
+                print("Table not extracted")
 
-data = {
-    'Title': title,
-    'Price': price,
-    'Exterior Color' : exterior_color,
-    'Interior Color' : interior_color,
-    'Engine' : engine,
-    'Mileage' : mileage,
-    'Transmission': transmission
-    }
+            try:
+                price_tree = soup.find(class_="inventory-price")
 
-with open('marbles5.txt', 'w') as outfile:  
-    json.dump(data, outfile)
+                for child in price_tree.descendants:
+                            
+                            try:
+                                if(child.get_text().split()[0] == "Price:" and child.get_text().split(":")[-1] != " "):
+                                    price = child.get_text().split(":")[-1].strip()
+                            except:
+                                pass
+            except:
+                print("Price not extracted")
 
+            data = {
+                'Title': title,
+                'Price': price,
+                'Exterior' : exterior_color,
+                'Odometer' : mileage,
+                'Transmission': transmission
+                }
 
-print(title)
-print(price)
-print(exterior_color)
-print(interior_color)
-print(engine)
-print(mileage)
-print(transmission)
+            tools.write_json("marbles", id, data)
+
+            #print(title)
+            #print(price)
+            #print(exterior_color)
+            #print(interior_color)
+            #print(engine)
+            #print(mileage)
+            #print(transmission)
+
+        except:
+            print("Page not downloaded")
+    else:
+        print("Page request error")

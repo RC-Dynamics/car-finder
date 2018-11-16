@@ -1,5 +1,4 @@
 import json
-import buyacar
 
 def read_json_element(site, id):
     arquivo_json = open(site + '.json','r')
@@ -13,14 +12,8 @@ def read_json(site):
         return dados_json
     except:
         return {}
-def write_json(site, id,mileage, exterior_color, price, transmission, title):
-    data = {
-        'Title': title,
-        'Price': price,
-        'Exterior Color' : exterior_color,
-        'Mileage' : mileage,
-        'Transmission': transmission
-        }
+def write_json(site, id,data):
+    
     data_dic = read_json(site)
     data_dic[str(id)] = data
     data_dic = json.dumps(data_dic, indent=4, sort_keys=False)
