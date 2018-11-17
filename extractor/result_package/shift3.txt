@@ -1,1 +1,0 @@
-{"Engine": "AWD \u00b7 4 cylinders", "Exterior Color": "Monsoon Gray Metallic", "Title": "Buy a used 2016 Audi S3 Premium Plus ", "Transmission": "Automatic", "Price": "$28,400", "Interior Color": "Black w/Dark Silver Sttch", "Fuel": "Gasoline"}

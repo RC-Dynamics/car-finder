@@ -1,1 +1,0 @@
-{"Engine": "1.5L I-4", "Mileage": "44025", "Exterior Color": "Crystal Red Pearl", "Title": "2016 Chevrolet Malibu 1LT FWD", "Transmission": "6 speed AT", "Price": "$15,995", "Interior Color": "Black"}

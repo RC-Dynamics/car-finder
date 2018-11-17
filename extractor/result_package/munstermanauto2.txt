@@ -1,1 +1,0 @@
-{"Engine": "5-Cyl, 3.5 Liter", "Mileage": "133,522", "Exterior Color": "Red", "Title": "2006 HUMMER H3 for sale in Blue Springs MO from Munsterman Automotive Group", "Transmission": "Automatic", "Price": "$10,255"}

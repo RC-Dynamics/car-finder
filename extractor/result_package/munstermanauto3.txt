@@ -1,1 +1,0 @@
-{"Engine": "V6, VTEC, 3.5 Liter", "Mileage": "100,697", "Exterior Color": "BLACK", "Title": "2010 Acura TL Sedan 4D for sale in Blue Springs MO from Munsterman Automotive Group", "Transmission": "Automatic", "Price": "$11,797"}

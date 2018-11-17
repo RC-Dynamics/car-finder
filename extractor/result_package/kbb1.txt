@@ -1,1 +1,0 @@
-{"Engine": "6-Cylinder", "Transmission": "6-Speed Shiftable Automatic", "Interior Color": "Stratus Gray W/Linear", "Exterior Color": "Caviar", "Mileage": "33,539", "Title": "Used 2016 Lexus ES 350 w/ Luxury Package for sale in Plano, TX 75024 ", "Fuel": "Gasoline", "Price": "$30,777"}

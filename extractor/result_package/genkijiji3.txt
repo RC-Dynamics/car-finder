@@ -1,1 +1,0 @@
-{"Engine": "Null", "Transmission": "Automatic", "Interior Color": "Null", "Exterior Color": "Black", "Mileage": "48,546", "Title": "1976 Mercedes Benz 450 SL Convertible, V8 4.5 Automatic.BLACK ", "Fuel": "Gasoline", "Price": "Null"}

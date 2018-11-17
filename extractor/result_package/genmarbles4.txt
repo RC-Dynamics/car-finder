@@ -1,1 +1,0 @@
-{"Engine": "3.4L V-6", "Transmission": "5 speed AT", "Interior Color": "Silver", "Exterior Color": "White", "Mileage": "102173", "Title": "Marbles Automotive ", "Fuel": "Null", "Price": "$7,995"}

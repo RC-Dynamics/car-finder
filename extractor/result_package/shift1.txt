@@ -1,1 +1,0 @@
-{"Engine": "AWD \u00b7 8 cylinders", "Exterior Color": "Daytona Gray Pearl Effect", "Title": "Buy a used 2015 Audi R8 V8 ", "Transmission": "Manual", "Price": "$92,950", "Interior Color": "Black", "Fuel": "Gasoline"}

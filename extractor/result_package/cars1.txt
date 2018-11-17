@@ -1,1 +1,0 @@
-{"Engine": "2.0L 4 CYLINDER", "Transmission": "6-Speed Manual", "Interior Color": "Interlagos", "Exterior Color": "Black Magic", "Mileage": "174,142", "Title": "2007 Volkswagen GTI Base For Sale In Addison ", "Fuel": "Gasoline", "Price": "$4,445"}

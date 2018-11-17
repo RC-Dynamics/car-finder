@@ -1,1 +1,0 @@
-{"Mileage": "62,000", "Exterior Color": "Red", "Title": "1966 Chevrolet Corvair - FULLY RESTORED ", "Transmission": "Automatic", "Price": "$6,900.00", "Fuel": "Gasoline"}

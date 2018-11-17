@@ -1,1 +1,0 @@
-{"Engine": "2.4L I4 16V GDI DOHC", "Transmission": "Automatic CVT", "Interior Color": "Black", "Exterior Color": "Black", "Mileage": "19,069", "Title": "2016 Honda Accord LX For Sale In Chicago ", "Fuel": "Gasoline", "Price": "$14,699"}

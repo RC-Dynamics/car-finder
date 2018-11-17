@@ -1,1 +1,0 @@
-{"Engine": "V6, HO VTEC, 3.2L", "Transmission": "Mileage  147,477 \u00a0  Automatic", "Interior Color": "Null", "Exterior Color": "BLACK", "Mileage": "147,477", "Title": "2003 Acura CL Type S for sale in Blue Springs MO from Munsterman Automotive Group", "Fuel": "Null", "Price": "$5,797"}

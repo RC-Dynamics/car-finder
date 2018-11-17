@@ -1,1 +1,0 @@
-{"Engine": "1.4L I-4", "Mileage": "105131", "Exterior Color": "Lt. Blue", "Title": "2011 Chevrolet Cruze  FWD", "Transmission": "6 speed AT", "Price": "$7,995", "Interior Color": "Black"}

@@ -1,1 +1,0 @@
-{"Engine": "4-Cylinder", "Transmission": "6-Speed Shiftable Automatic", "Interior Color": "Black", "Exterior Color": "Black", "Mileage": "17,323", "Title": "Used 2016 Buick Verano for sale in Los Angeles, CA 90015 ", "Fuel": "Gasoline", "Price": "$15,700"}

@@ -1,1 +1,0 @@
-{"Engine": "Null", "Transmission": "Manual", "Interior Color": "Null", "Exterior Color": "White", "Mileage": "245,000", "Title": "Camaro IROC Z ", "Fuel": "Gasoline", "Price": "Null"}

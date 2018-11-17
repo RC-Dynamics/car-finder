@@ -1,1 +1,0 @@
-{"Engine": "6-Cylinder", "Mileage": "2,445", "Exterior Color": "Black", "Title": "2018 Porsche 911 GT3 - WP0AC2A95JS175421", "Transmission": "Manual transmission", "Price": "$194,980", "Interior Color": "Black"}

@@ -1,1 +1,0 @@
-{"Engine": "6-Cylinder", "Mileage": "13,604", "Exterior Color": "Glacier White", "Title": "2018 Nissan Frontier SV V6 - 1N6AD0ER6JN746387", "Transmission": "Automatic transmission", "Price": "$21,950", "Interior Color": "Steel"}

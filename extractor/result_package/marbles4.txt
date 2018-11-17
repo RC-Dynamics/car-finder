@@ -1,1 +1,0 @@
-{"Engine": "3.4L V-6", "Mileage": "102173", "Exterior Color": "White", "Title": "2009 Chevrolet Equinox LS AWD", "Transmission": "5 speed AT", "Price": "$7,995", "Interior Color": "Silver"}

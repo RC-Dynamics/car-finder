@@ -1,1 +1,0 @@
-{"Engine": "Power - BHP 258", "Transmission": "Automatic", "Interior Color": "Features", "Exterior Color": "Alpine White", "Mileage": "16,638", "Title": "BMW 3 SERIES DIESEL SALOON 330d M Sport 4dr Step Auto ", "Fuel": "Diesel", "Price": "\u00a322,592"}

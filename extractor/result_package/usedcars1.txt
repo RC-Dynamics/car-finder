@@ -1,1 +1,0 @@
-{"Engine": "6-Cylinder", "Mileage": "11,098", "Exterior Color": "WHITE", "Title": "2017 Land Rover Discovery HSE Luxury - SALRHBBV1HA026593", "Transmission": "Automatic transmission", "Price": "$58,880", "Interior Color": "BLACK"}

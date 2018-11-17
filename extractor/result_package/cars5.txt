@@ -1,1 +1,0 @@
-{"Engine": "2.4L  4 Cyl.", "Transmission": "Automatic", "Interior Color": "Black", "Exterior Color": "Tiger Eye Pearl", "Mileage": "49,519", "Title": "2015 Honda Accord EX-L For Sale In Chicago ", "Fuel": "Gasoline", "Price": "$14,126"}
