@@ -16,14 +16,64 @@
     <script src="libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Projects files -->
+    <link rel="stylesheet" href="style/search.css">
     <!-- <script src="src/view/chessboard.js"></script> -->
 
 </head>
 
 <body>
-    <h1>
-        Car Finder
-    </h1>
+    <div class="all-page">
+        <h1>Car Finder</h1>
+        <form action="">
+            <div>
+                <h3>Search:</h3>
+                <input id="search-info" class="form-control input-text" maxlength="100">
+            </div>
+
+            <div>
+                <h3>Transmission:</h3>
+                <div class="input-radio">
+                    <input type="radio" id="manual-id" name="transmission" value="manual" checked> <label for="manual-id" class="lead">Manual</label>
+                    <input type="radio" id="automatic-id" name="transmission" value="automatic"> <label for="automatic-id" class="lead">Automatic</label>
+                </div>
+            </div>
+
+            <div>
+                <h3>Colour:</h3>
+                <select class="form-control select-info" id="colour">
+                    <option value="red">Red</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="grey">Grey</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Price Range:</h3>
+                <select class="form-control select-info" id="price">
+                    <option value="1000">U$ 0 - U$ 1000</option>
+                    <option value="2000">U$ 1001 - U$ 2000</option>
+                    <option value="3000">U$ 2001 - U$ 3000</option>
+                    <option value="4000">U$ 3001 - U$ 4000</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Milage:</h3>
+                <select class="form-control select-info" id="milage">
+                    <option value="10000">0 miles - 10000 miles</option>
+                    <option value="20000">10001 miles - 20000 miles</option>
+                    <option value="30000">20001 miles - 30000 miles</option>
+                    <option value="40000">30001 miles - 40000 miles</option>
+                </select>
+            </div>
+
+            <div class="btn-holder">
+                <input type="submit" value="Search" class="btn btn-lg btn-primary submit-btn">
+            </div>
+        </form>
+    </div>
+
 </body>
 
 </html>
