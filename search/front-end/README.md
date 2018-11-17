@@ -1,5 +1,5 @@
 ## How to run
-To run a server localy:
+To run a front-end localy:
 
 ```bash
 python -m SimpleHTTPServer

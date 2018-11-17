@@ -1,5 +1,5 @@
 *.DS_STORE
 .project
-node_modules/*
+node_modules
 !*.gitkeep
 .vscode
