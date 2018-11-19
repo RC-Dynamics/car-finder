@@ -16,7 +16,7 @@ def write_json(site, id,data):
     
     data_dic = read_json(site)
     data_dic[str(id)] = data
-    data_dic = json.dumps(data_dic, indent=4, sort_keys=False)
+    data_dic = json.dumps(data_dic, indent=4, sort_keys=True)
 
     arquivo_json = open(site + '.json','w')
     arquivo_json.write(data_dic)

@@ -53,15 +53,15 @@ def extrator(url, id):
                 'Transmission': transmission
                 }
 
-            tools.write_json("usedcars", id, data)
+            tools.write_json("extract", id, data)
 
-            print(title)
-            print(price)
-            print(exterior_color)
-            print(interior_color)
-            print(engine)
-            print(mileage)
-            print(transmission)
+            #print(title)
+            #print(price)
+            #print(exterior_color)
+            #print(interior_color)
+            #print(engine)
+            #print(mileage)
+            #print(transmission)
         except:
             print("Page not downloaded")
     else:

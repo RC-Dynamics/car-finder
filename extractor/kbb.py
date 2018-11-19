@@ -60,20 +60,18 @@ def extrator(url,id):
                 'Transmission': transmission
                 }
 
-            tools.write_json("kbb", id, data)
+            tools.write_json("extract", id, data)
 
         except:
             print("Page not Downloaded")
         
-        print(title)
-        print(price)
-        print(exterior_color)
-        print(interior_color)
-        print(engine)
-        print(mileage)
-        print(fuel)
-        print(transmission)
+        #print(title)
+        #print(price)
+        #print(exterior_color)
+        #print(interior_color)
+        #print(engine)
+        #print(mileage)
+        #print(fuel)
+        #print(transmission)
     else:
         print("Page request error")
-url = "https://www.kbb.com/cars-for-sale/494970912/?galleryview=photos"
-extrator(url, "6")

@@ -51,7 +51,7 @@ def extrator(site, id):
                     'Mileage' : mileage,
                     'Gearbox': transmission
                 }
-                tools.write_json("buyacar", id, data)
+                tools.write_json("extract", id, data)
             except:
                 print("Page not downloaded")
         else:

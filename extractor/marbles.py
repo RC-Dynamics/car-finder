@@ -65,7 +65,7 @@ def extrator(url,id):
                 'Transmission': transmission
                 }
 
-            tools.write_json("marbles", id, data)
+            tools.write_json("extract", id, data)
 
             #print(title)
             #print(price)

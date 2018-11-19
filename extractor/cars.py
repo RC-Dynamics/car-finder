@@ -64,7 +64,7 @@ def extrator(url, id):
             'Mileage' : mileage,
             'Transmission': transmission
             }
-        tools.write_json("cars", id,data)
+        tools.write_json("extract", id,data)
     else:
         print("Page request error")
     
@@ -76,3 +76,6 @@ def extrator(url, id):
     #print(fuel)
     #print(mileage)
     #print(transmission)
+
+url = "https://www.cars.com/research/ford-f_350-2018/specs/usc80fot139d0/"
+extrator(url, "35")

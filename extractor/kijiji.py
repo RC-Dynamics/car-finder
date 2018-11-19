@@ -50,19 +50,18 @@ def extrator(url,id):
                 'Kilometers' : mileage,
                 'Transmission': transmission
                 }
-            tools.write_json("kijiji", id, data)    
-            print(title)
-            print(price)
-            print(exterior_color)
-            print(fuel)
-            print(mileage)
-            print(transmission)
+            tools.write_json("extract", id, data)    
+            #print(title)
+            #print(price)
+            #print(exterior_color)
+            #print(fuel)
+            #print(mileage)
+            #print(transmission)
         
         except:
             print("Page not downloaded")
     else:
         print("Page request error")
 
-
-url = "https://www.kijiji.ca/v-classic-cars/strathcona-county/camaro-iroc-z/1100186238?enableSearchNavigationFlag=true"
-extrator(url, "7")
+url = "https://www.kijiji.ca/v-classic-cars/edmonton/ford-mustang-gt-cs-low-km-18000-obo/1394043698"
+extrator(url, "10")

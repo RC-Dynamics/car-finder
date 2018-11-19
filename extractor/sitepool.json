@@ -4,11 +4,11 @@
         
         "1": "https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1953349",
         
-        "2": "https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1853675",
+        "2": "https://www.buyacar.co.uk/lamborghini/aventador/aventador-roadster/lp-700-4-2dr-isr-61968/deal-2094008",
         
         "3": "https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1962277",
         
-        "4": "https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1918057"},
+        "4": "https://www.buyacar.co.uk/mercedes-benz/g-class/g-class-amg-station-wagon/g63-571-5dr-tip-auto-71623/deal-2017865"},
     
     "kbb" :{
         "5": "https://www.kbb.com/cars-for-sale/494970912/?galleryview=photos",
@@ -17,9 +17,9 @@
         
         "7": "https://www.kbb.com/cars-for-sale/497369035/?totalresults=0&index=0&atcmodel=all&searchtype=all&zipcode=&srpi=spo&distance=75",
         
-        "8": "https://www.kbb.com/cars-for-sale/494875244/?totalresults=0&index=0&atcmodel=all&searchtype=all&zipcode=&srpi=spo&distance=75",
+        "8": "https://www.kbb.com/cars-for-sale/471443141/?totalresults=1000&index=1&s=derivedpricedesc&atcmodel=all&searchtype=all&zipcode=&p=1&distance=75&atcmodelcode=all&nr=25&getjsonresults=true",
         
-        "9": "https://www.kbb.com/cars-for-sale/500256802/?totalresults=1000&index=19&atcmodel=all&searchtype=all&zipcode=&distance=75"},
+        "9": "https://www.kbb.com/cars-for-sale/492944147/?totalresults=0&index=0&s=derivedpricedesc&atcmodel=all&searchtype=all&zipcode=&srpi=spo&p=1&distance=75&atcmodelcode=all&nr=25&getjsonresults=true"},
     
     "kijiji":{    
         "10": "https://www.kijiji.ca/v-classic-cars/edmonton/ford-mustang-gt-cs-low-km-18000-obo/1394043698",
@@ -48,7 +48,7 @@
         
         "21": "http://www.munstermanauto.com/vehicle/used-2016-ford-focus-se-3070811",
         
-        "22": "http://www.munstermanauto.com/vehicle/used-2006-ford-fusion-se-3082812",
+        "22": "http://www.munstermanauto.com/vehicle/used-2006-hummer-h2-3118769?refby=dealersite#ar_top",
         
         "23": "http://www.munstermanauto.com/vehicle/used-2010-ford-explorer-eddie-bauer-3070812",
         
