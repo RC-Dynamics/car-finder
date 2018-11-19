@@ -1,97 +1,96 @@
 {
     "0": {
-        "Colour": "BLUE", 
-        "Gearbox": "Automatic", 
+        "Exterior Color": "BLUE", 
         "Mileage": "45,810", 
         "Price": "\u00a317,189", 
-        "Title": "BMW 3 SERIES 3.0 330D M SPORT 4d AUTO 255 BHP SALOON diesel saloon "
+        "Title": "BMW 3 SERIES 3.0 330D M SPORT 4d AUTO 255 BHP SALOON diesel saloon ", 
+        "Transmission": "Automatic"
     }, 
     "1": {
-        "Colour": "Black", 
-        "Gearbox": "Automatic", 
+        "Exterior Color": "Black", 
         "Mileage": "38,341", 
         "Price": "\u00a317,985", 
-        "Title": "BMW 3 Series 330D M Sport 4Dr Step Auto Diesel Saloon "
+        "Title": "BMW 3 Series 330D M Sport 4Dr Step Auto Diesel Saloon ", 
+        "Transmission": "Automatic"
     }, 
     "10": {
-        "Colour": "Red", 
-        "Kilometers": "54,000", 
+        "Exterior Color": "Red", 
+        "Mileage": "54,000", 
         "Price": "$18,000.00", 
         "Title": "Ford Mustang GT/CS Low KM $18000 obo ", 
         "Transmission": "Manual"
     }, 
     "11": {
-        "Colour": "Blue", 
-        "Kilometers": "12,112", 
+        "Exterior Color": "Blue", 
+        "Mileage": "12,112", 
         "Price": "$51,247.00", 
         "Title": "2018 Ford Mustang GT Premium Fastback  ", 
         "Transmission": "Manual"
     }, 
     "12": {
-        "Colour": "Silver", 
-        "Kilometers": "67,639", 
+        "Exterior Color": "Silver", 
+        "Mileage": "67,639", 
         "Price": "$37,999.00", 
         "Title": "2015 Ram 1500 Laramie Longhorn Pickup Truck ", 
         "Transmission": "Automatic"
     }, 
     "13": {
-        "Colour": "Black", 
-        "Kilometers": "81,569", 
+        "Exterior Color": "Black", 
+        "Mileage": "81,569", 
         "Price": "$16,703.00", 
         "Title": "2007 BMW Z4 3.0i, Low Km, Premium Audio, Convertible Soft Top ", 
         "Transmission": "Automatic"
     }, 
     "14": {
-        "Colour": "Orange", 
-        "Kilometers": "18,000", 
+        "Exterior Color": "Orange", 
+        "Mileage": "18,000", 
         "Price": "$43,500.00", 
         "Title": "1966 Shelby Cobra replica ", 
         "Transmission": "Manual"
     }, 
     "15": {
-        "Exterior": "Lt. Blue", 
-        "Odometer": "105131", 
+        "Exterior Color": "Lt. Blue", 
+        "Mileage": "105131", 
         "Price": "$7,995", 
         "Title": "2011 Chevrolet Cruze  FWD", 
         "Transmission": "6 speed AT"
     }, 
     "16": {
-        "Exterior": "Tri-Coat Pearl", 
-        "Odometer": "44719", 
+        "Exterior Color": "Tri-Coat Pearl", 
+        "Mileage": "44719", 
         "Price": "$18,995", 
         "Title": "2015 Chevrolet Equinox 1LT AWD", 
         "Transmission": "6 speed AT"
     }, 
     "17": {
-        "Exterior": "Lt. Blue", 
-        "Odometer": "105131", 
+        "Exterior Color": "Lt. Blue", 
+        "Mileage": "105131", 
         "Price": "$7,995", 
         "Title": "2011 Chevrolet Cruze  FWD", 
         "Transmission": "6 speed AT"
     }, 
     "18": {
-        "Exterior": "Slate", 
-        "Odometer": "37920", 
+        "Exterior Color": "Slate", 
+        "Mileage": "37920", 
         "Price": "$18,995", 
         "Title": "2015 Toyota RAV4  AWD", 
         "Transmission": "6 speed AT"
     }, 
     "19": {
-        "Exterior": "Crystal Red Pearl", 
-        "Odometer": "44025", 
+        "Exterior Color": "Crystal Red Pearl", 
+        "Mileage": "44025", 
         "Price": "$15,995", 
         "Title": "2016 Chevrolet Malibu 1LT FWD", 
         "Transmission": "6 speed AT"
     }, 
     "2": {
-        "Colour": "Blue", 
-        "Gearbox": "Automatic", 
+        "Exterior Color": "Blue", 
         "Mileage": "3,800", 
         "Price": "\u00a3239,262", 
-        "Title": "LAMBORGHINI AVENTADOR 6.5 V12 LP 700-4 Roadster 4WD 2dr Auto "
+        "Title": "LAMBORGHINI AVENTADOR 6.5 V12 LP 700-4 Roadster 4WD 2dr Auto ", 
+        "Transmission": "Automatic"
     }, 
     "20": {
-        "Engine": "V6, 3.0 Liter", 
         "Exterior Color": "Gold", 
         "Mileage": "177,169", 
         "Price": "$4,450", 
@@ -99,7 +98,6 @@
         "Transmission": "Automatic"
     }, 
     "21": {
-        "Engine": "2.0L", 
         "Exterior Color": "silver", 
         "Mileage": "65,344", 
         "Price": "$9,787", 
@@ -107,7 +105,6 @@
         "Transmission": "Automatic"
     }, 
     "22": {
-        "Engine": "V8, 6.0 Liter", 
         "Exterior Color": "BURGUNDY", 
         "Mileage": "141,135", 
         "Price": "$17,747", 
@@ -115,7 +112,6 @@
         "Transmission": "Automatic"
     }, 
     "23": {
-        "Engine": "V6, 4.0 Liter", 
         "Exterior Color": "red", 
         "Mileage": "99,045", 
         "Price": "$9,877", 
@@ -123,7 +119,6 @@
         "Transmission": "Automatic"
     }, 
     "24": {
-        "Engine": "V6, 3.9 Liter", 
         "Exterior Color": "PEWTER", 
         "Mileage": "156,541", 
         "Price": "$3,997", 
@@ -131,7 +126,6 @@
         "Transmission": "Automatic"
     }, 
     "25": {
-        "Engine": "V6, Flex Fuel, 4.0 Liter", 
         "Exterior Color": "BLUE", 
         "Mileage": "179,998", 
         "Price": "$3,777", 
@@ -139,7 +133,6 @@
         "Transmission": "Automatic"
     }, 
     "26": {
-        "Engine": "V6, 3.0 Liter", 
         "Exterior Color": "GREY", 
         "Mileage": "184,315", 
         "Price": "$4,977", 
@@ -168,11 +161,11 @@
         "Transmission": "Automatic transmission"
     }, 
     "3": {
-        "Colour": "Alpine White", 
-        "Gearbox": "Automatic", 
+        "Exterior Color": "Alpine White", 
         "Mileage": "16,638", 
         "Price": "\u00a320,436", 
-        "Title": "BMW 3 SERIES DIESEL SALOON 330d M Sport 4dr Step Auto "
+        "Title": "BMW 3 SERIES DIESEL SALOON 330d M Sport 4dr Step Auto ", 
+        "Transmission": "Automatic"
     }, 
     "30": {
         "Exterior Color": "Brilliant Silver", 
@@ -217,11 +210,11 @@
         "Transmission": ""
     }, 
     "4": {
-        "Colour": "Designo mauritius blue metallic 4)", 
-        "Gearbox": "Automatic", 
+        "Exterior Color": "Designo mauritius blue metallic 4)", 
         "Mileage": "4,191", 
         "Price": "\u00a3119,850", 
-        "Title": "MERCEDES-BENZ G CLASS G63 [571] 5dr Tip Auto Semi-Auto amg station wagon "
+        "Title": "MERCEDES-BENZ G CLASS G63 [571] 5dr Tip Auto Semi-Auto amg station wagon ", 
+        "Transmission": "Automatic"
     }, 
     "5": {
         "Exterior Color": "Caviar", 

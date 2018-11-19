@@ -47,9 +47,9 @@ def extrator(site, id):
                 data = {
                     'Title': title,
                     'Price': price,
-                    'Colour' : exterior_color,
+                    'Exterior Color' : exterior_color,
                     'Mileage' : mileage,
-                    'Gearbox': transmission
+                    'Transmission': transmission
                 }
                 tools.write_json("extract", id, data)
             except:

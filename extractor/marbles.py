@@ -60,8 +60,8 @@ def extrator(url,id):
             data = {
                 'Title': title,
                 'Price': price,
-                'Exterior' : exterior_color,
-                'Odometer' : mileage,
+                'Exterior Color' : exterior_color,
+                'Mileage' : mileage,
                 'Transmission': transmission
                 }
 

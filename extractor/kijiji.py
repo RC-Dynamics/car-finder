@@ -46,8 +46,8 @@ def extrator(url,id):
             data = {
                 'Title': title,
                 'Price': price,
-                'Colour' : exterior_color,
-                'Kilometers' : mileage,
+                'Exterior Color' : exterior_color,
+                'Mileage' : mileage,
                 'Transmission': transmission
                 }
             tools.write_json("extract", id, data)    

@@ -43,7 +43,6 @@ def extrator(url, id):
                 'Title': title,
                 'Price': price,
                 'Exterior Color' : exterior_color,
-                'Engine' : engine,
                 'Mileage' : mileage,
                 'Transmission': transmission
                 }
