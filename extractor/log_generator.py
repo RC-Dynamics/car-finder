@@ -8,7 +8,7 @@ import usedcars
 import cars
 import time
 
-sites = ["buyacar","kbb","kijiji","marbles","munstermanauto","usedcars","cars"]
+sites = ["buyacar","kbb","kijiji","marbles","munstermanauto","usedcars"]
 count = 0
 for item in sites:
     site = tools.read_json_element("sitepool",item)
@@ -29,8 +29,6 @@ for item in sites:
             munstermanauto.extrator(str(site[str(count)]), count) 
         if(item == "usedcars"):
             usedcars.extrator(str(site[str(count)]), count) 
-        if(item == "cars"):
-            cars.extrator(str(site[str(count)]), count) 
         print(count)
         print(" ")
         count += 1
