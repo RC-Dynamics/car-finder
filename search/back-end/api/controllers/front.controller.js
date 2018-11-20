@@ -98,17 +98,19 @@ var search_car = (req, res) => {
     for(var i = 0; i < max_search; i++){
         if (req.query.transmission.toLowerCase() == extract[rank_cos[i][0]]["Transmission"].toLowerCase() || req.query.transmission.toLowerCase() == "none"){
             if (req.query.colour.toLowerCase() == extract[rank_cos[i][0]]["Exterior Color"].toLowerCase() || req.query.colour.toLowerCase() == "none") {
-                // if (req.query.milage == extract[rank[i][0]]["Exterior Color"].toLowerCase()) {
-                answer.push({
-                    title: extract[rank_cos[i][0]]["Title"],
-                    transmission: extract[rank_cos[i][0]]["Transmission"],
-                    colour: extract[rank_cos[i][0]]["Exterior Color"],
-                    price: extract[rank_cos[i][0]]["Price"],
-                    milage: extract[rank_cos[i][0]]["Mileage"],
-                    link: sites[rank_cos[i][0]]
-                })
-                continue;
-                // }    
+                if (req.query.price >= extract[rank_cos[i][0]]["Price"] || req.query.price == 0) {
+                    if (req.query.milage >= extract[rank_cos[i][0]]["Mileage"] || req.query.milage == 0) {
+                        answer.push({
+                            title: extract[rank_cos[i][0]]["Title"],
+                            transmission: extract[rank_cos[i][0]]["Transmission"],
+                            colour: extract[rank_cos[i][0]]["Exterior Color"],
+                            price: extract[rank_cos[i][0]]["Price"],
+                            milage: extract[rank_cos[i][0]]["Mileage"],
+                            link: sites[rank_cos[i][0]]
+                        })
+                        continue;
+                    }
+                }
             }
         }
         // max_search++;
@@ -116,23 +118,6 @@ var search_car = (req, res) => {
     }
     // console.log(answer)
     res.status(200).json(answer)
-
-
-    // res.status(200).json([{
-    //     title : "BMW SERIES 3 2014 AUTOMATIC RED",
-    //     transmission: "Manual",
-    //     colour: "Red",
-    //     price: "U$ 20.000",
-    //     milage: "40000 miles",
-    //     link: "https://www.kijiji.ca/"
-    // }, {
-    //     title : "TOYOTA COROLLA",
-    //     transmission: "Automatic",
-    //     colour: "Black",
-    //     price: "U$ 4.500",
-    //     milage: "80000 miles",
-    //     link: "https://shift.com/"
-    // }]);
 }
 
 
