@@ -8,7 +8,37 @@
         
         "3": "https://www.buyacar.co.uk/bmw/3-series/3-series-saloon/330d-m-sport-4dr-step-auto-70258/deal-1962277",
         
-        "4": "https://www.buyacar.co.uk/mercedes-benz/g-class/g-class-amg-station-wagon/g63-571-5dr-tip-auto-71623/deal-2017865"},
+        "4": "https://www.buyacar.co.uk/mercedes-benz/g-class/g-class-amg-station-wagon/g63-571-5dr-tip-auto-71623/deal-2017865",
+        
+        "32": "https://www.buyacar.co.uk/land-rover/range-rover-sport/range-rover-sport-estate/5-0-v8-s-c-575-svr-5dr-auto-81785/deal-2089840",
+    
+        "33": "https://www.buyacar.co.uk/land-rover/range-rover-sport/range-rover-sport-estate/5-0-v8-s-c-575-svr-5dr-auto-81785/deal-2089840",
+        
+        "34": "https://www.buyacar.co.uk/land-rover/range-rover-sport/range-rover-sport-estate/5-0-v8-s-c-575-svr-5dr-auto-81785/deal-2095170",
+        
+        "35": "https://www.buyacar.co.uk/land-rover/range-rover-sport/range-rover-sport-estate/5-0-v8-s-c-575-svr-5dr-auto-81785/deal-2007998",
+        
+        "36": "https://www.buyacar.co.uk/porsche/911/911-991-turbo-coupe/s-2dr-pdk-73572/deal-2029976",
+        
+        "37": "https://www.buyacar.co.uk/bentley/continental-gt/continental-gt-coupe/4-0-v8-s-mulliner-driving-spec-2dr-auto-63718/deal-1118638",
+        
+        "38": "https://www.buyacar.co.uk/audi/r8/r8-coupe/5-2-fsi-v10-plus-quattro-2dr-s-tronic-68696/deal-2084551",
+        
+        "39": "https://www.buyacar.co.uk/porsche/panamera/panamera-saloon/4-8-v8-turbo-s-4dr-pdk-52155/deal-1912332",
+        
+        "40": "https://www.buyacar.co.uk/rolls-royce/phantom/phantom-saloon/4dr-auto-81844/deal-1844916",
+        
+        "41": "https://www.buyacar.co.uk/lamborghini/aventador/aventador-roadster/lp-700-4-2dr-isr-61968/deal-2096259",
+        
+        "42": "https://www.buyacar.co.uk/rolls-royce/dawn/dawn-convertible/2dr-auto-73309/deal-1879072",
+        
+        "43": "https://www.buyacar.co.uk/mclaren/720/720s-coupe/v8-2dr-ssg-auto-81522/deal-2008622",
+        
+        "43": "https://www.buyacar.co.uk/rolls-royce/dawn/dawn-convertible/2dr-auto-73309/deal-1806556",
+        
+        "45": "https://www.buyacar.co.uk/aston-martin/vantage/v12-vantage-roadster/amr-2dr-83848/deal-2097489",
+        
+        "46": "https://www.buyacar.co.uk/lamborghini/huracan/huracan-spyder/lp-610-4-2dr-ldf-73101/deal-2043116"},
     
     "kbb" :{
         "5": "https://www.kbb.com/cars-for-sale/494970912/?galleryview=photos",
@@ -67,13 +97,5 @@
         
         "30": "https://www.usedcars.com/vehicle-details/252238208/?id=33378&prev=srp&zipcode=90006",
         
-        "31": "https://www.usedcars.com/vehicle-details/242087365/?id=33378&prev=srp&zipcode=90006"},
-    "cars": {
-        "32": "https://www.cars.com/research/ford-f_150-2015/specs/usc50fot112a0/",
-
-        "33": "https://www.cars.com/research/ford-escape-2019/specs/usc90fos132b0/",
-
-        "34": "https://www.cars.com/research/ford-f_350-2015/specs/usc50fot13ea0/",
-
-        "35": "https://www.cars.com/research/ford-f_350-2018/specs/usc80fot139d0/"}
+        "31": "https://www.usedcars.com/vehicle-details/242087365/?id=33378&prev=srp&zipcode=90006"}
     }
