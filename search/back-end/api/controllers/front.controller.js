@@ -74,12 +74,25 @@ var search_car = (req, res) => {
     rank_freq.sort(function (first, second) {
         return second[1] - first[1];
     });
-    // console.log(rank_cos)
-    // console.log(rank_freq);
 
 
-    // TODO Kenda Tau
+    console.log(rank_cos);
+    console.log(rank_freq);
+
+    var kendalltau = 0;
+    
+    for (var i = 0; i < Math.min(rank_cos.length, rank_freq.length); i++){
+        if(rank_cos[i][0] == rank_freq[i][0])
+            kendalltau++;
+        else
+            kendalltau--;
+    }
+    kendalltau /= ((Math.min(rank_cos.length, rank_freq.length)*(Math.min(rank_cos.length, rank_freq.length)-1))/2);
+    
+    console.log(`Kendall Tau:   ${kendalltau}`);
+
     // TODO Spearman
+
     var answer = [];
     var max_search = 5;
     for(var i = 0; i < max_search; i++){
