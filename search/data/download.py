@@ -7,12 +7,12 @@ import time
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 
 def download():
-    with open("./html/sites_raw.csv", 'w') as outcsv:
+    with open("./html/sites_raw2.csv", 'w') as outcsv:
         writer = csv.writer(outcsv)
         words_list = ["link"] + ['html']
         writer.writerow(words_list)
         for file in sys.listdir("."):
-            if(file.endswith(".csv")):
+            if(file.endswith("2.csv")):
                 link = 0
                 buff = []
                 data = pd.read_csv(file)

@@ -12,13 +12,16 @@ var search_car = (req, res) => {
     var query_words = req.query.search.toLowerCase().split(" ");
     var query = {};
     var max_query = 0;
-
+    var document = {};
     query_words.forEach(element => {
         var query_freq = 0;
         query[element] = {};
         if (index.hasOwnProperty(element)){
             index[element].forEach(element2 => {
                 query_freq += element2["freq"];
+                if (!document.hasOwnProperty(element2["doc"]))
+                    document[element2["doc"]] = 0;
+                document[element2["doc"]] += element2["freq"];
             });
         }
         query[element]["freq"] = query_freq;
@@ -28,7 +31,6 @@ var search_car = (req, res) => {
     });
     Object.keys(query).forEach(element => {
         if (index.hasOwnProperty(element)) {
-            // console.log(`${query[element]["freq"]} - ${max_query} - ${Object.keys(sites).length} - ${index[element].length}`);
             query[element]["tfidf"] = (0.5 + (0.5 * query[element]["freq"]) / max_query) * Math.log2(Object.keys(sites).length / index[element].length)
         } else
             query[element]["tfidf"] = 0;
@@ -57,28 +59,40 @@ var search_car = (req, res) => {
         });
     });
 
-    var rank = Object.keys(scores).map(function (key) {
+    var rank_cos = Object.keys(scores).map(function (key) {
         return [key, scores[key]];
     });
 
-    rank.sort(function (first, second) {
+    rank_cos.sort(function (first, second) {
         return second[1] - first[1];
     });
-    // console.log(rank)
 
+    var rank_freq = Object.keys(document).map(function (key) {
+        return [key, document[key]];
+    });
+
+    rank_freq.sort(function (first, second) {
+        return second[1] - first[1];
+    });
+    // console.log(rank_cos)
+    // console.log(rank_freq);
+
+
+    // TODO Kenda Tau
+    // TODO Spearman
     var answer = [];
     var max_search = 5;
     for(var i = 0; i < max_search; i++){
-        if (req.query.transmission.toLowerCase() == extract[rank[i][0]]["Transmission"].toLowerCase()){
-            if (req.query.colour.toLowerCase() == extract[rank[i][0]]["Exterior Color"].toLowerCase()) {
+        if (req.query.transmission.toLowerCase() == extract[rank_cos[i][0]]["Transmission"].toLowerCase() || req.query.transmission.toLowerCase() == "none"){
+            if (req.query.colour.toLowerCase() == extract[rank_cos[i][0]]["Exterior Color"].toLowerCase() || req.query.colour.toLowerCase() == "none") {
                 // if (req.query.milage == extract[rank[i][0]]["Exterior Color"].toLowerCase()) {
                 answer.push({
-                    title: extract[rank[i][0]]["Title"],
-                    transmission: extract[rank[i][0]]["Transmission"],
-                    colour: extract[rank[i][0]]["Exterior Color"],
-                    price: extract[rank[i][0]]["Price"],
-                    milage: extract[rank[i][0]]["Mileage"],
-                    link: sites[rank[i][0]]
+                    title: extract[rank_cos[i][0]]["Title"],
+                    transmission: extract[rank_cos[i][0]]["Transmission"],
+                    colour: extract[rank_cos[i][0]]["Exterior Color"],
+                    price: extract[rank_cos[i][0]]["Price"],
+                    milage: extract[rank_cos[i][0]]["Mileage"],
+                    link: sites[rank_cos[i][0]]
                 })
                 continue;
                 // }    
