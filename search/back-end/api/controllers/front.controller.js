@@ -2,7 +2,6 @@ var fs = require('fs');
 
 var search_car = (req, res) => {
     console.log(req.query);
-    // TODO: Set response to send to front
     // search, transmission, colour, price, milage
     
     var index = JSON.parse(fs.readFileSync('./index.json', 'utf8'));
@@ -80,18 +79,16 @@ var search_car = (req, res) => {
     console.log(rank_freq);
 
     var kendalltau = 0;
-    
-    for (var i = 0; i < Math.min(rank_cos.length, rank_freq.length); i++){
+    // Math.min(rank_cos.length, rank_freq.length)
+    for (var i = 0; i < 5; i++){
         if(rank_cos[i][0] == rank_freq[i][0])
             kendalltau++;
         else
             kendalltau--;
     }
-    kendalltau /= ((Math.min(rank_cos.length, rank_freq.length)*(Math.min(rank_cos.length, rank_freq.length)-1))/2);
+    kendalltau /= ((5*(5-1))/2);
     
     console.log(`Kendall Tau:   ${kendalltau}`);
-
-    // TODO Spearman
 
     var answer = [];
     var max_search = 5;
