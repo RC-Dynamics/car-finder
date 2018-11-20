@@ -2,6 +2,7 @@ $(document).ready(function () {
     $("form").submit(function (e) {
         e.preventDefault();
         var form = $(this);
+        $("#show-res-data").empty();
         
         $.ajax({
             url: "http://localhost:1337/search",

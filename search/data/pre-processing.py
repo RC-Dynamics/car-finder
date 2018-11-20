@@ -31,7 +31,7 @@ def makeRawCorpus():
                 page = removeSpecial(page)
                 corpus =  corpus | set(word_tokenize(page))
                 files[row["link"]] = list(set(word_tokenize(page)))
-                corpus_txt.append(page)
+                corpus_txt.append(page.lower())
 
     with open ("./corpus/corpus.cp", 'wb') as fp:
         pickle.dump(list(corpus), fp)
@@ -70,7 +70,7 @@ def getRawCorpus():
     
     return corpus, files, corpus_txt
                 
-def bowInfogain(files, corpus_txt):
+def bowInfogain(corpus_txt):
 ################## FILTERS - Info Gain ################################
     cv = CountVectorizer(max_df=0.9, min_df=0.05, stop_words='english')
     
@@ -81,14 +81,16 @@ def bowInfogain(files, corpus_txt):
     # print (features)
     return cv.fit_transform(corpus_txt), cv.get_feature_names()
 
-            
+def readJSON(name):
+    arquivo_json = open(name + '.json','r')
+    dados_json = json.load(arquivo_json)
+    return dados_json  
 def main():
-    querry = ["chevrolet", "car"]
-    # corpus, files, corpus_txt = makeRawCorpus()
+    corpus, files, corpus_txt = makeRawCorpus()
     
-    corpus, files, corpus_txt = getRawCorpus()
+    # corpus, files, corpus_txt = getRawCorpus()
 
-    vector, features = bowInfogain(files, corpus_txt)
+    vector, features = bowInfogain(corpus_txt)
     
     keys = list(files.keys())
     j = 0
@@ -106,26 +108,7 @@ def main():
             i += 1
         j += 1
     with open('index.json', 'w') as fp:
-        json.dump(dictionary, fp)
-    
-
-    
-
-
-
-    # cosine_similarities = linear_kernel(vector[0:1], vector).flatten()
-    # print (cosine_similarities)
-    # print (vector.shape)
-    # document = 0
-    # for i in vector:
-    #     print(i)
-    #     document += 1
-    #     break
-        
-
-
-
-    
+        json.dump(dictionary, fp)    
 
 
 if __name__ == "__main__":
